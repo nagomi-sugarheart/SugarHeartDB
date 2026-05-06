@@ -10,6 +10,7 @@
 - **言語：** HTML + CSS のみ（JavaScriptは使用しない）
 - **ホスティング：** Netlify（GitHub連携による自動デプロイ）
 - **リポジトリ：** https://github.com/nagomi-sugarheart/SugarHeartDB
+- **本番URL：** https://sugarheart-db.netlify.app/
 - **フォント：** Yusei Magic（Google Fonts）
 
 ## ファイル構成
@@ -18,14 +19,19 @@
 /
 ├── index.html                  # トップページ
 ├── style.css                   # 全ページ共通のスタイル（CSSはこの1ファイルに集約）
+├── SugarHeartHistory.html      # しゅがーはぁとの年表ページ（更新情報の「詳しく見る」リンク先）
 ├── CLAUDE.md                   # このファイル
-├── デレステ/                    # デレステ関連の画像フォルダ
+├── デレステ/                    # デレステ関連
+│   ├── Deresute_CardList.html  # デレステカード一覧
 │   └── [カード名]/
-│       └── [カード名]アイコン.jpg
+│       ├── Deresute_[カード名].html
+│       ├── [カード名]アイコン.jpg
 │       └── [カード名].jpg
-├── モバマス/                    # モバマス関連の画像フォルダ
+├── モバマス/                    # モバマス関連
+│   ├── Mobamas_CardList.html   # モバマスカード一覧
 │   └── [カード名]/
-│       └── [カード名]アイコン.jpg
+│       ├── Mobamas_[カード名].html
+│       ├── [カード名]アイコン.jpg
 │       └── [カード名].jpg
 └── ファビコン/                  # ファビコン画像
 ```
@@ -35,9 +41,11 @@
 | ファイル名 | 役割 |
 |---|---|
 | index.html | トップページ（プロフィール・更新情報・各ページへのリンク） |
-| Mobamas_CardList.html | モバマスのカード一覧ページ |
-| Deresute_CardList.html | デレステのカード一覧ページ |
-| Mobamas_佐藤心.html | モバマス「佐藤心」カード詳細ページ（詳細ページのテンプレート） |
+| SugarHeartHistory.html | しゅがーはぁとの年表ページ |
+| モバマス/Mobamas_CardList.html | モバマスのカード一覧ページ |
+| デレステ/Deresute_CardList.html | デレステのカード一覧ページ |
+| モバマス/[カード名]/Mobamas_[カード名].html | モバマス カード詳細ページ |
+| デレステ/[カード名]/Deresute_[カード名].html | デレステ カード詳細ページ（Mobamas_佐藤心.html がテンプレート） |
 
 ※今後もHTMLファイルは増やしていく予定
 
@@ -91,7 +99,7 @@
 
 - テーブル形式でカードを一覧表示
 - 列：カード画像（アイコン）／レア度／カード名
-- カード名をクリックすると詳細ページへ遷移（予定）
+- カード名・アイコン画像をクリックすると詳細ページへ遷移
 
 ### カード詳細ページ（例：Mobamas_佐藤心.html）
 
