@@ -1,0 +1,1122 @@
+/* style.css */
+/* 水色：#8edae5 ピンク：#f99695 黄色：#F0E68C 灰色：#676f74 */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F5; /* 背景をオフホワイト */
+    color: #5D4037;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    padding: 10px;
+    color: #5D4037;
+}
+
+h2 {
+    color: #fd89b9;
+    font-weight: bold;
+    margin: 20px 20px auto 0 auto;
+    text-align: center;
+}
+
+h3 {
+    color: #fd89b9;
+    font-weight: bold;
+    margin: 5px 5px auto 0 auto;
+}
+
+/* ==========================
+   タイトル
+========================== */
+
+.main-title {
+    width: 100%;
+    margin: 0;
+    background-image: linear-gradient(rgba(214, 35, 80, 0.6), rgba(214, 35, 80, 0.6)), url('/デレステ/[この世でただひとりのはぁと]佐藤心+/[この世でただひとりのはぁと]佐藤心+.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px 20px;
+    color: #fff2f2;
+    text-align: center;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sub-title {
+    width: 100%;
+    margin: 0 0 15px 0;
+    background-image: linear-gradient(45deg, #FAD766, #fd89b9);
+    background-size: cover;
+    background-position: center;
+    padding: 30px 20px;
+  	text-decoration: underline;
+    color: #fff2f2;
+    font-size: 1.5rem;
+    text-align: left;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    min-height: 80px;
+}
+
+.sub-title-date{
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    color: #fff2f2;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+}
+
+.white-text {
+    color: #fff2f2;
+}
+
+.img-full-center {
+    max-width: 100%;
+    display: block;       /* ブロック要素として扱う（配置調整のため） */
+    margin: 0 auto;       /* 左右を自動で空けて中央寄せ */
+    height: auto;         /* 高さは比率を保って自動調整 */
+}
+
+/* ==========================
+   リンク
+========================== */
+
+.link a {
+    color: #5D4037;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.link a:hover {
+    color: #fd89b9;
+    text-decoration: underline;
+}
+
+.link-image {
+    display: block;
+    width: 100px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.link-image img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.link-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.link-image:active {
+    transform: translateY(2px);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.3);
+}
+
+/* ==========================
+   ボックスエリア
+========================== */
+
+.box-area {
+    background-color: #F9F9F5;
+    width: 90%;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #fd89b9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    position: relative;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+.box-title {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    color: #fd89b9;
+    border-left: 5px solid #fd89b9;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.box-scroll-area {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.box-item {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 3px dotted #fd89b9;
+}
+
+.box-item:last-child {
+    border-bottom: none;
+}
+
+.box-subtitle {
+    width: 140px;
+    flex-shrink: 0;
+    font-weight: bold;
+    text-align: center;
+    color: #fd89b9;
+    white-space: nowrap;
+}
+
+.box-text {
+    color: #63514b;
+    line-height: 1.5;
+    flex: 1;
+}
+
+/* ==========================
+   詳細ページ用レイアウト
+========================== */
+
+.detailpage-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 40px 0;    /* ★修正：左右のautoを削除し、左端に寄せる */
+    
+    /* PCの設定：グリッドで横並びにする */
+    display: grid;
+    
+    /* 左(300px) 右(残り全部) という割り当て */
+    grid-template-columns: 300px 1fr;
+    
+    gap: 30px; /* 左右の隙間 */
+    align-items: start; /* 上端を揃える */
+    min-width: 0; /* グリッド内での縮小を許可 */
+}
+
+/* 左側のエリア（シンデレラガールズ劇場） */
+.side-area {
+    /* 左側は1列目に配置される */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0;
+}
+
+/* 右側のエリア（ギャラリー・関連ページなど） */
+.other-area {
+    /* 右側は2列目に配置される */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 0; /* これがないとはみ出す */
+    overflow: hidden; /* はみ出し防止 */
+}
+
+/* detailpage-container内のbox-areaの設定 */
+.detailpage-container .box-area {
+    background-color: #FFF;
+    width: 100%;    /* 横幅いっぱいに広げる */
+    margin: 0;      /* 自動余白を消す */
+    min-width: 0;   /* グリッド内でのはみ出し防止 */
+    overflow: hidden; /* 子要素のはみ出しを防ぐ */
+}
+
+/* 画像スクロールエリア */
+.image-scroll-area {
+    display: flex;         /* 横並びにする */
+    gap: 15px;             /* 画像同士の隙間 */
+    overflow-x: auto;      /* 横にはみ出たらスクロールさせる */
+    padding-bottom: 15px;  /* 下にスクロールバー用の余白を作る */
+    
+    /* スクロールの慣性（スマホでシュッと動くようにする） */
+    -webkit-overflow-scrolling: touch;
+
+    /* ★親要素の幅を超えないようにする */
+    max-width: 100%;
+}
+
+/* 画像の設定 */
+.image-scroll-area img {
+    height: 200px;      /* ★ここでお好みの「高さ」を指定！ */
+    width: auto;        /* 幅は高さに合わせて自動調整 */
+    
+    /* 親の幅が足りなくなっても「絶対に縮まない」という設定 */
+    flex-shrink: 0;     
+    
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+
+
+/* ニュース専用 */
+.box-area.type-news {
+    width: 80%;
+    padding-bottom: 50px;
+}
+
+.box-area.type-news .box-subtitle {
+    width: auto;
+    margin-right: 15px;
+    text-align: left;
+}
+
+.news-link {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 0.9rem;
+    color: #fd89b9;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.news-link:hover {
+    opacity: 0.5;
+}
+
+/* ==========================
+   テーブル
+========================== */
+
+.table-area {
+    width: 90%;
+    max-width: 800px;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  	table-layout: fixed;
+}
+
+/*1列目の設定*/
+.table-area td:first-child,
+.table-area th:first-child{
+  width: 100px;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px 10px;
+}
+
+.table-area td,
+.table-area th{
+  padding: 15px 12px;
+  word-break: break-word;
+}
+
+.table-area thead th {
+    background-color: #fd89b9;
+    color: #fff2f2;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 3px solid #fbd1df;
+    border-right: 1px solid #f0eeeed5;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.table-area tbody td:first-child {
+    padding: 15px 10px;
+}
+
+.table-area tbody td {
+  	text-align: left;
+    padding: 20px 20px 20px 20px;
+    border-bottom: 3px dotted #fd89b9;
+  	border-right: 1px solid #dcdcdc;
+    color: #5D4037;
+}
+
+.table-area tbody tr:nth-child(even) {
+    background-color: #fdf5f8;
+}
+
+.table-area tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* 最後の列（右端）には境界線を表示しない */
+.table-area thead th:last-child, 
+.table-area tbody td:last-child {
+    border-right: none;
+}
+
+.table-area tbody tr:hover {
+    background-color: #ffeaf2;
+    transition: background-color 0.2s;
+}
+
+.table-area .col-narrow {
+    width: 70px;
+    min-width: 70px;
+    max-width: 70px;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-area .link-image {
+    display: inline-block;  /* inline-blockのまま */
+    width: 100px;          /* 明示的に幅を指定 */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.table-area .link-image img{
+  width: 100%;           /* 親要素の100% */
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* ==========================
+   トップページのタブ
+========================== */
+
+.tab-wrapper {
+    width: 95%;
+    max-width: 900px;
+    margin: 20px auto 0 auto;
+    position: relative;
+}
+
+input[name="tab-radio"] {
+    display: none;
+}
+
+.tab-nav {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    display: block;
+    background-image:
+        linear-gradient(#fff, #fff),
+        linear-gradient(45deg, #FAD766, #fd89b9);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border: 2px solid transparent;
+    color: #fd89b9;
+    padding: 20px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.tab-btn:hover {
+    background-image:
+        linear-gradient(transparent, transparent),
+        linear-gradient(45deg, #FAD766, #fd89b9);
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 158, 157, 0.4);
+}
+
+#tab1:checked ~ .tab-nav .btn-1,
+#tab2:checked ~ .tab-nav .btn-2,
+#tab3:checked ~ .tab-nav .btn-3,
+#tab4:checked ~ .tab-nav .btn-4 {
+    background-image:
+        linear-gradient(transparent, transparent),
+        linear-gradient(45deg, #FAD766, #fd89b9);
+    color: #fff;
+    transform: translateY(2px);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.tab-content {
+    display: none;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 5px solid #fd89b9;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+#tab1:checked ~ .content-1,
+#tab2:checked ~ .content-2,
+#tab3:checked ~ .content-3,
+#tab4:checked ~ .content-4 {
+    display: block;
+}
+
+.link-list a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+    color: #5D4037;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link-list a:hover {
+    color: #fd89b9;
+    text-decoration: underline;
+}
+
+/* ==========================
+   カード詳細ページ
+========================== */
+
+/* 全体のレイアウト */
+.detail-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 左側のカードリスト（PC用） */
+.sidebar-cardlist {
+    width: 250px;
+    flex-shrink: 0;
+    background-color: #fff;
+    border: 2px solid #fd89b9;
+    border-radius: 10px;
+    padding: 20px;
+    max-height: calc(100vh - 40px); /* 画面の高さに合わせる */
+    overflow-y: auto; /* スクロール可能に */
+    position: sticky; /* スクロール時も固定表示 */
+    top: 20px;
+}
+
+.sidebar-cardlist h3 {
+    color: #fd89b9;
+    font-size: 1.1rem;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fd89b9;
+}
+
+.sidebar-cardlist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-cardlist li {
+    margin-bottom: 10px;
+}
+
+.sidebar-cardlist a {
+    display: block;
+    padding: 8px 12px;
+    color: #5D4037;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.sidebar-cardlist a:hover {
+    background-color: #ffeaf2;
+    color: #fd89b9;
+    padding-left: 16px;
+}
+
+/* 現在表示中のカードを強調 */
+.sidebar-cardlist a.active {
+    background-color: #fd89b9;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* 右側のメインコンテンツ */
+.detail-main {
+    flex: 1;
+    min-width: 0; /* flexboxでの縮小を許可 */
+    overflow: hidden; /* はみ出し防止 */
+}
+
+/* カード画像表示エリア */
+.card-image-area {
+    background-color: #fff;
+    border: 2px solid #fd89b9;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-image-area img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* セリフエリア全体 */
+.dialogue-area {
+    background-color: #fff;
+    border: 2px solid #fd89b9;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.dialogue-area h2 {
+    margin: 0 0 20px 0;
+}
+
+/* タブのラジオボタンを非表示 */
+input[name="dialogue-tab"] {
+    display: none;
+}
+
+/* タブのナビゲーション */
+.dialogue-tab-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #fd89b9;
+}
+
+.dialogue-tab-btn {
+    flex: 1;
+    padding: 15px 20px;
+    background-color: #F9F9F5;
+    color: #fd89b9;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s;
+    border: 2px solid #fd89b9;
+    border-bottom: none;
+    margin-bottom: -3px; /* 下の境界線と重ねる */
+}
+
+.dialogue-tab-btn:hover {
+    background-color: #ffeaf2;
+}
+
+/* アクティブなタブのスタイル */
+#dialogue-tab1:checked ~ .dialogue-tab-nav .dialogue-tab-btn1,
+#dialogue-tab2:checked ~ .dialogue-tab-nav .dialogue-tab-btn2 {
+    background-color: #fd89b9;
+    color: #fff;
+}
+
+/* タブコンテンツ */
+.dialogue-tab-content {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+#dialogue-tab1:checked ~ .dialogue-content1,
+#dialogue-tab2:checked ~ .dialogue-content2 {
+    display: block;
+}
+
+/* アコーディオン（折りたたみ）エリア */
+.accordion-item {
+    border-bottom: 2px dotted #fd89b9;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* アコーディオンのラベル（クリックできる部分） */
+.accordion-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fdf5f8;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    color: #fd89b9;
+    user-select: none; /* テキスト選択を防止 */
+}
+
+.accordion-label:hover {
+    background-color: #ffeaf2;
+    transform: translateX(5px);
+}
+
+/* 矢印アイコン */
+.accordion-arrow {
+    transition: transform 0.3s;
+    font-size: 1.2rem;
+}
+
+/* チェックボックスを非表示 */
+.accordion-checkbox {
+    display: none;
+}
+
+/* アコーディオンの中身 */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 15px;
+}
+
+/* チェックされたら中身を表示 */
+.accordion-checkbox:checked ~ .accordion-content {
+    max-height: 1000px; /* 十分大きな値を設定 */
+    padding: 15px 0px 0px;
+}
+
+/* チェックされたら矢印を回転 */
+.accordion-checkbox:checked ~ .accordion-label .accordion-arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-content p {
+    margin: 10px 0;
+    line-height: 1.8;
+    color: #5D4037;
+    border-bottom:dotted #fd89b9;
+}
+
+.accordion-content p:last-child {
+    border-bottom:none;
+}
+
+/* 画像タブ内の画像 */
+.accordion-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ==========================
+   カードナビゲーション（前後のカード移動）
+========================== */
+
+/* ナビゲーション全体 */
+.card-navigation {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* 前のカード・次のカード共通 */
+.nav-card {
+    width: 45%; /* 画面幅の48%に固定 */
+    max-width: 300px; /* 最大幅も設定（大画面対応） */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: #5D4037;
+    padding: 15px;
+    transition: all 0.3s;
+    text-decoration: none;
+    gap: 12px;
+    min-width: 0; /* flexboxでの縮小を許可 */
+}
+
+.nav-card:hover,
+.nav-card:link,
+.nav-card:visited {
+    text-decoration: none; /* すべての状態でアンダーラインなし */
+}
+
+.nav-card:hover {
+    background-color: #ffeaf2;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(253, 137, 185, 0.3);
+}
+
+/* 前のカード（左側） */
+.nav-prev {
+    justify-content: flex-start;
+    margin-right: auto; /* 左寄せ */
+}
+
+/* 次のカード（右側） */
+.nav-next {
+    justify-content: flex-end;
+    margin-left: auto; /* 右寄せ */
+}
+
+/* カードのアイコン画像 */
+.nav-card-icon {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0; /* 画像サイズを固定 */
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #fd89b9;
+}
+
+.nav-next .nav-card-icon {
+    order: 2; /* 画像を後ろに */
+}
+
+/* カード名とレア度を含むテキスト部分 */
+.nav-card-info {
+    flex: 1;
+    min-width: 0; /* テキストの折り返しを許可 */
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    gap: 4px;
+}
+
+/* 前のカードの場合は左寄せ */
+.nav-prev .nav-card-info {
+    text-align: left;
+}
+
+/* 次のカードの場合は右寄せ */
+.nav-next .nav-card-info {
+    order: 1;
+    text-align: right;
+}
+
+/* ラベル（「前のカード」「次のカード」） */
+.nav-label {
+    font-size: 0.75rem;
+    color: #fd89b9;
+    font-weight: bold;
+    text-decoration: underline; /* アンダーラインを追加 */
+    text-decoration-color: #fd89b9; /* ピンク色に指定 */
+}
+
+/* カード名 */
+.nav-card-name {
+    font-size: 0.9rem;
+    color: #5D4037;
+    font-weight: bold;
+    word-wrap: break-word; /* 長い名前を折り返し */
+    line-height: 1.3;
+}
+
+/* 矢印アイコン */
+.nav-arrow {
+    font-size: 1.5rem;
+    color: #fd89b9;
+    flex-shrink: 0;
+}
+
+/* 前のカードの矢印は左側 */
+.nav-prev .nav-arrow {
+    order: -1; /* 最初に配置 */
+}
+
+/* 次のカードの矢印は右側 */
+.nav-next .nav-arrow {
+    order: 3; /* 最後に配置 */
+}
+
+/* ==========================
+   年表ページ
+========================== */
+
+.timeline-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-left: 60px;
+      box-sizing: border-box;
+    }
+
+    /* 年の区切り線 */
+    .year-separator {
+      position: absolute;
+      top: calc(300px * var(--year));
+      left: 0;
+      width: 100%;
+      height: 1px;
+      border-top: 2px dotted #fbc7dd;
+      font-weight: bold;
+      color: #fd89b9;
+      transform: translateY(-50%);
+      z-index: 0;
+      margin-left: -60px;
+      padding-left: 60px;
+      box-sizing: border-box;
+    }
+
+    /* 中心の線 */
+    .timeline-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 4px;
+      background-color: #fd89b9;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+
+    /* イベントボックス配置 */
+    .event-box {
+      position: absolute;
+      width: 42%;
+      top: calc(300px * var(--year) + (300px / 12 * var(--month)));
+      z-index: 10;
+      transition: z-index 0s;
+    }
+    
+    .event-box:hover,
+    .event-box:focus {
+      z-index: 100;
+      outline: none;
+    }
+
+    /* 丸ポチ（共通） */
+    .event-box::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--c1), var(--c2));
+      border: 2px solid #fff; 
+      box-shadow: 0 0 0 1px #ddd;
+      z-index: 2;
+    }
+
+    /* 横線（共通） */
+    .event-box::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 3px;
+      background: linear-gradient(to right, var(--c1), var(--c2));
+      z-index: 1;
+    }
+
+    /* 左側（Game）の位置調整 - ここが重要！ */
+    .event-box.left {
+      right: calc(50% + 35px); /* 中心線から離す */
+      text-align: right;
+      padding-right: 0; /* パディングを削除 */
+    }
+    
+    .event-box.left::after { 
+      right: -42px; /* 丸の位置を右端に */
+    }
+    
+    .event-box.left::before { 
+      right: -35px; /* 線の位置 */
+    }
+
+    /* 右側（Other）の位置調整 */
+    .event-box.right {
+      left: calc(50% + 35px); /* 中心線から離す */
+      text-align: left;
+      padding-left: 0; /* パディングを削除 */
+    }
+    
+    .event-box.right::after { 
+      left: -42px; 
+    }
+    
+    .event-box.right::before { 
+      left: -35px; 
+    }
+
+    /* コンテンツカード */
+    .content-card {
+      display: inline-block;
+      background: #fff;
+      padding: 15px;
+      text-align: left;
+      max-width: 100%;
+      position: relative;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      background-image: linear-gradient(#fff, #fff), 
+        linear-gradient(135deg, var(--c1), var(--c2));
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .event-box:hover .content-card,
+    .event-box:focus .content-card {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    /* タグ */
+    .tags {
+      margin-bottom: 8px;
+      line-height: 1;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      color: #fff;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-right: 4px;
+      font-weight: bold;
+      vertical-align: middle;
+    }
+
+    .tag.sub {
+      background-color: #eee !important;
+      color: #555;
+      font-weight: normal;
+      border: 1px solid #ddd;
+    }
+
+    .date-label {
+      display: block;
+      font-size: 0.8rem;
+      color: #999;
+      margin-bottom: 4px;
+    }
+
+
+/* ==========================
+   スマホ用
+========================== */
+
+@media screen and (max-width: 900px) {
+
+    .box-area {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .box-item {
+        display: block;
+    }
+
+    .box-subtitle {
+        display: block;
+        margin-bottom: 4px;
+        text-align: left;
+        width: auto;
+    }
+
+    .box-area.type-news {
+        width: 94%;
+        padding-bottom: 50px;
+    }
+
+    .tab-nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tab-btn {
+        padding: 15px 5px;
+        font-size: 0.9rem;
+    }
+
+    .tab-content {
+        padding: 20px;
+    }
+    
+    .sidebar-cardlist {
+        display: none;
+    }
+
+    .detail-container {
+        padding: 10px;
+    }
+
+    .card-image-area {
+        padding: 20px;
+    }
+
+    .dialogue-area {
+        padding: 15px;
+    }
+
+    .dialogue-tab-btn {
+        padding: 12px 10px;
+        font-size: 0.9rem;
+    }
+
+    .accordion-label {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .card-navigation {
+        gap: 10px;
+        /* 横並びのまま維持 */
+    }
+
+    .nav-card {
+        padding: 12px;
+        justify-content: center; /* 中央寄せ */
+    }
+
+    .nav-card-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-arrow {
+        font-size: 1.5rem;
+    }
+    
+    /* スマホでは前のカードも次のカードも中央寄せ */
+    .nav-prev,
+    .nav-next {
+        justify-content: center;
+        flex-direction: row; /* 次のカードも通常の並びに戻す */
+    }
+
+    .timeline-container {
+        padding-left: 30px;
+      }
+      
+      .year-separator {
+        margin-left: -30px;
+        padding-left: 30px;
+        font-size: 0.8rem;
+      }
+
+      .event-box {
+        width: 40%;
+      }
+      
+      .content-card {
+        padding: 10px;
+        font-size: 0.9rem;
+      }
+
+      .detailpage-container {
+        /* 横並び設定を解除して、縦積みにする */
+        grid-template-columns: 1fr;
+      }
+}
