@@ -232,16 +232,8 @@
 
 	<div class="box-area type-news">
 		<h2 class="box-title">＊更新情報</h2>
-		<!-- 最新3件まで表示。それ以上は updates.html に追記してください -->
-		<div class="box-scroll-area">
-			<div class="box-item">
-				<span class="box-subtitle">2025.12.13</span>
-				<span class="box-text">○○を更新しました。</span>
-			</div>
-			<div class="box-item">
-				<span class="box-subtitle">2025.12.01</span>
-				<span class="box-text">サイトを公開しました。</span>
-			</div>
+		<div class="box-scroll-area" id="news-list">
+			<p class="box-text" style="color:#ccc; padding:15px 0;">読み込み中…</p>
 		</div>
 		<a href="/updates.html" class="news-link">詳しく見る ▶</a>
 	</div>
@@ -437,6 +429,31 @@
         });
     });
 })();
+
+// 更新情報：data/updates.json から最新3件を取得して表示
+fetch('/data/updates.json')
+    .then(function(r) { return r.json(); })
+    .then(function(updates) {
+        var container = document.getElementById('news-list');
+        container.innerHTML = '';
+        updates.slice(0, 3).forEach(function(u) {
+            var item = document.createElement('div');
+            item.className = 'box-item';
+            var dt = document.createElement('span');
+            dt.className = 'box-subtitle';
+            dt.textContent = u.date;
+            var tx = document.createElement('span');
+            tx.className = 'box-text';
+            tx.innerHTML = u.text;
+            item.appendChild(dt);
+            item.appendChild(tx);
+            container.appendChild(item);
+        });
+    })
+    .catch(function() {
+        var container = document.getElementById('news-list');
+        container.innerHTML = '<p class="box-text" style="color:#ccc; padding:15px 0;">更新情報を読み込めませんでした。</p>';
+    });
 </script>
 
 </body>

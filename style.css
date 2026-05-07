@@ -1615,27 +1615,21 @@ input[name="dialogue-tab"] {
     margin-bottom: 6px;
 }
 
-.update-content {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
 .update-text {
     color: #5D4037;
     margin: 0;
     line-height: 1.7;
 }
 
-.update-link {
-    display: inline-block;
+.update-text a,
+.box-text a {
     color: #fd89b9;
     text-decoration: underline;
-    font-size: 0.9rem;
     font-weight: bold;
     transition: opacity 0.2s;
 }
 
-.update-link:hover {
+.update-text a:hover,
+.box-text a:hover {
     opacity: 0.6;
 }

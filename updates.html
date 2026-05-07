@@ -195,33 +195,12 @@
     <h1>＊更新情報</h1>
 </div>
 
-<div class="box-area updates-list">
-
-    <!-- ▼ 新しい更新情報をここより上に追記してください（日付の新しい順） ▼ -->
-
-    <div class="update-item">
-        <div class="update-date">2025.12.13</div>
-        <div class="update-content">
-            <p class="update-text">○○を更新しました。</p>
-            <!-- 更新したページへのリンクがある場合は以下のコメントを外して編集 -->
-            <!-- <a href="/..." class="update-link">▶ ○○ページ</a> -->
-        </div>
-    </div>
-
-    <div class="update-item">
-        <div class="update-date">2025.12.01</div>
-        <div class="update-content">
-            <p class="update-text">サイトを公開しました。</p>
-            <a href="/" class="update-link">▶ トップページ</a>
-        </div>
-    </div>
-
-    <!-- ▲ ここより上に追記 ▲ -->
-
+<div class="box-area updates-list" id="updates-list">
+    <p class="update-text" style="color:#ccc;">読み込み中…</p>
 </div>
 
 <div class="box-area" style="text-align:center;">
-    <a href="/" class="update-link">▶ トップページへ戻る</a>
+    <a href="/" style="color:#fd89b9; text-decoration:underline; font-weight:bold;">▶ トップページへ戻る</a>
 </div>
 
 <script>
@@ -286,6 +265,31 @@
         });
     });
 })();
+
+// 更新情報：data/updates.json から全件を取得して表示
+fetch('/data/updates.json')
+    .then(function(r) { return r.json(); })
+    .then(function(updates) {
+        var container = document.getElementById('updates-list');
+        container.innerHTML = '';
+        updates.forEach(function(u) {
+            var item = document.createElement('div');
+            item.className = 'update-item';
+            var dt = document.createElement('div');
+            dt.className = 'update-date';
+            dt.textContent = u.date;
+            var tx = document.createElement('p');
+            tx.className = 'update-text';
+            tx.innerHTML = u.text;
+            item.appendChild(dt);
+            item.appendChild(tx);
+            container.appendChild(item);
+        });
+    })
+    .catch(function() {
+        var container = document.getElementById('updates-list');
+        container.innerHTML = '<p class="update-text" style="color:#ccc;">更新情報を読み込めませんでした。</p>';
+    });
 </script>
 
 </body>
