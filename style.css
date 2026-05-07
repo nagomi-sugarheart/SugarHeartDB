@@ -59,7 +59,7 @@ h3 {
     padding: 30px 20px;
     color: #fff2f2;
     text-align: center;
-    text-shadow: 0 0 14px rgba(255, 255, 255, 0.4), 0 3px 8px rgba(253, 137, 185, 0.45);
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .main-title h1 {
