@@ -330,11 +330,11 @@ h3 {
 /*1列目の設定*/
 .table-area td:first-child,
 .table-area th:first-child{
-  width: 100px;
+  width: 120px;
   white-space: nowrap;
   text-align: center;
   vertical-align: middle;
-  padding: 15px 10px;
+  padding: 10px 8px;
 }
 
 .table-area td,
@@ -396,13 +396,13 @@ h3 {
 }
 
 .table-area .link-image {
-    display: inline-block;  /* inline-blockのまま */
-    width: 100px;          /* 明示的に幅を指定 */
+    display: block;
+    width: 100%;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .table-area .link-image img{
-  width: 100%;           /* 親要素の100% */
+  width: 100%;
   height: auto;
   display: block;
   border-radius: 8px;
@@ -1589,4 +1589,47 @@ input[name="dialogue-tab"] {
     .header-nav {
         padding: 0 20px;
     }
+}
+
+/* ==========================
+   更新情報ページ（updates.html）
+========================== */
+
+.updates-list {
+    padding-top: 10px;
+}
+
+.update-item {
+    padding: 22px 0;
+    border-bottom: 2px dotted #fd89b9;
+}
+
+.update-item:last-child {
+    border-bottom: none;
+}
+
+.update-date {
+    font-weight: bold;
+    color: #fd89b9;
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.update-text {
+    color: #5D4037;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.update-text a,
+.box-text a {
+    color: #fd89b9;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.update-text a:hover,
+.box-text a:hover {
+    opacity: 0.6;
 }
