@@ -4,21 +4,24 @@
 html {
     overflow-x: hidden;
     width: 100%;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 64px 0 0 0;
     overflow-x: hidden;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    box-sizing: border-box;
     background-color: #F9F9F5; /* 背景をオフホワイト */
     color: #5D4037;
     font-family: "Yusei Magic", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+body.menu-open {
+    overflow: hidden;
 }
 
 p {
@@ -45,7 +48,6 @@ h3 {
 
 .main-title {
     width: 100%;
-    align-self: stretch;
     margin: 0;
     background-image: linear-gradient(rgba(214, 35, 80, 0.6), rgba(214, 35, 80, 0.6)), url('/デレステ/[この世でただひとりのはぁと]佐藤心+/[この世でただひとりのはぁと]佐藤心+.jpg');
     background-size: cover;
@@ -58,7 +60,6 @@ h3 {
 
 .sub-title {
     width: 100%;
-    align-self: stretch;
     margin: 0 0 15px 0;
     background-image: linear-gradient(45deg, #FAD766, #fd89b9);
     background-size: cover;
@@ -138,9 +139,9 @@ h3 {
 
 .box-area {
     background-color: #F9F9F5;
-    width: 95%;
+    width: 90%;
     max-width: 900px;
-    margin: 20px auto 0 auto;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #fd89b9;
@@ -394,9 +395,9 @@ h3 {
 ========================== */
 
 .tab-wrapper {
-    width: 95%;
+    width: 90%;
     max-width: 900px;
-    margin: 20px auto 0 auto;
+    margin: 20px auto;
     position: relative;
 }
 
@@ -726,6 +727,76 @@ input[name="dialogue-tab"] {
 }
 
 /* ==========================
+   シンデレラガールズ劇場（モバイルのみアコーディオン）
+========================== */
+
+/* チェックボックスは常に非表示 */
+.theater-checkbox {
+    display: none;
+}
+
+/* PC: ラベルを通常タイトルとして表示 */
+.theater-accordion-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: default;
+}
+
+/* PCでは矢印を非表示 */
+.theater-arrow {
+    display: none;
+}
+
+/* PCでは常にコンテンツ表示 */
+.theater-accordion-content {
+    display: block;
+}
+
+/* モバイルのみアコーディオン動作 */
+@media screen and (max-width: 900px) {
+    .theater-accordion-label {
+        padding: 12px 15px;
+        background-color: #fdf5f8;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        user-select: none;
+    }
+
+    .theater-accordion-label:hover {
+        background-color: #ffeaf2;
+    }
+
+    .theater-accordion-label .box-title {
+        margin: 0;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .theater-arrow {
+        display: block;
+        transition: transform 0.3s;
+        font-size: 1.2rem;
+        color: #fd89b9;
+    }
+
+    .theater-accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    .theater-checkbox:checked ~ .theater-accordion-label .theater-arrow {
+        transform: rotate(180deg);
+    }
+
+    .theater-checkbox:checked ~ .theater-accordion-content {
+        max-height: 3000px;
+    }
+}
+
+/* ==========================
    カードナビゲーション（前後のカード移動）
 ========================== */
 
@@ -1023,7 +1094,7 @@ input[name="dialogue-tab"] {
 @media screen and (max-width: 900px) {
 
     .box-area {
-        width: 95%;
+        width: 90%;
         padding: 15px;
     }
 
@@ -1039,7 +1110,7 @@ input[name="dialogue-tab"] {
     }
 
     .box-area.type-news {
-        width: 95%;
+        width: 90%;
         padding-bottom: 50px;
     }
 
@@ -1131,4 +1202,362 @@ input[name="dialogue-tab"] {
         /* 横並び設定を解除して、縦積みにする */
         grid-template-columns: 1fr;
       }
+}
+
+/* ==========================
+   サイトヘッダー
+========================== */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #ffffff;
+    border-bottom: 2px solid #fce4ec;
+    box-shadow: 0 2px 12px rgba(253, 137, 185, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.site-header.header-hidden {
+    transform: translateY(-100%);
+}
+
+/* ヘッダーナビバー */
+.header-nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #fd89b9;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: color 0.2s, opacity 0.2s;
+}
+
+.header-logo:hover {
+    color: #e06898;
+    opacity: 0.85;
+}
+
+/* PC ナビメニュー */
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+}
+
+.nav-item {
+    position: static;
+    display: flex;
+    align-items: stretch;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    color: #5D4037;
+    text-decoration: none;
+    font-size: 0.92rem;
+    position: relative;
+    transition: color 0.2s;
+    white-space: nowrap;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    right: 22px;
+    height: 2px;
+    background: #fd89b9;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+.nav-item:hover .nav-link,
+.nav-item:focus-within .nav-link {
+    color: #fd89b9;
+}
+
+.nav-item:hover .nav-link::after,
+.nav-item:focus-within .nav-link::after {
+    transform: scaleX(1);
+}
+
+/* メガメニュー */
+.mega-menu {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border-top: 1px solid #fce4ec;
+    border-bottom: 2px solid #fce4ec;
+    box-shadow: 0 8px 24px rgba(253, 137, 185, 0.14);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.32s ease, opacity 0.25s ease;
+    opacity: 0;
+}
+
+.nav-item:hover .mega-menu,
+.nav-item:focus-within .mega-menu {
+    max-height: 480px;
+    opacity: 1;
+}
+
+.mega-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 32px 32px;
+    display: flex;
+    gap: 32px;
+}
+
+.mega-col {
+    flex: 1;
+    min-width: 160px;
+}
+
+.mega-col h4 {
+    color: #fd89b9;
+    font-size: 0.78rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #fce4ec;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.mega-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mega-col ul li {
+    margin-bottom: 2px;
+}
+
+.mega-col ul li a {
+    color: #5D4037;
+    text-decoration: none;
+    font-size: 0.88rem;
+    display: block;
+    padding: 6px 0 6px 2px;
+    border-left: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s, padding-left 0.2s;
+}
+
+.mega-col ul li a:hover {
+    color: #fd89b9;
+    border-left-color: #fd89b9;
+    padding-left: 8px;
+}
+
+.mega-col ul li a.disabled {
+    color: #c8b8b8;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* ハンバーガーボタン */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #5D4037;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* モバイルメニュードロワー */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 64px;
+    right: 0;
+    width: 80%;
+    max-width: 320px;
+    bottom: 0;
+    background: #ffffff;
+    border-left: 2px solid #fce4ec;
+    box-shadow: -4px 0 16px rgba(253, 137, 185, 0.12);
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(93, 64, 55, 0.25);
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+}
+
+.mobile-nav {
+    list-style: none;
+    margin: 0;
+    padding: 12px 0 32px;
+}
+
+.mobile-item {
+    border-bottom: 1px solid #fce4ec;
+}
+
+.mobile-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    cursor: default;
+}
+
+.mobile-item-header span {
+    font-weight: bold;
+    color: #5D4037;
+    font-size: 0.95rem;
+}
+
+.accordion-toggle {
+    background: none;
+    border: 1.5px solid #fd89b9;
+    color: #fd89b9;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.accordion-toggle.open {
+    transform: rotate(45deg);
+    background: #fd89b9;
+    color: #ffffff;
+}
+
+.mobile-submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.38s ease;
+    background: #fdf5f8;
+}
+
+.mobile-submenu.open {
+    max-height: 520px;
+}
+
+.mobile-submenu li a {
+    display: block;
+    padding: 11px 20px 11px 32px;
+    color: #5D4037;
+    text-decoration: none;
+    font-size: 0.88rem;
+    border-bottom: 1px solid #fce4ec;
+    transition: color 0.2s, background 0.2s;
+}
+
+.mobile-submenu li:last-child a {
+    border-bottom: none;
+}
+
+.mobile-submenu li a:hover {
+    background: #ffeaf2;
+    color: #fd89b9;
+}
+
+.mobile-submenu li a.disabled {
+    color: #c8b8b8;
+    pointer-events: none;
+    cursor: default;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu-overlay {
+        display: block;
+    }
+
+    .header-nav {
+        padding: 0 20px;
+    }
 }
