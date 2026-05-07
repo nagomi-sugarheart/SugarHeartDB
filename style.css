@@ -1,10 +1,19 @@
 /* style.css */
 /* 水色：#8edae5 ピンク：#f99695 黄色：#F0E68C 灰色：#676f74 */
 
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #F9F9F5; /* 背景をオフホワイト */
     color: #5D4037;
     font-family: "Yusei Magic", sans-serif;
@@ -36,6 +45,7 @@ h3 {
 
 .main-title {
     width: 100%;
+    align-self: stretch;
     margin: 0;
     background-image: linear-gradient(rgba(214, 35, 80, 0.6), rgba(214, 35, 80, 0.6)), url('/デレステ/[この世でただひとりのはぁと]佐藤心+/[この世でただひとりのはぁと]佐藤心+.jpg');
     background-size: cover;
@@ -48,6 +58,7 @@ h3 {
 
 .sub-title {
     width: 100%;
+    align-self: stretch;
     margin: 0 0 15px 0;
     background-image: linear-gradient(45deg, #FAD766, #fd89b9);
     background-size: cover;
