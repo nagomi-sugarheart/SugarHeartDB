@@ -1590,3 +1590,52 @@ input[name="dialogue-tab"] {
         padding: 0 20px;
     }
 }
+
+/* ==========================
+   更新情報ページ（updates.html）
+========================== */
+
+.updates-list {
+    padding-top: 10px;
+}
+
+.update-item {
+    padding: 22px 0;
+    border-bottom: 2px dotted #fd89b9;
+}
+
+.update-item:last-child {
+    border-bottom: none;
+}
+
+.update-date {
+    font-weight: bold;
+    color: #fd89b9;
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.update-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.update-text {
+    color: #5D4037;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.update-link {
+    display: inline-block;
+    color: #fd89b9;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.update-link:hover {
+    opacity: 0.6;
+}
