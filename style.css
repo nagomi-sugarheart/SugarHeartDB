@@ -4,6 +4,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     background-color: #F9F9F5; /* 背景をオフホワイト */
     color: #5D4037;
     font-family: "Yusei Magic", sans-serif;
@@ -19,14 +20,14 @@ p {
 h2 {
     color: #fd89b9;
     font-weight: bold;
-    margin: 20px 20px auto 0 auto;
+    margin: 20px 0;
     text-align: center;
 }
 
 h3 {
     color: #fd89b9;
     font-weight: bold;
-    margin: 5px 5px auto 0 auto;
+    margin: 5px 0;
 }
 
 /* ==========================
@@ -126,14 +127,14 @@ h3 {
 
 .box-area {
     background-color: #F9F9F5;
-    width: 90%;
+    width: 95%;
+    max-width: 900px;
     margin: 20px auto 0 auto;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #fd89b9;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     position: relative;
-    min-width: 300px;
     box-sizing: border-box;
 }
 
