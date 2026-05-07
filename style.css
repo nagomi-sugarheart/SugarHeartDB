@@ -1012,7 +1012,7 @@ input[name="dialogue-tab"] {
 @media screen and (max-width: 900px) {
 
     .box-area {
-        width: 90%;
+        width: 95%;
         padding: 15px;
     }
 
@@ -1028,7 +1028,7 @@ input[name="dialogue-tab"] {
     }
 
     .box-area.type-news {
-        width: 94%;
+        width: 95%;
         padding-bottom: 50px;
     }
 
