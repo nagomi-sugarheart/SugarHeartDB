@@ -723,6 +723,76 @@ input[name="dialogue-tab"] {
 }
 
 /* ==========================
+   シンデレラガールズ劇場（モバイルのみアコーディオン）
+========================== */
+
+/* チェックボックスは常に非表示 */
+.theater-checkbox {
+    display: none;
+}
+
+/* PC: ラベルを通常タイトルとして表示 */
+.theater-accordion-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: default;
+}
+
+/* PCでは矢印を非表示 */
+.theater-arrow {
+    display: none;
+}
+
+/* PCでは常にコンテンツ表示 */
+.theater-accordion-content {
+    display: block;
+}
+
+/* モバイルのみアコーディオン動作 */
+@media screen and (max-width: 900px) {
+    .theater-accordion-label {
+        padding: 12px 15px;
+        background-color: #fdf5f8;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        user-select: none;
+    }
+
+    .theater-accordion-label:hover {
+        background-color: #ffeaf2;
+    }
+
+    .theater-accordion-label .box-title {
+        margin: 0;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .theater-arrow {
+        display: block;
+        transition: transform 0.3s;
+        font-size: 1.2rem;
+        color: #fd89b9;
+    }
+
+    .theater-accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    .theater-checkbox:checked ~ .theater-accordion-label .theater-arrow {
+        transform: rotate(180deg);
+    }
+
+    .theater-checkbox:checked ~ .theater-accordion-content {
+        max-height: 3000px;
+    }
+}
+
+/* ==========================
    カードナビゲーション（前後のカード移動）
 ========================== */
 
