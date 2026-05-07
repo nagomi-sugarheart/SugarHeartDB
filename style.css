@@ -506,6 +506,13 @@ input[name="tab-radio"] {
     text-decoration: underline;
 }
 
+.link-list a[href="#"] {
+    color: #bbb;
+    pointer-events: none;
+    cursor: default;
+    border-bottom-color: #eee;
+}
+
 /* ==========================
    カード詳細ページ
 ========================== */
@@ -1449,10 +1456,12 @@ input[name="dialogue-tab"] {
     transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 999;
+    pointer-events: none;
 }
 
 .mobile-menu.active {
     transform: translateX(0);
+    pointer-events: auto;
 }
 
 .mobile-menu-overlay {
@@ -1466,10 +1475,12 @@ input[name="dialogue-tab"] {
     z-index: 998;
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .mobile-menu-overlay.active {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .mobile-nav {
