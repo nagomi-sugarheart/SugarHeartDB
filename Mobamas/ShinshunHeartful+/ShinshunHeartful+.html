@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+	<!--ビューポート設定（スマホ対応）-->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<!--タイトル設定-->
+	<title>[新春はぁとふる]佐藤心+- カード詳細｜SugarHeartDB</title>
+	<!--説明文-->
+	<meta name="description" content = "アイドルマスターシンデレラガールズ(モバマス)の[新春はぁとふる]佐藤心+のカード詳細">
+	
+	<!--キーワード-->
+	<meta name="keywords" content="アイドルマスター,アイドルマスターシンデレラガールズ,シンデレラガールズ,デレマス,モバマス,佐藤心,しゅがーはぁと,しゅがは,カード,ﾊｰﾄ･ﾓﾃﾞﾙ">
+	
+	<!--著者情報-->
+	<meta name="author" content="なごみ（@nagomi_IMCG）">
+	
+	<!--ロボット制御-->
+	<meta name="robots" content="index, follow">
+	
+	<!-- OGPタグ -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="[新春はぁとふる]佐藤心+- カード詳細｜SugarHeartDB">
+    <meta property="og:description" content="アイドルマスターシンデレラガールズ(モバマス)の[新春はぁとふる]佐藤心+のカード詳細">
+    <meta property="og:url" content="https://yoursite.netlify.app/Mobamas_CardList.html">
+    <meta property="og:site_name" content="[新春はぁとふる]佐藤心+- カード詳細｜SugarHeartDB">
+    <meta property="og:image" content="/Mobamas/HeartModel/HeartModel.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="[新春はぁとふる]佐藤心+- カード詳細｜SugarHeartDB">
+    <meta name="twitter:description" content="[ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心のカード詳細｜アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）に関連する情報を集めたファンサイト">
+    
+    <!-- 正規URL -->
+    <link rel="canonical" href="https://yoursite.netlify.app/Mobamas_CardList.html">
+    
+    <!-- ファビコン -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png">
+	<!-- iPhone/iPad用 -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png">
+
+	<!--CSS指定-->
+	<link rel="stylesheet" href="/style.css">
+	<!--フォント指定-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+<script>
+    const cardImages = [
+        '/Mobamas/ShinshunHeartful+/ShinshunHeartful+.jpg',
+        '/Mobamas/ShinshunHeartful+/ShinshunHeartful+PremiumSign.jpg',
+        '/Mobamas/ShinshunHeartful+/ShinshunHeartful+WakuNashi.jpg',
+        '/Mobamas/ShinshunHeartful+/ShinshunHeartful+Touka.png',
+        '/Mobamas/ShinshunHeartful+/ShinshunHeartful+TsujyoSign.jpg',
+    ];
+    
+    let currentImageIndex = 0;
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const cardImage = document.querySelector('.card-image-area img');
+        const imageCounter = document.getElementById('image-counter');
+        const imageTotal = document.getElementById('image-total');
+        
+        // 画像の総数を表示
+        if (imageTotal) {
+            imageTotal.textContent = cardImages.length;
+        }
+        
+        if (cardImage) {
+            cardImage.addEventListener('click', function() {
+                currentImageIndex = (currentImageIndex + 1) % cardImages.length;
+                
+                cardImage.style.opacity = '0.5';
+                
+                setTimeout(function() {
+                    cardImage.src = cardImages[currentImageIndex];
+                    cardImage.style.opacity = '1';
+                    
+                    // カウンターを更新
+                    if (imageCounter) {
+                        imageCounter.textContent = currentImageIndex + 1;
+                    }
+                }, 150);
+            });
+            
+            cardImage.style.cursor = 'pointer';
+        }
+    });
+</script>
+<body>
+<script src="/components/header.js"></script>
+
+
+   <div class="detail-container">
+        
+        <!-- 左側：カードリスト（PC用） -->
+        <aside class="sidebar-cardlist">
+            <h3>▶ モバマス カード一覧</h3>
+            <ul>
+                <li><a href="/Mobamas/SatoShin/SatoShin.html">佐藤心</a></li>
+                <li><a href="/Mobamas/SatoShin+/SatoShin+.html">佐藤心+</a></li>
+                <li><a href="/Mobamas/TBSweetie/TBSweetie.html">[T.B.ｽｳｨｰﾃｨｰ]佐藤心</a></li>
+                <li><a href="/Mobamas/TBSweetie+/TBSweetie+.html">[T.B.ｽｳｨｰﾃｨｰ]佐藤心+</a></li>
+                <li><a href="/Mobamas/NextStarIC+/NextStarIC+.html">[ﾈｸｽﾄｽﾀｰI.C]佐藤心+</a></li>
+                <li><a href="/Mobamas/HeartModel/HeartModel.html" class="active">[ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心</a></li>
+                <li><a href="/Mobamas/HeartModel+/HeartModel+.html">[ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心+</a></li>
+                <li><a href="/Mobamas/HeartModel/HeartModelS.html">[ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心</a></li>
+                <li><a href="/Mobamas/HeartModel+/HeartModelS+.html">[ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心+</a></li>
+                <li><a href="/Mobamas/AngelHeart/AngelHeart.html">[えんじぇるはぁと]佐藤心</a></li>
+                <li><a href="/Mobamas/AngelHeart+/AngelHeart+.html">[えんじぇるはぁと]佐藤心+</a></li>
+                <li><a href="/Mobamas/HeartNoYomeiri/HeartNoYomeiri.html">[はぁとの嫁入り]佐藤心</a></li>
+                <li><a href="/Mobamas/HeartNoYomeiri+/HeartNoYomeiri+.html">[はぁとの嫁入り]佐藤心+</a></li>
+                <li><a href="/Mobamas/SweetieRoyal/SweetieRoyal.html">[ｽｳｨｰﾃｨｰ･ﾛﾜｲﾔﾙ]佐藤心</a></li>
+                <li><a href="/Mobamas/SweetieRoyal+/SweetieRoyal+.html">[ｽｳｨｰﾃｨｰ･ﾛﾜｲﾔﾙ]佐藤心+</a></li>
+                <li><a href="/Mobamas/WorkingSweetie/WorkingSweetie.html">[ﾜｰｷﾝｸﾞ･ｽｳｨｰﾃｨｰ]佐藤心</a></li>
+                <li><a href="/Mobamas/WorkingSweetie+/WorkingSweetie+.html">[ﾜｰｷﾝｸﾞ･ｽｳｨｰﾃｨｰ]佐藤心+</a></li>
+                <li><a href="/Mobamas/TokonatsuParadise/TokonatsuParadise.html">[常夏ﾊﾟﾗﾀﾞｲｽ]佐藤心</a></li>
+                <li><a href="/Mobamas/TokonatsuParadise+/TokonatsuParadise+.html">[常夏ﾊﾟﾗﾀﾞｲｽ]佐藤心+</a></li>
+                <li><a href="/Mobamas/ChikuttoSweetie/ChikuttoSweetie.html">[ﾁｸｯとｽｳｨｰﾃｨｰ]佐藤心</a></li>
+                <li><a href="/Mobamas/ChikuttoSweetie+/ChikuttoSweetie+.html">[ﾁｸｯとｽｳｨｰﾃｨｰ]佐藤心+</a></li>
+                <li><a href="/Mobamas/6thAnniversary/6thAnniversary.html">[6thｱﾆﾊﾞｰｻﾘｰ]佐藤心</a></li>
+                <li><a href="/Mobamas/6thAnniversary+/6thAnniversary+.html">[6thｱﾆﾊﾞｰｻﾘｰ]佐藤心+</a></li>
+                <li><a href="/Mobamas/6thAnniversary/6thAnniversaryS.html">[6thｱﾆﾊﾞｰｻﾘｰ･S]佐藤心</a></li>
+                <li><a href="/Mobamas/6thAnniversary+/6thAnniversaryS+.html">[6thｱﾆﾊﾞｰｻﾘｰ･S]佐藤心+</a></li>
+                <li><a href="/Mobamas/FallingHeart/FallingHeart.html">[ふぉーりんはぁと]佐藤心</a></li>
+                <li><a href="/Mobamas/FallingHeart+/FallingHeart+.html">[ふぉーりんはぁと]佐藤心+</a></li>
+                <li><a href="/Mobamas/ShinshunHeartful/ShinshunHeartful.html">[新春はぁとふる]佐藤心</a></li>
+                <li><a href="/Mobamas/ShinshunHeartful+/ShinshunHeartful+.html">[新春はぁとふる]佐藤心+</a></li>
+                <li><a href="/Mobamas/NatsuiroHeart/NatsuiroHeart.html">[夏色はぁと]佐藤心</a></li>
+                <li><a href="/Mobamas/NatsuiroHeart+/NatsuiroHeart+.html">[夏色はぁと]佐藤心+</a></li>
+                <li><a href="/Mobamas/SweetieNewYear/SweetieNewYear.html">[ｽｳｨｰﾃｨｰ･ﾆｭｰｲﾔｰ]佐藤心</a></li>
+                <li><a href="/Mobamas/SweetieNewYear+/SweetieNewYear+.html">[ｽｳｨｰﾃｨｰ･ﾆｭｰｲﾔｰ]佐藤心+</a></li>
+                <li><a href="/Mobamas/MerryChristmasHeart/MerryChristmasHeart.html">[ﾒﾘｸﾘ☆ﾊｰﾄ]佐藤心</a></li>
+                <li><a href="/Mobamas/MerryChristmasHeart+/MerryChristmasHeart+.html">[ﾒﾘｸﾘ☆ﾊｰﾄ]佐藤心+</a></li>
+                <li><a href="/Mobamas/BrilliantHeart/BrilliantHeart.html">[ﾌﾞﾘﾘｱﾝﾄ･はぁと]佐藤心</a></li>
+                <li><a href="/Mobamas/BrilliantHeart+/BrilliantHeart+.html">[ﾌﾞﾘﾘｱﾝﾄ･はぁと]佐藤心+</a></li>
+                <li><a href="/Mobamas/StylishHeart/StylishHeart.html">[ｽﾀｲﾘｯｼｭ･はぁと]佐藤心</a></li>
+                <li><a href="/Mobamas/StylishHeart+/StylishHeart+.html">[ｽﾀｲﾘｯｼｭ･はぁと]佐藤心+</a></li>
+            </ul>
+
+            <h3>▶ デレステ カード一覧</h3>
+            <ul>
+                <li><a href="/Deresute/SatoShin/SatoShin.html">佐藤心</a></li>
+                <li><a href="/Deresute/SatoShin+/SatoShin+.html">佐藤心+</a></li>
+                <li><a href="/Deresute/HeartModel/HeartModel.html">[ハート・モデル]佐藤心</a></li>
+                <li><a href="/Deresute/HeartModel+/HeartModel+.html">[ハート・モデル]佐藤心+</a></li>
+                <li><a href="/Deresute/HeartToHeart/HeartToHeart.html">[はぁとトゥハート]佐藤心</a></li>
+                <li><a href="/Deresute/HeartToHeart+/HeartToHeart+.html">[はぁとトゥハート]佐藤心+</a></li>
+                <li><a href="/Deresute/HeartNoYomeiri/HeartNoYomeiri.html">[はぁとの嫁入り]佐藤心</a></li>
+                <li><a href="/Deresute/HeartNoYomeiri+/HeartNoYomeiri+.html">[はぁとの嫁入り]佐藤心+</a></li>
+                <li><a href="/Deresute/BrilliantHeart/BrilliantHeart.html">[ブリリアント・はぁと]佐藤心</a></li>
+                <li><a href="/Deresute/BrilliantHeart+/BrilliantHeart+.html">[ブリリアント・はぁと]佐藤心+</a></li>
+                <li><a href="/Deresute/HappyNewYeah/HappyNewYeah.html">[Happy New Yeah！]佐藤心</a></li>
+                <li><a href="/Deresute/HappyNewYeah+/HappyNewYeah+.html">[Happy New Yeah！]佐藤心+</a></li>
+                <li><a href="/Deresute/DekobokoSpeedStar/DekobokoSpeedStar.html">[凸凹スピードスター]佐藤心</a></li>
+                <li><a href="/Deresute/DekobokoSpeedStar+/DekobokoSpeedStar+.html">[凸凹スピードスター]佐藤心+</a></li>
+                <li><a href="/Deresute/OrderMadeHeart/OrderMadeHeart.html">[オーダーメイド・はぁと]佐藤心</a></li>
+                <li><a href="/Deresute/OrderMadeHeart+/OrderMadeHeart+.html">[オーダーメイド・はぁと]佐藤心+</a></li>
+                <li><a href="/Deresute/LuxuryHeart/LuxuryHeart.html">[ラグジュアリィ・はぁと]佐藤心</a></li>
+                <li><a href="/Deresute/LuxuryHeart+/LuxuryHeart+.html">[ラグジュアリィ・はぁと]佐藤心+</a></li>
+                <li><a href="/Deresute/GoJustGo/GoJustGo.html">[Go Just Go！]佐藤心</a></li>
+                <li><a href="/Deresute/GoJustGo+/GoJustGo+.html">[Go Just Go！]佐藤心+</a></li>
+                <li><a href="/Deresute/OdoruFlagship/OdoruFlagship.html">[躍るFLAGSHIP]佐藤心</a></li>
+                <li><a href="/Deresute/OdoruFlagship+/OdoruFlagship+.html">[躍るFLAGSHIP]佐藤心+</a></li>
+                <li><a href="/Deresute/HeartfulSweeteenSatoShin/Deresute_HeartfulSweeteenSatoShin.html">HeartfulSweeteen佐藤心</a></li>
+                <li><a href="/Deresute/HeartfulSweeteenSatoShin+/Deresute_HeartfulSweeteenSatoShin+.html">HeartfulSweeteen佐藤心+</a></li>
+                <li><a href="/Deresute/CoCoNatsuNatsuNatsuHoliday/CoCoNatsuNatsuNatsuHoliday.html">[CoCo夏夏夏Holiday]佐藤心</a></li>
+                <li><a href="/Deresute/CoCoNatsuNatsuNatsuHoliday+/CoCoNatsuNatsuNatsuHoliday+.html">[CoCo夏夏夏Holiday]佐藤心+</a></li>
+                <li><a href="/Deresute/KoisuruSweetieSummer/KoisuruSweetieSummer.html">[恋するスウィーティーサマー]佐藤心</a></li>
+                <li><a href="/Deresute/KoisuruSweetieSummer+/KoisuruSweetieSummer+.html">[恋するスウィーティーサマー]佐藤心+</a></li>
+                <li><a href="/Deresute/DancingDead/DancingDead.html">[ダンシング・デッド]佐藤心</a></li>
+                <li><a href="/Deresute/DancingDead+/DancingDead+.html">[ダンシング・デッド]佐藤心+</a></li>
+                <li><a href="/Deresute/AisareQueenHeart/AisareQueenHeart.html">[愛されクイーン・はぁと]佐藤心</a></li>
+                <li><a href="/Deresute/AisareQueenHeart+/AisareQueenHeart+.html">[愛されクイーン・はぁと]佐藤心+</a></li>
+                <li><a href="/Deresute/DokonjoReporter/Deresute_DokonjoReporter.html">[ド根性⭐︎レポーター]佐藤心</a></li>
+                <li><a href="/Deresute/DokonjoReporter+/Deresute_DokonjoReporter+.html">[ド根性⭐︎レポーター]佐藤心+</a></li>
+                <li><a href="/Deresute/ManatsunoHeartMeetsHeart/Deresute_ManatsunoHeartMeetsHeart.html">[真夏の⭐︎はぁとミーツハート]佐藤心</a></li>
+                <li><a href="/Deresute/ManatsunoHeartMeetsHeart+/Deresute_ManatsunoHeartMeetsHeart+.html">[真夏の⭐︎はぁとミーツハート]佐藤心+</a></li>
+                <li><a href="/Deresute/KonoyoDeTadaHitoriNoHeart/KonoyoDeTadaHitoriNoHeart.html">[この世でただひとりのはぁと]佐藤心</a></li>
+                <li><a href="/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.html">[この世でただひとりのはぁと]佐藤心+</a></li>
+            </ul>
+
+        </aside>
+
+<!-- ★ 右側:メインコンテンツ -->
+    <main class="detail-main">
+        
+        <!-- ■ カード名とリリース日 -->
+        <div class="sub-title">
+            <h1>[新春はぁとふる]佐藤心+</h1>
+            <span class="sub-title-date">2018.12.31</span>
+        </div>
+        
+        <!-- ■ 前後のカードへのナビゲーション -->
+        <nav class="card-navigation">
+            <!-- 前のカード -->
+            <a href="/Mobamas/ShinshunHeartful/ShinshunHeartful.html" class="nav-card nav-prev">
+                <span class="nav-arrow">◀</span>
+                <img src="/Mobamas/ShinshunHeartful/ShinshunHeartfulIcon.jpg" alt="前のカード" class="nav-card-icon">
+                <div class="nav-card-info">
+                    <span class="nav-label">前のカード</span>
+                    <span class="nav-card-name">[新春はぁとふる]佐藤心</span>
+                </div>
+            </a>
+            
+            <!-- 次のカード -->
+            <a href="/Mobamas/NatsuiroHeart/NatsuiroHeart.html" class="nav-card nav-next">
+                <span class="nav-arrow">▶</span>
+                <img src="/Mobamas/NatsuiroHeart/NatsuiroHeartIcon.jpg" alt="次のカード" class="nav-card-icon">
+                <div class="nav-card-info">
+                    <span class="nav-label">次のカード</span>
+                    <span class="nav-card-name">[夏色はぁと]佐藤心</span>
+                </div>
+            </a>
+            </nav>
+        
+        <!-- ■ カード画像表示エリア -->
+        <div class="card-image-area">
+            <img src="/Mobamas/ShinshunHeartful+/ShinshunHeartful+.jpg" alt="[新春はぁとふる]佐藤心+">
+            <p class="image-switch-hint">タップして画像を切り替え (<span id="image-counter">1</span>/<span id="image-total">4</span>)</p>
+        </div>
+        
+        <!-- ■ セリフエリア -->
+        <div class="dialogue-area">
+            <h2 class="box-title">セリフ</h2>
+            
+            <!-- タブ切り替え用のラジオボタン -->
+            <input type="radio" name="dialogue-tab" id="dialogue-tab1" checked>
+            <input type="radio" name="dialogue-tab" id="dialogue-tab2">
+            
+            <!-- タブナビゲーション -->
+            <div class="dialogue-tab-nav">
+                <label for="dialogue-tab1" class="dialogue-tab-btn dialogue-tab-btn1">テキスト</label>
+                <label for="dialogue-tab2" class="dialogue-tab-btn dialogue-tab-btn2">画像・動画</label>
+            </div>
+            
+            <!-- タブ1: テキスト -->
+            <div class="dialogue-tab-content dialogue-content1">
+                
+                <!-- アコーディオン1 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion1" class="accordion-checkbox">
+                    <label for="accordion1" class="accordion-label">
+                        <span>あいさつ</span>
+                        <span class="accordion-arrow">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <h2 class="box-title">アイドルコメント</h2>
+                        <p>控えおろ～っ! ﾆｭｰｲﾔｰ･はぁとの登場だぞ☆今年一年､ｽｳｨｰﾃｨｰでﾌｧﾝﾀｽﾃｨｰｯｸな毎日にしたい､そこのｱ･ﾅ･ﾀ♪はぁとにはお見通し☆その気持ち､はぁとのﾊｰﾄに､だいれくといん☆し･て･る♪</p>
+                        <h2 class="box-title">マイスタジオ</h2>
+                        <p>ｽｳｨｰﾃｨｰでおﾆｭｰな春でしょ☆</p>
+                        <p>はじめっから元気だしてけｰ?</p>
+                        <p>新しいはぁと､今年も見せるぞ?</p>
+                        <p>おわっ…! お､思った以上に速い…! た､体幹が…ぶれるぅ～っ</p>
+                    </div>
+                </div>
+                
+                <!-- アコーディオン2 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion2" class="accordion-checkbox">
+                    <label for="accordion2" class="accordion-label">
+                        <span>お仕事</span>
+                        <span class="accordion-arrow">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <h2 class="box-title">お仕事</h2>
+                        <p>はぁとの手から､離れちゃｲﾔ～ﾝ</p>
+                        <p>あぁんっ､お日様が眩すぃｰ☆</p>
+                        <p>うりうり～☆真っすぐｺﾞｰｺﾞｰ!</p>
+                        <p>一年のはぁとは､元旦にあり♪今からばっちり見ておけよｰ☆</p>
+                        <h2 class="box-title">お仕事（親愛度UP）</h2>
+                        <p>なりふり構わずやってみろって♪失う怖さより､やらないﾂﾗさ!</p>
+                        <h2 class="box-title">LIVEバトル</h2>
+                        <p>壁があったら､ﾌﾞﾁ壊す☆</p>
+                    </div>
+                </div>
+                
+                <!-- アコーディオン3 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion3" class="accordion-checkbox">
+                    <label for="accordion3" class="accordion-label">
+                        <span>親愛度MAX</span>
+                        <span class="accordion-arrow">▼</span>
+                    </label>
+                    <div class="accordion-content">
+                        <h2 class="box-title">マイスタジオ（親愛度MAX）</h2>
+                        <p>前向きなのがはぁとのいいところ! ﾌﾟﾛﾃﾞｭｰｻｰにも前のめり☆</p>
+                        <h2 class="box-title">お仕事（親愛度MAX）</h2>
+                        <p>幸運は自分の手で掴まないと味気ないし! ほら､手ぇ出して♪</p>
+                        <h2 class="box-title">親愛度MAX演出</h2>
+                        <p>めいっぱい遊んで､めいっぱいｱｲﾄﾞﾙする! これがはぁとの抱負♪ﾌﾟﾛﾃﾞｭｰｻｰは今年も楽しんでﾌﾟﾛﾃﾞｭｰｽすること! 約束ねっ☆</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- タブ2: 画像・動画 -->
+            <div class="dialogue-tab-content dialogue-content2">
+                <p>画像のご提供を募集しております。</p>
+            </div>
+            
+        </div>
+        <!-- ここまでがdialogue-area -->
+        
+        <!-- ■ 詳細ページ用のコンテナ（劇場・ギャラリー・性能など） -->
+        <div class="detailpage-container">
+            
+            <!-- 左側:劇場エリア -->
+            <div class="side-area">
+                <div class="box-area">
+                    <input type="checkbox" id="theater-toggle" class="theater-checkbox">
+                    <label for="theater-toggle" class="theater-accordion-label">
+                        <h3 class="box-title">シンデレラガールズ劇場</h3>
+                        <span class="theater-arrow">▼</span>
+                    </label>
+                    <div class="theater-accordion-content">
+                        <img src="/Mobamas/Other/ShingekiEp391.jpg" alt="シンデレラガールズ劇場391話" class="img-full-center">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 右側:その他情報エリア -->
+            <div class="other-area">
+                
+                <!-- 関連ギャラリー -->
+                <div class="box-area">
+                    <h3 class="box-title">関連ギャラリー</h3>
+                    <div class="image-scroll-area">
+                        <img src="/Mobamas/ShinshunHeartful+/ShinshunHeartful+.jpg" alt="[新春はぁとふる]佐藤心+">
+                        <img src="/Mobamas/ShinshunHeartful+/ShinshunHeartful+Icon.jpg" alt="[新春はぁとふる]佐藤心+アイコン">
+                        <img src="/Mobamas/ShinshunHeartful+/ShinshunHeartful+PremiumSign.jpg" alt="[新春はぁとふる]佐藤心+プレミアムサイン">
+                        <img src="/Mobamas/ShinshunHeartful+/ShinshunHeartful+WakuNashi.jpg" alt="[新春はぁとふる]佐藤心+枠なし">
+                        <img src="/Mobamas/ShinshunHeartful+/ShinshunHeartful+Hensei.jpg" alt="[新春はぁとふる]佐藤心+編成">
+                        <img src="/Mobamas/ShinshunHeartful+/ShinshunHeartful+Touka.png" alt="[新春はぁとふる]佐藤心+透過">
+                        <img src="/Mobamas/ShinshunHeartful+/ShinshunHeartful+TsujyoSign.jpg" alt="[新春はぁとふる]佐藤心+通常サイン">
+                    </div>
+                </div>
+                
+                <!-- カード性能 -->
+                <div class="box-area">
+                    <h3 class="box-title">カード性能</h3>
+                    <div class="box-item">
+                        <span class="box-subtitle">レアリティ</span>
+                        <span class="box-text">SR+（Sレア+）</span>
+                    </div>
+                    <div class="box-item">
+                        <span class="box-subtitle">最大Lv</span>
+                        <span class="box-text">70</span>
+                    </div>
+                    <div class="box-item">
+                        <span class="box-subtitle">コスト</span>
+                        <span class="box-text">25</span>
+                    </div>
+                    <div class="box-item">
+                        <span class="box-subtitle">最大攻（初期攻）</span>
+                        <span class="box-text">28938（8736）</span>
+                    </div>
+                    <div class="box-item">
+                        <span class="box-subtitle">最大守（初期守）</span>
+                        <span class="box-text">28859（8712）</span>
+                    </div>
+                    <div class="box-item">
+                        <span class="box-subtitle">特技（効果）</span>
+                        <span class="box-text">明けましてｽｳｨｰﾃｨｰ（全ﾀｲﾌﾟのﾌﾛﾝﾄﾒﾝﾊﾞｰ及びﾊﾞｯｸﾒﾝﾊﾞｰ上位5人の攻守 究極ｱｯﾌﾟ）</span>
+                    </div>
+                </div>
+                
+                <!-- 関連ページ -->
+                <div class="box-area">
+                    <h3 class="box-title">関連ページ</h3>
+                    <div class="link-list">
+                        <a href="#">▶ 目指せきらきらモデル アイドルチャレンジ</a>
+                        <a href="/Mobamas/NextStarIC+/NextStarIC+.html">▶ [ﾈｸｽﾄｽﾀｰI.C]佐藤心+</a>
+                        <a href="/Mobamas/HeartModel+/HeartModel+.html">▶ [ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心+</a>
+                        <a href="/Mobamas/HeartModel/HeartModelS.html">▶ [ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心</a>
+                        <a href="/Mobamas/HeartModel+/HeartModelS+.html">▶ [ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心+</a>
+                        <a href="#">▶ きらきらモデルfrom NSC（ユニット）</a>
+                        <a href="#">▶ 外はしっかり、中はふっくら（デレステ営業コミュ）</a>
+                        <a href="#">▶ EVERLASTING（デレステイベントコミュ）</a>
+                        <a href="#">▶ [季節の風を感じて]松尾千鶴</a>
+                        <a href="#">▶ [季節の風を感じて]松尾千鶴+</a>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- ここまでがother-area -->
+            
+        </div>
+        <!-- ここまでがdetailpage-container -->
+        
+        <!-- ■ ページ下部のナビゲーション（再掲） -->
+        <nav class="card-navigation">
+            <!-- 前のカード -->
+            <a href="/Mobamas/ShinshunHeartful/ShinshunHeartful.html" class="nav-card nav-prev">
+                <span class="nav-arrow">◀</span>
+                <img src="/Mobamas/ShinshunHeartful/ShinshunHeartfulIcon.jpg" alt="前のカード" class="nav-card-icon">
+                <div class="nav-card-info">
+                    <span class="nav-label">前のカード</span>
+                    <span class="nav-card-name">[新春はぁとふる]佐藤心</span>
+                </div>
+            </a>
+            
+            <!-- 次のカード -->
+            <a href="/Mobamas/NatsuiroHeart/NatsuiroHeart.html" class="nav-card nav-next">
+                <span class="nav-arrow">▶</span>
+                <img src="/Mobamas/NatsuiroHeart/NatsuiroHeartIcon.jpg" alt="次のカード" class="nav-card-icon">
+                <div class="nav-card-info">
+                    <span class="nav-label">次のカード</span>
+                    <span class="nav-card-name">[夏色はぁと]佐藤心</span>
+                </div>
+            </a>
+            </nav>
+        
+    </main>
+    <!-- ここまでがdetail-main -->
+    
+</div>
+<!-- ここまでがdetail-container -->
+ 
+
+
+</body>
+ </html>
