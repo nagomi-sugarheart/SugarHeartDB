@@ -12,7 +12,7 @@
 - **リポジトリ：** https://github.com/nagomi-sugarheart/SugarHeartDB
 - **本番URL：** https://sugarheart-db.netlify.app/
 - **フォント：** Yusei Magic（Google Fonts）
-- **JavaScript：** 各HTMLファイルの `<script>` タグに直書き（外部JSファイルは使わない）
+- **JavaScript：** ページ固有のJS（画像切り替えなど）は各HTMLファイルの `<script>` タグに直書き。共通ヘッダーのみ `components/header.js` に集約
 
 ## ファイル構成
 
@@ -21,33 +21,41 @@
 ├── index.html                  # トップページ
 ├── style.css                   # 全ページ共通のスタイル（CSSはこの1ファイルに集約）
 ├── SugarHeartHistory.html      # しゅがーはぁとの年表ページ
+├── updates.html                # 更新情報一覧ページ
 ├── CLAUDE.md                   # このファイル
-├── data/                       # データフォルダ（将来利用予定）
-├── デレステ/                    # デレステ関連
-│   ├── Deresute_CardList.html  # デレステカード一覧
+├── components/
+│   └── header.js               # 共通ヘッダー（ナビ・ハンバーガーJS）★ナビ更新はここだけ
+├── data/
+│   └── updates.json            # 更新情報データ（index.html・updates.htmlが読み込む）
+├── Favicon/                    # ファビコン画像
+├── Mobamas/                    # モバマス関連
+│   ├── CardList.html           # カード一覧
+│   ├── NaganoAreaBossLines.html
+│   ├── EventList.html
+│   ├── ... （その他コンテンツページ）
 │   └── [カード名]/
-│       ├── Deresute_[カード名].html
-│       ├── [カード名]アイコン.jpg
+│       ├── [カード名].html
+│       ├── [カード名]Icon.jpg
 │       └── [カード名].jpg
-├── モバマス/                    # モバマス関連
-│   ├── Mobamas_CardList.html   # モバマスカード一覧
+├── Deresute/                   # デレステ関連
+│   ├── CardList.html
+│   ├── EventList.html
+│   ├── ... （その他コンテンツページ）
 │   └── [カード名]/
-│       ├── Mobamas_[カード名].html
-│       ├── [カード名]アイコン.jpg
+│       ├── [カード名].html
 │       └── [カード名].jpg
-└── ファビコン/                  # ファビコン画像
+├── Popmas/                     # ポプマス関連
+│   └── ... （コンテンツページ）
+└── General/                    # その他（総選挙・歌唱曲・ライブ等）
+    └── ... （コンテンツページ）
 ```
 
-### HTMLファイル一覧
+### ファイル命名規則
 
-| ファイル名 | 役割 |
-|---|---|
-| index.html | トップページ（プロフィール・更新情報・各ページへのリンク） |
-| SugarHeartHistory.html | しゅがーはぁとの年表ページ |
-| モバマス/Mobamas_CardList.html | モバマスのカード一覧ページ |
-| デレステ/Deresute_CardList.html | デレステのカード一覧ページ |
-| モバマス/[カード名]/Mobamas_[カード名].html | モバマス カード詳細ページ |
-| デレステ/[カード名]/Deresute_[カード名].html | デレステ カード詳細ページ |
+- ディレクトリ名はUpperCamelCase英語（例：`Mobamas/`, `Deresute/`, `Popmas/`, `General/`）
+- ファイル名はディレクトリ名の繰り返しを省く（例：`Mobamas/CardList.html`、`Deresute/EventList.html`）
+- カード詳細ページ：`[カード名ディレクトリ]/[カード名].html`（例：`Mobamas/AngelHeart/AngelHeart.html`）
+- ページ種別をまたぐ場合はプレフィックスで区別（例：`Event_HappyNewYeah.html`, `SeasonalEvents_Birthday.html`）
 
 ※今後もHTMLファイルは増やしていく予定
 
@@ -73,42 +81,16 @@
 
 ## サイト共通ヘッダー
 
-全HTMLページの `<body>` 直後に以下の構造を挿入する。
+**ナビを更新するときは `components/header.js` の `HEADER_HTML` 変数だけ編集すればよい。HTMLファイルは触らなくてよい。**
+
+全HTMLページの `<body>` 直後に以下の1行を入れるだけでヘッダーが挿入される。
 
 ```html
-<header class="site-header" id="site-header">
-    <nav class="header-nav">
-        <a href="/" class="header-logo">SugarHeartDB</a>
-        <ul class="nav-menu">
-            <!-- PC用メガメニュー付きナビ -->
-            <li class="nav-item"> ... </li>
-        </ul>
-        <button class="hamburger" id="hamburger" aria-label="メニューを開く">
-            <span></span><span></span><span></span>
-        </button>
-    </nav>
-    <div class="mobile-menu-overlay" id="mobile-overlay"></div>
-    <div class="mobile-menu" id="mobile-menu">
-        <!-- モバイル用ドロワーメニュー -->
-    </div>
-</header>
+<body>
+<script src="/components/header.js"></script>
 ```
 
-各ページの `</body>` 直前に以下のスクリプトを挿入する（スマートヘッダー・ハンバーガー・アコーディオン制御）。
-
-```html
-<script>
-(function () {
-    var header = document.getElementById('site-header');
-    var hamburger = document.getElementById('hamburger');
-    var mobileMenu = document.getElementById('mobile-menu');
-    var overlay = document.getElementById('mobile-overlay');
-    var lastScrollY = 0;
-    // スマートヘッダー・ハンバーガー・アコーディオンのイベント処理
-    // ... (index.html のスクリプトを参照)
-})();
-</script>
-```
+`header.js` は `document.currentScript.insertAdjacentHTML('beforebegin', HEADER_HTML)` でヘッダーを同期的にDOM注入し、ハンバーガー・スクロール・アコーディオンのイベントも自動設定する。
 
 - **未実装ページへのリンク**は `<a class="disabled">` にする（CSS でグレーアウト・クリック不可）
 - メガメニュー内・モバイルドロワー内・`.link-list` 内すべてで `href="#"` または `class="disabled"` を使う
@@ -147,6 +129,10 @@
 | `.dialogue-area` | カードのセリフ表示エリア |
 | `.theater-checkbox` / `.theater-accordion-label` / `.theater-accordion-content` | シンデレラガールズ劇場セクションのアコーディオン（PCは常時展開、モバイルは閉じた状態） |
 | `.disabled` | 未実装リンクのグレーアウト（pointer-events: none） |
+| `.boss-split` | ボスセリフページの左右分割レイアウト（PC: flex / mobile: block） |
+| `.boss-table-wrap` | ボスセリフ表のラッパー（左カラム） |
+| `.boss-img-pc` | ボスセリフ画像エリア（PCのみ表示、右カラム） |
+| `.boss-img-mobile` | ボスセリフ画像アコーディオン（モバイルのみ表示） |
 
 ## ページ構成の方針
 
@@ -178,19 +164,21 @@
   - 関連ページリンク
 - `cardImages` 配列（`<script>` タグ内）で画像パスを管理し、タップで切り替え
 
-## 今後追加予定のページ
+## 今後追加予定のページ（コンテンツ未記入のスケルトンは作成済み）
 
-- モバマス：長野エリアボスセリフ、ぷちでれら、イベント、ユニット、季節イベント、その他コミュ
-- デレステ：メモリアルコミュ、ストーリーコミュ、共通衣装、参加イベント、その他コミュ、シンデレラシアター
+- モバマス：ぷちでれら、イベント詳細、ユニット、季節イベント詳細、各種コミュ
+- デレステ：各コミュ詳細、各イベント詳細、衣装詳細、ゲスト参加詳細
 - ポプマス：イラスト、ホームセリフ、親愛度セリフ、イベントセリフ
-- その他：歌唱曲、ライブ、アニメ・漫画、コラボ、総選挙、他アイドル呼称
+- その他：各詳細コンテンツ
+- 共通：シンデレラシアター、他アイドル呼称
 
 ## 開発時の注意事項
 
 - CSSは `style.css` のみに記載。HTMLファイルに `<style>` タグを書かない
-- JSは各HTMLファイル末尾の `<script>` タグに直書き。外部JSファイルは作らない
-- 画像パスはルートからの絶対パスで記載（例：`/モバマス/佐藤心/佐藤心アイコン.jpg`）
-- 新しいHTMLページを作る際は必ず `style.css` をリンクし、共通ヘッダーを挿入する
+- **ナビ変更は `components/header.js` の `HEADER_HTML` だけ編集する**。HTMLファイルは触らない
+- ページ固有のJS（`cardImages` 配列・fetchなど）は各HTMLファイルの `<script>` タグに直書き
+- 新しいHTMLページを作る際は `<head>` に `style.css` をリンクし、`<body>` 直後に `<script src="/components/header.js"></script>` を入れる
+- 画像パスはルートからの絶対パスで記載（例：`/Mobamas/AngelHeart/AngelHeartIcon.jpg`）
 - スマホ対応（`@media screen and (max-width: 900px)`）を忘れない
 - xlsxファイルはGitの管理対象外（.gitignoreで除外済み）
 - コミットしたら自動でNetlifyにデプロイされる
