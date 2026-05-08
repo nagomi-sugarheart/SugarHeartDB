@@ -1636,3 +1636,63 @@ input[name="dialogue-tab"] {
 .box-text a:hover {
     opacity: 0.6;
 }
+
+/* ==========================
+   ボスセリフ 左右分割レイアウト
+========================== */
+
+.boss-split {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.boss-table-wrap {
+    flex: 1;
+    min-width: 0;
+}
+
+/* table-area をコンテナ幅に合わせて上書き */
+.boss-table-wrap .table-area {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+/* 列幅はcolgroup側で指定するのでfirst-child固定幅を解除 */
+.boss-table-wrap .table-area td:first-child,
+.boss-table-wrap .table-area th:first-child {
+    width: auto;
+    white-space: normal;
+    text-align: center;
+}
+
+.boss-img-pc {
+    flex: 1;
+    min-width: 0;
+}
+
+.boss-img-pc img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.boss-img-mobile {
+    display: none;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .boss-split {
+        display: block;
+    }
+    .boss-img-pc {
+        display: none;
+    }
+    .boss-img-mobile {
+        display: block;
+    }
+}
