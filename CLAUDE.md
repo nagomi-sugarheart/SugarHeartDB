@@ -54,7 +54,7 @@
 
 - ディレクトリ名はUpperCamelCase英語（例：`Mobamas/`, `Deresute/`, `Popmas/`, `General/`）
 - ファイル名はディレクトリ名の繰り返しを省く（例：`Mobamas/CardList.html`、`Deresute/EventList.html`）
-- カード詳細ページ：`[カード名ディレクトリ]/[カード名].html`（例：`Mobamas/AngelHeart/AngelHeart.html`）
+ - カード詳細ページ：`[カード名ディレクトリ]/[カード名].html`（例：`Mobamas/AngelHeart/AngelHeart.html`）
 - ページ種別をまたぐ場合はプレフィックスで区別（例：`Event_HappyNewYeah.html`, `SeasonalEvents_Birthday.html`）
 
 ※今後もHTMLファイルは増やしていく予定
