@@ -15,16 +15,16 @@
                             <h4>カード・コミュ</h4>\n\
                             <ul>\n\
                                 <li><a href="/Mobamas/CardList.html">カード一覧</a></li>\n\
-                                <li><a href="/Mobamas/NaganoAreaBossLines.html">長野エリアボスセリフ</a></li>\n\
+                                <li><a href="/Mobamas/NaganoArea/NaganoAreaBoss.html">長野エリアボスセリフ</a></li>\n\
                                 <li><a href="/Mobamas/PuchiDerela.html">ぷちでれら</a></li>\n\
                             </ul>\n\
                         </div>\n\
                         <div class="mega-col">\n\
                             <h4>イベント・ユニット</h4>\n\
                             <ul>\n\
-                                <li><a href="/Mobamas/EventList.html">イベント</a></li>\n\
-                                <li><a href="/Mobamas/UnitList.html">ユニット</a></li>\n\
-                                <li><a href="/Mobamas/SeasonalEvents.html">季節イベント</a></li>\n\
+                                <li><a href="/Mobamas/Event/EventList.html">イベント一覧</a></li>\n\
+                                <li><a href="/Mobamas/Unit/UnitList.html">ユニット一覧</a></li>\n\
+                                <li><a href="/Mobamas/SeasonalEvents/SeasonalEvents.html">季節イベント一覧</a></li>\n\
                             </ul>\n\
                         </div>\n\
                         <div class="mega-col">\n\
@@ -45,23 +45,17 @@
                             <h4>カード・コミュ</h4>\n\
                             <ul>\n\
                                 <li><a href="/Deresute/CardList.html">カード一覧</a></li>\n\
-                                <li><a href="/Deresute/CommonCommu.html">メモリアルコミュ・ストーリーコミュ</a></li>\n\
-                                <li><a href="/Deresute/CostumeList.html">その他共通衣装</a></li>\n\
+                                <li><a href="/Deresute/Common/CommonCommu.html">共通コミュ・ボイス</a></li>\n\
+                                <li><a href="/Deresute/Event/EventList.html">メインイベント</a></li>\n\
+                                <li><a href="/Deresute/GuestCommu/GuestCommu.html">ゲスト参加コミュ＆映り込みカード</a></li>\n\
                             </ul>\n\
                         </div>\n\
                         <div class="mega-col">\n\
-                            <h4>イベント・その他</h4>\n\
+                            <h4>その他</h4>\n\
                             <ul>\n\
-                                <li><a href="/Deresute/EventList.html">参加イベント</a></li>\n\
-                                <li><a href="/Deresute/Other.html">その他コミュ</a></li>\n\
-                            </ul>\n\
-                        </div>\n\
-                        <div class="mega-col">\n\
-                            <h4>コンテンツ</h4>\n\
-                            <ul>\n\
+                                <li><a href="/Deresute/CostumeList.html">衣装一覧</a></li>\n\
                                 <li><a class="disabled">シンデレラシアター</a></li>\n\
-                                <li><a href="/Deresute/GuestCommu.html">ゲスト参加コミュ＆映り込みカード</a></li>\n\
-                                <li><a href="/Deresute/Other.html">その他</a></li>\n\
+                                <li><a href="/Deresute/Other/Other.html">その他</a></li>\n\
                             </ul>\n\
                         </div>\n\
                     </div>\n\
@@ -74,10 +68,6 @@
                         <div class="mega-col">\n\
                             <h4>コンテンツ</h4>\n\
                             <ul>\n\
-                                <li><a class="disabled">イラスト</a></li>\n\
-                                <li><a class="disabled">ホームセリフ</a></li>\n\
-                                <li><a class="disabled">親愛度セリフ</a></li>\n\
-                                <li><a class="disabled">イベントセリフ</a></li>\n\
                                 <li><a href="/Popmas/BasicInfo.html">基本情報</a></li>\n\
                                 <li><a href="/Popmas/FinalEventLines.html">ファイナルイベントセリフ</a></li>\n\
                                 <li><a href="/Popmas/Other.html">その他</a></li>\n\
@@ -124,9 +114,9 @@
                     <li><a href="/Mobamas/CardList.html">カード一覧</a></li>\n\
                     <li><a href="/Mobamas/NaganoAreaBossLines.html">長野エリアボスセリフ</a></li>\n\
                     <li><a href="/Mobamas/PuchiDerela.html">ぷちでれら</a></li>\n\
-                    <li><a href="/Mobamas/EventList.html">イベント</a></li>\n\
-                    <li><a href="/Mobamas/UnitList.html">ユニット</a></li>\n\
-                    <li><a href="/Mobamas/SeasonalEvents.html">季節イベント</a></li>\n\
+                    <li><a href="/Mobamas/Event/EventList.html">イベント一覧</a></li>\n\
+                    <li><a href="/Mobamas/Unit/UnitList.html">ユニット一覧</a></li>\n\
+                    <li><a href="/Mobamas/SeasonalEvents/SeasonalEvents.html">季節イベント一覧</a></li>\n\
                     <li><a href="/Mobamas/OtherCommu.html">その他コミュ・セリフ</a></li>\n\
                     <li><a href="/Mobamas/OtherGameCenter.html">その他（ゲームセンター等）</a></li>\n\
                 </ul>\n\
@@ -138,13 +128,12 @@
                 </div>\n\
                 <ul class="mobile-submenu">\n\
                     <li><a href="/Deresute/CardList.html">カード一覧</a></li>\n\
-                    <li><a href="/Deresute/CommonCommu.html">メモリアルコミュ・ストーリーコミュ</a></li>\n\
-                    <li><a href="/Deresute/CostumeList.html">その他共通衣装</a></li>\n\
-                    <li><a href="/Deresute/EventList.html">参加イベント</a></li>\n\
-                    <li><a href="/Deresute/Other.html">その他コミュ</a></li>\n\
+                    <li><a href="/Deresute/Common/CommonCommu.html">共通コミュ・ボイス</a></li>\n\
+                    <li><a href="/Deresute/Event/EventList.html">メインイベント</a></li>\n\
+                    <li><a href="/Deresute/GuestCommu/GuestCommu.html">ゲスト参加コミュ＆映り込みカード</a></li>\n\
+                    <li><a href="/Deresute/CostumeList.html">衣装一覧</a></li>\n\
                     <li><a class="disabled">シンデレラシアター</a></li>\n\
-                    <li><a href="/Deresute/GuestCommu.html">ゲスト参加コミュ＆映り込みカード</a></li>\n\
-                    <li><a href="/Deresute/Other.html">その他</a></li>\n\
+                    <li><a href="/Deresute/Other/Other.html">その他</a></li>\n\
                 </ul>\n\
             </li>\n\
             <li class="mobile-item">\n\
@@ -153,10 +142,6 @@
                     <button class="accordion-toggle" aria-label="展開">＋</button>\n\
                 </div>\n\
                 <ul class="mobile-submenu">\n\
-                    <li><a class="disabled">イラスト</a></li>\n\
-                    <li><a class="disabled">ホームセリフ</a></li>\n\
-                    <li><a class="disabled">親愛度セリフ</a></li>\n\
-                    <li><a class="disabled">イベントセリフ</a></li>\n\
                     <li><a href="/Popmas/BasicInfo.html">基本情報</a></li>\n\
                     <li><a href="/Popmas/FinalEventLines.html">ファイナルイベントセリフ</a></li>\n\
                     <li><a href="/Popmas/Other.html">その他</a></li>\n\
