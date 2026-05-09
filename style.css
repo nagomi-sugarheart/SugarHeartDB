@@ -717,21 +717,26 @@ input[name="dialogue-tab"] {
 
 /* アコーディオンの中身 */
 .accordion-content {
-    max-height: 0;
+    display: grid;
+    grid-template-rows: 0fr; /* 最初は高さ0の行 */
+    transition: grid-template-rows 0.4s ease;
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
     padding: 0 15px;
 }
 
 /* チェックされたら中身を表示 */
 .accordion-checkbox:checked ~ .accordion-content {
-    max-height: 1000px; /* 十分大きな値を設定 */
+    grid-template-rows: 1fr;
     padding: 15px 0px 0px;
 }
 
 /* チェックされたら矢印を回転 */
 .accordion-checkbox:checked ~ .accordion-label .accordion-arrow {
     transform: rotate(180deg);
+}
+
+.accordion-inner {
+    min-height: 0;
 }
 
 .accordion-content p {
@@ -1684,6 +1689,18 @@ input[name="dialogue-tab"] {
     display: none;
     margin-top: 15px;
     text-align: center;
+}
+
+.video-container-mobamas {
+  width: 100%;            /* 横幅を親要素（画面）いっぱいに広げる */
+  max-width: 450px;       /* PCで見た時に大きくなりすぎないよう制限（お好みで調整） */
+  margin: 0 auto;         /* 中央寄せ */
+  aspect-ratio: 9 / 16;   /* 縦長の比率（9:16）を維持する */
+}
+
+.video-container-mobamas iframe {
+  width: 100%;            /* コンテナの幅に合わせる */
+  height: 100%;           /* コンテナの高さに合わせる */
 }
 
 @media screen and (max-width: 900px) {
