@@ -159,7 +159,7 @@ h3 {
 ========================== */
 
 .box-area {
-    background-color: #F9F9F5;
+    background-color: #fff;
     width: 90%;
     max-width: 900px;
     margin: 20px auto;
@@ -257,6 +257,15 @@ h3 {
     margin: 0;      /* 自動余白を消す */
     min-width: 0;   /* グリッド内でのはみ出し防止 */
     overflow: hidden; /* 子要素のはみ出しを防ぐ */
+}
+
+/* detail-container内のdialogue-area・box-areaをcard-image-areaと同幅にする */
+.detail-container .dialogue-area,
+.detail-container .box-area {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* 画像スクロールエリア */
@@ -610,10 +619,14 @@ input[name="tab-radio"] {
 
 /* セリフエリア全体 */
 .dialogue-area {
+    width: 90%;
+    max-width: 900px;
     background-color: #fff;
     border: 2px solid #fd89b9;
     border-radius: 10px;
     padding: 20px;
+    position: relative;
+    margin: 20px auto;
 }
 
 .dialogue-area h2 {
@@ -636,7 +649,7 @@ input[name="dialogue-tab"] {
 .dialogue-tab-btn {
     flex: 1;
     padding: 15px 20px;
-    background-color: #F9F9F5;
+    background-color: #fff;
     color: #fd89b9;
     font-size: 1rem;
     font-weight: bold;
@@ -655,7 +668,10 @@ input[name="dialogue-tab"] {
 
 /* アクティブなタブのスタイル */
 #dialogue-tab1:checked ~ .dialogue-tab-nav .dialogue-tab-btn1,
-#dialogue-tab2:checked ~ .dialogue-tab-nav .dialogue-tab-btn2 {
+#dialogue-tab2:checked ~ .dialogue-tab-nav .dialogue-tab-btn2,
+#dialogue-tab3:checked ~ .dialogue-tab-nav .dialogue-tab-btn3,
+#dialogue-tab4:checked ~ .dialogue-tab-nav .dialogue-tab-btn4,
+#dialogue-tab5:checked ~ .dialogue-tab-nav .dialogue-tab-btn5 {
     background-color: #fd89b9;
     color: #fff;
 }
@@ -667,7 +683,10 @@ input[name="dialogue-tab"] {
 }
 
 #dialogue-tab1:checked ~ .dialogue-content1,
-#dialogue-tab2:checked ~ .dialogue-content2 {
+#dialogue-tab2:checked ~ .dialogue-content2,
+#dialogue-tab3:checked ~ .dialogue-content3,
+#dialogue-tab4:checked ~ .dialogue-content4,
+#dialogue-tab5:checked ~ .dialogue-content5 {
     display: block;
 }
 

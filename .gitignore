@@ -1,2 +1,5 @@
 *.mp4
 *.xlsx
+*.mov
+# Local Netlify folder
+.netlify
