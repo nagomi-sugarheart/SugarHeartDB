@@ -18,25 +18,113 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png">
     <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
 <body>
 <script src="/components/header.js"></script>
 
-<h1 class="sub-title">イベント一覧（モバマス）</h1>
+<section class="page-hero">
+    <div class="breadcrumb"><a href="/">HOME</a> · <a href="/Mobamas/CardList.html">MOBAMAS</a> · <strong>EVENTS</strong></div>
+    <h1>イベント一覧 <span class="sub">/ MOBAMAS</span></h1>
+    <p class="summary">心ちゃんがコミュや報酬などで登場したモバマスのイベントを掲載しています。</p>
+</section>
 
-<div class="box-area">
-    <p class="box-title">イベント一覧</p>
-    <ul class="box-list">
-        <li><a href="/Mobamas/Event/Event_ProductionTalkBattle3rd.html">第3回プロダクション対抗トークバトルショー</a></li>
-        <li><a href="/Mobamas/Event/Event_KirakiraModelChallenge.html">目指せ！きらきらモデル アイドルチャレンジ</a></li>
-        <li><a href="/Mobamas/Event/Event_IdolProduce6thAnniversary.html">アイドルプロデュース The 6th Anniversary</a></li>
-        <li><a href="/Mobamas/Event/Event_DreamLiveFestival5thNewYear.html">第5回 ドリームLIVEフェスティバル 新春SP</a></li>
-    </ul>
+<div class="page">
+
+    <div class="stat-row">
+        <div class="stat-card"><div class="k">TOTAL EVENTS</div><div class="v">4<small>件</small></div></div>
+        <div class="stat-card"><div class="k">コミュあり</div><div class="v">4<small>件</small></div></div>
+        <div class="stat-card"><div class="k">ランキング</div><div class="v">2<small>件</small></div></div>
+        <div class="stat-card"><div class="k">その他</div><div class="v">2<small>件</small></div></div>
+    </div>
+
+    <div class="year-group">
+        <div class="year-band">
+            <div class="y">モバマス</div>
+            <div class="count">4 events</div>
+            <div class="line"></div>
+        </div>
+        <div class="event-table">
+
+            <article class="event-row" data-accent="ranking" onclick="location.href='/Mobamas/Event/Event_ProductionTalkBattle3rd.html'">
+                <div class="event-date">
+                    <div class="m">—</div>
+                    <div class="d">—</div>
+                </div>
+                <div class="event-title">
+                    <h3>第3回プロダクション対抗トークバトルショー</h3>
+                </div>
+                <div class="event-tags">
+                    <span class="sh-tag" data-tag="ranking">ランキング</span>
+                </div>
+                <div class="event-reward">
+                    <div class="item">プロダクション対抗イベント</div>
+                </div>
+                <div class="event-note">
+                    <a href="/Mobamas/Event/Event_ProductionTalkBattle3rd.html">詳細 →</a>
+                </div>
+            </article>
+
+            <article class="event-row" data-accent="limited" onclick="location.href='/Mobamas/Event/Event_KirakiraModelChallenge.html'">
+                <div class="event-date">
+                    <div class="m">—</div>
+                    <div class="d">—</div>
+                </div>
+                <div class="event-title">
+                    <h3>目指せ！きらきらモデル アイドルチャレンジ</h3>
+                </div>
+                <div class="event-tags">
+                    <span class="sh-tag" data-tag="limited">限定カード</span>
+                </div>
+                <div class="event-reward">
+                    <div class="item">アイドルチャレンジ</div>
+                </div>
+                <div class="event-note">
+                    <a href="/Mobamas/Event/Event_KirakiraModelChallenge.html">詳細 →</a>
+                </div>
+            </article>
+
+            <article class="event-row" data-accent="solo" onclick="location.href='/Mobamas/Event/Event_IdolProduce6thAnniversary.html'">
+                <div class="event-date">
+                    <div class="m">—</div>
+                    <div class="d">—</div>
+                </div>
+                <div class="event-title">
+                    <h3>アイドルプロデュース The 6th Anniversary</h3>
+                </div>
+                <div class="event-tags">
+                    <span class="sh-tag" data-tag="solo">アニバーサリー</span>
+                </div>
+                <div class="event-reward">
+                    <div class="item">アイドルプロデュースイベント</div>
+                </div>
+                <div class="event-note">
+                    <a href="/Mobamas/Event/Event_IdolProduce6thAnniversary.html">詳細 →</a>
+                </div>
+            </article>
+
+            <article class="event-row" data-accent="seasonal" onclick="location.href='/Mobamas/Event/Event_DreamLiveFestival5thNewYear.html'">
+                <div class="event-date">
+                    <div class="m">—</div>
+                    <div class="d">—</div>
+                </div>
+                <div class="event-title">
+                    <h3>第5回 ドリームLIVEフェスティバル 新春SP</h3>
+                </div>
+                <div class="event-tags">
+                    <span class="sh-tag" data-tag="seasonal">季節</span>
+                </div>
+                <div class="event-reward">
+                    <div class="item">ドリームLIVEフェスティバル</div>
+                </div>
+                <div class="event-note">
+                    <a href="/Mobamas/Event/Event_DreamLiveFestival5thNewYear.html">詳細 →</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
 </div>
-
 
 </body>
 </html>

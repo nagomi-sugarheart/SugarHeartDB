@@ -15,51 +15,51 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <script src="/components/header.js"></script>
 
-<div class="sub-title">
-    <h1>＊更新情報</h1>
-</div>
+<section class="page-hero">
+    <div class="breadcrumb"><a href="/">HOME</a> · <strong>UPDATES</strong></div>
+    <h1>更新情報 <span class="sub">/ UPDATE LOG</span></h1>
+    <p class="summary">SugarHeartDBの更新履歴です。新規ページの追加や情報の修正などを記録しています。</p>
+</section>
 
-<div class="box-area updates-list" id="updates-list">
-    <p class="update-text" style="color:#ccc;">読み込み中…</p>
-</div>
-
-<div class="box-area" style="text-align:center;">
-    <a href="/" style="color:#fd89b9; text-decoration:underline; font-weight:bold;">▶ トップページへ戻る</a>
+<div class="page">
+    <section class="news">
+        <div id="updates-list">
+            <p style="color:var(--sh-text-mute); padding:15px 0; font-size:14px;">読み込み中…</p>
+        </div>
+    </section>
 </div>
 
 <script>
-
-// 更新情報：data/updates.json から全件を取得して表示
 fetch('/data/updates.json')
     .then(function(r) { return r.json(); })
     .then(function(updates) {
         var container = document.getElementById('updates-list');
         container.innerHTML = '';
         updates.forEach(function(u) {
-            var item = document.createElement('div');
-            item.className = 'update-item';
+            var parts = u.date.split('.');
+            var year = parts[0] + '.' + parts[1];
+            var day  = parts[2] || '';
+            var row = document.createElement('div');
+            row.className = 'news-row';
             var dt = document.createElement('div');
-            dt.className = 'update-date';
-            dt.textContent = u.date;
-            var tx = document.createElement('p');
-            tx.className = 'update-text';
+            dt.className = 'news-date';
+            dt.innerHTML = '<span class="y">' + year + '</span><span class="d">' + day + '</span>';
+            var tx = document.createElement('div');
+            tx.className = 'news-text';
             tx.innerHTML = u.text;
-            item.appendChild(dt);
-            item.appendChild(tx);
-            container.appendChild(item);
+            row.appendChild(dt);
+            row.appendChild(tx);
+            container.appendChild(row);
         });
     })
     .catch(function() {
         var container = document.getElementById('updates-list');
-        container.innerHTML = '<p class="update-text" style="color:#ccc;">更新情報を読み込めませんでした。</p>';
+        container.innerHTML = '<p style="color:var(--sh-text-mute); padding:15px 0; font-size:14px;">更新情報を読み込めませんでした。</p>';
     });
 </script>
 
