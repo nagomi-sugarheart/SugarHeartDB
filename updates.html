@@ -2,7 +2,8 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base href="/SugarHeartDB/">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>更新情報｜SugarHeartDB</title>
     <meta name="description" content="SugarHeartDBの更新情報一覧。佐藤心（しゅがーはぁと）ファンサイトの最新更新履歴。">
     <meta name="author" content="なごみ（@nagomi_IMCG）">
@@ -12,16 +13,16 @@
     <meta property="og:site_name" content="SugarHeartDB">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="更新情報｜SugarHeartDB">
-    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script src="/components/header.js"></script>
+<script src="components/header.js"></script>
 
 <section class="page-hero">
-    <div class="breadcrumb"><a href="/">HOME</a> · <strong>UPDATES</strong></div>
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>UPDATES</strong></div>
     <h1>更新情報 <span class="sub">/ UPDATE LOG</span></h1>
     <p class="summary">SugarHeartDBの更新履歴です。新規ページの追加や情報の修正などを記録しています。</p>
 </section>
@@ -35,7 +36,7 @@
 </div>
 
 <script>
-fetch('/data/updates.json')
+fetch('data/updates.json')
     .then(function(r) { return r.json(); })
     .then(function(updates) {
         var container = document.getElementById('updates-list');
