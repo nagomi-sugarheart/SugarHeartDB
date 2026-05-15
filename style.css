@@ -3243,6 +3243,68 @@ input[name="dialogue-tab"] {
 #ch-tab-1:checked ~ .bt-1,
 #ch-tab-2:checked ~ .bt-2 { display: block; }
 
+/* MemorialCommu page active states */
+#mc-tab-1:checked ~ .rtab-nav label[for="mc-tab-1"],
+#mc-tab-2:checked ~ .rtab-nav label[for="mc-tab-2"],
+#mc-tab-3:checked ~ .rtab-nav label[for="mc-tab-3"],
+#mc-tab-4:checked ~ .rtab-nav label[for="mc-tab-4"],
+#mc-tab-5:checked ~ .rtab-nav label[for="mc-tab-5"] {
+    background: var(--sh-pink);
+    color: #ffffff;
+    border-color: var(--sh-pink);
+}
+
+#mc-tab-1:checked ~ .bt-1,
+#mc-tab-2:checked ~ .bt-2,
+#mc-tab-3:checked ~ .bt-3,
+#mc-tab-4:checked ~ .bt-4,
+#mc-tab-5:checked ~ .bt-5 { display: block; }
+
+/* ----------------------------------------------------------
+   メモリアルコミュ — 共有プレイヤー & シークボタン
+---------------------------------------------------------- */
+
+/* 上部固定プレイヤー（16:9） */
+.mc-player-wrap {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 28px;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    background: #000;
+    aspect-ratio: 16 / 9;
+    position: relative;
+}
+.mc-player-wrap iframe,
+.mc-player-wrap > div {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    inset: 0;
+}
+
+/* シークボタン */
+.mc-seek-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: var(--r-pill);
+    border: none;
+    background: var(--sh-pink);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: background 0.2s, transform 0.1s;
+    margin-bottom: 20px;
+}
+.mc-seek-btn::before { content: "▶"; font-size: 0.75rem; }
+.mc-seek-btn:hover { background: var(--sh-pink-deep); }
+.mc-seek-btn:active { transform: scale(0.97); }
+
 /* ----------------------------------------------------------
    Unified CardList — game tag badge + tab nav
 ---------------------------------------------------------- */
