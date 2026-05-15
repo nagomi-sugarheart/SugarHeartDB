@@ -1786,8 +1786,8 @@ input[name="dialogue-tab"] {
 .rarity-r-plus  { --r-c: #1e88e5; --r-bg: #bbdefb; }
 .rarity-sr      { --r-c: #ab47bc; --r-bg: #f3e5f5; }
 .rarity-sr-plus { --r-c: #8e24aa; --r-bg: #e1bee7; }
-.rarity-ssr     { --r-c: #ffd600; --r-bg: #fffde7; }
-.rarity-ssr-plus{ --r-c: #ff6f00; --r-bg: #fff3e0; }
+.rarity-ssr      { --r-c: #ffd600; --r-bg: #fffde7; }
+.rarity-ssr-plus { --r-c: #d4a000; --r-bg: #fff5c0; }
 
 .r-pill {
     display: inline-flex;
@@ -2043,7 +2043,7 @@ input[name="dialogue-tab"] {
 
 .card-row {
     display: grid;
-    grid-template-columns: 72px 90px 1fr 90px;
+    grid-template-columns: 72px auto 1fr auto;
     align-items: center;
     gap: 0;
     background: #ffffff;
@@ -2072,8 +2072,18 @@ input[name="dialogue-tab"] {
     display: block;
 }
 
-.card-rarity {
-    /* rarity pill lives here */
+.card-badges {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card-action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .card-name {
@@ -2880,17 +2890,18 @@ input[name="dialogue-tab"] {
 
     /* Card rows */
     .card-row {
-        grid-template-areas:
-            "icon rarity"
-            "name name"
-            "action action";
-        grid-template-columns: auto 1fr;
+        grid-template-areas: "icon badges name action";
+        grid-template-columns: 56px auto 1fr auto;
     }
 
-    .card-row .card-icon  { grid-area: icon; }
-    .card-row .card-rarity{ grid-area: rarity; }
-    .card-row .card-name  { grid-area: name; }
-    .card-row .card-action{ grid-area: action; }
+    .card-row .card-icon   { grid-area: icon; padding: 8px 8px; }
+    .card-row .card-badges { grid-area: badges; padding: 8px 6px; }
+    .card-row .card-name   { grid-area: name; padding: 8px 6px; }
+    .card-row .card-action { grid-area: action; padding: 8px 8px; }
+
+    .card-row .card-icon img { width: 48px; height: 48px; }
+
+    .card-name h3 { font-size: 0.82rem; }
 
     /* Event rows */
     .event-row {
