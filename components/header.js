@@ -166,6 +166,16 @@
     </div>\n\
 </header>';
 
+    // Zen Maru Gothic フォントを全ページで有効化
+    (function() {
+        if (!document.querySelector('link[href*="Zen+Maru+Gothic"]')) {
+            var fl = document.createElement('link');
+            fl.rel = 'stylesheet';
+            fl.href = 'https://fonts.googleapis.com/css2?family=Yusei+Magic&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap';
+            document.head.appendChild(fl);
+        }
+    })();
+
     // ヘッダーをこのscriptタグの直前に同期注入（フラッシュなし）
     var me = document.currentScript;
     me.insertAdjacentHTML('beforebegin', HEADER_HTML);

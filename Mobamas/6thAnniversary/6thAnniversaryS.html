@@ -43,50 +43,7 @@
 	<!--CSS指定-->
 	<link rel="stylesheet" href="/style.css">
 	<!--フォント指定-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
-<script>
-    const cardImages = [
-        '/Mobamas/6thAnniversary/6thAnniversaryS.jpg',
-        '/Mobamas/6thAnniversary/6thAnniversarySTsujyoSign.jpg',
-        '/Mobamas/6thAnniversary/6thAnniversarySPremiumSign.jpg',
-        '/Mobamas/6thAnniversary/6thAnniversarySWakuNashi.jpg',
-    ];
-    
-    let currentImageIndex = 0;
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        const cardImage = document.querySelector('.card-image-area img');
-        const imageCounter = document.getElementById('image-counter');
-        const imageTotal = document.getElementById('image-total');
-        
-        if (imageTotal) {
-            imageTotal.textContent = cardImages.length;
-        }
-        
-        if (cardImage) {
-            cardImage.addEventListener('click', function() {
-                currentImageIndex = (currentImageIndex + 1) % cardImages.length;
-                
-                cardImage.style.opacity = '0.5';
-                
-                setTimeout(function() {
-                    cardImage.src = cardImages[currentImageIndex];
-                    cardImage.style.opacity = '1';
-                    
-                    if (imageCounter) {
-                        imageCounter.textContent = currentImageIndex + 1;
-                    }
-                }, 150);
-            });
-            
-            cardImage.style.cursor = 'pointer';
-        }
-    });
-</script>
-
 <body>
 <script src="/components/header.js"></script>
 
@@ -302,37 +259,23 @@
                     </label>
                     <div class="accordion-content"><div class="accordion-inner">
                         <h2 class="box-title">特別編</h2>
-                        <table class="table-area">
-                            <colgroup>
-                                <col style="width: 20%">
-                                <col style="width: 80%">
-                            </colgroup>
-                            <thead><tr><th>名前</th><th>セリフ</th></tr></thead>
-                            <tbody>
-                                <tr><td></td><td>事務所</td></tr>
-                                <tr><td>心</td><td>プロデューサー、ハッピーアニバーサリー☆盛り上がってるぅ? はぁとは、見ての通りゴ・キ・ゲ・ン♪……いやいや、飲んでないよ? まじで!</td></tr>
-                                <tr><td>心</td><td>記念日ってことで、はぁともプロデューサーにスウィーティーな感謝のキモチを伝えちゃおうかなって♪またまた～遠慮すんなって☆</td></tr>
-                                <tr><td>心</td><td>あ、それとも……プロデューサーとしては、はぁととふたりで、しっとりあまーいオトナの記念日を過ごしたいとか? や～ん☆</td></tr>
-                                <tr><td>心</td><td>そーゆーことなら、あとでゆーっくり、じぃーっくりこれまでの思い出と、はぁとのキモチを聞かせてあげるね♪</td></tr>
-                                <tr><td>心</td><td>あ、仕事? 忘れてないってぇ。アニバーサリーLIVEでしょ? もぉ、せっかくイイムードにしようと思ったのに、プロデューサーのいけず～☆</td></tr>
-                            </tbody>
-                        </table>
+                                                <div class="script-block">
+                            <div class="script-row stage-direction"><span class="who"></span><div class="line">事務所</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">プロデューサー、ハッピーアニバーサリー☆盛り上がってるぅ? はぁとは、見ての通りゴ・キ・ゲ・ン♪……いやいや、飲んでないよ? まじで!</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">記念日ってことで、はぁともプロデューサーにスウィーティーな感謝のキモチを伝えちゃおうかなって♪またまた～遠慮すんなって☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">あ、それとも……プロデューサーとしては、はぁととふたりで、しっとりあまーいオトナの記念日を過ごしたいとか? や～ん☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">そーゆーことなら、あとでゆーっくり、じぃーっくりこれまでの思い出と、はぁとのキモチを聞かせてあげるね♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">あ、仕事? 忘れてないってぇ。アニバーサリーLIVEでしょ? もぉ、せっかくイイムードにしようと思ったのに、プロデューサーのいけず～☆</div></div>
+                        </div>
                         <h2 class="box-title">特別編2</h2>
-                        <table class="table-area">
-                            <colgroup>
-                                <col style="width: 20%">
-                                <col style="width: 80%">
-                            </colgroup>
-                            <thead><tr><th>名前</th><th>セリフ</th></tr></thead>
-                            <tbody>
-                                <tr><td></td><td>LIVE本番</td></tr>
-                                <tr><td>心</td><td>はぁ、おつかれどっこいせっ。ん? 舞台袖だからセーフセーフ! それより見た? はぁとの新技、ラブリーシュガーハァトビーム☆</td></tr>
-                                <tr><td>心</td><td>今日のために、ハァトビームも改良に改良を重ねて、グレードアップしてきたんだぞ☆プロデューサーが見てくれたら、はぁともご満悦♪</td></tr>
-                                <tr><td>心</td><td>しっかし、前半出し切ったわぁ～。あ、ダイジョブダイジョブ。根性だけは人一倍なもんで☆でも、心配してくれて嬉しっ♪</td></tr>
-                                <tr><td>心</td><td>ほら、はぁとはプロデューサーのアツ～い視線があれば百人力♪ううんっ、千人力だし☆よっしっ、物理的に力が湧いてきたぞっ!</td></tr>
-                                <tr><td>心</td><td>んじゃ、そろそろ行ってくるね! まだまだめいっぱい、アニバーサリーの輝きを見せたげる☆泣いちゃってもいいぞ、プロデューサー☆</td></tr>
-                            </tbody>
-                        </table>
+                                                <div class="script-block">
+                            <div class="script-row stage-direction"><span class="who"></span><div class="line">LIVE本番</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">はぁ、おつかれどっこいせっ。ん? 舞台袖だからセーフセーフ! それより見た? はぁとの新技、ラブリーシュガーハァトビーム☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">今日のために、ハァトビームも改良に改良を重ねて、グレードアップしてきたんだぞ☆プロデューサーが見てくれたら、はぁともご満悦♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">しっかし、前半出し切ったわぁ～。あ、ダイジョブダイジョブ。根性だけは人一倍なもんで☆でも、心配してくれて嬉しっ♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ほら、はぁとはプロデューサーのアツ～い視線があれば百人力♪ううんっ、千人力だし☆よっしっ、物理的に力が湧いてきたぞっ!</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">んじゃ、そろそろ行ってくるね! まだまだめいっぱい、アニバーサリーの輝きを見せたげる☆泣いちゃってもいいぞ、プロデューサー☆</div></div>
+                        </div>
                     </div></div>
                 </div>
 
@@ -476,5 +419,44 @@
  
 
 
+<script>
+    const cardImages = [
+        '/Mobamas/6thAnniversary/6thAnniversaryS.jpg',
+        '/Mobamas/6thAnniversary/6thAnniversarySTsujyoSign.jpg',
+        '/Mobamas/6thAnniversary/6thAnniversarySPremiumSign.jpg',
+        '/Mobamas/6thAnniversary/6thAnniversarySWakuNashi.jpg',
+    ];
+    
+    let currentImageIndex = 0;
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const cardImage = document.querySelector('.card-image-area img');
+        const imageCounter = document.getElementById('image-counter');
+        const imageTotal = document.getElementById('image-total');
+        
+        if (imageTotal) {
+            imageTotal.textContent = cardImages.length;
+        }
+        
+        if (cardImage) {
+            cardImage.addEventListener('click', function() {
+                currentImageIndex = (currentImageIndex + 1) % cardImages.length;
+                
+                cardImage.style.opacity = '0.5';
+                
+                setTimeout(function() {
+                    cardImage.src = cardImages[currentImageIndex];
+                    cardImage.style.opacity = '1';
+                    
+                    if (imageCounter) {
+                        imageCounter.textContent = currentImageIndex + 1;
+                    }
+                }, 150);
+            });
+            
+            cardImage.style.cursor = 'pointer';
+        }
+    });
+</script>
 </body>
  </html>

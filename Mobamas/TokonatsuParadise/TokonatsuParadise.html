@@ -43,51 +43,7 @@
 	<!--CSS指定-->
 	<link rel="stylesheet" href="/style.css">
 	<!--フォント指定-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
-<script>
-    const cardImages = [
-        '/Mobamas/TokonatsuParadise/TokonatsuParadise.jpg',
-        '/Mobamas/TokonatsuParadise/TokonatsuParadiseTsujyoSign.jpg',
-        '/Mobamas/TokonatsuParadise/TokonatsuParadisePremiumSign.jpg',
-        '/Mobamas/TokonatsuParadise/TokonatsuParadiseWakuNashi.jpg',
-    ];
-    
-    let currentImageIndex = 0;
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        const cardImage = document.querySelector('.card-image-area img');
-        const imageCounter = document.getElementById('image-counter');
-        const imageTotal = document.getElementById('image-total');
-        
-        // 画像の総数を表示
-        if (imageTotal) {
-            imageTotal.textContent = cardImages.length;
-        }
-        
-        if (cardImage) {
-            cardImage.addEventListener('click', function() {
-                currentImageIndex = (currentImageIndex + 1) % cardImages.length;
-                
-                cardImage.style.opacity = '0.5';
-                
-                setTimeout(function() {
-                    cardImage.src = cardImages[currentImageIndex];
-                    cardImage.style.opacity = '1';
-                    
-                    // カウンターを更新
-                    if (imageCounter) {
-                        imageCounter.textContent = currentImageIndex + 1;
-                    }
-                }, 150);
-            });
-            
-            cardImage.style.cursor = 'pointer';
-        }
-    });
-</script>
 <body>
 <script src="/components/header.js"></script>
 
@@ -303,42 +259,28 @@
                     </label>
                     <div class="accordion-content"><div class="accordion-inner">
                         <h2 class="box-title">前編</h2>
-                        <table class="table-area">
-                            <colgroup>
-                                <col style="width: 20%">
-                                <col style="width: 80%">
-                            </colgroup>
-                            <thead><tr><th>名前</th><th>セリフ</th></tr></thead>
-                            <tbody>
-                                <tr><td></td><td>事務所</td></tr>
-                                <tr><td>心</td><td>プロデューサー! こっちこっち☆来ちゃったぞ☆しゅがーはぁとのナ・ツ・が☆あ、タイミング悪かった? なら出直すわ……っておい☆</td></tr>
-                                <tr><td>心</td><td>せっかく来たんだから話くらい聞いてって? ていうか聞けよ☆聞いて☆夏といえば、アツ～いあばんちゅーるの季節でしょ?</td></tr>
-                                <tr><td>心</td><td>もちろん、はぁとはアイドルだから、ラヴラヴはタブー、だ・け・ど～? せっかくの夏なんだし、スウィーティーで刺激的な夏……したぁい☆</td></tr>
-                                <tr><td>心</td><td>舞台はビーチサイド☆さんさんと降り注ぐサンシャイン、白い砂浜、波の音、そして魅惑のしゅがーはぁと……うふん♪</td></tr>
-                                <tr><td>心</td><td>想像するだけでドキドキ限界突破しちゃう☆それに、実はおニューの水着も用意してあるの! メガトン級にスウィーティーで、セクスィーなやつ♪</td></tr>
-                                <tr><td>心</td><td>けどぉ、海もプールも混雑しててやんなっちゃうでしょ?それに、ナンパされたりしたら困るしぃ……え、されない? 黙っとけ☆</td></tr>
-                                <tr><td>心</td><td>そんなワケでぇ、何か夏らしい刺激的な体験、頼むわプロデューサー☆ご褒美はもちろん、はぁとの水着姿☆って、目背けんなぁ～!</td></tr>
-                            </tbody>
-                        </table>
+                                                <div class="script-block">
+                            <div class="script-row stage-direction"><span class="who"></span><div class="line">事務所</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">プロデューサー! こっちこっち☆来ちゃったぞ☆しゅがーはぁとのナ・ツ・が☆あ、タイミング悪かった? なら出直すわ……っておい☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">せっかく来たんだから話くらい聞いてって? ていうか聞けよ☆聞いて☆夏といえば、アツ～いあばんちゅーるの季節でしょ?</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">もちろん、はぁとはアイドルだから、ラヴラヴはタブー、だ・け・ど～? せっかくの夏なんだし、スウィーティーで刺激的な夏……したぁい☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">舞台はビーチサイド☆さんさんと降り注ぐサンシャイン、白い砂浜、波の音、そして魅惑のしゅがーはぁと……うふん♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">想像するだけでドキドキ限界突破しちゃう☆それに、実はおニューの水着も用意してあるの! メガトン級にスウィーティーで、セクスィーなやつ♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">けどぉ、海もプールも混雑しててやんなっちゃうでしょ?それに、ナンパされたりしたら困るしぃ……え、されない? 黙っとけ☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">そんなワケでぇ、何か夏らしい刺激的な体験、頼むわプロデューサー☆ご褒美はもちろん、はぁとの水着姿☆って、目背けんなぁ～!</div></div>
+                        </div>
                         <h2 class="box-title">後編</h2>
-                        <table class="table-area">
-                            <colgroup>
-                                <col style="width: 20%">
-                                <col style="width: 80%">
-                            </colgroup>
-                            <thead><tr><th>名前</th><th>セリフ</th></tr></thead>
-                            <tbody>
-                                <tr><td></td><td>南国ビーチ</td></tr>
-                                <tr><td>心</td><td>ぴゅぴゅぴゅ☆うりゃりゃりゃりゃ～! プロデューサーのハートに連続ヒット～☆サマーはぁとは、ただいま絶好調～っ!</td></tr>
-                                <tr><td>心</td><td>やるじゃんやるじゃん、プロデューサー! 予想以上に、アツくて刺激的な夏で、はぁとってば、ご満悦だぞ～☆うんうん☆</td></tr>
-                                <tr><td>心</td><td>南国で撮影ロケをやっちゃえば、バカンスもお仕事も両立できるって魂胆か☆さっすがはぁとのプロデューサー☆抜け目ないな☆</td></tr>
-                                <tr><td>心</td><td>はぁとの水着姿も、独り占めしちゃって! ほらぁ、もっと近くで見て見てぇ♪ちらり～ん! って、遠慮すんな☆ほらほら☆</td></tr>
-                                <tr><td>心</td><td>んっふふ～☆満足満足☆もう大いに満足してるわ～☆プロデューサーとの、キケンなあばんちゅーる……気分も味わえてるし♪</td></tr>
-                                <tr><td>心</td><td>と・こ・ろ・で! プロデューサーも、ちゃんと自分の夏、満喫できてる? はぁと達のことばっか考えて、お仕事モードなんじゃない?</td></tr>
-                                <tr><td>心</td><td>よーし、決めた♪こっからは、はぁとがもっとホットにしてあげる☆ココをよく見て見て～……えいっ☆</td></tr>
-                                <tr><td>心</td><td>あは、びしょ濡れ～☆</td></tr>
-                            </tbody>
-                        </table>
+                                                <div class="script-block">
+                            <div class="script-row stage-direction"><span class="who"></span><div class="line">南国ビーチ</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ぴゅぴゅぴゅ☆うりゃりゃりゃりゃ～! プロデューサーのハートに連続ヒット～☆サマーはぁとは、ただいま絶好調～っ!</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">やるじゃんやるじゃん、プロデューサー! 予想以上に、アツくて刺激的な夏で、はぁとってば、ご満悦だぞ～☆うんうん☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">南国で撮影ロケをやっちゃえば、バカンスもお仕事も両立できるって魂胆か☆さっすがはぁとのプロデューサー☆抜け目ないな☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">はぁとの水着姿も、独り占めしちゃって! ほらぁ、もっと近くで見て見てぇ♪ちらり～ん! って、遠慮すんな☆ほらほら☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">んっふふ～☆満足満足☆もう大いに満足してるわ～☆プロデューサーとの、キケンなあばんちゅーる……気分も味わえてるし♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">と・こ・ろ・で! プロデューサーも、ちゃんと自分の夏、満喫できてる? はぁと達のことばっか考えて、お仕事モードなんじゃない?</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">よーし、決めた♪こっからは、はぁとがもっとホットにしてあげる☆ココをよく見て見て～……えいっ☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">あは、びしょ濡れ～☆</div></div>
+                        </div>
                     </div></div>
                 </div>
 
@@ -489,5 +431,46 @@
  
 
 
+<script>
+    const cardImages = [
+        '/Mobamas/TokonatsuParadise/TokonatsuParadise.jpg',
+        '/Mobamas/TokonatsuParadise/TokonatsuParadiseTsujyoSign.jpg',
+        '/Mobamas/TokonatsuParadise/TokonatsuParadisePremiumSign.jpg',
+        '/Mobamas/TokonatsuParadise/TokonatsuParadiseWakuNashi.jpg',
+    ];
+    
+    let currentImageIndex = 0;
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const cardImage = document.querySelector('.card-image-area img');
+        const imageCounter = document.getElementById('image-counter');
+        const imageTotal = document.getElementById('image-total');
+        
+        // 画像の総数を表示
+        if (imageTotal) {
+            imageTotal.textContent = cardImages.length;
+        }
+        
+        if (cardImage) {
+            cardImage.addEventListener('click', function() {
+                currentImageIndex = (currentImageIndex + 1) % cardImages.length;
+                
+                cardImage.style.opacity = '0.5';
+                
+                setTimeout(function() {
+                    cardImage.src = cardImages[currentImageIndex];
+                    cardImage.style.opacity = '1';
+                    
+                    // カウンターを更新
+                    if (imageCounter) {
+                        imageCounter.textContent = currentImageIndex + 1;
+                    }
+                }, 150);
+            });
+            
+            cardImage.style.cursor = 'pointer';
+        }
+    });
+</script>
 </body>
  </html>

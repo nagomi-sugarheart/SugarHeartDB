@@ -43,52 +43,7 @@
 	<!--CSS指定-->
 	<link rel="stylesheet" href="/style.css">
 	<!--フォント指定-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
-<script>
-    const cardImages = [
-        '/Mobamas/MerryChristmasHeart+/MerryChristmasHeart+.jpg',
-        '/Mobamas/MerryChristmasHeart+/MerryChristmasHeart+TsujyoSign.jpg',
-        '/Mobamas/MerryChristmasHeart+/MerryChristmasHeart+PremiumSign.jpg',
-        '/Mobamas/MerryChristmasHeart+/MerryChristmasHeart+WakuNashi.jpg',
-        '/Mobamas/MerryChristmasHeart+/MerryChristmasHeart+Touka.png',
-    ];
-    
-    let currentImageIndex = 0;
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        const cardImage = document.querySelector('.card-image-area img');
-        const imageCounter = document.getElementById('image-counter');
-        const imageTotal = document.getElementById('image-total');
-        
-        // 画像の総数を表示
-        if (imageTotal) {
-            imageTotal.textContent = cardImages.length;
-        }
-        
-        if (cardImage) {
-            cardImage.addEventListener('click', function() {
-                currentImageIndex = (currentImageIndex + 1) % cardImages.length;
-                
-                cardImage.style.opacity = '0.5';
-                
-                setTimeout(function() {
-                    cardImage.src = cardImages[currentImageIndex];
-                    cardImage.style.opacity = '1';
-                    
-                    // カウンターを更新
-                    if (imageCounter) {
-                        imageCounter.textContent = currentImageIndex + 1;
-                    }
-                }, 150);
-            });
-            
-            cardImage.style.cursor = 'pointer';
-        }
-    });
-</script>
 <body>
 <script src="/components/header.js"></script>
 
@@ -304,42 +259,28 @@
                     </label>
                     <div class="accordion-content"><div class="accordion-inner">
                         <h2 class="box-title">前編</h2>
-                        <table class="table-area">
-                            <colgroup>
-                                <col style="width: 20%">
-                                <col style="width: 80%">
-                            </colgroup>
-                            <thead><tr><th>名前</th><th>セリフ</th></tr></thead>
-                            <tbody>
-                                <tr><td></td><td>事務所</td></tr>
-                                <tr><td>心</td><td>ん～、来年の手帳……は、もう買ってるだろうし、ハンカチ……じゃ特別感ないな。ここは一発はぁとらしく……服かっ♪</td></tr>
-                                <tr><td>心</td><td>ていうか、いつどこで渡そう? 仕事の後とか……って、うおぉっ! プロデューサー!? いつからそこに! あー……、おかえり☆</td></tr>
-                                <tr><td>心</td><td>え? 目が泳いでる? ヤダなぁも～☆なんでもないし～、なんも企んでないし～。ほらほらっ、コート脱いでひと休みしよっ☆</td></tr>
-                                <tr><td>心</td><td>ねぇ、プロデューサー、もう年末だし、仕事も落ち着く頃でしょ? 今年も頑張りまくったプロデューサーを、はぁとが労ってあ・げ・る☆</td></tr>
-                                <tr><td>心</td><td>遠慮すんなって☆ん? 酔ったはぁとの介抱が面倒……って、またまた～☆忘年会に誘ってるわけじゃないぞっ♪</td></tr>
-                                <tr><td>心</td><td>そうじゃなくって～……ほ～ら、あるじゃん? 忘年会だの納会だのの前に、キラキラでスウィーティーな二人の一大イ・ベ・ン・ト・が☆</td></tr>
-                                <tr><td>心</td><td>んっふふ～♪そういうワケで、プロデューサーのクリスマスの夜は、はぁとが予約ね☆逃がさないから、覚悟してろよ☆</td></tr>
-                            </tbody>
-                        </table>
+                                                <div class="script-block">
+                            <div class="script-row stage-direction"><span class="who"></span><div class="line">事務所</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ん～、来年の手帳……は、もう買ってるだろうし、ハンカチ……じゃ特別感ないな。ここは一発はぁとらしく……服かっ♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ていうか、いつどこで渡そう? 仕事の後とか……って、うおぉっ! プロデューサー!? いつからそこに! あー……、おかえり☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">え? 目が泳いでる? ヤダなぁも～☆なんでもないし～、なんも企んでないし～。ほらほらっ、コート脱いでひと休みしよっ☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ねぇ、プロデューサー、もう年末だし、仕事も落ち着く頃でしょ? 今年も頑張りまくったプロデューサーを、はぁとが労ってあ・げ・る☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">遠慮すんなって☆ん? 酔ったはぁとの介抱が面倒……って、またまた～☆忘年会に誘ってるわけじゃないぞっ♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">そうじゃなくって～……ほ～ら、あるじゃん? 忘年会だの納会だのの前に、キラキラでスウィーティーな二人の一大イ・ベ・ン・ト・が☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">んっふふ～♪そういうワケで、プロデューサーのクリスマスの夜は、はぁとが予約ね☆逃がさないから、覚悟してろよ☆</div></div>
+                        </div>
                         <h2 class="box-title">後編</h2>
-                        <table class="table-area">
-                            <colgroup>
-                                <col style="width: 20%">
-                                <col style="width: 80%">
-                            </colgroup>
-                            <thead><tr><th>名前</th><th>セリフ</th></tr></thead>
-                            <tbody>
-                                <tr><td></td><td>クリスマスストリート</td></tr>
-                                <tr><td>心</td><td>すっごーい! どのお店も飾り付けられて、きれー……♪やっぱりクリスマスって、華やかだよねぇ。やぁん、ロマンチック～♪</td></tr>
-                                <tr><td>心</td><td>ホラホラ、プロデューサー! ここで一言! ……LIVEステージの参考になりそう? う～ん、プロデューサーらしいけど、そうじゃなくね?</td></tr>
-                                <tr><td>心</td><td>あ、さては照れてんな～? もう、プロデューサーってば☆言っちゃえよ～、「はぁとの方が綺麗だよ」って☆ほれほれ～♪</td></tr>
-                                <tr><td>心</td><td>年に一度のクリスマスなんだし～、聖夜には奇跡が起きるって言うじゃん? それに、素直なよい子には、プレゼントも……ね☆</td></tr>
-                                <tr><td>心</td><td>ジャーン! びっくりした～? はぁとからの、ビッグなラブが詰まったプレゼント♪欲しい～? でもまだあーげないっ♪</td></tr>
-                                <tr><td>心</td><td>欲しければ、はぁとから奪ってみろ☆ほれほれ～い、こっちこっち♪って、あ! ちょっと、あ～ん、無理やりはらめぇ～☆</td></tr>
-                                <tr><td>心</td><td>……なんかはぁとたち、バカップルっぽいな☆でも、いいよね? クリスマスだし、</td></tr>
-                                <tr><td>心</td><td>プロデューサーに思いっきり甘えたいんだもん♪</td></tr>
-                            </tbody>
-                        </table>
+                                                <div class="script-block">
+                            <div class="script-row stage-direction"><span class="who"></span><div class="line">クリスマスストリート</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">すっごーい! どのお店も飾り付けられて、きれー……♪やっぱりクリスマスって、華やかだよねぇ。やぁん、ロマンチック～♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ホラホラ、プロデューサー! ここで一言! ……LIVEステージの参考になりそう? う～ん、プロデューサーらしいけど、そうじゃなくね?</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">あ、さては照れてんな～? もう、プロデューサーってば☆言っちゃえよ～、「はぁとの方が綺麗だよ」って☆ほれほれ～♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">年に一度のクリスマスなんだし～、聖夜には奇跡が起きるって言うじゃん? それに、素直なよい子には、プレゼントも……ね☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ジャーン! びっくりした～? はぁとからの、ビッグなラブが詰まったプレゼント♪欲しい～? でもまだあーげないっ♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">欲しければ、はぁとから奪ってみろ☆ほれほれ～い、こっちこっち♪って、あ! ちょっと、あ～ん、無理やりはらめぇ～☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">……なんかはぁとたち、バカップルっぽいな☆でも、いいよね? クリスマスだし、</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">プロデューサーに思いっきり甘えたいんだもん♪</div></div>
+                        </div>
                     </div></div>
                 </div>
 
@@ -489,5 +430,47 @@
  
 
 
+<script>
+    const cardImages = [
+        '/Mobamas/MerryChristmasHeart+/MerryChristmasHeart+.jpg',
+        '/Mobamas/MerryChristmasHeart+/MerryChristmasHeart+TsujyoSign.jpg',
+        '/Mobamas/MerryChristmasHeart+/MerryChristmasHeart+PremiumSign.jpg',
+        '/Mobamas/MerryChristmasHeart+/MerryChristmasHeart+WakuNashi.jpg',
+        '/Mobamas/MerryChristmasHeart+/MerryChristmasHeart+Touka.png',
+    ];
+    
+    let currentImageIndex = 0;
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const cardImage = document.querySelector('.card-image-area img');
+        const imageCounter = document.getElementById('image-counter');
+        const imageTotal = document.getElementById('image-total');
+        
+        // 画像の総数を表示
+        if (imageTotal) {
+            imageTotal.textContent = cardImages.length;
+        }
+        
+        if (cardImage) {
+            cardImage.addEventListener('click', function() {
+                currentImageIndex = (currentImageIndex + 1) % cardImages.length;
+                
+                cardImage.style.opacity = '0.5';
+                
+                setTimeout(function() {
+                    cardImage.src = cardImages[currentImageIndex];
+                    cardImage.style.opacity = '1';
+                    
+                    // カウンターを更新
+                    if (imageCounter) {
+                        imageCounter.textContent = currentImageIndex + 1;
+                    }
+                }, 150);
+            });
+            
+            cardImage.style.cursor = 'pointer';
+        }
+    });
+</script>
 </body>
  </html>

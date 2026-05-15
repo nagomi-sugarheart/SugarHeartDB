@@ -43,52 +43,7 @@
 	<!--CSS指定-->
 	<link rel="stylesheet" href="/style.css">
 	<!--フォント指定-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
-<script>
-    const cardImages = [
-        '/Mobamas/NatsuiroHeart/NatsuiroHeart.jpg',
-        '/Mobamas/NatsuiroHeart/NatsuiroHeartTsujyoSign.jpg',
-        '/Mobamas/NatsuiroHeart/NatsuiroHeartPremiumSign.jpg',
-        '/Mobamas/NatsuiroHeart/NatsuiroHeartWakuNashi.jpg',
-        '/Mobamas/NatsuiroHeart/NatsuiroHeartTouka.png',
-    ];
-    
-    let currentImageIndex = 0;
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        const cardImage = document.querySelector('.card-image-area img');
-        const imageCounter = document.getElementById('image-counter');
-        const imageTotal = document.getElementById('image-total');
-        
-        // 画像の総数を表示
-        if (imageTotal) {
-            imageTotal.textContent = cardImages.length;
-        }
-        
-        if (cardImage) {
-            cardImage.addEventListener('click', function() {
-                currentImageIndex = (currentImageIndex + 1) % cardImages.length;
-                
-                cardImage.style.opacity = '0.5';
-                
-                setTimeout(function() {
-                    cardImage.src = cardImages[currentImageIndex];
-                    cardImage.style.opacity = '1';
-                    
-                    // カウンターを更新
-                    if (imageCounter) {
-                        imageCounter.textContent = currentImageIndex + 1;
-                    }
-                }, 150);
-            });
-            
-            cardImage.style.cursor = 'pointer';
-        }
-    });
-</script>
 <body>
 <script src="/components/header.js"></script>
 
@@ -304,42 +259,28 @@
                     </label>
                     <div class="accordion-content"><div class="accordion-inner">
                         <h2 class="box-title">前編</h2>
-                        <table class="table-area">
-                            <colgroup>
-                                <col style="width: 20%">
-                                <col style="width: 80%">
-                            </colgroup>
-                            <thead><tr><th>名前</th><th>セリフ</th></tr></thead>
-                            <tbody>
-                                <tr><td></td><td>事務所</td></tr>
-                                <tr><td>心</td><td>リーンリーン♪涼しい音色で、プロデューサーをお出迎え～! いやん、我ながらナイスアイディア♪ってワケで、外回りおつかれっした～☆</td></tr>
-                                <tr><td>心</td><td>んふっ、驚いちゃった? ほら、そろそろ梅雨明けでしょ♪だから事務所に風鈴飾ってさ～、夏、感じちゃお♪って～☆</td></tr>
-                                <tr><td>心</td><td>なーに、ババくさいと思った? うっさいほっとけ☆はぁとはいつもフレッシュに生きてるから、今だけの季節感で生きてんの♪</td></tr>
-                                <tr><td>心</td><td>夏と言えば、スイカにかき氷♪でも最近は、冷たいの食べるとすぐ体が冷えちゃって……あーいや、歳のせいじゃないぞ☆</td></tr>
-                                <tr><td>心</td><td>あとは～……そうだ、浴衣も着たーい! 新しいの買ったし! ねね、プロデューサー。浴衣で行ける乙女ちっくなイベント知らない?</td></tr>
-                                <tr><td>心</td><td>……朝顔市? へ～、よさげな雰囲気☆決めた! そこ一緒にいこ♪いつにする? 明日? はぁとはいつでもウェルカムだぞ♪</td></tr>
-                                <tr><td>心</td><td>時間は朝早くね? うっし、一緒に早起きがんばろっ♪ご褒美に、美少女の浴衣が待ってるぞ☆そこ、もっと喜べって☆</td></tr>
-                            </tbody>
-                        </table>
+                                                <div class="script-block">
+                            <div class="script-row stage-direction"><span class="who"></span><div class="line">事務所</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">リーンリーン♪涼しい音色で、プロデューサーをお出迎え～! いやん、我ながらナイスアイディア♪ってワケで、外回りおつかれっした～☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">んふっ、驚いちゃった? ほら、そろそろ梅雨明けでしょ♪だから事務所に風鈴飾ってさ～、夏、感じちゃお♪って～☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">なーに、ババくさいと思った? うっさいほっとけ☆はぁとはいつもフレッシュに生きてるから、今だけの季節感で生きてんの♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">夏と言えば、スイカにかき氷♪でも最近は、冷たいの食べるとすぐ体が冷えちゃって……あーいや、歳のせいじゃないぞ☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">あとは～……そうだ、浴衣も着たーい! 新しいの買ったし! ねね、プロデューサー。浴衣で行ける乙女ちっくなイベント知らない?</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">……朝顔市? へ～、よさげな雰囲気☆決めた! そこ一緒にいこ♪いつにする? 明日? はぁとはいつでもウェルカムだぞ♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">時間は朝早くね? うっし、一緒に早起きがんばろっ♪ご褒美に、美少女の浴衣が待ってるぞ☆そこ、もっと喜べって☆</div></div>
+                        </div>
                         <h2 class="box-title">後編</h2>
-                        <table class="table-area">
-                            <colgroup>
-                                <col style="width: 20%">
-                                <col style="width: 80%">
-                            </colgroup>
-                            <thead><tr><th>名前</th><th>セリフ</th></tr></thead>
-                            <tbody>
-                                <tr><td></td><td>神社の境内</td></tr>
-                                <tr><td>心</td><td>ふふっ、みんな早起きだねぇ。朝から元気に咲いちゃって♪こんなキレイな花なのに、朝だけなんてもったいないぞ～?</td></tr>
-                                <tr><td>心</td><td>……あれ、プロデューサー? もう、いつから見てたの～? もしかして、朝顔とお話ししてる乙女なはぁと、見てた? 見てたろっ☆</td></tr>
-                                <tr><td>心</td><td>知ってる? 朝顔の名前、美人さんの顔って意味なんだってさ。キレイだし、はかない感もあって、たしかにわかるわー…… !</td></tr>
-                                <tr><td>心</td><td>でもはぁとだって、負けてないし♪ねぇねぇ、プロデューサーは朝顔とはぁと、どっちが好き? やっぱはぁと～? おい、黙んな☆</td></tr>
-                                <tr><td>心</td><td>まぁせっかくだし、今は朝顔を楽しもっか。その代わり、はぁとのことも、あとでたっぷり可愛がってくれなきゃダメだぞ☆</td></tr>
-                                <tr><td>心</td><td>ほら、朝顔の花は今だけ、でもはぁとの旬は一年中ずぅ～っとだし ! いくつになっても、心はキュンキュンでピッチピチ全開よん♪</td></tr>
-                                <tr><td>心</td><td>そうだ、ついでにお参りしてこ! 何十年先も、はぁとがスウィーティーな笑顔を咲かせてますように……</td></tr>
-                                <tr><td>心</td><td>プロデューサーの隣で、ね☆</td></tr>
-                            </tbody>
-                        </table>
+                                                <div class="script-block">
+                            <div class="script-row stage-direction"><span class="who"></span><div class="line">神社の境内</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ふふっ、みんな早起きだねぇ。朝から元気に咲いちゃって♪こんなキレイな花なのに、朝だけなんてもったいないぞ～?</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">……あれ、プロデューサー? もう、いつから見てたの～? もしかして、朝顔とお話ししてる乙女なはぁと、見てた? 見てたろっ☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">知ってる? 朝顔の名前、美人さんの顔って意味なんだってさ。キレイだし、はかない感もあって、たしかにわかるわー…… !</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">でもはぁとだって、負けてないし♪ねぇねぇ、プロデューサーは朝顔とはぁと、どっちが好き? やっぱはぁと～? おい、黙んな☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">まぁせっかくだし、今は朝顔を楽しもっか。その代わり、はぁとのことも、あとでたっぷり可愛がってくれなきゃダメだぞ☆</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ほら、朝顔の花は今だけ、でもはぁとの旬は一年中ずぅ～っとだし ! いくつになっても、心はキュンキュンでピッチピチ全開よん♪</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">そうだ、ついでにお参りしてこ! 何十年先も、はぁとがスウィーティーな笑顔を咲かせてますように……</div></div>
+                            <div class="script-row" data-who="心"><span class="who">心</span><div class="line">プロデューサーの隣で、ね☆</div></div>
+                        </div>
                     </div></div>
                 </div>
                 
@@ -490,5 +431,47 @@
  
 
 
+<script>
+    const cardImages = [
+        '/Mobamas/NatsuiroHeart/NatsuiroHeart.jpg',
+        '/Mobamas/NatsuiroHeart/NatsuiroHeartTsujyoSign.jpg',
+        '/Mobamas/NatsuiroHeart/NatsuiroHeartPremiumSign.jpg',
+        '/Mobamas/NatsuiroHeart/NatsuiroHeartWakuNashi.jpg',
+        '/Mobamas/NatsuiroHeart/NatsuiroHeartTouka.png',
+    ];
+    
+    let currentImageIndex = 0;
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const cardImage = document.querySelector('.card-image-area img');
+        const imageCounter = document.getElementById('image-counter');
+        const imageTotal = document.getElementById('image-total');
+        
+        // 画像の総数を表示
+        if (imageTotal) {
+            imageTotal.textContent = cardImages.length;
+        }
+        
+        if (cardImage) {
+            cardImage.addEventListener('click', function() {
+                currentImageIndex = (currentImageIndex + 1) % cardImages.length;
+                
+                cardImage.style.opacity = '0.5';
+                
+                setTimeout(function() {
+                    cardImage.src = cardImages[currentImageIndex];
+                    cardImage.style.opacity = '1';
+                    
+                    // カウンターを更新
+                    if (imageCounter) {
+                        imageCounter.textContent = currentImageIndex + 1;
+                    }
+                }, 150);
+            });
+            
+            cardImage.style.cursor = 'pointer';
+        }
+    });
+</script>
 </body>
  </html>

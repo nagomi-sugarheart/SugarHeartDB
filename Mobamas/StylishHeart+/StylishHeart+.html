@@ -43,53 +43,7 @@
 	<!--CSS指定-->
 	<link rel="stylesheet" href="/style.css">
 	<!--フォント指定-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
-<script>
-    const cardImages = [
-        '/Mobamas/StylishHeart+/StylishHeart+.jpg',
-        '/Mobamas/StylishHeart+/StylishHeart+TsujyoSign.jpg',
-        '/Mobamas/StylishHeart+/StylishHeart+PremiumSign.jpg',
-        '/Mobamas/StylishHeart+/StylishHeart+WakuNashi.jpg',
-        '/Mobamas/StylishHeart+/StylishHeart+透過(ドレスなし).png',
-        '/Mobamas/StylishHeart+/StylishHeart+Touka.png',
-    ];
-    
-    let currentImageIndex = 0;
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        const cardImage = document.querySelector('.card-image-area img');
-        const imageCounter = document.getElementById('image-counter');
-        const imageTotal = document.getElementById('image-total');
-        
-        // 画像の総数を表示
-        if (imageTotal) {
-            imageTotal.textContent = cardImages.length;
-        }
-        
-        if (cardImage) {
-            cardImage.addEventListener('click', function() {
-                currentImageIndex = (currentImageIndex + 1) % cardImages.length;
-                
-                cardImage.style.opacity = '0.5';
-                
-                setTimeout(function() {
-                    cardImage.src = cardImages[currentImageIndex];
-                    cardImage.style.opacity = '1';
-                    
-                    // カウンターを更新
-                    if (imageCounter) {
-                        imageCounter.textContent = currentImageIndex + 1;
-                    }
-                }, 150);
-            });
-            
-            cardImage.style.cursor = 'pointer';
-        }
-    });
-</script>
 <body>
 <script src="/components/header.js"></script>
 
@@ -423,5 +377,48 @@
  
 
 
+<script>
+    const cardImages = [
+        '/Mobamas/StylishHeart+/StylishHeart+.jpg',
+        '/Mobamas/StylishHeart+/StylishHeart+TsujyoSign.jpg',
+        '/Mobamas/StylishHeart+/StylishHeart+PremiumSign.jpg',
+        '/Mobamas/StylishHeart+/StylishHeart+WakuNashi.jpg',
+        '/Mobamas/StylishHeart+/StylishHeart+透過(ドレスなし).png',
+        '/Mobamas/StylishHeart+/StylishHeart+Touka.png',
+    ];
+    
+    let currentImageIndex = 0;
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const cardImage = document.querySelector('.card-image-area img');
+        const imageCounter = document.getElementById('image-counter');
+        const imageTotal = document.getElementById('image-total');
+        
+        // 画像の総数を表示
+        if (imageTotal) {
+            imageTotal.textContent = cardImages.length;
+        }
+        
+        if (cardImage) {
+            cardImage.addEventListener('click', function() {
+                currentImageIndex = (currentImageIndex + 1) % cardImages.length;
+                
+                cardImage.style.opacity = '0.5';
+                
+                setTimeout(function() {
+                    cardImage.src = cardImages[currentImageIndex];
+                    cardImage.style.opacity = '1';
+                    
+                    // カウンターを更新
+                    if (imageCounter) {
+                        imageCounter.textContent = currentImageIndex + 1;
+                    }
+                }, 150);
+            });
+            
+            cardImage.style.cursor = 'pointer';
+        }
+    });
+</script>
 </body>
  </html>
