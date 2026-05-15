@@ -2043,7 +2043,7 @@ input[name="dialogue-tab"] {
 
 .card-row {
     display: grid;
-    grid-template-columns: 72px 90px 1fr 130px 130px 90px;
+    grid-template-columns: 72px 90px 1fr 90px;
     align-items: center;
     gap: 0;
     background: #ffffff;
@@ -2277,11 +2277,6 @@ input[name="dialogue-tab"] {
 }
 
 .script-row[data-who="心"] .who {
-    display: inline-flex;
-    align-items: center;
-    padding: 3px 10px;
-    background: var(--sh-pink-soft);
-    border-radius: var(--r-pill);
     color: var(--sh-pink-deep);
     font-weight: bold;
 }
@@ -2615,10 +2610,17 @@ input[name="dialogue-tab"] {
     background:
         linear-gradient(#fff,#fff) padding-box,
         var(--grad-sugar) border-box;
-    object-fit: cover;
     display: block;
     margin: 0 auto 16px;
     box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.profile-card .profile-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .profile-card h3 {
@@ -2772,7 +2774,6 @@ input[name="dialogue-tab"] {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 100% 50%, var(--sh-pink-soft) 0%, transparent 65%);
     pointer-events: none;
 }
 
@@ -2879,11 +2880,9 @@ input[name="dialogue-tab"] {
 
     /* Card rows */
     .card-row {
-        grid-template-columns: 1fr;
         grid-template-areas:
             "icon rarity"
             "name name"
-            "source date"
             "action action";
         grid-template-columns: auto 1fr;
     }
@@ -2891,8 +2890,6 @@ input[name="dialogue-tab"] {
     .card-row .card-icon  { grid-area: icon; }
     .card-row .card-rarity{ grid-area: rarity; }
     .card-row .card-name  { grid-area: name; }
-    .card-row .card-source{ grid-area: source; }
-    .card-row .card-date  { grid-area: date; }
     .card-row .card-action{ grid-area: action; }
 
     /* Event rows */
@@ -3187,4 +3184,174 @@ input[name="dialogue-tab"] {
     .voice-tabs { flex-wrap: wrap; }
     .voice-tab { flex: none; }
     .ep-body-inner { grid-template-columns: 1fr; }
+}
+
+/* ----------------------------------------------------------
+   Radio tab navigation (boss / commu section pages)
+---------------------------------------------------------- */
+.rtab-wrapper input[type="radio"] { display: none; }
+
+.rtab-nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.rtab-btn {
+    padding: 9px 24px;
+    border-radius: var(--r-pill);
+    background: var(--sh-pink-soft);
+    border: 1.5px solid var(--sh-line-soft);
+    color: var(--sh-text-soft);
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.rtab-btn:hover {
+    background: var(--sh-pink-mist);
+    color: var(--sh-pink-deep);
+}
+
+.rtab-panel { display: none; }
+
+/* Boss page active states */
+#boss-tab-1:checked ~ .rtab-nav label[for="boss-tab-1"],
+#boss-tab-2:checked ~ .rtab-nav label[for="boss-tab-2"],
+#boss-tab-3:checked ~ .rtab-nav label[for="boss-tab-3"],
+#boss-tab-final:checked ~ .rtab-nav label[for="boss-tab-final"] {
+    background: var(--sh-pink);
+    color: #ffffff;
+    border-color: var(--sh-pink);
+}
+
+#boss-tab-1:checked ~ .bt-1,
+#boss-tab-2:checked ~ .bt-2,
+#boss-tab-3:checked ~ .bt-3,
+#boss-tab-final:checked ~ .bt-final { display: block; }
+
+/* CinderellaHistory page active states */
+#ch-tab-1:checked ~ .rtab-nav label[for="ch-tab-1"],
+#ch-tab-2:checked ~ .rtab-nav label[for="ch-tab-2"] {
+    background: var(--sh-pink);
+    color: #ffffff;
+    border-color: var(--sh-pink);
+}
+
+#ch-tab-1:checked ~ .bt-1,
+#ch-tab-2:checked ~ .bt-2 { display: block; }
+
+/* ----------------------------------------------------------
+   Unified CardList — game tag badge + tab nav
+---------------------------------------------------------- */
+.game-tag {
+    display: inline-block;
+    font-size: 0.68rem;
+    padding: 2px 8px;
+    border-radius: var(--r-pill);
+    font-family: var(--font-display);
+    vertical-align: middle;
+    margin-right: 6px;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+.game-tag-mobamas { background: rgba(253,137,185,0.2); color: #c42667; }
+.game-tag-deresute { background: rgba(91,144,255,0.15); color: #1a4db5; }
+
+.cl-no-results {
+    padding: 32px;
+    text-align: center;
+    color: var(--sh-text-mute);
+    font-size: 0.9rem;
+}
+
+/* ----------------------------------------------------------
+   Index inline sub-menus (details/summary)
+---------------------------------------------------------- */
+.link-grid .link-details { grid-column: 1 / -1; }
+
+.link-details {
+    background: var(--sh-bg-alt);
+    border-radius: var(--r-sm);
+    border: 1px solid var(--sh-line-soft);
+    font-size: 0.88rem;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.link-details[open] {
+    background: #fff;
+    border-color: var(--sh-pink-mist);
+}
+
+.link-details > summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 14px;
+    cursor: pointer;
+    color: var(--sh-text);
+    list-style: none;
+    user-select: none;
+}
+
+.link-details > summary::-webkit-details-marker { display: none; }
+
+.link-details > summary::before {
+    content: "◆";
+    color: var(--sh-pink);
+    font-size: 0.55rem;
+    flex-shrink: 0;
+}
+
+.link-details > summary::after {
+    content: "▾";
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: var(--sh-pink);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.link-details[open] > summary::after { transform: rotate(180deg); }
+
+.link-details .link-submenu-inner {
+    border-top: 1px solid var(--sh-line-soft);
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.link-details .link-submenu-inner a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 12px;
+    color: var(--sh-text);
+    text-decoration: none;
+    border-radius: var(--r-sm);
+    font-size: 0.84rem;
+    transition: background 0.15s, color 0.15s;
+}
+
+.link-details .link-submenu-inner a::before {
+    content: "→";
+    color: var(--sh-pink);
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+.link-details .link-submenu-inner a:hover {
+    background: var(--sh-pink-soft);
+    color: var(--sh-pink-deep);
+}
+
+.link-details .link-submenu-inner .coming-soon {
+    padding: 8px 12px;
+    color: var(--sh-text-mute);
+    font-size: 0.82rem;
+    font-style: italic;
 }
