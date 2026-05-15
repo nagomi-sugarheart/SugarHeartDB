@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <base href="/SugarHeartDB/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユニット名｜ユニット詳細（モバマス）｜SugarHeartDB</title><!-- TODO: ユニット名に変更 -->
+    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニット「ユニット名」の詳細ページです。"><!-- TODO -->
+    <meta name="author" content="なごみ（@nagomi_IMCG）">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ユニット名｜SugarHeartDB"><!-- TODO -->
+    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニット「ユニット名」の詳細ページです。"><!-- TODO -->
+    <meta property="og:site_name" content="SugarHeartDB">
+    <meta property="og:image" content="https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="SugarHeartDB">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="components/header.js"></script>
+
+<!--
+===========================================================
+ユニット詳細ページ テンプレート
+===========================================================
+このファイルはコピーして各ユニットのページを作成するためのテンプレートです。
+「TODO」のコメントが付いている箇所を実際のデータに置き換えてください。
+
+ファイル命名規則:
+  Mobamas/Unit/[ユニット名英語].html
+  例: Mobamas/Unit/SweetPrincess.html
+===========================================================
+-->
+
+<section class="page-hero">
+    <div class="breadcrumb">
+        <a href="/SugarHeartDB/">HOME</a> ·
+        <a href="Mobamas/index.html">MOBAMAS</a> ·
+        <a href="Mobamas/UnitList.html">ユニット一覧</a> ·
+        <strong>ユニット名</strong><!-- TODO: ユニット名に変更 -->
+    </div>
+
+    <!-- ユニットヒーローカード -->
+    <div class="unit-hero">
+
+        <!-- 左パネル：ユニット概要 -->
+        <div class="unit-hero-left">
+            <div class="badges">
+                <span class="unit-badge size">3人ユニット</span><!-- TODO: 人数を変更 -->
+                <span class="unit-badge year">20XX〜</span><!-- TODO: 活動期間を変更 -->
+                <span class="unit-badge theme">レギュラー</span><!-- TODO: テーマを変更 -->
+            </div>
+            <h1>ユニット名をここに入れてください</h1><!-- TODO -->
+            <div class="en">UNIT NAME · DEBUT 20XX.XX.XX</div><!-- TODO -->
+            <p class="summary">
+                <!-- TODO: ユニットの紹介文を入れてください（2〜3文程度）。
+                どんなユニットか、テーマ・世界観・活動期間などを簡潔に。 -->
+                ここにユニットの紹介文を入れてください。
+            </p>
+        </div>
+
+        <!-- 右パネル：メンバー & 統計 -->
+        <div class="unit-hero-right">
+            <div class="members-label">MEMBERS // <span id="member-count">3</span></div><!-- TODO: 人数を変更 -->
+            <div class="members-row">
+                <!-- 心ちゃんは必ず .shin クラスを付けてください -->
+                <div class="unit-member shin">
+                    <div class="av">心</div>
+                    <div class="nm">佐藤心</div>
+                </div>
+                <!-- TODO: 他メンバーを追加・削除してください -->
+                <div class="unit-member">
+                    <div class="av">名</div><!-- TODO: イニシャルや略称 -->
+                    <div class="nm">メンバー名</div><!-- TODO -->
+                </div>
+                <div class="unit-member">
+                    <div class="av">名</div><!-- TODO -->
+                    <div class="nm">メンバー名</div><!-- TODO -->
+                </div>
+            </div>
+
+            <!-- ユニット統計（4項目） -->
+            <div class="unit-stats-strip">
+                <div class="stat">
+                    <div class="v">-</div><!-- TODO: 出番数 -->
+                    <div class="l">APPEARANCES</div>
+                </div>
+                <div class="stat">
+                    <div class="v">-</div><!-- TODO: 楽曲数 -->
+                    <div class="l">SONGS</div>
+                </div>
+                <div class="stat">
+                    <div class="v">-</div><!-- TODO: アルバム数（なければ — ） -->
+                    <div class="l">ALBUMS</div>
+                </div>
+                <div class="stat">
+                    <div class="v">-y</div><!-- TODO: 活動年数 -->
+                    <div class="l">DURATION</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- セクションタブ -->
+<div class="box-area" style="max-width:1180px; margin:0 auto 0; padding:0 28px;">
+    <div class="section-tabs">
+        <button class="section-tab active" onclick="switchTab('appearances', this)">
+            出番一覧 <span class="count" id="tab-ap-count">-</span><!-- TODO: 出番数 -->
+        </button>
+        <button class="section-tab" onclick="switchTab('songs', this)">
+            楽曲 <span class="count" id="tab-song-count">-</span><!-- TODO: 楽曲数 -->
+        </button>
+        <button class="section-tab" onclick="switchTab('members', this)">メンバー詳細</button>
+        <button class="section-tab" onclick="switchTab('links', this)">関連リンク</button>
+    </div>
+</div>
+
+<div class="box-area" style="max-width:1180px; margin:0 auto; padding:0 28px 60px;">
+
+    <!-- ========== 出番一覧タブ ========== -->
+    <div id="tab-appearances">
+
+        <!--
+        ===========================================================
+        TODO: 出番カードの追加方法
+        ===========================================================
+        以下のブロックをコピーして、各出番を時系列の新しい順（降順）で追加してください。
+
+        ・ap-date: .y=年, .m=月（2桁）, .d=開始日→終了日
+        ・ap-title h3: イベント名
+        ・.game-event: ゲーム名・イベント種別
+        ・.tags: .sh-tag[data-tag="..."] でタグを付けてください
+          使用可能なdata-tag: limited / ranking / solo / medley / revival / seasonal / collab
+        ・.ap-meta .num: 何番目の出番か（例: No.01）
+        ・.phases: 各フェーズ（DEBUT/BATTLE/WIN/LOSE/DRAW）のセリフと画像
+          - .phase-img: <img src="..." alt="..."> で画像に差し替えてください
+          - .dialogue: セリフを入れてください
+        ・.ap-foot .related: 関連ページへのリンクを入れてください
+        ===========================================================
+        -->
+
+        <!-- 出番カード 1（最新のものを上に） -->
+        <article class="appearance">
+            <header class="appearance-header">
+                <div class="ap-date">
+                    <div class="y">20XX</div><!-- TODO: 年 -->
+                    <div class="m">XX</div><!-- TODO: 月 -->
+                    <div class="d">XX→XX</div><!-- TODO: 開始日→終了日 -->
+                </div>
+                <div class="ap-title">
+                    <h3>イベント名をここに入れてください</h3><!-- TODO -->
+                    <div class="game-event">
+                        <span>モバマス · イベント種別</span><!-- TODO: 種別を変更 -->
+                        <!-- <a href="Mobamas/EventList.html">↗ イベント詳細へ</a> --><!-- TODO: リンク先があれば追加 -->
+                    </div>
+                    <div class="tags">
+                        <span class="sh-tag" data-tag="limited">限定カード</span><!-- TODO: 適切なタグに変更 -->
+                    </div>
+                </div>
+                <div class="ap-meta">
+                    <span class="num">No.01</span><!-- TODO: 何番目の出番か -->
+                </div>
+            </header>
+
+            <!-- フェーズグリッド（DEBUT・BATTLE・WIN・LOSE・DRAW の5つ） -->
+            <div class="phases">
+                <div class="phase" data-phase="debut">
+                    <div class="phase-label">DEBUT <span class="ic">登場</span></div>
+                    <div class="phase-img">
+                        <!-- TODO: 画像がある場合は下の img タグを有効にしてください -->
+                        <!-- <img src="Mobamas/Unit/[UnitName]/ap01-debut.jpg" alt="登場画面"> -->
+                        画像準備中
+                    </div>
+                    <div class="dialogue">
+                        <span class="speaker">心:</span><!-- TODO: セリフを入れてください -->
+                        （登場セリフ）
+                    </div>
+                </div>
+                <div class="phase" data-phase="battle">
+                    <div class="phase-label">BATTLE <span class="ic">対戦</span></div>
+                    <div class="phase-img">
+                        <!-- <img src="Mobamas/Unit/[UnitName]/ap01-battle.jpg" alt="対戦画面"> -->
+                        画像準備中
+                    </div>
+                    <div class="dialogue">
+                        <span class="speaker">心:</span><!-- TODO -->
+                        （バトルセリフ）
+                    </div>
+                </div>
+                <div class="phase" data-phase="win">
+                    <div class="phase-label">WIN <span class="ic">勝利</span></div>
+                    <div class="phase-img">
+                        <!-- <img src="Mobamas/Unit/[UnitName]/ap01-win.jpg" alt="勝利画面"> -->
+                        画像準備中
+                    </div>
+                    <div class="dialogue">
+                        <span class="speaker">心:</span><!-- TODO -->
+                        （勝利セリフ）
+                    </div>
+                </div>
+                <div class="phase" data-phase="lose">
+                    <div class="phase-label">LOSE <span class="ic">敗北</span></div>
+                    <div class="phase-img">
+                        <!-- <img src="Mobamas/Unit/[UnitName]/ap01-lose.jpg" alt="敗北画面"> -->
+                        画像準備中
+                    </div>
+                    <div class="dialogue">
+                        <span class="speaker">心:</span><!-- TODO -->
+                        （敗北セリフ）
+                    </div>
+                </div>
+                <div class="phase" data-phase="draw">
+                    <div class="phase-label">DRAW <span class="ic">引分</span></div>
+                    <div class="phase-img">
+                        <!-- <img src="Mobamas/Unit/[UnitName]/ap01-draw.jpg" alt="引き分け画面"> -->
+                        画像準備中
+                    </div>
+                    <div class="dialogue">
+                        <span class="speaker">心:</span><!-- TODO -->
+                        （引き分けセリフ）
+                    </div>
+                </div>
+            </div>
+
+            <footer class="ap-foot">
+                <div class="related">
+                    <span class="lbl">RELATED //</span>
+                    <!-- TODO: 関連ページへのリンクを追加してください -->
+                    <!-- <a href="...">イベント詳細</a> -->
+                    <!-- <a href="...">カード詳細</a> -->
+                </div>
+                <!-- <a class="full-detail" href="...">テキスト全文 →</a> --><!-- TODO: リンク先があれば追加 -->
+            </footer>
+        </article>
+
+        <!-- TODO: 出番カードをここに追加してください（上が新しい順） -->
+
+    </div>
+
+    <!-- ========== 楽曲タブ ========== -->
+    <div id="tab-songs" style="display:none;">
+        <div class="box-area" style="margin:0; padding:20px 0;">
+            <!-- TODO: ユニット楽曲をここに追加してください -->
+            <!-- 楽曲ページへのリンクや、楽曲情報のボックスを記載してください -->
+            <p class="box-text" style="color:#ccc; padding: 20px 0;">楽曲情報は準備中です。</p>
+        </div>
+    </div>
+
+    <!-- ========== メンバー詳細タブ ========== -->
+    <div id="tab-members" style="display:none;">
+        <div class="box-area" style="margin:0; padding:20px 0;">
+            <!-- TODO: 各メンバーへのリンクや簡単なプロフィールを記載してください -->
+            <p class="box-text" style="color:#ccc; padding: 20px 0;">メンバー情報は準備中です。</p>
+        </div>
+    </div>
+
+    <!-- ========== 関連リンクタブ ========== -->
+    <div id="tab-links" style="display:none;">
+        <div class="box-area" style="margin:0; padding:20px 0;">
+            <!-- TODO: 関連ページへのリンクを記載してください -->
+            <p class="box-text" style="color:#ccc; padding: 20px 0;">関連リンクは準備中です。</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+const TAB_IDS = ['appearances', 'songs', 'members', 'links'];
+
+function switchTab(id, btn) {
+    TAB_IDS.forEach(t => {
+        document.getElementById('tab-' + t).style.display = t === id ? '' : 'none';
+    });
+    document.querySelectorAll('.section-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+}
+</script>
+</body>
+</html>
