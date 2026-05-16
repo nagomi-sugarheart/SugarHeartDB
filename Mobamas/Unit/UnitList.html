@@ -53,78 +53,47 @@
 
         <!--
         ===========================================================
-        TODO: ユニットカードの追加方法
-        ===========================================================
-        以下のブロックをコピーして、各ユニットの情報を記入してください。
-
-        ・unit-badge.size  → ユニット人数（例: 3人）
-        ・unit-badge.year  → 活動期間（例: 2022〜）
-        ・unit-badge.theme → テーマ（例: レギュラー / 期間限定 / 長野）
-        ・unit-name        → ユニット名（日本語）
-        ・unit-en          → ユニット名（ローマ字）
-        ・data-size="3"    → フィルター用。人数を数字で入れてください
-        ・unit-member.shin → 心ちゃんのアバターには必ず .shin クラスを付けてください
-        ・unit-member .av  → イニシャルや略称を入れてください（画像がある場合は <img> タグに差し替え可）
-        ・unit-info .row   → SONGS/EVENTS/ALBUM/DEBUTの数値を入れてください
-        ・.detail-btn href → 詳細ページのパスを入れてください（例: Mobamas/Unit/UnitName.html）
+        自動生成されたユニットカード（generate_unit_pages.py）
         ===========================================================
         -->
 
-        <!-- ユニットカード例 1 -->
-        <article class="unit-card" data-size="3">
+        <article class="unit-card" data-size="-">
             <div class="unit-cover">
                 <div class="meta">
-                    <span class="unit-badge size">3人</span>
-                    <span class="unit-badge year">20XX〜</span>
-                    <span class="unit-badge theme">レギュラー</span><!-- TODO: テーマを変更 -->
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
                 </div>
-                <h3 class="unit-name">ユニット名をここに入れてください</h3><!-- TODO -->
-                <div class="unit-en">UNIT NAME IN ROMAJI</div><!-- TODO -->
+                <h3 class="unit-name">エージェント・コール・SKS</h3>
+                <div class="unit-en">AgentCoalSKS</div>
             </div>
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <!-- 心ちゃんは必ず .shin クラスを付けてください -->
                     <div class="unit-member shin">
                         <div class="av">心</div>
                         <div class="nm">佐藤心</div>
                     </div>
-                    <!-- TODO: 他メンバーを追加してください -->
-                    <div class="unit-member">
-                        <div class="av">名</div><!-- TODO: イニシャル -->
-                        <div class="nm">メンバー名</div><!-- TODO -->
-                    </div>
-                    <div class="unit-member">
-                        <div class="av">名</div><!-- TODO -->
-                        <div class="nm">メンバー名</div><!-- TODO -->
-                    </div>
                 </div>
             </div>
             <div class="unit-info">
-                <div class="row"><span class="k">SONGS</span><span class="v">－</span></div><!-- TODO -->
-                <div class="row"><span class="k">EVENTS</span><span class="v">－</span></div><!-- TODO -->
-                <div class="row"><span class="k">ALBUM</span><span class="v">－</span></div><!-- TODO -->
-                <div class="row"><span class="k">DEBUT</span><span class="v">20XX.XX</span></div><!-- TODO -->
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
             </div>
             <div class="unit-foot">
-                <div class="stats">
-                    <div class="stat"><strong>-</strong>SONGS</div><!-- TODO -->
-                    <div class="stat"><strong>-</strong>EVENTS</div><!-- TODO -->
-                </div>
-                <a class="detail-btn" href="Mobamas/Unit/UnitTemplate.html">詳細 →</a><!-- TODO: href を変更 -->
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/AgentCoalSKS/AgentCoalSKS.html">詳細 →</a>
             </div>
         </article>
 
-        <!-- ユニットカード例 2（2人ユニットの場合） -->
-        <article class="unit-card" data-size="2">
+        <article class="unit-card" data-size="-">
             <div class="unit-cover">
                 <div class="meta">
-                    <span class="unit-badge size">2人</span>
-                    <span class="unit-badge year">20XX</span>
-                    <span class="unit-badge theme">期間限定</span><!-- TODO -->
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
                 </div>
-                <h3 class="unit-name">ユニット名をここに入れてください</h3><!-- TODO -->
-                <div class="unit-en">UNIT NAME IN ROMAJI</div><!-- TODO -->
+                <h3 class="unit-name">ビーチエンジェル</h3>
+                <div class="unit-en">BeachAngel</div>
             </div>
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
@@ -133,30 +102,1056 @@
                         <div class="av">心</div>
                         <div class="nm">佐藤心</div>
                     </div>
-                    <div class="unit-member">
-                        <div class="av">名</div><!-- TODO -->
-                        <div class="nm">メンバー名</div><!-- TODO -->
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/BeachAngel/BeachAngel.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">ブライダルモデル Age26</h3>
+                <div class="unit-en">BridalModelAge26</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
                     </div>
                 </div>
             </div>
             <div class="unit-info">
-                <div class="row"><span class="k">SONGS</span><span class="v">－</span></div><!-- TODO -->
-                <div class="row"><span class="k">EVENTS</span><span class="v">－</span></div><!-- TODO -->
-                <div class="row"><span class="k">ALBUM</span><span class="v">－</span></div><!-- TODO -->
-                <div class="row"><span class="k">DEBUT</span><span class="v">20XX.XX</span></div><!-- TODO -->
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
             </div>
             <div class="unit-foot">
-                <div class="stats">
-                    <div class="stat"><strong>-</strong>SONGS</div><!-- TODO -->
-                    <div class="stat"><strong>-</strong>EVENTS</div><!-- TODO -->
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/BridalModelAge26/BridalModelAge26.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
                 </div>
-                <a class="detail-btn" href="Mobamas/Unit/UnitTemplate.html">詳細 →</a><!-- TODO: href を変更 -->
+                <h3 class="unit-name">キャッチYOU!</h3>
+                <div class="unit-en">CatchYOU</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/CatchYOU/CatchYOU.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">衣装担当☆カリスマデザイナーズ</h3>
+                <div class="unit-en">CharismaDesigners</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/CharismaDesigners/CharismaDesigners.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">カミング・オブ・エイジ！</h3>
+                <div class="unit-en">ComingofAge</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/ComingofAge/ComingofAge.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">キューティクル・ガールズ</h3>
+                <div class="unit-en">CuticleGirls</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/CuticleGirls/CuticleGirls.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">どかぽか工務店（校内工事中☆）</h3>
+                <div class="unit-en">DokaPokaKoumuten</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">2017.09.30</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/DokaPokaKoumuten/DokaPokaKoumuten.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">エターナルハァトエイジ</h3>
+                <div class="unit-en">EternalHeartAge</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/EternalHeartAge/EternalHeartAge.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">エターナルレディエイト</h3>
+                <div class="unit-en">EternalLadiate</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">2015.09.30</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/EternalLadiate/EternalLadiate.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">ファシネ・プレサージュ</h3>
+                <div class="unit-en">FascinerPresage</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">2019.06.30</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/FascinerPresage/FascinerPresage.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">ふるさと応援アイドル部</h3>
+                <div class="unit-en">FurusatoOuenIdolBu</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/FurusatoOuenIdolBu/FurusatoOuenIdolBu.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">はみだし者の研究魚</h3>
+                <div class="unit-en">HamidashimononoKenkyuugyo</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/HamidashimononoKenkyuugyo/HamidashimononoKenkyuugyo.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">はぴ☆☆☆ふら</h3>
+                <div class="unit-en">HappiFura</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">2017.08.21</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/HappiFura/HappiFura.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">花恋創作隊</h3>
+                <div class="unit-en">KarenSousakutai</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/KarenSousakutai/KarenSousakutai.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">カワスウィーティなボクはぁと</h3>
+                <div class="unit-en">KawaSweetieNaBokuHeart</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/KawaSweetieNaBokuHeart/KawaSweetieNaBokuHeart.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">きらきらモデルfrom NSC</h3>
+                <div class="unit-en">KiraKiraModelfromNSC</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">2014.10.10</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/KiraKiraModelfromNSC/KiraKiraModelfromNSC.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">着せ替え人形と仕立て屋さん</h3>
+                <div class="unit-en">KisekaeNingyoandShitateyaSan</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/KisekaeNingyoandShitateyaSan/KisekaeNingyoandShitateyaSan.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">これでもくらえ☆</h3>
+                <div class="unit-en">KoredemoKurae</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/KoredemoKurae/KoredemoKurae.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">これでもくらえ☆with アナスタシア</h3>
+                <div class="unit-en">KoredemoKuraeWithAnastasia</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/KoredemoKuraeWithAnastasia/KoredemoKuraeWithAnastasia.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">愛の使徒～ラヴ・エンジェルズ</h3>
+                <div class="unit-en">LoveAngels</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/LoveAngels/LoveAngels.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">魔女の館/Dark Magic</h3>
+                <div class="unit-en">MajonoYakata-DarkMagic</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/MajonoYakata-DarkMagic/MajonoYakata-DarkMagic.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">☆マリナル応援団☆</h3>
+                <div class="unit-en">MarinalOuendan</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/MarinalOuendan/MarinalOuendan.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">ムーランルージュ</h3>
+                <div class="unit-en">MoulinRouge</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">2015.12.10</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/MoulinRouge/MoulinRouge.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">OTONA・ウェディング</h3>
+                <div class="unit-en">OTONAWedding</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/OTONAWedding/OTONAWedding.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">オンリーワン・コレクション</h3>
+                <div class="unit-en">OnlyOneCollection</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/OnlyOneCollection/OnlyOneCollection.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">オトメなオトナのナツモヨウ☆</h3>
+                <div class="unit-en">OtomenaOtonanoNatsumoyou</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/OtomenaOtonanoNatsumoyou/OtomenaOtonanoNatsumoyou.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">おうちのじかん</h3>
+                <div class="unit-en">OuchinoJikan</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/OuchinoJikan/OuchinoJikan.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">ピンキーバウンス</h3>
+                <div class="unit-en">PinkyBounce</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/PinkyBounce/PinkyBounce.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">女王の同級生（花嫁）</h3>
+                <div class="unit-en">QueensClassmate_Bride</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/QueensClassmate_Bride/QueensClassmate_Bride.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">Ready? After!</h3>
+                <div class="unit-en">ReadyAfter</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/ReadyAfter/ReadyAfter.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">新春なでし娘</h3>
+                <div class="unit-en">ShinshunNadeshiko</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/ShinshunNadeshiko/ShinshunNadeshiko.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">正月短し遊べよ乙女☆</h3>
+                <div class="unit-en">ShougatsuMijikashiAsobeyoOtome</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/ShougatsuMijikashiAsobeyoOtome/ShougatsuMijikashiAsobeyoOtome.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">スウィート☆オペレーション</h3>
+                <div class="unit-en">SweetOperation</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/SweetOperation/SweetOperation.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">スウィーティー☆ミルキーウェイ</h3>
+                <div class="unit-en">SweetieMilkeyWay</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/SweetieMilkeyWay/SweetieMilkeyWay.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">戦う乙女たち</h3>
+                <div class="unit-en">TatakauOtometachi</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/TatakauOtometachi/TatakauOtometachi.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">トレジャートライアングル</h3>
+                <div class="unit-en">TreasureTriangle</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/TreasureTriangle/TreasureTriangle.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">バレンタイン振り返り会</h3>
+                <div class="unit-en">ValentineFurikaeriKai</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/ValentineFurikaeriKai/ValentineFurikaeriKai.html">詳細 →</a>
+            </div>
+        </article>
+
+        <article class="unit-card" data-size="-">
+            <div class="unit-cover">
+                <div class="meta">
+                    <span class="unit-badge size">-人</span>
+                    <span class="unit-badge year">-</span>
+                    <span class="unit-badge theme">-</span>
+                </div>
+                <h3 class="unit-name">志希を応援！ワンダーカラーズ</h3>
+                <div class="unit-en">WonderColors</div>
+            </div>
+            <div class="unit-members">
+                <div class="label">MEMBERS</div>
+                <div class="member-row">
+                    <div class="unit-member shin">
+                        <div class="av">心</div>
+                        <div class="nm">佐藤心</div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-info">
+                <div class="row"><span class="k">DEBUT</span><span class="v">－</span></div>
+            </div>
+            <div class="unit-foot">
+                <div class="stats"></div>
+                <a class="detail-btn" href="Unit/WonderColors/WonderColors.html">詳細 →</a>
             </div>
         </article>
 
         <!-- TODO: ここに追加のユニットカードを貼り付けてください -->
 
-    </div>
+        </div>
 </div>
 
 <script>

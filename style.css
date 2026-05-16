@@ -4411,3 +4411,32 @@ input[name="dialogue-tab"] {
     .gallery-img { height: 130px; }
     .v2-detail-lower { grid-template-columns: 1fr; }
 }
+
+/* ユニット詳細ページ */
+.unit-img-group { margin-bottom: 28px; }
+.unit-img-group .box-title { margin-bottom: 14px; }
+.unit-img-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+.unit-img-fig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.unit-img-fig figcaption {
+    font-size: 11px;
+    color: var(--sh-text-soft);
+    font-family: ui-monospace, monospace;
+}
+.unit-img-fig img {
+    width: 180px;
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow-sm);
+}
+@media screen and (max-width: 900px) {
+    .unit-img-row { gap: 10px; }
+    .unit-img-fig img { width: 140px; }
+}
