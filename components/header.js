@@ -102,8 +102,9 @@
             <span></span>\n\
         </button>\n\
     </nav>\n\
-    <div class="mobile-menu-overlay" id="mobile-overlay"></div>\n\
-    <div class="mobile-menu" id="mobile-menu">\n\
+</header>\n\
+<div class="mobile-menu-overlay" id="mobile-overlay"></div>\n\
+<div class="mobile-menu" id="mobile-menu">\n\
         <ul class="mobile-nav">\n\
             <li class="mobile-item">\n\
                 <div class="mobile-item-header">\n\
@@ -164,7 +165,7 @@
             </li>\n\
         </ul>\n\
     </div>\n\
-</header>';
+</div>';
 
     // Zen Maru Gothic フォントを全ページで有効化
     (function() {
