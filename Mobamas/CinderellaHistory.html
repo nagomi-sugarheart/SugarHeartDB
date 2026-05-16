@@ -24,233 +24,207 @@
 <script src="components/header.js"></script>
 
 <section class="page-hero">
-    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Mobamas/CardList.html">MOBAMAS</a> · <strong>シンデレラヒストリー</strong></div>
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Mobamas/index.html">MOBAMAS</a> · <strong>シンデレラヒストリー</strong></div>
     <h1>シンデレラヒストリー <span class="sub">/ CINDERELLA HISTORY · MOBAMAS</span></h1>
     <p class="summary">モバマス内コンテンツ「シンデレラヒストリー」に登場する、心ちゃん関連のコミュを収録。動画と全セリフを掲載しています。</p>
 </section>
 
 <div class="page">
 
-    <nav class="commu-index">
-        <div class="label">INDEX</div>
-        <div class="links">
-            <a href="#eien-ni-kagayaki">
-                <span class="num">1</span>
-                永遠に輝きを放つ乙女たち☆
-            </a>
-            <a href="#mary-daiwa-nadeko">
-                <span class="num">2</span>
-                メアリー憧れのダイワナデコ
-            </a>
-        </div>
+<div class="rtab-wrapper">
+
+    <!-- ラジオボタン -->
+    <input type="radio" name="ch-tab" id="ch-tab-1" checked>
+    <input type="radio" name="ch-tab" id="ch-tab-2">
+
+    <!-- タブナビ -->
+    <nav class="rtab-nav">
+        <label for="ch-tab-1" class="rtab-btn">永遠に輝きを放つ乙女たち☆</label>
+        <label for="ch-tab-2" class="rtab-btn">メアリー憧れのダイワナデコ</label>
     </nav>
 
     <!-- コミュ1 -->
-    <div class="section-block open" id="eien-ni-kagayaki">
-        <div class="section-block-head" onclick="this.parentElement.classList.toggle('open')">
-            <div class="meta">
-                <span class="num-badge">COMMU 01</span>
-                <h2>永遠に輝きを放つ乙女たち☆</h2>
-            </div>
-            <div class="right">
-                <span class="arrow">▼</span>
+    <div class="rtab-panel bt-1" id="eien-ni-kagayaki">
+
+        <div class="cast-block">
+            <div class="label">CAST</div>
+            <div class="idol-cast">
+                <div class="idol shin">
+                    <img src="data/iconimg/satoshin_icon01.png" alt="佐藤心">
+                    <span class="nm">佐藤心</span>
+                </div>
+                <div class="idol">
+                    <img src="data/iconimg/sawadamarina_icon01.png" alt="沢田麻理菜">
+                    <span class="nm">沢田麻理菜</span>
+                </div>
             </div>
         </div>
-        <div class="section-block-body">
-            <div class="section-block-body-inner">
 
-                <div class="cast-block">
-                    <div class="label">CAST</div>
-                    <div class="idol-cast">
-                        <div class="idol shin">
-                            <img src="data/iconimg/satoshin_icon01.png" alt="佐藤心">
-                            <span class="nm">佐藤心</span>
-                        </div>
-                        <div class="idol">
-                            <img src="data/iconimg/sawadamarina_icon01.png" alt="沢田麻理菜">
-                            <span class="nm">沢田麻理菜</span>
-                        </div>
-                    </div>
+        <div class="commu-body with-video">
+            <div class="video-col">
+                <div class="yt-frame">
+                    <iframe src="https://www.youtube.com/embed/cmXRrJ60wJw?si=mNm29UbVOKfKBUr3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-
-                <div class="commu-body with-video">
-                    <div class="video-col">
-                        <div class="yt-frame">
-                            <iframe src="https://www.youtube.com/embed/cmXRrJ60wJw?si=mNm29UbVOKfKBUr3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="script-block">
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">おはよーございまーす！事務所の一番乗りは、スウィーティーなはぁと様だぞ☆</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">おはよう。あれ、佐藤さん？朝から元気だね。</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">げっ、先客！？……って、マリナールじゃん！おはよ！朝からサーフィンでもしてきたわけ？</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">あはは、まさか。ちょっと早めに着いちゃってね。……あ、これ、実家から送ってきたお焼き。食べる？</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">お焼き！？マジ！？食う食う！はぁと、お焼きにはうるさいんだから！……はむっ。……んん〜！これ、野沢菜たっぷりじゃん！最高！</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">ふふ、良かった。佐藤さんも長野出身だもんね。</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">そうそう！信州のソウルフード！あー、故郷の味が五臓六腑に染み渡るわぁ……。</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">佐藤さんのその服、今日も……なんていうか、個性的だね。</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">これ？はぁとの手作り「デコ盛りスウィーティー・アーマー」だぞ☆リボンとフリルで武装して、世界中から愛されちゃうんだから！</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">手作りなんだ、すごいね。……ねぇ、佐藤さんって、いくつだっけ？</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ぶっ……！レディに年齢を聞くなんて、マリナールもデリカシーがないぞ！はぁとは、永遠の15歳……</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">はいはい。</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">……って言いたいとこだけど、26歳だぞ！文句あるか！</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">あはは、ないない。26歳かぁ……。私より少し上なんだね。23歳くらいかと思ってた。</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ほほぅ？マリナール、今のは「若く見える」って褒め言葉と受け取っていいのか？……まぁ、はぁとは素材がいいからな！</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">でも、その年でアイドルを始めるのって、勇気がいったんじゃない？</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">勇気っていうか……執念？はぁとは、ずっと可愛い服を着て、みんなに「可愛い」って言われたかったの。</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">崖っぷちだろうがなんだろうが、一度きりの人生、やりたいことやんねーと損だろ？</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">……そうだね。私も、最初はなんとなく始めたけど、今は全力で楽しんでる。もっと熱い景色が見たいって思うんだ。</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">マリナール……あんた、いい女じゃん！話がわかるわぁ！</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">決めた！はぁととマリナールで、新ユニット結成だぞ！</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">ええっ！？いきなり！？</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ユニット名は……「永遠に輝きを放つ乙女たち」！どうよ、このスウィーティーなネーミング！</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">……乙女、かぁ。ちょっと、いや、だいぶ背中が痒くなりそうだけど……佐藤さんと一緒なら、退屈はしなさそうだね。</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">よっしゃ、言質取ったり！これからよろしくな、マリナルぅ！</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">うん、よろしくね、心。……あ、「はぁと」って呼んだほうがいい？</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">いや、今さら照れるから「し〜ん☆」とかでいいぞ！これから長野の星として、トップアイドルまでぶっ飛ぶぞー！</div></div>
-                        <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">あはは、オッケー。期待してるよ。</div></div>
-                    </div>
-                </div>
-
+            </div>
+            <div class="script-block">
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">おはよーございまーす！事務所の一番乗りは、スウィーティーなはぁと様だぞ☆</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">おはよう。あれ、佐藤さん？朝から元気だね。</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">げっ、先客！？……って、マリナールじゃん！おはよ！朝からサーフィンでもしてきたわけ？</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">あはは、まさか。ちょっと早めに着いちゃってね。……あ、これ、実家から送ってきたお焼き。食べる？</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">お焼き！？マジ！？食う食う！はぁと、お焼きにはうるさいんだから！……はむっ。……んん〜！これ、野沢菜たっぷりじゃん！最高！</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">ふふ、良かった。佐藤さんも長野出身だもんね。</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">そうそう！信州のソウルフード！あー、故郷の味が五臓六腑に染み渡るわぁ……。</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">佐藤さんのその服、今日も……なんていうか、個性的だね。</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">これ？はぁとの手作り「デコ盛りスウィーティー・アーマー」だぞ☆リボンとフリルで武装して、世界中から愛されちゃうんだから！</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">手作りなんだ、すごいね。……ねぇ、佐藤さんって、いくつだっけ？</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ぶっ……！レディに年齢を聞くなんて、マリナールもデリカシーがないぞ！はぁとは、永遠の15歳……</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">はいはい。</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">……って言いたいとこだけど、26歳だぞ！文句あるか！</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">あはは、ないない。26歳かぁ……。私より少し上なんだね。23歳くらいかと思ってた。</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ほほぅ？マリナール、今のは「若く見える」って褒め言葉と受け取っていいのか？……まぁ、はぁとは素材がいいからな！</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">でも、その年でアイドルを始めるのって、勇気がいったんじゃない？</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">勇気っていうか……執念？はぁとは、ずっと可愛い服を着て、みんなに「可愛い」って言われたかったの。</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">崖っぷちだろうがなんだろうが、一度きりの人生、やりたいことやんねーと損だろ？</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">……そうだね。私も、最初はなんとなく始めたけど、今は全力で楽しんでる。もっと熱い景色が見たいって思うんだ。</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">マリナール……あんた、いい女じゃん！話がわかるわぁ！</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">決めた！はぁととマリナールで、新ユニット結成だぞ！</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">ええっ！？いきなり！？</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ユニット名は……「永遠に輝きを放つ乙女たち」！どうよ、このスウィーティーなネーミング！</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">……乙女、かぁ。ちょっと、いや、だいぶ背中が痒くなりそうだけど……佐藤さんと一緒なら、退屈はしなさそうだね。</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">よっしゃ、言質取ったり！これからよろしくな、マリナルぅ！</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">うん、よろしくね、心。……あ、「はぁと」って呼んだほうがいい？</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">いや、今さら照れるから「し〜ん☆」とかでいいぞ！これから長野の星として、トップアイドルまでぶっ飛ぶぞー！</div></div>
+                <div class="script-row" data-who="麻理菜"><span class="who">麻理菜</span><div class="line">あはは、オッケー。期待してるよ。</div></div>
             </div>
         </div>
+
     </div>
 
     <!-- コミュ2 -->
-    <div class="section-block" id="mary-daiwa-nadeko">
-        <div class="section-block-head" onclick="this.parentElement.classList.toggle('open')">
-            <div class="meta">
-                <span class="num-badge">COMMU 02</span>
-                <h2>メアリー憧れのダイワナデコ</h2>
-            </div>
-            <div class="right">
-                <span class="arrow">▼</span>
+    <div class="rtab-panel bt-2" id="mary-daiwa-nadeko">
+
+        <div class="cast-block">
+            <div class="label">CAST</div>
+            <div class="idol-cast">
+                <div class="idol shin">
+                    <img src="data/iconimg/satoshin_icon01.png" alt="佐藤心">
+                    <span class="nm">佐藤心</span>
+                </div>
+                <div class="idol">
+                    <img src="data/iconimg/marycochran_icon01.png" alt="メアリー・コクラン">
+                    <span class="nm">メアリー</span>
+                </div>
+                <div class="idol">
+                    <img src="data/iconimg/kobayakawasae_icon01.png" alt="小早川紗枝">
+                    <span class="nm">小早川紗枝</span>
+                </div>
+                <div class="idol">
+                    <img src="data/iconimg/momoiazuki_icon01.png" alt="桃井あずき">
+                    <span class="nm">桃井あずき</span>
+                </div>
+                <div class="idol">
+                    <img src="data/iconimg/ohtsukiyui_icon01.png" alt="大槻唯">
+                    <span class="nm">大槻唯</span>
+                </div>
             </div>
         </div>
-        <div class="section-block-body">
-            <div class="section-block-body-inner">
 
-                <div class="cast-block">
-                    <div class="label">CAST</div>
-                    <div class="idol-cast">
-                        <div class="idol shin">
-                            <img src="data/iconimg/satoshin_icon01.png" alt="佐藤心">
-                            <span class="nm">佐藤心</span>
-                        </div>
-                        <div class="idol">
-                            <img src="data/iconimg/marycochran_icon01.png" alt="メアリー・コクラン">
-                            <span class="nm">メアリー</span>
-                        </div>
-                        <div class="idol">
-                            <img src="data/iconimg/kobayakawasae_icon01.png" alt="小早川紗枝">
-                            <span class="nm">小早川紗枝</span>
-                        </div>
-                        <div class="idol">
-                            <img src="data/iconimg/momoiazuki_icon01.png" alt="桃井あずき">
-                            <span class="nm">桃井あずき</span>
-                        </div>
-                        <div class="idol">
-                            <img src="data/iconimg/ohtsukiyui_icon01.png" alt="大槻唯">
-                            <span class="nm">大槻唯</span>
-                        </div>
-                    </div>
+        <div class="commu-body with-video">
+            <div class="video-col">
+                <div class="yt-frame">
+                    <iframe src="https://www.youtube.com/embed/Z1gemAKIPLo?si=n-s1o8oBFrk3v5rE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-
-                <div class="commu-body with-video">
-                    <div class="video-col">
-                        <div class="yt-frame">
-                            <iframe src="https://www.youtube.com/embed/Z1gemAKIPLo?si=n-s1o8oBFrk3v5rE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="script-block">
-                        <div class="script-row stage-direction"><span class="who"></span><div class="line">ある日の午後</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ふんふ〜ん♪打ち合わせも終わったし、買い物にでも……ん？</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">あれは……メアリーちゃん？</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">イチニ、サンシ……レッスン後はちゃんとほぐさないとネ……！</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">Five, Six, Seven, Eight……</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">メアリーちゃん、お疲れ☆柔軟やってんの？</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">アラ、ハートじゃない！お疲れサマ♪</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">さっきダンスのレッスンが終わったところなノ。少し振りを見直して、仕上げの柔軟をしてたのヨ。</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">そっか、一人で残って頑張ってたんだ。エライな☆</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">早く素敵なレディになりたいモノ。でもやっぱりまだ11才だし……プロポーションだって完璧とは言えないワ。</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">でも、今叶わないことを言っても仕方ないのよネ。今できることを努力するだけヨ。</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ん〜、背伸びしたい年頃だよね〜。にしてもメアリーちゃんは本当にしっかりしてるなー。</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">アリガト。でも、ダイワナデコになるには、まだまだだワ。もっと頑張らないと。</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">……とは言え、具体的にはどうしたらいいかわからないノ。こうして基礎をしっかりやるぐらいしか……。</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ダイワナデコに……ははーん、なるほどな☆</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">メアリーちゃん、はぁとお姉様にいい考えがあるから、ちょっと付き合って☆</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">？いいケド……？</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">マッチャ・ラテおいしいワ！ハート、ありがとう♪</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">いーのいーの！頑張ってるメアリーちゃんに、お姉様のご褒美だぞ☆</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">たぶんもうすぐ来るから、お茶飲んで待とーな☆</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">来るって、誰が来るノ？</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">お待たせ〜っ！もう、心さん急すぎだよっ！</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">お疲れ☆呼び出してゴメンな！あずきちゃんなら適任かと思って！</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">――と思ったら紗枝ちゃんもいるじゃん！ラッキー☆</div></div>
-                        <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">はぁとはん、メアリーはん、お疲れさんどす〜。</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">紗枝ちゃん、ちょうど一緒のレッスンだったんだ〜。引っ張ってきちゃった♪</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">それで？心さんとメアリーちゃんって、珍しい組み合わせだけど、これなんの会？</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ふっふっふ☆これは、悩める乙女メアリーちゃんのお悩み相談の会なんだよね♪</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">エッ！？そうだったノ！？</div></div>
-                        <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">なんや、メアリーはんが一番びっくりしてはるけど……メアリーはん、何か悩んではるん？</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">日本のこと！？学校のこと！？なんでも聞くよっ！</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">まぁ落ち着いて☆メアリーちゃんはね、素敵なレディになりたいんだって。</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">そう！アタシ、ダイワナデコになりたいノ！</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">ダイワ……？</div></div>
-                        <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">なでこ……？</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ヤマトナデシコな☆</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">ヤマト？ ナデシコ……？</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">Oh……漢字ってどうして二つ以上の読み方があるノ！？英語はHelloって書いたらHelloって読むわヨ！</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">日本っていろんなことが複雑だワ！そういえば、サエは話し方も独特よネ？</div></div>
-                        <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">ええ。京訛り、いうんどす〜♪</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">なるほどネ！英語にもあるワ！ アメリカも地域によって発音に独特のクセがあるのヨ。</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">へー！そうなんだ！ 知らなかった！う〜ん、でも、大和撫子か〜。</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">そういえば、紗枝ちゃんってなぎなたやってたよね？そういうの、大和撫子っぽいなーって思うよ！</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">ナギナタ？なぁに？ それ。</div></div>
-                        <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">日本の武道のひとつどす〜。空手は知ってはります？</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">カラテ！ ええ、知ってるワ！ パパが好きヨ！ってことは、あんな感じのスポーツなノ？</div></div>
-                        <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">そうどす〜、空手は海外でも有名やさかい、いめぇじしやすいかなぁと思うたんよ〜。</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">あ、画像あった！こんな感じだよ♪</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">へぇ、カッコイイわネ！これは武器なノ？Hmm……ってことは、強くなればいいってコト？</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">パパが持ってるコミックなら読んでるワ！あんな感じのヒーローを目指せばイイノ？</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">それだとマッチョなメアリーちゃんが誕生するな☆強くは強くでも、精神的にって意味合いが強いかもね。</div></div>
-                        <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">せやねぇ。なぎなたいうたら武器やけど、今の時代は戦うために習うんとはちゃうんよ。</div></div>
-                        <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">どっちかいうたら、精神的な成長を促すためやねぇ……もちろん、試合とかもあるし、本質は護身術なんやけどね。</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">フーン……でも、なんとなくわかるワ。空手で、畳に正座して集中してるの、テレビで観たノ。</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">日本の武道って、サムライって感じでカッコイイわよネ！</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">でしょうっ♪まぁ、武道を嗜むと大和撫子になれるってわけじゃないけど、</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">大和撫子に必要な落ち着きなんかは、身につくんじゃないかな。紗枝ちゃんみたいに！</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">落ち着き……上品なレディってことネ。とっても大事なことだワ！</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">フーン、習い事をするのも、ヤマトナデシコへの近道ってワケネ……。</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">メアリーちゃんのなりたい大和撫子は、あずきちゃんや紗枝ちゃんみたいに、日本の伝統とか文化に日頃から触れてる子に話を聞くのが一番いいよな☆</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">それであずきを呼んだのか〜！紗枝ちゃん連れてきて正解だったね♪</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">あずきちゃん、ナイスだぞ☆</div></div>
-                        <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">メアリーはんには、いろんな体験をようさんしてほしいなぁ。せや、そのうち京都にもおこしやす〜♪</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">京都！ 知ってるワ！有名だもノ！いつか着物を着て歩いてみたいノ♪</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">着物ならあずきに任せてよっ！基本の着こなしから流行りのアレンジまで、粋なコーディネートしちゃうよっ♪</div></div>
-                        <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">いつでも着付けしますえ♪</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">お！ いいなそれ☆まずは形からでもいいんだし、着物着てみちゃえばいいよね！</div></div>
-                        <div class="script-row" data-who="心"><span class="who">心</span><div class="line">事務所でいつでも着られるし。なんなら今からでも行けるぞ☆</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">Wow！アタシ着てみたいワ！！</div></div>
-                        <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">よしっ！じゃあ早速行ってみようっ♪</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">ダメだったワ……着物を着ればいいんじゃないってことに気付いたノ。</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">サエったら歩き方もBeautifulなんだモノ！アズキだってすごいのヨ！</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">それにハートもヨ！別人みたいに上品になっちゃって！</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">ダイワナデコってすごいのネ！日本人はFantasticだワ！</div></div>
-                        <div class="script-row" data-who="唯"><span class="who">唯</span><div class="line">『そっかそっかー☆でも、着物着られてよかったじゃん！あとで写真送ってね♪』</div></div>
-                        <div class="script-row" data-who="マーガレット"><span class="who">マーガレット</span><div class="line">メアリー？電話中？ご飯できたって！</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">ハーイ！すぐ行くワ！</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">見ててユイ！アタシも立派なダイワ……ヤマトナデシコになってやるんだから！</div></div>
-                        <div class="script-row" data-who="唯"><span class="who">唯</span><div class="line">『うん♪メアリーならヨユーだよ☆』</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">アタシもそう思うワ！待ってなさいよダーリン！</div></div>
-                        <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">アタシ、ダーリンもびっくりの素敵なレディになってやるワ♪</div></div>
-                    </div>
-                </div>
-
+            </div>
+            <div class="script-block">
+                <div class="script-row stage-direction"><span class="who"></span><div class="line">ある日の午後</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ふんふ〜ん♪打ち合わせも終わったし、買い物にでも……ん？</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">あれは……メアリーちゃん？</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">イチニ、サンシ……レッスン後はちゃんとほぐさないとネ……！</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">Five, Six, Seven, Eight……</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">メアリーちゃん、お疲れ☆柔軟やってんの？</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">アラ、ハートじゃない！お疲れサマ♪</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">さっきダンスのレッスンが終わったところなノ。少し振りを見直して、仕上げの柔軟をしてたのヨ。</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">そっか、一人で残って頑張ってたんだ。エライな☆</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">早く素敵なレディになりたいモノ。でもやっぱりまだ11才だし……プロポーションだって完璧とは言えないワ。</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">でも、今叶わないことを言っても仕方ないのよネ。今できることを努力するだけヨ。</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ん〜、背伸びしたい年頃だよね〜。にしてもメアリーちゃんは本当にしっかりしてるなー。</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">アリガト。でも、ダイワナデコになるには、まだまだだワ。もっと頑張らないと。</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">……とは言え、具体的にはどうしたらいいかわからないノ。こうして基礎をしっかりやるぐらいしか……。</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ダイワナデコに……ははーん、なるほどな☆</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">メアリーちゃん、はぁとお姉様にいい考えがあるから、ちょっと付き合って☆</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">？いいケド……？</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">マッチャ・ラテおいしいワ！ハート、ありがとう♪</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">いーのいーの！頑張ってるメアリーちゃんに、お姉様のご褒美だぞ☆</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">たぶんもうすぐ来るから、お茶飲んで待とーな☆</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">来るって、誰が来るノ？</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">お待たせ〜っ！もう、心さん急すぎだよっ！</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">お疲れ☆呼び出してゴメンな！あずきちゃんなら適任かと思って！</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">――と思ったら紗枝ちゃんもいるじゃん！ラッキー☆</div></div>
+                <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">はぁとはん、メアリーはん、お疲れさんどす〜。</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">紗枝ちゃん、ちょうど一緒のレッスンだったんだ〜。引っ張ってきちゃった♪</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">それで？心さんとメアリーちゃんって、珍しい組み合わせだけど、これなんの会？</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ふっふっふ☆これは、悩める乙女メアリーちゃんのお悩み相談の会なんだよね♪</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">エッ！？そうだったノ！？</div></div>
+                <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">なんや、メアリーはんが一番びっくりしてはるけど……メアリーはん、何か悩んではるん？</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">日本のこと！？学校のこと！？なんでも聞くよっ！</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">まぁ落ち着いて☆メアリーちゃんはね、素敵なレディになりたいんだって。</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">そう！アタシ、ダイワナデコになりたいノ！</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">ダイワ……？</div></div>
+                <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">なでこ……？</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">ヤマトナデシコな☆</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">ヤマト？ ナデシコ……？</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">Oh……漢字ってどうして二つ以上の読み方があるノ！？英語はHelloって書いたらHelloって読むわヨ！</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">日本っていろんなことが複雑だワ！そういえば、サエは話し方も独特よネ？</div></div>
+                <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">ええ。京訛り、いうんどす〜♪</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">なるほどネ！英語にもあるワ！ アメリカも地域によって発音に独特のクセがあるのヨ。</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">へー！そうなんだ！ 知らなかった！う〜ん、でも、大和撫子か〜。</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">そういえば、紗枝ちゃんってなぎなたやってたよね？そういうの、大和撫子っぽいなーって思うよ！</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">ナギナタ？なぁに？ それ。</div></div>
+                <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">日本の武道のひとつどす〜。空手は知ってはります？</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">カラテ！ ええ、知ってるワ！ パパが好きヨ！ってことは、あんな感じのスポーツなノ？</div></div>
+                <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">そうどす〜、空手は海外でも有名やさかい、いめぇじしやすいかなぁと思うたんよ〜。</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">あ、画像あった！こんな感じだよ♪</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">へぇ、カッコイイわネ！これは武器なノ？Hmm……ってことは、強くなればいいってコト？</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">パパが持ってるコミックなら読んでるワ！あんな感じのヒーローを目指せばイイノ？</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">それだとマッチョなメアリーちゃんが誕生するな☆強くは強くでも、精神的にって意味合いが強いかもね。</div></div>
+                <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">せやねぇ。なぎなたいうたら武器やけど、今の時代は戦うために習うんとはちゃうんよ。</div></div>
+                <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">どっちかいうたら、精神的な成長を促すためやねぇ……もちろん、試合とかもあるし、本質は護身術なんやけどね。</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">フーン……でも、なんとなくわかるワ。空手で、畳に正座して集中してるの、テレビで観たノ。</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">日本の武道って、サムライって感じでカッコイイわよネ！</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">でしょうっ♪まぁ、武道を嗜むと大和撫子になれるってわけじゃないけど、</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">大和撫子に必要な落ち着きなんかは、身につくんじゃないかな。紗枝ちゃんみたいに！</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">落ち着き……上品なレディってことネ。とっても大事なことだワ！</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">フーン、習い事をするのも、ヤマトナデシコへの近道ってワケネ……。</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">メアリーちゃんのなりたい大和撫子は、あずきちゃんや紗枝ちゃんみたいに、日本の伝統とか文化に日頃から触れてる子に話を聞くのが一番いいよな☆</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">それであずきを呼んだのか〜！紗枝ちゃん連れてきて正解だったね♪</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">あずきちゃん、ナイスだぞ☆</div></div>
+                <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">メアリーはんには、いろんな体験をようさんしてほしいなぁ。せや、そのうち京都にもおこしやす〜♪</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">京都！ 知ってるワ！有名だもノ！いつか着物を着て歩いてみたいノ♪</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">着物ならあずきに任せてよっ！基本の着こなしから流行りのアレンジまで、粋なコーディネートしちゃうよっ♪</div></div>
+                <div class="script-row" data-who="紗枝"><span class="who">紗枝</span><div class="line">いつでも着付けしますえ♪</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">お！ いいなそれ☆まずは形からでもいいんだし、着物着てみちゃえばいいよね！</div></div>
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">事務所でいつでも着られるし。なんなら今からでも行けるぞ☆</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">Wow！アタシ着てみたいワ！！</div></div>
+                <div class="script-row" data-who="あずき"><span class="who">あずき</span><div class="line">よしっ！じゃあ早速行ってみようっ♪</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">ダメだったワ……着物を着ればいいんじゃないってことに気付いたノ。</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">サエったら歩き方もBeautifulなんだモノ！アズキだってすごいのヨ！</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">それにハートもヨ！別人みたいに上品になっちゃって！</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">ダイワナデコってすごいのネ！日本人はFantasticだワ！</div></div>
+                <div class="script-row" data-who="唯"><span class="who">唯</span><div class="line">『そっかそっかー☆でも、着物着られてよかったじゃん！あとで写真送ってね♪』</div></div>
+                <div class="script-row" data-who="マーガレット"><span class="who">マーガレット</span><div class="line">メアリー？電話中？ご飯できたって！</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">ハーイ！すぐ行くワ！</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">見ててユイ！アタシも立派なダイワ……ヤマトナデシコになってやるんだから！</div></div>
+                <div class="script-row" data-who="唯"><span class="who">唯</span><div class="line">『うん♪メアリーならヨユーだよ☆』</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">アタシもそう思うワ！待ってなさいよダーリン！</div></div>
+                <div class="script-row" data-who="メアリー"><span class="who">メアリー</span><div class="line">アタシ、ダーリンもびっくりの素敵なレディになってやるワ♪</div></div>
             </div>
         </div>
+
     </div>
 
-</div>
+</div><!-- /.rtab-wrapper -->
+
+</div><!-- /.page -->
 
 </body>
 </html>

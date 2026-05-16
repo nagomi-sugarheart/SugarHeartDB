@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <base href="/SugarHeartDB/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メモリアルコミュ（モバマス）｜SugarHeartDB</title>
+    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のメモリアルコミュ（モバマス）をまとめたページです。">
+    <meta name="author" content="なごみ（@nagomi_IMCG）">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="メモリアルコミュ（モバマス）｜SugarHeartDB">
+    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のメモリアルコミュ（モバマス）をまとめたページです。">
+    <meta property="og:site_name" content="SugarHeartDB">
+    <meta property="og:image" content="https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="SugarHeartDB">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="components/header.js"></script>
+
+<section class="page-hero">
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Mobamas/index.html">MOBAMAS</a> · <strong>メモリアルコミュ</strong></div>
+    <h1>メモリアルコミュ <span class="sub">/ MEMORIAL COMMU · MOBAMAS</span></h1>
+    <p class="summary">モバマス内コンテンツ「メモリアルコミュ」に収録された、心ちゃんのコミュを掲載しています。各コミュの「再生位置へ」ボタンを押すと、上の動画が自動でその場面にジャンプします。</p>
+</section>
+
+<div class="page">
+
+    <!--
+    ============================================================
+    YouTube 共有プレイヤー
+    ============================================================
+    data-video-id : 再生する動画の YouTube 動画 ID
+                    例: https://youtu.be/XXXXXXXXXXX → XXXXXXXXXXX
+    ============================================================
+    -->
+    <div class="mc-player-wrap" id="mc-player-wrap" data-video-id="XXXXXXXXXXX">
+        <!--
+        TODO: data-video-id に YouTube 動画 ID を入れてください。
+        例: data-video-id="cmXRrJ60wJw"
+        → JavaScript がここから動画 ID を読み取って再生します。
+        -->
+        <div id="mc-yt-player"></div>
+    </div>
+
+    <!--
+    ============================================================
+    ラジオタブ + 各コミュパネル
+    ============================================================
+    -->
+    <div class="rtab-wrapper">
+
+        <!-- ラジオボタン（5コミュ分） -->
+        <input type="radio" name="mc-tab" id="mc-tab-1" checked>
+        <input type="radio" name="mc-tab" id="mc-tab-2">
+        <input type="radio" name="mc-tab" id="mc-tab-3">
+        <input type="radio" name="mc-tab" id="mc-tab-4">
+        <input type="radio" name="mc-tab" id="mc-tab-5">
+
+        <!-- タブナビ -->
+        <nav class="rtab-nav">
+            <label for="mc-tab-1" class="rtab-btn">コミュ 1</label><!-- TODO: コミュ名に変更 -->
+            <label for="mc-tab-2" class="rtab-btn">コミュ 2</label><!-- TODO -->
+            <label for="mc-tab-3" class="rtab-btn">コミュ 3</label><!-- TODO -->
+            <label for="mc-tab-4" class="rtab-btn">コミュ 4</label><!-- TODO -->
+            <label for="mc-tab-5" class="rtab-btn">コミュ 5</label><!-- TODO -->
+        </nav>
+
+        <!--
+        ============================================================
+        各コミュパネル
+        ============================================================
+        .mc-seek-btn の data-time : このコミュが動画内で始まる秒数
+            例: コミュが 1分30秒から始まる場合 → data-time="90"
+        ============================================================
+        -->
+
+        <!-- コミュ 1 -->
+        <div class="rtab-panel bt-1">
+
+            <div class="cast-block">
+                <div class="label">CAST</div>
+                <div class="idol-cast">
+                    <div class="idol shin">
+                        <img src="data/iconimg/satoshin_icon01.png" alt="佐藤心">
+                        <span class="nm">佐藤心</span>
+                    </div>
+                    <!-- TODO: 登場キャラクターを追加してください -->
+                </div>
+            </div>
+
+            <!--
+            data-time : このコミュが動画内で始まる秒数
+            TODO: 実際の開始秒数に変更してください（例: data-time="0"）
+            -->
+            <button class="mc-seek-btn" data-time="0">コミュ 1 の再生位置へ</button><!-- TODO: ラベルとdata-timeを変更 -->
+
+            <div class="script-block">
+                <!-- TODO: セリフを追加してください -->
+                <!-- コピー用テンプレート:
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">セリフをここに入れてください。</div></div>
+                <div class="script-row" data-who="相手名"><span class="who">相手名</span><div class="line">セリフをここに入れてください。</div></div>
+                <div class="script-row stage-direction"><span class="who"></span><div class="line">ト書きはここに入れてください。</div></div>
+                -->
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">（準備中）</div></div>
+            </div>
+
+        </div>
+
+        <!-- コミュ 2 -->
+        <div class="rtab-panel bt-2">
+
+            <div class="cast-block">
+                <div class="label">CAST</div>
+                <div class="idol-cast">
+                    <div class="idol shin">
+                        <img src="data/iconimg/satoshin_icon01.png" alt="佐藤心">
+                        <span class="nm">佐藤心</span>
+                    </div>
+                    <!-- TODO -->
+                </div>
+            </div>
+
+            <button class="mc-seek-btn" data-time="0">コミュ 2 の再生位置へ</button><!-- TODO: data-time を変更 -->
+
+            <div class="script-block">
+                <!-- TODO: セリフを追加してください -->
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">（準備中）</div></div>
+            </div>
+
+        </div>
+
+        <!-- コミュ 3 -->
+        <div class="rtab-panel bt-3">
+
+            <div class="cast-block">
+                <div class="label">CAST</div>
+                <div class="idol-cast">
+                    <div class="idol shin">
+                        <img src="data/iconimg/satoshin_icon01.png" alt="佐藤心">
+                        <span class="nm">佐藤心</span>
+                    </div>
+                    <!-- TODO -->
+                </div>
+            </div>
+
+            <button class="mc-seek-btn" data-time="0">コミュ 3 の再生位置へ</button><!-- TODO: data-time を変更 -->
+
+            <div class="script-block">
+                <!-- TODO: セリフを追加してください -->
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">（準備中）</div></div>
+            </div>
+
+        </div>
+
+        <!-- コミュ 4 -->
+        <div class="rtab-panel bt-4">
+
+            <div class="cast-block">
+                <div class="label">CAST</div>
+                <div class="idol-cast">
+                    <div class="idol shin">
+                        <img src="data/iconimg/satoshin_icon01.png" alt="佐藤心">
+                        <span class="nm">佐藤心</span>
+                    </div>
+                    <!-- TODO -->
+                </div>
+            </div>
+
+            <button class="mc-seek-btn" data-time="0">コミュ 4 の再生位置へ</button><!-- TODO: data-time を変更 -->
+
+            <div class="script-block">
+                <!-- TODO: セリフを追加してください -->
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">（準備中）</div></div>
+            </div>
+
+        </div>
+
+        <!-- コミュ 5 -->
+        <div class="rtab-panel bt-5">
+
+            <div class="cast-block">
+                <div class="label">CAST</div>
+                <div class="idol-cast">
+                    <div class="idol shin">
+                        <img src="data/iconimg/satoshin_icon01.png" alt="佐藤心">
+                        <span class="nm">佐藤心</span>
+                    </div>
+                    <!-- TODO -->
+                </div>
+            </div>
+
+            <button class="mc-seek-btn" data-time="0">コミュ 5 の再生位置へ</button><!-- TODO: data-time を変更 -->
+
+            <div class="script-block">
+                <!-- TODO: セリフを追加してください -->
+                <div class="script-row" data-who="心"><span class="who">心</span><div class="line">（準備中）</div></div>
+            </div>
+
+        </div>
+
+    </div><!-- /.rtab-wrapper -->
+
+</div><!-- /.page -->
+
+<!--
+============================================================
+YouTube IFrame API — 汎用シークプレイヤー
+============================================================
+動画IDと再生秒数はすべてHTMLのdata属性から取得します。
+
+HTML側で設定が必要な値:
+  #mc-player-wrap[data-video-id] → YouTube動画ID
+  .mc-seek-btn[data-time]        → 各コミュの開始秒数
+
+このscriptタグ内は変更不要です。
+============================================================
+-->
+<script>
+(function () {
+    const wrap = document.getElementById('mc-player-wrap');
+    const videoId = wrap ? wrap.dataset.videoId : '';
+
+    /* YouTube IFrame API スクリプトを動的に読み込む */
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(tag);
+
+    let player = null;
+
+    /* API 準備完了時にプレイヤーを初期化 */
+    window.onYouTubeIframeAPIReady = function () {
+        if (!videoId || videoId === 'XXXXXXXXXXX') return; /* 動画ID未設定時はスキップ */
+        player = new YT.Player('mc-yt-player', {
+            videoId: videoId,
+            playerVars: {
+                rel: 0,
+                modestbranding: 1,
+                playsinline: 1
+            }
+        });
+    };
+
+    /* 各シークボタンにクリックイベントを設定 */
+    document.querySelectorAll('.mc-seek-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            const seconds = parseInt(btn.dataset.time, 10);
+            if (!player || typeof player.seekTo !== 'function') return;
+            player.seekTo(seconds, true);
+            player.playVideo();
+            /* プレイヤーが画面外の場合はスクロールして見せる */
+            wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+}());
+</script>
+</body>
+</html>

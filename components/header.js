@@ -8,13 +8,13 @@
         <a href="/SugarHeartDB/" class="header-logo">SugarHeartDB</a>\n\
         <ul class="nav-menu">\n\
             <li class="nav-item">\n\
-                <a href="Mobamas/CardList.html" class="nav-link">モバマス</a>\n\
+                <a href="Mobamas/index.html" class="nav-link">モバマス</a>\n\
                 <div class="mega-menu">\n\
                     <div class="mega-inner">\n\
                         <div class="mega-col">\n\
                             <h4>カード・コミュ</h4>\n\
                             <ul>\n\
-                                <li><a href="Mobamas/CardList.html">カード一覧</a></li>\n\
+                                <li><a href="CardList.html#mobamas">カード一覧</a></li>\n\
                                 <li><a href="Mobamas/NaganoArea/NaganoAreaBoss.html">長野エリアボスセリフ</a></li>\n\
                                 <li><a href="Mobamas/PuchiDerela.html">ぷちでれら</a></li>\n\
                             </ul>\n\
@@ -38,13 +38,13 @@
                 </div>\n\
             </li>\n\
             <li class="nav-item">\n\
-                <a href="Deresute/CardList.html" class="nav-link">デレステ</a>\n\
+                <a href="Deresute/index.html" class="nav-link">デレステ</a>\n\
                 <div class="mega-menu">\n\
                     <div class="mega-inner">\n\
                         <div class="mega-col">\n\
                             <h4>カード・コミュ</h4>\n\
                             <ul>\n\
-                                <li><a href="Deresute/CardList.html">カード一覧</a></li>\n\
+                                <li><a href="CardList.html#deresute">カード一覧</a></li>\n\
                                 <li><a href="Deresute/Common/CommonCommu.html">共通コミュ・ボイス</a></li>\n\
                                 <li><a href="Deresute/Event/EventList.html">メインイベント</a></li>\n\
                                 <li><a href="Deresute/GuestCommu/GuestCommu.html">ゲスト参加コミュ＆映り込みカード</a></li>\n\
@@ -111,8 +111,8 @@
                     <button class="accordion-toggle" aria-label="展開">＋</button>\n\
                 </div>\n\
                 <ul class="mobile-submenu">\n\
-                    <li><a href="Mobamas/CardList.html">カード一覧</a></li>\n\
-                    <li><a href="Mobamas/NaganoAreaBossLines.html">長野エリアボスセリフ</a></li>\n\
+                    <li><a href="CardList.html#mobamas">カード一覧</a></li>\n\
+                    <li><a href="Mobamas/NaganoArea/NaganoAreaBoss.html">長野エリアボスセリフ</a></li>\n\
                     <li><a href="Mobamas/PuchiDerela.html">ぷちでれら</a></li>\n\
                     <li><a href="Mobamas/Event/EventList.html">イベント一覧</a></li>\n\
                     <li><a href="Mobamas/Unit/UnitList.html">ユニット一覧</a></li>\n\
@@ -127,7 +127,7 @@
                     <button class="accordion-toggle" aria-label="展開">＋</button>\n\
                 </div>\n\
                 <ul class="mobile-submenu">\n\
-                    <li><a href="Deresute/CardList.html">カード一覧</a></li>\n\
+                    <li><a href="CardList.html#deresute">カード一覧</a></li>\n\
                     <li><a href="Deresute/Common/CommonCommu.html">共通コミュ・ボイス</a></li>\n\
                     <li><a href="Deresute/Event/EventList.html">メインイベント</a></li>\n\
                     <li><a href="Deresute/GuestCommu/GuestCommu.html">ゲスト参加コミュ＆映り込みカード</a></li>\n\
