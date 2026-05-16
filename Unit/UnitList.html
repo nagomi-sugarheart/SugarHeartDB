@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <base href="/SugarHeartDB/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ユニット一覧（モバマス）｜SugarHeartDB</title>
-    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニットの一覧（モバマス）をまとめたページです。">
+    <title>ユニット一覧｜SugarHeartDB</title>
+    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニットの一覧をまとめたページです。">
     <meta name="author" content="なごみ（@nagomi_IMCG）">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="ユニット一覧（モバマス）｜SugarHeartDB">
-    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニットの一覧（モバマス）をまとめたページです。">
+    <meta property="og:title" content="ユニット一覧｜SugarHeartDB">
+    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニットの一覧をまとめたページです。">
     <meta property="og:site_name" content="SugarHeartDB">
     <meta property="og:image" content="https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.jpg">
     <meta name="twitter:card" content="summary">
@@ -24,45 +24,47 @@
 <script src="components/header.js"></script>
 
 <section class="page-hero">
-    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Mobamas/index.html">MOBAMAS</a> · <strong>ユニット一覧</strong></div>
-    <h1>ユニット一覧（モバマス） <span class="sub">/ MOBAMAS UNITS</span></h1>
-    <p class="summary">心ちゃんが所属するユニットを一覧にまとめたページです。各ユニットのメンバー・楽曲・イベント情報へのリンクも掲載しています。</p>
-    <!-- TODO: 下記チップの数値を実際のデータに合わせて更新してください -->
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>ユニット一覧</strong></div>
+    <h1>ユニット一覧 <span class="sub">/ UNITS</span></h1>
+    <p class="summary">心ちゃんが所属するユニットを一覧にまとめたページです。</p>
     <div class="meta-row">
-        <span class="chip"><strong>-</strong> ユニット</span>
-        <span class="chip"><strong>-</strong> 共演アイドル</span>
-        <span class="chip"><strong>-</strong> 楽曲</span>
+        <span class="chip" id="unit-count-chip"><strong>-</strong> ユニット表示中</span>
     </div>
 </section>
 
 <div class="box-area" style="max-width:1180px; margin:0 auto 24px; padding:0 28px;">
 
-    <!-- フィルター・並び替えツールバー -->
+    <!-- フィルター・検索ツールバー -->
     <div class="unit-toolbar">
-        <div class="size-filter">
-            <button class="active" onclick="filterUnits('all', this)">All</button>
-            <button onclick="filterUnits('2', this)">2人</button>
-            <button onclick="filterUnits('3', this)">3人</button>
-            <button onclick="filterUnits('4', this)">4人</button>
-            <button onclick="filterUnits('5', this)">5人</button>
+
+        <!-- ゲーム絞り込みタブ -->
+        <div class="unit-game-tabs">
+            <button class="unit-tab active" data-game="all">ALL</button>
+            <button class="unit-tab" data-game="mobamas">モバマス</button>
+            <button class="unit-tab" data-game="deresute">デレステ</button>
         </div>
+
+        <!-- 検索・ソートエリア -->
+        <div class="unit-search-row">
+            <input type="search" id="unit-search" class="unit-search-input" placeholder="ユニット名・アイドル名で検索…">
+            <div class="unit-sort-group">
+                <span class="unit-sort-label">並び順</span>
+                <button class="unit-sort-btn active" data-sort="asc">初出日 ↑古い順</button>
+                <button class="unit-sort-btn" data-sort="desc">初出日 ↓新しい順</button>
+            </div>
+        </div>
+
     </div>
 
     <!-- ユニットグリッド -->
     <div class="unit-grid" id="unit-grid">
 
-        <!--
-        ===========================================================
-        自動生成されたユニットカード（generate_unit_pages.py）
-        ===========================================================
-        -->
-
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="エージェント・コール・SKS" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">エージェント・コール・SKS</h3>
                 <div class="unit-en">AgentCoalSKS</div>
@@ -70,10 +72,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -85,12 +84,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="ビーチエンジェル" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">ビーチエンジェル</h3>
                 <div class="unit-en">BeachAngel</div>
@@ -98,10 +97,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -113,12 +109,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="ブライダルモデル Age26" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">ブライダルモデル Age26</h3>
                 <div class="unit-en">BridalModelAge26</div>
@@ -126,10 +122,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -141,12 +134,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="キャッチYOU!" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">キャッチYOU!</h3>
                 <div class="unit-en">CatchYOU</div>
@@ -154,10 +147,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -169,12 +159,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="衣装担当☆カリスマデザイナーズ" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">衣装担当☆カリスマデザイナーズ</h3>
                 <div class="unit-en">CharismaDesigners</div>
@@ -182,10 +172,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -197,12 +184,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="カミング・オブ・エイジ！" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">カミング・オブ・エイジ！</h3>
                 <div class="unit-en">ComingofAge</div>
@@ -210,10 +197,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -225,12 +209,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="キューティクル・ガールズ" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">キューティクル・ガールズ</h3>
                 <div class="unit-en">CuticleGirls</div>
@@ -238,10 +222,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -253,12 +234,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="20170930" data-name-ja="どかぽか工務店（校内工事中☆）" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
-                    <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge year">2017〜</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">どかぽか工務店（校内工事中☆）</h3>
                 <div class="unit-en">DokaPokaKoumuten</div>
@@ -266,10 +247,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -281,12 +259,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="エターナルハァトエイジ" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">エターナルハァトエイジ</h3>
                 <div class="unit-en">EternalHeartAge</div>
@@ -294,10 +272,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -309,12 +284,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="20150930" data-name-ja="エターナルレディエイト" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
-                    <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge year">2015〜</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">エターナルレディエイト</h3>
                 <div class="unit-en">EternalLadiate</div>
@@ -322,10 +297,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -337,12 +309,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="20190630" data-name-ja="ファシネ・プレサージュ" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
-                    <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge year">2019〜</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">ファシネ・プレサージュ</h3>
                 <div class="unit-en">FascinerPresage</div>
@@ -350,10 +322,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -365,12 +334,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="ふるさと応援アイドル部" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">ふるさと応援アイドル部</h3>
                 <div class="unit-en">FurusatoOuenIdolBu</div>
@@ -378,10 +347,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -393,12 +359,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="はみだし者の研究魚" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">はみだし者の研究魚</h3>
                 <div class="unit-en">HamidashimononoKenkyuugyo</div>
@@ -406,10 +372,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -421,12 +384,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="20170821" data-name-ja="はぴ☆☆☆ふら" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
-                    <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge year">2017〜</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">はぴ☆☆☆ふら</h3>
                 <div class="unit-en">HappiFura</div>
@@ -434,10 +397,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -449,12 +409,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="花恋創作隊" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">花恋創作隊</h3>
                 <div class="unit-en">KarenSousakutai</div>
@@ -462,10 +422,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -477,12 +434,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="カワスウィーティなボクはぁと" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">カワスウィーティなボクはぁと</h3>
                 <div class="unit-en">KawaSweetieNaBokuHeart</div>
@@ -490,10 +447,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -505,12 +459,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="20141010" data-name-ja="きらきらモデルfrom NSC" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
-                    <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge year">2014〜</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">きらきらモデルfrom NSC</h3>
                 <div class="unit-en">KiraKiraModelfromNSC</div>
@@ -518,10 +472,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -533,12 +484,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="着せ替え人形と仕立て屋さん" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">着せ替え人形と仕立て屋さん</h3>
                 <div class="unit-en">KisekaeNingyoandShitateyaSan</div>
@@ -546,10 +497,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -561,12 +509,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="これでもくらえ☆" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">これでもくらえ☆</h3>
                 <div class="unit-en">KoredemoKurae</div>
@@ -574,10 +522,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -589,12 +534,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="これでもくらえ☆with アナスタシア" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">これでもくらえ☆with アナスタシア</h3>
                 <div class="unit-en">KoredemoKuraeWithAnastasia</div>
@@ -602,10 +547,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -617,12 +559,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="愛の使徒～ラヴ・エンジェルズ" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">愛の使徒～ラヴ・エンジェルズ</h3>
                 <div class="unit-en">LoveAngels</div>
@@ -630,10 +572,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -645,12 +584,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="魔女の館/Dark Magic" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">魔女の館/Dark Magic</h3>
                 <div class="unit-en">MajonoYakata-DarkMagic</div>
@@ -658,10 +597,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -673,12 +609,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="☆マリナル応援団☆" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">☆マリナル応援団☆</h3>
                 <div class="unit-en">MarinalOuendan</div>
@@ -686,10 +622,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -701,12 +634,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="20151210" data-name-ja="ムーランルージュ" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
-                    <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge year">2015〜</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">ムーランルージュ</h3>
                 <div class="unit-en">MoulinRouge</div>
@@ -714,10 +647,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -729,12 +659,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="OTONA・ウェディング" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">OTONA・ウェディング</h3>
                 <div class="unit-en">OTONAWedding</div>
@@ -742,10 +672,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -757,12 +684,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="オンリーワン・コレクション" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">オンリーワン・コレクション</h3>
                 <div class="unit-en">OnlyOneCollection</div>
@@ -770,10 +697,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -785,12 +709,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="オトメなオトナのナツモヨウ☆" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">オトメなオトナのナツモヨウ☆</h3>
                 <div class="unit-en">OtomenaOtonanoNatsumoyou</div>
@@ -798,10 +722,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -813,12 +734,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="おうちのじかん" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">おうちのじかん</h3>
                 <div class="unit-en">OuchinoJikan</div>
@@ -826,10 +747,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -841,12 +759,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="ピンキーバウンス" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">ピンキーバウンス</h3>
                 <div class="unit-en">PinkyBounce</div>
@@ -854,10 +772,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -869,12 +784,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="女王の同級生（花嫁）" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">女王の同級生（花嫁）</h3>
                 <div class="unit-en">QueensClassmate_Bride</div>
@@ -882,10 +797,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -897,12 +809,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="Ready? After!" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">Ready? After!</h3>
                 <div class="unit-en">ReadyAfter</div>
@@ -910,10 +822,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -925,12 +834,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="新春なでし娘" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">新春なでし娘</h3>
                 <div class="unit-en">ShinshunNadeshiko</div>
@@ -938,10 +847,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -953,12 +859,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="正月短し遊べよ乙女☆" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">正月短し遊べよ乙女☆</h3>
                 <div class="unit-en">ShougatsuMijikashiAsobeyoOtome</div>
@@ -966,10 +872,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -981,12 +884,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="スウィート☆オペレーション" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">スウィート☆オペレーション</h3>
                 <div class="unit-en">SweetOperation</div>
@@ -994,10 +897,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -1009,12 +909,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="スウィーティー☆ミルキーウェイ" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">スウィーティー☆ミルキーウェイ</h3>
                 <div class="unit-en">SweetieMilkeyWay</div>
@@ -1022,10 +922,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -1037,12 +934,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="戦う乙女たち" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">戦う乙女たち</h3>
                 <div class="unit-en">TatakauOtometachi</div>
@@ -1050,10 +947,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -1065,12 +959,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="トレジャートライアングル" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">トレジャートライアングル</h3>
                 <div class="unit-en">TreasureTriangle</div>
@@ -1078,10 +972,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -1093,12 +984,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="バレンタイン振り返り会" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">バレンタイン振り返り会</h3>
                 <div class="unit-en">ValentineFurikaeriKai</div>
@@ -1106,10 +997,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -1121,12 +1009,12 @@
             </div>
         </article>
 
-        <article class="unit-card" data-size="-">
+        <article class="unit-card" data-game="mobamas" data-debut="" data-name-ja="志希を応援！ワンダーカラーズ" data-members="佐藤心">
             <div class="unit-cover">
                 <div class="meta">
                     <span class="unit-badge size">-人</span>
                     <span class="unit-badge year">-</span>
-                    <span class="unit-badge theme">-</span>
+                    <span class="unit-badge theme">モバマス</span>
                 </div>
                 <h3 class="unit-name">志希を応援！ワンダーカラーズ</h3>
                 <div class="unit-en">WonderColors</div>
@@ -1134,10 +1022,7 @@
             <div class="unit-members">
                 <div class="label">MEMBERS</div>
                 <div class="member-row">
-                    <div class="unit-member shin">
-                        <div class="av">心</div>
-                        <div class="nm">佐藤心</div>
-                    </div>
+                    <div class="unit-member shin"><div class="av">心</div><div class="nm">佐藤心</div></div>
                 </div>
             </div>
             <div class="unit-info">
@@ -1149,19 +1034,96 @@
             </div>
         </article>
 
-        <!-- TODO: ここに追加のユニットカードを貼り付けてください -->
+    </div>
 
-        </div>
+    <!-- 0件メッセージ -->
+    <div id="unit-empty" style="display:none; text-align:center; padding:40px 0; color:var(--sh-text-soft); font-size:14px;">
+        条件に一致するユニットが見つかりませんでした。
+    </div>
+
 </div>
 
 <script>
-function filterUnits(size, btn) {
-    document.querySelectorAll('.size-filter button').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('.unit-card').forEach(card => {
-        card.style.display = (size === 'all' || card.dataset.size === size) ? '' : 'none';
+(function () {
+    var cards = Array.from(document.querySelectorAll('.unit-card'));
+    var grid = document.getElementById('unit-grid');
+    var empty = document.getElementById('unit-empty');
+    var countChip = document.getElementById('unit-count-chip');
+    var currentGame = 'all';
+    var currentSort = 'asc';
+    var currentQuery = '';
+
+    // URLパラメータでゲーム絞り込みを初期設定
+    var params = new URLSearchParams(window.location.search);
+    var gameParam = params.get('game');
+    if (gameParam === 'mobamas' || gameParam === 'deresute') {
+        currentGame = gameParam;
+    }
+
+    // ゲームタブの初期アクティブ設定
+    document.querySelectorAll('.unit-tab').forEach(function (btn) {
+        btn.classList.toggle('active', btn.dataset.game === currentGame);
+        btn.addEventListener('click', function () {
+            currentGame = this.dataset.game;
+            document.querySelectorAll('.unit-tab').forEach(function (b) { b.classList.remove('active'); });
+            this.classList.add('active');
+            applyFilters();
+        });
     });
-}
+
+    // ソートボタン
+    document.querySelectorAll('.unit-sort-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            currentSort = this.dataset.sort;
+            document.querySelectorAll('.unit-sort-btn').forEach(function (b) { b.classList.remove('active'); });
+            this.classList.add('active');
+            applyFilters();
+        });
+    });
+
+    // 検索インプット
+    document.getElementById('unit-search').addEventListener('input', function () {
+        currentQuery = this.value.trim().toLowerCase();
+        applyFilters();
+    });
+
+    function applyFilters() {
+        var visible = cards.filter(function (card) {
+            // ゲーム絞り込み
+            if (currentGame !== 'all' && card.dataset.game !== currentGame) return false;
+            // テキスト検索（ユニット名 + アイドル名）
+            if (currentQuery) {
+                var nameJa = (card.dataset.nameJa || '').toLowerCase();
+                var nameEn = (card.querySelector('.unit-en') ? card.querySelector('.unit-en').textContent : '').toLowerCase();
+                var members = (card.dataset.members || '').toLowerCase();
+                if (!nameJa.includes(currentQuery) && !nameEn.includes(currentQuery) && !members.includes(currentQuery)) return false;
+            }
+            return true;
+        });
+
+        // ソート
+        visible.sort(function (a, b) {
+            var da = a.dataset.debut || '99999999';
+            var db = b.dataset.debut || '99999999';
+            if (da === '99999999' && db === '99999999') return 0;
+            return currentSort === 'asc' ? da.localeCompare(db) : db.localeCompare(da);
+        });
+
+        // DOM更新
+        cards.forEach(function (card) { card.style.display = 'none'; });
+        visible.forEach(function (card) {
+            card.style.display = '';
+            grid.appendChild(card);
+        });
+
+        // 件数表示
+        countChip.innerHTML = '<strong>' + visible.length + '</strong> ユニット表示中';
+        empty.style.display = visible.length === 0 ? '' : 'none';
+    }
+
+    // 初期表示
+    applyFilters();
+})();
 </script>
 </body>
 </html>

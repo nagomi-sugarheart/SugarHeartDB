@@ -23,7 +23,7 @@
                             <h4>イベント・ユニット</h4>\n\
                             <ul>\n\
                                 <li><a href="Mobamas/Event/EventList.html">イベント一覧</a></li>\n\
-                                <li><a href="Mobamas/Unit/UnitList.html">ユニット一覧</a></li>\n\
+                                <li><a href="Unit/UnitList.html?game=mobamas">ユニット一覧</a></li>\n\
                                 <li><a href="Mobamas/SeasonalEvents/SeasonalEvents.html">季節イベント一覧</a></li>\n\
                             </ul>\n\
                         </div>\n\
@@ -115,7 +115,7 @@
                     <li><a href="Mobamas/NaganoArea/NaganoAreaBoss.html">長野エリアボスセリフ</a></li>\n\
                     <li><a href="Mobamas/PuchiDerela.html">ぷちでれら</a></li>\n\
                     <li><a href="Mobamas/Event/EventList.html">イベント一覧</a></li>\n\
-                    <li><a href="Mobamas/Unit/UnitList.html">ユニット一覧</a></li>\n\
+                    <li><a href="Unit/UnitList.html?game=mobamas">ユニット一覧</a></li>\n\
                     <li><a href="Mobamas/SeasonalEvents/SeasonalEvents.html">季節イベント一覧</a></li>\n\
                     <li><a href="Mobamas/OtherCommu.html">その他コミュ・セリフ</a></li>\n\
                     <li><a href="Mobamas/OtherGameCenter.html">その他（ゲームセンター等）</a></li>\n\
