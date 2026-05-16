@@ -4043,7 +4043,7 @@ input[name="dialogue-tab"] {
     padding: 16px;
     position: sticky;
     top: 80px;
-    max-height: calc(100vh - 100px);
+    height: calc(100vh - 104px);
     overflow-y: auto;
 }
 .v2-sidebar h3 {
@@ -4304,17 +4304,25 @@ input[name="dialogue-tab"] {
 }
 
 /* 劇場 */
+/* 劇場・ギャラリー・関連ページ 2カラムレイアウト（PC） */
+.v2-detail-lower {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+.v2-detail-lower-right { display: flex; flex-direction: column; gap: 14px; }
+
 .v2-theater {
     background: #fff;
     border-radius: var(--r-lg);
     box-shadow: var(--shadow-sm);
-    padding: 20px 24px;
-    margin-bottom: 14px;
+    padding: 14px 20px;
 }
 .v2-theater h2 {
     font-size: 15px;
     color: var(--sh-pink-deep);
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -4322,10 +4330,8 @@ input[name="dialogue-tab"] {
 .v2-theater h2::before { content: "✦"; color: var(--sh-yellow); }
 .v2-theater img {
     width: 100%;
-    max-width: 600px;
     border-radius: var(--r-md);
     display: block;
-    margin: 0 auto;
 }
 
 /* ギャラリー */
@@ -4333,13 +4339,12 @@ input[name="dialogue-tab"] {
     background: #fff;
     border-radius: var(--r-lg);
     box-shadow: var(--shadow-sm);
-    padding: 20px 24px;
-    margin-bottom: 14px;
+    padding: 14px 20px;
 }
 .v2-gallery h2 {
     font-size: 15px;
     color: var(--sh-pink-deep);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -4366,10 +4371,9 @@ input[name="dialogue-tab"] {
 .v2-related {
     background: linear-gradient(135deg, var(--sh-pink-soft), var(--sh-yellow-soft));
     border-radius: var(--r-lg);
-    padding: 20px 24px;
-    margin-bottom: 14px;
+    padding: 14px 20px;
 }
-.v2-related h2 { font-size: 13px; color: var(--sh-pink-deep); margin-bottom: 12px; }
+.v2-related h2 { font-size: 13px; color: var(--sh-pink-deep); margin-bottom: 10px; }
 .v2-related-links { display: flex; gap: 8px; flex-wrap: wrap; }
 .v2-related-links a {
     padding: 7px 14px;
@@ -4392,4 +4396,5 @@ input[name="dialogue-tab"] {
     .v2-title-block h1 { font-size: 20px; }
     .v2-card-nav { grid-template-columns: 1fr; }
     .gallery-img { height: 130px; }
+    .v2-detail-lower { grid-template-columns: 1fr; }
 }
