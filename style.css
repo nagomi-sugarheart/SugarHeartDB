@@ -4031,7 +4031,7 @@ input[name="dialogue-tab"] {
     display: grid;
     grid-template-columns: 240px 1fr;
     gap: 24px;
-    align-items: start;
+    align-items: stretch;
 }
 .v2-detail-main { min-width: 0; }
 
@@ -4040,11 +4040,13 @@ input[name="dialogue-tab"] {
     background: #fff;
     border-radius: var(--r-lg);
     box-shadow: var(--shadow-sm);
-    padding: 16px;
+}
+.v2-sidebar-sticky {
     position: sticky;
     top: 80px;
     height: calc(100vh - 104px);
     overflow-y: auto;
+    padding: 16px;
 }
 .v2-sidebar h3 {
     font-size: 12px;
