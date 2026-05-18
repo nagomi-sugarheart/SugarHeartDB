@@ -1711,6 +1711,17 @@ input[name="dialogue-tab"] {
     height: 100%;
 }
 
+.video-container-landscape {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto 12px;
+}
+
+.video-container-landscape iframe {
+    width: 100%;
+    height: 100%;
+}
+
 /* ----------------------------------------------------------
    19. Pill buttons
 ---------------------------------------------------------- */
@@ -4121,14 +4132,16 @@ input[name="dialogue-tab"] {
 
 /* サイドバー */
 .v2-sidebar {
+    position: sticky;
+    top: 80px;
+    height: calc(100vh - 104px);
+    overflow: hidden;
     background: #fff;
     border-radius: var(--r-lg);
     box-shadow: var(--shadow-sm);
 }
 .v2-sidebar-sticky {
-    position: sticky;
-    top: 80px;
-    height: calc(100vh - 104px);
+    height: 100%;
     overflow-y: auto;
     padding: 16px;
 }
@@ -4393,17 +4406,20 @@ input[name="dialogue-tab"] {
 /* 劇場・ギャラリー・関連ページ 2カラムレイアウト（PC） */
 .v2-detail-lower {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 14px;
     margin-bottom: 14px;
+    min-width: 0;
 }
-.v2-detail-lower-right { display: flex; flex-direction: column; gap: 14px; }
+.v2-detail-lower-right { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
 
 .v2-theater {
     background: #fff;
     border-radius: var(--r-lg);
     box-shadow: var(--shadow-sm);
     padding: 14px 20px;
+    min-width: 0;
+    overflow: hidden;
 }
 .v2-theater h2 {
     font-size: 15px;
@@ -4426,6 +4442,8 @@ input[name="dialogue-tab"] {
     border-radius: var(--r-lg);
     box-shadow: var(--shadow-sm);
     padding: 14px 20px;
+    min-width: 0;
+    overflow: hidden;
 }
 .v2-gallery h2 {
     font-size: 15px;
@@ -4458,6 +4476,8 @@ input[name="dialogue-tab"] {
     background: linear-gradient(135deg, var(--sh-pink-soft), var(--sh-yellow-soft));
     border-radius: var(--r-lg);
     padding: 14px 20px;
+    min-width: 0;
+    overflow: hidden;
 }
 .v2-related h2 { font-size: 13px; color: var(--sh-pink-deep); margin-bottom: 10px; }
 .v2-related-links { display: flex; gap: 8px; flex-wrap: wrap; }
