@@ -32,11 +32,11 @@
     <div class="ud-hero-left">
       <div class="badges">
         <span class="unit-badge size">3人ユニット</span>
-        <span class="unit-badge year">－〜</span>
+        <span class="unit-badge year">2019〜</span>
         <span class="unit-badge theme">モバマス</span>
       </div>
       <h1>ピンキーバウンス</h1>
-      <div class="en">PinkyBounce · DEBUT －</div>
+      <div class="en">PinkyBounce · DEBUT 2019.05.14</div>
       <p class="summary">－</p>
     </div>
     <div class="ud-hero-right">
@@ -49,16 +49,23 @@
       <div class="ud-stats-strip">
         <div class="stat"><div class="v">1</div><div class="l">APPEARANCES</div></div>
         <div class="stat"><div class="v">－</div><div class="l">SONGS</div></div>
-        <div class="stat"><div class="v">－</div><div class="l">ALBUMS</div></div>
-        <div class="stat"><div class="v">－</div><div class="l">DURATION</div></div>
+        <div class="stat"><div class="v" id="ud-duration" data-debut="2019-05-14">－</div><div class="l">DURATION</div></div>
       </div>
     </div>
   </div>
 
+
+  <div class="ud-related">
+    <span class="lbl">RELATED PAGES //</span>
+    <a href="Unit/LoveAngels/LoveAngels.html">愛の使者～ラヴ・エンジェルズ～</a>
+  </div>
   <article class="ud-appearance">
     <header class="ud-appearance-header">
       <div class="ud-ap-date">
-        <div class="y">－</div>
+        <div class="y">2019</div>
+        <div class="m">05</div>
+        <div class="d">14</div>
+      </div>
         <div class="m">－</div>
         <div class="d">－</div>
       </div>
@@ -108,5 +115,17 @@
   </article>
 
 </div>
+<script>
+(function(){
+  var el = document.getElementById('ud-duration');
+  if (!el) return;
+  var debut = new Date(el.dataset.debut);
+  var now = new Date();
+  var y = now.getFullYear() - debut.getFullYear();
+  var m = now.getMonth() - debut.getMonth();
+  if (m < 0) { y--; m += 12; }
+  el.textContent = y + 'YEAR ' + m + 'MONTH';
+})();
+</script>
 </body>
 </html>

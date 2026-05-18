@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <base href="/SugarHeartDB/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>花恋創作隊｜SugarHeartDB</title>
-    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニット「花恋創作隊」のページです。">
+    <title>カレンちゃん捜索隊｜SugarHeartDB</title>
+    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニット「カレンちゃん捜索隊」のページです。">
     <meta name="author" content="なごみ（@nagomi_IMCG）">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="花恋創作隊｜SugarHeartDB">
-    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニット「花恋創作隊」のページです。">
+    <meta property="og:title" content="カレンちゃん捜索隊｜SugarHeartDB">
+    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニット「カレンちゃん捜索隊」のページです。">
     <meta property="og:site_name" content="SugarHeartDB">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="SugarHeartDB">
@@ -23,7 +23,7 @@
 <script src="components/header.js"></script>
 
 <section class="page-hero">
-    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Unit/UnitList.html">ユニット一覧</a> · <strong>花恋創作隊</strong></div>
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Unit/UnitList.html">ユニット一覧</a> · <strong>カレンちゃん捜索隊</strong></div>
 </section>
 
 <div class="ud-page">
@@ -32,11 +32,11 @@
     <div class="ud-hero-left">
       <div class="badges">
         <span class="unit-badge size">4人ユニット</span>
-        <span class="unit-badge year">－〜</span>
+        <span class="unit-badge year">2021〜</span>
         <span class="unit-badge theme">モバマス</span>
       </div>
-      <h1>花恋創作隊</h1>
-      <div class="en">KarenSousakutai · DEBUT －</div>
+      <h1>カレンちゃん捜索隊</h1>
+      <div class="en">KarenSousakutai · DEBUT 2021.09.30</div>
       <p class="summary">－</p>
     </div>
     <div class="ud-hero-right">
@@ -50,16 +50,23 @@
       <div class="ud-stats-strip">
         <div class="stat"><div class="v">1</div><div class="l">APPEARANCES</div></div>
         <div class="stat"><div class="v">－</div><div class="l">SONGS</div></div>
-        <div class="stat"><div class="v">－</div><div class="l">ALBUMS</div></div>
-        <div class="stat"><div class="v">－</div><div class="l">DURATION</div></div>
+        <div class="stat"><div class="v" id="ud-duration" data-debut="2021-09-30">－</div><div class="l">DURATION</div></div>
       </div>
     </div>
   </div>
 
+
+  <div class="ud-related">
+    <span class="lbl">RELATED PAGES //</span>
+    <a href="Unit/HamidashimononoKenkyuugyo/HamidashimononoKenkyuugyo.html">はみだし者の研究魚</a>
+  </div>
   <article class="ud-appearance">
     <header class="ud-appearance-header">
       <div class="ud-ap-date">
-        <div class="y">－</div>
+        <div class="y">2021</div>
+        <div class="m">09</div>
+        <div class="d">30</div>
+      </div>
         <div class="m">－</div>
         <div class="d">－</div>
       </div>
@@ -109,5 +116,17 @@
   </article>
 
 </div>
+<script>
+(function(){
+  var el = document.getElementById('ud-duration');
+  if (!el) return;
+  var debut = new Date(el.dataset.debut);
+  var now = new Date();
+  var y = now.getFullYear() - debut.getFullYear();
+  var m = now.getMonth() - debut.getMonth();
+  if (m < 0) { y--; m += 12; }
+  el.textContent = y + 'YEAR ' + m + 'MONTH';
+})();
+</script>
 </body>
 </html>

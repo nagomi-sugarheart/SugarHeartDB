@@ -50,16 +50,34 @@
       <div class="ud-stats-strip">
         <div class="stat"><div class="v">3</div><div class="l">APPEARANCES</div></div>
         <div class="stat"><div class="v">－</div><div class="l">SONGS</div></div>
-        <div class="stat"><div class="v">－</div><div class="l">ALBUMS</div></div>
-        <div class="stat"><div class="v">－</div><div class="l">DURATION</div></div>
+        <div class="stat"><div class="v" id="ud-duration" data-debut="2014-10-10">－</div><div class="l">DURATION</div></div>
       </div>
     </div>
   </div>
 
+
+  <div class="ud-related">
+    <span class="lbl">RELATED PAGES //</span>
+    <a class="disabled">目指せきらきらモデル アイドルチャレンジ（モバマスイベント）</a>
+    <a class="disabled">[ﾈｸｽﾄｽﾀｰI.C]佐藤心+</a>
+    <a class="disabled">[ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心</a>
+    <a class="disabled">[ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心+</a>
+    <a class="disabled">[ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心</a>
+    <a class="disabled">[ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心+</a>
+    <a class="disabled">外はしっかり、中はふっくら（デレステ営業コミュ）</a>
+    <a class="disabled">EVERLASTING（デレステイベントコミュ）</a>
+    <a class="disabled">[季節の風を感じて]松尾千鶴</a>
+    <a class="disabled">[季節の風を感じて]松尾千鶴+</a>
+    <a class="disabled">ちづしん</a>
+    <a class="disabled">【公式】シンデレラライブラリー</a>
+  </div>
   <article class="ud-appearance">
     <header class="ud-appearance-header">
       <div class="ud-ap-date">
         <div class="y">2014</div>
+        <div class="m">10</div>
+        <div class="d">10</div>
+      </div>
         <div class="m">10</div>
         <div class="d">10</div>
       </div>
@@ -114,6 +132,9 @@
         <div class="m">01</div>
         <div class="d">09</div>
       </div>
+        <div class="m">01</div>
+        <div class="d">09</div>
+      </div>
       <div class="ud-ap-title">
         <h3>第9回アイドルLIVEロワイヤル</h3>
         <div class="game-event"><span>モバマス</span></div>
@@ -165,6 +186,9 @@
         <div class="m">04</div>
         <div class="d">30</div>
       </div>
+        <div class="m">04</div>
+        <div class="d">30</div>
+      </div>
       <div class="ud-ap-title">
         <h3>第53回 ドリームLIVEフェスティバル</h3>
         <div class="game-event"><span>モバマス</span></div>
@@ -211,5 +235,17 @@
   </article>
 
 </div>
+<script>
+(function(){
+  var el = document.getElementById('ud-duration');
+  if (!el) return;
+  var debut = new Date(el.dataset.debut);
+  var now = new Date();
+  var y = now.getFullYear() - debut.getFullYear();
+  var m = now.getMonth() - debut.getMonth();
+  if (m < 0) { y--; m += 12; }
+  el.textContent = y + 'YEAR ' + m + 'MONTH';
+})();
+</script>
 </body>
 </html>

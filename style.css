@@ -4664,7 +4664,7 @@ input[name="dialogue-tab"] {
     padding-top: 18px;
     border-top: 2px dotted var(--sh-line);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
 }
 .ud-stats-strip .stat { text-align: center; }
@@ -4679,6 +4679,45 @@ input[name="dialogue-tab"] {
     color: var(--sh-text-soft);
     letter-spacing: 0.06em;
     margin-top: 4px;
+}
+
+/* Unit-level related pages */
+.ud-related {
+    background: #fff;
+    border-radius: var(--r-md);
+    padding: 14px 18px;
+    margin-bottom: 18px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+.ud-related .lbl {
+    font-size: 11px;
+    color: var(--sh-text-soft);
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    margin-right: 4px;
+}
+.ud-related a {
+    font-size: 13px;
+    color: var(--sh-pink-deep);
+    background: var(--sh-pink-soft);
+    padding: 3px 10px;
+    border-radius: var(--r-pill);
+    text-decoration: none;
+    transition: background 0.15s;
+}
+.ud-related a:hover {
+    background: var(--sh-pink);
+    color: #fff;
+}
+.ud-related a.disabled {
+    color: var(--sh-text-mute);
+    background: var(--sh-bg-alt);
+    pointer-events: none;
+    cursor: default;
 }
 
 /* Appearance card */
@@ -4848,7 +4887,7 @@ input[name="dialogue-tab"] {
     .ud-hero-left { padding: 24px 20px; }
     .ud-hero-left h1 { font-size: 24px; }
     .ud-hero-right { padding: 20px; }
-    .ud-stats-strip { grid-template-columns: repeat(2, 1fr); }
+    .ud-stats-strip { grid-template-columns: repeat(3, 1fr); }
     .ud-appearance-header { grid-template-columns: 72px 1fr; }
     .ud-ap-meta { grid-column: 1 / -1; justify-content: flex-start; padding-top: 4px; }
     .ud-phases { grid-template-columns: repeat(2, 1fr); gap: 12px; }
