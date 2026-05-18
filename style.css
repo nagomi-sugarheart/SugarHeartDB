@@ -4134,14 +4134,17 @@ input[name="dialogue-tab"] {
 .v2-sidebar {
     position: sticky;
     top: 80px;
-    height: calc(100vh - 104px);
+    max-height: calc(100dvh - 96px);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
     background: #fff;
     border-radius: var(--r-lg);
     box-shadow: var(--shadow-sm);
 }
 .v2-sidebar-sticky {
-    height: 100%;
+    flex: 1;
+    min-height: 0;
     overflow-y: auto;
     padding: 16px;
 }
@@ -4163,6 +4166,15 @@ input[name="dialogue-tab"] {
     font-family: ui-monospace, monospace;
 }
 .sb-list { display: flex; flex-direction: column; gap: 2px; }
+.sb-section-label {
+    font-size: 10px;
+    color: var(--sh-text-mute);
+    letter-spacing: 0.1em;
+    padding: 10px 10px 4px;
+    font-family: ui-monospace, monospace;
+    border-top: 1px solid var(--sh-line-soft);
+    margin-top: 6px;
+}
 .sb-item {
     display: flex;
     align-items: center;
@@ -4257,7 +4269,7 @@ input[name="dialogue-tab"] {
 }
 .v2-nav-name { font-size: 11.5px; font-weight: 700; line-height: 1.4; }
 .v2-nav-arrow { color: var(--sh-pink); font-size: 16px; flex-shrink: 0; }
-.v2-nav-card.v2-nav-next { text-align: right; flex-direction: row-reverse; }
+.v2-nav-card.v2-nav-next { text-align: right; }
 
 /* カードヒーロー */
 .v2-card-hero {
