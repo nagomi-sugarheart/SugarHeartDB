@@ -26,7 +26,6 @@
 <section class="page-hero">
     <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>カード一覧</strong></div>
     <h1>カード一覧 <span class="sub">/ CARD LIST</span></h1>
-    <p class="summary">心ちゃんのモバマス・デレステカードをまとめて掲載。アイコン画像またはカード名をクリックすると詳細ページへ。</p>
 </section>
 
 <div class="page">
@@ -70,86 +69,90 @@
 
 <script>
 var CARDS = [
-    /* === モバマス (0–38) === */
-    {game:'mobamas', rarity:'r',       rarityOrd:0, rarityLabel:'R',    name:'佐藤心',                        link:'Mobamas/SatoShin/SatoShin.html',                                   icon:'Mobamas/SatoShin/SatoShinIcon.jpg'},
-    {game:'mobamas', rarity:'r-plus',  rarityOrd:1, rarityLabel:'R+',   name:'佐藤心+',                       link:'Mobamas/SatoShin+/SatoShin+.html',                                 icon:'Mobamas/SatoShin+/SatoShin+Icon.jpg'},
-    {game:'mobamas', rarity:'r',       rarityOrd:0, rarityLabel:'R',    name:'[T.B.ｽｳｨｰﾃｨｰ]佐藤心',          link:'Mobamas/TBSweetie/TBSweetie.html',                                 icon:'Mobamas/TBSweetie/TBSweetieIcon.jpg'},
-    {game:'mobamas', rarity:'r-plus',  rarityOrd:1, rarityLabel:'R+',   name:'[T.B.ｽｳｨｰﾃｨｰ]佐藤心+',         link:'Mobamas/TBSweetie+/TBSweetie+.html',                               icon:'Mobamas/TBSweetie+/TBSweetie+Icon.jpg'},
-    {game:'mobamas', rarity:'r-plus',  rarityOrd:1, rarityLabel:'R+',   name:'[ﾈｸｽﾄｽﾀｰI.C]佐藤心+',          link:'Mobamas/NextStarIC+/NextStarIC+.html',                             icon:'Mobamas/NextStarIC+/NextStarIC+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心',             link:'Mobamas/HeartModel/HeartModel.html',                               icon:'Mobamas/HeartModel/HeartModelIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心+',            link:'Mobamas/HeartModel+/HeartModel+.html',                             icon:'Mobamas/HeartModel+/HeartModel+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心',           link:'Mobamas/HeartModel/HeartModelS.html',                              icon:'Mobamas/HeartModel/HeartModelSIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心+',          link:'Mobamas/HeartModel+/HeartModelS+.html',                            icon:'Mobamas/HeartModel+/HeartModelS+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[えんじぇるはぁと]佐藤心',      link:'Mobamas/AngelHeart/AngelHeart.html',                               icon:'Mobamas/AngelHeart/AngelHeartIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[えんじぇるはぁと]佐藤心+',     link:'Mobamas/AngelHeart+/AngelHeart+.html',                             icon:'Mobamas/AngelHeart+/AngelHeart+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[はぁとの嫁入り]佐藤心',        link:'Mobamas/HeartNoYomeiri/HeartNoYomeiri.html',                       icon:'Mobamas/HeartNoYomeiri/HeartNoYomeiriIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[はぁとの嫁入り]佐藤心+',       link:'Mobamas/HeartNoYomeiri+/HeartNoYomeiri+.html',                     icon:'Mobamas/HeartNoYomeiri+/HeartNoYomeiri+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[ｽｳｨｰﾃｨｰ･ﾛﾜｲﾔﾙ]佐藤心',       link:'Mobamas/SweetieRoyal/SweetieRoyal.html',                           icon:'Mobamas/SweetieRoyal/SweetieRoyalIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[ｽｳｨｰﾃｨｰ･ﾛﾜｲﾔﾙ]佐藤心+',      link:'Mobamas/SweetieRoyal+/SweetieRoyal+.html',                         icon:'Mobamas/SweetieRoyal+/SweetieRoyal+Icon.jpg'},
-    {game:'mobamas', rarity:'r',       rarityOrd:0, rarityLabel:'R',    name:'[ﾜｰｷﾝｸﾞ･ｽｳｨｰﾃｨｰ]佐藤心',      link:'Mobamas/WorkingSweetie/WorkingSweetie.html',                       icon:'Mobamas/WorkingSweetie/WorkingSweetieIcon.jpg'},
-    {game:'mobamas', rarity:'r-plus',  rarityOrd:1, rarityLabel:'R+',   name:'[ﾜｰｷﾝｸﾞ･ｽｳｨｰﾃｨｰ]佐藤心+',     link:'Mobamas/WorkingSweetie+/WorkingSweetie+.html',                     icon:'Mobamas/WorkingSweetie+/WorkingSweetie+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[常夏ﾊﾟﾗﾀﾞｲｽ]佐藤心',          link:'Mobamas/TokonatsuParadise/TokonatsuParadise.html',                 icon:'Mobamas/TokonatsuParadise/TokonatsuParadiseIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[常夏ﾊﾟﾗﾀﾞｲｽ]佐藤心+',         link:'Mobamas/TokonatsuParadise+/TokonatsuParadise+.html',               icon:'Mobamas/TokonatsuParadise+/TokonatsuParadise+Icon.jpg'},
-    {game:'mobamas', rarity:'r',       rarityOrd:0, rarityLabel:'R',    name:'[ﾁｸｯとｽｳｨｰﾃｨｰ]佐藤心',        link:'Mobamas/ChikuttoSweetie/ChikuttoSweetie.html',                     icon:'Mobamas/ChikuttoSweetie/ChikuttoSweetieIcon.jpg'},
-    {game:'mobamas', rarity:'r-plus',  rarityOrd:1, rarityLabel:'R+',   name:'[ﾁｸｯとｽｳｨｰﾃｨｰ]佐藤心+',       link:'Mobamas/ChikuttoSweetie+/ChikuttoSweetie+.html',                   icon:'Mobamas/ChikuttoSweetie+/ChikuttoSweetie+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[6thｱﾆﾊﾞｰｻﾘｰ]佐藤心',          link:'Mobamas/6thAnniversary/6thAnniversary.html',                       icon:'Mobamas/6thAnniversary/6thAnniversaryIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[6thｱﾆﾊﾞｰｻﾘｰ]佐藤心+',         link:'Mobamas/6thAnniversary+/6thAnniversary+.html',                     icon:'Mobamas/6thAnniversary+/6thAnniversary+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[6thｱﾆﾊﾞｰｻﾘｰ･S]佐藤心',        link:'Mobamas/6thAnniversary/6thAnniversaryS.html',                      icon:'Mobamas/6thAnniversary/6thAnniversarySIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[6thｱﾆﾊﾞｰｻﾘｰ･S]佐藤心+',       link:'Mobamas/6thAnniversary+/6thAnniversaryS+.html',                    icon:'Mobamas/6thAnniversary+/6thAnniversaryS+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[ふぉーりんはぁと]佐藤心',      link:'Mobamas/FallingHeart/FallingHeart.html',                           icon:'Mobamas/FallingHeart/FallingHeartIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[ふぉーりんはぁと]佐藤心+',     link:'Mobamas/FallingHeart+/FallingHeart+.html',                         icon:'Mobamas/FallingHeart+/FallingHeart+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[新春はぁとふる]佐藤心',        link:'Mobamas/ShinshunHeartful/ShinshunHeartful.html',                   icon:'Mobamas/ShinshunHeartful/ShinshunHeartfulIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[新春はぁとふる]佐藤心+',       link:'Mobamas/ShinshunHeartful+/ShinshunHeartful+.html',                 icon:'Mobamas/ShinshunHeartful+/ShinshunHeartful+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[夏色はぁと]佐藤心',            link:'Mobamas/NatsuiroHeart/NatsuiroHeart.html',                         icon:'Mobamas/NatsuiroHeart/NatsuiroHeartIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[夏色はぁと]佐藤心+',           link:'Mobamas/NatsuiroHeart+/NatsuiroHeart+.html',                       icon:'Mobamas/NatsuiroHeart+/NatsuiroHeart+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[ｽｳｨｰﾃｨｰ･ﾆｭｰｲﾔｰ]佐藤心',     link:'Mobamas/SweetieNewYear/SweetieNewYear.html',                       icon:'Mobamas/SweetieNewYear/SweetieNewYearIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[ｽｳｨｰﾃｨｰ･ﾆｭｰｲﾔｰ]佐藤心+',    link:'Mobamas/SweetieNewYear+/SweetieNewYear+.html',                     icon:'Mobamas/SweetieNewYear+/SweetieNewYear+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[ﾒﾘｸﾘ☆ﾊｰﾄ]佐藤心',            link:'Mobamas/MerryChristmasHeart/MerryChristmasHeart.html',             icon:'Mobamas/MerryChristmasHeart/MerryChristmasHeartIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[ﾒﾘｸﾘ☆ﾊｰﾄ]佐藤心+',           link:'Mobamas/MerryChristmasHeart+/MerryChristmasHeart+.html',           icon:'Mobamas/MerryChristmasHeart+/MerryChristmasHeart+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[ﾌﾞﾘﾘｱﾝﾄ･はぁと]佐藤心',       link:'Mobamas/BrilliantHeart/BrilliantHeart.html',                       icon:'Mobamas/BrilliantHeart/BrilliantHeartIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[ﾌﾞﾘﾘｱﾝﾄ･はぁと]佐藤心+',      link:'Mobamas/BrilliantHeart+/BrilliantHeart+.html',                     icon:'Mobamas/BrilliantHeart+/BrilliantHeart+Icon.jpg'},
-    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   name:'[ｽﾀｲﾘｯｼｭ･はぁと]佐藤心',       link:'Mobamas/StylishHeart/StylishHeart.html',                           icon:'Mobamas/StylishHeart/StylishHeartIcon.jpg'},
-    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  name:'[ｽﾀｲﾘｯｼｭ･はぁと]佐藤心+',      link:'Mobamas/StylishHeart+/StylishHeart+.html',                         icon:'Mobamas/StylishHeart+/StylishHeart+Icon.jpg'},
-    /* === デレステ (39–76) === */
-    {game:'deresute', rarity:'r',        rarityOrd:0, rarityLabel:'R',    name:'佐藤心',                           link:'Deresute/SatoShin/SatoShin.html',                                    icon:'Deresute/SatoShin/SatoShinIcon.jpg'},
-    {game:'deresute', rarity:'r-plus',   rarityOrd:1, rarityLabel:'R+',   name:'佐藤心+',                          link:'Deresute/SatoShin+/SatoShin+.html',                                  icon:'Deresute/SatoShin+/SatoShin+Icon.jpg'},
-    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   name:'[ハート・モデル]佐藤心',           link:'Deresute/HeartModel/HeartModel.html',                                icon:'Deresute/HeartModel/HeartModelIcon.jpg'},
-    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  name:'[ハート・モデル]佐藤心+',          link:'Deresute/HeartModel+/HeartModel+.html',                              icon:'Deresute/HeartModel+/HeartModel+Icon.jpg'},
-    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  name:'[はぁとトゥハート]佐藤心',         link:'Deresute/HeartToHeart/HeartToHeart.html',                            icon:'Deresute/HeartToHeart/HeartToHeartIcon.jpg'},
-    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', name:'[はぁとトゥハート]佐藤心+',        link:'Deresute/HeartToHeart+/HeartToHeart+.html',                          icon:'Deresute/HeartToHeart+/HeartToHeart+Icon.jpg'},
-    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   name:'[はぁとの嫁入り]佐藤心',           link:'Deresute/HeartNoYomeiri/HeartNoYomeiri.html',                        icon:'Deresute/HeartNoYomeiri/HeartNoYomeiriIcon.jpg'},
-    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  name:'[はぁとの嫁入り]佐藤心+',          link:'Deresute/HeartNoYomeiri+/HeartNoYomeiri+.html',                      icon:'Deresute/HeartNoYomeiri+/HeartNoYomeiri+Icon.jpg'},
-    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  name:'[ブリリアント・はぁと]佐藤心',     link:'Deresute/LuxuryHeart/LuxuryHeart.html',                              icon:'Deresute/LuxuryHeart/LuxuryHeartIcon.jpg'},
-    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', name:'[ブリリアント・はぁと]佐藤心+',    link:'Deresute/LuxuryHeart+/LuxuryHeart+.html',                            icon:'Deresute/LuxuryHeart+/LuxuryHeart+Icon.jpg'},
-    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   name:'[Happy New Yeah！]佐藤心',         link:'Deresute/HappyNewYeah/HappyNewYeah.html',                            icon:'Deresute/HappyNewYeah/HappyNewYeahIcon.jpg'},
-    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  name:'[Happy New Yeah！]佐藤心+',        link:'Deresute/HappyNewYeah+/HappyNewYeah+.html',                          icon:'Deresute/HappyNewYeah+/HappyNewYeah+Icon.jpg'},
-    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   name:'[凸凹スピードスター]佐藤心',       link:'Deresute/DekobokoSpeedStar/DekobokoSpeedStar.html',                  icon:'Deresute/DekobokoSpeedStar/DekobokoSpeedStarIcon.jpg'},
-    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  name:'[凸凹スピードスター]佐藤心+',      link:'Deresute/DekobokoSpeedStar+/DekobokoSpeedStar+.html',                icon:'Deresute/DekobokoSpeedStar+/DekobokoSpeedStar+Icon.jpg'},
-    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  name:'[オーダーメイド・はぁと]佐藤心',  link:'Deresute/OrderMadeHeart/OrderMadeHeart.html',                        icon:'Deresute/OrderMadeHeart/OrderMadeHeartIcon.jpg'},
-    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', name:'[オーダーメイド・はぁと]佐藤心+', link:'Deresute/OrderMadeHeart+/OrderMadeHeart+.html',                      icon:'Deresute/OrderMadeHeart+/OrderMadeHeart+Icon.jpg'},
-    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  name:'[ラグジュアリィ・はぁと]佐藤心',  link:'Deresute/LuxuryHeart/LuxuryHeart.html',                              icon:'Deresute/LuxuryHeart/LuxuryHeartIcon.jpg'},
-    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', name:'[ラグジュアリィ・はぁと]佐藤心+', link:'Deresute/LuxuryHeart+/LuxuryHeart+.html',                            icon:'Deresute/LuxuryHeart+/LuxuryHeart+Icon.jpg'},
-    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   name:'[Go Just Go！]佐藤心',             link:'Deresute/GoJustGo/GoJustGo.html',                                    icon:'Deresute/GoJustGo/GoJustGoIcon.jpg'},
-    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  name:'[Go Just Go！]佐藤心+',            link:'Deresute/GoJustGo+/GoJustGo+.html',                                  icon:'Deresute/GoJustGo+/GoJustGo+Icon.jpg'},
-    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   name:'[躍るFLAGSHIP]佐藤心',             link:'Deresute/OdoruFlagship/OdoruFlagship.html',                          icon:'Deresute/OdoruFlagship/OdoruFlagshipIcon.jpg'},
-    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  name:'[躍るFLAGSHIP]佐藤心+',            link:'Deresute/OdoruFlagship+/OdoruFlagship+.html',                        icon:'Deresute/OdoruFlagship+/OdoruFlagship+Icon.jpg'},
-    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  name:'[はぁとふるsweeteen☆]佐藤心',     link:'Deresute/HeartfulSweeteen/HeartfulSweeteen.html',                    icon:'Deresute/HeartfulSweeteen/HeartfulSweeteenIcon.jpg'},
-    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', name:'[はぁとふるsweeteen☆]佐藤心+',    link:'Deresute/HeartfulSweeteen+/HeartfulSweeteen+.html',                  icon:'Deresute/HeartfulSweeteen+/HeartfulSweeteen+Icon.jpg'},
-    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   name:'[CoCo夏夏夏Holiday]佐藤心',        link:'Deresute/CoCoNatsuNatsuNatsuHoliday/CoCoNatsuNatsuNatsuHoliday.html', icon:'Deresute/CoCoNatsuNatsuNatsuHoliday/CoCoNatsuNatsuNatsuHolidayIcon.jpg'},
-    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  name:'[CoCo夏夏夏Holiday]佐藤心+',       link:'Deresute/CoCoNatsuNatsuNatsuHoliday+/CoCoNatsuNatsuNatsuHoliday+.html', icon:'Deresute/CoCoNatsuNatsuNatsuHoliday+/CoCoNatsuNatsuNatsuHoliday+Icon.jpg'},
-    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  name:'[恋するスウィーティーサマー]佐藤心', link:'Deresute/KoisuruSweetieSummer/KoisuruSweetieSummer.html',           icon:'Deresute/KoisuruSweetieSummer/KoisuruSweetieSummerIcon.jpg'},
-    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', name:'[恋するスウィーティーサマー]佐藤心+', link:'Deresute/KoisuruSweetieSummer+/KoisuruSweetieSummer+.html',       icon:'Deresute/KoisuruSweetieSummer+/KoisuruSweetieSummer+Icon.jpg'},
-    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   name:'[ダンシング・デッド]佐藤心',       link:'Deresute/DancingDead/DancingDead.html',                              icon:'Deresute/DancingDead/DancingDeadIcon.jpg'},
-    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  name:'[ダンシング・デッド]佐藤心+',      link:'Deresute/DancingDead+/DancingDead+.html',                            icon:'Deresute/DancingDead+/DancingDead+Icon.jpg'},
-    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  name:'[愛されクイーン・はぁと]佐藤心',  link:'Deresute/AisareQueenHeart/AisareQueenHeart.html',                    icon:'Deresute/AisareQueenHeart/AisareQueenHeartIcon.jpg'},
-    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', name:'[愛されクイーン・はぁと]佐藤心+', link:'Deresute/AisareQueenHeart+/AisareQueenHeart+.html',                  icon:'Deresute/AisareQueenHeart+/AisareQueenHeart+Icon.jpg'},
-    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   name:'[ド根性☆レポーター]佐藤心',       link:'Deresute/DokonjyoReporter/DokonjyoReporter.html',                    icon:'Deresute/DokonjyoReporter/DokonjyoReporterIcon.jpg'},
-    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  name:'[ド根性☆レポーター]佐藤心+',      link:'Deresute/DokonjyoReporter+/DokonjyoReporter+.html',                  icon:'Deresute/DokonjyoReporter+/DokonjyoReporter+Icon.jpg'},
-    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  name:'[真夏の☆はぁとミーツハート]佐藤心', link:'Deresute/ManatsuNoHeartMeetsHeart/ManatsuNoHeartMeetsHeart.html',  icon:'Deresute/ManatsuNoHeartMeetsHeart/ManatsuNoHeartMeetsHeartIcon.jpg'},
-    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', name:'[真夏の☆はぁとミーツハート]佐藤心+', link:'Deresute/ManatsuNoHeartMeetsHeart+/ManatsuNoHeartMeetsHeart+.html', icon:'Deresute/ManatsuNoHeartMeetsHeart+/ManatsuNoHeartMeetsHeart+Icon.jpg'},
-    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  name:'[この世でただひとりのはぁと]佐藤心', link:'Deresute/KonoyoDeTadaHitoriNoHeart/KonoyoDeTadaHitoriNoHeart.html', icon:'Deresute/KonoyoDeTadaHitoriNoHeart/KonoyoDeTadaHitoriNoHeartIcon.jpg'},
-    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', name:'[この世でただひとりのはぁと]佐藤心+', link:'Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.html', icon:'Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+Icon.jpg'}
+    /* === モバマス === */
+    {game:'mobamas', rarity:'r',       rarityOrd:0, rarityLabel:'R',    date:'2014.02.19', name:'佐藤心',                        link:'Mobamas/SatoShin/SatoShin.html',                                   icon:'Mobamas/SatoShin/SatoShinIcon.jpg'},
+    {game:'mobamas', rarity:'r-plus',  rarityOrd:1, rarityLabel:'R+',   date:'2014.02.19', name:'佐藤心+',                       link:'Mobamas/SatoShin+/SatoShin+.html',                                 icon:'Mobamas/SatoShin+/SatoShin+Icon.jpg'},
+    {game:'mobamas', rarity:'r',       rarityOrd:0, rarityLabel:'R',    date:'2014.06.24', name:'[T.B.ｽｳｨｰﾃｨｰ]佐藤心',          link:'Mobamas/TBSweetie/TBSweetie.html',                                 icon:'Mobamas/TBSweetie/TBSweetieIcon.jpg'},
+    {game:'mobamas', rarity:'r-plus',  rarityOrd:1, rarityLabel:'R+',   date:'2014.06.24', name:'[T.B.ｽｳｨｰﾃｨｰ]佐藤心+',         link:'Mobamas/TBSweetie+/TBSweetie+.html',                               icon:'Mobamas/TBSweetie+/TBSweetie+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2014.06.24', name:'[6thｱﾆﾊﾞｰｻﾘｰ･S]佐藤心',        link:'Mobamas/6thAnniversary/6thAnniversaryS.html',                      icon:'Mobamas/6thAnniversary/6thAnniversarySIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2014.06.24', name:'[6thｱﾆﾊﾞｰｻﾘｰ･S]佐藤心+',       link:'Mobamas/6thAnniversary+/6thAnniversaryS+.html',                    icon:'Mobamas/6thAnniversary+/6thAnniversaryS+Icon.jpg'},
+    {game:'mobamas', rarity:'r-plus',  rarityOrd:1, rarityLabel:'R+',   date:'2014.09.30', name:'[ﾈｸｽﾄｽﾀｰI.C]佐藤心+',          link:'Mobamas/NextStarIC+/NextStarIC+.html',                             icon:'Mobamas/NextStarIC+/NextStarIC+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2014.09.30', name:'[ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心',             link:'Mobamas/HeartModel/HeartModel.html',                               icon:'Mobamas/HeartModel/HeartModelIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2014.09.30', name:'[ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心+',            link:'Mobamas/HeartModel+/HeartModel+.html',                             icon:'Mobamas/HeartModel+/HeartModel+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2014.09.30', name:'[ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心',           link:'Mobamas/HeartModel/HeartModelS.html',                              icon:'Mobamas/HeartModel/HeartModelSIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2014.09.30', name:'[ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心+',          link:'Mobamas/HeartModel+/HeartModelS+.html',                            icon:'Mobamas/HeartModel+/HeartModelS+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2015.01.20', name:'[えんじぇるはぁと]佐藤心',      link:'Mobamas/AngelHeart/AngelHeart.html',                               icon:'Mobamas/AngelHeart/AngelHeartIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2015.01.20', name:'[えんじぇるはぁと]佐藤心+',     link:'Mobamas/AngelHeart+/AngelHeart+.html',                             icon:'Mobamas/AngelHeart+/AngelHeart+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2015.05.31', name:'[はぁとの嫁入り]佐藤心',        link:'Mobamas/HeartNoYomeiri/HeartNoYomeiri.html',                       icon:'Mobamas/HeartNoYomeiri/HeartNoYomeiriIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2015.05.31', name:'[はぁとの嫁入り]佐藤心+',       link:'Mobamas/HeartNoYomeiri+/HeartNoYomeiri+.html',                     icon:'Mobamas/HeartNoYomeiri+/HeartNoYomeiri+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2015.11.09', name:'[ｽｳｨｰﾃｨｰ･ﾛﾜｲﾔﾙ]佐藤心',       link:'Mobamas/SweetieRoyal/SweetieRoyal.html',                           icon:'Mobamas/SweetieRoyal/SweetieRoyalIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2015.11.09', name:'[ｽｳｨｰﾃｨｰ･ﾛﾜｲﾔﾙ]佐藤心+',      link:'Mobamas/SweetieRoyal+/SweetieRoyal+.html',                         icon:'Mobamas/SweetieRoyal+/SweetieRoyal+Icon.jpg'},
+    {game:'mobamas', rarity:'r',       rarityOrd:0, rarityLabel:'R',    date:'2016.02.29', name:'[ﾜｰｷﾝｸﾞ･ｽｳｨｰﾃｨｰ]佐藤心',      link:'Mobamas/WorkingSweetie/WorkingSweetie.html',                       icon:'Mobamas/WorkingSweetie/WorkingSweetieIcon.jpg'},
+    {game:'mobamas', rarity:'r-plus',  rarityOrd:1, rarityLabel:'R+',   date:'2016.02.29', name:'[ﾜｰｷﾝｸﾞ･ｽｳｨｰﾃｨｰ]佐藤心+',     link:'Mobamas/WorkingSweetie+/WorkingSweetie+.html',                     icon:'Mobamas/WorkingSweetie+/WorkingSweetie+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2016.07.31', name:'[常夏ﾊﾟﾗﾀﾞｲｽ]佐藤心',          link:'Mobamas/TokonatsuParadise/TokonatsuParadise.html',                 icon:'Mobamas/TokonatsuParadise/TokonatsuParadiseIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2016.07.31', name:'[常夏ﾊﾟﾗﾀﾞｲｽ]佐藤心+',         link:'Mobamas/TokonatsuParadise+/TokonatsuParadise+.html',               icon:'Mobamas/TokonatsuParadise+/TokonatsuParadise+Icon.jpg'},
+    {game:'mobamas', rarity:'r',       rarityOrd:0, rarityLabel:'R',    date:'2017.03.27', name:'[ﾁｸｯとｽｳｨｰﾃｨｰ]佐藤心',        link:'Mobamas/ChikuttoSweetie/ChikuttoSweetie.html',                     icon:'Mobamas/ChikuttoSweetie/ChikuttoSweetieIcon.jpg'},
+    {game:'mobamas', rarity:'r-plus',  rarityOrd:1, rarityLabel:'R+',   date:'2017.03.27', name:'[ﾁｸｯとｽｳｨｰﾃｨｰ]佐藤心+',       link:'Mobamas/ChikuttoSweetie+/ChikuttoSweetie+.html',                   icon:'Mobamas/ChikuttoSweetie+/ChikuttoSweetie+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2017.11.28', name:'[6thｱﾆﾊﾞｰｻﾘｰ]佐藤心',          link:'Mobamas/6thAnniversary/6thAnniversary.html',                       icon:'Mobamas/6thAnniversary/6thAnniversaryIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2017.11.28', name:'[6thｱﾆﾊﾞｰｻﾘｰ]佐藤心+',         link:'Mobamas/6thAnniversary+/6thAnniversary+.html',                     icon:'Mobamas/6thAnniversary+/6thAnniversary+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2018.04.24', name:'[ふぉーりんはぁと]佐藤心',      link:'Mobamas/FallingHeart/FallingHeart.html',                           icon:'Mobamas/FallingHeart/FallingHeartIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2018.04.24', name:'[ふぉーりんはぁと]佐藤心+',     link:'Mobamas/FallingHeart+/FallingHeart+.html',                         icon:'Mobamas/FallingHeart+/FallingHeart+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2018.12.31', name:'[新春はぁとふる]佐藤心',        link:'Mobamas/ShinshunHeartful/ShinshunHeartful.html',                   icon:'Mobamas/ShinshunHeartful/ShinshunHeartfulIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2018.12.31', name:'[新春はぁとふる]佐藤心+',       link:'Mobamas/ShinshunHeartful+/ShinshunHeartful+.html',                 icon:'Mobamas/ShinshunHeartful+/ShinshunHeartful+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2019.09.30', name:'[夏色はぁと]佐藤心',            link:'Mobamas/NatsuiroHeart/NatsuiroHeart.html',                         icon:'Mobamas/NatsuiroHeart/NatsuiroHeartIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2019.09.30', name:'[夏色はぁと]佐藤心+',           link:'Mobamas/NatsuiroHeart+/NatsuiroHeart+.html',                       icon:'Mobamas/NatsuiroHeart+/NatsuiroHeart+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2020.01.09', name:'[ｽｳｨｰﾃｨｰ･ﾆｭｰｲﾔｰ]佐藤心',     link:'Mobamas/SweetieNewYear/SweetieNewYear.html',                       icon:'Mobamas/SweetieNewYear/SweetieNewYearIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2020.01.09', name:'[ｽｳｨｰﾃｨｰ･ﾆｭｰｲﾔｰ]佐藤心+',    link:'Mobamas/SweetieNewYear+/SweetieNewYear+.html',                     icon:'Mobamas/SweetieNewYear+/SweetieNewYear+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2020.11.30', name:'[ﾒﾘｸﾘ☆ﾊｰﾄ]佐藤心',            link:'Mobamas/MerryChristmasHeart/MerryChristmasHeart.html',             icon:'Mobamas/MerryChristmasHeart/MerryChristmasHeartIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2020.11.30', name:'[ﾒﾘｸﾘ☆ﾊｰﾄ]佐藤心+',           link:'Mobamas/MerryChristmasHeart+/MerryChristmasHeart+.html',           icon:'Mobamas/MerryChristmasHeart+/MerryChristmasHeart+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2021.08.26', name:'[ﾌﾞﾘﾘｱﾝﾄ･はぁと]佐藤心',       link:'Mobamas/BrilliantHeart/BrilliantHeart.html',                       icon:'Mobamas/BrilliantHeart/BrilliantHeartIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2021.08.26', name:'[ﾌﾞﾘﾘｱﾝﾄ･はぁと]佐藤心+',      link:'Mobamas/BrilliantHeart+/BrilliantHeart+.html',                     icon:'Mobamas/BrilliantHeart+/BrilliantHeart+Icon.jpg'},
+    {game:'mobamas', rarity:'sr',      rarityOrd:2, rarityLabel:'SR',   date:'2022.04.30', name:'[ｽﾀｲﾘｯｼｭ･はぁと]佐藤心',       link:'Mobamas/StylishHeart/StylishHeart.html',                           icon:'Mobamas/StylishHeart/StylishHeartIcon.jpg'},
+    {game:'mobamas', rarity:'sr-plus', rarityOrd:3, rarityLabel:'SR+',  date:'2022.04.30', name:'[ｽﾀｲﾘｯｼｭ･はぁと]佐藤心+',      link:'Mobamas/StylishHeart+/StylishHeart+.html',                         icon:'Mobamas/StylishHeart+/StylishHeart+Icon.jpg'},
+    /* === デレステ === */
+    {game:'deresute', rarity:'r',        rarityOrd:0, rarityLabel:'R',    date:'2016.08.10', name:'佐藤心',                           link:'Deresute/SatoShin/SatoShin.html',                                    icon:'Deresute/SatoShin/SatoShinIcon.jpg'},
+    {game:'deresute', rarity:'r-plus',   rarityOrd:1, rarityLabel:'R+',   date:'2016.08.10', name:'佐藤心+',                          link:'Deresute/SatoShin+/SatoShin+.html',                                  icon:'Deresute/SatoShin+/SatoShin+Icon.jpg'},
+    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   date:'2016.10.12', name:'[ハート・モデル]佐藤心',           link:'Deresute/HeartModel/HeartModel.html',                                icon:'Deresute/HeartModel/HeartModelIcon.jpg'},
+    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  date:'2016.10.12', name:'[ハート・モデル]佐藤心+',          link:'Deresute/HeartModel+/HeartModel+.html',                              icon:'Deresute/HeartModel+/HeartModel+Icon.jpg'},
+    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  date:'2016.11.17', name:'[はぁとトゥハート]佐藤心',         link:'Deresute/HeartToHeart/HeartToHeart.html',                            icon:'Deresute/HeartToHeart/HeartToHeartIcon.jpg'},
+    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', date:'2016.11.17', name:'[はぁとトゥハート]佐藤心+',        link:'Deresute/HeartToHeart+/HeartToHeart+.html',                          icon:'Deresute/HeartToHeart+/HeartToHeart+Icon.jpg'},
+    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   date:'2017.05.31', name:'[はぁとの嫁入り]佐藤心',           link:'Deresute/HeartNoYomeiri/HeartNoYomeiri.html',                        icon:'Deresute/HeartNoYomeiri/HeartNoYomeiriIcon.jpg'},
+    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  date:'2016.11.17', name:'[はぁとの嫁入り]佐藤心+',          link:'Deresute/HeartNoYomeiri+/HeartNoYomeiri+.html',                      icon:'Deresute/HeartNoYomeiri+/HeartNoYomeiri+Icon.jpg'},
+    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  date:'2017.09.03', name:'[ブリリアント・はぁと]佐藤心',     link:'Deresute/LuxuryHeart/LuxuryHeart.html',                              icon:'Deresute/LuxuryHeart/LuxuryHeartIcon.jpg'},
+    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', date:'2017.09.03', name:'[ブリリアント・はぁと]佐藤心+',    link:'Deresute/LuxuryHeart+/LuxuryHeart+.html',                            icon:'Deresute/LuxuryHeart+/LuxuryHeart+Icon.jpg'},
+    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   date:'2018.01.01', name:'[Happy New Yeah！]佐藤心',         link:'Deresute/HappyNewYeah/HappyNewYeah.html',                            icon:'Deresute/HappyNewYeah/HappyNewYeahIcon.jpg'},
+    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  date:'2018.01.01', name:'[Happy New Yeah！]佐藤心+',        link:'Deresute/HappyNewYeah+/HappyNewYeah+.html',                          icon:'Deresute/HappyNewYeah+/HappyNewYeah+Icon.jpg'},
+    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   date:'2018.07.31', name:'[凸凹スピードスター]佐藤心',       link:'Deresute/DekobokoSpeedStar/DekobokoSpeedStar.html',                  icon:'Deresute/DekobokoSpeedStar/DekobokoSpeedStarIcon.jpg'},
+    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  date:'2018.07.31', name:'[凸凹スピードスター]佐藤心+',      link:'Deresute/DekobokoSpeedStar+/DekobokoSpeedStar+.html',                icon:'Deresute/DekobokoSpeedStar+/DekobokoSpeedStar+Icon.jpg'},
+    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  date:'2018.10.31', name:'[オーダーメイド・はぁと]佐藤心',  link:'Deresute/OrderMadeHeart/OrderMadeHeart.html',                        icon:'Deresute/OrderMadeHeart/OrderMadeHeartIcon.jpg'},
+    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', date:'2018.10.31', name:'[オーダーメイド・はぁと]佐藤心+', link:'Deresute/OrderMadeHeart+/OrderMadeHeart+.html',                      icon:'Deresute/OrderMadeHeart+/OrderMadeHeart+Icon.jpg'},
+    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  date:'2020.01.31', name:'[ラグジュアリィ・はぁと]佐藤心',  link:'Deresute/LuxuryHeart/LuxuryHeart.html',                              icon:'Deresute/LuxuryHeart/LuxuryHeartIcon.jpg'},
+    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', date:'2020.01.31', name:'[ラグジュアリィ・はぁと]佐藤心+', link:'Deresute/LuxuryHeart+/LuxuryHeart+.html',                            icon:'Deresute/LuxuryHeart+/LuxuryHeart+Icon.jpg'},
+    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   date:'2020.08.31', name:'[Go Just Go！]佐藤心',             link:'Deresute/GoJustGo/GoJustGo.html',                                    icon:'Deresute/GoJustGo/GoJustGoIcon.jpg'},
+    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  date:'2020.08.31', name:'[Go Just Go！]佐藤心+',            link:'Deresute/GoJustGo+/GoJustGo+.html',                                  icon:'Deresute/GoJustGo+/GoJustGo+Icon.jpg'},
+    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   date:'2021.03.19', name:'[躍るFLAGSHIP]佐藤心',             link:'Deresute/OdoruFlagship/OdoruFlagship.html',                          icon:'Deresute/OdoruFlagship/OdoruFlagshipIcon.jpg'},
+    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  date:'2021.03.19', name:'[躍るFLAGSHIP]佐藤心+',            link:'Deresute/OdoruFlagship+/OdoruFlagship+.html',                        icon:'Deresute/OdoruFlagship+/OdoruFlagship+Icon.jpg'},
+    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  date:'2021.04.04', name:'[はぁとふるsweeteen☆]佐藤心',     link:'Deresute/HeartfulSweeteen/HeartfulSweeteen.html',                    icon:'Deresute/HeartfulSweeteen/HeartfulSweeteenIcon.jpg'},
+    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', date:'2021.04.04', name:'[はぁとふるsweeteen☆]佐藤心+',    link:'Deresute/HeartfulSweeteen+/HeartfulSweeteen+.html',                  icon:'Deresute/HeartfulSweeteen+/HeartfulSweeteen+Icon.jpg'},
+    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   date:'2022.01.30', name:'[CoCo夏夏夏Holiday]佐藤心',        link:'Deresute/CoCoNatsuNatsuNatsuHoliday/CoCoNatsuNatsuNatsuHoliday.html', icon:'Deresute/CoCoNatsuNatsuNatsuHoliday/CoCoNatsuNatsuNatsuHolidayIcon.jpg'},
+    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  date:'2022.01.30', name:'[CoCo夏夏夏Holiday]佐藤心+',       link:'Deresute/CoCoNatsuNatsuNatsuHoliday+/CoCoNatsuNatsuNatsuHoliday+.html', icon:'Deresute/CoCoNatsuNatsuNatsuHoliday+/CoCoNatsuNatsuNatsuHoliday+Icon.jpg'},
+    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  date:'2022.07.04', name:'[恋するスウィーティーサマー]佐藤心', link:'Deresute/KoisuruSweetieSummer/KoisuruSweetieSummer.html',         icon:'Deresute/KoisuruSweetieSummer/KoisuruSweetieSummerIcon.jpg'},
+    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', date:'2022.07.04', name:'[恋するスウィーティーサマー]佐藤心+', link:'Deresute/KoisuruSweetieSummer+/KoisuruSweetieSummer+.html',     icon:'Deresute/KoisuruSweetieSummer+/KoisuruSweetieSummer+Icon.jpg'},
+    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   date:'2022.10.19', name:'[ダンシング・デッド]佐藤心',       link:'Deresute/DancingDead/DancingDead.html',                              icon:'Deresute/DancingDead/DancingDeadIcon.jpg'},
+    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  date:'2022.10.19', name:'[ダンシング・デッド]佐藤心+',      link:'Deresute/DancingDead+/DancingDead+.html',                            icon:'Deresute/DancingDead+/DancingDead+Icon.jpg'},
+    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  date:'2023.07.16', name:'[愛されクイーン・はぁと]佐藤心',  link:'Deresute/AisareQueenHeart/AisareQueenHeart.html',                    icon:'Deresute/AisareQueenHeart/AisareQueenHeartIcon.jpg'},
+    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', date:'2023.07.16', name:'[愛されクイーン・はぁと]佐藤心+', link:'Deresute/AisareQueenHeart+/AisareQueenHeart+.html',                  icon:'Deresute/AisareQueenHeart+/AisareQueenHeart+Icon.jpg'},
+    {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   date:'2024.04.29', name:'[ド根性☆レポーター]佐藤心',       link:'Deresute/DokonjyoReporter/DokonjyoReporter.html',                    icon:'Deresute/DokonjyoReporter/DokonjyoReporterIcon.jpg'},
+    {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  date:'2024.04.29', name:'[ド根性☆レポーター]佐藤心+',      link:'Deresute/DokonjyoReporter+/DokonjyoReporter+.html',                  icon:'Deresute/DokonjyoReporter+/DokonjyoReporter+Icon.jpg'},
+    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  date:'2024.08.05', name:'[真夏の☆はぁとミーツハート]佐藤心', link:'Deresute/ManatsuNoHeartMeetsHeart/ManatsuNoHeartMeetsHeart.html', icon:'Deresute/ManatsuNoHeartMeetsHeart/ManatsuNoHeartMeetsHeartIcon.jpg'},
+    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', date:'2024.08.05', name:'[真夏の☆はぁとミーツハート]佐藤心+', link:'Deresute/ManatsuNoHeartMeetsHeart+/ManatsuNoHeartMeetsHeart+.html', icon:'Deresute/ManatsuNoHeartMeetsHeart+/ManatsuNoHeartMeetsHeart+Icon.jpg'},
+    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  date:'2025.05.20', name:'[この世でただひとりのはぁと]佐藤心', link:'Deresute/KonoyoDeTadaHitoriNoHeart/KonoyoDeTadaHitoriNoHeart.html', icon:'Deresute/KonoyoDeTadaHitoriNoHeart/KonoyoDeTadaHitoriNoHeartIcon.jpg'},
+    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', date:'2025.05.20', name:'[この世でただひとりのはぁと]佐藤心+', link:'Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.html', icon:'Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+Icon.jpg'}
 ];
+CARDS.forEach(function(c, i) {
+    c._idx = i;
+    c._dateNum = c.date ? parseInt(c.date.replace(/\./g, ''), 10) : 0;
+});
 
 var currentTab = 'all';
 var currentRarity = '';
@@ -173,7 +176,15 @@ function render() {
 
     var sorted = filtered.slice();
     if (currentSort === 'newest') {
-        sorted.reverse();
+        sorted.sort(function(a, b) {
+            var d = b._dateNum - a._dateNum;
+            return d !== 0 ? d : b._idx - a._idx;
+        });
+    } else if (currentSort === 'oldest') {
+        sorted.sort(function(a, b) {
+            var d = a._dateNum - b._dateNum;
+            return d !== 0 ? d : a._idx - b._idx;
+        });
     } else if (currentSort === 'rarity') {
         sorted.sort(function(a, b) { return b.rarityOrd - a.rarityOrd; });
     }
@@ -194,8 +205,8 @@ function render() {
         art.className = 'card-row rarity-' + c.rarity;
         art.innerHTML =
             '<div class="card-icon"><a href="' + c.link + '"><img src="' + c.icon + '" alt="' + c.name + '" loading="lazy"></a></div>' +
-            '<div class="card-rarity"><span class="r-pill">' + c.rarityLabel + '</span></div>' +
-            '<div class="card-name"><span class="game-tag game-tag-' + c.game + '">' + gameName[c.game] + '</span><h3><a href="' + c.link + '">' + c.name + '</a></h3></div>' +
+            '<div class="card-badges"><span class="r-pill">' + c.rarityLabel + '</span><span class="game-tag game-tag-' + c.game + '">' + gameName[c.game] + '</span></div>' +
+            '<div class="card-name"><h3><a href="' + c.link + '">' + c.name + '</a></h3></div>' +
             '<div class="card-action"><a href="' + c.link + '">詳細 →</a></div>';
         list.appendChild(art);
     });

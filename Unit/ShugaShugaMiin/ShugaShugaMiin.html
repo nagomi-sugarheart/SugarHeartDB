@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <base href="/SugarHeartDB/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>しゅがしゅが☆み～ん｜SugarHeartDB</title>
+    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニット「しゅがしゅが☆み～ん」のページです。">
+    <meta name="author" content="なごみ（@nagomi_IMCG）">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="しゅがしゅが☆み～ん｜SugarHeartDB">
+    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニット「しゅがしゅが☆み～ん」のページです。">
+    <meta property="og:site_name" content="SugarHeartDB">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="SugarHeartDB">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="components/header.js"></script>
+
+<section class="page-hero">
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Unit/UnitList.html">ユニット一覧</a> · <strong>しゅがしゅが☆み～ん</strong></div>
+</section>
+
+<div class="ud-page">
+
+  <div class="ud-hero">
+    <div class="ud-hero-left">
+      <div class="badges">
+        <span class="unit-badge size">2人ユニット</span>
+        <span class="unit-badge year">2015〜</span>
+        <span class="unit-badge theme">モバマス</span>
+        <span class="unit-badge theme">デレステ</span>
+        <span class="unit-badge theme">楽曲</span>
+        <span class="unit-badge theme">コラボ</span>
+      </div>
+      <h1>しゅがしゅが☆み～ん</h1>
+      <div class="en">ShugaShugaMiin · DEBUT 2015.07.22</div>
+      <p class="summary">－</p>
+    </div>
+    <div class="ud-hero-right">
+      <div class="members-label">MEMBERS</div>
+      <div class="members-row">
+        <div class="member shin"><div class="av"><img src="data/iconimg/satoshin_icon01.png" alt="佐藤心"></div><div class="name">佐藤心</div></div>
+        <div class="member"><div class="av"><img src="data/iconimg/abenana_icon01.png" alt="安部菜々"></div><div class="name">安部菜々</div></div>
+      </div>
+      <div class="ud-stats-strip">
+        <div class="stat"><div class="v">1</div><div class="l">APPEARANCES</div></div>
+        <div class="stat"><div class="v">－</div><div class="l">SONGS</div></div>
+        <div class="stat"><div class="v" id="ud-duration" data-debut="2015-07-22">－</div><div class="l">DURATION</div></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ud-related">
+    <span class="lbl">RELATED PAGES //</span>
+    <a class="disabled">凸凹スピードスター（デレステイベント）</a>
+    <a class="disabled">凸凹スピードスター（楽曲）</a>
+    <a class="disabled">第1回アイドルプロデュース（デレステイベント）</a>
+    <a href="Unit/ComingofAge/ComingofAge.html">カミング・オブ・エイジ！</a>
+    <a class="disabled">カミングTV 第7回</a>
+    <a class="disabled">IDOLM@STER EXPO</a>
+    <a class="disabled">Take me☆Take you</a>
+    <a class="disabled">キュアメイドカフェコラボ</a>
+    <a class="disabled">ビレッジバンガードコラボ</a>
+    <a class="disabled">スイパラコラボ</a>
+    <a class="disabled">シンデレラガールズ劇場</a>
+    <a class="disabled">でれぽ</a>
+  </div>
+  <article class="ud-appearance">
+    <header class="ud-appearance-header">
+      <div class="ud-ap-date">
+        <div class="y">2015</div>
+        <div class="m">07</div>
+        <div class="d">22</div>
+      </div>
+        <div class="m">－</div>
+        <div class="d">－</div>
+      </div>
+      <div class="ud-ap-title">
+        <h3>第13回アイドルLIVEロワイヤル</h3>
+        <div class="game-event"><span>モバマス</span></div>
+      </div>
+      <div class="ud-ap-meta"><span class="num">No.01</span></div>
+    </header>
+    <div class="ud-phases">
+    </div>
+    <footer class="ud-ap-foot">
+      <div class="related">
+        <span class="lbl">RELATED //</span>
+        <a href="Mobamas/AngelHeart/AngelHeart.html">えんじぇるはぁと SR</a>
+        <a href="Mobamas/AngelHeart+/AngelHeart+.html">えんじぇるはぁと SR+</a>
+      </div>
+    </footer>
+  </article>
+
+</div>
+<script>
+(function(){
+  var el = document.getElementById('ud-duration');
+  if (!el) return;
+  var debut = new Date(el.dataset.debut);
+  var now = new Date();
+  var y = now.getFullYear() - debut.getFullYear();
+  var m = now.getMonth() - debut.getMonth();
+  if (m < 0) { y--; m += 12; }
+  el.textContent = y + 'YEAR ' + m + 'MONTH';
+})();
+</script>
+</body>
+</html>
