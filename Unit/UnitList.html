@@ -1677,7 +1677,7 @@
 
     // 検索インプット
     document.getElementById('unit-search').addEventListener('input', function () {
-        currentQuery = this.value.trim().toLowerCase();
+        currentQuery = this.value.trim().normalize('NFKC').toLowerCase();
         applyFilters();
     });
 
@@ -1687,9 +1687,9 @@
             if (currentGame !== 'all' && !card.dataset.game.includes(currentGame)) return false;
             // テキスト検索（ユニット名 + アイドル名）
             if (currentQuery) {
-                var nameJa = (card.dataset.nameJa || '').toLowerCase();
-                var nameEn = (card.querySelector('.unit-en') ? card.querySelector('.unit-en').textContent : '').toLowerCase();
-                var members = (card.dataset.members || '').toLowerCase();
+                var nameJa = (card.dataset.nameJa || '').normalize('NFKC').toLowerCase();
+                var nameEn = (card.querySelector('.unit-en') ? card.querySelector('.unit-en').textContent : '').normalize('NFKC').toLowerCase();
+                var members = (card.dataset.members || '').normalize('NFKC').toLowerCase();
                 if (!nameJa.includes(currentQuery) && !nameEn.includes(currentQuery) && !members.includes(currentQuery)) return false;
             }
             return true;

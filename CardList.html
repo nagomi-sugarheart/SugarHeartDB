@@ -118,8 +118,8 @@ var CARDS = [
     {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', date:'2016.11.17', name:'[はぁとトゥハート]佐藤心+',        link:'Deresute/HeartToHeart+/HeartToHeart+.html',                          icon:'Deresute/HeartToHeart+/HeartToHeart+Icon.jpg'},
     {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   date:'2017.05.31', name:'[はぁとの嫁入り]佐藤心',           link:'Deresute/HeartNoYomeiri/HeartNoYomeiri.html',                        icon:'Deresute/HeartNoYomeiri/HeartNoYomeiriIcon.jpg'},
     {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  date:'2016.11.17', name:'[はぁとの嫁入り]佐藤心+',          link:'Deresute/HeartNoYomeiri+/HeartNoYomeiri+.html',                      icon:'Deresute/HeartNoYomeiri+/HeartNoYomeiri+Icon.jpg'},
-    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  date:'2017.09.03', name:'[ブリリアント・はぁと]佐藤心',     link:'Deresute/LuxuryHeart/LuxuryHeart.html',                              icon:'Deresute/LuxuryHeart/LuxuryHeartIcon.jpg'},
-    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', date:'2017.09.03', name:'[ブリリアント・はぁと]佐藤心+',    link:'Deresute/LuxuryHeart+/LuxuryHeart+.html',                            icon:'Deresute/LuxuryHeart+/LuxuryHeart+Icon.jpg'},
+    {game:'deresute', rarity:'ssr',      rarityOrd:4, rarityLabel:'SSR',  date:'2017.09.03', name:'[ブリリアント・はぁと]佐藤心',     link:'Deresute/BrilliantHeart/BrilliantHeart.html',                        icon:'Deresute/BrilliantHeart/BrilliantHeartIcon.jpg'},
+    {game:'deresute', rarity:'ssr-plus', rarityOrd:5, rarityLabel:'SSR+', date:'2017.09.03', name:'[ブリリアント・はぁと]佐藤心+',    link:'Deresute/BrilliantHeart+/BrilliantHeart+.html',                      icon:'Deresute/BrilliantHeart+/BrilliantHeart+Icon.jpg'},
     {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   date:'2018.01.01', name:'[Happy New Yeah！]佐藤心',         link:'Deresute/HappyNewYeah/HappyNewYeah.html',                            icon:'Deresute/HappyNewYeah/HappyNewYeahIcon.jpg'},
     {game:'deresute', rarity:'sr-plus',  rarityOrd:3, rarityLabel:'SR+',  date:'2018.01.01', name:'[Happy New Yeah！]佐藤心+',        link:'Deresute/HappyNewYeah+/HappyNewYeah+.html',                          icon:'Deresute/HappyNewYeah+/HappyNewYeah+Icon.jpg'},
     {game:'deresute', rarity:'sr',       rarityOrd:2, rarityLabel:'SR',   date:'2018.07.31', name:'[凸凹スピードスター]佐藤心',       link:'Deresute/DekobokoSpeedStar/DekobokoSpeedStar.html',                  icon:'Deresute/DekobokoSpeedStar/DekobokoSpeedStarIcon.jpg'},
@@ -166,11 +166,11 @@ function rarityGroupOf(r) {
 }
 
 function render() {
-    var q = currentSearch.replace(/\s+/g, '').toLowerCase();
+    var q = currentSearch.normalize('NFKC').replace(/\s+/g, '').toLowerCase();
     var filtered = CARDS.filter(function(c) {
         if (currentTab !== 'all' && c.game !== currentTab) return false;
         if (currentRarity && rarityGroupOf(c.rarity) !== currentRarity) return false;
-        if (q && c.name.toLowerCase().replace(/\s+/g, '').indexOf(q) === -1) return false;
+        if (q && c.name.normalize('NFKC').toLowerCase().replace(/\s+/g, '').indexOf(q) === -1) return false;
         return true;
     });
 
