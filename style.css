@@ -4269,7 +4269,7 @@ input[name="dialogue-tab"] {
 }
 .v2-nav-name { font-size: 11.5px; font-weight: 700; line-height: 1.4; }
 .v2-nav-arrow { color: var(--sh-pink); font-size: 16px; flex-shrink: 0; }
-.v2-nav-card.v2-nav-next { text-align: right; }
+.v2-nav-card.v2-nav-next { text-align: right; justify-content: flex-end; }
 
 /* カードヒーロー */
 .v2-card-hero {
