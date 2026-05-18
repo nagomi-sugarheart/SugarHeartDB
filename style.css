@@ -4622,11 +4622,40 @@ input[name="dialogue-tab"] {
     border-color: var(--sh-yellow);
     box-shadow: 0 4px 14px rgba(253,137,185,0.4);
 }
+.member .av img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.member .av { overflow: hidden; }
 .member .name {
     font-size: 11.5px;
     color: var(--sh-text);
     text-align: center;
     line-height: 1.3;
+}
+
+/* ユニット詳細セリフ */
+.ud-dialogue .line { margin-bottom: 2px; line-height: 1.75; }
+.ud-dialogue .speaker {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--sh-pink-deep);
+    background: var(--sh-pink-soft);
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.ud-ap-foot .card-ref {
+    padding: 4px 12px;
+    border-radius: var(--r-pill);
+    background: #fff;
+    color: var(--sh-text-soft);
+    font-size: 11.5px;
+    border: 1px solid var(--sh-line-soft);
 }
 
 /* Stats strip */
