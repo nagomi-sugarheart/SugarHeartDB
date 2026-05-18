@@ -4166,6 +4166,15 @@ input[name="dialogue-tab"] {
     font-family: ui-monospace, monospace;
 }
 .sb-list { display: flex; flex-direction: column; gap: 2px; }
+.sb-section-label {
+    font-size: 10px;
+    color: var(--sh-text-mute);
+    letter-spacing: 0.1em;
+    padding: 10px 10px 4px;
+    font-family: ui-monospace, monospace;
+    border-top: 1px solid var(--sh-line-soft);
+    margin-top: 6px;
+}
 .sb-item {
     display: flex;
     align-items: center;
