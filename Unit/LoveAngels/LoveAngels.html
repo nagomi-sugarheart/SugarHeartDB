@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <base href="/SugarHeartDB/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>愛の使徒～ラヴ・エンジェルズ｜SugarHeartDB</title>
-    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニット「愛の使徒～ラヴ・エンジェルズ」のページです。">
+    <title>愛の使者～ラヴ・エンジェルズ～｜SugarHeartDB</title>
+    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニット「愛の使者～ラヴ・エンジェルズ～」のページです。">
     <meta name="author" content="なごみ（@nagomi_IMCG）">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="愛の使徒～ラヴ・エンジェルズ｜SugarHeartDB">
-    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニット「愛の使徒～ラヴ・エンジェルズ」のページです。">
+    <meta property="og:title" content="愛の使者～ラヴ・エンジェルズ～｜SugarHeartDB">
+    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が所属するユニット「愛の使者～ラヴ・エンジェルズ～」のページです。">
     <meta property="og:site_name" content="SugarHeartDB">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="SugarHeartDB">
@@ -23,7 +23,7 @@
 <script src="components/header.js"></script>
 
 <section class="page-hero">
-    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Unit/UnitList.html">ユニット一覧</a> · <strong>愛の使徒～ラヴ・エンジェルズ</strong></div>
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Unit/UnitList.html">ユニット一覧</a> · <strong>愛の使者～ラヴ・エンジェルズ～</strong></div>
 </section>
 
 <div class="ud-page">
@@ -32,11 +32,11 @@
     <div class="ud-hero-left">
       <div class="badges">
         <span class="unit-badge size">2人ユニット</span>
-        <span class="unit-badge year">－〜</span>
+        <span class="unit-badge year">2015〜</span>
         <span class="unit-badge theme">モバマス</span>
       </div>
-      <h1>愛の使徒～ラヴ・エンジェルズ</h1>
-      <div class="en">LoveAngels · DEBUT －</div>
+      <h1>愛の使者～ラヴ・エンジェルズ～</h1>
+      <div class="en">LoveAngels · DEBUT 2015.05.22</div>
       <p class="summary">－</p>
     </div>
     <div class="ud-hero-right">
@@ -48,16 +48,23 @@
       <div class="ud-stats-strip">
         <div class="stat"><div class="v">1</div><div class="l">APPEARANCES</div></div>
         <div class="stat"><div class="v">－</div><div class="l">SONGS</div></div>
-        <div class="stat"><div class="v">－</div><div class="l">ALBUMS</div></div>
-        <div class="stat"><div class="v">－</div><div class="l">DURATION</div></div>
+        <div class="stat"><div class="v" id="ud-duration" data-debut="2015-05-22">－</div><div class="l">DURATION</div></div>
       </div>
     </div>
   </div>
 
+
+  <div class="ud-related">
+    <span class="lbl">RELATED PAGES //</span>
+    <a href="Unit/PinkyBounce/PinkyBounce.html">ピンキーバウンス</a>
+  </div>
   <article class="ud-appearance">
     <header class="ud-appearance-header">
       <div class="ud-ap-date">
-        <div class="y">－</div>
+        <div class="y">2015</div>
+        <div class="m">05</div>
+        <div class="d">22</div>
+      </div>
         <div class="m">－</div>
         <div class="d">－</div>
       </div>
@@ -107,5 +114,17 @@
   </article>
 
 </div>
+<script>
+(function(){
+  var el = document.getElementById('ud-duration');
+  if (!el) return;
+  var debut = new Date(el.dataset.debut);
+  var now = new Date();
+  var y = now.getFullYear() - debut.getFullYear();
+  var m = now.getMonth() - debut.getMonth();
+  if (m < 0) { y--; m += 12; }
+  el.textContent = y + 'YEAR ' + m + 'MONTH';
+})();
+</script>
 </body>
 </html>

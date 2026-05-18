@@ -49,8 +49,7 @@
       <div class="ud-stats-strip">
         <div class="stat"><div class="v">2</div><div class="l">APPEARANCES</div></div>
         <div class="stat"><div class="v">－</div><div class="l">SONGS</div></div>
-        <div class="stat"><div class="v">－</div><div class="l">ALBUMS</div></div>
-        <div class="stat"><div class="v">－</div><div class="l">DURATION</div></div>
+        <div class="stat"><div class="v" id="ud-duration" data-debut="2019-06-30">－</div><div class="l">DURATION</div></div>
       </div>
     </div>
   </div>
@@ -59,6 +58,9 @@
     <header class="ud-appearance-header">
       <div class="ud-ap-date">
         <div class="y">2019</div>
+        <div class="m">06</div>
+        <div class="d">30</div>
+      </div>
         <div class="m">06</div>
         <div class="d">30</div>
       </div>
@@ -113,6 +115,9 @@
         <div class="m">01</div>
         <div class="d">18</div>
       </div>
+        <div class="m">01</div>
+        <div class="d">18</div>
+      </div>
       <div class="ud-ap-title">
         <h3>第49回 アイドルLIVEロワイヤル</h3>
         <div class="game-event"><span>モバマス</span></div>
@@ -159,5 +164,17 @@
   </article>
 
 </div>
+<script>
+(function(){
+  var el = document.getElementById('ud-duration');
+  if (!el) return;
+  var debut = new Date(el.dataset.debut);
+  var now = new Date();
+  var y = now.getFullYear() - debut.getFullYear();
+  var m = now.getMonth() - debut.getMonth();
+  if (m < 0) { y--; m += 12; }
+  el.textContent = y + 'YEAR ' + m + 'MONTH';
+})();
+</script>
 </body>
 </html>
