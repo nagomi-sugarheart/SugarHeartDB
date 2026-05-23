@@ -30,11 +30,13 @@
 <section class="page-hero" style="margin-top: 14px;">
     <article class="event-hero" data-accent="limited">
         <div class="banner">
+            <!-- バナー画像: src="" にイベントバナー画像パスを入れる -->
             <div class="corner-no">EVENT #—</div>
-            <div class="event-banner-ph">イベントバナー画像（準備中）</div>
+            <div class="event-banner-ph">バナー画像 (16:9)</div>
         </div>
         <div class="event-hero-meta">
             <div class="tags">
+                <!-- イベント種別タグ。data-tag は limited/ranking/solo/seasonal/collab から選択 -->
                 <span class="sh-tag" data-tag="limited">限定カード</span>
             </div>
             <div>
@@ -42,26 +44,30 @@
                 <div class="en">39TH PUCHI DERA COLLECTION</div>
             </div>
             <p class="summary">モバマスのイベントにおける心ちゃんの登場・特記事項をまとめています。</p>
+            <!-- 開催期間: y=年, m=月, d=日 をそれぞれ書き換える -->
             <div class="duration-card">
                 <div class="pin">
-                    <div class="y">——</div>
+                    <div class="y">20——</div>
                     <div class="m">—</div>
                     <div class="d">—</div>
                 </div>
                 <div class="arrow">━━▶</div>
                 <div class="pin">
-                    <div class="y">——</div>
+                    <div class="y">20——</div>
                     <div class="m">—</div>
                     <div class="d">—</div>
                 </div>
                 <div class="info">
                     <div class="l">DURATION</div>
-                    <div class="full">開催期間未入力</div>
+                    <!-- 例: 2024.11.15 (金) 15:00 — 11.25 (月) 23:59 -->
+                    <div class="full">20——.—.— (—) —:—— — ——.— (—) ——:——</div>
                 </div>
                 <div class="days">— 日間</div>
             </div>
             <div class="meta-row">
-                <span class="pill-state ended">準備中</span>
+                <span class="pill-state ended">開催終了</span>
+                <!-- 補足テキスト例: <span>最終ログイン報酬対応 · 連動コミュあり</span> -->
+                <span></span>
             </div>
         </div>
     </article>
@@ -69,37 +75,64 @@
 
 <main class="page">
 
+    <!-- ▼ イベント概要 ▼ -->
     <div class="sec-head">
         <div class="ic glyph-overview"></div>
         <h2>イベント概要 <span class="sub">/ AT-A-GLANCE</span></h2>
         <a class="anchor">#overview</a>
     </div>
+    <!-- 各 .v の中身を書き換える -->
     <div class="credit-strip">
-        <div class="credit"><div class="l">EVENT TYPE</div><div class="v">ぷちでれらコレクション</div></div>
-        <div class="credit"><div class="l">心ちゃんの出番</div><div class="v">—</div></div>
-        <div class="credit"><div class="l">関連ユニット</div><div class="v">—</div></div>
-        <div class="credit"><div class="l">REPLAY</div><div class="v">—</div></div>
+        <div class="credit">
+            <div class="l">EVENT TYPE</div>
+            <div class="v">ぷちでれらコレクション</div>
+        </div>
+        <div class="credit">
+            <div class="l">心ちゃんの出番</div>
+            <!-- 例: SSR+ 報酬 <small>+ コミュ全 5 話</small> -->
+            <div class="v">—</div>
+        </div>
+        <div class="credit">
+            <div class="l">関連ユニット</div>
+            <div class="v">—</div>
+        </div>
+        <div class="credit">
+            <div class="l">REPLAY</div>
+            <!-- 例: 初回 <small>· 復刻未定</small> -->
+            <div class="v">—</div>
+        </div>
     </div>
 
+    <!-- ▼ 報酬 ▼ -->
     <div class="sec-head">
         <div class="ic glyph-reward"></div>
         <h2>報酬 <span class="sub">/ REWARD</span></h2>
         <a class="anchor">#reward</a>
     </div>
+    <!-- data-rarity: ssr-plus / ssr / sr-plus / sr -->
     <div class="reward-card" data-rarity="ssr-plus">
         <div class="thumb-wrap">
-            <div class="thumb">カード画像<br>準備中</div>
+            <!-- カード画像: <img src="path/to/card.jpg" alt="カード名"> に置き換える -->
+            <div class="thumb">カード画像<br>(3:4)</div>
         </div>
         <div class="info">
             <div class="rarity-row">
+                <!-- レア度ラベル: SSR+ / SSR / SR+ / SR -->
                 <span class="rarity">SSR+</span>
                 <span class="lbl">EVENT REWARD</span>
             </div>
-            <div class="nm">—</div>
-            <div class="by">—</div>
+            <!-- カード名 -->
+            <div class="nm">カード名を入力</div>
+            <!-- 獲得条件 例: ランキング 1〜2,000 位 / コレクション完了 -->
+            <div class="by">獲得条件を入力</div>
+            <!-- 付帯報酬がある場合は以下を使う（不要なら削除） -->
+            <div class="extras">
+                <span class="extra">+ 付帯報酬を入力</span>
+            </div>
         </div>
     </div>
 
+    <!-- ▼ イベント中のセリフ（ぷちでれらコレクション = ストーリー型） ▼ -->
     <div class="sec-head">
         <div class="ic glyph-dialogue"></div>
         <h2>イベント中のセリフ <span class="sub">/ DIALOGUE</span></h2>
@@ -109,25 +142,293 @@
     <div class="seriful">
         <div class="scene-bar">
             <div class="scene-bar-label">SELECT SCENE</div>
-            <div class="scenes">
-                <label class="scene-pill" data-checked="true">
+            <div class="scenes" id="scenes-list">
+                <!-- シーンを追加・削除するときはここと #scene-body 内の両方を編集する -->
+                <label class="scene-pill" data-checked="true" data-idx="0">
                     <span class="idx">01</span>
                     <input type="radio" name="scene" checked>
-                    <span>準備中</span>
+                    <span>オープニング</span>
+                </label>
+                <label class="scene-pill" data-checked="false" data-idx="1">
+                    <span class="idx">02</span>
+                    <input type="radio" name="scene">
+                    <span>第1話</span>
+                </label>
+                <label class="scene-pill" data-checked="false" data-idx="2">
+                    <span class="idx">03</span>
+                    <input type="radio" name="scene">
+                    <span>第2話</span>
+                </label>
+                <label class="scene-pill" data-checked="false" data-idx="3">
+                    <span class="idx">04</span>
+                    <input type="radio" name="scene">
+                    <span>第3話</span>
+                </label>
+                <label class="scene-pill" data-checked="false" data-idx="4">
+                    <span class="idx">05</span>
+                    <input type="radio" name="scene">
+                    <span>エンディング</span>
                 </label>
             </div>
         </div>
-        <div class="scene-body">
-            <div class="scene-empty">
-                <div class="ic">✿</div>
-                このシーンにはまだセリフが登録されていません。
+        <div class="scene-body" id="scene-body">
+
+            <!-- ======== Scene 01: オープニング ======== -->
+            <div class="scene-section" data-scene="0">
+                <div class="scene-meta">
+                    <div class="scene-title"><span class="num">01</span>オープニング</div>
+                    <!-- シーン説明（任意） 例: イベント開始時のプロローグ。 -->
+                    <div class="scene-cap">（シーン説明を入力）</div>
+                </div>
+                <div class="dialog-list">
+                    <!-- 行を増やすときはこの .dialog ブロックをコピーして追加する -->
+                    <!-- 話者は data-who="心" / "P" / "紗枝" / "蘭子" / "千鶴" / "アイドル他" / "ナレーション" など -->
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="ナレーション">ナレーション</span>
+                            </div>
+                            <div class="text">（ナレーションを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="心">心</span>
+                                <!-- stamp: シーン・場所の補足 例: @ 事務所 -->
+                                <span class="stamp">@ ——</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="P">P</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="心">心</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                            <!-- note: 演出注記（任意）。不要なら削除 -->
+                            <div class="note">（演出注記を入力。不要なら削除）</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+
+            <!-- ======== Scene 02: 第1話 ======== -->
+            <div class="scene-section" data-scene="1" style="display:none">
+                <div class="scene-meta">
+                    <div class="scene-title"><span class="num">02</span>第1話</div>
+                    <div class="scene-cap">（シーン説明を入力）</div>
+                </div>
+                <div class="dialog-list">
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="心">心</span>
+                                <span class="stamp">@ ——</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="アイドル他">アイドル他</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="心">心</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="P">P</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== Scene 03: 第2話 ======== -->
+            <div class="scene-section" data-scene="2" style="display:none">
+                <div class="scene-meta">
+                    <div class="scene-title"><span class="num">03</span>第2話</div>
+                    <div class="scene-cap">（シーン説明を入力）</div>
+                </div>
+                <div class="dialog-list">
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="心">心</span>
+                                <span class="stamp">@ ——</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="アイドル他">アイドル他</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="心">心</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="P">P</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== Scene 04: 第3話 ======== -->
+            <div class="scene-section" data-scene="3" style="display:none">
+                <div class="scene-meta">
+                    <div class="scene-title"><span class="num">04</span>第3話</div>
+                    <div class="scene-cap">（シーン説明を入力）</div>
+                </div>
+                <div class="dialog-list">
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="心">心</span>
+                                <span class="stamp">@ ——</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="アイドル他">アイドル他</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="心">心</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="P">P</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== Scene 05: エンディング ======== -->
+            <div class="scene-section" data-scene="4" style="display:none">
+                <div class="scene-meta">
+                    <div class="scene-title"><span class="num">05</span>エンディング</div>
+                    <div class="scene-cap">（シーン説明を入力）</div>
+                </div>
+                <div class="dialog-list">
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="心">心</span>
+                                <span class="stamp">@ ——</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="アイドル他">アイドル他</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="心">心</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog">
+                        <div class="shot"></div>
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="P">P</span>
+                            </div>
+                            <div class="text">（セリフを入力）</div>
+                        </div>
+                    </div>
+                    <div class="dialog no-shot">
+                        <div class="body">
+                            <div class="line-head">
+                                <span class="speaker" data-who="ナレーション">ナレーション</span>
+                            </div>
+                            <div class="text">（ナレーションを入力）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /scene-body -->
+    </div><!-- /seriful -->
 
     <div class="related-foot">
         <div class="related">
             <span class="lbl">RELATED //</span>
+            <!-- 関連リンクがある場合: <a href="...">↗ ユニット: ○○</a> のように追加 -->
         </div>
         <div class="nav-events">
             <a href="Mobamas/Event/EventList.html">◀ イベント一覧へ</a>
@@ -135,6 +436,19 @@
     </div>
 
 </main>
+
+<script>
+(function () {
+    const pills = document.querySelectorAll('#scenes-list .scene-pill');
+    const sections = document.querySelectorAll('#scene-body .scene-section');
+    pills.forEach(function (p, i) {
+        p.addEventListener('click', function () {
+            pills.forEach(function (x, j) { x.dataset.checked = (j === i) ? 'true' : 'false'; });
+            sections.forEach(function (s, j) { s.style.display = (j === i) ? '' : 'none'; });
+        });
+    });
+})();
+</script>
 
 </body>
 </html>
