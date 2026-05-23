@@ -1,10 +1,11 @@
 /* ============================================================
    SugarHeartDB — コラボ・グッズ データ
-   このファイルは CollabList.html と Collab/index.html から読み込まれます。
+   このファイルは CollabList.html と各コラボ詳細ページから読み込まれます。
    ============================================================ */
 var COLLAB_DATA = [
   {
     id: "tokyuhands-2018",
+    path: "General/Collab/20181006_tokyuhands",
     title: "東急ハンズコラボ",
     subtitle: null,
     dateDisplay: "2018/10/6〜2018/11/5",
@@ -15,6 +16,7 @@ var COLLAB_DATA = [
   },
   {
     id: "itaindo-3rd-2018",
+    path: "General/Collab/20181025_itaindo3rd",
     title: "痛印堂 第3弾",
     subtitle: null,
     dateDisplay: "2018/10/25〜2018/11/30",
@@ -25,6 +27,7 @@ var COLLAB_DATA = [
   },
   {
     id: "natsupara-figure-2018",
+    path: "General/Collab/20181201_natsupara-figure",
     title: "常夏パラダイス 佐藤心 フィギュア",
     subtitle: null,
     dateDisplay: "2018/12（日付不明）",
@@ -35,6 +38,7 @@ var COLLAB_DATA = [
   },
   {
     id: "heartoheart-figure-2019",
+    path: "General/Collab/20191101_heartoheart-figure",
     title: "はぁとトゥハート 佐藤心 フィギュア",
     subtitle: null,
     dateDisplay: "2019/11（日付不明）",
@@ -45,6 +49,7 @@ var COLLAB_DATA = [
   },
   {
     id: "acrylic-petit-13-2019",
+    path: "General/Collab/20190401_acrylic-petit13",
     title: "アクリルキャラプレートぷち 13",
     subtitle: "はぁとトゥハート",
     dateDisplay: "2019/4（日付不明）",
@@ -55,6 +60,7 @@ var COLLAB_DATA = [
   },
   {
     id: "pubmirror-ordermade-2020",
+    path: "General/Collab/20200722_pubmirror",
     title: "パーソナルパブミラー",
     subtitle: "[オーダーメイド・はぁと]",
     dateDisplay: "2020/7/22〜",
@@ -67,6 +73,7 @@ var COLLAB_DATA = [
   },
   {
     id: "atre-akihabara-2020",
+    path: "General/Collab/20200901_atre-akihabara",
     title: "アトレ秋葉原コラボ",
     subtitle: null,
     dateDisplay: "2020/9/1〜",
@@ -79,6 +86,7 @@ var COLLAB_DATA = [
   },
   {
     id: "animate-crossjapan-2020",
+    path: "General/Collab/20200926_animate-crossjapan",
     title: "アイドルマスター 日本横断フェア in アニメイト",
     subtitle: "命燃やして恋せよ乙女 高垣楓タペストリー映り込み",
     dateDisplay: "2020/9/26〜2021/4/11",
@@ -91,6 +99,7 @@ var COLLAB_DATA = [
   },
   {
     id: "go-just-go-2020",
+    path: "General/Collab/20201117_go-just-go",
     title: "Go Just Go！ 描き下ろしグッズ",
     subtitle: null,
     dateDisplay: "2020/11/17〜",
@@ -103,6 +112,7 @@ var COLLAB_DATA = [
   },
   {
     id: "grafart-2020",
+    path: "General/Collab/20201121_grafart",
     title: "グラフアート 新グッズ",
     subtitle: null,
     dateDisplay: "2020/11/21",
@@ -115,6 +125,7 @@ var COLLAB_DATA = [
   },
   {
     id: "capsule-rubber-name-2020",
+    path: "General/Collab/20201215_capsule-rubber-name",
     title: "ガチャガチャ カプセルラバーマスコット Name Collection!",
     subtitle: null,
     dateDisplay: "2020/12/15〜",
@@ -127,6 +138,7 @@ var COLLAB_DATA = [
   },
   {
     id: "acrylic-petit-20-2020",
+    path: "General/Collab/20201101_acrylic-petit20",
     title: "アクリルキャラプレートぷち 20",
     subtitle: "ブリリアントはぁと",
     dateDisplay: "2020/11（日付不明）",
@@ -137,6 +149,7 @@ var COLLAB_DATA = [
   },
   {
     id: "unit-ring-sugasuga-2021",
+    path: "General/Collab/20210330_unit-ring-sugasuga",
     title: "ユニットモチーフリング しゅがしゅが☆み〜ん",
     subtitle: null,
     dateDisplay: "2021/3/30〜2021/4/21（受注期間）",
@@ -149,6 +162,7 @@ var COLLAB_DATA = [
   },
   {
     id: "tanita-2021",
+    path: "General/Collab/20210915_tanita",
     title: "TANITAコラボ（万歩計190種）",
     subtitle: null,
     dateDisplay: "2021/9/15〜2021/10/11",
@@ -162,6 +176,7 @@ var COLLAB_DATA = [
   },
   {
     id: "prize-figure-brilliant-2021",
+    path: "General/Collab/20211021_prize-figure-brilliant",
     title: "プライズフィギュア",
     subtitle: "ブリリアント・はぁと",
     dateDisplay: "2021/10/21",
@@ -174,6 +189,7 @@ var COLLAB_DATA = [
   },
   {
     id: "sanrio-animate-2021",
+    path: "General/Collab/20211113_sanrio-animate",
     title: "アイドルマスター シンデレラガールズ×サンリオキャラクターズコラボフェア in アニメイト",
     subtitle: null,
     dateDisplay: "2021/11/13〜11/28",
@@ -186,6 +202,7 @@ var COLLAB_DATA = [
   },
   {
     id: "lawson-2021",
+    path: "General/Collab/20211116_lawson",
     title: "LAWSONキャンペーン",
     subtitle: "描き下ろし等身イラスト",
     dateDisplay: "2021/11/16〜",
@@ -199,6 +216,7 @@ var COLLAB_DATA = [
   },
   {
     id: "costume-memories-2021",
+    path: "General/Collab/20211119_costume-memories",
     title: "10周年記念衣装展 THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY Costume Memories!!!",
     subtitle: "グッズのみ",
     dateDisplay: "2021/11/19〜2022/1/16",
@@ -212,6 +230,7 @@ var COLLAB_DATA = [
   },
   {
     id: "atre-akihabara-2021",
+    path: "General/Collab/20211120_atre-akihabara",
     title: "アトレ秋葉原コラボ",
     subtitle: null,
     dateDisplay: "2021/11/20〜2021/12/10",
@@ -224,6 +243,7 @@ var COLLAB_DATA = [
   },
   {
     id: "tshirt-10th-2021",
+    path: "General/Collab/20211129_tshirt-10th",
     title: "THE IDOLM@STER CINDERELLA GIRLS 10周年記念公式カスタマイズTシャツ",
     subtitle: null,
     dateDisplay: "2021/11/29〜2021/12/12",
@@ -236,6 +256,7 @@ var COLLAB_DATA = [
   },
   {
     id: "magical-wonderland-preorder-2021",
+    path: "General/Collab/20211228_magical-wonderland-preorder",
     title: "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND!!! 事前物販",
     subtitle: "コンサートライトカバー、アクリルクロック",
     dateDisplay: "2021/12/28〜2022/1/10（受注期間）",
@@ -248,6 +269,7 @@ var COLLAB_DATA = [
   },
   {
     id: "capsule-rubber-10th-2022",
+    path: "General/Collab/20220111_capsule-rubber-10th",
     title: "アイドルマスター シンデレラガールズ 祝10周年！ カプセルラバーマスコット",
     subtitle: null,
     dateDisplay: "2022/1/11〜",
@@ -260,6 +282,7 @@ var COLLAB_DATA = [
   },
   {
     id: "tshirt-10th-resale-2022",
+    path: "General/Collab/20220224_tshirt-10th-resale",
     title: "THE IDOLM@STER CINDERELLA GIRLS 10周年記念公式カスタマイズTシャツ（再販）＆カスタムトートバッグ",
     subtitle: null,
     dateDisplay: "2022/2/24〜2022/3/6（受注期間）",
@@ -272,6 +295,7 @@ var COLLAB_DATA = [
   },
   {
     id: "magical-wonderland-goods-2022",
+    path: "General/Collab/20220403_magical-wonderland-goods",
     title: "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND!!! 開催記念グッズ",
     subtitle: null,
     dateDisplay: "2022/4/3〜2022/4/24（受注期間）",
@@ -284,6 +308,7 @@ var COLLAB_DATA = [
   },
   {
     id: "seiko-watch-10th-2022",
+    path: "General/Collab/20220403_seiko-watch-10th",
     title: "SEIKOコラボ 10周年記念腕時計",
     subtitle: null,
     dateDisplay: "2022/4/3〜2022/5/8（受注期間）",
@@ -296,6 +321,7 @@ var COLLAB_DATA = [
   },
   {
     id: "acrylic-28-2022",
+    path: "General/Collab/20220601_acrylic-petit28",
     title: "アクリルキャラプレートぷち28",
     subtitle: "ラグジュアリィはぁと",
     dateDisplay: "2022/6（日付不明）",
@@ -308,6 +334,7 @@ var COLLAB_DATA = [
   },
   {
     id: "tower-records-2022",
+    path: "General/Collab/20220623_tower-records",
     title: "TOWER RECORDSコラボ",
     subtitle: "はぁとふるsweeteen アクリルパネル",
     dateDisplay: "2022/6/23〜2023/7/24",
@@ -320,6 +347,7 @@ var COLLAB_DATA = [
   },
   {
     id: "popmas-final-2022",
+    path: "General/Collab/20220720_popmas-final",
     title: "ポプマス最終グッズ",
     subtitle: null,
     dateDisplay: "2022/7/20〜2022/8/7",
@@ -332,6 +360,7 @@ var COLLAB_DATA = [
   },
   {
     id: "donzara-2022",
+    path: "General/Collab/20221126_donjara",
     title: "ドンジャラコラボ",
     subtitle: null,
     dateDisplay: "2022/11/26〜2023/1/9（受注期間）",
@@ -344,6 +373,7 @@ var COLLAB_DATA = [
   },
   {
     id: "mini-tapestry-2022",
+    path: "General/Collab/20221214_mini-tapestry",
     title: "ミニタペストリー",
     subtitle: "スタイリッシュはぁと",
     dateDisplay: "2022/12/14〜",
@@ -356,6 +386,7 @@ var COLLAB_DATA = [
   },
   {
     id: "garapon-sd-2023",
+    path: "General/Collab/20230208_garapon-sd",
     title: "全アイドル出演ガラポン 描き下ろしSD",
     subtitle: null,
     dateDisplay: "2023/2/8〜2023/2/26",
@@ -368,6 +399,7 @@ var COLLAB_DATA = [
   },
   {
     id: "glass-ono-shiga-2023",
+    path: "General/Collab/20230310_glass-ono-shiga",
     title: "ガラス彫刻工房ＯＮＯより、信楽焼カップ",
     subtitle: null,
     dateDisplay: "2023/3/10〜2023/5/11",
@@ -380,6 +412,7 @@ var COLLAB_DATA = [
   },
   {
     id: "arigato-exhibition-2023",
+    path: "General/Collab/20230421_arigato-exhibition",
     title: "アイドルマスター シンデレラガールズ～ありがとうが集まる場所～",
     subtitle: null,
     dateDisplay: "2023/4/21〜2023/5/22",
@@ -392,6 +425,7 @@ var COLLAB_DATA = [
   },
   {
     id: "oh-my-glasses-2023",
+    path: "General/Collab/20230421_oh-my-glasses",
     title: "オーマイグラスコラボ サングラス",
     subtitle: "佐藤心セレクトのサングラス",
     dateDisplay: "2023/4/21〜2023/5/7（受注期間）",
@@ -404,6 +438,7 @@ var COLLAB_DATA = [
   },
   {
     id: "volks-dollfie-2023",
+    path: "General/Collab/20230423_volks-dollfie",
     title: "ボークスDollfie Dream 佐藤心",
     subtitle: null,
     dateDisplay: "2023/4/23",
@@ -416,6 +451,7 @@ var COLLAB_DATA = [
   },
   {
     id: "animate-cafe-birthday-2023",
+    path: "General/Collab/20230702_animate-cafe-birthday",
     title: "アニメイトカフェコラボ THE IDOLM@STER SERIES Birthday STORE～July～",
     subtitle: null,
     dateDisplay: "2023/7/2〜2023/7/31",
@@ -428,6 +464,7 @@ var COLLAB_DATA = [
   },
   {
     id: "kotobukiya-clock-2023",
+    path: "General/Collab/20230722_kotobukiya-clock",
     title: "コトブキヤ BIGアクリル置時計",
     subtitle: null,
     dateDisplay: "2023/7/22〜",
@@ -440,6 +477,7 @@ var COLLAB_DATA = [
   },
   {
     id: "shadowverse-evolve-2023",
+    path: "General/Collab/20230825_shadowverse-evolve",
     title: "Shadowverse EVOLVE 書き下ろしカード",
     subtitle: null,
     dateDisplay: "2023/8/25〜",
@@ -453,6 +491,7 @@ var COLLAB_DATA = [
   },
   {
     id: "cinderella-master-campaign-2023",
+    path: "General/Collab/20230911_cinderella-master-campaign",
     title: "「THE IDOLM@STER CINDERELLA MASTER Passion jewelries! 004」カバー曲応募",
     subtitle: null,
     dateDisplay: "2023/9/11〜2023/10/10（キャンペーン）",
@@ -465,6 +504,7 @@ var COLLAB_DATA = [
   },
   {
     id: "hiromedo-winery-1-2023",
+    path: "General/Collab/20231110_hiromedo-winery1",
     title: "ひろめ堂 山梨ワイナリーコラボ 第1弾",
     subtitle: null,
     dateDisplay: "2023/11/10〜11/28",
@@ -477,6 +517,7 @@ var COLLAB_DATA = [
   },
   {
     id: "cure-maid-cafe-2023",
+    path: "General/Collab/20231123_cure-maid-cafe",
     title: "キュアメイドカフェコラボ",
     subtitle: "描き下ろし等身イラスト",
     dateDisplay: "2023/11/23〜2023/12/17",
@@ -489,6 +530,7 @@ var COLLAB_DATA = [
   },
   {
     id: "kotobukiya-popup-2023",
+    path: "General/Collab/20231208_kotobukiya-popup",
     title: "コトブキヤ POPUP SHOP",
     subtitle: null,
     dateDisplay: "2023/12/8〜",
@@ -501,6 +543,7 @@ var COLLAB_DATA = [
   },
   {
     id: "animate-cafe-chinese-2023",
+    path: "General/Collab/20231225_animate-cafe-chinese",
     title: "アニメイトカフェコラボ〜中華飯店〜",
     subtitle: "描き下ろし等身イラスト",
     dateDisplay: "2023/12/25〜2024/1/23",
@@ -513,6 +556,7 @@ var COLLAB_DATA = [
   },
   {
     id: "gift-plush-2023",
+    path: "General/Collab/20231230_gift-plush",
     title: "Giftぬい発売",
     subtitle: null,
     dateDisplay: "2023/12/30〜",
@@ -525,6 +569,7 @@ var COLLAB_DATA = [
   },
   {
     id: "village-vanguard-2024",
+    path: "General/Collab/20240628_village-vanguard",
     title: "ヴィレッジヴァンガードコラボ",
     subtitle: "描き下ろし等身イラスト",
     dateDisplay: "2024/6/28",
@@ -538,6 +583,7 @@ var COLLAB_DATA = [
   },
   {
     id: "hiromedo-winery-2-2024",
+    path: "General/Collab/20240703_hiromedo-winery2",
     title: "ひろめ堂 山梨ワイナリーコラボ 第2弾",
     subtitle: null,
     dateDisplay: "2024/7/3〜2024/9/1",
@@ -551,6 +597,7 @@ var COLLAB_DATA = [
   },
   {
     id: "hub-rose-shot-2024",
+    path: "General/Collab/20240902_hub-rose-shot",
     title: "HUBコラボ〜Rose Shot〜",
     subtitle: "描き下ろし等身イラスト",
     dateDisplay: "2024/9/2〜2024/9/23",
@@ -563,6 +610,7 @@ var COLLAB_DATA = [
   },
   {
     id: "yokohama-worldporters-2024",
+    path: "General/Collab/20240913_yokohama-worldporters",
     title: "横浜ワールドポーターズコラボ",
     subtitle: "愛されクイーン・はぁと アイドルフォトパネル",
     dateDisplay: "2024/9/13〜",
@@ -575,6 +623,7 @@ var COLLAB_DATA = [
   },
   {
     id: "jr-tokai-2024",
+    path: "General/Collab/20241115_jr-tokai",
     title: "JR東海コラボ TR@VEL MEDLEY!!!!!! with THE IDOLM@STER Series",
     subtitle: "旅マス〜あなたの旅をプロデュースしちゃいマス♪〜",
     dateDisplay: "2024/11/15〜2025/1/19",
@@ -588,6 +637,7 @@ var COLLAB_DATA = [
   },
   {
     id: "glass-ono-shoe-2024",
+    path: "General/Collab/20241126_glass-ono-shoe",
     title: "ガラス工房 ONO 名前入りガラスの靴（190種）",
     subtitle: null,
     dateDisplay: "2024/11/26〜2025/2/28（受注期間）",
@@ -600,6 +650,7 @@ var COLLAB_DATA = [
   },
   {
     id: "yurakucho-marui-2025",
+    path: "General/Collab/20250111_yurakucho-marui",
     title: "有楽町マルイコラボ",
     subtitle: "描き下ろし等身イラスト",
     dateDisplay: "2025/1/11〜2025/2/16",
@@ -613,6 +664,7 @@ var COLLAB_DATA = [
   },
   {
     id: "deresute-10th-goods-2025",
+    path: "General/Collab/20250121_deresute-10th-goods",
     title: "デレステ10周年記念190人グッズ",
     subtitle: null,
     dateDisplay: "2025/1/21〜",
@@ -625,6 +677,7 @@ var COLLAB_DATA = [
   },
   {
     id: "deresute-10th-garapon-2025",
+    path: "General/Collab/20250131_deresute-10th-garapon",
     title: "デレステ10周年記念ガラポンピックアップ",
     subtitle: null,
     dateDisplay: "2025/1/31〜2025/2/10",
@@ -637,6 +690,7 @@ var COLLAB_DATA = [
   },
   {
     id: "fragments-exhibition-2025",
+    path: "General/Collab/20250207_fragments-exhibition",
     title: "イラストレーター展「FR@GMENTS of THE IDOLM@STER CINDERELLA GIRLS」",
     subtitle: "描き下ろし等身イラスト",
     dateDisplay: "2025/2/7〜2025/3/30",
@@ -650,6 +704,7 @@ var COLLAB_DATA = [
   },
   {
     id: "bushiroad-card-supply-2025",
+    path: "General/Collab/20250207_bushiroad-card-supply",
     title: "ブシロード カードサプライ",
     subtitle: "恋するスウィーティーサマー",
     dateDisplay: "2025/2/7〜",
@@ -661,19 +716,8 @@ var COLLAB_DATA = [
     ]
   },
   {
-    id: "okinawa-orion-2025",
-    title: "沖縄コラボ（オリオンビール＆PAIKAJI）",
-    subtitle: "描き下ろし等身イラスト",
-    dateDisplay: "2025/6/6〜2025/6/26（受注期間）",
-    dateSort: "2025-06-06",
-    types: ["collab", "goods"],
-    note: null,
-    links: [
-      { url: "https://idolmaster-official.jp/news/01_15826", label: "【シンデレラ】佐藤心と十時愛梨が「オリオンビール」「PAIKAJI」とコラボレーション！限定グッズが受注開始♪ | 【公式】アイドルマスター ポータル（アイマス）" }
-    ]
-  },
-  {
     id: "leisurefes-2025",
+    path: "General/Collab/20250604_leisurefes",
     title: "レジャフェスコラボ",
     subtitle: "描き下ろし等身イラスト",
     dateDisplay: "2025/6/4",
@@ -685,7 +729,21 @@ var COLLAB_DATA = [
     ]
   },
   {
+    id: "okinawa-orion-2025",
+    path: "General/Collab/20250606_okinawa-orion",
+    title: "沖縄コラボ（オリオンビール＆PAIKAJI）",
+    subtitle: "描き下ろし等身イラスト",
+    dateDisplay: "2025/6/6〜2025/6/26（受注期間）",
+    dateSort: "2025-06-06",
+    types: ["collab", "goods"],
+    note: null,
+    links: [
+      { url: "https://idolmaster-official.jp/news/01_15826", label: "【シンデレラ】佐藤心と十時愛梨が「オリオンビール」「PAIKAJI」とコラボレーション！限定グッズが受注開始♪ | 【公式】アイドルマスター ポータル（アイマス）" }
+    ]
+  },
+  {
     id: "seibu-en-2025",
+    path: "General/Collab/20250606_seibu-en",
     title: "西武園ゆうえんちコラボ",
     subtitle: "描き下ろしSDイラスト",
     dateDisplay: "2025/6/6〜7/27",
@@ -699,6 +757,7 @@ var COLLAB_DATA = [
   },
   {
     id: "birthday-collection-zodiac-2025",
+    path: "General/Collab/20250620_birthday-collection-zodiac",
     title: "THE IDOLM@STER CINDERELLA GIRLS Birthday Collection ～The Zodiac Sign～",
     subtitle: null,
     dateDisplay: "2025/6/20〜2025/7/27",
@@ -711,6 +770,7 @@ var COLLAB_DATA = [
   },
   {
     id: "karikoe-2025",
+    path: "General/Collab/20250801_karikoe",
     title: "狩歌コラボ",
     subtitle: null,
     dateDisplay: "2025/8/1〜",
@@ -723,6 +783,7 @@ var COLLAB_DATA = [
   },
   {
     id: "shadowverse-evolve-2025",
+    path: "General/Collab/20250822_shadowverse-evolve2",
     title: "Shadowverse EVOLVE（第2弾）",
     subtitle: null,
     dateDisplay: "2025/8/22〜",
@@ -737,6 +798,7 @@ var COLLAB_DATA = [
   },
   {
     id: "amiami-popup-2025",
+    path: "General/Collab/20250829_amiami-popup",
     title: "あみあみ POPUP SHOP -KAWAII♡ぱれーど-",
     subtitle: null,
     dateDisplay: "2025/8/29〜",
@@ -749,6 +811,7 @@ var COLLAB_DATA = [
   },
   {
     id: "card-folio-2025",
+    path: "General/Collab/20250906_card-folio",
     title: "カードフォリオ シンデレラガールズver. vol.1",
     subtitle: "しゅがしゅが☆み〜ん描き下ろし",
     dateDisplay: "2025/9/6〜",
@@ -761,6 +824,7 @@ var COLLAB_DATA = [
   },
   {
     id: "seiko-watch-2025",
+    path: "General/Collab/20250906_seiko-watch",
     title: "SEIKO 腕時計 ミニアクスタ付き",
     subtitle: "デレステ10周年記念腕時計",
     dateDisplay: "2025/9/6〜2025/11/30",
@@ -773,6 +837,7 @@ var COLLAB_DATA = [
   },
   {
     id: "cinderella-fes-preorder-2025",
+    path: "General/Collab/20250908_cinderella-fes-preorder",
     title: "CINDERELLA GIRLS fes. Once Upon a St@rs 事前物販",
     subtitle: null,
     dateDisplay: "2025/9/8〜",
@@ -785,6 +850,7 @@ var COLLAB_DATA = [
   },
   {
     id: "kyomaf-2025",
+    path: "General/Collab/20250920_kyomaf",
     title: "京都国際マンガ・アニメフェア（京まふ）2025",
     subtitle: "リペイントイラスト",
     dateDisplay: "2025/9/20〜2025/9/21",
@@ -798,6 +864,7 @@ var COLLAB_DATA = [
   },
   {
     id: "customize-tshirt-2025",
+    path: "General/Collab/20251128_customize-tshirt",
     title: "カスタマイズTシャツ",
     subtitle: "デレステ10thツアー千秋楽開催記念190名ビジュアル",
     dateDisplay: "2025/11/28〜12/21",
@@ -810,6 +877,7 @@ var COLLAB_DATA = [
   },
   {
     id: "onkyo-earphone-2025",
+    path: "General/Collab/20251128_onkyo-earphone",
     title: "CINDERELLA GIRLS fes. Once Upon a St@rs STARLIGHT ALLIANCE ONKYOコラボ",
     subtitle: "新規録り下ろし音声ガイダンス搭載ワイヤレスイヤホン（イヤホン販売は2026年3月下旬）",
     dateDisplay: "2025/11/28〜11/30（展示・視聴）",
@@ -822,6 +890,7 @@ var COLLAB_DATA = [
   },
   {
     id: "takeup-jewelry-2025",
+    path: "General/Collab/20251129_takeup-jewelry",
     title: "TAKE UP ジュエリーコラボ",
     subtitle: null,
     dateDisplay: "2025/11/29〜2025/11/30",
@@ -834,6 +903,7 @@ var COLLAB_DATA = [
   },
   {
     id: "starlight-alliance-merch-2025",
+    path: "General/Collab/20251129_starlight-alliance-merch",
     title: "STARLIGHT ALLIANCE 物販",
     subtitle: "CINDERELLA GIRLS fes. Once Upon a St@rs STARLIGHT ALLIANCE",
     dateDisplay: "2025/11/29〜2025/11/30",
@@ -844,6 +914,7 @@ var COLLAB_DATA = [
   },
   {
     id: "starlight-stage-with-2025",
+    path: "General/Collab/20251213_starlight-stage-with",
     title: "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE WITH ～キミと歩んだ輝きの軌跡～",
     subtitle: null,
     dateDisplay: "2025/12/13〜2026/1/4",
@@ -856,6 +927,7 @@ var COLLAB_DATA = [
   },
   {
     id: "pubmirror-konoyode-2025",
+    path: "General/Collab/20251218_pubmirror-konoyode",
     title: "パーソナルパブミラー",
     subtitle: "[この世でただひとりのはぁと]特訓前",
     dateDisplay: "2025/12/18〜2026/1/12",
@@ -868,6 +940,7 @@ var COLLAB_DATA = [
   },
   {
     id: "sweets-paradise-2026",
+    path: "General/Collab/20260116_sweets-paradise",
     title: "スイパラコラボカフェ",
     subtitle: "描き下ろし等身イラスト",
     dateDisplay: "2026/1/16〜2026/2/4",
@@ -881,6 +954,7 @@ var COLLAB_DATA = [
   },
   {
     id: "rascal-collab-2026",
+    path: "General/Collab/20260328_rascal",
     title: "ラスカルコラボ",
     subtitle: "AnimeJapan2026",
     dateDisplay: "2026/3/28〜3/29",
@@ -893,6 +967,7 @@ var COLLAB_DATA = [
   },
   {
     id: "once-upon-memorial-cafe-2026",
+    path: "General/Collab/20260417_once-upon-memorial-cafe",
     title: "Once Upon a St@rs Memorial Cafe",
     subtitle: null,
     dateDisplay: "2026/4/17〜2026/5/6",
@@ -905,6 +980,7 @@ var COLLAB_DATA = [
   },
   {
     id: "astromeda-tbd",
+    path: "General/Collab/99991231_astromeda",
     title: "Astromedaコラボ",
     subtitle: "魅せるゲーミングPCメーカー「Astromeda」全190種",
     dateDisplay: "期間未定",
