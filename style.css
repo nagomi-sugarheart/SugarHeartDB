@@ -5084,9 +5084,10 @@ input[name="dialogue-tab"] {
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     display: grid;
-    grid-template-columns: 1.15fr 1fr;
+    grid-template-columns: 1fr;
+    max-width: 720px;
+    margin: 0 auto;
     border-left: 6px solid var(--tag-limited);
-    margin-bottom: 0;
 }
 .event-hero[data-accent="limited"]  { border-left-color: var(--tag-limited); }
 .event-hero[data-accent="ranking"]  { border-left-color: var(--tag-ranking); }
@@ -5099,13 +5100,13 @@ input[name="dialogue-tab"] {
 .event-hero .banner {
     position: relative;
     background: var(--grad-sugar-soft);
-    border-right: 1px dashed var(--sh-line);
+    border-bottom: 1px dashed var(--sh-line);
+    min-width: 0;
 }
 .event-hero .banner .event-banner-img {
     width: 100%;
-    aspect-ratio: 16/9;
+    height: auto;
     display: block;
-    object-fit: cover;
 }
 .event-hero .banner .event-banner-ph {
     width: 100%;
@@ -5135,6 +5136,7 @@ input[name="dialogue-tab"] {
 
 .event-hero-meta {
     padding: 28px 32px;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -5361,6 +5363,12 @@ input[name="dialogue-tab"] {
     display: grid;
     place-items: center;
     border-right: 1px dashed var(--sh-line);
+    min-width: 0;
+}
+.reward-card .thumb-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .reward-card .thumb {
     width: 100%;
@@ -5379,6 +5387,7 @@ input[name="dialogue-tab"] {
 }
 .reward-card .info {
     padding: 22px 26px;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -5691,8 +5700,6 @@ input[name="dialogue-tab"] {
 
 /* ===== Mobile — event detail ===== */
 @media screen and (max-width: 900px) {
-    .event-hero { grid-template-columns: 1fr; }
-    .event-hero .banner { border-right: none; border-bottom: 1px dashed var(--sh-line); }
     .event-hero-meta h1 { font-size: 22px; }
     .event-hero-meta { padding: 20px 22px 24px; }
 
