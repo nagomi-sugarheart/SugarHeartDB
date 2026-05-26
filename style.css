@@ -2279,8 +2279,8 @@ input[name="dialogue-tab"] {
 .script-row {
     display: grid;
     grid-template-columns: 110px 1fr;
-    gap: 0;
-    align-items: baseline;
+    gap: 10px;
+    align-items: start;
     border-bottom: 1px solid var(--sh-line-soft);
     padding: 12px 18px;
 }
@@ -2290,16 +2290,19 @@ input[name="dialogue-tab"] {
 }
 
 .script-row .who {
+    display: inline-flex;
+    align-items: center;
     font-family: var(--font-display);
-    font-size: 0.82rem;
-    color: var(--sh-text-mute);
-    padding-right: 12px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    background: var(--sh-text-mute);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: var(--r-pill);
     white-space: nowrap;
-}
-
-.script-row[data-who="心"] .who {
-    color: var(--sh-pink-deep);
-    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 3px;
+    flex-shrink: 0;
 }
 
 .script-row .line {
@@ -2311,6 +2314,14 @@ input[name="dialogue-tab"] {
 .script-row.stage-direction {
     font-style: italic;
     background: var(--sh-yellow-soft);
+}
+
+.script-row.stage-direction .who {
+    background: none;
+    color: var(--sh-text-soft);
+    padding: 0;
+    font-weight: normal;
+    font-size: 0.82rem;
 }
 
 .script-row.stage-direction .line {
@@ -4674,10 +4685,10 @@ input[name="dialogue-tab"] {
     display: inline-block;
     font-size: 10px;
     font-weight: 700;
-    color: var(--sh-pink-deep);
-    background: var(--sh-pink-soft);
-    padding: 1px 6px;
-    border-radius: 4px;
+    color: #fff;
+    background: var(--sh-pink-deep);
+    padding: 2px 7px;
+    border-radius: var(--r-pill);
     margin-right: 5px;
     vertical-align: middle;
 }
