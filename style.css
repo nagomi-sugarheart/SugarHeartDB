@@ -5578,12 +5578,21 @@ input[name="dialogue-tab"] {
     border-radius: var(--r-pill);
     font-weight: 700;
 }
-.dialog .body .speaker[data-who="P"]          { background: var(--sh-text); }
-.dialog .body .speaker[data-who="紗枝"]       { background: #c585d8; }
-.dialog .body .speaker[data-who="蘭子"]       { background: #6b5cd2; }
-.dialog .body .speaker[data-who="千鶴"]       { background: #5a8db8; }
-.dialog .body .speaker[data-who="アイドル他"]   { background: var(--sh-text-soft); }
-.dialog .body .speaker[data-who="ナレーション"] { background: transparent; color: var(--sh-text-soft); border: 1px dashed var(--sh-line); }
+/* --- 単独話者 パーソナルカラー --- */
+.dialog .body .speaker[data-who="P"]           { background: var(--sh-text); }
+.dialog .body .speaker[data-who="心"]          { background: #f04e98; }
+.dialog .body .speaker[data-who="きらり"]       { background: #ffd100; color: #222; }
+.dialog .body .speaker[data-who="ほたる"]       { background: #c964cf; }
+.dialog .body .speaker[data-who="千鶴"]         { background: #99e3fc; color: #222; }
+.dialog .body .speaker[data-who="紗枝"]         { background: #c585d8; }
+.dialog .body .speaker[data-who="蘭子"]         { background: #6b5cd2; }
+.dialog .body .speaker[data-who="アイドル他"]    { background: var(--sh-text-soft); }
+.dialog .body .speaker[data-who="ナレーション"]  { background: transparent; color: var(--sh-text-soft); border: 1px dashed var(--sh-line); }
+/* --- 2人同時 斜め分割 (100deg: 左上→右下) --- */
+.dialog .body .speaker[data-who="ほたる・千鶴"]  { background: linear-gradient(100deg, #c964cf 50%, #99e3fc 50%); color: #222; }
+.dialog .body .speaker[data-who="心・千鶴"]      { background: linear-gradient(100deg, #f04e98 50%, #99e3fc 50%); color: #222; }
+/* --- 一同 / 3人以上: 3属性カラー斜め分割 --- */
+.dialog .body .speaker[data-who="一同"]          { background: linear-gradient(100deg, #ef2782 33.33%, #006aff 33.33% 66.67%, #f49207 66.67%); color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.55); }
 .dialog .body .stamp {
     font-size: 10px;
     color: var(--sh-text-mute);
