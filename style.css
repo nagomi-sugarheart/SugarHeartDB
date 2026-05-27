@@ -4425,6 +4425,65 @@ input[name="dialogue-tab"] {
     border-left: 2px solid var(--sh-pink);
 }
 
+/* ── イベント中セリフ アコーディオン ── */
+.ev-accord-list { display: flex; flex-direction: column; }
+.ev-accord-head-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+}
+.ev-accord-head-inner .speaker {
+    font-size: 12px;
+    padding: 3px 10px;
+    background: var(--sh-pink);
+    color: #fff;
+    border-radius: var(--r-pill);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+.ev-accord-head-inner .speaker[data-who="P"]           { background: var(--sh-text); }
+.ev-accord-head-inner .speaker[data-who="心"]          { background: #f04e98; }
+.ev-accord-head-inner .speaker[data-who="きらり"]       { background: #ffd100; color: #222; }
+.ev-accord-head-inner .speaker[data-who="ほたる"]       { background: #c964cf; }
+.ev-accord-head-inner .speaker[data-who="千鶴"]         { background: #99e3fc; color: #222; }
+.ev-accord-head-inner .speaker[data-who="ナレーション"]  { background: transparent; color: var(--sh-text-soft); border: 1px dashed var(--sh-line); }
+.ev-accord-head-inner .speaker[data-who="アイドル他"]    { background: var(--sh-text-soft); }
+.ev-accord-head-inner .stamp {
+    font-size: 10px;
+    color: var(--sh-text-mute);
+    font-family: ui-monospace, monospace;
+    letter-spacing: 0.06em;
+}
+.ev-dialog-row {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+.ev-shot {
+    width: 72px;
+    flex-shrink: 0;
+    aspect-ratio: 16/10;
+    border-radius: var(--r-sm);
+    background: var(--grad-sugar-soft);
+    border: 1.5px dashed rgba(253,137,185,0.30);
+    overflow: hidden;
+}
+.ev-shot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.ev-text {
+    font-size: 13.5px;
+    line-height: 1.8;
+    color: var(--sh-text);
+    flex: 1;
+    min-width: 0;
+}
+
 /* 劇場 */
 /* 劇場・ギャラリー・関連ページ 2カラムレイアウト（PC） */
 .v2-detail-lower {

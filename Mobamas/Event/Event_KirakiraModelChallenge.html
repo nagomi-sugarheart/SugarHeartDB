@@ -1124,56 +1124,82 @@
                 </div>
             </div>
 
-            <!-- ======== Scene 05: エンディング ======== -->
+            <!-- ======== Scene 05: イベント中セリフ ======== -->
             <div class="scene-section" data-scene="4" style="display:none">
                 <div class="scene-meta">
-                    <div class="scene-title"><span class="num">05</span>エンディング</div>
-                    <div class="scene-cap">（シーン説明を入力）</div>
+                    <div class="scene-title"><span class="num">05</span>イベント中セリフ</div>
                 </div>
-                <div class="dialog-list">
-                    <div class="dialog">
-                        <div class="shot"></div>
-                        <div class="body">
-                            <div class="line-head">
+                <div class="ev-accord-list">
+                    <div class="v2-accord open">
+                        <div class="v2-accord-head">
+                            <div class="ev-accord-head-inner">
                                 <span class="speaker" data-who="心">心</span>
                                 <span class="stamp">@ ——</span>
                             </div>
-                            <div class="text">（セリフを入力）</div>
+                            <span class="v2-accord-arrow">▾</span>
+                        </div>
+                        <div class="v2-accord-body">
+                            <div class="ev-dialog-row">
+                                <div class="ev-shot"></div>
+                                <div class="ev-text">（セリフを入力）</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="dialog">
-                        <div class="shot"></div>
-                        <div class="body">
-                            <div class="line-head">
+                    <div class="v2-accord">
+                        <div class="v2-accord-head">
+                            <div class="ev-accord-head-inner">
                                 <span class="speaker" data-who="アイドル他">アイドル他</span>
+                                <span class="stamp">@ ——</span>
                             </div>
-                            <div class="text">（セリフを入力）</div>
+                            <span class="v2-accord-arrow">▾</span>
+                        </div>
+                        <div class="v2-accord-body">
+                            <div class="ev-dialog-row">
+                                <div class="ev-shot"></div>
+                                <div class="ev-text">（セリフを入力）</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="dialog">
-                        <div class="shot"></div>
-                        <div class="body">
-                            <div class="line-head">
+                    <div class="v2-accord">
+                        <div class="v2-accord-head">
+                            <div class="ev-accord-head-inner">
                                 <span class="speaker" data-who="心">心</span>
+                                <span class="stamp">@ ——</span>
                             </div>
-                            <div class="text">（セリフを入力）</div>
+                            <span class="v2-accord-arrow">▾</span>
+                        </div>
+                        <div class="v2-accord-body">
+                            <div class="ev-dialog-row">
+                                <div class="ev-shot"></div>
+                                <div class="ev-text">（セリフを入力）</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="dialog">
-                        <div class="shot"></div>
-                        <div class="body">
-                            <div class="line-head">
+                    <div class="v2-accord">
+                        <div class="v2-accord-head">
+                            <div class="ev-accord-head-inner">
                                 <span class="speaker" data-who="P">P</span>
+                                <span class="stamp">@ ——</span>
                             </div>
-                            <div class="text">（セリフを入力）</div>
+                            <span class="v2-accord-arrow">▾</span>
+                        </div>
+                        <div class="v2-accord-body">
+                            <div class="ev-dialog-row">
+                                <div class="ev-shot"></div>
+                                <div class="ev-text">（セリフを入力）</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="dialog no-shot">
-                        <div class="body">
-                            <div class="line-head">
+                    <div class="v2-accord">
+                        <div class="v2-accord-head">
+                            <div class="ev-accord-head-inner">
                                 <span class="speaker" data-who="ナレーション">ナレーション</span>
+                                <span class="stamp">@ ——</span>
                             </div>
-                            <div class="text">（ナレーションを入力）</div>
+                            <span class="v2-accord-arrow">▾</span>
+                        </div>
+                        <div class="v2-accord-body">
+                            <div class="ev-text">（ナレーションを入力）</div>
                         </div>
                     </div>
                 </div>
@@ -1241,6 +1267,11 @@
         p.addEventListener('click', function () {
             pills.forEach(function (x, j) { x.dataset.checked = (j === i) ? 'true' : 'false'; });
             sections.forEach(function (s, j) { s.style.display = (j === i) ? '' : 'none'; });
+        });
+    });
+    document.querySelectorAll('.v2-accord-head').forEach(function (h) {
+        h.addEventListener('click', function () {
+            h.parentElement.classList.toggle('open');
         });
     });
 })();
