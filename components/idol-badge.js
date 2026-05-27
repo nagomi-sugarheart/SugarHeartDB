@@ -187,6 +187,8 @@
     document.querySelectorAll('.dialog .body .text').forEach(injectCopyBtn);
     // 形式C: .ud-dialogue .line
     document.querySelectorAll('.ud-dialogue .line').forEach(injectCopyBtn);
+    // 形式D: .ev-dialog-row .ev-text（イベント中セリフ・他アイドル言及）
+    document.querySelectorAll('.ev-dialog-row .ev-text').forEach(injectCopyBtn);
   }
 
   if (document.readyState === 'loading') {
