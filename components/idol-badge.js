@@ -131,6 +131,13 @@
       if (!nameStr || nameStr === 'P' || nameStr === 'ナレーション') return;
       applyBadge(el, nameStr, idolMap);
     });
+
+    // 4. .ev-dialog-row .speaker（イベント中セリフ・他アイドル言及）
+    document.querySelectorAll('.ev-dialog-row .speaker[data-who]').forEach(el => {
+      const nameStr = el.dataset.who;
+      if (!nameStr) return;
+      applyBadge(el, nameStr, idolMap);
+    });
   }
 
   // ─────────────────────────────────────────────
@@ -187,6 +194,8 @@
     document.querySelectorAll('.dialog .body .text').forEach(injectCopyBtn);
     // 形式C: .ud-dialogue .line
     document.querySelectorAll('.ud-dialogue .line').forEach(injectCopyBtn);
+    // 形式D: .ev-dialog-row .ev-text（イベント中セリフ・他アイドル言及）
+    document.querySelectorAll('.ev-dialog-row .ev-text').forEach(injectCopyBtn);
   }
 
   if (document.readyState === 'loading') {
