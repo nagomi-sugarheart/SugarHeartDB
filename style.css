@@ -4485,6 +4485,12 @@ input[name="dialogue-tab"] {
 }
 .ev-shot img { cursor: zoom-in; }
 
+.ev-entry { display: flex; flex-direction: column; gap: 8px; }
+.ev-condition { display: flex; align-items: center; gap: 6px; }
+.ev-label { background: var(--sh-line); color: var(--sh-text-soft); border-radius: 3px; padding: 1px 6px; font-size: 11px; flex-shrink: 0; }
+.ev-cond-text { font-size: 12.5px; color: var(--sh-text-soft); }
+.ev-divider { border: none; border-top: 1.5px dashed var(--sh-line); margin: 10px 0; }
+
 /* ── ライトボックス ── */
 .sh-lightbox {
     position: fixed;
