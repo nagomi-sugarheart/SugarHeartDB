@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python fix_ogp.py)"
+      "Bash(python fix_ogp.py)",
+      "Bash(cp \"/root/.claude/projects/-home-user-SugarHeartDB/6fc5a0fd-faf5-4f23-a73c-6b238c9a6eaf/tool-results/webfetch-1779541902741-a9mcah.bin\" /tmp/design.gz)",
+      "Bash(gunzip -f /tmp/design.gz)",
+      "Read(//tmp/**)"
     ]
   }
 }

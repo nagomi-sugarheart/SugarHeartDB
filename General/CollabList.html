@@ -2,15 +2,15 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-	<base href="/SugarHeartDB/">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>コラボ一覧｜SugarHeartDB</title>
-    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のコラボ一覧をまとめたページです。">
+    <base href="/SugarHeartDB/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コラボ・グッズ一覧｜SugarHeartDB</title>
+    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のコラボ・グッズ一覧ページです。2018年〜現在までのすべてのコラボ・グッズをまとめています。">
     <meta name="author" content="なごみ（@nagomi_IMCG）">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="コラボ一覧｜SugarHeartDB">
-    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のコラボ一覧をまとめたページです。">
+    <meta property="og:title" content="コラボ・グッズ一覧｜SugarHeartDB">
+    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のコラボ・グッズ一覧ページです。">
     <meta property="og:site_name" content="SugarHeartDB">
     <meta property="og:image" content="https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.jpg">
     <meta name="twitter:card" content="summary">
@@ -23,17 +23,186 @@
 <body>
 <script src="components/header.js"></script>
 
-
 <section class="page-hero">
-    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>コラボ一覧</strong></div>
-    <h1>コラボ一覧 <span class="sub">/ GENERAL</span></h1>
-    <p class="summary">しゅがーはぁと（佐藤心）の関連情報をまとめたページです。</p>
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>コラボ・グッズ一覧</strong></div>
+    <h1>コラボ・グッズ一覧 <span class="sub">/ GENERAL</span></h1>
+    <p class="summary">しゅがーはぁと（佐藤心）に関連するコラボ・グッズをまとめたページです。</p>
 </section>
 
-<div class="box-area">
-    <p class="box-text" style="color:#ccc; padding: 20px 0;">準備中</p>
+<!-- 統計ストリップ -->
+<div style="max-width:1180px; margin:0 auto; padding:0 28px 8px;">
+    <div class="stat-row" id="stats-strip" style="grid-template-columns: repeat(4,1fr); margin-bottom:20px;">
+        <div class="stat-card">
+            <span class="k">総件数</span>
+            <span class="v" id="stat-total">—</span>
+        </div>
+        <div class="stat-card">
+            <span class="k">コラボ含む</span>
+            <span class="v" id="stat-collab">—</span>
+        </div>
+        <div class="stat-card">
+            <span class="k">グッズのみ</span>
+            <span class="v" id="stat-goods">—</span>
+        </div>
+        <div class="stat-card">
+            <span class="k">キャンペーン</span>
+            <span class="v" id="stat-campaign">—</span>
+        </div>
+    </div>
 </div>
 
+<!-- フィルターツールバー -->
+<div class="toolbar">
+    <div class="filter-group">
+        <div class="filters" id="filter-chips">
+            <button class="filter-chip active" data-filter="all">
+                <span class="dot"></span>すべて
+            </button>
+            <button class="filter-chip" data-filter="collab">
+                <span class="dot" style="background:#d97fb8;"></span>コラボ
+            </button>
+            <button class="filter-chip" data-filter="goods">
+                <span class="dot" style="background:#fd89b9;"></span>グッズ
+            </button>
+            <button class="filter-chip" data-filter="campaign">
+                <span class="dot" style="background:#f59e0b;"></span>キャンペーン
+            </button>
+        </div>
+        <div class="toolbar-right">
+            <input class="search" type="search" id="search-input" placeholder="キーワード検索…" aria-label="検索">
+        </div>
+    </div>
+</div>
 
+<!-- リスト本体 -->
+<div style="max-width:1180px; margin:0 auto; padding:0 28px 80px;">
+    <div id="collab-list-root"></div>
+    <p id="empty-msg" style="display:none; color:var(--sh-text-mute); text-align:center; padding:40px 0;">
+        該当するコラボ・グッズが見つかりませんでした。
+    </p>
+</div>
+
+<script src="General/collab-data.js"></script>
+<script>
+(function () {
+    var currentFilter = 'all';
+    var currentSearch = '';
+
+    function getYear(d) {
+        if (d.dateSort === '9999-12-31') return '期間未定';
+        return d.dateSort.slice(0, 4);
+    }
+
+    function typeLabel(t) {
+        if (t === 'collab') return '<span class="sh-tag" data-tag="collab" style="font-size:0.68rem;">コラボ</span>';
+        if (t === 'goods')  return '<span class="sh-tag" style="background:var(--sh-pink); font-size:0.68rem; color:#fff;">グッズ</span>';
+        if (t === 'campaign') return '<span class="sh-tag" data-tag="ranking" style="font-size:0.68rem;">キャンペーン</span>';
+        return '';
+    }
+
+    function accentOf(types) {
+        if (types.indexOf('campaign') !== -1) return 'campaign';
+        if (types.indexOf('collab') !== -1)   return 'collab';
+        return 'goods';
+    }
+
+    function dateShort(d) {
+        if (d.dateSort === '9999-12-31') return { yr: '—', range: '期間未定' };
+        var yr = d.dateSort.slice(0, 4);
+        var disp = d.dateDisplay;
+        var range = disp.replace(/^\d{4}\//, '');
+        return { yr: yr + '年', range: range };
+    }
+
+    function matches(d) {
+        if (currentFilter === 'collab'   && d.types.indexOf('collab')   === -1) return false;
+        if (currentFilter === 'goods'    && d.types.indexOf('goods')    === -1) return false;
+        if (currentFilter === 'campaign' && d.types.indexOf('campaign') === -1) return false;
+        if (currentSearch) {
+            var q = currentSearch.toLowerCase();
+            var hay = (d.title + ' ' + (d.subtitle || '') + ' ' + d.dateDisplay).toLowerCase();
+            if (hay.indexOf(q) === -1) return false;
+        }
+        return true;
+    }
+
+    function render() {
+        var root = document.getElementById('collab-list-root');
+        var emptyMsg = document.getElementById('empty-msg');
+        var filtered = COLLAB_DATA.filter(matches);
+
+        if (filtered.length === 0) {
+            root.innerHTML = '';
+            emptyMsg.style.display = 'block';
+            return;
+        }
+        emptyMsg.style.display = 'none';
+
+        // 年別にグループ化
+        var groups = {};
+        var order  = [];
+        filtered.forEach(function (d) {
+            var yr = getYear(d);
+            if (!groups[yr]) { groups[yr] = []; order.push(yr); }
+            groups[yr].push(d);
+        });
+
+        var html = '';
+        order.forEach(function (yr) {
+            var items = groups[yr];
+            html += '<div class="year-group">';
+            html += '<div class="year-band"><span class="yr">' + yr + '</span><span class="cnt">' + items.length + '件</span><span class="line"></span></div>';
+            html += '<div class="event-table">';
+            items.forEach(function (d) {
+                var dt = dateShort(d);
+                var accent = accentOf(d.types);
+                var badges = d.types.map(typeLabel).join('');
+                var sub = d.subtitle ? '<div class="collab-info-sub">' + esc(d.subtitle) + '</div>' : '';
+                html += '<div class="collab-row" data-accent="' + accent + '">';
+                html += '  <div class="collab-date"><span class="yr">' + esc(dt.yr) + '</span><span class="range">' + esc(dt.range) + '</span></div>';
+                html += '  <div class="collab-badges">' + badges + '</div>';
+                html += '  <div class="collab-info"><div class="collab-info-title">' + esc(d.title) + '</div>' + sub + '</div>';
+                html += '  <div class="collab-action"><a href="' + d.path + '/">詳細 →</a></div>';
+                html += '</div>';
+            });
+            html += '</div></div>';
+        });
+
+        root.innerHTML = html;
+    }
+
+    function esc(s) {
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function updateStats() {
+        var total    = COLLAB_DATA.length;
+        var collabN  = COLLAB_DATA.filter(function(d){ return d.types.indexOf('collab') !== -1; }).length;
+        var goodsN   = COLLAB_DATA.filter(function(d){ return d.types.length === 1 && d.types[0] === 'goods'; }).length;
+        var campN    = COLLAB_DATA.filter(function(d){ return d.types.indexOf('campaign') !== -1; }).length;
+        document.getElementById('stat-total').textContent    = total;
+        document.getElementById('stat-collab').textContent   = collabN;
+        document.getElementById('stat-goods').textContent    = goodsN;
+        document.getElementById('stat-campaign').textContent = campN;
+    }
+
+    document.querySelectorAll('.filter-chip').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            document.querySelectorAll('.filter-chip').forEach(function(b){ b.classList.remove('active'); });
+            btn.classList.add('active');
+            currentFilter = btn.dataset.filter;
+            render();
+        });
+    });
+
+    document.getElementById('search-input').addEventListener('input', function () {
+        currentSearch = this.value.trim();
+        render();
+    });
+
+    updateStats();
+    render();
+})();
+</script>
 </body>
 </html>

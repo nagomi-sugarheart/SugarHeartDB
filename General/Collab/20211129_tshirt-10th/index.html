@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <base href="/SugarHeartDB/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コラボ詳細｜SugarHeartDB</title>
+    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のコラボ・グッズ詳細ページです。">
+    <meta name="author" content="なごみ（@nagomi_IMCG）">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="コラボ詳細｜SugarHeartDB">
+    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のコラボ・グッズ詳細ページです。">
+    <meta property="og:site_name" content="SugarHeartDB">
+    <meta property="og:image" content="https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="SugarHeartDB">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="components/header.js"></script>
+
+<div id="detail-root" style="max-width:1180px; margin:0 auto; padding:0 28px 80px;">
+    <div style="color:var(--sh-text-mute); padding:60px 0; text-align:center; font-size:0.95rem;">読み込み中…</div>
+</div>
+
+<script src="General/collab-data.js"></script>
+<script>
+/* ======== このページの設定 ======== */
+var ENTRY_ID   = 'tshirt-10th-2021';
+var ENTRY_PATH = 'General/Collab/20211129_tshirt-10th';
+
+/* ======== 画像ファイル一覧
+   このフォルダに画像を追加した後、ファイル名をここに記入してください。
+   例: var PAGE_IMAGES = ["image1.jpg", "image2.png"];          */
+var PAGE_IMAGES = [];
+
+/* ======== 以下は変更不要 ======== */
+(function () {
+    function esc(s) {
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function typeLabel(t) {
+        if (t === 'collab')   return '<span class="sh-tag" data-tag="collab">コラボ</span>';
+        if (t === 'goods')    return '<span class="sh-tag" style="background:var(--sh-pink);color:#fff;">グッズ</span>';
+        if (t === 'campaign') return '<span class="sh-tag" data-tag="ranking">キャンペーン</span>';
+        return '';
+    }
+
+    function accentBorderColor(types) {
+        if (types.indexOf('campaign') !== -1) return 'var(--tag-ranking)';
+        if (types.indexOf('collab')   !== -1) return 'var(--tag-collab)';
+        return 'var(--sh-pink)';
+    }
+
+    function findIndex(id) {
+        for (var i = 0; i < COLLAB_DATA.length; i++) {
+            if (COLLAB_DATA[i].id === id) return i;
+        }
+        return -1;
+    }
+
+    var root = document.getElementById('detail-root');
+    var idx  = findIndex(ENTRY_ID);
+    var d    = idx !== -1 ? COLLAB_DATA[idx] : null;
+
+    if (!d) {
+        root.innerHTML = '<div class="page-hero"><div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> &middot; <a href="General/CollabList.html">コラボ・グッズ一覧</a></div><h1>404 &mdash; 見つかりません</h1><p class="summary" style="color:var(--sh-text-mute);">指定されたページが見つかりませんでした。<br><a href="General/CollabList.html" class="sh-pill primary" style="display:inline-flex;margin-top:12px;">一覧へ戻る ▶</a></p></div>';
+        return;
+    }
+
+    document.title = d.title + '｜SugarHeartDB';
+    document.querySelector('meta[property="og:title"]').setAttribute('content', d.title + '｜SugarHeartDB');
+    document.querySelector('meta[name="description"]').setAttribute('content', d.title + '（' + d.dateDisplay + '）— SugarHeartDB');
+
+    var prev   = idx > 0 ? COLLAB_DATA[idx - 1] : null;
+    var next   = idx < COLLAB_DATA.length - 1 ? COLLAB_DATA[idx + 1] : null;
+    var badges = d.types.map(typeLabel).join(' ');
+    var border = accentBorderColor(d.types);
+
+    /* ヒーロー */
+    var heroHtml = '<div class="collab-detail-hero" style="border-left:4px solid ' + border + ';">';
+    heroHtml += '<div class="tag-row">' + badges + '</div>';
+    heroHtml += '<h1>' + esc(d.title) + '</h1>';
+    if (d.subtitle) {
+        heroHtml += '<div style="font-size:0.92rem; color:var(--sh-text-soft); margin-bottom:8px;">' + esc(d.subtitle) + '</div>';
+    }
+    heroHtml += '<div class="date-row"><span class="icon">\uD83D\uDCC5</span><span>' + esc(d.dateDisplay) + '</span></div>';
+    heroHtml += '</div>';
+
+    /* 画像ギャラリー */
+    var galleryHtml = '';
+    if (typeof PAGE_IMAGES !== 'undefined' && PAGE_IMAGES.length > 0) {
+        galleryHtml += '<div class="box-area" style="margin-bottom:16px;">';
+        galleryHtml += '<div class="box-title">画像</div>';
+        galleryHtml += '<div class="collab-image-gallery">';
+        PAGE_IMAGES.forEach(function (img) {
+            var src = ENTRY_PATH + '/' + img;
+            galleryHtml += '<a href="' + esc(src) + '" target="_blank" rel="noopener">';
+            galleryHtml += '<img src="' + esc(src) + '" alt="' + esc(d.title) + '" loading="lazy">';
+            galleryHtml += '</a>';
+        });
+        galleryHtml += '</div>';
+        galleryHtml += '</div>';
+    }
+
+    /* メモ */
+    var noteHtml = '';
+    if (d.note) {
+        noteHtml += '<div class="box-area" style="margin-bottom:16px;">';
+        noteHtml += '<div class="box-title">メモ</div>';
+        noteHtml += '<p class="box-text">' + esc(d.note) + '</p>';
+        noteHtml += '</div>';
+    }
+
+    /* リンク */
+    var linksHtml = '';
+    if (d.links && d.links.length > 0) {
+        linksHtml += '<div class="box-area" style="margin-bottom:16px;">';
+        linksHtml += '<div class="box-title">関連リンク</div>';
+        linksHtml += '<div class="collab-link-list">';
+        d.links.forEach(function (lk) {
+            linksHtml += '<a href="' + esc(lk.url) + '" target="_blank" rel="noopener noreferrer">' + esc(lk.label) + '</a>';
+        });
+        linksHtml += '</div>';
+        linksHtml += '</div>';
+    } else {
+        linksHtml += '<div class="box-area" style="margin-bottom:16px;">';
+        linksHtml += '<div class="box-title">関連リンク</div>';
+        linksHtml += '<p class="box-text" style="color:var(--sh-text-mute);">公式リンク情報はありません。</p>';
+        linksHtml += '</div>';
+    }
+
+    /* 前後ナビ */
+    var navHtml = '<div class="card-navigation" style="margin-top:24px;">';
+    if (prev && prev.path) {
+        navHtml += '<a href="' + prev.path + '/" class="nav-card nav-prev">';
+        navHtml += '<span class="nav-arrow">\u2190</span>';
+        navHtml += '<div class="nav-card-info"><span class="nav-label">\u2190 PREV</span><span class="nav-card-name">' + esc(prev.title) + '</span></div>';
+        navHtml += '</a>';
+    }
+    if (next && next.path) {
+        navHtml += '<a href="' + next.path + '/" class="nav-card nav-next">';
+        navHtml += '<div class="nav-card-info"><span class="nav-label">NEXT \u2192</span><span class="nav-card-name">' + esc(next.title) + '</span></div>';
+        navHtml += '<span class="nav-arrow">\u2192</span>';
+        navHtml += '</a>';
+    }
+    navHtml += '</div>';
+
+    root.innerHTML =
+        '<section class="page-hero">' +
+            '<div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="General/CollabList.html">コラボ・グッズ一覧</a> · <strong>' + esc(d.title) + '</strong></div>' +
+        '</section>' +
+        heroHtml +
+        galleryHtml +
+        noteHtml +
+        linksHtml +
+        '<div style="margin-top:20px;"><a href="General/CollabList.html" class="sh-pill ghost">← 一覧へ戻る</a></div>' +
+        navHtml;
+})();
+</script>
+</body>
+</html>
