@@ -5853,3 +5853,230 @@ input[name="dialogue-tab"] {
     }
     .collab-image-gallery img { height: 140px; }
 }
+
+
+/* ============================================================
+   グローバル検索オーバーレイ
+   ============================================================ */
+
+/* ─── 検索ボタン（ヘッダー内） ─── */
+.sh-search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: var(--r-pill);
+    color: var(--sh-text-soft);
+    font-size: 1.1rem;
+    transition: background 0.18s, color 0.18s;
+    flex-shrink: 0;
+    margin-right: 6px;
+}
+.sh-search-btn:hover {
+    background: var(--sh-pink-soft);
+    color: var(--sh-pink-deep);
+}
+
+/* ─── オーバーレイ背景 ─── */
+.sh-search-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(93,64,55,0.45);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 72px;
+    box-sizing: border-box;
+}
+.sh-search-overlay.active {
+    display: flex;
+}
+
+/* ─── 検索ボックス（入力欄 + ドロップダウン） ─── */
+.sh-search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 680px;
+    background: #fff;
+    border-radius: var(--r-pill);
+    padding: 8px 14px 8px 18px;
+    box-shadow: 0 8px 32px rgba(93,64,55,0.18);
+    box-sizing: border-box;
+    margin: 0 16px;
+}
+.sh-search-icon {
+    font-size: 1rem;
+    color: var(--sh-text-mute);
+    flex-shrink: 0;
+}
+.sh-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--sh-text);
+    background: transparent;
+    min-width: 0;
+    font-family: var(--font-body);
+}
+.sh-search-input::placeholder {
+    color: var(--sh-text-mute);
+}
+.sh-search-idol-select {
+    border: 1px solid var(--sh-line);
+    border-radius: var(--r-pill);
+    background: var(--sh-bg-alt);
+    color: var(--sh-text);
+    font-size: 0.82rem;
+    padding: 4px 10px;
+    outline: none;
+    cursor: pointer;
+    max-width: 110px;
+    flex-shrink: 0;
+}
+.sh-search-close {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--sh-text-mute);
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 4px;
+    border-radius: 50%;
+    transition: background 0.18s, color 0.18s;
+    flex-shrink: 0;
+}
+.sh-search-close:hover {
+    background: var(--sh-pink-mist);
+    color: var(--sh-pink-deep);
+}
+
+/* ─── 検索結果パネル ─── */
+.sh-search-results {
+    width: 100%;
+    max-width: 680px;
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 20px;
+    margin: 10px 16px 0;
+    box-shadow: 0 8px 32px rgba(93,64,55,0.18);
+    box-sizing: border-box;
+}
+.sh-search-hint {
+    padding: 28px 24px;
+    color: var(--sh-text-mute);
+    font-size: 0.92rem;
+    text-align: center;
+}
+.sh-search-group {
+    padding: 12px 20px 4px;
+    border-bottom: 1px solid var(--sh-line-soft);
+}
+.sh-search-group-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--sh-pink);
+    background: var(--sh-pink-soft);
+    padding: 3px 10px;
+    border-radius: var(--r-pill);
+}
+.sh-search-item {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--sh-line-soft);
+    transition: background 0.15s;
+}
+.sh-search-item:last-child {
+    border-bottom: none;
+    border-radius: 0 0 20px 20px;
+}
+.sh-search-item:hover {
+    background: var(--sh-pink-soft);
+}
+.sh-search-item-title {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--sh-text);
+    margin-bottom: 2px;
+}
+.sh-search-item-text {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--sh-text-soft);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* モバイル対応 */
+@media screen and (max-width: 600px) {
+    .sh-search-overlay {
+        padding-top: 60px;
+    }
+    .sh-search-box {
+        flex-wrap: wrap;
+        border-radius: 16px;
+        padding: 10px 14px;
+    }
+    .sh-search-idol-select {
+        max-width: 100%;
+        width: 100%;
+    }
+    .sh-search-results {
+        border-radius: 16px;
+        max-height: calc(100vh - 200px);
+    }
+}
+
+
+/* ============================================================
+   セリフコピーボタン
+   ============================================================ */
+.sh-copy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--sh-line);
+    background: var(--sh-bg);
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--sh-text-mute);
+    font-size: 0.75rem;
+    flex-shrink: 0;
+    opacity: 0;
+    transition: opacity 0.18s, background 0.18s, color 0.18s;
+    margin-left: 6px;
+    vertical-align: middle;
+    line-height: 1;
+}
+.sh-copy-btn.copied {
+    background: var(--sh-pink-soft);
+    color: var(--sh-pink-deep);
+    border-color: var(--sh-pink);
+}
+/* 親にホバーで表示 */
+.script-row:hover .sh-copy-btn,
+.dialog:hover .sh-copy-btn,
+.ud-dialogue:hover .sh-copy-btn,
+.sh-copy-btn:focus {
+    opacity: 1;
+}
+/* タッチデバイスでは常時表示 */
+@media (hover: none) {
+    .sh-copy-btn { opacity: 0.6; }
+}
