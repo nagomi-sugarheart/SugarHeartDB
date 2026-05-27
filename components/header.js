@@ -96,6 +96,7 @@
                 </div>\n\
             </li>\n\
         </ul>\n\
+        <button class="sh-search-btn" id="sh-search-open-btn" aria-label="検索を開く">🔍</button>\n\
         <button class="hamburger" id="hamburger" aria-label="メニューを開く">\n\
             <span></span>\n\
             <span></span>\n\
@@ -241,4 +242,237 @@
             }
         });
     });
+
+    // ─────────────────────────────────────────────
+    // グローバル検索機能
+    // ─────────────────────────────────────────────
+
+    // 検索オーバーレイ HTML
+    var SEARCH_OVERLAY_HTML = [
+        '<div class="sh-search-overlay" id="sh-search-overlay" aria-hidden="true">',
+        '  <div class="sh-search-box">',
+        '    <span class="sh-search-icon">🔍</span>',
+        '    <input type="text" class="sh-search-input" id="sh-search-input"',
+        '      placeholder="キーワードを入力..." autocomplete="off">',
+        '    <select class="sh-search-idol-select" id="sh-search-idol">',
+        '      <option value="">すべてのアイドル</option>',
+        '    </select>',
+        '    <button class="sh-search-close" id="sh-search-close" aria-label="検索を閉じる">✕</button>',
+        '  </div>',
+        '  <div class="sh-search-results" id="sh-search-results">',
+        '    <div class="sh-search-hint">キーワードを入力するか、アイドルを選択してください</div>',
+        '  </div>',
+        '</div>'
+    ].join('\n');
+
+    var _searchIndex = null;
+    var _searchLoading = false;
+
+    function escHtml(str) {
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    function normalize(str) {
+        try { return str.normalize('NFKC').toLowerCase(); }
+        catch (e) { return str.toLowerCase(); }
+    }
+
+    function populateIdolSelect(csvText) {
+        var select = document.getElementById('sh-search-idol');
+        if (!select) return;
+        var lines = csvText.replace(/^﻿/, '').trim().split('\n');
+        for (var i = 1; i < lines.length; i++) {
+            var cols = lines[i].split(',');
+            var short = cols[1] ? cols[1].trim() : '';
+            if (short) {
+                var opt = document.createElement('option');
+                opt.value = short;
+                opt.textContent = short;
+                select.appendChild(opt);
+            }
+        }
+    }
+
+    function loadSearchData(callback) {
+        if (_searchIndex) { callback(); return; }
+        if (_searchLoading) return;
+        _searchLoading = true;
+
+        var resultEl = document.getElementById('sh-search-results');
+        if (resultEl) resultEl.innerHTML = '<div class="sh-search-hint">読み込み中…</div>';
+
+        var idxDone = false, idolDone = false;
+        var idx = null, idolCsv = null;
+
+        function tryFinish() {
+            if (!idxDone || !idolDone) return;
+            if (idx) _searchIndex = idx;
+            if (idolCsv) populateIdolSelect(idolCsv);
+            _searchLoading = false;
+            callback();
+        }
+
+        fetch('data/search-index.json').then(function(r) {
+            return r.ok ? r.json() : null;
+        }).then(function(data) {
+            idx = data;
+            idxDone = true;
+            tryFinish();
+        }).catch(function() {
+            idxDone = true;
+            tryFinish();
+        });
+
+        fetch('data/cgss_idols.csv').then(function(r) {
+            return r.ok ? r.text() : null;
+        }).then(function(text) {
+            idolCsv = text;
+            idolDone = true;
+            tryFinish();
+        }).catch(function() {
+            idolDone = true;
+            tryFinish();
+        });
+    }
+
+    function runSearch() {
+        var input  = document.getElementById('sh-search-input');
+        var idol   = document.getElementById('sh-search-idol');
+        var q      = input ? input.value : '';
+        var idolVal= idol  ? idol.value   : '';
+
+        if (!q.trim() && !idolVal) {
+            var r = document.getElementById('sh-search-results');
+            if (r) r.innerHTML = '<div class="sh-search-hint">キーワードを入力するか、アイドルを選択してください</div>';
+            return;
+        }
+
+        if (!_searchIndex) {
+            loadSearchData(runSearch);
+            return;
+        }
+
+        var qn = normalize(q.trim());
+        var results = (_searchIndex || []).filter(function(entry) {
+            if (idolVal) {
+                var parts = (entry.idol || '').split(' ');
+                if (parts.indexOf(idolVal) === -1) return false;
+            }
+            if (qn) {
+                var searchable = normalize(
+                    (entry.title   || '') + ' ' +
+                    (entry.text    || '') + ' ' +
+                    (entry.idol    || '') + ' ' +
+                    (entry.context || '')
+                );
+                if (searchable.indexOf(qn) === -1) return false;
+            }
+            return true;
+        }).slice(0, 120);
+
+        renderSearchResults(results);
+    }
+
+    function renderSearchResults(results) {
+        var container = document.getElementById('sh-search-results');
+        if (!container) return;
+
+        if (!results || results.length === 0) {
+            container.innerHTML = '<div class="sh-search-hint">見つかりませんでした</div>';
+            return;
+        }
+
+        var TYPE_LABELS = { card: 'CARD', unit: 'UNIT', story: 'STORY' };
+        var groups = { card: [], unit: [], story: [] };
+        results.forEach(function(r) {
+            if (groups[r.type]) groups[r.type].push(r);
+        });
+
+        var html = '';
+        ['card', 'unit', 'story'].forEach(function(type) {
+            var list = groups[type];
+            if (!list || list.length === 0) return;
+            html += '<div class="sh-search-group"><span class="sh-search-group-label">' +
+                    TYPE_LABELS[type] + '</span></div>';
+            list.forEach(function(item) {
+                var excerpt = item.text.length > 60 ? item.text.slice(0, 60) + '…' : item.text;
+                html += '<a class="sh-search-item" href="' + escHtml(item.url) + '">' +
+                        '<span class="sh-search-item-title">' + escHtml(item.title) + '</span>' +
+                        '<span class="sh-search-item-text">「' + escHtml(excerpt) + '」</span>' +
+                        '</a>';
+            });
+        });
+        container.innerHTML = html;
+    }
+
+    function openSearch() {
+        var overlay = document.getElementById('sh-search-overlay');
+        if (!overlay) return;
+        overlay.classList.add('active');
+        overlay.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        var input = document.getElementById('sh-search-input');
+        if (input) {
+            input.focus();
+            // データを先読み
+            if (!_searchIndex && !_searchLoading) {
+                loadSearchData(function() {
+                    runSearch();
+                });
+            }
+        }
+    }
+
+    function closeSearch() {
+        var overlay = document.getElementById('sh-search-overlay');
+        if (!overlay) return;
+        overlay.classList.remove('active');
+        overlay.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    // オーバーレイを body に挿入 + イベント設定
+    document.addEventListener('DOMContentLoaded', function () {
+        document.body.insertAdjacentHTML('beforeend', SEARCH_OVERLAY_HTML);
+
+        var openBtn  = document.getElementById('sh-search-open-btn');
+        var closeBtn = document.getElementById('sh-search-close');
+        var overlay  = document.getElementById('sh-search-overlay');
+        var input    = document.getElementById('sh-search-input');
+        var idolSel  = document.getElementById('sh-search-idol');
+
+        if (openBtn)  openBtn.addEventListener('click',  openSearch);
+        if (closeBtn) closeBtn.addEventListener('click', closeSearch);
+
+        // オーバーレイ背景クリックで閉じる
+        if (overlay) {
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) closeSearch();
+            });
+        }
+
+        // ESCキーで閉じる
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeSearch();
+        });
+
+        // 入力時に検索実行
+        var searchTimer;
+        if (input) {
+            input.addEventListener('input', function() {
+                clearTimeout(searchTimer);
+                searchTimer = setTimeout(runSearch, 220);
+            });
+        }
+        if (idolSel) {
+            idolSel.addEventListener('change', function() {
+                runSearch();
+            });
+        }
+    });
+
 })();

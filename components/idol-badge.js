@@ -19,7 +19,7 @@
     const r = parseInt(hex.slice(1, 3), 16);
     const g = parseInt(hex.slice(3, 5), 16);
     const b = parseInt(hex.slice(5, 7), 16);
-    return (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.6 ? '#222' : '#fff';
+    return (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.75 ? '#222' : '#fff';
   }
 
   function applyStyle(el, bg, txt, shadow) {
@@ -133,9 +133,69 @@
     });
   }
 
+  // ─────────────────────────────────────────────
+  // セリフコピーボタン
+  // ─────────────────────────────────────────────
+
+  /**
+   * セリフ要素のテキストのみ取得（.speaker / .who スパンを除く）
+   */
+  function getLineText(el) {
+    var text = '';
+    el.childNodes.forEach(function(node) {
+      if (node.nodeType === Node.TEXT_NODE) {
+        text += node.textContent;
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        var cls = node.className || '';
+        // speaker / who スパンは除外
+        if (!cls.includes('speaker') && !cls.includes('who')) {
+          text += node.textContent;
+        }
+      }
+    });
+    return text.trim();
+  }
+
+  function injectCopyBtn(lineEl) {
+    if (lineEl.querySelector('.sh-copy-btn')) return; // 既に追加済み
+    var btn = document.createElement('button');
+    btn.className = 'sh-copy-btn';
+    btn.setAttribute('aria-label', 'セリフをコピー');
+    btn.textContent = '⎘';
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var text = getLineText(lineEl);
+      if (!text) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function() {
+          btn.textContent = '✓';
+          btn.classList.add('copied');
+          setTimeout(function() {
+            btn.textContent = '⎘';
+            btn.classList.remove('copied');
+          }, 1500);
+        }).catch(function() {});
+      }
+    });
+    lineEl.appendChild(btn);
+  }
+
+  function initCopyButtons() {
+    // 形式A: .script-row .line
+    document.querySelectorAll('.script-row:not(.stage-direction) .line').forEach(injectCopyBtn);
+    // 形式B: .dialog .body .text
+    document.querySelectorAll('.dialog .body .text').forEach(injectCopyBtn);
+    // 形式C: .ud-dialogue .line
+    document.querySelectorAll('.ud-dialogue .line').forEach(injectCopyBtn);
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', function() {
+      init();
+      initCopyButtons();
+    });
   } else {
     init();
+    initCopyButtons();
   }
 })();
