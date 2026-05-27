@@ -232,6 +232,13 @@ class DialogueParser(HTMLParser):
         self._ud_text_parts = []
         self._ud_depth = 0
 
+        # 形式D: .ev-dialog-row .ev-text（イベント中セリフ）
+        self._v2_accord_depth = -1   # -1 = アコーディオン外
+        self._v2_accord_who = ''
+        self._in_ev_text_d = False
+        self._ev_text_d_depth = 0
+        self._ev_text_d_text = ''
+
         self._stack = []  # タグスタックで深さ管理
 
     def _has_class(self, attrs_dict, cls):
@@ -280,6 +287,24 @@ class DialogueParser(HTMLParser):
         if self._in_ud_line and tag == 'span' and self._has_class(attrs_dict, 'speaker'):
             self._in_speaker_c = True
 
+        # 形式D: .v2-accord > (head の speaker) + .ev-text
+        if tag == 'div' and self._has_class(attrs_dict, 'v2-accord'):
+            self._v2_accord_depth = len(self._stack)
+            self._v2_accord_who = ''
+        # アコーディオン内の最初の speaker[data-who] からアイドル名を取得
+        if (self._v2_accord_depth >= 0
+                and not self._v2_accord_who
+                and tag == 'span' and self._has_class(attrs_dict, 'speaker')):
+            who = attrs_dict.get('data-who', '')
+            if who and who not in ('P', 'ナレーション'):
+                self._v2_accord_who = who
+        # .ev-text: アコーディオン内のセリフテキスト
+        if (self._v2_accord_depth >= 0
+                and tag == 'div' and self._has_class(attrs_dict, 'ev-text')):
+            self._in_ev_text_d = True
+            self._ev_text_d_depth = len(self._stack)
+            self._ev_text_d_text = ''
+
     def handle_endtag(self, tag):
         depth = len(self._stack)
 
@@ -315,6 +340,17 @@ class DialogueParser(HTMLParser):
                 self.entries.append((who, text))
             self._in_ud_line = False
 
+        # 形式D終了
+        if self._in_ev_text_d and depth < self._ev_text_d_depth:
+            text = self._ev_text_d_text.strip()
+            who  = self._v2_accord_who
+            if text and who and who not in ('P', 'ナレーション', ''):
+                self.entries.append((who, text))
+            self._in_ev_text_d = False
+        if tag == 'div' and self._v2_accord_depth >= 0 and depth < self._v2_accord_depth:
+            self._v2_accord_depth = -1
+            self._v2_accord_who = ''
+
         # <title>
         if tag == 'title':
             self._in_title = False
@@ -337,6 +373,9 @@ class DialogueParser(HTMLParser):
                 self._ud_line_who += data
             else:
                 self._ud_text_parts.append(data)
+
+        if self._in_ev_text_d:
+            self._ev_text_d_text += data
 
 
 def html_to_url(html_path):
