@@ -1133,14 +1133,13 @@
                     <div class="v2-accord open">
                         <div class="v2-accord-head">
                             <div class="ev-accord-head-inner">
-                                <span class="speaker" data-who="心">心</span>
-                                <span class="stamp">@ ——</span>
+                                <span class="speaker" data-who="心">ログインボーナス</span>
                             </div>
                             <span class="v2-accord-arrow">▾</span>
                         </div>
                         <div class="v2-accord-body">
                             <div class="ev-dialog-row">
-                                <div class="ev-shot"></div>
+                                <div class="ev-shot"><img src="data/placeholder_4x3.png" alt="画像募集中"></div>
                                 <div class="ev-text">（セリフを入力）</div>
                             </div>
                         </div>
@@ -1273,6 +1272,12 @@
 
 </main>
 
+<!-- ライトボックス オーバーレイ -->
+<div class="sh-lightbox" id="sh-lightbox">
+    <span class="sh-lightbox-close" id="sh-lightbox-close">×</span>
+    <img class="sh-lightbox-img" id="sh-lightbox-img" src="" alt="">
+</div>
+
 <script>
 (function () {
     const pills = document.querySelectorAll('#scenes-list .scene-pill');
@@ -1288,6 +1293,31 @@
             h.parentElement.classList.toggle('open');
         });
     });
+
+    // ライトボックス
+    const lb    = document.getElementById('sh-lightbox');
+    const lbImg = document.getElementById('sh-lightbox-img');
+    const lbClose = document.getElementById('sh-lightbox-close');
+    function openLb(src, alt) {
+        lbImg.src = src;
+        lbImg.alt = alt || '';
+        lb.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeLb() {
+        lb.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.ev-shot img').forEach(function (img) {
+        img.addEventListener('click', function (e) {
+            e.stopPropagation();
+            openLb(img.src, img.alt);
+        });
+    });
+    lb.addEventListener('click', closeLb);
+    lbClose.addEventListener('click', function (e) { e.stopPropagation(); closeLb(); });
+    lbImg.addEventListener('click', function (e) { e.stopPropagation(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
 })();
 </script>
 
