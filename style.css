@@ -4680,17 +4680,17 @@ input[name="dialogue-tab"] {
 }
 
 /* ユニット詳細セリフ */
-.ud-dialogue .line { margin-bottom: 2px; line-height: 1.75; }
+.ud-dialogue .line { margin-bottom: 6px; line-height: 1.75; }
 .ud-dialogue .speaker {
-    display: inline-block;
+    display: block;
     font-size: 10px;
     font-weight: 700;
     color: #fff;
     background: var(--sh-pink-deep);
     padding: 2px 7px;
     border-radius: var(--r-pill);
-    margin-right: 5px;
-    vertical-align: middle;
+    margin-bottom: 3px;
+    width: fit-content;
 }
 .ud-ap-foot .card-ref {
     padding: 4px 12px;
