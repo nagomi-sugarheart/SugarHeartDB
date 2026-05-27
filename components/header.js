@@ -96,7 +96,7 @@
                 </div>\n\
             </li>\n\
         </ul>\n\
-        <button class="sh-search-btn" id="sh-search-open-btn" aria-label="検索を開く">🔍</button>\n\
+        <button class="sh-search-btn" id="sh-search-open-btn" aria-label="検索を開く"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>\n\
         <button class="hamburger" id="hamburger" aria-label="メニューを開く">\n\
             <span></span>\n\
             <span></span>\n\
@@ -251,13 +251,19 @@
     var SEARCH_OVERLAY_HTML = [
         '<div class="sh-search-overlay" id="sh-search-overlay" aria-hidden="true">',
         '  <div class="sh-search-box">',
-        '    <span class="sh-search-icon">🔍</span>',
+        '    <span class="sh-search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>',
         '    <input type="text" class="sh-search-input" id="sh-search-input"',
         '      placeholder="キーワードを入力..." autocomplete="off">',
         '    <select class="sh-search-idol-select" id="sh-search-idol">',
         '      <option value="">すべてのアイドル</option>',
         '    </select>',
         '    <button class="sh-search-close" id="sh-search-close" aria-label="検索を閉じる">✕</button>',
+        '  </div>',
+        '  <div class="sh-search-type-bar">',
+        '    <button class="sh-search-type-btn active" data-type="">すべて</button>',
+        '    <button class="sh-search-type-btn" data-type="card">カード</button>',
+        '    <button class="sh-search-type-btn" data-type="unit">ユニット</button>',
+        '    <button class="sh-search-type-btn" data-type="story">ストーリー</button>',
         '  </div>',
         '  <div class="sh-search-results" id="sh-search-results">',
         '    <div class="sh-search-hint">キーワードを入力するか、アイドルを選択してください</div>',
@@ -267,6 +273,7 @@
 
     var _searchIndex = null;
     var _searchLoading = false;
+    var _searchTypeFilter = ''; // '' = すべて, 'card' | 'unit' | 'story'
 
     function escHtml(str) {
         return String(str)
@@ -358,10 +365,14 @@
 
         var qn = normalize(q.trim());
         var results = (_searchIndex || []).filter(function(entry) {
+            // タイプフィルター
+            if (_searchTypeFilter && entry.type !== _searchTypeFilter) return false;
+            // アイドルフィルター
             if (idolVal) {
                 var parts = (entry.idol || '').split(' ');
                 if (parts.indexOf(idolVal) === -1) return false;
             }
+            // キーワード検索
             if (qn) {
                 var searchable = normalize(
                     (entry.title   || '') + ' ' +
@@ -387,6 +398,7 @@
         }
 
         var TYPE_LABELS = { card: 'CARD', unit: 'UNIT', story: 'STORY' };
+        var showGroups = !_searchTypeFilter; // タイプ絞り込み中はグループ見出し非表示
         var groups = { card: [], unit: [], story: [] };
         results.forEach(function(r) {
             if (groups[r.type]) groups[r.type].push(r);
@@ -396,8 +408,10 @@
         ['card', 'unit', 'story'].forEach(function(type) {
             var list = groups[type];
             if (!list || list.length === 0) return;
-            html += '<div class="sh-search-group"><span class="sh-search-group-label">' +
-                    TYPE_LABELS[type] + '</span></div>';
+            if (showGroups) {
+                html += '<div class="sh-search-group"><span class="sh-search-group-label">' +
+                        TYPE_LABELS[type] + '</span></div>';
+            }
             list.forEach(function(item) {
                 var excerpt = item.text.length > 60 ? item.text.slice(0, 60) + '…' : item.text;
                 html += '<a class="sh-search-item" href="' + escHtml(item.url) + '">' +
@@ -473,6 +487,18 @@
                 runSearch();
             });
         }
+
+        // タイプフィルターボタン
+        document.querySelectorAll('.sh-search-type-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.sh-search-type-btn').forEach(function(b) {
+                    b.classList.remove('active');
+                });
+                btn.classList.add('active');
+                _searchTypeFilter = btn.dataset.type || '';
+                runSearch();
+            });
+        });
     });
 
 })();
