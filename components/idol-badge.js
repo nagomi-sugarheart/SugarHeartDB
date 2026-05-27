@@ -131,6 +131,13 @@
       if (!nameStr || nameStr === 'P' || nameStr === 'ナレーション') return;
       applyBadge(el, nameStr, idolMap);
     });
+
+    // 4. .ev-dialog-row .speaker（イベント中セリフ・他アイドル言及）
+    document.querySelectorAll('.ev-dialog-row .speaker[data-who]').forEach(el => {
+      const nameStr = el.dataset.who;
+      if (!nameStr) return;
+      applyBadge(el, nameStr, idolMap);
+    });
   }
 
   // ─────────────────────────────────────────────
