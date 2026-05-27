@@ -6080,3 +6080,35 @@ input[name="dialogue-tab"] {
 @media (hover: none) {
     .sh-copy-btn { opacity: 0.6; }
 }
+
+/* ─── 検索タイプフィルターバー ─── */
+.sh-search-type-bar {
+    display: flex;
+    gap: 6px;
+    width: 100%;
+    max-width: 680px;
+    margin: 8px 16px 0;
+    flex-wrap: wrap;
+}
+.sh-search-type-btn {
+    border: 1px solid var(--sh-line);
+    background: rgba(255,255,255,0.85);
+    color: var(--sh-text-soft);
+    font-size: 0.82rem;
+    font-family: var(--font-body);
+    padding: 5px 16px;
+    border-radius: var(--r-pill);
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s, border-color 0.18s;
+    white-space: nowrap;
+}
+.sh-search-type-btn:hover {
+    background: var(--sh-pink-soft);
+    border-color: var(--sh-pink);
+    color: var(--sh-pink-deep);
+}
+.sh-search-type-btn.active {
+    background: var(--sh-pink-deep);
+    border-color: var(--sh-pink-deep);
+    color: #fff;
+}
