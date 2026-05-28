@@ -12,7 +12,18 @@
       "Bash(git push *)",
       "Bash(gh pr *)",
       "Bash(git merge *)",
-      "Bash(git stash *)"
+      "Bash(git stash *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\sawas\\\\Desktop\\\\sugarheartdb\\\\Mobamas\\\\Event\" -Recurse -Force)",
+      "Bash(Select-Object FullName, PSIsContainer)",
+      "Bash(Sort-Object FullName)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\sawas\\\\Desktop\\\\sugarheartdb\\\\Mobamas\\\\Event\" -Recurse -Force | ForEach-Object { if \\($_.PSIsContainer\\) { Write-Host \"[DIR]  $\\($_.FullName\\)\" } else { Write-Host \"[FILE] $\\($_.FullName\\)\" } })",
+      "Bash(git mv *)",
+      "Bash(python -c ' *)",
+      "Bash(git restore *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\sawas\\\\Desktop\\\\sugarheartdb\" -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(xargs grep -l \"松尾千鶴\")",
+      "Bash(Get-ChildItem *)"
     ]
   }
 }

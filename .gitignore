@@ -4,3 +4,4 @@
 # Local Netlify folder
 .netlify
 __pycache__/
+CLAUDE.local.md
