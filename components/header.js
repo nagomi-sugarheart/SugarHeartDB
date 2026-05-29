@@ -68,9 +68,7 @@
                         <div class="mega-col">\n\
                             <h4>コンテンツ</h4>\n\
                             <ul>\n\
-                                <li><a href="Popmas/BasicInfo.html">基本情報</a></li>\n\
-                                <li><a href="Popmas/FinalEventLines.html">ファイナルイベントセリフ</a></li>\n\
-                                <li><a href="Popmas/Other.html">その他</a></li>\n\
+                                <li><a href="Popmas/Popmas.html">ポプマスまとめ</a></li>\n\
                             </ul>\n\
                         </div>\n\
                     </div>\n\
@@ -144,9 +142,7 @@
                     <button class="accordion-toggle" aria-label="展開">＋</button>\n\
                 </div>\n\
                 <ul class="mobile-submenu">\n\
-                    <li><a href="Popmas/BasicInfo.html">基本情報</a></li>\n\
-                    <li><a href="Popmas/FinalEventLines.html">ファイナルイベントセリフ</a></li>\n\
-                    <li><a href="Popmas/Other.html">その他</a></li>\n\
+                    <li><a href="Popmas/Popmas.html">ポプマスまとめ</a></li>\n\
                 </ul>\n\
             </li>\n\
             <li class="mobile-item">\n\

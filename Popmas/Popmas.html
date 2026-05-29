@@ -26,327 +26,57 @@
 <section class="page-hero">
     <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>ポプマス</strong></div>
     <h1>ポプマス <span class="sub">/ POPMAS</span></h1>
-    <p class="summary">ポプマスにおける心ちゃんの関連情報をまとめたページです。</p>
 </section>
 
 <main class="page">
 
     <!-- ========== 上部：カードイメージ ========== -->
-
-    <div class="lv-accord">
-        <div class="lv-head pm-lv-head">
-            <span class="lv-name"><span class="lv-tag">5枚</span>リボンドハート</span>
-            <span class="arrow">▼</span>
+    <div class="voice-tab-group">
+        <div class="voice-tabs">
+            <button class="voice-tab active" onclick="switchTab(this,'ribbondoheart')">リボンド・はぁと</button>
+            <button class="voice-tab" onclick="switchTab(this,'celestellaunison')">セラステラユニゾン</button>
+            <button class="voice-tab" onclick="switchTab(this,'icon')">アイコン</button>
         </div>
-        <div class="lv-body"><div class="lv-body-inner">
-            <div class="img-switcher" id="sw-ribbon">
-                <div class="sw-frame">
-                    <img class="sw-img active" src="Popmas/RibbonDoHeart1.jpg" alt="リボンドハート 1">
-                    <img class="sw-img" src="Popmas/RibbonDoHeart2.jpg" alt="リボンドハート 2">
-                    <img class="sw-img" src="Popmas/RibbonDoHeart3.jpg" alt="リボンドハート 3">
-                    <img class="sw-img" src="Popmas/RibbonDoHeart4.jpg" alt="リボンドハート 4">
-                    <img class="sw-img" src="Popmas/RibbonDoHeart5.jpg" alt="リボンドハート 5">
-                </div>
-                <div class="sw-dots">
-                    <button class="sw-dot active" data-idx="0">1</button>
-                    <button class="sw-dot" data-idx="1">2</button>
-                    <button class="sw-dot" data-idx="2">3</button>
-                    <button class="sw-dot" data-idx="3">4</button>
-                    <button class="sw-dot" data-idx="4">5</button>
-                </div>
+
+        <div class="voice-tab-content active" data-tab="ribbondoheart">
+            <div class="v2-main-img-area" style="max-width: 400px; margin: 0 auto; text-align: center;">
+                <img src="Popmas/RibbonDoHeart1.jpg" alt="リボンドハート 1" id="v2-ribbon-main-img"
+                     style="cursor: pointer;">
+                <p class="v2-img-hint">タップで切り替え（<span id="v2-ribbon-counter">1</span> / <span id="v2-ribbon-total">5</span>）</p>
             </div>
-        </div></div>
+        </div>
+
+        <div class="voice-tab-content" data-tab="celestellaunison">
+            <div class="v2-main-img-area" style="max-width: 400px; margin: 0 auto; text-align: center;">
+                <img src="Popmas/CelestellaUnison1.jpg" alt="セラステラユニゾン 1" id="v2-cellu-main-img"
+                     style="cursor: pointer;">
+                <p class="v2-img-hint">タップで切り替え（<span id="v2-cellu-counter">1</span> / <span id="v2-cellu-total">2</span>）</p>
+            </div>
+        </div>
+
+        <div class="voice-tab-content" data-tab="icon">
+            <div class="v2-main-img-area" style="max-width: 400px; margin: 0 auto; text-align: center;">
+                <img src="Popmas/icon.jpeg" alt="アイコン">
+            </div>
+        </div>
     </div>
 
-    <div class="lv-accord">
-        <div class="lv-head pm-lv-head">
-            <span class="lv-name"><span class="lv-tag">2枚</span>セラステラユニゾン</span>
-            <span class="arrow">▼</span>
-        </div>
-        <div class="lv-body"><div class="lv-body-inner">
-            <div class="img-switcher" id="sw-cellu">
-                <div class="sw-frame">
-                    <img class="sw-img active" src="Popmas/CelestellaUnison1.jpg" alt="セラステラユニゾン 1">
-                    <img class="sw-img" src="Popmas/CelestellaUnison2.jpg" alt="セラステラユニゾン 2">
-                </div>
-                <div class="sw-dots">
-                    <button class="sw-dot active" data-idx="0">1</button>
-                    <button class="sw-dot" data-idx="1">2</button>
-                </div>
-            </div>
-        </div></div>
-    </div>
-
-    <div class="lv-accord">
-        <div class="lv-head pm-lv-head">
-            <span class="lv-name">アイコン</span>
-            <span class="arrow">▼</span>
-        </div>
-        <div class="lv-body"><div class="lv-body-inner">
-            <p class="box-text" style="color:#ccc;">準備中</p>
-        </div></div>
-    </div>
-
-    <!-- ========== セリフ（ラジオタブ） ========== -->
-
-    <div class="rtab-wrapper" style="margin-top: 36px;">
-
-        <input type="radio" name="pm-tab" id="pm-tab-1" checked>
-        <input type="radio" name="pm-tab" id="pm-tab-2">
-        <input type="radio" name="pm-tab" id="pm-tab-3">
-
-        <nav class="rtab-nav">
-            <label for="pm-tab-1" class="rtab-btn">育成</label>
-            <label for="pm-tab-2" class="rtab-btn">PRODUCE D@YS!!!!!</label>
-            <label for="pm-tab-3" class="rtab-btn">ホーム</label>
-        </nav>
-
-        <!-- ===== 育成 ===== -->
-        <div class="rtab-panel bt-1">
-
-            <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
-                    <span class="lv-name">スカウト</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="lv-body"><div class="lv-body-inner">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/Scout1.jpg" alt="スカウト 1"></div>
-                            <div class="ev-text">みんなお待たせ☆ スウィーティーなシュガシュガアイドル、しゅがーはぁとの登場だぞ☆ おいそこ無視すんな☆</div>
-                        </div>
-                    </div>
-                    <hr class="ev-divider">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/Scout2.jpg" alt="スカウト 2"></div>
-                            <div class="ev-text">このプロジェクトでも、一番目立ってみせっから。若い子に負けないくらいの手厚いプロデュース、よろしく頼むぞ☆</div>
-                        </div>
-                    </div>
-                </div></div>
-            </div>
-
-            <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
-                    <span class="lv-name"><span class="lv-tag">LB</span>限界突破 ★2</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="lv-body"><div class="lv-body-inner">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/LimitBreak2-1.jpg" alt="限界突破 ★2"></div>
-                            <div class="ev-text">プロデューサー、新しいユニットを組むなら新しい必殺技とか欲しいでしょ？ 合体とらいあんぐるはぁとビーム♪ とか☆</div>
-                        </div>
-                    </div>
-                </div></div>
-            </div>
-
-            <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
-                    <span class="lv-name"><span class="lv-tag">LB</span>限界突破 ★3</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="lv-body"><div class="lv-body-inner">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/LimitBreak3-1.jpg" alt="限界突破 ★3"></div>
-                            <div class="ev-text">メンバーと一緒に汗かいて、飯食って、ベタだけどアツいじゃん☆ やっぱベタにはベタになるような良さがあるってわけか……。</div>
-                        </div>
-                    </div>
-                </div></div>
-            </div>
-
-            <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
-                    <span class="lv-name"><span class="lv-tag">LB</span>限界突破 ★4</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="lv-body"><div class="lv-body-inner">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/LimitBreak4-1.jpg" alt="限界突破 ★4"></div>
-                            <div class="ev-text">ユニットメンバーと支え合うから、ハートがめげちゃいそうなときでも大丈夫☆ はぁとたちなら、絶対乗り越えられるぞ！</div>
-                        </div>
-                    </div>
-                </div></div>
-            </div>
-
-            <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
-                    <span class="lv-name"><span class="lv-tag">LB</span>限界突破 ★5</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="lv-body"><div class="lv-body-inner">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/LimitBreak5-1.jpg" alt="限界突破 ★5"></div>
-                            <div class="ev-text">プロデューサーの考えるユニットってスウィーティー☆ はぁとのこと、よくわかってくれてんじゃん♪</div>
-                        </div>
-                    </div>
-                </div></div>
-            </div>
-
-            <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
-                    <span class="lv-name"><span class="lv-tag">LB</span>限界突破 ★6</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="lv-body"><div class="lv-body-inner">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/LimitBreak6-1.jpg" alt="限界突破 ★6 1"></div>
-                            <div class="ev-text">や～ん☆ 今のはぁとたちマジで登り調子！ このグイグイ来る押しの強さ、みんなたまんなくなっちゃってんだろ～☆</div>
-                        </div>
-                    </div>
-                    <hr class="ev-divider">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/LimitBreak6-2.jpg" alt="限界突破 ★6 2"></div>
-                            <div class="ev-text">そんなはぁとたちを担当してるんだから、プロデューサーもグイグイ来いよ☆ ほらそうそう……ちょ、物理的にじゃなくて☆</div>
-                        </div>
-                    </div>
-                </div></div>
-            </div>
-
-            <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
-                    <span class="lv-name"><span class="lv-tag">LB</span>限界突破 ★7</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="lv-body"><div class="lv-body-inner">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/LimitBreak7-1.jpg" alt="限界突破 ★7 1"></div>
-                            <div class="ev-text">今のはぁとの幸せは、ステージの上にしかないし、ステージに立つには、プロデューサーの力が必要なわけでぇ……。</div>
-                        </div>
-                    </div>
-                    <hr class="ev-divider">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/LimitBreak7-2.jpg" alt="限界突破 ★7 2"></div>
-                            <div class="ev-text">これってもう、はぁとたちは運命共同体ってやつじゃね？ や～ん、スウィーティー☆ 逃げんなよ、追うぞ☆</div>
-                        </div>
-                    </div>
-                </div></div>
-            </div>
-
+        <div class="sec-head">
+            <div class="ic glyph-dialogue"></div>
+            <h2>イベント中のセリフ <span class="sub">/ DIALOGUE</span></h2>
+            <a class="anchor">#dialogue</a>
         </div>
 
-        <!-- ===== PRODUCE D@YS!!!!! ===== -->
-        <div class="rtab-panel bt-2">
-
-            <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
-                    <span class="lv-name"><span class="lv-tag">OP</span>PRODUCE D@YS!!!!! OP</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="lv-body"><div class="lv-body-inner">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_OP-1.jpg" alt="PRODUCE D@YS!!!!! OP 1"></div>
-                            <div class="ev-text">
-                                グランドフェスに呼ばれるなんて、はぁと感激☆ 3人でどこまでも突っ走っていくから、プロデュース頼んだぞ、マジで☆
-                                <div class="choices-block">
-                                    <div class="choice-item">ユニットの歌でみんなを笑顔にしよう</div>
-                                    <div class="choice-item">息を呑むようなダンスで魅せよう</div>
-                                    <div class="choice-item">可愛さやかっこよさを前面に出していこう</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="ev-divider">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_OP-2.jpg" alt="PRODUCE D@YS!!!!! OP 2"></div>
-                            <div class="ev-text">やーん、スウィーティー☆ その目標に向かって、コンペートーみたいにあまあまな夢見せてやっから、楽しみにしてろよ☆</div>
-                        </div>
-                    </div>
-                </div></div>
-            </div>
-
-            <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
-                    <span class="lv-name"><span class="lv-tag">1</span>PRODUCE D@YS!!!!! 1</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="lv-body"><div class="lv-body-inner">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-text">
-                                <span class="stamp">📷 画像提供募集中</span><br>
-                                ユニットのみんな、すっごくステキだし、頼りにしてっけど、負けるつもりはねーぞ☆ 高め合える関係って、スウィーティーじゃん？
-                            </div>
-                        </div>
-                    </div>
-                </div></div>
-            </div>
-
-            <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
-                    <span class="lv-name"><span class="lv-tag">2</span>PRODUCE D@YS!!!!! 2</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="lv-body"><div class="lv-body-inner">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_2.jpg" alt="PRODUCE D@YS!!!!! 2"></div>
-                            <div class="ev-text">ほらほら☆ 厳しいスケジュールでもちゃんと走り続けてるはぁとたちに、ねぎらいの言葉をちょーだい！ 早く早くー☆</div>
-                        </div>
-                    </div>
-                </div></div>
-            </div>
-
-            <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
-                    <span class="lv-name"><span class="lv-tag">3</span>PRODUCE D@YS!!!!! 3</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="lv-body"><div class="lv-body-inner">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_3-1.jpg" alt="PRODUCE D@YS!!!!! 3-1"></div>
-                            <div class="ev-text">
-                                ちょっと冷静になって考えてみると、こんだけアイドルが集まってるプロジェクトで最後の舞台を任されるって、すごくね？
-                                <div class="pm-bubble">💬 P：心は本当にすごいアイドルだから</div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="ev-divider">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_3-2.jpg" alt="PRODUCE D@YS!!!!! 3-2"></div>
-                            <div class="ev-text">ちょっ、やめろ☆ そういうのはグランドフェスが終わってからにしろって☆ でも……期待には絶対、応えてみせっから。</div>
-                        </div>
-                    </div>
-                </div></div>
-            </div>
-
-            <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
-                    <span class="lv-name"><span class="lv-tag">ED</span>PRODUCE D@YS!!!!! ED</span>
-                    <span class="arrow">▼</span>
-                </div>
-                <div class="lv-body"><div class="lv-body-inner">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_ED-1.jpg" alt="PRODUCE D@YS!!!!! ED 1"></div>
-                            <div class="ev-text">グランドフェス、スウィーティーに大成功☆ はぁとたちの魔法で、みんなをあまあまにしてやったぞ☆ はぁとたち、大満足☆</div>
-                        </div>
-                    </div>
-                    <hr class="ev-divider">
-                    <div class="ev-entry">
-                        <div class="ev-dialog-row">
-                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_ED-2.jpg" alt="PRODUCE D@YS!!!!! ED 2"></div>
-                            <div class="ev-text">でもアイドルはぁとは、もっとたくさんのステージに立ちたいの。だから一緒に、どこまでも行こうね……？ 行くって言えよ☆</div>
-                        </div>
-                    </div>
-                </div></div>
-            </div>
-
+    <!-- ========== セリフ（voice-tabs） ========== -->
+    <div class="voice-tab-group" style="margin-top: 36px;">
+        <div class="voice-tabs">
+            <button class="voice-tab active" onclick="switchTab(this,'dlg-home')">ホーム</button>
+            <button class="voice-tab" onclick="switchTab(this,'dlg-ikusei')">育成</button>
+            <button class="voice-tab" onclick="switchTab(this,'dlg-produces')">PRODUCE D@YS!!!!!</button>
         </div>
 
         <!-- ===== ホーム ===== -->
-        <div class="rtab-panel bt-3">
+        <div class="voice-tab-content active" data-tab="dlg-home">
 
             <div class="lv-accord">
                 <div class="lv-head pm-lv-head">
@@ -378,20 +108,21 @@
                     <div class="ev-entry">
                         <div class="ev-dialog-row">
                             <div class="ev-shot"><img src="Popmas/Home4.jpg" alt="ホーム 通常 4"></div>
-                            <div class="ev-text">はぁとは私服も自作してっから☆ スウィーティーな服着るの楽しいし♪ プロデューサーにも作ったげる☆</div>
+                            <div class="ev-text">長野県民が全員スキーやスノボできると思うなよ☆ま、はぁとはできっけど☆</div>
                         </div>
                     </div>
                     <hr class="ev-divider">
                     <div class="ev-entry">
                         <div class="ev-dialog-row">
                             <div class="ev-shot"><img src="Popmas/Home5.jpg" alt="ホーム 通常 5"></div>
-                            <div class="ev-text">細かい仕事があったら任せて♪ こう見えても手先が器用なんだから☆ 意外って言うな☆</div>
+                            <div class="ev-text">はぁとは私服も自作してっから☆ スウィーティーな服着るの楽しいし♪ プロデューサーにも作ったげる☆</div>
                         </div>
                     </div>
                     <hr class="ev-divider">
                     <div class="ev-entry">
                         <div class="ev-dialog-row">
                             <div class="ev-shot"><img src="Popmas/Home6.jpg" alt="ホーム 通常 6"></div>
+                            <div class="ev-text">細かい仕事があったら任せて♪ こう見えても手先が器用なんだから☆ 意外って言うな☆</div>
                         </div>
                     </div>
                 </div></div>
@@ -509,21 +240,268 @@
 
         </div>
 
-    </div><!-- /.rtab-wrapper -->
+        <!-- ===== 育成 ===== -->
+        <div class="voice-tab-content" data-tab="dlg-ikusei">
+
+            <div class="lv-accord">
+                <div class="lv-head pm-lv-head">
+                    <span class="lv-name">スカウト</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="lv-body"><div class="lv-body-inner">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/Scout1.jpg" alt="スカウト 1"></div>
+                            <div class="ev-text">みんなお待たせ☆ スウィーティーなシュガシュガアイドル、しゅがーはぁとの登場だぞ☆ おいそこ無視すんな☆</div>
+                        </div>
+                    </div>
+                    <hr class="ev-divider">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/Scout2.jpg" alt="スカウト 2"></div>
+                            <div class="ev-text">このプロジェクトでも、一番目立ってみせっから。若い子に負けないくらいの手厚いプロデュース、よろしく頼むぞ☆</div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="lv-accord">
+                <div class="lv-head pm-lv-head">
+                    <span class="lv-name">限界突破 ★2</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="lv-body"><div class="lv-body-inner">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/LimitBreak2-1.jpg" alt="限界突破 ★2"></div>
+                            <div class="ev-text">プロデューサー、新しいユニットを組むなら新しい必殺技とか欲しいでしょ？ 合体とらいあんぐるはぁとビーム♪ とか☆</div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="lv-accord">
+                <div class="lv-head pm-lv-head">
+                    <span class="lv-name">限界突破 ★3</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="lv-body"><div class="lv-body-inner">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/LimitBreak3-1.jpg" alt="限界突破 ★3"></div>
+                            <div class="ev-text">メンバーと一緒に汗かいて、飯食って、ベタだけどアツいじゃん☆ やっぱベタにはベタになるような良さがあるってわけか……。</div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="lv-accord">
+                <div class="lv-head pm-lv-head">
+                    <span class="lv-name">限界突破 ★4</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="lv-body"><div class="lv-body-inner">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/LimitBreak4-1.jpg" alt="限界突破 ★4"></div>
+                            <div class="ev-text">ユニットメンバーと支え合うから、ハートがめげちゃいそうなときでも大丈夫☆ はぁとたちなら、絶対乗り越えられるぞ！</div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="lv-accord">
+                <div class="lv-head pm-lv-head">
+                    <span class="lv-name">限界突破 ★5</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="lv-body"><div class="lv-body-inner">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/LimitBreak5-1.jpg" alt="限界突破 ★5"></div>
+                            <div class="ev-text">プロデューサーの考えるユニットってスウィーティー☆ はぁとのこと、よくわかってくれてんじゃん♪</div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="lv-accord">
+                <div class="lv-head pm-lv-head">
+                    <span class="lv-name">限界突破 ★6</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="lv-body"><div class="lv-body-inner">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/LimitBreak6-1.jpg" alt="限界突破 ★6 1"></div>
+                            <div class="ev-text">や～ん☆ 今のはぁとたちマジで登り調子！ このグイグイ来る押しの強さ、みんなたまんなくなっちゃってんだろ～☆</div>
+                        </div>
+                    </div>
+                    <hr class="ev-divider">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/LimitBreak6-2.jpg" alt="限界突破 ★6 2"></div>
+                            <div class="ev-text">そんなはぁとたちを担当してるんだから、プロデューサーもグイグイ来いよ☆ ほらそうそう……ちょ、物理的にじゃなくて☆</div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="lv-accord">
+                <div class="lv-head pm-lv-head">
+                    <span class="lv-name">限界突破 ★7</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="lv-body"><div class="lv-body-inner">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/LimitBreak7-1.jpg" alt="限界突破 ★7 1"></div>
+                            <div class="ev-text">今のはぁとの幸せは、ステージの上にしかないし、ステージに立つには、プロデューサーの力が必要なわけでぇ……。</div>
+                        </div>
+                    </div>
+                    <hr class="ev-divider">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/LimitBreak7-2.jpg" alt="限界突破 ★7 2"></div>
+                            <div class="ev-text">これってもう、はぁとたちは運命共同体ってやつじゃね？ や～ん、スウィーティー☆ 逃げんなよ、追うぞ☆</div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+
+        </div>
+
+        <!-- ===== PRODUCE D@YS!!!!! ===== -->
+        <div class="voice-tab-content" data-tab="dlg-produces">
+
+            <div class="lv-accord">
+                <div class="lv-head pm-lv-head">
+                    <span class="lv-name">PRODUCE D@YS!!!!! OP</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="lv-body"><div class="lv-body-inner">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_OP-1.jpg" alt="PRODUCE D@YS!!!!! OP 1"></div>
+                            <div class="ev-text">
+                                グランドフェスに呼ばれるなんて、はぁと感激☆ 3人でどこまでも突っ走っていくから、プロデュース頼んだぞ、マジで☆
+                                <div class="choices-block">
+                                    <div class="choice-item">ユニットの歌でみんなを笑顔にしよう</div>
+                                    <div class="choice-item">息を呑むようなダンスで魅せよう</div>
+                                    <div class="choice-item">可愛さやかっこよさを前面に出していこう</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="ev-divider">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_OP-2.jpg" alt="PRODUCE D@YS!!!!! OP 2"></div>
+                            <div class="ev-text">やーん、スウィーティー☆ その目標に向かって、コンペートーみたいにあまあまな夢見せてやっから、楽しみにしてろよ☆</div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="lv-accord">
+                <div class="lv-head pm-lv-head">
+                    <span class="lv-name">PRODUCE D@YS!!!!! 1</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="lv-body"><div class="lv-body-inner">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-text">
+                                <span class="stamp">📷 画像提供募集中</span><br>
+                                ユニットのみんな、すっごくステキだし、頼りにしてっけど、負けるつもりはねーぞ☆ 高め合える関係って、スウィーティーじゃん？
+                            </div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="lv-accord">
+                <div class="lv-head pm-lv-head">
+                    <span class="lv-name">PRODUCE D@YS!!!!! 2</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="lv-body"><div class="lv-body-inner">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_2.jpg" alt="PRODUCE D@YS!!!!! 2"></div>
+                            <div class="ev-text">ほらほら☆ 厳しいスケジュールでもちゃんと走り続けてるはぁとたちに、ねぎらいの言葉をちょーだい！ 早く早くー☆</div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="lv-accord">
+                <div class="lv-head pm-lv-head">
+                    <span class="lv-name">PRODUCE D@YS!!!!! 3</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="lv-body"><div class="lv-body-inner">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_3-1.jpg" alt="PRODUCE D@YS!!!!! 3-1"></div>
+                            <div class="ev-text">
+                                ちょっと冷静になって考えてみると、こんだけアイドルが集まってるプロジェクトで最後の舞台を任されるって、すごくね？
+                                <div class="pm-bubble">💬 P：心は本当にすごいアイドルだから</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="ev-divider">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_3-2.jpg" alt="PRODUCE D@YS!!!!! 3-2"></div>
+                            <div class="ev-text">ちょっ、やめろ☆ そういうのはグランドフェスが終わってからにしろって☆ でも……期待には絶対、応えてみせっから。</div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+
+            <div class="lv-accord">
+                <div class="lv-head pm-lv-head">
+                    <span class="lv-name">PRODUCE D@YS!!!!! ED</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="lv-body"><div class="lv-body-inner">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_ED-1.jpg" alt="PRODUCE D@YS!!!!! ED 1"></div>
+                            <div class="ev-text">グランドフェス、スウィーティーに大成功☆ はぁとたちの魔法で、みんなをあまあまにしてやったぞ☆ はぁとたち、大満足☆</div>
+                        </div>
+                    </div>
+                    <hr class="ev-divider">
+                    <div class="ev-entry">
+                        <div class="ev-dialog-row">
+                            <div class="ev-shot"><img src="Popmas/PRODUCE%20DAYS_ED-2.jpg" alt="PRODUCE D@YS!!!!! ED 2"></div>
+                            <div class="ev-text">でもアイドルはぁとは、もっとたくさんのステージに立ちたいの。だから一緒に、どこまでも行こうね……？ 行くって言えよ☆</div>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+
+        </div>
+
+    </div><!-- /.voice-tab-group (dialogue) -->
 
     <!-- ========== その他 ========== -->
-
-    <div class="sec-head" style="margin-top: 36px;">
-        <h2>その他 <span class="sub">/ OTHERS</span></h2>
+    <div class="sec-head">
+        <div class="ic glyph-overview"></div>
+        <h2>その他 <span class="sub">/ other</span></h2>
+        <a class="anchor">#other</a>
     </div>
     <div class="pm-gallery">
         <figure class="pm-gallery-item">
             <img src="Popmas/comic59.jpg" alt="コミック #59" class="pm-gallery-img">
-            <figcaption class="pm-gallery-cap">コミック #59</figcaption>
+            <figcaption class="pm-gallery-cap">コミック #59　酔いどれ姉さん</figcaption>
         </figure>
         <figure class="pm-gallery-item">
             <img src="Popmas/DressUpItem.JPG" alt="ドレスアップアイテム" class="pm-gallery-img">
             <figcaption class="pm-gallery-cap">ドレスアップアイテム</figcaption>
+             <iframe src="https://www.youtube.com/embed/MNBniUKD854?si=3Fr9rXVuXxrTQw7h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </figure>
     </div>
 
@@ -537,18 +515,6 @@
 
 <script>
 (function () {
-    /* img-switcher */
-    document.querySelectorAll('.img-switcher').forEach(function (sw) {
-        var imgs = sw.querySelectorAll('.sw-img');
-        var dots = sw.querySelectorAll('.sw-dot');
-        dots.forEach(function (dot, idx) {
-            dot.addEventListener('click', function () {
-                imgs.forEach(function (img, i) { img.classList.toggle('active', i === idx); });
-                dots.forEach(function (d, i) { d.classList.toggle('active', i === idx); });
-            });
-        });
-    });
-
     /* lv-accord toggle */
     document.querySelectorAll('.pm-lv-head').forEach(function (h) {
         h.addEventListener('click', function () {
@@ -557,8 +523,8 @@
     });
 
     /* lightbox */
-    var lb     = document.getElementById('sh-lightbox');
-    var lbImg  = document.getElementById('sh-lightbox-img');
+    var lb      = document.getElementById('sh-lightbox');
+    var lbImg   = document.getElementById('sh-lightbox-img');
     var lbClose = document.getElementById('sh-lightbox-close');
     function openLb(src, alt) {
         lbImg.src = src; lbImg.alt = alt || '';
@@ -577,6 +543,53 @@
     lbImg.addEventListener('click', function (e) { e.stopPropagation(); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
 })();
+
+/* リボンドハート image cycler */
+var v2RibbonImages = ['Popmas/RibbonDoHeart1.jpg','Popmas/RibbonDoHeart2.jpg','Popmas/RibbonDoHeart3.jpg','Popmas/RibbonDoHeart4.jpg','Popmas/RibbonDoHeart5.jpg'];
+var v2RibbonIdx = 0;
+(function () {
+    var img     = document.getElementById('v2-ribbon-main-img');
+    var counter = document.getElementById('v2-ribbon-counter');
+    if (img) {
+        img.addEventListener('click', function () {
+            v2RibbonIdx = (v2RibbonIdx + 1) % v2RibbonImages.length;
+            img.style.opacity = '0.5';
+            setTimeout(function () {
+                img.src = v2RibbonImages[v2RibbonIdx];
+                img.style.opacity = '1';
+                if (counter) counter.textContent = v2RibbonIdx + 1;
+            }, 150);
+        });
+    }
+}());
+
+/* セラステラユニゾン image cycler */
+var v2CelluImages = ['Popmas/CelestellaUnison1.jpg','Popmas/CelestellaUnison2.jpg'];
+var v2CelluIdx = 0;
+(function () {
+    var img     = document.getElementById('v2-cellu-main-img');
+    var counter = document.getElementById('v2-cellu-counter');
+    if (img) {
+        img.addEventListener('click', function () {
+            v2CelluIdx = (v2CelluIdx + 1) % v2CelluImages.length;
+            img.style.opacity = '0.5';
+            setTimeout(function () {
+                img.src = v2CelluImages[v2CelluIdx];
+                img.style.opacity = '1';
+                if (counter) counter.textContent = v2CelluIdx + 1;
+            }, 150);
+        });
+    }
+}());
+
+/* voice-tab スイッチ（グループ単位でスコープ） */
+function switchTab(btn, tab) {
+    var group = btn.closest('.voice-tab-group');
+    group.querySelectorAll('.voice-tab').forEach(function (b) { b.classList.remove('active'); });
+    group.querySelectorAll('.voice-tab-content').forEach(function (c) { c.classList.remove('active'); });
+    btn.classList.add('active');
+    group.querySelector('.voice-tab-content[data-tab="' + tab + '"]').classList.add('active');
+}
 </script>
 
 </body>
