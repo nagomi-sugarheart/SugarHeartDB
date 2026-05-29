@@ -3293,6 +3293,23 @@ input[name="dialogue-tab"] {
 #mc-tab-4:checked ~ .bt-4,
 #mc-tab-5:checked ~ .bt-5 { display: block; }
 
+/* Popmas page active states */
+#pm-tab-1:checked ~ .rtab-nav label[for="pm-tab-1"],
+#pm-tab-2:checked ~ .rtab-nav label[for="pm-tab-2"],
+#pm-tab-3:checked ~ .rtab-nav label[for="pm-tab-3"],
+#pm-tab-4:checked ~ .rtab-nav label[for="pm-tab-4"],
+#pm-tab-5:checked ~ .rtab-nav label[for="pm-tab-5"] {
+    background: var(--sh-pink);
+    color: #ffffff;
+    border-color: var(--sh-pink);
+}
+
+#pm-tab-1:checked ~ .bt-1,
+#pm-tab-2:checked ~ .bt-2,
+#pm-tab-3:checked ~ .bt-3,
+#pm-tab-4:checked ~ .bt-4,
+#pm-tab-5:checked ~ .bt-5 { display: block; }
+
 /* ----------------------------------------------------------
    メモリアルコミュ — 共有プレイヤー & シークボタン
 ---------------------------------------------------------- */
@@ -6220,4 +6237,107 @@ input[name="dialogue-tab"] {
     background: var(--sh-pink-deep);
     border-color: var(--sh-pink-deep);
     color: #fff;
+}
+
+/* ----------------------------------------------------------
+   Shot items (screenshot + caption)
+---------------------------------------------------------- */
+.shot-item {
+    margin: 16px 0;
+    padding-bottom: 16px;
+    border-bottom: 1px dotted var(--sh-line);
+}
+.shot-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.shot-line {
+    margin: 10px 0 0;
+    line-height: 1.8;
+    color: var(--sh-text);
+}
+.shot-noimgbadge {
+    display: inline-block;
+    font-size: 0.82rem;
+    padding: 4px 12px;
+    border-radius: var(--r-pill);
+    background: var(--sh-bg-alt);
+    border: 1px dashed var(--sh-line);
+    color: var(--sh-text-mute);
+    margin-bottom: 8px;
+}
+.choices-block {
+    margin: 8px 0 0 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.choice-item {
+    font-size: 0.88rem;
+    color: var(--sh-text-soft);
+    padding: 6px 12px;
+    background: var(--sh-bg-alt);
+    border-radius: var(--r-sm);
+    border-left: 3px solid var(--sh-pink-soft);
+}
+.speech-bubble {
+    display: inline-block;
+    margin: 8px 0 0;
+    padding: 6px 16px;
+    background: var(--sh-pink-hush);
+    border-radius: var(--r-pill);
+    font-size: 0.88rem;
+    color: var(--sh-pink-deep);
+    border: 1px solid var(--sh-pink-soft);
+}
+
+/* ----------------------------------------------------------
+   Image switcher (タップ切り替えギャラリー)
+---------------------------------------------------------- */
+.img-switcher {
+    padding: 20px 0;
+    text-align: center;
+}
+.sw-frame {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.sw-img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--r-sm);
+    box-shadow: var(--shadow-sm);
+    margin: 0 auto;
+}
+.sw-img.active {
+    display: block;
+}
+.sw-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+.sw-dot {
+    min-width: 36px;
+    height: 36px;
+    border-radius: var(--r-pill);
+    border: 1.5px solid var(--sh-pink);
+    background: transparent;
+    color: var(--sh-pink);
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    padding: 0 10px;
+    transition: background 0.2s, color 0.2s;
+}
+.sw-dot.active {
+    background: var(--sh-pink);
+    color: #fff;
+}
+.sw-dot:hover:not(.active) {
+    background: var(--sh-pink-soft);
 }
