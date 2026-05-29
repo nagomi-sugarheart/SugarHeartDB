@@ -3296,9 +3296,7 @@ input[name="dialogue-tab"] {
 /* Popmas page active states */
 #pm-tab-1:checked ~ .rtab-nav label[for="pm-tab-1"],
 #pm-tab-2:checked ~ .rtab-nav label[for="pm-tab-2"],
-#pm-tab-3:checked ~ .rtab-nav label[for="pm-tab-3"],
-#pm-tab-4:checked ~ .rtab-nav label[for="pm-tab-4"],
-#pm-tab-5:checked ~ .rtab-nav label[for="pm-tab-5"] {
+#pm-tab-3:checked ~ .rtab-nav label[for="pm-tab-3"] {
     background: var(--sh-pink);
     color: #ffffff;
     border-color: var(--sh-pink);
@@ -3306,9 +3304,7 @@ input[name="dialogue-tab"] {
 
 #pm-tab-1:checked ~ .bt-1,
 #pm-tab-2:checked ~ .bt-2,
-#pm-tab-3:checked ~ .bt-3,
-#pm-tab-4:checked ~ .bt-4,
-#pm-tab-5:checked ~ .bt-5 { display: block; }
+#pm-tab-3:checked ~ .bt-3 { display: block; }
 
 /* ----------------------------------------------------------
    メモリアルコミュ — 共有プレイヤー & シークボタン
@@ -5749,6 +5745,19 @@ input[name="dialogue-tab"] {
     font-style: italic;
 }
 .dialog.no-shot { grid-template-columns: 1fr; }
+.dialog .shot.has-img {
+    aspect-ratio: unset;
+    background: none;
+    border: none;
+    align-self: start;
+}
+.dialog .shot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--r-sm);
+    box-shadow: var(--shadow-sm);
+}
 
 /* Battle phase grid */
 .dialog-grid {
