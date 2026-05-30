@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -31,14 +31,14 @@
 <main class="page">
 
     <!-- ========== 上部：カードイメージ ========== -->
-    <div class="voice-tab-group">
-        <div class="voice-tabs">
-            <button class="voice-tab active" onclick="switchTab(this,'ribbondoheart')">リボンド・はぁと</button>
-            <button class="voice-tab" onclick="switchTab(this,'celestellaunison')">セラステラユニゾン</button>
-            <button class="voice-tab" onclick="switchTab(this,'icon')">アイコン</button>
+    <div class="tab-group">
+        <div class="tab-list">
+            <button class="tab-item active" onclick="switchTab(this,'ribbondoheart')">リボンド・はぁと</button>
+            <button class="tab-item" onclick="switchTab(this,'celestellaunison')">セラステラユニゾン</button>
+            <button class="tab-item" onclick="switchTab(this,'icon')">アイコン</button>
         </div>
 
-        <div class="voice-tab-content active" data-tab="ribbondoheart">
+        <div class="tab-panel active" data-tab="ribbondoheart">
             <div class="v2-main-img-area" style="max-width: 400px; margin: 0 auto; text-align: center;">
                 <img src="Popmas/RibbonDoHeart1.jpg" alt="リボンドハート 1" id="v2-ribbon-main-img"
                      style="cursor: pointer;">
@@ -46,7 +46,7 @@
             </div>
         </div>
 
-        <div class="voice-tab-content" data-tab="celestellaunison">
+        <div class="tab-panel" data-tab="celestellaunison">
             <div class="v2-main-img-area" style="max-width: 400px; margin: 0 auto; text-align: center;">
                 <img src="Popmas/CelestellaUnison1.jpg" alt="セラステラユニゾン 1" id="v2-cellu-main-img"
                      style="cursor: pointer;">
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div class="voice-tab-content" data-tab="icon">
+        <div class="tab-panel" data-tab="icon">
             <div class="v2-main-img-area" style="max-width: 400px; margin: 0 auto; text-align: center;">
                 <img src="Popmas/icon.jpeg" alt="アイコン">
             </div>
@@ -68,18 +68,18 @@
         </div>
 
     <!-- ========== セリフ（voice-tabs） ========== -->
-    <div class="voice-tab-group" style="margin-top: 36px;">
-        <div class="voice-tabs">
-            <button class="voice-tab active" onclick="switchTab(this,'dlg-home')">ホーム</button>
-            <button class="voice-tab" onclick="switchTab(this,'dlg-ikusei')">育成</button>
-            <button class="voice-tab" onclick="switchTab(this,'dlg-produces')">PRODUCE D@YS!!!!!</button>
+    <div class="tab-group" style="margin-top: 36px;">
+        <div class="tab-list">
+            <button class="tab-item active" onclick="switchTab(this,'dlg-home')">ホーム</button>
+            <button class="tab-item" onclick="switchTab(this,'dlg-ikusei')">育成</button>
+            <button class="tab-item" onclick="switchTab(this,'dlg-produces')">PRODUCE D@YS!!!!!</button>
         </div>
 
         <!-- ===== ホーム ===== -->
-        <div class="voice-tab-content active" data-tab="dlg-home">
+        <div class="tab-panel active" data-tab="dlg-home">
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">通常</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -129,7 +129,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">手鏡</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -144,7 +144,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">音楽</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -159,7 +159,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">固有モーション（しゅがレボ）</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -181,7 +181,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">落ち込み</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -203,7 +203,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">困り顔</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -225,7 +225,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">差し入れ</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -241,10 +241,10 @@
         </div>
 
         <!-- ===== 育成 ===== -->
-        <div class="voice-tab-content" data-tab="dlg-ikusei">
+        <div class="tab-panel" data-tab="dlg-ikusei">
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">スカウト</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -266,7 +266,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">限界突破 ★2</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -281,7 +281,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">限界突破 ★3</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -296,7 +296,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">限界突破 ★4</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -311,7 +311,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">限界突破 ★5</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -326,7 +326,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">限界突破 ★6</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -348,7 +348,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">限界突破 ★7</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -372,10 +372,10 @@
         </div>
 
         <!-- ===== PRODUCE D@YS!!!!! ===== -->
-        <div class="voice-tab-content" data-tab="dlg-produces">
+        <div class="tab-panel" data-tab="dlg-produces">
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">PRODUCE D@YS!!!!! OP</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -404,7 +404,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">PRODUCE D@YS!!!!! 1</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -421,7 +421,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">PRODUCE D@YS!!!!! 2</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -436,7 +436,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">PRODUCE D@YS!!!!! 3</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -461,7 +461,7 @@
             </div>
 
             <div class="lv-accord">
-                <div class="lv-head pm-lv-head">
+                <div class="lv-head">
                     <span class="lv-name">PRODUCE D@YS!!!!! ED</span>
                     <span class="arrow">▼</span>
                 </div>
@@ -500,8 +500,9 @@
         <figure class="pm-gallery-item">
             <img src="Popmas/DressUpItem.JPG" alt="ドレスアップアイテム" class="pm-gallery-img">
             <figcaption class="pm-gallery-cap">ドレスアップアイテム</figcaption>
-             <iframe src="https://www.youtube.com/embed/MNBniUKD854?si=3Fr9rXVuXxrTQw7h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+            <div class="video-container-mobamas">
+                <iframe src="https://www.youtube.com/embed/MNBniUKD854?si=3Fr9rXVuXxrTQw7h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </figure>
     </div>
 
@@ -513,84 +514,18 @@
     <img class="sh-lightbox-img" id="sh-lightbox-img" src="" alt="">
 </div>
 
+<script src="components/common.js"></script>
 <script>
-(function () {
-    /* lv-accord toggle */
-    document.querySelectorAll('.pm-lv-head').forEach(function (h) {
-        h.addEventListener('click', function () {
-            h.parentElement.classList.toggle('open');
-        });
-    });
-
-    /* lightbox */
-    var lb      = document.getElementById('sh-lightbox');
-    var lbImg   = document.getElementById('sh-lightbox-img');
-    var lbClose = document.getElementById('sh-lightbox-close');
-    function openLb(src, alt) {
-        lbImg.src = src; lbImg.alt = alt || '';
-        lb.classList.add('open');
-        document.body.style.overflow = 'hidden';
-    }
-    function closeLb() {
-        lb.classList.remove('open');
-        document.body.style.overflow = '';
-    }
-    document.querySelectorAll('.ev-shot img, .pm-gallery-img').forEach(function (img) {
-        img.addEventListener('click', function (e) { e.stopPropagation(); openLb(img.src, img.alt); });
-    });
-    lb.addEventListener('click', closeLb);
-    lbClose.addEventListener('click', function (e) { e.stopPropagation(); closeLb(); });
-    lbImg.addEventListener('click', function (e) { e.stopPropagation(); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
-})();
-
-/* リボンドハート image cycler */
-var v2RibbonImages = ['Popmas/RibbonDoHeart1.jpg','Popmas/RibbonDoHeart2.jpg','Popmas/RibbonDoHeart3.jpg','Popmas/RibbonDoHeart4.jpg','Popmas/RibbonDoHeart5.jpg'];
-var v2RibbonIdx = 0;
-(function () {
-    var img     = document.getElementById('v2-ribbon-main-img');
-    var counter = document.getElementById('v2-ribbon-counter');
-    if (img) {
-        img.addEventListener('click', function () {
-            v2RibbonIdx = (v2RibbonIdx + 1) % v2RibbonImages.length;
-            img.style.opacity = '0.5';
-            setTimeout(function () {
-                img.src = v2RibbonImages[v2RibbonIdx];
-                img.style.opacity = '1';
-                if (counter) counter.textContent = v2RibbonIdx + 1;
-            }, 150);
-        });
-    }
-}());
-
-/* セラステラユニゾン image cycler */
-var v2CelluImages = ['Popmas/CelestellaUnison1.jpg','Popmas/CelestellaUnison2.jpg'];
-var v2CelluIdx = 0;
-(function () {
-    var img     = document.getElementById('v2-cellu-main-img');
-    var counter = document.getElementById('v2-cellu-counter');
-    if (img) {
-        img.addEventListener('click', function () {
-            v2CelluIdx = (v2CelluIdx + 1) % v2CelluImages.length;
-            img.style.opacity = '0.5';
-            setTimeout(function () {
-                img.src = v2CelluImages[v2CelluIdx];
-                img.style.opacity = '1';
-                if (counter) counter.textContent = v2CelluIdx + 1;
-            }, 150);
-        });
-    }
-}());
-
-/* voice-tab スイッチ（グループ単位でスコープ） */
-function switchTab(btn, tab) {
-    var group = btn.closest('.voice-tab-group');
-    group.querySelectorAll('.voice-tab').forEach(function (b) { b.classList.remove('active'); });
-    group.querySelectorAll('.voice-tab-content').forEach(function (c) { c.classList.remove('active'); });
-    btn.classList.add('active');
-    group.querySelector('.voice-tab-content[data-tab="' + tab + '"]').classList.add('active');
-}
+initV2Cycler(
+    ['Popmas/RibbonDoHeart1.jpg','Popmas/RibbonDoHeart2.jpg','Popmas/RibbonDoHeart3.jpg','Popmas/RibbonDoHeart4.jpg','Popmas/RibbonDoHeart5.jpg'],
+    'v2-ribbon-main-img', 'v2-ribbon-counter'
+);
+initV2Cycler(
+    ['Popmas/CelestellaUnison1.jpg','Popmas/CelestellaUnison2.jpg'],
+    'v2-cellu-main-img', 'v2-cellu-counter'
+);
 </script>
 
 </body>
 </html>
+

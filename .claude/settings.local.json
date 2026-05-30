@@ -23,7 +23,8 @@
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\sawas\\\\Desktop\\\\sugarheartdb\" -Recurse -Directory)",
       "Bash(Select-Object -ExpandProperty FullName)",
       "Bash(xargs grep -l \"松尾千鶴\")",
-      "Bash(Get-ChildItem *)"
+      "Bash(Get-ChildItem *)",
+      "Bash(grep -E \"\\\\.\\(html|json|csv|js\\)$\")"
     ]
   },
   "spinnerTipsEnabled": false

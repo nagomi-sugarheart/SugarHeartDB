@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -31,20 +31,15 @@
 
 <div class="page">
 
-<div class="rtab-wrapper">
-
-    <!-- ラジオボタン -->
-    <input type="radio" name="ch-tab" id="ch-tab-1" checked>
-    <input type="radio" name="ch-tab" id="ch-tab-2">
-
-    <!-- タブナビ -->
-    <nav class="rtab-nav">
-        <label for="ch-tab-1" class="rtab-btn">永遠に輝きを放つ乙女たち☆</label>
-        <label for="ch-tab-2" class="rtab-btn">メアリー憧れのダイワナデコ</label>
-    </nav>
+<div class="tab-group">
+<!-- タブナビ -->
+    <div class="tab-list">
+    <button class="tab-item active" onclick="switchTab(this,'ch-tab-1')">永遠に輝きを放つ乙女たち☆</button>
+    <button class="tab-item" onclick="switchTab(this,'ch-tab-2')">メアリー憧れのダイワナデコ</button>
+</div>
 
     <!-- コミュ1 -->
-    <div class="rtab-panel bt-1" id="eien-ni-kagayaki">
+    <div class="tab-panel active" data-tab="ch-tab-1" id="eien-ni-kagayaki">
 
         <div class="cast-block">
             <div class="label">CAST</div>
@@ -101,7 +96,7 @@
     </div>
 
     <!-- コミュ2 -->
-    <div class="rtab-panel bt-2" id="mary-daiwa-nadeko">
+    <div class="tab-panel" data-tab="ch-tab-2" id="mary-daiwa-nadeko">
 
         <div class="cast-block">
             <div class="label">CAST</div>
@@ -220,7 +215,7 @@
 
     </div>
 
-</div><!-- /.rtab-wrapper -->
+</div><!-- /.tab-group -->
 
     <div class="related-foot">
         <div class="related">
@@ -235,6 +230,8 @@
 
 </div><!-- /.page -->
 
+<script src="components/common.js"></script>
 <script src="components/idol-badge.js"></script>
 </body>
 </html>
+

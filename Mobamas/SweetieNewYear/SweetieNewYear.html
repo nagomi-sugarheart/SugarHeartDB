@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -498,41 +498,10 @@
     </main>
 </div>
 
+<script src="components/common.js"></script>
 <script>
 const v2CardImages = ['Mobamas/SweetieNewYear/SweetieNewYear.jpg', 'Mobamas/SweetieNewYear/SweetieNewYearTsujyoSign.jpg', 'Mobamas/SweetieNewYear/SweetieNewYearPremiumSign.jpg', 'Mobamas/SweetieNewYear/SweetieNewYearWakuNashi.jpg', 'Mobamas/SweetieNewYear/SweetieNewYearTouka.png'];
-let v2ImgIdx = 0;
-(function(){
-    const img = document.getElementById('v2-card-main-img');
-    const counter = document.getElementById('v2-img-counter');
-    const total = document.getElementById('v2-img-total');
-    if(total) total.textContent = v2CardImages.length;
-    if(img && v2CardImages.length > 1){
-        img.style.cursor = 'pointer';
-        img.addEventListener('click', function(){
-            v2ImgIdx = (v2ImgIdx + 1) % v2CardImages.length;
-            img.style.opacity = '0.5';
-            setTimeout(function(){
-                img.src = v2CardImages[v2ImgIdx];
-                img.style.opacity = '1';
-                if(counter) counter.textContent = v2ImgIdx + 1;
-            }, 150);
-        });
-    }
-    // accordion toggle
-    document.querySelectorAll('.v2-accord-head').forEach(function(h){
-        h.addEventListener('click', function(){
-            h.parentElement.classList.toggle('open');
-        });
-    });
-}());
-function v2SwitchTab(idx, btn){
-    var tabs = btn.parentElement.querySelectorAll('.v2-dialogue-tab');
-    var contents = btn.closest('.v2-dialogue-block').querySelectorAll('.v2-dialogue-content');
-    tabs.forEach(function(t){ t.classList.remove('active'); });
-    contents.forEach(function(c){ c.style.display='none'; });
-    btn.classList.add('active');
-    contents[idx].style.display = '';
-}
+initV2Cycler(v2CardImages, 'v2-card-main-img', 'v2-img-counter');
 </script>
 </body>
 </html>

@@ -7,15 +7,19 @@
 
 ## JavaScript
 
-- ページ固有のJS（`cardImages` 配列・fetchなど）は各HTMLファイルの `<script>` タグに直書き
+- **共通関数は `components/common.js` に定義されている**。全ページで `<script src="[相対パス]/components/common.js"></script>` を読み込む
+  - 定義されている関数: `switchTab`（タブ切り替え）、`v2SwitchTab`（v2対話タブ）、`initV2Cycler`（カード画像サイクル）
+  - DOMContentLoaded 自動初期化: `.lv-accord` アコーディオン、`.v2-accord-head` アコーディオン、`.ep-block .ep-head` アコーディオン、ライトボックス
+- ページ固有のJS（`v2CardImages` 配列・fetchなど）は各HTMLファイルの `<script>` タグに直書き
 - **ナビ変更は `components/header.js` の `HEADER_HTML` だけ編集する**。HTMLファイルは触らない
 
 ## 新規HTMLページ作成チェックリスト
 
 1. `<head>` に `style.css` を相対パスでリンク
 2. `<body>` 直後に `<script src="[相対パス]/components/header.js"></script>` を入れる
-3. `index.html` など既存ページから新ページへのリンクを追加する（孤立させない）
-4. スマホ対応（`@media screen and (max-width: 900px)`）を確認する
+3. `</body>` 直前に `<script src="[相対パス]/components/common.js"></script>` を入れる
+4. `index.html` など既存ページから新ページへのリンクを追加する（孤立させない）
+5. スマホ対応（`@media screen and (max-width: 900px)`）を確認する
 
 ## パス指定
 

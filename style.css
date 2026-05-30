@@ -3001,39 +3001,22 @@ input[name="dialogue-tab"] {
 }
 .index-card a:hover { background: var(--sh-pink); color: #fff; }
 
-/* Major section heading */
-.major-head {
-    display: flex; align-items: baseline; gap: 12px;
-    margin: 36px 0 16px;
-    padding-bottom: 10px;
-    border-bottom: 3px dotted var(--sh-pink);
-}
-.major-head h2 {
-    font-size: 24px; color: var(--sh-pink-deep);
-    display: flex; align-items: center; gap: 10px; font-weight: 400;
-}
-.major-head h2::before { content: "✿"; color: var(--sh-yellow); font-size: 18px; }
-.major-head .count {
-    font-size: 12px; padding: 3px 12px; border-radius: var(--r-pill);
-    background: var(--sh-pink-soft); color: var(--sh-pink-deep);
-    font-family: ui-monospace, monospace;
-}
 
-/* Voice tabs — JS button based */
-.voice-tabs {
+/* Tab group — JS-based tab switching */
+.tab-list {
     display: flex; gap: 6px; margin-bottom: 18px; padding: 6px;
     background: #fff; border-radius: var(--r-pill); box-shadow: var(--shadow-sm);
 }
-.voice-tab {
+.tab-item {
     flex: 1; padding: 10px 14px; border-radius: var(--r-pill); border: none;
     background: transparent; font-family: var(--font-display); font-weight: 400;
     font-size: 13px; color: var(--sh-text-soft); cursor: pointer;
     transition: background .15s, color .15s;
 }
-.voice-tab.active { background: var(--grad-sugar); color: #fff; box-shadow: var(--shadow-sm); }
-.voice-tab:hover:not(.active) { color: var(--sh-pink-deep); background: var(--sh-pink-soft); }
-.voice-tab-content { display: none; }
-.voice-tab-content.active { display: block; }
+.tab-item.active { background: var(--grad-sugar); color: #fff; box-shadow: var(--shadow-sm); }
+.tab-item:hover:not(.active) { color: var(--sh-pink-deep); background: var(--sh-pink-soft); }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
 
 /* Lv accordion */
 .lv-accord {
@@ -3214,97 +3197,12 @@ input[name="dialogue-tab"] {
 @media screen and (max-width: 900px) {
     .idol-cast .idol { width: 64px; }
     .idol-cast .idol img { width: 56px; height: 56px; }
-    .voice-tabs { flex-wrap: wrap; }
-    .voice-tab { flex: none; }
+    .tab-list { flex-wrap: wrap; }
+    .tab-item { flex: none; }
     .ep-body-inner { grid-template-columns: 1fr; }
 }
 
-/* ----------------------------------------------------------
-   Radio tab navigation (boss / commu section pages)
----------------------------------------------------------- */
-.rtab-wrapper input[type="radio"] { display: none; }
 
-.rtab-nav {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-bottom: 24px;
-}
-
-.rtab-btn {
-    padding: 9px 24px;
-    border-radius: var(--r-pill);
-    background: var(--sh-pink-soft);
-    border: 1.5px solid var(--sh-line-soft);
-    color: var(--sh-text-soft);
-    cursor: pointer;
-    font-family: var(--font-display);
-    font-size: 0.9rem;
-    transition: background 0.2s, color 0.2s, border-color 0.2s;
-}
-
-.rtab-btn:hover {
-    background: var(--sh-pink-mist);
-    color: var(--sh-pink-deep);
-}
-
-.rtab-panel { display: none; }
-
-/* Boss page active states */
-#boss-tab-1:checked ~ .rtab-nav label[for="boss-tab-1"],
-#boss-tab-2:checked ~ .rtab-nav label[for="boss-tab-2"],
-#boss-tab-3:checked ~ .rtab-nav label[for="boss-tab-3"],
-#boss-tab-final:checked ~ .rtab-nav label[for="boss-tab-final"] {
-    background: var(--sh-pink);
-    color: #ffffff;
-    border-color: var(--sh-pink);
-}
-
-#boss-tab-1:checked ~ .bt-1,
-#boss-tab-2:checked ~ .bt-2,
-#boss-tab-3:checked ~ .bt-3,
-#boss-tab-final:checked ~ .bt-final { display: block; }
-
-/* CinderellaHistory page active states */
-#ch-tab-1:checked ~ .rtab-nav label[for="ch-tab-1"],
-#ch-tab-2:checked ~ .rtab-nav label[for="ch-tab-2"] {
-    background: var(--sh-pink);
-    color: #ffffff;
-    border-color: var(--sh-pink);
-}
-
-#ch-tab-1:checked ~ .bt-1,
-#ch-tab-2:checked ~ .bt-2 { display: block; }
-
-/* MemorialCommu page active states */
-#mc-tab-1:checked ~ .rtab-nav label[for="mc-tab-1"],
-#mc-tab-2:checked ~ .rtab-nav label[for="mc-tab-2"],
-#mc-tab-3:checked ~ .rtab-nav label[for="mc-tab-3"],
-#mc-tab-4:checked ~ .rtab-nav label[for="mc-tab-4"],
-#mc-tab-5:checked ~ .rtab-nav label[for="mc-tab-5"] {
-    background: var(--sh-pink);
-    color: #ffffff;
-    border-color: var(--sh-pink);
-}
-
-#mc-tab-1:checked ~ .bt-1,
-#mc-tab-2:checked ~ .bt-2,
-#mc-tab-3:checked ~ .bt-3,
-#mc-tab-4:checked ~ .bt-4,
-#mc-tab-5:checked ~ .bt-5 { display: block; }
-
-/* Popmas page active states */
-#pm-tab-1:checked ~ .rtab-nav label[for="pm-tab-1"],
-#pm-tab-2:checked ~ .rtab-nav label[for="pm-tab-2"],
-#pm-tab-3:checked ~ .rtab-nav label[for="pm-tab-3"] {
-    background: var(--sh-pink);
-    color: #ffffff;
-    border-color: var(--sh-pink);
-}
-
-#pm-tab-1:checked ~ .bt-1,
-#pm-tab-2:checked ~ .bt-2,
-#pm-tab-3:checked ~ .bt-3 { display: block; }
 
 /* ----------------------------------------------------------
    メモリアルコミュ — 共有プレイヤー & シークボタン

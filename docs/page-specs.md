@@ -33,7 +33,7 @@
   - シンデレラガールズ劇場（PC常時展開・モバイルはアコーディオン）
   - 関連ギャラリー（横スクロール）
   - 関連ページリンク
-- `cardImages` 配列（`<script>` タグ内）で画像パスを管理し、タップで切り替え
+- `v2CardImages` 配列（`<script>` タグ内）で画像パスを管理し、`initV2Cycler` で初期化する（`components/common.js` 参照）
 
 ## 新規ページ作成時のテンプレート
 
@@ -42,18 +42,29 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <base href="/SugarHeartDB/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ページタイトル | しゅがーはぁとDB</title>
-  <link rel="stylesheet" href="../style.css">
+  <title>ページタイトル｜SugarHeartDB</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script src="../components/header.js"></script>
-<!-- ここにコンテンツ -->
+<script src="components/header.js"></script>
+
+<section class="page-hero">
+  <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>ページ名</strong></div>
+  <h1>ページ名 <span class="sub">/ PAGE SUBTITLE</span></h1>
+</section>
+
+<div class="page">
+  <!-- ここにコンテンツ -->
+</div>
+
+<script src="components/common.js"></script>
 </body>
 </html>
 ```
 
-※パスはページの階層に応じて相対パスで適切に調整すること。
+※`<base href="/SugarHeartDB/">` により、全パスはサイトルートからの絶対パスとして記述できる（`href="style.css"` 等）。
 
 ## 今後追加予定のページ（スケルトン作成済み）
 

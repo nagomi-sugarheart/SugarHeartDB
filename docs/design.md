@@ -48,12 +48,38 @@
 |---|---|
 | `.main-title` | トップページのメインタイトルエリア（背景画像あり） |
 | `.sub-title` | サブページのタイトルエリア（グラデーション背景） |
+| `.page-hero` | サブページのヒーローセクション（パンくず＋h1＋概要） |
+| `.sec-head` | セクション見出し（各ページ内の中項目タイトル） |
 | `.box-area` | 情報をまとめるボックス（ボーダー：ピンク） |
 | `.box-title` | ボックスの見出し |
 | `.box-item` | ボックス内の各行 |
 | `.table-area` | カード一覧テーブル |
-| `.tab-wrapper` | タブ切り替えUI（トップページ用） |
+| `.tab-wrapper` | タブ切り替えUI（トップページ用・radio ベース） |
 | `.disabled` | 未実装リンクのグレーアウト（pointer-events: none） |
+
+### タブ切り替え（共通・JSベース）
+
+全ページ共通のタブ切り替えUI。複数のタブグループを同一ページに置いても干渉しない。
+
+| クラス名 | 用途 |
+|---|---|
+| `.tab-group` | タブ全体のラッパー（スコープ境界） |
+| `.tab-list` | タブボタンを並べるナビ行 |
+| `.tab-item` | タブボタン（`active` クラスで選択中を示す） |
+| `.tab-panel` | タブに対応するコンテンツパネル（`data-tab="..."` で紐付け、`active` クラスで表示） |
+
+```html
+<div class="tab-group">
+  <div class="tab-list">
+    <button class="tab-item active" onclick="switchTab(this,'tab-1')">タブ1</button>
+    <button class="tab-item" onclick="switchTab(this,'tab-2')">タブ2</button>
+  </div>
+  <div class="tab-panel active" data-tab="tab-1">…</div>
+  <div class="tab-panel" data-tab="tab-2">…</div>
+</div>
+```
+
+`switchTab` 関数は `components/common.js` に定義されている。
 
 ### カード詳細ページ
 
@@ -70,7 +96,7 @@
 
 | クラス名 | 用途 |
 |---|---|
-| `.boss-split` | ボスセリフページの左右分割レイアウト（PC: flex / mobile: block） |
-| `.boss-table-wrap` | ボスセリフ表のラッパー（左カラム） |
-| `.boss-img-pc` | ボスセリフ画像エリア（PCのみ表示、右カラム） |
-| `.boss-img-mobile` | ボスセリフ画像アコーディオン（モバイルのみ表示） |
+| `.split` | 左右分割レイアウト（PC: flex / mobile: block） |
+| `.table-wrap` | テーブルのラッパー（左カラム） |
+| `.img-pc` | 画像エリア（PCのみ表示、右カラム） |
+| `.img-mobile` | 画像アコーディオン（モバイルのみ表示） |

@@ -10,7 +10,8 @@
 ├── updates.html                # 更新情報一覧ページ
 ├── CLAUDE.md                   # Claude Code向けプロジェクト指示
 ├── components/
-│   └── header.js               # 共通ヘッダー（ナビ・ハンバーガーJS）★ナビ更新はここだけ
+│   ├── header.js               # 共通ヘッダー（ナビ・ハンバーガーJS）★ナビ更新はここだけ
+│   └── common.js               # 共通JS関数（switchTab・initV2Cycler・アコーディオン・ライトボックス）
 ├── data/
 │   └── updates.json            # 更新情報データ（index.html・updates.htmlが読み込む）
 ├── docs/                       # 仕様書ドキュメント
