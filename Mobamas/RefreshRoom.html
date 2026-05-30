@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -25,26 +25,21 @@
 
 
 <section class="page-hero">
-    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Mobamas/index.html">MOBAMAS</a> · <strong>リフレッシュルーム（モバマス）</strong></div>
-    <h1>リフレッシュルーム（モバマス）</h1>
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Mobamas/index.html">MOBAMAS</a> · <a href="Mobamas/OtherCommu.html">その他コミュ・セリフ</a> · <strong>リフレッシュルーム</strong></div>
+    <h1>リフレッシュルーム <span class="sub">/ REFRESH ROOM · MOBAMAS</span></h1>
+    <p class="summary">モバマスのゲーム内コンテンツ「リフレッシュルーム」に収録された心ちゃん登場コミュをまとめています。</p>
 </section>
 
 <div class="page">
 
-<div class="rtab-wrapper">
-
-    <!-- ラジオボタン -->
-    <input type="radio" name="ch-tab" id="ch-tab-1" checked>
-    <input type="radio" name="ch-tab" id="ch-tab-2">
-
-    <!-- タブナビ -->
-    <nav class="rtab-nav">
-        <label for="ch-tab-1" class="rtab-btn">乙女の季節、ですね♪</label>
-        <label for="ch-tab-2" class="rtab-btn">ネバーエンディングネバネバストーリー☆</label>
-    </nav>
+<div class="tab-group">
+<div class="tab-list">
+    <button class="tab-item active" onclick="switchTab(this,'ch-tab-1')">乙女の季節、ですね♪</button>
+    <button class="tab-item" onclick="switchTab(this,'ch-tab-2')">ネバーエンディングネバネバストーリー☆</button>
+</div>
 
     <!-- コミュ1 -->
-    <div class="rtab-panel bt-1" id="otomenokisetudesune">
+    <div class="tab-panel active" data-tab="ch-tab-1" id="otomenokisetudesune">
 
         <div class="cast-block">
             <div class="label">CAST</div>
@@ -118,7 +113,7 @@
     </div>
 
     <!-- コミュ2 -->
-    <div class="rtab-panel bt-2" id="neverendingnebanebastory">
+    <div class="tab-panel" data-tab="ch-tab-2" id="neverendingnebanebastory">
 
         <div class="cast-block">
             <div class="label">CAST</div>
@@ -202,11 +197,23 @@
 
     </div>
 
-</div><!-- /.rtab-wrapper -->
+</div><!-- /.tab-group -->
+
+    <div class="related-foot">
+        <div class="related">
+            <span class="lbl">RELATED //</span>
+            <a href="Mobamas/CinderellaHistory.html">シンデレラヒストリー</a>
+            <a href="Mobamas/ComingTV.html">カミングTV</a>
+        </div>
+        <div class="nav-events">
+            <a href="Mobamas/OtherCommu.html">◀ その他コミュ・セリフ一覧へ</a>
+        </div>
+    </div>
 
 </div><!-- /.page -->
 
-
+<script src="components/common.js"></script>
 <script src="components/idol-badge.js"></script>
 </body>
 </html>
+

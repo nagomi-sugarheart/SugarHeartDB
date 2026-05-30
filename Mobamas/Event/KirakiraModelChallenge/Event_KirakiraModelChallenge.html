@@ -32,7 +32,7 @@
         <div class="banner">
             <!-- バナー画像: src="" にイベントバナー画像パスを入れる -->
             <div class="corner-no">EVENT #2</div>
-            <img class="event-banner-img" src="Mobamas/Event/KiraKiraModelBanner.jpg" alt="きらきらモデルバナー">
+            <img class="event-banner-img" src="Mobamas/Event/KirakiraModelChallenge/KiraKiraModelBanner.jpg" alt="きらきらモデルバナー">
         </div>
         <div class="event-hero-meta">
             <div class="tags">
@@ -44,7 +44,7 @@
             </div>
             <p class="summary">第3回アイドルチャレンジはきらりちゃんとー緒に目指せきらきらモデル!心ちゃん、ほたるちゃん、千鶴ちゃんたちがネクストスターコレクションのランウェイを華やかに彩りました!</p>
             <div class="banner">
-                <img class="event-banner-img" src="Mobamas/Event/KiraKiraModelBanner2.jpg" alt="きらきらモデルバナー2">
+                <img class="event-banner-img" src="Mobamas/Event/KirakiraModelChallenge/KiraKiraModelBanner2.jpg" alt="きらきらモデルバナー2">
             </div>
             <div class="duration-card">
                 <div class="pin">
@@ -65,7 +65,7 @@
                 <div class="days">10日間</div>
             </div>
             <div class="banner">
-                <img class="event-banner-img" src="Mobamas/Event/KiraKiraModelBanner3.jpg" alt="きらきらモデルバナー3">
+                <img class="event-banner-img" src="Mobamas/Event/KirakiraModelChallenge/KiraKiraModelBanner3.jpg" alt="きらきらモデルバナー3">
             </div>
             <div class="duration-card">
                 <div class="pin">
@@ -188,6 +188,7 @@
             </div>
             <div class="nm">[ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心</div>
             <div class="by">イエローメダルチャンス</div>
+            <div class="by">イベント専用引換カード</div>
         </div>
     </div>
 
@@ -2943,6 +2944,18 @@
     <div class="related-foot">
         <div class="related">
             <span class="lbl">RELATED //</span>
+            <a href="Mobamas/NextStarIC+/NextStarIC+.html">[ﾈｸｽﾄｽﾀｰI.C]佐藤心+</a>
+            <a href="Mobamas/HeartModel/HeartModel.html">[ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心</a>
+            <a href="Mobamas/HeartModel+/HeartModel+.html">[ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心+</a>
+            <a href="Mobamas/HeartModel/HeartModelS.html">[ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心</a>
+            <a href="Mobamas/HeartModel+/HeartModelS+.html">[ﾊｰﾄ･ﾓﾃﾞﾙ･S]佐藤心+</a>
+            <a href="Deresute/HeartModel+/HeartModel+.html">[ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心+（デレステ）</a>
+            <a href="Unit/KiraKiraModelfromNSC/KiraKiraModelfromNSC.html">きらきらモデルfrom NSC</a>
+            <a class="disabled">外はしっかり、中はふっくら（デレステ営業コミュ）</a>
+            <a href="Deresute/GuestCommu/GuestCommu_EverlastingEverafter.html">EVERLASTING（デレステイベントコミュ）</a>
+            <a class="disabled">[季節の風を感じて]松尾千鶴</a>
+            <a class="disabled">[季節の風を感じて]松尾千鶴+</a>
+            <a href="https://cinderella-library.idolmaster-official.jp/history/?tag=%E4%BD%90%E8%97%A4%E5%BF%83" target="_blank" rel="noopener">【公式】シンデレラライブラリー</a>
         </div>
         <div class="nav-events">
             <a href="Mobamas/Event/EventList.html">◀ イベント一覧へ</a>
@@ -2957,6 +2970,7 @@
     <img class="sh-lightbox-img" id="sh-lightbox-img" src="" alt="">
 </div>
 
+<script src="components/common.js"></script>
 <script>
 (function () {
     const pills = document.querySelectorAll('#scenes-list .scene-pill');
@@ -2967,36 +2981,6 @@
             sections.forEach(function (s, j) { s.style.display = (j === i) ? '' : 'none'; });
         });
     });
-    document.querySelectorAll('.v2-accord-head').forEach(function (h) {
-        h.addEventListener('click', function () {
-            h.parentElement.classList.toggle('open');
-        });
-    });
-
-    // ライトボックス
-    const lb    = document.getElementById('sh-lightbox');
-    const lbImg = document.getElementById('sh-lightbox-img');
-    const lbClose = document.getElementById('sh-lightbox-close');
-    function openLb(src, alt) {
-        lbImg.src = src;
-        lbImg.alt = alt || '';
-        lb.classList.add('open');
-        document.body.style.overflow = 'hidden';
-    }
-    function closeLb() {
-        lb.classList.remove('open');
-        document.body.style.overflow = '';
-    }
-    document.querySelectorAll('.ev-shot img').forEach(function (img) {
-        img.addEventListener('click', function (e) {
-            e.stopPropagation();
-            openLb(img.src, img.alt);
-        });
-    });
-    lb.addEventListener('click', closeLb);
-    lbClose.addEventListener('click', function (e) { e.stopPropagation(); closeLb(); });
-    lbImg.addEventListener('click', function (e) { e.stopPropagation(); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
 })();
 </script>
 

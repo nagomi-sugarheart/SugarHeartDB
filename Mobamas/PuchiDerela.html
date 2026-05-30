@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -40,21 +40,22 @@
   </nav>
 
   <!-- SECTION 1: ぷちセリフ -->
-  <div class="major-head" id="voice">
-    <h2>ぷちセリフ</h2>
-  </div>
+  <div class="sec-head" id="voice">
+  <h2>ぷちセリフ <span class="sub">/ VOICE</span></h2>
+</div>
 
-  <div class="voice-tabs">
-    <button class="voice-tab active" onclick="switchTab(this,'top')">ぷちTOP</button>
-    <button class="voice-tab" onclick="switchTab(this,'lesson')">ぷちレッスン</button>
-    <button class="voice-tab" onclick="switchTab(this,'other')">その他（Lv.共通）</button>
+  <div class="tab-group">
+  <div class="tab-list">
+    <button class="tab-item active" onclick="switchTab(this,'top')">ぷちTOP</button>
+    <button class="tab-item" onclick="switchTab(this,'lesson')">ぷちレッスン</button>
+    <button class="tab-item" onclick="switchTab(this,'other')">その他（Lv.共通）</button>
   </div>
 
   <!-- TAB: ぷちTOP -->
-  <div class="voice-tab-content active" data-tab="top">
+  <div class="tab-panel active" data-tab="top">
 
     <div class="lv-accord open">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">Lv 共通</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -70,7 +71,7 @@
     </div>
 
     <div class="lv-accord">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">Lv.1~10</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -84,7 +85,7 @@
     </div>
 
     <div class="lv-accord">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">Lv.11~20</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -97,7 +98,7 @@
     </div>
 
     <div class="lv-accord">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">Lv.11~30</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -110,7 +111,7 @@
     </div>
 
     <div class="lv-accord">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">Lv.21~30</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -134,10 +135,10 @@
   </div>
 
   <!-- TAB: ぷちレッスン -->
-  <div class="voice-tab-content" data-tab="lesson">
+  <div class="tab-panel" data-tab="lesson">
 
     <div class="lv-accord open">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">Lv.共通</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -155,7 +156,7 @@
     </div>
 
     <div class="lv-accord">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">Lv.1~10</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -174,7 +175,7 @@
     </div>
 
     <div class="lv-accord">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">Lv.11~20</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -194,7 +195,7 @@
     </div>
 
     <div class="lv-accord">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">Lv.21~30</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -219,10 +220,10 @@
   </div>
 
   <!-- TAB: その他 -->
-  <div class="voice-tab-content" data-tab="other">
+  <div class="tab-panel" data-tab="other">
 
     <div class="lv-accord open">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">ぷちショップ</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -232,7 +233,7 @@
     </div>
 
     <div class="lv-accord">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">コーディネート</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -243,7 +244,7 @@
     </div>
 
     <div class="lv-accord">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">テクニカルボード</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -255,7 +256,7 @@
     </div>
 
     <div class="lv-accord">
-      <div class="lv-head" onclick="this.parentElement.classList.toggle('open')">
+      <div class="lv-head">
         <span class="lv-name"><span class="lv-tag">ボード開放</span></span>
         <span class="arrow">▼</span>
       </div>
@@ -270,16 +271,18 @@
     </div>
 
   </div>
+</div><!-- /.tab-group -->
+
+  </div>
 
   <!-- SECTION 2: ぷちエピソード -->
-  <div class="major-head" id="episode">
-    <h2>ぷちエピソード</h2>
-    <span class="count">8 エピソード</span>
-  </div>
+  <div class="sec-head" id="episode">
+  <h2>ぷちエピソード <span class="sub">/ EPISODE</span></h2>
+</div>
 
   <!-- Episode 01 -->
   <div class="ep-block open">
-    <div class="ep-head" onclick="this.parentElement.classList.toggle('open')">
+    <div class="ep-head">
       <h3><span class="ep-num">01</span>佐藤心Voレッスンエピソード1<span class="lesson-tag">Vo</span></h3>
       <span class="arrow">▼</span>
     </div>
@@ -298,7 +301,7 @@
 
   <!-- Episode 02 -->
   <div class="ep-block">
-    <div class="ep-head" onclick="this.parentElement.classList.toggle('open')">
+    <div class="ep-head">
       <h3><span class="ep-num">02</span>佐藤心Daレッスンエピソード1<span class="lesson-tag">Da</span></h3>
       <span class="arrow">▼</span>
     </div>
@@ -317,7 +320,7 @@
 
   <!-- Episode 03 -->
   <div class="ep-block">
-    <div class="ep-head" onclick="this.parentElement.classList.toggle('open')">
+    <div class="ep-head">
       <h3><span class="ep-num">03</span>佐藤心Viレッスンエピソード1<span class="lesson-tag">Vi</span></h3>
       <span class="arrow">▼</span>
     </div>
@@ -336,7 +339,7 @@
 
   <!-- Episode 04 -->
   <div class="ep-block">
-    <div class="ep-head" onclick="this.parentElement.classList.toggle('open')">
+    <div class="ep-head">
       <h3><span class="ep-num">04</span>佐藤心ステップアップエピソード1<span class="lesson-tag">STEP</span></h3>
       <span class="arrow">▼</span>
     </div>
@@ -355,7 +358,7 @@
 
   <!-- Episode 05 -->
   <div class="ep-block">
-    <div class="ep-head" onclick="this.parentElement.classList.toggle('open')">
+    <div class="ep-head">
       <h3><span class="ep-num">05</span>佐藤心Voレッスンエピソード2<span class="lesson-tag">Vo</span></h3>
       <span class="arrow">▼</span>
     </div>
@@ -374,7 +377,7 @@
 
   <!-- Episode 06 -->
   <div class="ep-block">
-    <div class="ep-head" onclick="this.parentElement.classList.toggle('open')">
+    <div class="ep-head">
       <h3><span class="ep-num">06</span>佐藤心Daレッスンエピソード2<span class="lesson-tag">Da</span></h3>
       <span class="arrow">▼</span>
     </div>
@@ -393,7 +396,7 @@
 
   <!-- Episode 07 -->
   <div class="ep-block">
-    <div class="ep-head" onclick="this.parentElement.classList.toggle('open')">
+    <div class="ep-head">
       <h3><span class="ep-num">07</span>佐藤心Viレッスンエピソード2<span class="lesson-tag">Vi</span></h3>
       <span class="arrow">▼</span>
     </div>
@@ -413,7 +416,7 @@
 
   <!-- Episode 08 -->
   <div class="ep-block">
-    <div class="ep-head" onclick="this.parentElement.classList.toggle('open')">
+    <div class="ep-head">
       <h3><span class="ep-num">08</span>佐藤心ステップアップエピソード2<span class="lesson-tag">STEP</span></h3>
       <span class="arrow">▼</span>
     </div>
@@ -432,14 +435,8 @@
 
 </div>
 
-<script>
-function switchTab(btn, tab) {
-    document.querySelectorAll('.voice-tab').forEach(function(b) { b.classList.remove('active'); });
-    document.querySelectorAll('.voice-tab-content').forEach(function(c) { c.classList.remove('active'); });
-    btn.classList.add('active');
-    document.querySelector('.voice-tab-content[data-tab="' + tab + '"]').classList.add('active');
-}
-</script>
+<script src="components/common.js"></script>
 <script src="components/idol-badge.js"></script>
 </body>
 </html>
+

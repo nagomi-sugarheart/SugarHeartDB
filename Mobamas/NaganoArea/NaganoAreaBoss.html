@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -32,24 +32,17 @@
 
 <div class="page">
 
-<div class="rtab-wrapper">
-
-    <!-- ラジオボタン -->
-    <input type="radio" name="boss-tab" id="boss-tab-1" checked>
-    <input type="radio" name="boss-tab" id="boss-tab-2">
-    <input type="radio" name="boss-tab" id="boss-tab-3">
-    <input type="radio" name="boss-tab" id="boss-tab-final">
-
-    <!-- タブナビ -->
-    <nav class="rtab-nav">
-        <label for="boss-tab-1" class="rtab-btn">＊1st</label>
-        <label for="boss-tab-2" class="rtab-btn">＊2nd</label>
-        <label for="boss-tab-3" class="rtab-btn">＊3rd</label>
-        <label for="boss-tab-final" class="rtab-btn">＊Final</label>
-    </nav>
+<div class="tab-group">
+<!-- タブナビ -->
+    <div class="tab-list">
+    <button class="tab-item active" onclick="switchTab(this,'boss-tab-1')">＊1st</button>
+    <button class="tab-item" onclick="switchTab(this,'boss-tab-2')">＊2nd</button>
+    <button class="tab-item" onclick="switchTab(this,'boss-tab-3')">＊3rd</button>
+    <button class="tab-item" onclick="switchTab(this,'boss-tab-final')">＊Final</button>
+</div>
 
     <!-- 1st -->
-    <div class="rtab-panel bt-1">
+    <div class="tab-panel active" data-tab="boss-tab-1">
         <div class="box-area">
             <h2 class="box-title">＊1st</h2>
             <div class="split">
@@ -89,7 +82,7 @@
     </div>
 
     <!-- 2nd -->
-    <div class="rtab-panel bt-2">
+    <div class="tab-panel" data-tab="boss-tab-2">
         <div class="box-area">
             <h2 class="box-title">＊2nd</h2>
             <div class="split">
@@ -129,7 +122,7 @@
     </div>
 
     <!-- 3rd -->
-    <div class="rtab-panel bt-3">
+    <div class="tab-panel" data-tab="boss-tab-3">
         <div class="box-area">
             <h2 class="box-title">＊3rd</h2>
             <div class="split">
@@ -169,7 +162,7 @@
     </div>
 
     <!-- Final -->
-    <div class="rtab-panel bt-final">
+    <div class="tab-panel" data-tab="boss-tab-final">
         <div class="box-area">
             <h2 class="box-title">＊Final</h2>
             <div class="split">
@@ -208,9 +201,11 @@
         </div>
     </div>
 
-</div><!-- /.rtab-wrapper -->
+</div><!-- /.tab-group -->
 
 </div><!-- /.page -->
 
+<script src="components/common.js"></script>
 </body>
 </html>
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -52,23 +52,15 @@
     ラジオタブ + 各コミュパネル
     ============================================================
     -->
-    <div class="rtab-wrapper">
-
-        <!-- ラジオボタン（5コミュ分） -->
-        <input type="radio" name="mc-tab" id="mc-tab-1" checked>
-        <input type="radio" name="mc-tab" id="mc-tab-2">
-        <input type="radio" name="mc-tab" id="mc-tab-3">
-        <input type="radio" name="mc-tab" id="mc-tab-4">
-        <input type="radio" name="mc-tab" id="mc-tab-5">
-
-        <!-- タブナビ -->
-        <nav class="rtab-nav">
-            <label for="mc-tab-1" class="rtab-btn">コミュ 1</label><!-- TODO: コミュ名に変更 -->
-            <label for="mc-tab-2" class="rtab-btn">コミュ 2</label><!-- TODO -->
-            <label for="mc-tab-3" class="rtab-btn">コミュ 3</label><!-- TODO -->
-            <label for="mc-tab-4" class="rtab-btn">コミュ 4</label><!-- TODO -->
-            <label for="mc-tab-5" class="rtab-btn">コミュ 5</label><!-- TODO -->
-        </nav>
+    <div class="tab-group">
+<!-- タブナビ -->
+        <div class="tab-list">
+    <button class="tab-item active" onclick="switchTab(this,'mc-tab-1')">コミュ 1</button>
+    <button class="tab-item" onclick="switchTab(this,'mc-tab-2')">コミュ 2</button>
+    <button class="tab-item" onclick="switchTab(this,'mc-tab-3')">コミュ 3</button>
+    <button class="tab-item" onclick="switchTab(this,'mc-tab-4')">コミュ 4</button>
+    <button class="tab-item" onclick="switchTab(this,'mc-tab-5')">コミュ 5</button>
+</div>
 
         <!--
         ============================================================
@@ -80,7 +72,7 @@
         -->
 
         <!-- コミュ 1 -->
-        <div class="rtab-panel bt-1">
+        <div class="tab-panel active" data-tab="mc-tab-1">
 
             <div class="cast-block">
                 <div class="label">CAST</div>
@@ -112,7 +104,7 @@
         </div>
 
         <!-- コミュ 2 -->
-        <div class="rtab-panel bt-2">
+        <div class="tab-panel" data-tab="mc-tab-2">
 
             <div class="cast-block">
                 <div class="label">CAST</div>
@@ -135,7 +127,7 @@
         </div>
 
         <!-- コミュ 3 -->
-        <div class="rtab-panel bt-3">
+        <div class="tab-panel" data-tab="mc-tab-3">
 
             <div class="cast-block">
                 <div class="label">CAST</div>
@@ -158,7 +150,7 @@
         </div>
 
         <!-- コミュ 4 -->
-        <div class="rtab-panel bt-4">
+        <div class="tab-panel" data-tab="mc-tab-4">
 
             <div class="cast-block">
                 <div class="label">CAST</div>
@@ -181,7 +173,7 @@
         </div>
 
         <!-- コミュ 5 -->
-        <div class="rtab-panel bt-5">
+        <div class="tab-panel" data-tab="mc-tab-5">
 
             <div class="cast-block">
                 <div class="label">CAST</div>
@@ -203,7 +195,7 @@
 
         </div>
 
-    </div><!-- /.rtab-wrapper -->
+    </div><!-- /.tab-group -->
 
 </div><!-- /.page -->
 
@@ -258,6 +250,8 @@ HTML側で設定が必要な値:
     });
 }());
 </script>
+<script src="components/common.js"></script>
 <script src="components/idol-badge.js"></script>
 </body>
 </html>
+
