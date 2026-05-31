@@ -4229,22 +4229,31 @@ input[name="dialogue-tab"] {
     gap: 6px;
 }
 .v2-meta-panel h2::before { content: "♥"; color: var(--sh-pink); }
-.v2-meta-grid { display: flex; flex-direction: column; }
-.v2-meta-row {
+.v2-meta-grid {
     display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 8px;
+    grid-template-columns: 1fr 1fr;
+}
+.v2-meta-row {
+    display: flex;
+    gap: 5px;
     padding: 7px 0;
     border-bottom: 1px dotted var(--sh-line);
     font-size: 12px;
-    align-items: center;
+    align-items: baseline;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .v2-meta-row:last-child { border-bottom: none; }
+.v2-meta-wide {
+    grid-column: span 2;
+    white-space: normal;
+}
 .v2-meta-k {
     color: var(--sh-text-soft);
     font-family: ui-monospace, monospace;
     font-size: 10px;
     letter-spacing: 0.06em;
+    flex-shrink: 0;
 }
 .v2-meta-v { color: var(--sh-text); }
 

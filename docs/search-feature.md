@@ -33,7 +33,7 @@
 |------|-------------|-----|
 | `card` | `data/mobamas.csv` のセリフ列 | `CardList.html` |
 | `unit` | `data/udetail.csv` の台詞列 | 各ユニット詳細ページ |
-| `story` | `Mobamas/**/*.html` および `Deresute/**/*.html` の `.script-row` / `.dialog .body` / `.ev-dialog-row .ev-text` 要素 | 各ストーリーページ |
+| `story` | `Mobamas/**/*.html`、`Deresute/**/*.html`、`Popmas/*.html` の各セリフ要素 | 各ストーリーページ |
 
 ---
 
@@ -45,7 +45,8 @@
 | `data/ulist.csv` | ユニット名・メンバー（unit の idol フィールド生成に使用） |
 | `data/udetail.csv` | ユニット台詞（type: unit） |
 | `Mobamas/**/*.html` | ストーリー台詞 `.script-row` / `.dialog .body` / `.ev-dialog-row .ev-text` （type: story） |
-| `Deresute/**/*.html` | ストーリー台詞 `.script-row` / `.dialog .body` （type: story） |
+| `Deresute/**/*.html` | ストーリー台詞 `.script-row` / `.dialog .body` / `.v2-dialogue-content .v2-accord-body p` （type: story） |
+| `Popmas/*.html` | セリフ `.ev-dialog-row .ev-text` （type: story） |
 | `data/cgss_idols.csv` | アイドル選択ドロップダウンの選択肢生成（JS側でフェッチ） |
 
 ---
@@ -66,7 +67,7 @@ python _generate_search_index.py
 
 - `data/mobamas.csv` にカードを追加・変更した時
 - `data/udetail.csv` にユニット台詞を追加・変更した時
-- `Mobamas/` または `Deresute/` 以下にストーリーページを追加・変更した時
+- `Mobamas/`、`Deresute/`、または `Popmas/` 以下にストーリーページを追加・変更した時
 
 ---
 
@@ -89,6 +90,7 @@ python _generate_search_index.py
 | 形式B（KirakiraModelChallenge等）| `.dialog .body .text` |
 | 形式C（ユニット詳細）| `.ud-dialogue .line` |
 | 形式D（イベント中セリフ・他アイドル言及）| `.ev-dialog-row .ev-text` |
+| 形式E（デレステカード詳細セリフ）| `.v2-dialogue-content .v2-accord-body p` |
 
 ### 動作
 

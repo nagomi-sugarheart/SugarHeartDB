@@ -204,6 +204,8 @@ class DialogueParser(HTMLParser):
       A: .script-row[data-who] > .line
       B: .dialog .body > .line-head .speaker[data-who]  + .text
       C: .ud-dialogue .line（.speaker スパンはスキップ）
+      E: .v2-dialogue-content .v2-accord-body p（デレステカード詳細セリフ）
+      F: .ev-dialog-row .ev-text（v2-accord外、Popmasなど）
     """
 
     def __init__(self):
@@ -241,6 +243,22 @@ class DialogueParser(HTMLParser):
         # ev-text 内の個別 speaker スパン（行ごとの話者）
         self._in_ev_text_speaker = False
         self._ev_text_line_who = ''
+
+        # 形式E: .v2-dialogue-content .v2-accord-body p（デレステカード詳細セリフ）
+        self._in_v2_dialogue = False
+        self._v2_dialogue_depth = -1
+        self._in_v2_accord_body_e = False
+        self._v2_accord_body_e_depth = -1
+        self._in_v2_p_e = False
+        self._v2_p_e_depth = -1
+        self._v2_p_e_text = ''
+
+        # 形式F: .ev-dialog-row .ev-text（v2-accord外、Popmasなど）
+        self._in_standalone_ev_row = False
+        self._standalone_ev_row_depth = -1
+        self._in_standalone_ev_text_f = False
+        self._standalone_ev_text_f_depth = -1
+        self._standalone_ev_text_f_text = ''
 
         self._stack = []  # タグスタックで深さ管理
 
@@ -289,6 +307,29 @@ class DialogueParser(HTMLParser):
             self._ud_line_who = ''
         if self._in_ud_line and tag == 'span' and self._has_class(attrs_dict, 'speaker'):
             self._in_speaker_c = True
+
+        # 形式E: .v2-dialogue-content .v2-accord-body p
+        if tag == 'div' and self._has_class(attrs_dict, 'v2-dialogue-content'):
+            self._in_v2_dialogue = True
+            self._v2_dialogue_depth = len(self._stack)
+        if self._in_v2_dialogue and tag == 'div' and self._has_class(attrs_dict, 'v2-accord-body'):
+            self._in_v2_accord_body_e = True
+            self._v2_accord_body_e_depth = len(self._stack)
+        if self._in_v2_accord_body_e and tag == 'p':
+            self._in_v2_p_e = True
+            self._v2_p_e_depth = len(self._stack)
+            self._v2_p_e_text = ''
+
+        # 形式F: .ev-dialog-row .ev-text（v2-accord外）
+        if (self._v2_accord_depth < 0
+                and tag == 'div' and self._has_class(attrs_dict, 'ev-dialog-row')):
+            self._in_standalone_ev_row = True
+            self._standalone_ev_row_depth = len(self._stack)
+        if (self._in_standalone_ev_row
+                and tag == 'div' and self._has_class(attrs_dict, 'ev-text')):
+            self._in_standalone_ev_text_f = True
+            self._standalone_ev_text_f_depth = len(self._stack)
+            self._standalone_ev_text_f_text = ''
 
         # 形式D: .v2-accord > (head の speaker) + .ev-text
         if tag == 'div' and self._has_class(attrs_dict, 'v2-accord'):
@@ -351,6 +392,29 @@ class DialogueParser(HTMLParser):
                 self.entries.append((who, text))
             self._in_ud_line = False
 
+        # 形式E終了: <p>
+        if self._in_v2_p_e and depth < self._v2_p_e_depth:
+            text = self._v2_p_e_text.strip()
+            if text:
+                self.entries.append(('心', text))
+            self._in_v2_p_e = False
+        # 形式E終了: .v2-accord-body
+        if self._in_v2_accord_body_e and depth < self._v2_accord_body_e_depth:
+            self._in_v2_accord_body_e = False
+        # 形式E終了: .v2-dialogue-content
+        if self._in_v2_dialogue and depth < self._v2_dialogue_depth:
+            self._in_v2_dialogue = False
+
+        # 形式F終了: ev-text
+        if self._in_standalone_ev_text_f and depth < self._standalone_ev_text_f_depth:
+            text = self._standalone_ev_text_f_text.strip()
+            if text:
+                self.entries.append(('心', text))
+            self._in_standalone_ev_text_f = False
+        # 形式F終了: ev-dialog-row
+        if self._in_standalone_ev_row and depth < self._standalone_ev_row_depth:
+            self._in_standalone_ev_row = False
+
         # 形式D: ev-text 内の speaker スパン終了
         if self._in_ev_text_speaker and tag == 'span':
             self._in_ev_text_speaker = False
@@ -393,6 +457,12 @@ class DialogueParser(HTMLParser):
         if self._in_ev_text_d and not self._in_ev_text_speaker:
             self._ev_text_d_text += data
 
+        if self._in_v2_p_e:
+            self._v2_p_e_text += data
+
+        if self._in_standalone_ev_text_f:
+            self._standalone_ev_text_f_text += data
+
 
 def html_to_url(html_path):
     """絶対パスをサイトルートからの相対URLに変換する。"""
@@ -406,6 +476,7 @@ def load_story_entries(idol_map):
     patterns = [
         os.path.join(BASE_DIR, 'Mobamas', '**', '*.html'),
         os.path.join(BASE_DIR, 'Deresute', '**', '*.html'),
+        os.path.join(BASE_DIR, 'Popmas', '*.html'),
     ]
     # スキップするファイル名パターン
     SKIP_FILES = {'index.html', 'EventList.html', 'CardList.html', 'CostumeList.html',
