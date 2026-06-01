@@ -19,6 +19,14 @@ import cloudinary.uploader
 ssl._create_default_https_context = ssl._create_unverified_context
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
+# Patch cloudinary's CERT_KWARGS to disable SSL verification (uses urllib3 directly)
+cloudinary.CERT_KWARGS = {"cert_reqs": "CERT_NONE"}
+
+# Also replace the already-created PoolManager in uploader (created at import time)
+import urllib3
+import cloudinary.uploader as _uploader_mod
+_uploader_mod._http = urllib3.PoolManager(cert_reqs="CERT_NONE")
+
 CLOUD_NAME = "dnmzdghoi"
 API_KEY = os.environ["CLOUDINARY_APIKEY"]
 API_SECRET = os.environ["CLOUDINARY_APISECRETKEY"]
