@@ -44,7 +44,7 @@
 		- [ ] Happy New Yeah!
 		- [ ] SUN♡FLOWER
 		- [ ] 凸凹スピードスター
-		- [ ] 躍るFlagship
+		- [ ] 躍るFLAGSHIP
 		- [ ] オウムアムアに幸運を
 		- [ ] Go Just Go!
 		- [ ] CoCo夏夏夏Holiday
@@ -102,7 +102,7 @@
 		- [ ] CoCo夏夏夏Holiday
 		- [ ] 凸凹スピードスター
 		- [ ] しゅがーはぁと☆レボリューション
-		- [ ] 躍るFlagship
+		- [ ] 躍るFLAGSHIP
 		- [ ] オウムアムアに幸運を
 		- [ ] Go Just Go!
 		- [ ] ダンシング・デッド

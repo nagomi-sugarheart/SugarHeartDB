@@ -24,7 +24,12 @@
       "Bash(Select-Object -ExpandProperty FullName)",
       "Bash(xargs grep -l \"松尾千鶴\")",
       "Bash(Get-ChildItem *)",
-      "Bash(grep -E \"\\\\.\\(html|json|csv|js\\)$\")"
+      "Bash(grep -E \"\\\\.\\(html|json|csv|js\\)$\")",
+      "Bash(python3 *)",
+      "Bash(not exist *)",
+      "Bash(Remove-Item -Path \"C:\\\\Users\\\\sawas\\\\Desktop\\\\SugarHeartDB\\\\.vscode\\\\settings.json\" -Force)",
+      "Bash(Remove-Item -Path \"C:\\\\Users\\\\sawas\\\\Desktop\\\\SugarHeartDB\\\\.vscode\" -ErrorAction SilentlyContinue)",
+      "Bash(Write-Host \"done\")"
     ]
   },
   "spinnerTipsEnabled": false
