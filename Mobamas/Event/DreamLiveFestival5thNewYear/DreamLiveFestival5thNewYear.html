@@ -132,13 +132,14 @@
                 </label>
             </div>
         </div>
-        <div class="scene-section" data-scene="0" style="display:none">
+        <div class="scene-body" id="scene-body">
+
+            <!-- ======== Scene 01: イベント中セリフ ======== -->
+            <div class="scene-section" data-scene="0">
                 <div class="scene-meta">
                     <div class="scene-title"><span class="num">01</span>イベント中セリフ</div>
                 </div>
-        <div class="scene-body" id="scene-body">
-
-            <div class="ev-accord-list">
+                <div class="ev-accord-list">
                 <div class="v2-accord open">
                     <div class="v2-accord-head">
                         <div class="ev-accord-head-inner">
@@ -154,10 +155,9 @@
                             </div>
                         </div>
                     </div>
-                </div>            
-            </div>
-            <div class="ev-accord-list">
-                <div class="v2-accord open">
+                </div>
+
+                <div class="v2-accord">
                     <div class="v2-accord-head">
                         <div class="ev-accord-head-inner">
                             <span class="speaker" data-who="心">D.L.F ☆しゅがーはぁと☆</span>
@@ -173,6 +173,9 @@
                                 <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/App.jpg" alt="登場"></div>
                                 <div class="ev-text">お・ま・た・せ♪福招きはぁと、参上☆みんなに幸せをお届けっ</div>
                             </div>
+                        </div>
+                        <hr class="ev-divider">
+                        <div class="ev-entry">
                             <div class="ev-condition">
                                 <span class="ev-label">LIVEバトル</span>
                             </div>
@@ -180,13 +183,19 @@
                                 <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/Battle.jpg" alt="LIVEバトル"></div>
                                 <div class="ev-text">いい年になーれ☆ちゅっ♪</div>
                             </div>
+                        </div>
+                        <hr class="ev-divider">
+                        <div class="ev-entry">
                             <div class="ev-condition">
                                 <span class="ev-label">勝利</span>
                             </div>
                             <div class="ev-dialog-row">
-                                <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/WIN.jpg" alt="勝利"></div>
+                                <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/Win.jpg" alt="勝利"></div>
                                 <div class="ev-text">しゅがーはぁと初め、完了！今年もきっと幸せいっぱいだぞ☆</div>
                             </div>
+                        </div>
+                        <hr class="ev-divider">
+                        <div class="ev-entry">
                             <div class="ev-condition">
                                 <span class="ev-label">引き分け</span>
                             </div>
@@ -194,6 +203,9 @@
                                 <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/Draw.jpg" alt="引き分け"></div>
                                 <div class="ev-text">はぁ…ｶﾗﾀﾞ、重ぉ…。冬は肥えんだよなぁ…って、ﾏｲｸONのまま！？</div>
                             </div>
+                        </div>
+                        <hr class="ev-divider">
+                        <div class="ev-entry">
                             <div class="ev-condition">
                                 <span class="ev-label">敗北</span>
                             </div>
@@ -203,10 +215,17 @@
                             </div>
                         </div>
                     </div>
-                </div>            
+                </div>
+
+                </div>
             </div>
 
-            <div class="ev-accord-list">
+            <!-- ======== Scene 02: 他アイドル言及 ======== -->
+            <div class="scene-section" data-scene="1" style="display:none">
+                <div class="scene-meta">
+                    <div class="scene-title"><span class="num">02</span>他アイドル言及</div>
+                </div>
+                <div class="ev-accord-list">
                 <div class="v2-accord open">
                     <div class="v2-accord-head">
                         <div class="ev-accord-head-inner">
@@ -221,44 +240,64 @@
                             </div>
                             <div class="ev-dialog-row">
                                 <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/EternalHeartAgeApp.jpg" alt="登場"></div>
-                                <div class="ev-text"><span class="speaker" data-who="菜々">菜々</span>いよいよﾌｨﾅｰﾚ間近！ってことは、はぁとちゃんの出番ですね♪</div>
-                                <div class="ev-text"><span class="speaker" data-who="麻理菜">麻理菜</span>せっかくだし、景気づけてあげよっか！みんな、準備はいい？</div>
+                                <div class="ev-text">
+                                    <div class="ud-dialogue">
+                                        <span class="speaker" data-who="菜々">菜々</span>
+                                        <div class="line">いよいよﾌｨﾅｰﾚ間近！ってことは、はぁとちゃんの出番ですね♪</div>
+                                    </div>
+                                    <div class="ud-dialogue">
+                                        <span class="speaker" data-who="麻理菜">麻理菜</span>
+                                        <div class="line">せっかくだし、景気づけてあげよっか！みんな、準備はいい？</div>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <hr class="ev-divider">
+                        <div class="ev-entry">
                             <div class="ev-condition">
                                 <span class="ev-label">LIVEバトル</span>
                             </div>
                             <div class="ev-dialog-row">
-                                <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/Battle.jpg" alt="LIVEバトル"></div>
-                                <div class="ev-text">いい年になーれ☆ちゅっ♪</div>
+                                <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/EternalHeartAgeBattle.jpg" alt="LIVEバトル"></div>
+                                <div class="ev-text">募集中</div>
                             </div>
+                        </div>
+                        <hr class="ev-divider">
+                        <div class="ev-entry">
                             <div class="ev-condition">
                                 <span class="ev-label">勝利</span>
                             </div>
                             <div class="ev-dialog-row">
-                                <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/WIN.jpg" alt="勝利"></div>
-                                <div class="ev-text">しゅがーはぁと初め、完了！今年もきっと幸せいっぱいだぞ☆</div>
+                                <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/EternalHeartAgeWin.jpg" alt="勝利"></div>
+                                <div class="ev-text">募集中</div>
                             </div>
+                        </div>
+                        <hr class="ev-divider">
+                        <div class="ev-entry">
                             <div class="ev-condition">
                                 <span class="ev-label">引き分け</span>
                             </div>
                             <div class="ev-dialog-row">
-                                <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/Draw.jpg" alt="引き分け"></div>
-                                <div class="ev-text">はぁ…ｶﾗﾀﾞ、重ぉ…。冬は肥えんだよなぁ…って、ﾏｲｸONのまま！？</div>
+                                <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/EternalHeartAgeDraw.jpg" alt="引き分け"></div>
+                                <div class="ev-text">募集中</div>
                             </div>
+                        </div>
+                        <hr class="ev-divider">
+                        <div class="ev-entry">
                             <div class="ev-condition">
                                 <span class="ev-label">敗北</span>
                             </div>
                             <div class="ev-dialog-row">
-                                <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/Lose.jpg" alt="敗北"></div>
-                                <div class="ev-text">はぁとのｳｨﾝｸは、ご利益ﾊﾞﾂｸﾞﾝ！あぁんっ、目を逸らすなって☆</div>
+                                <div class="ev-shot"><img src="Mobamas/Event/DreamLiveFestival5thNewYear/EternalHeartAgeLose.jpg" alt="敗北"></div>
+                                <div class="ev-text">募集中</div>
                             </div>
                         </div>
                     </div>
-                </div>            
+                </div>
+                </div>
             </div>
 
         </div>
-    </div>
 
     <div class="related-foot">
         <div class="related">
@@ -281,6 +320,7 @@
 (function () {
     const pills = document.querySelectorAll('#scenes-list .scene-pill');
     const sections = document.querySelectorAll('#scene-body .scene-section');
+    if (!sections.length) return;
     pills.forEach(function (p, i) {
         p.addEventListener('click', function () {
             pills.forEach(function (x, j) { x.dataset.checked = (j === i) ? 'true' : 'false'; });
