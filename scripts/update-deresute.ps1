@@ -53,16 +53,16 @@ $mobamasMap = @{
 }
 
 $eventMap = @{
-    'Happy New Yeah!' = 'Deresute/Event/Event_HappyNewYeah.html'
-    '凸凹スピードスター' = 'Deresute/Event/Event_DekobokoSpeedStar.html'
-    'Go Just Go!' = 'Deresute/Event/Event_GoJustGo.html'
-    '躍るFLAGSHIP' = 'Deresute/Event/Event_OdoruFLAGSHIP.html'
-    'CoCo夏夏夏Holiday' = 'Deresute/Event/Event_CoCoNatsuHoliday.html'
-    '恋するいこいの乙女' = 'Deresute/Event/Event_KoisuruIkoiOtome.html'
-    'Dancing Dead' = 'Deresute/Event/Event_DancingDead.html'
-    '向日葵のきらめき' = 'Deresute/Event/Event_SunFlower.html'
-    'Take Me☆Take You' = 'Deresute/Event/Event_TakeMeTakeYou.html'
-    'ネクストチャプター' = 'Deresute/Event/Event_NextChapter.html'
+    'Happy New Yeah!' = 'Deresute/Event/HappyNewYeah.html'
+    '凸凹スピードスター' = 'Deresute/Event/DekobokoSpeedStar.html'
+    'Go Just Go!' = 'Deresute/Event/GoJustGo.html'
+    '躍るFLAGSHIP' = 'Deresute/Event/OdoruFLAGSHIP.html'
+    'CoCo夏夏夏Holiday' = 'Deresute/Event/CoCoNatsuHoliday.html'
+    '恋するいこいの乙女' = 'Deresute/Event/KoisuruIkoiOtome.html'
+    'Dancing Dead' = 'Deresute/Event/DancingDead.html'
+    '向日葵のきらめき' = 'Deresute/Event/SunFlower.html'
+    'Take Me☆Take You' = 'Deresute/Event/TakeMeTakeYou.html'
+    'ネクストチャプター' = 'Deresute/Event/NextChapter.html'
 }
 
 $specialMap = @{
