@@ -29,7 +29,11 @@
       "Bash(not exist *)",
       "Bash(Remove-Item -Path \"C:\\\\Users\\\\sawas\\\\Desktop\\\\SugarHeartDB\\\\.vscode\\\\settings.json\" -Force)",
       "Bash(Remove-Item -Path \"C:\\\\Users\\\\sawas\\\\Desktop\\\\SugarHeartDB\\\\.vscode\" -ErrorAction SilentlyContinue)",
-      "Bash(Write-Host \"done\")"
+      "Bash(Write-Host \"done\")",
+      "WebFetch(domain:seesaawiki.jp)",
+      "WebSearch",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_run_code_unsafe"
     ]
   },
   "spinnerTipsEnabled": false
