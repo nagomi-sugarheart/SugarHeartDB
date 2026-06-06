@@ -3428,6 +3428,7 @@ input[name="dialogue-tab"] {
     color: var(--sh-text-soft);
     white-space: nowrap;
 }
+.sort-controls { display: flex; justify-content: flex-end; margin-bottom: 8px; }
 .unit-sort-btn {
     padding: 6px 14px;
     border-radius: var(--r-pill);

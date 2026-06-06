@@ -42,42 +42,16 @@
             <div class="count">6 events</div>
             <div class="line"></div>
         </div>
+
+        <div class="sort-controls">
+            <button id="sort-btn" class="unit-sort-btn" data-order="asc" onclick="toggleSort()">新しい順 ▼</button>
+        </div>
+
         <div class="event-table">
 
-            <article class="event-row" onclick="location.href='Mobamas/Event/IdolLIVERoyale14th/IdolLIVERoyale14th.html'">
+            <article class="event-row" data-date="2014-06-24" onclick="location.href='Mobamas/Event/ProductionTalkBattle3rd/ProductionTalkBattle3rd.html'">
                 <div class="event-date">
-                    <div class="m">11</div>
-                    <div class="d">09</div>
-                </div>
-                <div class="event-title">
-                    <h3>第14回アイドルLIVEロワイヤル</h3>
-                </div>
-                <div class="event-reward">
-                    <div class="item">アイドルLIVEロワイヤル</div>
-                </div>
-                <div class="event-note">
-                    <a href="Mobamas/Event/IdolLIVERoyale14th/IdolLIVERoyale14th.html">詳細 →</a>
-                </div>
-            </article>
-
-            <article class="event-row" onclick="location.href='Mobamas/Event/PuchiDerellaCollection39th/PuchiDerellaCollection39th.html'">
-                <div class="event-date">
-                    <div class="m">04</div>
-                    <div class="d">25</div>
-                </div>
-                <div class="event-title">
-                    <h3>第39回ぷちでれらコレクション</h3>
-                </div>
-                <div class="event-reward">
-                    <div class="item">ぷちでれらコレクション</div>
-                </div>
-                <div class="event-note">
-                    <a href="Mobamas/Event/PuchiDerellaCollection39th/PuchiDerellaCollection39th.html">詳細 →</a>
-                </div>
-            </article>
-
-            <article class="event-row" onclick="location.href='Mobamas/Event/ProductionTalkBattle3rd/ProductionTalkBattle3rd.html'">
-                <div class="event-date">
+                    <div class="y">2014</div>
                     <div class="m">06</div>
                     <div class="d">24</div>
                 </div>
@@ -92,8 +66,9 @@
                 </div>
             </article>
 
-            <article class="event-row" onclick="location.href='Mobamas/Event/KirakiraModelChallenge/KirakiraModelChallenge.html'">
+            <article class="event-row" data-date="2014-09-30" onclick="location.href='Mobamas/Event/KirakiraModelChallenge/KirakiraModelChallenge.html'">
                 <div class="event-date">
+                    <div class="y">2014</div>
                     <div class="m">09</div>
                     <div class="d">30</div>
                 </div>
@@ -108,8 +83,26 @@
                 </div>
             </article>
 
-            <article class="event-row" onclick="location.href='Mobamas/Event/IdolProduce6thAnniversary/IdolProduce6thAnniversary.html'">
+            <article class="event-row" data-date="2015-11-09" onclick="location.href='Mobamas/Event/IdolLIVERoyale14th/IdolLIVERoyale14th.html'">
                 <div class="event-date">
+                    <div class="y">2015</div>
+                    <div class="m">11</div>
+                    <div class="d">09</div>
+                </div>
+                <div class="event-title">
+                    <h3>第14回アイドルLIVEロワイヤル</h3>
+                </div>
+                <div class="event-reward">
+                    <div class="item">アイドルLIVEロワイヤル</div>
+                </div>
+                <div class="event-note">
+                    <a href="Mobamas/Event/IdolLIVERoyale14th/IdolLIVERoyale14th.html">詳細 →</a>
+                </div>
+            </article>
+
+            <article class="event-row" data-date="2017-11-28" onclick="location.href='Mobamas/Event/IdolProduce6thAnniversary/IdolProduce6thAnniversary.html'">
+                <div class="event-date">
+                    <div class="y">2017</div>
                     <div class="m">11</div>
                     <div class="d">28</div>
                 </div>
@@ -124,8 +117,9 @@
                 </div>
             </article>
 
-            <article class="event-row" onclick="location.href='Mobamas/Event/DreamLiveFestival5thNewYear/DreamLiveFestival5thNewYear.html'">
+            <article class="event-row" data-date="2019-12-31" onclick="location.href='Mobamas/Event/DreamLiveFestival5thNewYear/DreamLiveFestival5thNewYear.html'">
                 <div class="event-date">
+                    <div class="y">2019</div>
                     <div class="m">12</div>
                     <div class="d">31</div>
                 </div>
@@ -140,10 +134,47 @@
                 </div>
             </article>
 
+            <article class="event-row" data-date="2022-04-25" onclick="location.href='Mobamas/Event/PuchiDerellaCollection39th/PuchiDerellaCollection39th.html'">
+                <div class="event-date">
+                    <div class="y">2022</div>
+                    <div class="m">04</div>
+                    <div class="d">25</div>
+                </div>
+                <div class="event-title">
+                    <h3>第39回ぷちでれらコレクション</h3>
+                </div>
+                <div class="event-reward">
+                    <div class="item">ぷちでれらコレクション</div>
+                </div>
+                <div class="event-note">
+                    <a href="Mobamas/Event/PuchiDerellaCollection39th/PuchiDerellaCollection39th.html">詳細 →</a>
+                </div>
+            </article>
+
         </div>
     </div>
 
 </div>
+
+<script>
+function toggleSort() {
+    const btn = document.getElementById('sort-btn');
+    const table = document.querySelector('.event-table');
+    const articles = Array.from(table.querySelectorAll('article.event-row'));
+    const currentOrder = btn.dataset.order;
+    const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
+
+    articles.sort((a, b) => {
+        const da = a.dataset.date;
+        const db = b.dataset.date;
+        return newOrder === 'asc' ? da.localeCompare(db) : db.localeCompare(da);
+    });
+
+    articles.forEach(a => table.appendChild(a));
+    btn.dataset.order = newOrder;
+    btn.textContent = newOrder === 'asc' ? '新しい順 ▼' : '古い順 ▲';
+}
+</script>
 
 </body>
 </html>
