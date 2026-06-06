@@ -2205,17 +2205,16 @@ input[name="dialogue-tab"] {
 }
 
 .event-date .m {
-    font-size: 0.7rem;
-    color: var(--sh-text-mute);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}
-
-.event-date .d {
     font-family: var(--font-display);
     font-size: 1.4rem;
     color: var(--sh-pink-deep);
     line-height: 1;
+}
+
+.event-date .d {
+    font-size: 0.7rem;
+    color: var(--sh-text-mute);
+    letter-spacing: 0.06em;
 }
 
 .event-date .y {
@@ -2969,7 +2968,7 @@ input[name="dialogue-tab"] {
         grid-template-columns: 70px 1fr;
     }
 
-    .event-date .d { font-size: 1.1rem; }
+    .event-date .m { font-size: 1.1rem; }
 }
 
 /* ----------------------------------------------------------
