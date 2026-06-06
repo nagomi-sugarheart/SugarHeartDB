@@ -110,7 +110,7 @@ def find_card_detail_pages(base_dirs: list) -> list:
     """
     # Files at the top level of a game subdirectory (CardList.html etc.) are excluded.
     # Card detail pages are always inside a subdirectory: GameDir/CardName/CardName.html
-    # We also include files like CinderellaHistory.html, PuchiDerela.html that are
+    # We also include files like CinderellaHistory.html, PuchiDerella.html that are
     # directly inside Mobamas/ but have dialogue tables — include all .html files.
     exclude_names = {
         'CardList.html',

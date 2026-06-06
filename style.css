@@ -5139,7 +5139,7 @@ input[name="dialogue-tab"] {
 
 .event-hero .banner {
     position: relative;
-    background: var(--grad-sugar-soft);
+    background: fff;
     border-bottom: 1px dashed var(--sh-line);
     min-width: 0;
 }

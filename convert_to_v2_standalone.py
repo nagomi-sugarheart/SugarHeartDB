@@ -15,7 +15,7 @@ SKIP_FILES = {
     "/home/user/SugarHeartDB/updates.html",
     "/home/user/SugarHeartDB/SugarHeartHistory.html",
     "/home/user/SugarHeartDB/Mobamas/CinderellaHistory.html",
-    "/home/user/SugarHeartDB/Mobamas/PuchiDerela.html",
+    "/home/user/SugarHeartDB/Mobamas/PuchiDerella.html",
 }
 
 FONT_LINES = [

@@ -76,7 +76,7 @@ function initV2Cycler(images, imgId, counterId) {
             });
         });
 
-        /* ep-block アコーディオン (PuchiDerela) */
+        /* ep-block アコーディオン (PuchiDerella) */
         document.querySelectorAll('.ep-block .ep-head').forEach(function (h) {
             h.style.cursor = 'pointer';
             h.addEventListener('click', function () {
