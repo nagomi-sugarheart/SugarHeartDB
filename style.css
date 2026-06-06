@@ -4256,6 +4256,7 @@ input[name="dialogue-tab"] {
     flex-shrink: 0;
 }
 .v2-meta-v { color: var(--sh-text); }
+.v2-meta-sep { color: var(--sh-text-mute); margin: 0 6px; flex-shrink: 0; }
 
 /* セリフエリア */
 .v2-dialogue-block {
