@@ -44,7 +44,11 @@
       "Bash(/c/Python314/python *)",
       "mcp__cloudinary__search-assets",
       "mcp__cloudinary__search-folders",
-      "mcp__cloudinary__asset-rename"
+      "mcp__cloudinary__asset-rename",
+      "Bash(grep -E \"\\\\.\\(jpg|jpeg|png|gif|webp|svg\\)$\")",
+      "Bash(git ls-tree *)",
+      "mcp__cloudinary__upload-asset",
+      "Bash(python *)"
     ]
   },
   "spinnerTipsEnabled": false
