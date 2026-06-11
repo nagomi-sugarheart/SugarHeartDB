@@ -4403,6 +4403,7 @@ input[name="dialogue-tab"] {
     flex: 1;
     min-width: 0;
 }
+.ev-text .ud-dialogue { padding-top: 4px; }
 .ev-shot img { cursor: zoom-in; }
 
 .ev-entry { display: flex; flex-direction: column; gap: 8px; }
