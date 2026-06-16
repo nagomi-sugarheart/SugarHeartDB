@@ -38,7 +38,17 @@
       "Bash(Sort-Object)",
       "Bash(Select-String \"StoryCommu|BusinessCommu|MemorialCommu|CommonVoice\")",
       "PowerShell(Get-ChildItem -Force \"C:\\\\Users\\\\sawas\\\\Desktop\\\\sugarheartdb\\\\\" | Where-Object { $_.Name -like \".claude\" -or $_.Name -like \".Claude\" } | Select-Object Name, FullName)",
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "Bash(python \"C:/Users/sawas/Desktop/sugarheartdb/_generate_search_index.py\" --version)",
+      "Bash(/c/Python314/python -c ' *)",
+      "Bash(/c/Python314/python *)",
+      "mcp__cloudinary__search-assets",
+      "mcp__cloudinary__search-folders",
+      "mcp__cloudinary__asset-rename",
+      "Bash(grep -E \"\\\\.\\(jpg|jpeg|png|gif|webp|svg\\)$\")",
+      "Bash(git ls-tree *)",
+      "mcp__cloudinary__upload-asset",
+      "Bash(python *)"
     ]
   },
   "spinnerTipsEnabled": false

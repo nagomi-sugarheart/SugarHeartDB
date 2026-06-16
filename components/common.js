@@ -76,7 +76,20 @@ function initV2Cycler(images, imgId, counterId) {
             });
         });
 
-        /* ep-block アコーディオン (PuchiDerela) */
+        /* URL ハッシュで v2-accord を自動展開してスクロール */
+        if (location.hash) {
+            try {
+                var hashTarget = document.querySelector(location.hash);
+                if (hashTarget && hashTarget.classList.contains('v2-accord')) {
+                    hashTarget.classList.add('open');
+                    setTimeout(function () {
+                        hashTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 50);
+                }
+            } catch (e) {}
+        }
+
+        /* ep-block アコーディオン (PuchiDerella) */
         document.querySelectorAll('.ep-block .ep-head').forEach(function (h) {
             h.style.cursor = 'pointer';
             h.addEventListener('click', function () {

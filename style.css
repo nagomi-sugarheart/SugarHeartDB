@@ -2205,17 +2205,16 @@ input[name="dialogue-tab"] {
 }
 
 .event-date .m {
-    font-size: 0.7rem;
-    color: var(--sh-text-mute);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}
-
-.event-date .d {
     font-family: var(--font-display);
     font-size: 1.4rem;
     color: var(--sh-pink-deep);
     line-height: 1;
+}
+
+.event-date .d {
+    font-size: 0.7rem;
+    color: var(--sh-text-mute);
+    letter-spacing: 0.06em;
 }
 
 .event-date .y {
@@ -2969,7 +2968,7 @@ input[name="dialogue-tab"] {
         grid-template-columns: 70px 1fr;
     }
 
-    .event-date .d { font-size: 1.1rem; }
+    .event-date .m { font-size: 1.1rem; }
 }
 
 /* ----------------------------------------------------------
@@ -3428,6 +3427,7 @@ input[name="dialogue-tab"] {
     color: var(--sh-text-soft);
     white-space: nowrap;
 }
+.sort-controls { display: flex; justify-content: flex-end; margin-bottom: 8px; }
 .unit-sort-btn {
     padding: 6px 14px;
     border-radius: var(--r-pill);
@@ -4403,6 +4403,7 @@ input[name="dialogue-tab"] {
     flex: 1;
     min-width: 0;
 }
+.ev-text .ud-dialogue { padding-top: 4px; }
 .ev-shot img { cursor: zoom-in; }
 
 .ev-entry { display: flex; flex-direction: column; gap: 8px; }
@@ -4410,6 +4411,13 @@ input[name="dialogue-tab"] {
 .ev-label { background: var(--sh-line); color: var(--sh-text-soft); border-radius: 3px; padding: 1px 6px; font-size: 11px; flex-shrink: 0; }
 .ev-cond-text { font-size: 12.5px; color: var(--sh-text-soft); }
 .ev-divider { border: none; border-top: 1.5px dashed var(--sh-line); margin: 10px 0; }
+.ev-scene-img {
+    display: block;
+    width: 100%;
+    border-radius: var(--r-sm);
+    margin-bottom: 14px;
+    cursor: zoom-in;
+}
 
 /* ── ライトボックス ── */
 .sh-lightbox {
@@ -5139,7 +5147,7 @@ input[name="dialogue-tab"] {
 
 .event-hero .banner {
     position: relative;
-    background: var(--grad-sugar-soft);
+    background: fff;
     border-bottom: 1px dashed var(--sh-line);
     min-width: 0;
 }
