@@ -244,6 +244,24 @@
     // ─────────────────────────────────────────────
 
     // 検索オーバーレイ HTML
+    // ─────────────────────────────────────────────
+    // サイト共通フッター
+    // ─────────────────────────────────────────────
+    var FOOTER_HTML = [
+        '<footer class="sh-site-footer">',
+        '  <div class="sh-site-footer-inner">',
+        '    <a class="sh-footer-x-btn" id="sh-footer-x-btn" href="#" target="_blank" rel="noopener noreferrer">',
+        '      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.727-8.834L1.254 2.25H8.08l4.262 5.633 5.902-5.633Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
+        '      Xでシェア',
+        '    </a>',
+        '    <div class="sh-footer-disclaimer">',
+        '      <p>このサイトはアイドルマスター シンデレラガールズの非公式ファンサイトです。<br>バンダイナムコエンターテインメント株式会社および各関連企業・団体とは一切関係ありません。</p>',
+        '      <p class="sh-footer-copyright">THE IDOLM@STER™ &amp; ©Bandai Namco Entertainment Inc.</p>',
+        '    </div>',
+        '  </div>',
+        '</footer>'
+    ].join('\n');
+
     var SEARCH_OVERLAY_HTML = [
         '<div class="sh-search-overlay" id="sh-search-overlay" aria-hidden="true">',
         '  <div class="sh-search-box">',
@@ -445,9 +463,18 @@
         document.body.style.overflow = '';
     }
 
-    // オーバーレイを body に挿入 + イベント設定
+    // オーバーレイ・フッターを body に挿入 + イベント設定
     document.addEventListener('DOMContentLoaded', function () {
         document.body.insertAdjacentHTML('beforeend', SEARCH_OVERLAY_HTML);
+
+        // フッター注入
+        document.body.insertAdjacentHTML('beforeend', FOOTER_HTML);
+        var xBtn = document.getElementById('sh-footer-x-btn');
+        if (xBtn) {
+            var shareUrl  = encodeURIComponent(window.location.href);
+            var shareText = encodeURIComponent(document.title + ' | SugarHeartDB');
+            xBtn.href = 'https://twitter.com/intent/tweet?url=' + shareUrl + '&text=' + shareText;
+        }
 
         var openBtn  = document.getElementById('sh-search-open-btn');
         var closeBtn = document.getElementById('sh-search-close');

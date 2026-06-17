@@ -6322,3 +6322,60 @@ input[name="dialogue-tab"] {
     color: var(--sh-pink-deep);
     border: 1px solid var(--sh-pink-soft);
 }
+
+/* ----------------------------------------------------------
+   サイト共通フッター
+---------------------------------------------------------- */
+.sh-site-footer {
+    margin-top: 64px;
+    padding: 36px 20px 28px;
+    background: var(--sh-pink-mist);
+    border-top: 1px solid var(--sh-line);
+    text-align: center;
+}
+
+.sh-site-footer-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sh-footer-x-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 22px;
+    background: #000;
+    color: #fff;
+    border-radius: var(--r-pill);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 700;
+    font-family: var(--font-body);
+    letter-spacing: 0.02em;
+    transition: opacity 0.18s;
+}
+
+.sh-footer-x-btn:hover {
+    opacity: 0.75;
+}
+
+.sh-footer-disclaimer {
+    font-size: 0.78rem;
+    color: var(--sh-text-mute);
+    line-height: 1.9;
+}
+
+.sh-footer-disclaimer p {
+    margin: 2px 0;
+}
+
+.sh-footer-copyright {
+    margin-top: 10px !important;
+    font-size: 0.74rem;
+    color: var(--sh-text-soft);
+    letter-spacing: 0.01em;
+}
