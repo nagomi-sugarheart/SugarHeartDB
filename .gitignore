@@ -1,6 +1,7 @@
 *.mp4
 *.xlsx
 *.mov
+*.b64.txt
 # Local Netlify folder
 .netlify
 __pycache__/
