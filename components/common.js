@@ -41,18 +41,58 @@ function initV2Cycler(images, imgId, counterId) {
     var total   = document.getElementById(counterId.replace(/-counter$/, '-total'));
     if (total) total.textContent = images.length;
     if (!img) return;
-    img.style.cursor = images.length > 1 ? 'pointer' : 'default';
-    if (images.length <= 1) return;
+
+    function isVideo(url) { return url.indexOf('/video/upload/') !== -1; }
+
+    // 動画URLが含まれる場合のみ <video> 要素を生成
+    var vid = null;
+    if (images.some(isVideo)) {
+        vid = document.createElement('video');
+        vid.autoplay = true;
+        vid.loop = true;
+        vid.muted = true;
+        vid.setAttribute('playsinline', '');
+        vid.setAttribute('disablePictureInPicture', '');
+        vid.style.display = 'none';
+        img.parentNode.insertBefore(vid, img.nextSibling);
+    }
+
     var idx = 0;
-    img.addEventListener('click', function () {
+
+    function showCurrent() {
+        var url = images[idx];
+        if (isVideo(url)) {
+            img.style.display = 'none';
+            if (vid) {
+                vid.src = url;
+                vid.style.display = '';
+                vid.play().catch(function(){});
+            }
+        } else {
+            if (vid) { vid.pause(); vid.src = ''; vid.style.display = 'none'; }
+            img.src = url;
+            img.style.display = '';
+        }
+        if (counter) counter.textContent = idx + 1;
+    }
+
+    img.style.cursor = images.length > 1 ? 'pointer' : 'default';
+    if (vid) vid.style.cursor = images.length > 1 ? 'pointer' : 'default';
+    if (images.length <= 1) return;
+
+    function advance() {
+        var cur = (vid && vid.style.display !== 'none') ? vid : img;
+        cur.style.opacity = '0.5';
         idx = (idx + 1) % images.length;
-        img.style.opacity = '0.5';
         setTimeout(function () {
-            img.src = images[idx];
+            showCurrent();
             img.style.opacity = '1';
-            if (counter) counter.textContent = idx + 1;
+            if (vid) vid.style.opacity = '1';
         }, 150);
-    });
+    }
+
+    img.addEventListener('click', advance);
+    if (vid) vid.addEventListener('click', advance);
 }
 
 /* ============================================================
