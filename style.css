@@ -6384,6 +6384,16 @@ input[name="dialogue-tab"] {
 /* ----------------------------------------------------------
    臨時ページ：投票チェックリスト（vc- プレフィックス）
 ---------------------------------------------------------- */
+.vc-video {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: 20px auto 0;
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow-sm);
+    background: #000;
+}
+
 .vc-steps {
     list-style: none;
     margin: 0;
