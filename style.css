@@ -6380,3 +6380,119 @@ input[name="dialogue-tab"] {
     color: var(--sh-text-soft);
     letter-spacing: 0.01em;
 }
+
+/* ----------------------------------------------------------
+   臨時ページ：投票チェックリスト（vc- プレフィックス）
+---------------------------------------------------------- */
+.vc-video {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 9 / 16;
+    margin: 20px auto 0;
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow-sm);
+    background: #000;
+    object-fit: contain;
+}
+
+.vc-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: vc-step;
+}
+
+.vc-steps li {
+    counter-increment: vc-step;
+    position: relative;
+    padding: 14px 0 14px 46px;
+    border-bottom: 2px dotted var(--sh-line);
+    line-height: 1.7;
+    color: var(--sh-text);
+}
+
+.vc-steps li:last-child {
+    border-bottom: none;
+}
+
+.vc-steps li::before {
+    content: counter(vc-step);
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--grad-sugar);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.vc-steps a {
+    color: var(--sh-pink-deep);
+    word-break: break-all;
+}
+
+.vc-note {
+    margin-top: 14px;
+    padding: 12px 16px;
+    background: var(--sh-pink-soft);
+    border-radius: var(--r-md);
+    font-size: 0.88rem;
+    color: var(--sh-text-soft);
+}
+
+.vc-checklist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vc-check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 4px;
+    border-bottom: 2px dotted var(--sh-line);
+    transition: opacity 0.2s;
+}
+
+.vc-check-item:last-child {
+    border-bottom: none;
+}
+
+.vc-check-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: var(--sh-pink);
+    cursor: pointer;
+}
+
+.vc-check-item label {
+    flex: 1;
+    line-height: 1.7;
+    color: var(--sh-text);
+    cursor: pointer;
+}
+
+.vc-check-item.vc-done {
+    opacity: 0.45;
+}
+
+.vc-check-item.vc-done label {
+    text-decoration: line-through;
+    color: var(--sh-text-mute);
+}
+
+@media screen and (max-width: 900px) {
+    .vc-steps li { padding-left: 40px; }
+    .vc-steps li::before { width: 24px; height: 24px; font-size: 0.78rem; }
+}

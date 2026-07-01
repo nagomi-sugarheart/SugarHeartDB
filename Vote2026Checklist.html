@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <base href="/SugarHeartDB/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投票チェックリスト（臨時）｜SugarHeartDB</title>
+    <meta name="description" content="CG総選挙2026 投票のやることチェックリスト（個人用の臨時ページ）。">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="components/header.js"></script>
+
+<section class="page-hero">
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>投票チェックリスト（臨時）</strong></div>
+    <h1>投票チェックリスト <span class="sub">/ VOTE 2026</span></h1>
+    <p class="summary">CG総選挙2026の投票関連タスクをまとめた個人用の臨時ページです。トップページからはリンクしていません。</p>
+</section>
+
+<div class="page">
+    <div class="tab-group">
+        <div class="tab-list">
+            <button class="tab-item active" onclick="switchTab(this,'vc-tab-1')">毎日やること</button>
+            <button class="tab-item" onclick="switchTab(this,'vc-tab-2')">1回きりのやること</button>
+        </div>
+
+        <div class="tab-panel active" data-tab="vc-tab-1">
+            <div class="box-area">
+                <h2 class="box-title">毎日やること</h2>
+                <ol class="vc-steps">
+                    <li><a href="https://idolmaster-official.jp/cinderellagirls/vote2026/musicseries" target="_blank" rel="noopener noreferrer">投票ページ（Music Series）</a>にアクセスする</li>
+                    <li>Special Movieの一番上を適当に再生 → すぐ閉じる</li>
+                    <li>MV/Lyricsに移動する</li>
+                    <li>動画を2つ再生 → すぐ閉じる</li>
+                    <li>メニュー→VOTEから<a href="https://idolmaster-official.jp/cinderellagirls/vote2026/vote/mission" target="_blank" rel="noopener noreferrer">ミッションページ</a>に移動する</li>
+                    <li>基本ミッションの「ログインする」「MVを視聴」「動画を視聴」などの投票券を受け取る</li>
+                    <li>（アソビストアプレミアムの人のみ）プレミアムミッションの「ログインする」の投票権を受け取る（日次/月次）</li>
+                </ol>
+                <video class="vc-video" src="https://res.cloudinary.com/dnmzdghoi/video/upload/v1782907755/HowToVote_iddxyv.mp4" controls playsinline preload="metadata"></video>
+            </div>
+        </div>
+
+        <div class="tab-panel" data-tab="vc-tab-2">
+            <div class="box-area">
+                <h2 class="box-title">1回きりのやること</h2>
+                <p class="vc-note">チェックすると一番下に移動してグレーアウトします。</p>
+                <ul class="vc-checklist" id="vc-checklist">
+                    <li class="vc-check-item" data-id="follow-x">
+                        <input type="checkbox" id="vc-item-1">
+                        <label for="vc-item-1">Xをフォローする（ボタンを押せばフォローしなくても、元の画面に戻っても達成されます）</label>
+                    </li>
+                    <li class="vc-check-item" data-id="asobistore-register">
+                        <input type="checkbox" id="vc-item-2">
+                        <label for="vc-item-2">アソビストア会員登録をする</label>
+                    </li>
+                    <li class="vc-check-item" data-id="password-mission">
+                        <input type="checkbox" id="vc-item-3">
+                        <label for="vc-item-3">「CG総選挙ST@TION スペシャルミッション」の合言葉を入力、で合言葉入力画面に進み、「永遠の愛」を入力する</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function () {
+    var STORAGE_KEY = 'sh-vote2026-checklist-done';
+    var list = document.getElementById('vc-checklist');
+    if (!list) return;
+
+    var done = [];
+    try { done = JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; } catch (e) { done = []; }
+
+    function setDone(item, isDone) {
+        item.classList.toggle('vc-done', isDone);
+        item.querySelector('input[type="checkbox"]').checked = isDone;
+    }
+
+    function save() {
+        var ids = [];
+        list.querySelectorAll('.vc-check-item.vc-done').forEach(function (item) {
+            ids.push(item.dataset.id);
+        });
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(ids));
+    }
+
+    list.querySelectorAll('.vc-check-item').forEach(function (item) {
+        if (done.indexOf(item.dataset.id) !== -1) {
+            setDone(item, true);
+            list.appendChild(item);
+        }
+        item.querySelector('input[type="checkbox"]').addEventListener('change', function (e) {
+            var isDone = e.target.checked;
+            setDone(item, isDone);
+            if (isDone) list.appendChild(item);
+            save();
+        });
+    });
+})();
+</script>
+
+<script src="components/common.js"></script>
+</body>
+</html>
