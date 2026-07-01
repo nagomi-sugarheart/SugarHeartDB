@@ -6387,11 +6387,13 @@ input[name="dialogue-tab"] {
 .vc-video {
     display: block;
     width: 100%;
-    max-width: 480px;
+    max-width: 280px;
+    aspect-ratio: 9 / 16;
     margin: 20px auto 0;
     border-radius: var(--r-md);
     box-shadow: var(--shadow-sm);
     background: #000;
+    object-fit: contain;
 }
 
 .vc-steps {
