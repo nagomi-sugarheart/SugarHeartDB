@@ -12,9 +12,9 @@
     <meta property="og:title" content="イベント一覧（デレステ）｜SugarHeartDB">
     <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のイベント一覧（デレステ）をまとめたページです。">
     <meta property="og:site_name" content="SugarHeartDB">
-    <meta property="og:image" content="https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.jpg">
+    <meta property="og:image" content="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="SugarHeartDB">
+    <meta name="twitter:title" content="イベント一覧（デレステ）｜SugarHeartDB">
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
@@ -44,6 +44,11 @@
             <div class="count">13 events</div>
             <div class="line"></div>
         </div>
+
+        <div class="sort-controls">
+            <button id="sort-btn" class="unit-sort-btn" data-order="asc" onclick="toggleSort(this)">新しい順 ▼</button>
+        </div>
+
         <div class="event-table">
 
             <article class="event-row" data-accent="limited" onclick="location.href='Deresute/Event/KoisuruIkoiOtome.html'">
@@ -86,12 +91,12 @@
                 <div class="event-note"><a href="Deresute/Event/DekobokoSpeedStar.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="limited" onclick="location.href='Deresute/Event/OdoruFLAGSHIP.html'">
+            <article class="event-row" data-accent="limited" onclick="location.href='Deresute/Event/OdoruFlagship.html'">
                 <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
                 <div class="event-title"><h3>躍るFLAGSHIP</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="limited">限定カード</span></div>
                 <div class="event-reward"><div class="item">イベント限定</div></div>
-                <div class="event-note"><a href="Deresute/Event/OdoruFLAGSHIP.html">詳細 →</a></div>
+                <div class="event-note"><a href="Deresute/Event/OdoruFlagship.html">詳細 →</a></div>
             </article>
 
             <article class="event-row" data-accent="limited" onclick="location.href='Deresute/Event/OumuamuaKooun.html'">
@@ -154,6 +159,8 @@
     </div>
 
 </div>
+
+<script src="components/common.js"></script>
 
 </body>
 </html>

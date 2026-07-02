@@ -7,10 +7,12 @@
 
 ## JavaScript
 
-- **共通関数は `components/common.js` に定義されている**。全ページで `<script src="[相対パス]/components/common.js"></script>` を読み込む
-  - 定義されている関数: `switchTab`（タブ切り替え）、`v2SwitchTab`（v2対話タブ）、`initV2Cycler`（カード画像サイクル）
-  - DOMContentLoaded 自動初期化: `.lv-accord` アコーディオン、`.v2-accord-head` アコーディオン、`.ep-block .ep-head` アコーディオン、ライトボックス
-- ページ固有のJS（`v2CardImages` 配列・fetchなど）は各HTMLファイルの `<script>` タグに直書き
+- **共通関数は `components/common.js` に定義されている**。タブ・アコーディオン・サイクラー・DURATION・ソートを使うページで `<script src="[相対パス]/components/common.js"></script>` を読み込む（`</body>` 直前）
+  - 定義されている関数: `switchTab`（タブ切り替え）、`v2SwitchTab`（v2対話タブ）、`initV2Cycler`（カード画像サイクル）、`toggleSort`（イベント一覧の並び替え）
+  - DOMContentLoaded 自動初期化: `#v2-card-main-img` の `data-images` からv2カード画像サイクラーを自動起動、`#ud-duration` の `data-debut` からユニットDURATION（経過年月）を自動表示、`.lv-accord` アコーディオン、`.v2-accord-head` アコーディオン、`.ep-block .ep-head` アコーディオン、ライトボックス
+  - これらの自動初期化により、各ページ側でのインライン初期化スクリプトは不要（廃止済み）
+- カード詳細ページ（v2系）の左サイドバー「カード一覧」は `components/sidebar.js` が注入する。追加・変更は `sidebar.js` 内の `CARDS` 配列を編集するだけでよい
+- ページ固有のJS（fetchなど）は各HTMLファイルの `<script>` タグに直書き
 - **ナビ変更は `components/header.js` の `HEADER_HTML` だけ編集する**。HTMLファイルは触らない
 
 ## 新規HTMLページ作成チェックリスト

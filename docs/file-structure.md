@@ -19,7 +19,9 @@
 ├── Mobamas/                    # モバマス関連
 │   ├── CardList.html           # カード一覧
 │   ├── NaganoAreaBossLines.html
-│   ├── EventList.html
+│   ├── Event/
+│   │   ├── EventList.html      # イベント一覧（common.js の toggleSort で並び替え）
+│   │   └── [イベント名].html   # 各イベント詳細（フラット配置。旧・[イベント名]/[イベント名].html からは移動済み）
 │   ├── ... （その他コンテンツページ）
 │   └── [カード名]/
 │       ├── [カード名].html
@@ -27,7 +29,9 @@
 │       └── [カード名].jpg
 ├── Deresute/                   # デレステ関連
 │   ├── CardList.html
-│   ├── EventList.html
+│   ├── Event/
+│   │   ├── EventList.html      # イベント一覧（common.js の toggleSort で並び替え）
+│   │   └── [イベント名].html   # 各イベント詳細（フラット配置）
 │   ├── ... （その他コンテンツページ）
 │   └── [カード名]/
 │       ├── [カード名].html
@@ -43,6 +47,8 @@
 - ディレクトリ名はUpperCamelCase英語（例：`Mobamas/`, `Deresute/`, `Popmas/`, `General/`）
 - ファイル名はディレクトリ名の繰り返しを省く（例：`Mobamas/CardList.html`、`Deresute/EventList.html`）
 - カード詳細ページ：`[カード名ディレクトリ]/[カード名].html`（例：`Mobamas/AngelHeart/AngelHeart.html`）
+- **イベント詳細ページはフラット配置が規約**：`<ゲーム>/Event/<イベント名>.html`（例：`Deresute/Event/HappyNewYeah.html`）。カード詳細ページのようにイベント名ディレクトリを作らないこと。
+  - Mobamasのイベントページは従来 `Mobamas/Event/<イベント名>/<イベント名>.html` という入れ子構成だったが、Deresute側と統一するため `Mobamas/Event/<イベント名>.html` のフラット配置に移動済み。今後の新規イベントページもこのフラット配置で作成する。
 - ページ種別をまたぐ場合はプレフィックスで区別（例：`Event_HappyNewYeah.html`, `SeasonalEvents_Birthday.html`）
 
 ## 注意事項

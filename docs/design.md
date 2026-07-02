@@ -46,20 +46,21 @@
 
 | クラス名 | 用途 |
 |---|---|
-| `.main-title` | トップページのメインタイトルエリア（背景画像あり） |
-| `.sub-title` | サブページのタイトルエリア（グラデーション背景） |
-| `.page-hero` | サブページのヒーローセクション（パンくず＋h1＋概要） |
+| `.hero` / `.hero-text` / `.hero-visual` | トップページ（index.html）のメインタイトルエリア |
+| `.page-hero` | サブページのタイトルエリア・ヒーローセクション（パンくず＋h1＋概要）。**サブページの標準はこれ** |
 | `.sec-head` | セクション見出し（各ページ内の中項目タイトル） |
 | `.box-area` | 情報をまとめるボックス（ボーダー：ピンク） |
 | `.box-title` | ボックスの見出し |
 | `.box-item` | ボックス内の各行 |
 | `.table-area` | カード一覧テーブル |
-| `.tab-wrapper` | タブ切り替えUI（トップページ用・radio ベース） |
+| `.sh-container` / `.sh-container.tight` | 一覧ページなどの外枠コンテナ（`max-width` + 左右パディングを統一）。`.tight` は下部パディングを詰める |
 | `.disabled` | 未実装リンクのグレーアウト（pointer-events: none） |
+
+> `.main-title` / `.sub-title` は旧世代のクラス名で、`style.css` に定義は残っているが現在どのページからも使われていない（死んだCSS）。新規ページでは使わないこと。トップページのタイトル部は `.hero` 系、サブページは `.page-hero` を使う。
 
 ### タブ切り替え（共通・JSベース）
 
-全ページ共通のタブ切り替えUI。複数のタブグループを同一ページに置いても干渉しない。
+**新規ページのタブ切り替えはこのJSベース方式を標準とする。** 複数のタブグループを同一ページに置いても干渉しない。
 
 | クラス名 | 用途 |
 |---|---|
@@ -81,16 +82,29 @@
 
 `switchTab` 関数は `components/common.js` に定義されている。
 
-### カード詳細ページ
+なお `.tab-wrapper`（radioベースのタブ）はトップページ（index.html）の `.games`（ゲーム別タブ、CSS-only radio方式）以外では使われていない旧世代のクラスで、`style.css` に定義のみ残っている。**新規ページでは使わず、上記のJSベース方式を使うこと。**
+
+### カード詳細ページ（v2系・現行）
+
+Deresute/Mobamas の各カード詳細ページ（計77ページ）はすべて以下のv2系クラスで構成されている。
 
 | クラス名 | 用途 |
 |---|---|
-| `.detail-container` | カード詳細ページのレイアウト（サイドバー＋メイン） |
-| `.sidebar-cardlist` | 詳細ページの左サイドバー（カード一覧） |
-| `.accordion-item` | セリフエリアのアコーディオン（折りたたみ）UI |
-| `.card-navigation` | 前後のカードへのナビゲーション |
-| `.dialogue-area` | カードのセリフ表示エリア |
-| `.theater-checkbox` / `.theater-accordion-label` / `.theater-accordion-content` | シンデレラガールズ劇場セクションのアコーディオン（PCは常時展開、モバイルは閉じた状態） |
+| `.v2-detail-layout` | カード詳細ページ全体のレイアウト（サイドバー＋メイン） |
+| `.v2-sidebar` | 左サイドバー（カード一覧）。`components/sidebar.js` が生成・注入する |
+| `.v2-detail-main` | メインコンテンツ全体のラッパー |
+| `.v2-title-block` | カード名＋実装日のタイトルブロック |
+| `.v2-breadcrumb` | パンくずリスト |
+| `.v2-card-nav` | 前後カードへのナビゲーション（上下2箇所に設置） |
+| `.v2-card-hero` | カード画像＋メタ情報パネルのセクション |
+| `.v2-meta-panel` | カード情報（レアリティ・ステータス・スキル等）のパネル |
+| `.v2-dialogue-block` | セリフエリア全体（テキストタブ／画像タブ切り替え） |
+| `.v2-accord` / `.v2-accord-head` / `.v2-accord-body` | セリフ種別ごとのアコーディオン（開閉はcommon.jsが処理） |
+| `.v2-theater` 系 | シンデレラガールズ劇場セクション |
+| `.v2-gallery` | 関連ギャラリー（横スクロール） |
+| `.v2-related` | 関連ページリンク |
+
+> **旧世代クラス（`.detail-container` / `.sidebar-cardlist` / `.card-navigation` / `.dialogue-area` / `.theater-checkbox` / `.theater-accordion-label` / `.theater-accordion-content`）は現在どのページからも使われていない。** `style.css` に定義のみ残っている死んだCSS。唯一 `.accordion-item`（セリフの折りたたみUI）だけが `Deresute/GuestCommu/GuestCommu.html` で使用中。新規のカード詳細ページは必ずv2系クラスと `components/sidebar.js` を使うこと。
 
 ### ボスセリフページ
 
@@ -100,3 +114,38 @@
 | `.table-wrap` | テーブルのラッパー（左カラム） |
 | `.img-pc` | 画像エリア（PCのみ表示、右カラム） |
 | `.img-mobile` | 画像アコーディオン（モバイルのみ表示） |
+
+### 汎用ユーティリティ（`style.css` 末尾「汎用ユーティリティ」以降）
+
+インラインstyleの廃止に伴い追加された共通クラス群。
+
+| クラス名 | 用途 |
+|---|---|
+| `.placeholder-text` | 「準備中」「読み込み中」「画像募集中」などのプレースホルダ文。インラインstyleは使わずこのクラスを使う |
+| `.sh-container` / `.sh-container.tight` | 一覧ページの外枠コンテナ（`.sh-container` の説明は「ページ共通」表を参照） |
+| `.sh-tag.sh-tag-sm` | 一覧の行内バッジ用の小さめタグ |
+| `.sh-tag[data-tag="goods"]` | グッズ用タグの配色（ピンク背景） |
+| `.stats-strip` | 一覧ページ上部の統計ストリップ（例：CollabList.html） |
+| `.filter-chip .dot.collab` / `.dot.goods` / `.dot.campaign` | フィルターチップの種別ドット配色 |
+| `.ref-list` / `.ref-item` / `.ref-note` / `.ref-section` | References（参考・情報提供）ページ用のリスト表示。旧 `References.html` 内の `<style>` ブロックは廃止し、この定義に統合した |
+
+## コンポーネント構成
+
+| ファイル | 役割 | 読み込み位置 |
+|---|---|---|
+| `components/header.js` | 全ページ共通ヘッダー・フッター・グローバル検索。`HEADER_HTML` 変数を編集するだけでナビが変わる | `<body>` 直後 |
+| `components/common.js` | タブ切り替え（`switchTab`）、v2セリフタブ（`v2SwitchTab`）、画像サイクラー（`initV2Cycler`、`#v2-card-main-img` の `data-images` から自動初期化）、イベント一覧ソート（`toggleSort`）、ユニットDURATION自動計算（`#ud-duration` の `data-debut` から自動表示）、各種アコーディオン、ライトボックスを一元管理 | タブ・アコーディオン・サイクラー・DURATION・ソートを使うページの `</body>` 直前 |
+| `components/sidebar.js` | カード詳細ページ（v2系）左サイドバー「カード一覧」。`CARDS` 配列を編集するだけで一覧が変わる。詳細は「カード詳細ページ（v2系・現行）」を参照 | `.v2-detail-layout` 内、サイドバーを出したい位置 |
+| `components/idol-badge.js` | アイドル名バッジへのパーソナルカラー適用、セリフコピーボタンの自動挿入 | アイドル名バッジ表示のあるページの `</body>` 直前 |
+
+### JS読み込み規約
+
+- 全ページ共通: `components/header.js`（`<body>` 直後）
+- タブ・アコーディオン・サイクラー・DURATION・ソートのいずれかを使うページ: `components/common.js`（`</body>` 直前）
+- アイドル名バッジ表示のあるページ: `components/idol-badge.js`（`</body>` 直前）
+- カード詳細ページ: `components/sidebar.js`（`.v2-detail-layout` 内のサイドバー位置）
+
+### メタ情報の規約
+
+- `og:image` ・ favicon は必ずCloudinary URL（`https://res.cloudinary.com/dnmzdghoi/...`）を使用する。`github.io` の旧URLやリポジトリ相対パスは禁止
+- `twitter:title` は `og:title` と同じ、ページ固有のタイトルにする（サイト名の使い回し等は禁止）

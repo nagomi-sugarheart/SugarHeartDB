@@ -6496,3 +6496,84 @@ input[name="dialogue-tab"] {
     .vc-steps li { padding-left: 40px; }
     .vc-steps li::before { width: 24px; height: 24px; font-size: 0.78rem; }
 }
+
+/* ============================================================
+   汎用ユーティリティ（インラインstyle集約）
+============================================================ */
+
+/* プレースホルダ文（準備中・読み込み中・画像募集中 など） */
+.placeholder-text {
+    color: var(--sh-text-mute);
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+/* コンテンツ幅コンテナ（一覧ページの外枠） */
+.sh-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 28px 80px;
+}
+.sh-container.tight { padding-bottom: 8px; }
+
+/* 小さめタグ（一覧の行内バッジ用） */
+.sh-tag.sh-tag-sm { font-size: 0.68rem; }
+.sh-tag[data-tag="goods"] { background: var(--sh-pink); color: #fff; }
+
+/* ============================================================
+   コラボ・グッズ一覧（CollabList）統計ストリップ
+============================================================ */
+.stats-strip {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+}
+.filter-chip .dot.collab   { background: #d97fb8; }
+.filter-chip .dot.goods    { background: #fd89b9; }
+.filter-chip .dot.campaign { background: #f59e0b; }
+
+@media screen and (max-width: 900px) {
+    .stats-strip { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ============================================================
+   参考・情報提供ページ（References）
+============================================================ */
+.ref-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ref-item {
+    border-bottom: 1px solid var(--sh-border, rgba(255,255,255,0.08));
+    padding: 14px 0;
+}
+.ref-item:last-child {
+    border-bottom: none;
+}
+.ref-item a {
+    color: var(--sh-pink-deep, #e75480);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: opacity 0.15s;
+}
+.ref-item a:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+}
+.ref-item a::before {
+    content: "→";
+    font-size: 12px;
+    color: var(--sh-pink, #f08080);
+}
+.ref-note {
+    font-size: 12px;
+    color: var(--sh-text-mute, #888);
+    margin-top: 3px;
+}
+.ref-section {
+    margin-bottom: 32px;
+}
