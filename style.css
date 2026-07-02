@@ -5358,6 +5358,7 @@ input[name="dialogue-tab"] {
 .sec-head .ic.glyph-overview::before { content: "●○●"; font-size: 9px; letter-spacing: 1px; }
 .sec-head .ic.glyph-reward::before   { content: "✯"; font-size: 18px; }
 .sec-head .ic.glyph-dialogue::before { content: '""'; font-size: 20px; font-family: var(--font-display); }
+.sec-head .ic.glyph-movie::before    { content: "▶"; font-size: 14px; }
 
 /* ===== Credit strip ===== */
 .credit-strip {
