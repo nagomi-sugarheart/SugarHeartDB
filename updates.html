@@ -11,6 +11,7 @@
     <meta property="og:title" content="更新情報｜SugarHeartDB">
     <meta property="og:description" content="SugarHeartDBの更新情報一覧">
     <meta property="og:site_name" content="SugarHeartDB">
+    <meta property="og:image" content="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="更新情報｜SugarHeartDB">
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
@@ -30,7 +31,7 @@
 <div class="page">
     <section class="news">
         <div id="updates-list">
-            <p style="color:var(--sh-text-mute); padding:15px 0; font-size:14px;">読み込み中…</p>
+            <p class="placeholder-text">読み込み中…</p>
         </div>
     </section>
 </div>
@@ -60,7 +61,7 @@ fetch('data/updates.json')
     })
     .catch(function() {
         var container = document.getElementById('updates-list');
-        container.innerHTML = '<p style="color:var(--sh-text-mute); padding:15px 0; font-size:14px;">更新情報を読み込めませんでした。</p>';
+        container.innerHTML = '<p class="placeholder-text">更新情報を読み込めませんでした。</p>';
     });
 </script>
 

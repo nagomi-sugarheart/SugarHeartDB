@@ -22,18 +22,25 @@
 - 列：カード画像（アイコン）／レア度／カード名
 - カード名・アイコン画像をクリックすると詳細ページへ遷移
 
-### カード詳細ページ（例：Mobamas/AngelHeart/AngelHeart.html）
+### カード詳細ページ（例：Deresute/HeartToHeart/HeartToHeart.html）
 
-- 左サイドバー：カード一覧（PCのみ表示、スマホは非表示）
-- メインエリア：
-  - カード名＋実装日
-  - 前後カードへのナビゲーション
-  - カード画像（タップで次の画像に切り替わる）
-  - セリフエリア（テキストタブ／画像タブ切り替え、アコーディオン形式）
-  - シンデレラガールズ劇場（PC常時展開・モバイルはアコーディオン）
-  - 関連ギャラリー（横スクロール）
-  - 関連ページリンク
-- `v2CardImages` 配列（`<script>` タグ内）で画像パスを管理し、`initV2Cycler` で初期化する（`components/common.js` 参照）
+Deresute/Mobamas 計77ページすべて、以下の v2 系クラス構成・共通コンポーネント方式で統一されている（旧クラス `.detail-container` 等は現在未使用。`docs/design.md` の「カード詳細ページ（v2系・現行）」を参照）。
+
+- 全体は `.v2-detail-layout`（サイドバー＋メイン `.v2-detail-main` の構成）
+- **左サイドバー（カード一覧）は `components/sidebar.js` が注入する**（PCのみ表示、スマホは非表示）
+  - `.v2-detail-layout` の直下に `<script src="components/sidebar.js"></script>` を置くだけでよい
+  - カードの追加・変更は `sidebar.js` 内の `CARDS` 配列を編集するだけでよい（HTML側は触らない）
+  - アイコンURLは `href`（例：`Deresute/HeartToHeart/HeartToHeart.html`）の末尾 `.html` を `Icon` に置換してCloudinary public_idを自動導出する（例：`.../HeartToHeart/HeartToHeartIcon`）
+  - 現在アクティブなカードの判定はURL（`location.pathname`）から自動で行われる
+- メインエリア（`.v2-detail-main`）：
+  - `.v2-title-block` … カード名＋実装日
+  - `.v2-card-nav` … 前後カードへのナビゲーション（ページ上部・下部の2箇所）
+  - `.v2-card-hero` … カード画像（`.v2-main-img-area`）＋カード情報（`.v2-meta-panel`）
+  - `.v2-dialogue-block` … セリフエリア（テキストタブ／画像タブ切り替え、`.v2-accord` アコーディオン形式）
+  - シンデレラガールズ劇場（`.v2-theater` 系）
+  - `.v2-gallery` … 関連ギャラリー（横スクロール）
+  - `.v2-related` … 関連ページリンク
+- カード画像は `#v2-card-main-img` の `data-images` 属性（`|` 区切りのCloudinary URL）に列挙するだけでよい。`components/common.js` が `DOMContentLoaded` 時に自動検出して `initV2Cycler` を初期化する（ページ側でのインライン初期化スクリプトは不要・廃止済み）
 
 ## 新規ページ作成時のテンプレート
 

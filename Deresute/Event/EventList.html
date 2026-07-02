@@ -12,9 +12,9 @@
     <meta property="og:title" content="イベント一覧（デレステ）｜SugarHeartDB">
     <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のイベント一覧（デレステ）をまとめたページです。">
     <meta property="og:site_name" content="SugarHeartDB">
-    <meta property="og:image" content="https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.jpg">
+    <meta property="og:image" content="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="SugarHeartDB">
+    <meta name="twitter:title" content="イベント一覧（デレステ）｜SugarHeartDB">
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
@@ -44,106 +44,111 @@
             <div class="count">13 events</div>
             <div class="line"></div>
         </div>
+
+        <div class="sort-controls">
+            <button id="sort-btn" class="unit-sort-btn" data-order="asc" onclick="toggleSort(this)">新しい順 ▼</button>
+        </div>
+
         <div class="event-table">
 
-            <article class="event-row" data-accent="limited" onclick="location.href='Deresute/Event/KoisuruIkoiOtome.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2016-12-31" data-accent="limited" onclick="location.href='Deresute/Event/KoisuruIkoiOtome.html'">
+                <div class="event-date"><div class="y">2016</div><div class="m">12</div><div class="d">31</div></div>
                 <div class="event-title"><h3>命燃やして恋せよ乙女</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="limited">限定カード</span></div>
                 <div class="event-reward"><div class="item">イベント限定</div></div>
                 <div class="event-note"><a href="Deresute/Event/KoisuruIkoiOtome.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="limited" onclick="location.href='Deresute/Event/TakeMeTakeYou.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2017-07-31" data-accent="limited" onclick="location.href='Deresute/Event/TakeMeTakeYou.html'">
+                <div class="event-date"><div class="y">2017</div><div class="m">07</div><div class="d">31</div></div>
                 <div class="event-title"><h3>Take me☆Take you</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="limited">限定カード</span></div>
                 <div class="event-reward"><div class="item">イベント限定</div></div>
                 <div class="event-note"><a href="Deresute/Event/TakeMeTakeYou.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="seasonal" onclick="location.href='Deresute/Event/HappyNewYeah.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2018-01-01" data-accent="seasonal" onclick="location.href='Deresute/Event/HappyNewYeah.html'">
+                <div class="event-date"><div class="y">2018</div><div class="m">01</div><div class="d">01</div></div>
                 <div class="event-title"><h3>Happy New Yeah！</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="seasonal">季節</span></div>
                 <div class="event-reward"><div class="item">お正月イベント</div></div>
                 <div class="event-note"><a href="Deresute/Event/HappyNewYeah.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="limited" onclick="location.href='Deresute/Event/SunFlower.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2018-07-19" data-accent="limited" onclick="location.href='Deresute/Event/SunFlower.html'">
+                <div class="event-date"><div class="y">2018</div><div class="m">07</div><div class="d">19</div></div>
                 <div class="event-title"><h3>SUN♡FLOWER</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="limited">限定カード</span></div>
                 <div class="event-reward"><div class="item">イベント限定</div></div>
                 <div class="event-note"><a href="Deresute/Event/SunFlower.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="ranking" onclick="location.href='Deresute/Event/DekobokoSpeedStar.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2018-07-31" data-accent="ranking" onclick="location.href='Deresute/Event/DekobokoSpeedStar.html'">
+                <div class="event-date"><div class="y">2018</div><div class="m">07</div><div class="d">31</div></div>
                 <div class="event-title"><h3>凸凹スピードスター</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="ranking">ランキング</span></div>
                 <div class="event-reward"><div class="item">イベント限定</div></div>
                 <div class="event-note"><a href="Deresute/Event/DekobokoSpeedStar.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="limited" onclick="location.href='Deresute/Event/OdoruFLAGSHIP.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2021-03-19" data-accent="limited" onclick="location.href='Deresute/Event/OdoruFlagship.html'">
+                <div class="event-date"><div class="y">2021</div><div class="m">03</div><div class="d">19</div></div>
                 <div class="event-title"><h3>躍るFLAGSHIP</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="limited">限定カード</span></div>
                 <div class="event-reward"><div class="item">イベント限定</div></div>
-                <div class="event-note"><a href="Deresute/Event/OdoruFLAGSHIP.html">詳細 →</a></div>
+                <div class="event-note"><a href="Deresute/Event/OdoruFlagship.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="limited" onclick="location.href='Deresute/Event/OumuamuaKooun.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2020-06-30" data-accent="limited" onclick="location.href='Deresute/Event/OumuamuaKooun.html'">
+                <div class="event-date"><div class="y">2020</div><div class="m">06</div><div class="d">30</div></div>
                 <div class="event-title"><h3>オウムアムアに幸運を</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="limited">限定カード</span></div>
                 <div class="event-reward"><div class="item">イベント限定</div></div>
                 <div class="event-note"><a href="Deresute/Event/OumuamuaKooun.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="ranking" onclick="location.href='Deresute/Event/GoJustGo.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2020-08-31" data-accent="ranking" onclick="location.href='Deresute/Event/GoJustGo.html'">
+                <div class="event-date"><div class="y">2020</div><div class="m">08</div><div class="d">31</div></div>
                 <div class="event-title"><h3>Go Just Go!</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="ranking">ランキング</span></div>
                 <div class="event-reward"><div class="item">イベント限定</div></div>
                 <div class="event-note"><a href="Deresute/Event/GoJustGo.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="seasonal" onclick="location.href='Deresute/Event/CoCoNatsuHoliday.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2022-01-30" data-accent="seasonal" onclick="location.href='Deresute/Event/CoCoNatsuHoliday.html'">
+                <div class="event-date"><div class="y">2022</div><div class="m">01</div><div class="d">30</div></div>
                 <div class="event-title"><h3>CoCo夏夏夏 Holiday</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="seasonal">季節</span></div>
                 <div class="event-reward"><div class="item">夏イベント</div></div>
                 <div class="event-note"><a href="Deresute/Event/CoCoNatsuHoliday.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="limited" onclick="location.href='Deresute/Event/DancingDead.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2022-10-19" data-accent="limited" onclick="location.href='Deresute/Event/DancingDead.html'">
+                <div class="event-date"><div class="y">2022</div><div class="m">10</div><div class="d">19</div></div>
                 <div class="event-title"><h3>ダンシング・デッド</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="limited">限定カード</span></div>
                 <div class="event-reward"><div class="item">ハロウィンイベント</div></div>
                 <div class="event-note"><a href="Deresute/Event/DancingDead.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="limited" onclick="location.href='Deresute/Event/NextChapter.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2023-06-29" data-accent="limited" onclick="location.href='Deresute/Event/NextChapter.html'">
+                <div class="event-date"><div class="y">2023</div><div class="m">06</div><div class="d">29</div></div>
                 <div class="event-title"><h3>Next Chapter</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="limited">限定カード</span></div>
                 <div class="event-reward"><div class="item">イベント限定</div></div>
                 <div class="event-note"><a href="Deresute/Event/NextChapter.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="solo" onclick="location.href='Deresute/Event/IdolProduce1st.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2024-04-22" data-accent="solo" onclick="location.href='Deresute/Event/IdolProduce1st.html'">
+                <div class="event-date"><div class="y">2024</div><div class="m">04</div><div class="d">22</div></div>
                 <div class="event-title"><h3>第1回 アイドルプロデュース</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="solo">ソロ曲</span></div>
                 <div class="event-reward"><div class="item">アイドルプロデュース</div></div>
                 <div class="event-note"><a href="Deresute/Event/IdolProduce1st.html">詳細 →</a></div>
             </article>
 
-            <article class="event-row" data-accent="limited" onclick="location.href='Deresute/Event/NetsujouEnamorar.html'">
-                <div class="event-date"><div class="m">—</div><div class="d">—</div></div>
+            <article class="event-row" data-date="2025-06-27" data-accent="limited" onclick="location.href='Deresute/Event/NetsujouEnamorar.html'">
+                <div class="event-date"><div class="y">2025</div><div class="m">06</div><div class="d">27</div></div>
                 <div class="event-title"><h3>熱情エナモラル</h3></div>
                 <div class="event-tags"><span class="sh-tag" data-tag="limited">限定カード</span></div>
                 <div class="event-reward"><div class="item">イベント限定</div></div>
@@ -154,6 +159,8 @@
     </div>
 
 </div>
+
+<script src="components/common.js"></script>
 
 </body>
 </html>

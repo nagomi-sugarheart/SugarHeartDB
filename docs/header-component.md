@@ -34,3 +34,7 @@
 ## レイアウトへの影響
 
 - `body` には `padding-top: 64px` が設定済み（固定ヘッダー分）
+
+## 関連コンポーネント：サイドバー（カード詳細ページ）
+
+カード詳細ページ（v2系）の左サイドバー「カード一覧」も、header.js と同じ「`<script>` タグが自身の直前にHTMLを同期注入する」方式で `components/sidebar.js` から挿入される。カードの追加・変更は `sidebar.js` 内の `CARDS` 配列を編集するだけでよい。詳細は `docs/page-specs.md` を参照。
