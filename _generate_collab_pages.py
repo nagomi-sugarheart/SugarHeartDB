@@ -99,18 +99,18 @@ TEMPLATE = '''\
     <meta property="og:title" content="コラボ詳細｜SugarHeartDB">
     <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のコラボ・グッズ詳細ページです。">
     <meta property="og:site_name" content="SugarHeartDB">
-    <meta property="og:image" content="https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.jpg">
+    <meta property="og:image" content="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="SugarHeartDB">
-    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <meta name="twitter:title" content="コラボ詳細｜SugarHeartDB">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <script src="components/header.js"></script>
 
-<div id="detail-root" style="max-width:1180px; margin:0 auto; padding:0 28px 80px;">
+<div id="detail-root" class="sh-container">
     <div style="color:var(--sh-text-mute); padding:60px 0; text-align:center; font-size:0.95rem;">読み込み中…</div>
 </div>
 
@@ -133,7 +133,7 @@ var PAGE_IMAGES = [];
 
     function typeLabel(t) {
         if (t === 'collab')   return '<span class="sh-tag" data-tag="collab">コラボ</span>';
-        if (t === 'goods')    return '<span class="sh-tag" style="background:var(--sh-pink);color:#fff;">グッズ</span>';
+        if (t === 'goods')    return '<span class="sh-tag" data-tag="goods">グッズ</span>';
         if (t === 'campaign') return '<span class="sh-tag" data-tag="ranking">キャンペーン</span>';
         return '';
     }

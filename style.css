@@ -5358,6 +5358,7 @@ input[name="dialogue-tab"] {
 .sec-head .ic.glyph-overview::before { content: "●○●"; font-size: 9px; letter-spacing: 1px; }
 .sec-head .ic.glyph-reward::before   { content: "✯"; font-size: 18px; }
 .sec-head .ic.glyph-dialogue::before { content: '""'; font-size: 20px; font-family: var(--font-display); }
+.sec-head .ic.glyph-movie::before    { content: "▶"; font-size: 14px; }
 
 /* ===== Credit strip ===== */
 .credit-strip {
@@ -6379,4 +6380,201 @@ input[name="dialogue-tab"] {
     font-size: 0.74rem;
     color: var(--sh-text-soft);
     letter-spacing: 0.01em;
+}
+
+/* ----------------------------------------------------------
+   臨時ページ：投票チェックリスト（vc- プレフィックス）
+---------------------------------------------------------- */
+.vc-video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 9 / 16;
+    margin: 20px auto 0;
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow-sm);
+    background: #000;
+    object-fit: contain;
+}
+
+.vc-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: vc-step;
+}
+
+.vc-steps li {
+    counter-increment: vc-step;
+    position: relative;
+    padding: 14px 0 14px 46px;
+    border-bottom: 2px dotted var(--sh-line);
+    line-height: 1.7;
+    color: var(--sh-text);
+}
+
+.vc-steps li:last-child {
+    border-bottom: none;
+}
+
+.vc-steps li::before {
+    content: counter(vc-step);
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--grad-sugar);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.vc-steps a {
+    color: var(--sh-pink-deep);
+    word-break: break-all;
+}
+
+.vc-note {
+    margin-top: 14px;
+    padding: 12px 16px;
+    background: var(--sh-pink-soft);
+    border-radius: var(--r-md);
+    font-size: 0.88rem;
+    color: var(--sh-text-soft);
+}
+
+.vc-checklist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vc-check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 4px;
+    border-bottom: 2px dotted var(--sh-line);
+    transition: opacity 0.2s;
+}
+
+.vc-check-item:last-child {
+    border-bottom: none;
+}
+
+.vc-check-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: var(--sh-pink);
+    cursor: pointer;
+}
+
+.vc-check-item label {
+    flex: 1;
+    line-height: 1.7;
+    color: var(--sh-text);
+    cursor: pointer;
+}
+
+.vc-check-item.vc-done {
+    opacity: 0.45;
+}
+
+.vc-check-item.vc-done label {
+    text-decoration: line-through;
+    color: var(--sh-text-mute);
+}
+
+@media screen and (max-width: 900px) {
+    .vc-steps li { padding-left: 40px; }
+    .vc-steps li::before { width: 24px; height: 24px; font-size: 0.78rem; }
+}
+
+/* ============================================================
+   汎用ユーティリティ（インラインstyle集約）
+============================================================ */
+
+/* プレースホルダ文（準備中・読み込み中・画像募集中 など） */
+.placeholder-text {
+    color: var(--sh-text-mute);
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+/* コンテンツ幅コンテナ（一覧ページの外枠） */
+.sh-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 28px 80px;
+}
+.sh-container.tight { padding-bottom: 8px; }
+
+/* 小さめタグ（一覧の行内バッジ用） */
+.sh-tag.sh-tag-sm { font-size: 0.68rem; }
+.sh-tag[data-tag="goods"] { background: var(--sh-pink); color: #fff; }
+
+/* ============================================================
+   コラボ・グッズ一覧（CollabList）統計ストリップ
+============================================================ */
+.stats-strip {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+}
+.filter-chip .dot.collab   { background: #d97fb8; }
+.filter-chip .dot.goods    { background: #fd89b9; }
+.filter-chip .dot.campaign { background: #f59e0b; }
+
+@media screen and (max-width: 900px) {
+    .stats-strip { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ============================================================
+   参考・情報提供ページ（References）
+============================================================ */
+.ref-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ref-item {
+    border-bottom: 1px solid var(--sh-border, rgba(255,255,255,0.08));
+    padding: 14px 0;
+}
+.ref-item:last-child {
+    border-bottom: none;
+}
+.ref-item a {
+    color: var(--sh-pink-deep, #e75480);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: opacity 0.15s;
+}
+.ref-item a:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+}
+.ref-item a::before {
+    content: "→";
+    font-size: 12px;
+    color: var(--sh-pink, #f08080);
+}
+.ref-note {
+    font-size: 12px;
+    color: var(--sh-text-mute, #888);
+    margin-top: 3px;
+}
+.ref-section {
+    margin-bottom: 32px;
 }

@@ -12,54 +12,13 @@
     <meta property="og:title" content="参考・情報提供｜SugarHeartDB">
     <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）の参考・情報提供をまとめたページです。">
     <meta property="og:site_name" content="SugarHeartDB">
-    <meta property="og:image" content="https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.jpg">
+    <meta property="og:image" content="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="SugarHeartDB">
+    <meta name="twitter:title" content="参考・情報提供｜SugarHeartDB">
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .ref-list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .ref-item {
-            border-bottom: 1px solid var(--sh-border, rgba(255,255,255,0.08));
-            padding: 14px 0;
-        }
-        .ref-item:last-child {
-            border-bottom: none;
-        }
-        .ref-item a {
-            color: var(--sh-pink-deep, #e75480);
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 500;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            transition: opacity 0.15s;
-        }
-        .ref-item a:hover {
-            opacity: 0.75;
-            text-decoration: underline;
-        }
-        .ref-item a::before {
-            content: "→";
-            font-size: 12px;
-            color: var(--sh-pink, #f08080);
-        }
-        .ref-note {
-            font-size: 12px;
-            color: var(--sh-text-mute, #888);
-            margin-top: 3px;
-        }
-        .ref-section {
-            margin-bottom: 32px;
-        }
-    </style>
 </head>
 <body>
 <script src="components/header.js"></script>
@@ -77,7 +36,7 @@
             <h2>参考</h2>
         </div>
         <ul class="ref-list" id="references-list">
-            <li style="color:var(--sh-text-mute); padding:15px 0; font-size:14px;">読み込み中…</li>
+            <li class="placeholder-text">読み込み中…</li>
         </ul>
     </section>
 
@@ -86,7 +45,7 @@
             <h2>情報提供</h2>
         </div>
         <ul class="ref-list" id="providers-list">
-            <li style="color:var(--sh-text-mute); padding:15px 0; font-size:14px;">読み込み中…</li>
+            <li class="placeholder-text">読み込み中…</li>
         </ul>
     </section>
 
@@ -97,7 +56,7 @@
     function renderList(items, containerId) {
         var container = document.getElementById(containerId);
         if (!items || items.length === 0) {
-            container.innerHTML = '<li style="color:var(--sh-text-mute); padding:15px 0; font-size:14px;">データがありません。</li>';
+            container.innerHTML = '<li class="placeholder-text">データがありません。</li>';
             return;
         }
         container.innerHTML = '';
@@ -127,7 +86,7 @@
             renderList(data.providers, 'providers-list');
         })
         .catch(function() {
-            var msg = '<li style="color:var(--sh-text-mute); padding:15px 0; font-size:14px;">データを読み込めませんでした。</li>';
+            var msg = '<li class="placeholder-text">データを読み込めませんでした。</li>';
             document.getElementById('references-list').innerHTML = msg;
             document.getElementById('providers-list').innerHTML = msg;
         });
