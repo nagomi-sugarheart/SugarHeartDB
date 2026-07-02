@@ -12,9 +12,9 @@
     <meta property="og:title" content="コラボ・グッズ一覧｜SugarHeartDB">
     <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のコラボ・グッズ一覧ページです。">
     <meta property="og:site_name" content="SugarHeartDB">
-    <meta property="og:image" content="https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.jpg">
+    <meta property="og:image" content="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="SugarHeartDB">
+    <meta name="twitter:title" content="コラボ・グッズ一覧｜SugarHeartDB">
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
@@ -30,8 +30,8 @@
 </section>
 
 <!-- 統計ストリップ -->
-<div style="max-width:1180px; margin:0 auto; padding:0 28px 8px;">
-    <div class="stat-row" id="stats-strip" style="grid-template-columns: repeat(4,1fr); margin-bottom:20px;">
+<div class="sh-container tight">
+    <div class="stat-row stats-strip" id="stats-strip">
         <div class="stat-card">
             <span class="k">総件数</span>
             <span class="v" id="stat-total">—</span>
@@ -59,13 +59,13 @@
                 <span class="dot"></span>すべて
             </button>
             <button class="filter-chip" data-filter="collab">
-                <span class="dot" style="background:#d97fb8;"></span>コラボ
+                <span class="dot collab"></span>コラボ
             </button>
             <button class="filter-chip" data-filter="goods">
-                <span class="dot" style="background:#fd89b9;"></span>グッズ
+                <span class="dot goods"></span>グッズ
             </button>
             <button class="filter-chip" data-filter="campaign">
-                <span class="dot" style="background:#f59e0b;"></span>キャンペーン
+                <span class="dot campaign"></span>キャンペーン
             </button>
         </div>
         <div class="toolbar-right">
@@ -75,7 +75,7 @@
 </div>
 
 <!-- リスト本体 -->
-<div style="max-width:1180px; margin:0 auto; padding:0 28px 80px;">
+<div class="sh-container">
     <div id="collab-list-root"></div>
     <p id="empty-msg" style="display:none; color:var(--sh-text-mute); text-align:center; padding:40px 0;">
         該当するコラボ・グッズが見つかりませんでした。
@@ -94,9 +94,9 @@
     }
 
     function typeLabel(t) {
-        if (t === 'collab') return '<span class="sh-tag" data-tag="collab" style="font-size:0.68rem;">コラボ</span>';
-        if (t === 'goods')  return '<span class="sh-tag" style="background:var(--sh-pink); font-size:0.68rem; color:#fff;">グッズ</span>';
-        if (t === 'campaign') return '<span class="sh-tag" data-tag="ranking" style="font-size:0.68rem;">キャンペーン</span>';
+        if (t === 'collab') return '<span class="sh-tag sh-tag-sm" data-tag="collab">コラボ</span>';
+        if (t === 'goods')  return '<span class="sh-tag sh-tag-sm" data-tag="goods">グッズ</span>';
+        if (t === 'campaign') return '<span class="sh-tag sh-tag-sm" data-tag="ranking">キャンペーン</span>';
         return '';
     }
 

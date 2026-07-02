@@ -31,6 +31,32 @@ function v2SwitchTab(idx, btn) {
 }
 
 /* ============================================================
+   イベント一覧 並び替え
+   - .event-table 内の article.event-row を日付順に並び替える
+   - data-date があれば日付で、無ければ初期の並び順を基準にする
+   - 呼び出し: onclick="toggleSort(this)"
+============================================================ */
+function toggleSort(btn) {
+    var table = document.querySelector('.event-table');
+    if (!btn || !table) return;
+    var rows = Array.from(table.querySelectorAll('article.event-row'));
+    rows.forEach(function (r, i) {
+        if (!r.dataset.sortKey) {
+            r.dataset.sortKey = r.dataset.date || ('idx-' + String(i).padStart(4, '0'));
+        }
+    });
+    var newOrder = btn.dataset.order === 'asc' ? 'desc' : 'asc';
+    rows.sort(function (a, b) {
+        return newOrder === 'asc'
+            ? a.dataset.sortKey.localeCompare(b.dataset.sortKey)
+            : b.dataset.sortKey.localeCompare(a.dataset.sortKey);
+    });
+    rows.forEach(function (r) { table.appendChild(r); });
+    btn.dataset.order = newOrder;
+    btn.textContent = newOrder === 'asc' ? '新しい順 ▼' : '古い順 ▲';
+}
+
+/* ============================================================
    画像サイクラー
    - 呼び出し: initV2Cycler(画像パス配列, img要素ID, カウンター要素ID)
    - カウンターIDが 'xxx-counter' なら 'xxx-total' を自動探索
@@ -100,6 +126,23 @@ function initV2Cycler(images, imgId, counterId) {
 ============================================================ */
 (function () {
     document.addEventListener('DOMContentLoaded', function () {
+
+        /* v2 カード画像サイクラー（#v2-card-main-img の data-images から自動初期化） */
+        var cyclerImg = document.getElementById('v2-card-main-img');
+        if (cyclerImg && cyclerImg.dataset.images) {
+            initV2Cycler(cyclerImg.dataset.images.split('|'), 'v2-card-main-img', 'v2-img-counter');
+        }
+
+        /* ユニットページ DURATION（#ud-duration の data-debut から経過年月を表示） */
+        var dur = document.getElementById('ud-duration');
+        if (dur && dur.dataset.debut) {
+            var debut = new Date(dur.dataset.debut);
+            var now = new Date();
+            var y = now.getFullYear() - debut.getFullYear();
+            var m = now.getMonth() - debut.getMonth();
+            if (m < 0) { y--; m += 12; }
+            dur.textContent = y + 'YEAR ' + m + 'MONTH';
+        }
 
         /* lv-accord アコーディオン */
         document.querySelectorAll('.lv-accord .lv-head').forEach(function (h) {

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
@@ -25,7 +25,7 @@
     <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）に関連する情報を集めたファンサイト">
     <meta property="og:url" content="https://nagomi-sugarheart.github.io/SugarHeartDB/">
     <meta property="og:site_name" content="SugarHeartDB">
-    <meta property="og:image" content="https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+.jpg">
+    <meta property="og:image" content="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
@@ -88,7 +88,7 @@
         <a href="updates.html" class="meta" style="color:var(--sh-pink-deep)">すべて見る →</a>
       </div>
       <div id="news-list">
-        <p style="color:var(--sh-text-mute); padding:15px 0; font-size:14px;">読み込み中…</p>
+        <p class="placeholder-text">読み込み中…</p>
       </div>
     </section>
 
@@ -136,12 +136,12 @@
         <details class="link-details">
           <summary>イベント一覧</summary>
           <div class="link-submenu-inner">
-            <a href="Mobamas/Event/ProductionTalkBattle3rd/ProductionTalkBattle3rd.html">第3回プロダクション対抗トークバトルショー</a>
-            <a href="Mobamas/Event/KirakiraModelChallenge/KirakiraModelChallenge.html">目指せ！きらきらモデル アイドルチャレンジ</a>
-            <a href="Mobamas/Event/IdolLIVERoyale14th/IdolLIVERoyale14th.html">第14回アイドルLIVEロワイヤル</a>
-            <a href="Mobamas/Event/IdolProduce6thAnniversary/IdolProduce6thAnniversary.html">アイドルプロデュース The 6th Anniversary</a>
-            <a href="Mobamas/Event/DreamLiveFestival5thNewYear/DreamLiveFestival5thNewYear.html">第5回 ドリームLIVEフェスティバル 新春SP</a>
-            <a href="Mobamas/Event/PuchiDerellaCollection39th/PuchiDerellaCollection39th.html">第39回ぷちでれらコレクション</a>
+            <a href="Mobamas/Event/ProductionTalkBattle3rd.html">第3回プロダクション対抗トークバトルショー</a>
+            <a href="Mobamas/Event/KirakiraModelChallenge.html">目指せ！きらきらモデル アイドルチャレンジ</a>
+            <a href="Mobamas/Event/IdolLIVERoyale14th.html">第14回アイドルLIVEロワイヤル</a>
+            <a href="Mobamas/Event/IdolProduce6thAnniversary.html">アイドルプロデュース The 6th Anniversary</a>
+            <a href="Mobamas/Event/DreamLiveFestival5thNewYear.html">第5回 ドリームLIVEフェスティバル 新春SP</a>
+            <a href="Mobamas/Event/PuchiDerellaCollection39th.html">第39回ぷちでれらコレクション</a>
           </div>
         </details>
         <a href="Unit/UnitList.html">ユニット一覧</a>
@@ -178,10 +178,10 @@
         <details class="link-details">
           <summary>共通コミュ・ボイス</summary>
           <div class="link-submenu-inner">
-            <a href="Deresute/StoryCommu.html">ストーリーコミュ</a>
+            <a href="Deresute/Common/StoryCommu.html">ストーリーコミュ</a>
             <a href="Deresute/MemorialCommu.html">メモリアルコミュ</a>
-            <a href="Deresute/BusinessCommu.html">営業コミュ</a>
-            <a href="Deresute/CommonVoice.html">共通ボイス</a>
+            <a href="Deresute/Common/BusinessCommu.html">営業コミュ</a>
+            <a href="Deresute/Common/CommonVoice.html">共通ボイス</a>
           </div>
         </details>
         <details class="link-details">
@@ -192,7 +192,7 @@
             <a href="Deresute/Event/HappyNewYeah.html">Happy New Yeah！</a>
             <a href="Deresute/Event/SunFlower.html">SUN♡FLOWER</a>
             <a href="Deresute/Event/DekobokoSpeedStar.html">凸凹スピードスター</a>
-            <a href="Deresute/Event/OdoruFLAGSHIP.html">躍るFLAGSHIP</a>
+            <a href="Deresute/Event/OdoruFlagship.html">躍るFLAGSHIP</a>
             <a href="Deresute/Event/OumuamuaKooun.html">オウムアムアに幸運を</a>
             <a href="Deresute/Event/GoJustGo.html">Go Just Go!</a>
             <a href="Deresute/Event/CoCoNatsuHoliday.html">CoCo夏夏夏 Holiday</a>
@@ -280,7 +280,7 @@ fetch('data/updates.json')
   })
   .catch(function() {
     var container = document.getElementById('news-list');
-    container.innerHTML = '<p style="color:var(--sh-text-mute); padding:15px 0; font-size:14px;">更新情報を読み込めませんでした。</p>';
+    container.innerHTML = '<p class="placeholder-text">更新情報を読み込めませんでした。</p>';
   });
 </script>
 </body>
