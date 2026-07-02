@@ -6578,3 +6578,97 @@ input[name="dialogue-tab"] {
 .ref-section {
     margin-bottom: 32px;
 }
+
+/* ============================================================
+   イベントコミュ タブ（凸凹スピードスター等・shot付コミュ）
+============================================================ */
+.dss-commu {
+    background: #fff;
+    border: 1px solid var(--sh-line);
+    border-radius: var(--r-md, 10px);
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+.dss-commu .v2-dialogue-tabs { flex-wrap: wrap; }
+.dss-commu .v2-dialogue-tab { flex: 1 1 12%; padding: 11px 6px; }
+.dss-ep-head {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+.dss-title-card {
+    width: 200px;
+    flex-shrink: 0;
+    border-radius: var(--r-sm);
+    overflow: hidden;
+    border: 1px solid var(--sh-line);
+}
+.dss-title-card img { width: 100%; display: block; cursor: zoom-in; }
+.dss-ep-eyebrow {
+    font-family: var(--font-display);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--sh-text-soft);
+}
+.dss-ep-title {
+    margin: 2px 0 6px;
+    font-size: 17px;
+    color: var(--sh-pink-deep);
+}
+.dss-ep-summary {
+    font-size: 12.5px;
+    line-height: 1.8;
+    color: var(--sh-text-soft);
+    margin: 0 0 10px;
+}
+.dss-play {
+    font-family: var(--font-display);
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--sh-pink-deep);
+    border: none;
+    border-radius: 999px;
+    padding: 8px 18px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.dss-play:hover { opacity: 0.85; }
+.dss-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dss-lines .ev-dialog-row.no-shot { padding-left: 86px; }
+.dss-stage-text {
+    display: inline-block;
+    font-size: 12.5px;
+    color: var(--sh-text-soft);
+    background: var(--sh-bg-alt);
+    border: 1px dashed var(--sh-line);
+    border-radius: var(--r-sm);
+    padding: 6px 12px;
+}
+.dss-log { margin-top: 16px; }
+.dss-log summary {
+    cursor: pointer;
+    font-size: 12.5px;
+    color: var(--sh-text-soft);
+    user-select: none;
+}
+.dss-log img {
+    width: 100%;
+    max-width: 540px;
+    display: block;
+    margin-top: 8px;
+    border: 1px solid var(--sh-line);
+    border-radius: var(--r-sm);
+    cursor: zoom-in;
+}
+@media (max-width: 640px) {
+    .dss-commu .v2-dialogue-tab { flex: 1 1 25%; }
+    .dss-ep-head { flex-direction: column; }
+    .dss-title-card { width: 100%; }
+    .dss-lines .ev-dialog-row.no-shot { padding-left: 0; }
+}
