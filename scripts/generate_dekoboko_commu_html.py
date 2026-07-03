@@ -64,7 +64,7 @@ def main():
     for i, sec in enumerate(data):
         active = " active" if i == 0 else ""
         tabs_html.append(
-            f'        <button class="v2-dialogue-tab{active}" onclick="v2SwitchTab({i},this)">{esc(sec["tab"])}</button>')
+            f'        <button class="tab-item{active}" onclick="switchTab(this,\'dss-{sec["id"]}\')">{esc(sec["tab"])}</button>')
 
         # 使用済みフレーム（subの重複shot判定用）
         used = {sec.get("title_frame")}
@@ -95,9 +95,8 @@ def main():
             f'        <img class="lightbox-trigger" src="{CDN}/log/{c}" alt="{esc(sec["tab"])} コミュログ（{LOG_LABELS[c]}）" loading="lazy">\n'
             f'    </details>' for c in sec["log"])
 
-        display = "" if i == 0 else ' style="display:none"'
         rows_html = "\n        ".join(rows)
-        panels_html.append(f'''    <div class="v2-dialogue-content"{display}>
+        panels_html.append(f'''    <div class="tab-panel{active}" data-tab="dss-{sec["id"]}">
     <div class="dss-ep-head">
         <div class="dss-title-card"><img class="lightbox-trigger" src="{frame_url(sec["title_frame"])}" alt="{esc(sec["title"])} タイトルカード" loading="lazy"></div>
         <div class="dss-ep-meta">
@@ -112,8 +111,8 @@ def main():
 {logs}
     </div>''')
 
-    section = ('    <section class="v2-dialogue-block dss-commu">\n'
-               '        <div class="v2-dialogue-tabs">\n'
+    section = ('    <section class="tab-group dss-commu">\n'
+               '        <div class="tab-list">\n'
                + "\n".join(tabs_html) + "\n"
                '        </div>\n'
                + "\n".join(panels_html) + "\n"

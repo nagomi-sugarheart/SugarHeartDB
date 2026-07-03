@@ -6582,15 +6582,14 @@ input[name="dialogue-tab"] {
 /* ============================================================
    イベントコミュ タブ（凸凹スピードスター等・shot付コミュ）
 ============================================================ */
-.dss-commu {
+.dss-commu { margin-bottom: 28px; }
+.dss-commu .tab-list { flex-wrap: wrap; }
+.dss-commu .tab-panel {
     background: #fff;
     border: 1px solid var(--sh-line);
     border-radius: var(--r-md, 10px);
-    overflow: hidden;
-    margin-bottom: 28px;
+    padding: 16px 22px;
 }
-.dss-commu .v2-dialogue-tabs { flex-wrap: wrap; }
-.dss-commu .v2-dialogue-tab { flex: 1 1 12%; padding: 11px 6px; }
 .dss-ep-head {
     display: flex;
     gap: 16px;
@@ -6667,7 +6666,7 @@ input[name="dialogue-tab"] {
     cursor: zoom-in;
 }
 @media (max-width: 640px) {
-    .dss-commu .v2-dialogue-tab { flex: 1 1 25%; }
+    .dss-commu .tab-item { flex: 1 1 22%; }
     .dss-ep-head { flex-direction: column; }
     .dss-title-card { width: 100%; }
     .dss-lines .ev-dialog-row.no-shot { padding-left: 0; }

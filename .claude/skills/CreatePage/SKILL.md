@@ -71,12 +71,18 @@
 
 ### 6. HTML生成・組み込み
 `scripts/generate_dekoboko_commu_html.py` をコピーして調整し、断片を生成してイベントページに組み込む。
-- タブ: `.v2-dialogue-tabs` + `v2SwitchTab()`（common.js既存）。2枚目以降のパネルは `style="display:none"`
+- タブ: **`tab-group` / `tab-list` / `tab-item` / `tab-panel`**（他ページとの共通デザイン）
+  - `<section class="tab-group dss-commu">` > `<div class="tab-list">` > `<button class="tab-item" onclick="switchTab(this,'dss-{id}')">`
+  - パネルは `<div class="tab-panel" data-tab="dss-{id}">`（先頭タブのみ `active` クラス付与）
+  - `switchTab()` は common.js 既存。`.tab-panel` の表示切替はCSSの `.active` で行う
 - 行: `.ev-dialog-row` + `.ev-shot` + `.ev-text > .ud-dialogue`（コピーボタン・話者バッジ・ライトボックス自動対応）
 - 各タブ先頭: タイトルカード画像・話タイトル・要約・「▶ この話からYouTubeで再生」ボタン（`data-start`属性）
 - 各タブ末尾: `<details class="dss-log">` でコミュログ画像
-- **CSSの `.dss-*` は style.css に定義済み**（凸凹で追加）。新規追加不要
-- 動画セクション: `<iframe id="dss-player">` を設置。ページ末尾に再生ボタン用の小さなIIFEスクリプトと `#sh-lightbox` div、`components/idol-badge.js` の読み込みを追加（DekobokoSpeedStar.htmlを参照）
+- **CSSの `.dss-*` は style.css に定義済み**（凸凹で追加。白箱スタイルは `.dss-commu .tab-panel` に適用）。新規追加不要
+- 動画セクション（上から順に）:
+  1. **楽曲MV用の `box-area`**（アイドルプロデュース以外のイベントで設置。MV未定ならプレースホルダー＋コメントアウトのiframe雛形）
+  2. コミュ動画の `box-area`（`<iframe id="dss-player">`）
+- ページ末尾に再生ボタン用の小さなIIFEスクリプトと `#sh-lightbox` div、`components/idol-badge.js` の読み込みを追加（DekobokoSpeedStar.htmlを参照）
 
 ### 7. 検索インデックス再生成
 ```bash

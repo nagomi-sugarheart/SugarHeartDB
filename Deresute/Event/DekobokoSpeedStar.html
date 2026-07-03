@@ -120,6 +120,16 @@
         <h2>動画 <span class="sub">/ MOVIE</span></h2>
         <a class="anchor">#movie</a>
     </div>
+    <div class="box-area">
+        <div class="box-title">楽曲MV</div>
+        <!-- MVを追加する場合は以下の形式で記述する
+        <div class="video-container-landscape">
+            <iframe src="https://www.youtube.com/embed/XXXXXXXXXXX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        -->
+        <p class="box-text placeholder-text">MVは準備中です。</p>
+    </div>
+
     <div class="box-area" id="dss-movie">
         <div class="box-title">イベントコミュ（予告・OP・第1話〜第5話・ED）</div>
         <div class="video-container-landscape">
@@ -133,18 +143,18 @@
         <h2>イベントコミュ <span class="sub">/ COMMU</span></h2>
         <a class="anchor">#commu</a>
     </div>
-    <section class="v2-dialogue-block dss-commu">
-        <div class="v2-dialogue-tabs">
-        <button class="v2-dialogue-tab active" onclick="v2SwitchTab(0,this)">予告</button>
-        <button class="v2-dialogue-tab" onclick="v2SwitchTab(1,this)">OP</button>
-        <button class="v2-dialogue-tab" onclick="v2SwitchTab(2,this)">第1話</button>
-        <button class="v2-dialogue-tab" onclick="v2SwitchTab(3,this)">第2話</button>
-        <button class="v2-dialogue-tab" onclick="v2SwitchTab(4,this)">第3話</button>
-        <button class="v2-dialogue-tab" onclick="v2SwitchTab(5,this)">第4話</button>
-        <button class="v2-dialogue-tab" onclick="v2SwitchTab(6,this)">第5話</button>
-        <button class="v2-dialogue-tab" onclick="v2SwitchTab(7,this)">ED</button>
+    <section class="tab-group dss-commu">
+        <div class="tab-list">
+        <button class="tab-item active" onclick="switchTab(this,'dss-trailer')">予告</button>
+        <button class="tab-item" onclick="switchTab(this,'dss-op')">OP</button>
+        <button class="tab-item" onclick="switchTab(this,'dss-ep1')">第1話</button>
+        <button class="tab-item" onclick="switchTab(this,'dss-ep2')">第2話</button>
+        <button class="tab-item" onclick="switchTab(this,'dss-ep3')">第3話</button>
+        <button class="tab-item" onclick="switchTab(this,'dss-ep4')">第4話</button>
+        <button class="tab-item" onclick="switchTab(this,'dss-ep5')">第5話</button>
+        <button class="tab-item" onclick="switchTab(this,'dss-ed')">ED</button>
         </div>
-    <div class="v2-dialogue-content">
+    <div class="tab-panel active" data-tab="dss-trailer">
     <div class="dss-ep-head">
         <div class="dss-title-card"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/commu/0002" alt="予告 タイトルカード" loading="lazy"></div>
         <div class="dss-ep-meta">
@@ -174,7 +184,7 @@
         <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/log/Tr2" alt="予告 コミュログ（予告2）" loading="lazy">
     </details>
     </div>
-    <div class="v2-dialogue-content" style="display:none">
+    <div class="tab-panel" data-tab="dss-op">
     <div class="dss-ep-head">
         <div class="dss-title-card"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/commu/0010" alt="結成！ふたりは魔法少女 タイトルカード" loading="lazy"></div>
         <div class="dss-ep-meta">
@@ -247,7 +257,7 @@
         <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/log/OP" alt="OP コミュログ（OP）" loading="lazy">
     </details>
     </div>
-    <div class="v2-dialogue-content" style="display:none">
+    <div class="tab-panel" data-tab="dss-ep1">
     <div class="dss-ep-head">
         <div class="dss-title-card"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/commu/0063" alt="難関！ステージまでの道 タイトルカード" loading="lazy"></div>
         <div class="dss-ep-meta">
@@ -317,7 +327,7 @@
         <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/log/1" alt="第1話 コミュログ（第1話）" loading="lazy">
     </details>
     </div>
-    <div class="v2-dialogue-content" style="display:none">
+    <div class="tab-panel" data-tab="dss-ep2">
     <div class="dss-ep-head">
         <div class="dss-title-card"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/commu/0116" alt="集合！輝く仲間の絆 タイトルカード" loading="lazy"></div>
         <div class="dss-ep-meta">
@@ -378,7 +388,7 @@
         <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/log/2" alt="第2話 コミュログ（第2話）" loading="lazy">
     </details>
     </div>
-    <div class="v2-dialogue-content" style="display:none">
+    <div class="tab-panel" data-tab="dss-ep3">
     <div class="dss-ep-head">
         <div class="dss-title-card"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/commu/0159" alt="襲来！エスパー怪人ユッコ タイトルカード" loading="lazy"></div>
         <div class="dss-ep-meta">
@@ -445,7 +455,7 @@
         <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/log/3" alt="第3話 コミュログ（第3話）" loading="lazy">
     </details>
     </div>
-    <div class="v2-dialogue-content" style="display:none">
+    <div class="tab-panel" data-tab="dss-ep4">
     <div class="dss-ep-head">
         <div class="dss-title-card"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/commu/0213" alt="恐怖！闇の魔法少女たち タイトルカード" loading="lazy"></div>
         <div class="dss-ep-meta">
@@ -515,7 +525,7 @@
         <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/log/4" alt="第4話 コミュログ（第4話）" loading="lazy">
     </details>
     </div>
-    <div class="v2-dialogue-content" style="display:none">
+    <div class="tab-panel" data-tab="dss-ep5">
     <div class="dss-ep-head">
         <div class="dss-title-card"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/commu/0277" alt="決斗！デビル☆ミズキ総統 タイトルカード" loading="lazy"></div>
         <div class="dss-ep-meta">
@@ -593,7 +603,7 @@
         <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/log/5" alt="第5話 コミュログ（第5話）" loading="lazy">
     </details>
     </div>
-    <div class="v2-dialogue-content" style="display:none">
+    <div class="tab-panel" data-tab="dss-ed">
     <div class="dss-ep-head">
         <div class="dss-title-card"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/DekobokoSpeedStar/commu/0329" alt="大勝利！魔法少女よ永遠に タイトルカード" loading="lazy"></div>
         <div class="dss-ep-meta">
