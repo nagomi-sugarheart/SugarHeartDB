@@ -3,7 +3,8 @@
 イベントコミュ動画のYouTube設定（概要欄・チャプター・字幕）用の素材ファイル一式を生成する。
 後ほどCowork（別のAIエージェント）がこれらのファイルを使ってYouTube Studioで設定作業を行う。
 
-**前提**: CreatePage スキルで生成した `scripts/merged_commu.json`（またはイベント対応の同形式データ）が存在すること。
+**前提**: CreatePage スキルで生成したイベント別のマージ済みJSON（例 `scripts/merged_commu.json`、
+`scripts/merged_hny_commu.json` など `merged_{event}_commu.json` 形式）が存在すること。対象イベントのファイル名を使う。
 
 **参考実装（テンプレート）**: `G:\マイドライブ\コミュ\YouTube_凸凹スピードスター\generate_youtube_files.py`
 
