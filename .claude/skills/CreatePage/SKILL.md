@@ -88,12 +88,21 @@
   - パネルは `<div class="tab-panel" data-tab="dss-{id}">`（先頭タブのみ `active` クラス付与）
   - `switchTab()` は common.js 既存。`.tab-panel` の表示切替はCSSの `.active` で行う
 - 行: `.ev-dialog-row` + `.ev-shot` + `.ev-text > .ud-dialogue`（コピーボタン・話者バッジ・ライトボックス自動対応）
+  - **shotなし行は `.ev-dialog-row no-shot`（`.ev-shot` を出さない）のままでよい**。CSSの
+    `.dss-lines .ev-dialog-row.no-shot::before` がショット枠のプレースホルダー（ピンクの点線枠）を
+    自動描画し、全行がshot付きレイアウトに揃う。あとからスクショを追加する場合は merged JSON の
+    該当行に `frame` を設定して再生成すれば実画像に置き換わる（generatorの分岐は変更不要）
 - 各タブ先頭: タイトルカード画像・話タイトル・要約・「▶ この話からYouTubeで再生」ボタン（`data-start`属性）
   - **話ごとの英語タイトルカードが動画に無いイベントもある**（Happy New Yeah等。予告カードと場所カードのみ）。
     その場合は各話先頭の場所カード（無ければ先頭セリフ）のフレームを `title_frame` に使う。
     先頭がセリフの話（例: 第2話）は先頭行を本文からも除外しないこと
 - 各タブ末尾: `<details class="dss-log">` でコミュログ画像
 - **CSSの `.dss-*` は style.css に定義済み**（凸凹で追加。白箱スタイルは `.dss-commu .tab-panel` に適用）。新規追加不要
+  - タイトルカード画像は `.dss-title-card img { width:100%; max-width:100% }`、モバイルは
+    `@media(max-width:640px)` で `.dss-ep-head` を縦積み・`.dss-title-card` を全幅にして画面はみ出しを防ぐ
+  - **style.css を変更したら、コミュページの `<link href="style.css?v=YYYYMMDD">` のクエリを更新する**
+    （モバイルブラウザは `style.css` を強くキャッシュするため。バージョンを上げないと旧CSSのまま
+    表示され、タイトル画像のはみ出しや再生ボタンの未整形が起きる）
 - 動画セクション（上から順に）:
   1. **楽曲MV用の `box-area`**（アイドルプロデュース以外のイベントで設置。MV未定ならプレースホルダー＋コメントアウトのiframe雛形）
   2. コミュ動画の `box-area`（`<iframe id="dss-player">`）
