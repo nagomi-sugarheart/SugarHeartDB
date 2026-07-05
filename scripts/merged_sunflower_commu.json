@@ -1,0 +1,2392 @@
+[
+ {
+  "id": "trailer",
+  "tab": "予告",
+  "title": "予告",
+  "summary": "",
+  "start_s": 0,
+  "title_frame": "0002_dialogue_33.4s.jpg",
+  "log": [
+   "Tr1",
+   "Tr2"
+  ],
+  "entries": [
+   {
+    "type": "header",
+    "speaker": "",
+    "text": "SUN♡FLOWER イベント近日開催予定!!",
+    "frame": "0001_dialogue_30.4s.jpg",
+    "t": 30.4
+   },
+   {
+    "type": "sub",
+    "speaker": "",
+    "text": "予告1",
+    "frame": "0002_dialogue_33.4s.jpg",
+    "t": 33.4
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "にゃっほーい！諸星きらりだよぉ☆ なんときらりたち、海の家をぷろでゅーすすることになりました！",
+    "frame": "0003_dialogue_45.0s.jpg",
+    "t": 45.0
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "用意したのは、みんなで一生懸命考えて作った、たっくさんのスペシャルアイテム☆",
+    "frame": "0004_dialogue_53.6s.jpg",
+    "t": 53.6
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "楽しいこといっぱいの、キラキラはぴはぴな夏が来ゆ！ みんな、もうちょっとだけ待っててね！ によわわわ～☆",
+    "frame": "0005_dialogue_66.0s.jpg",
+    "t": 66.0
+   },
+   {
+    "type": "sub",
+    "speaker": "",
+    "text": "予告2",
+    "frame": "0006_dialogue_71.2s.jpg",
+    "t": 71.2
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "イエーイ★ 城ヶ崎美嘉でーす♪ アタシと未央、きらりちゃん、早苗さん、はぁとさんが歌う、『SUN♡FLOWER』を、真夏の海に、LIVEでお届けしちゃうよ！",
+    "frame": "0007_dialogue_83.2s.jpg",
+    "t": 83.2
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "海辺でLIVEなんて、ドキドキするよね♪ LIVEの後には、ちょっとぐらい遊べる時間も取れるかな？",
+    "frame": "0008_dialogue_92.2s.jpg",
+    "t": 92.2
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "アツい太陽と青い海、それからアタシたち！ めっちゃ盛り上げちゃうから、楽しみにしてて★",
+    "frame": "0009_dialogue_101.2s.jpg",
+    "t": 101.2
+   }
+  ]
+ },
+ {
+  "id": "op",
+  "tab": "OP",
+  "title": "Feel so nice☆",
+  "summary": "Pに呼ばれ、事務所に集まったきらり、美嘉、未央、早苗、心はLIVEイベントと、その企画の一環である海の家「SUN♡FLOWER」のプロデュースの仕事を任される。各々海の家で提供するメニューを考え、後日改めて企画会議をすることに。夏の海を、5人が最高に熱く盛り上げる—！",
+  "start_s": 101,
+  "title_frame": "0010_dialogue_110.0s.jpg",
+  "log": [
+   "OP"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "みんな、おはよー！",
+    "frame": "0011_dialogue_113.8s.jpg",
+    "t": 113.8
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "未央ちゃん、おはよ！",
+    "frame": "0012_dialogue_117.2s.jpg",
+    "t": 117.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "おっはよ☆ これで、呼ばれてたメンバー、全員揃ったな☆",
+    "frame": "0013_dialogue_123.6s.jpg",
+    "t": 123.6
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "Pちゃんに呼ばれて、これってもしかして、はぴはぴの予感？",
+    "frame": "0014_dialogue_130.8s.jpg",
+    "t": 130.8
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "ふふっ、早く行ってみよ★",
+    "frame": "0015_dialogue_134.8s.jpg",
+    "t": 134.8
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "Pちゃん来たよ～☆",
+    "frame": "0016_dialogue_141.2s.jpg",
+    "t": 141.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "このパターン、はぁと知ってるぞ☆ なにか新しいお仕事、もらえるんだろ☆",
+    "frame": "0017_dialogue_148.6s.jpg",
+    "t": 148.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "夏の海を盛り上げてもらうよ",
+    "frame": "0018_dialogue_150.4s.jpg",
+    "t": 150.4,
+    "csv_only": true
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "LIVEイベントの企画を説明した……",
+    "frame": "0019_dialogue_153.2s.jpg",
+    "t": 153.2
+   },
+   {
+    "type": "line",
+    "speaker": "（表示なし）",
+    "text": "LIVEイベントの企画を説明した……",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "夏の海でLIVE！？やったぁ♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "しかも、それだけじゃないのね。なになに……あたしたちが海の家をプロデュース？",
+    "frame": "0020_dialogue_167.0s.jpg",
+    "t": 167.0
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "海の家「SUN♡FLOWER」って。なにそれ、超おもしろそうじゃん！",
+    "frame": "0021_dialogue_175.4s.jpg",
+    "t": 175.4
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "じゃあ、商品も考えていいの？ とってもはぴはぴで、きゃわいいの考えちゃお！",
+    "frame": "0022_dialogue_184.0s.jpg",
+    "t": 184.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ねぇ、プロデューサー……。 LIVEももっちろん楽しそうだけどぉ、 せっかくの海なら、はぁと、みんなで遊びたいなー。",
+    "frame": "0023_dialogue_195.6s.jpg",
+    "t": 195.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "もちろん、OK",
+    "frame": "0024_dialogue_196.8s.jpg",
+    "t": 196.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "流石プロデューサー、そうこなくっちゃ！はぁと、頑張っちゃう☆",
+    "frame": "0025_dialogue_203.8s.jpg",
+    "t": 203.8
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "バリバリ仕事して、めいっぱい遊ぼう♪ どんな海の家がいいのかな～？",
+    "frame": "0026_dialogue_211.2s.jpg",
+    "t": 211.2
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "周りの海の家の人たちも協力してくれるのね。じゃあ売り物は被らない方がいいのかしら？",
+    "frame": "0027_dialogue_220.0s.jpg",
+    "t": 220.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "自由に考えて",
+    "frame": "0028_dialogue_221.4s.jpg",
+    "t": 221.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "その辺の調整は、こっちでやっておくから。",
+    "frame": "0029_dialogue_225.2s.jpg",
+    "t": 225.2
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "さっすが！頼りになる～！ それならお言葉に甘えて、好きにやらせてもらうわね！",
+    "frame": "0030_dialogue_233.6s.jpg",
+    "t": 233.6
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "じゃあさ、さっそく、みんなで軽く打ち合わせしとかない？",
+    "frame": "0031_dialogue_240.2s.jpg",
+    "t": 240.2
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "うん、そうだね！ 行こう行こう！",
+    "frame": "0032_dialogue_245.8s.jpg",
+    "t": 245.8
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "カフェ",
+    "frame": "0033_dialogue_252.6s.jpg",
+    "t": 252.6
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "にゅふふ～。みんなにぴったりの、たのすいお仕事だねぇ。",
+    "frame": "0034_dialogue_259.8s.jpg",
+    "t": 259.8
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "海でLIVEってだけでもアガるのに、海の家をプロデュースできるなんて、サイコーじゃん★",
+    "frame": "0035_dialogue_268.0s.jpg",
+    "t": 268.0
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "どうするどうする？ 何しよっか？ やりたいこといっぱいあるよ～！",
+    "frame": "0036_dialogue_276.4s.jpg",
+    "t": 276.4
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "商品好きに考えていいって言ってたもんね～。 夏の海といえば……やっぱりまずはビールよね～♪ あとは、焼きイカとか。",
+    "frame": "0037_dialogue_289.6s.jpg",
+    "t": 289.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "やぁん、早苗さんってば自分の好きなモノに一直線☆ それならはぁとは……オシャレなカクテルとか？",
+    "frame": "0038_dialogue_301.0s.jpg",
+    "t": 301.0
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "あら、カクテルもいいわね！",
+    "frame": "0039_dialogue_305.8s.jpg",
+    "t": 305.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ノンアルな☆",
+    "frame": "0040_dialogue_309.4s.jpg",
+    "t": 309.4
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "夏の海だもん、ドリンクもいいよね～。じゃあ、私は食べ物にしよっかなー。",
+    "frame": "0041_dialogue_318.4s.jpg",
+    "t": 318.4
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "きらりもフードにしようかなぁー☆ いっぱい飾り付けるなら、そういうのがいいよね♪ 美嘉ちゃんはどうする？",
+    "frame": "0042_dialogue_329.4s.jpg",
+    "t": 329.4
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "んー。アタシはもうちょっと考えてみよっかな。食べ物や飲み物もいいけど、別のことできたらみんなに楽しんでもらえるかなーって。",
+    "frame": "0043_dialogue_341.4s.jpg",
+    "t": 341.4
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "せっかくやるんだし、アタシたちらしい海の家にしたいよね★",
+    "frame": "0044_dialogue_347.6s.jpg",
+    "t": 347.6
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "じゃ、あとはおのおの考えて、後日改めて企画会議といきましょうか！",
+    "frame": "0045_dialogue_356.2s.jpg",
+    "t": 356.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "夏の海、この5人で最高に盛り上げちゃお☆",
+    "frame": "0046_dialogue_362.8s.jpg",
+    "t": 362.8
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "おーっ★ おーっ！ おーっ☆",
+    "frame": "0047_dialogue_366.2s.jpg",
+    "t": 366.2
+   }
+  ]
+ },
+ {
+  "id": "ep1",
+  "tab": "第1話",
+  "title": "Let's get together☆",
+  "summary": "カフェに集まって、海の家で提供するものについて話し合うきらり、美嘉、未央、早苗、心。きらりはデザートを、未央と早苗は串焼き、心はドリンク、美嘉はボディペイントをそれぞれ提案。バランス良くまとまった内容にPから即OKをもらった5人は、さっそく試作に向けて動き出すのだった。",
+  "start_s": 366,
+  "title_frame": "0048_dialogue_374.6s.jpg",
+  "log": [
+   "1"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "みんな、作りたいもの考えてきたかなーっ？ ざっくり発表会始めるわよー♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "未央・きらり・心・美嘉",
+    "text": "はーいっ！はーいっ☆はーいっ☆はーいっ★",
+    "frame": "0049_dialogue_385.4s.jpg",
+    "t": 385.4
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "おほん！ では早速、発表したい人から挙手でどうぞ！",
+    "frame": "0050_dialogue_392.2s.jpg",
+    "t": 392.2
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "はーいっ☆",
+    "frame": "0051_dialogue_395.4s.jpg",
+    "t": 395.4
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "おっ！じゃあ、きらりちゃん！",
+    "frame": "0052_dialogue_399.2s.jpg",
+    "t": 399.2
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "きらりはねぇ、カキ氷とパフェのきゅんきゅんコンボ☆ 名付けて……「はぴはぴキンキンすぺしゃる」☆",
+    "frame": "0053_dialogue_410.8s.jpg",
+    "t": 410.8
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "おーっ！やっぱ夏と言えばカキ氷だよねー！味は？イチゴとか？海らしくブルーハワイ？",
+    "frame": "0054_dialogue_420.8s.jpg",
+    "t": 420.8
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "ん～、やっぱりイチゴがカワイイし美味すいと思うんだけど、レモンとかカラフルなものもいいかなって。お悩み中☆",
+    "frame": "0055_dialogue_433.4s.jpg",
+    "t": 433.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "いいじゃんいいじゃん☆ カラフルハピハピてんこ盛り☆ ってな♪",
+    "frame": "0056_dialogue_440.2s.jpg",
+    "t": 440.2
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "ハイハーイっ、次私！ 私はねぇ、「肉を串で刺したやつ」！！",
+    "frame": "0057_dialogue_450.4s.jpg",
+    "t": 450.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "未央ちゃんらしい勢いいっぱいのワイルドなネーミング☆ はぁと嫌いじゃない☆",
+    "frame": "0058_dialogue_458.8s.jpg",
+    "t": 458.8
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "牛も豚もよくあるから、なにを刺すかも決まってなくて。だから、名前はまだ考え中なんだよね……。みんな、なにかいい案ない？",
+    "frame": "0059_dialogue_471.2s.jpg",
+    "t": 471.2
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "いろいろ試作してみたらいいんじゃない？ メニュー名はいったん……「肉」とか？",
+    "frame": "0060_dialogue_480.8s.jpg",
+    "t": 480.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "早苗さんは、ワイルドが過ぎるぞ☆",
+    "frame": "0061_dialogue_486.0s.jpg",
+    "t": 486.0
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "んーっと……それなら、 もっとはぴはぴな感じにすれば、 きゃわいい名前になると思うゆー☆",
+    "frame": "0062_dialogue_496.4s.jpg",
+    "t": 496.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ハピハピ感かぁ……「幸せの赤い肉」？",
+    "frame": "0063_dialogue_504.0s.jpg",
+    "t": 504.0
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "アウト！ 肉が赤いのはまずいわよ~。",
+    "frame": "0064_dialogue_510.4s.jpg",
+    "t": 510.4
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "あはは、名前は保留かな～。取り敢えず私のは置いといて、次いこっ！",
+    "frame": "0065_dialogue_519.2s.jpg",
+    "t": 519.2
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "はーい、じゃあアタシーっ！ 「美嘉のデザインペイント、サマー★パッション」！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "ビーチだし、みんな水着じゃない？ だから花とか文字とか、ボディペイントしたいなって♪ 一応、絵柄はこんな感じで考えてきてて……。",
+    "frame": "0066_dialogue_543.0s.jpg",
+    "t": 543.0
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "うきゃーっ、かわゆい！！ きらりもやってほすいーにぃー！",
+    "frame": "0067_dialogue_550.4s.jpg",
+    "t": 550.4
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "もちろん！超可愛く描いたげる★",
+    "frame": "0068_dialogue_556.2s.jpg",
+    "t": 556.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ペイントは一気にお祭り感がアップするよね～☆ んじゃ、華やかカラフル繋がりで、はぁといきまーす☆",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "この前ちょっと言ったけど、はぁとはビーチで飲みたい「すういーていー☆シャレオツカクテル☆ノンアルだぞ☆」でいこうと思いま～す。",
+    "frame": "0069_dialogue_578.2s.jpg",
+    "t": 578.2
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "絶対カラフルできゃわいいゆ～♪",
+    "frame": "0070_dialogue_584.0s.jpg",
+    "t": 584.0
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "写真とか撮って、SNSに載せたくなるやつだ！いいよねーそういうの！",
+    "frame": "0071_dialogue_592.0s.jpg",
+    "t": 592.0
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "今のところいいカンジのバランスだね！ 早苗さんは？ やっぱり焼きイカとビール？",
+    "frame": "0072_dialogue_601.4s.jpg",
+    "t": 601.4
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "あたしは串焼きにしようかなーって。夏祭りっぽく、焼きとうもろこしとか。ビールは……あたしが自分で飲んじゃいそうだからなし♪",
+    "frame": "0073_dialogue_615.6s.jpg",
+    "t": 615.6
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "おお、イカがとうもろこしに変わった！ やっぱり刺すんだ！",
+    "frame": "0074_dialogue_622.8s.jpg",
+    "t": 622.8
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "正直どっちも捨てがたいのよね～。悩むわぁ。ま、取り敢えずここまでで一応メニューは出揃ったかしら。",
+    "frame": "0075_dialogue_635.2s.jpg",
+    "t": 635.2
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "ドリンクと、串焼き2種類と、デザートと、ペイントかぁ。",
+    "frame": "0076_dialogue_642.8s.jpg",
+    "t": 642.8
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "超バランスいいじゃん！",
+    "frame": "0077_dialogue_647.0s.jpg",
+    "t": 647.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "よ～しじゃあこの調子で☆ みんなで細かいとこもうちょい話して、プロデューサーに相談にいくか☆",
+    "frame": "0078_dialogue_657.0s.jpg",
+    "t": 657.0
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "ってなわけで！ みんなで案を練って、簡単にだけどまとめてきたわよ♪",
+    "frame": "0079_dialogue_667.6s.jpg",
+    "t": 667.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "これでいこう",
+    "frame": "0080_dialogue_668.8s.jpg",
+    "t": 668.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "うきや～☆ Pちゃんありがと～！ きらりたち、いっぱいいっぱい頑張るね♪",
+    "frame": "0081_dialogue_678.0s.jpg",
+    "t": 678.0
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "じゃあ次は試作に向けて、だね！ みんなのメニュー食べたいな～。",
+    "frame": "0082_dialogue_686.6s.jpg",
+    "t": 686.6
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "ふふふ、わかってるわよ～♪ そうと決まればキッチン押さえなきゃね～！",
+    "frame": "0083_dialogue_695.8s.jpg",
+    "t": 695.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "材料の買い出しもあるし、やることいっぱいだな☆",
+    "frame": "0084_dialogue_702.4s.jpg",
+    "t": 702.4
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "ふふっ、試作楽しみだね～♪ それまでにアタシもデザインいっぱい描かなきゃ★",
+    "frame": "0085_dialogue_711.6s.jpg",
+    "t": 711.6
+   }
+  ]
+ },
+ {
+  "id": "ep2",
+  "tab": "第2話",
+  "title": "Only sorry story☆",
+  "summary": "Pと共に商品見学ツアーをする美嘉。順調に試作を進めるきらりと心の様子を見届けた翌日、大量の煙に覆われたキッチンで試作する未央と早苗の姿を発見。試作は順調に進んでいると思いきや……ハプニング発生！ハチャメチャなふたりに、Pときらり、美嘉、心はそっとキッチンの扉を閉めるのだった。",
+  "start_s": 711,
+  "title_frame": "0086_dialogue_719.8s.jpg",
+  "log": [
+   "2"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "……と、いうわけで。 みんなの様子、ふたりで見て回ろっか。 プロデューサー、準備OK？",
+    "frame": "0087_dialogue_729.0s.jpg",
+    "t": 729.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "OK",
+    "frame": "0088_dialogue_730.2s.jpg",
+    "t": 730.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "それじゃ、みんなの商品見学ツアースタート！ まずは、きらりちゃんとはぁとさん、レッツゴー！",
+    "frame": "0089_dialogue_742.6s.jpg",
+    "t": 742.6
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "お邪魔しまーす★",
+    "frame": "0091_dialogue_753.2s.jpg",
+    "t": 753.2
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "にょわ！Pちゃん、美嘉ちゃん！おっつおっつ☆",
+    "frame": "0092_dialogue_760.0s.jpg",
+    "t": 760.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "おっ！美嘉ちゃんにプロデューサー！様子見にきたの？なら、ちょっとつまんでく？",
+    "frame": "0093_dialogue_768.6s.jpg",
+    "t": 768.6
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "つまみ食いじゃなくて味見！ って、きらりちゃん今もぐもぐしてたでしょ？",
+    "frame": "0094_dialogue_778.2s.jpg",
+    "t": 778.2
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "うぇへへ☆ イチゴがきらりんに食べてほすいって 見つめてたんだぁ。美嘉ちゃんもどうぞ♪",
+    "frame": "0095_dialogue_789.8s.jpg",
+    "t": 789.8
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "ありがとー。……ん、美味しい！",
+    "frame": "0096_dialogue_796.2s.jpg",
+    "t": 796.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "プロデューサーには、はぁとが食べさせてあ・げ・る☆ 逃げんなって☆ ん？ どした？",
+    "frame": "0097_dialogue_806.2s.jpg",
+    "t": 806.2
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "調理台にホールケーキがある……",
+    "frame": "0098_dialogue_809.2s.jpg",
+    "t": 809.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "あ、やっぱ気づいた？気づいちゃった？ きらりちゃん特製ケーキ☆ はぁともシュガー担当したんだぞ☆",
+    "frame": "0099_dialogue_819.8s.jpg",
+    "t": 819.8
+   },
+   {
+    "type": "header",
+    "speaker": "",
+    "text": "おやつ……？",
+    "frame": "0100_dialogue_821.2s.jpg",
+    "t": 821.2
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "違うよぉ。カキ氷の上に、アイスやイチゴと一緒にケーキも乗せてみようかなって。",
+    "frame": "0101_dialogue_831.2s.jpg",
+    "t": 831.2
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "確かに、ケーキ乗ってるパフェってインパクトあるよねー。",
+    "frame": "0102_dialogue_837.4s.jpg",
+    "t": 837.4
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "にゅふふ～、Pちゃん、気になるならどうぞ。はい、あーん☆",
+    "frame": "0103_dialogue_845.6s.jpg",
+    "t": 845.6
+   },
+   {
+    "type": "header",
+    "speaker": "",
+    "text": "あーん",
+    "frame": "0104_dialogue_846.8s.jpg",
+    "t": 846.8
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "甘くてはぴはぴな味だった……",
+    "frame": "0105_dialogue_850.6s.jpg",
+    "t": 850.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "おお、自然な流れであーんを……。ほらプロデューサー。こっちのカクテルも、あーん☆",
+    "frame": "0106_dialogue_860.6s.jpg",
+    "t": 860.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "普通にいただく",
+    "frame": "0107_dialogue_861.8s.jpg",
+    "t": 861.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ノリが悪いぞプロデューサー☆ ちぇっ。 でも、どう？ 美味しいでしょ？",
+    "frame": "0108_dialogue_869.4s.jpg",
+    "t": 869.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "美味しい",
+    "frame": "0109_dialogue_870.6s.jpg",
+    "t": 870.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "このふたりは、順調そうだ……",
+    "frame": "0110_dialogue_873.4s.jpg",
+    "t": 873.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "明日は、交代で未央と早苗さんが使うんだよね？串焼きと……幸せのお肉、だっけ？",
+    "frame": "0111_dialogue_884.0s.jpg",
+    "t": 884.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "んん☆ 明日の茶色いものを作る組ははぁとも気になる☆",
+    "frame": "0112_dialogue_891.0s.jpg",
+    "t": 891.0
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "きらりも！ちょうどレッスンのあとだし、みんなで一緒に突撃したいにい♪",
+    "frame": "0113_dialogue_899.0s.jpg",
+    "t": 899.0
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "翌日",
+    "frame": "0114_dialogue_905.6s.jpg",
+    "t": 905.6
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "今日は未央と早苗さん！ それじゃあみんなで、レッツゴー★",
+    "frame": "0115_dialogue_912.8s.jpg",
+    "t": 912.8
+   },
+   {
+    "type": "header",
+    "speaker": "",
+    "text": "未央&早苗's ……",
+    "frame": "0116_dialogue_920.0s.jpg",
+    "t": 920.0
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "ドアのガラスが曇っている……",
+    "frame": "0117_dialogue_923.0s.jpg",
+    "t": 923.0
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "えっ？なにあれ！火事？！",
+    "frame": "0118_dialogue_927.6s.jpg",
+    "t": 927.6
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "Pちゃん！大変！煙がもくもくって！",
+    "frame": "0119_dialogue_933.4s.jpg",
+    "t": 933.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "いや、待ってふたりとも。これ、なんか……いいニオイ？",
+    "frame": "0120_dialogue_941.4s.jpg",
+    "t": 941.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "火事にしては、楽しそうな声が聞こえてくる……",
+    "frame": "0121_dialogue_952.4s.jpg",
+    "t": 952.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "おおっ！すごい！いいかんじ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "でしょでしょ♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "そっかー、蒸してから焼けば、ちゃんと火も通るし、柔らかくなるのか～。余計な油も落ちるんだね～。",
+    "frame": "0123_dialogue_970.4s.jpg",
+    "t": 970.4
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "夏だし鶏肉だし、しっかり火を通さないとだけど、現場で延々と焼いてるのもね～。あたしの食材と一緒に先に蒸して火を通しておいたらいいのよ～。",
+    "frame": "0124_dialogue_985.8s.jpg",
+    "t": 985.8
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "さっすがー！ これで私の「幸せの黄色い肉」も美味しくなるよ～♪",
+    "frame": "0125_dialogue_994.0s.jpg",
+    "t": 994.0
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "さっきの試食もいいカンジだったし、順調順調。最高の海の家になるわよ～。",
+    "frame": "0126_dialogue_1003.2s.jpg",
+    "t": 1003.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "なんか……意外とマジメなカンジ？",
+    "frame": "0127_dialogue_1011.8s.jpg",
+    "t": 1011.8
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "「幸せの黄色い肉」ってなに……？",
+    "frame": "0128_dialogue_1017.8s.jpg",
+    "t": 1017.8
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "この匂い……くんくん……もしかして、カレー？",
+    "frame": "0129_dialogue_1027.8s.jpg",
+    "t": 1027.8
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "にしてもさっきからなんでこんなに煙が……？",
+    "frame": "0130_dialogue_1036.8s.jpg",
+    "t": 1036.8
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "さっきかけた醤油がヤバかったのかしら……。ちょっと窓開けよっか。",
+    "frame": "0131_dialogue_1044.0s.jpg",
+    "t": 1044.0
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "そうだね～。",
+    "frame": "0132_dialogue_1046.8s.jpg",
+    "t": 1046.8
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "ってうわああああああ！！ 幸せの黄色いパウダーが！！",
+    "frame": "0134_dialogue_1053.8s.jpg",
+    "t": 1053.8
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "へっ、へっ、へっぶしっ！！",
+    "frame": "0135_dialogue_1058.2s.jpg",
+    "t": 1058.2
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "へぶしっ！！ぶはっ！！カレー粉が、舞って！目に！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "やばいよこれ、はくしょん！！ ゴメンナサ、はくしょん！！",
+    "frame": "0136_dialogue_1070.0s.jpg",
+    "t": 1070.0
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "し、視界が黄色い！！へっ、へっくしょい！！窓！！窓全部開けよう！！ダメだこれ！！",
+    "frame": "0137_dialogue_1079.4s.jpg",
+    "t": 1079.4
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "りょ、りょうか……つくしゅん！！ ひ～っ！！",
+    "frame": "0138_dialogue_1087.2s.jpg",
+    "t": 1087.2
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉・心・きらり",
+    "text": "……",
+    "frame": "0139_dialogue_1090.2s.jpg",
+    "t": 1090.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "そっとドアを閉める",
+    "frame": "0140_dialogue_1091.4s.jpg",
+    "t": 1091.4,
+    "csv_only": true
+   }
+  ]
+ },
+ {
+  "id": "ep3",
+  "tab": "第3話",
+  "title": "We are the PASSIONISTA☆",
+  "summary": "待ちに待ったイベント当日。たくさんのお客さんが詰め寄せる中、海の家「SUN♡FLOWER」ついに開店！きらり、美嘉、未央、早苗、心がそれぞれ趣向を凝らしたメニューはどれも大好評。あっという間に休憩時間に差し掛かり、5人は後半戦に向けて串焼きと焼きそばで英気を養うのだった。",
+  "start_s": 1091,
+  "title_frame": "0141_dialogue_1100.8s.jpg",
+  "log": [
+   "3"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "いよいよだね～、晴れて良かった♪",
+    "frame": "0142_dialogue_1107.4s.jpg",
+    "t": 1107.4
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "お客さんもいっぱい集まってるよーっ！ みんな、楽しみにしてくれてるみたい！",
+    "frame": "0143_dialogue_1114.6s.jpg",
+    "t": 1114.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "準備できた？",
+    "frame": "0144_dialogue_1115.8s.jpg",
+    "t": 1115.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "任せろ☆ はぁとはドリンクだしね。お客さんが来たら、愛情を注ぐだけ☆",
+    "frame": "0145_dialogue_1124.4s.jpg",
+    "t": 1124.4
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "きらりちゃん大変じゃない？ アイス乗せたりイチゴ乗せたり、盛り盛りよね。",
+    "frame": "0146_dialogue_1132.0s.jpg",
+    "t": 1132.0
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "だいじょーぶ！きらり、みんなのためにがんばゆっ！",
+    "frame": "0147_dialogue_1138.0s.jpg",
+    "t": 1138.0
+   },
+   {
+    "type": "header",
+    "speaker": "",
+    "text": "じゃあ、始めよう！",
+    "frame": "0148_dialogue_1139.4s.jpg",
+    "t": 1139.4
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉・きらり",
+    "text": "「海の家SUN♡FLOWER」★ 「海の家SUN♡FLOWER」☆",
+    "frame": "0149_dialogue_1144.4s.jpg",
+    "t": 1144.4
+   },
+   {
+    "type": "line",
+    "speaker": "心・未央・早苗",
+    "text": "開店しまーす☆ 開店しまーす！ 開店しまーす！",
+    "frame": "0150_dialogue_1150.0s.jpg",
+    "t": 1150.0
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "いらっしゃいませー！ みんな、アタシのデザインしたペイントで、 ビーチの視線、ひとり占め間違いなし★",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "はぁとの「すういーていー☆シャレオツカクテル☆ノンアルだぞ☆」 みんな、もちろん飲んでいってくれるよな☆",
+    "frame": "0151_dialogue_1170.8s.jpg",
+    "t": 1170.8
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "……あのさ、早苗さん。 さっきから気になってたんだけど……その串焼き、なに？",
+    "frame": "0152_dialogue_1180.0s.jpg",
+    "t": 1180.0
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "これはね……ゲソモロコシよ。ゲソが2種類と、こっちは半身モロコシ☆",
+    "frame": "0153_dialogue_1188.4s.jpg",
+    "t": 1188.4
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "あははっ、なにこれウケる！ 見た目スゴいけど、超いいニオイじゃん！",
+    "frame": "0154_dialogue_1198.0s.jpg",
+    "t": 1198.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "どっちも食べたかった結果こうなったか～☆ 名前のインパクトに、はぁとちょっぴりジェラシー☆",
+    "frame": "0155_dialogue_1206.6s.jpg",
+    "t": 1206.6
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "ほらっ、ふたりとも一本ずつ持って持って！ いらっしゃいませ～♪ ゲソモロコシいかが～？ あたしたちの愛情たっぷりよ～♪",
+    "frame": "0156_dialogue_1218.0s.jpg",
+    "t": 1218.0
+   },
+   {
+    "type": "line",
+    "speaker": "女性客A",
+    "text": "美味しそー♪ アイドルが直接接客してるって、超豪華じゃん！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "男性客",
+    "text": "美嘉ちゃんがやってくれるの？ それ、すごくない？ あっち並べばいいの？",
+    "frame": "0157_dialogue_1228.4s.jpg",
+    "t": 1228.4
+   },
+   {
+    "type": "line",
+    "speaker": "女性客B",
+    "text": "列どんどん伸びてるじゃん！ はやくいこっ！",
+    "frame": "0158_dialogue_1232.4s.jpg",
+    "t": 1232.4
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "ふむふむ、いいカンジに手応えアリなんじゃない？",
+    "frame": "0159_dialogue_1238.4s.jpg",
+    "t": 1238.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "み～んなはぁとたちの可愛さにメロメロって感じ？ドリンクオーダー、あざーっす☆",
+    "frame": "0160_dialogue_1246.2s.jpg",
+    "t": 1246.2
+   },
+   {
+    "type": "line",
+    "speaker": "女性客A",
+    "text": "や～んデザインめっちゃカワイイ～♪ 美嘉ちゃん、ありがと～！",
+    "frame": "0161_dialogue_1253.2s.jpg",
+    "t": 1253.2
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "気に入ってもらえて良かった！ ありがとうございました～★",
+    "frame": "0162_dialogue_1259.4s.jpg",
+    "t": 1259.4
+   },
+   {
+    "type": "line",
+    "speaker": "女性客B",
+    "text": "美嘉ちゃん、私このひまわりお願いします！",
+    "frame": "0163_dialogue_1263.6s.jpg",
+    "t": 1263.6
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "はいは～い★",
+    "frame": "0164_dialogue_1266.8s.jpg",
+    "t": 1266.8
+   },
+   {
+    "type": "line",
+    "speaker": "男性客",
+    "text": "すいませ～ん、ゲソモロコシお願いしま～す。あ、半身も！一本ずつで！",
+    "frame": "0165_dialogue_1276.2s.jpg",
+    "t": 1276.2
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "は～い♪ お待たせしました～。熱いから気をつけてね～☆",
+    "frame": "0166_dialogue_1283.0s.jpg",
+    "t": 1283.0
+   },
+   {
+    "type": "line",
+    "speaker": "女性客A",
+    "text": "あはは、ゲソモロコシ、見た目ヤバいよそれ～！ こっちの「幸せの黄色い肉」も美味しいよ！ シェアしよ～♪",
+    "frame": "0167_dialogue_1291.0s.jpg",
+    "t": 1291.0
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "ありがとうございました～☆ へへ♪ みんな喜んでくれてるよ～！",
+    "frame": "0168_dialogue_1298.8s.jpg",
+    "t": 1298.8
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "未央ちゃ～ん、呼び込み交代の時間だよ～！",
+    "frame": "0170_dialogue_1304.6s.jpg",
+    "t": 1304.6
+   },
+   {
+    "type": "line",
+    "speaker": "女性客B",
+    "text": "あ、きらりちゃんだ～！ お仕事頑張って～！",
+    "frame": "0171_dialogue_1311.8s.jpg",
+    "t": 1311.8
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "ありがと～♪ きらりんがんばゆ☆ にゅふん！",
+    "frame": "0172_dialogue_1317.8s.jpg",
+    "t": 1317.8
+   },
+   {
+    "type": "header",
+    "speaker": "",
+    "text": "みんな、お昼にしよう",
+    "frame": "0173_dialogue_1322.6s.jpg",
+    "t": 1322.6
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "えっ？もうそんな時間か～。ピークのお昼になる前にご飯済ませるんだっけ？",
+    "frame": "0174_dialogue_1330.8s.jpg",
+    "t": 1330.8
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "忙しくて時間があっという間だにぃ。でもでも、とっても楽すいーよぉ♪",
+    "frame": "0175_dialogue_1338.2s.jpg",
+    "t": 1338.2
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "じゃ、うちのフードちょっと持ってこよっか。みんなゲソと半身、どっちがいい～？",
+    "frame": "0176_dialogue_1346.2s.jpg",
+    "t": 1346.2
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "私、半身がいい～！あっ、私もカレーチキン串焼いてくるよ～！",
+    "frame": "0177_dialogue_1354.0s.jpg",
+    "t": 1354.0
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "ハピハピイエローチキン！ きらりも手伝うゆ～☆",
+    "frame": "0178_dialogue_1359.4s.jpg",
+    "t": 1359.4
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "お待たせ～。プロデューサーと一緒にお隣で買ってきたよー。",
+    "frame": "0180_dialogue_1370.2s.jpg",
+    "t": 1370.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "食欲をそそられる、香ばしいソースの匂い……。これはもしや、屋台の定番のアレか☆",
+    "frame": "0181_dialogue_1379.2s.jpg",
+    "t": 1379.2
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "正解！はーい、焼きそばだよー！",
+    "frame": "0182_dialogue_1384.6s.jpg",
+    "t": 1384.6
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "焼きそばに鶏肉にイカにモロコシ！ ううん、やっぱりビールをメニューに入れておけば……！",
+    "frame": "0183_dialogue_1394.0s.jpg",
+    "t": 1394.0
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "他のお店も賑わっててね、今日とっても楽しいって！ お店の人に、ありがとうって言われちゃった♪",
+    "frame": "0184_dialogue_1403.6s.jpg",
+    "t": 1403.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "ありがたくいただこう",
+    "frame": "0185_dialogue_1405.2s.jpg",
+    "t": 1405.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "うぇへへ、みんな優すいね～。",
+    "frame": "0186_dialogue_1410.6s.jpg",
+    "t": 1410.6
+   },
+   {
+    "type": "line",
+    "speaker": "女性客A",
+    "text": "わっ！ホントに中で食べてくれるんだ～！",
+    "frame": "0187_dialogue_1416.6s.jpg",
+    "t": 1416.6
+   },
+   {
+    "type": "line",
+    "speaker": "男性客",
+    "text": "同じ空間で食事とか……奇跡？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "休憩中は呼び込みできないしね～。みんなも、ゆっくりしてってね～。",
+    "frame": "0188_dialogue_1428.2s.jpg",
+    "t": 1428.2
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "さ～、いっぱい食べて、後半戦もがんばろーっ！",
+    "frame": "0189_dialogue_1433.4s.jpg",
+    "t": 1433.4
+   },
+   {
+    "type": "line",
+    "speaker": "一同",
+    "text": "いっただっきま～す！",
+    "frame": "0190_dialogue_1437.4s.jpg",
+    "t": 1437.4
+   }
+  ]
+ },
+ {
+  "id": "ep4",
+  "tab": "第4話",
+  "title": "Enjoy summer time☆",
+  "summary": "海辺で呼び込みをしていたきらりと未央は、迷子の子どもを発見する。駆け付けたPと早苗、美嘉、心に事情を説明し、母親を探しながら迷子センターへ向かう。そして無事に母親を発見して親子と別れた5人は、みんなを更に楽しませるべく、LIVEに向けて気を引き締めるのだった。",
+  "start_s": 1437,
+  "title_frame": "0191_dialogue_1451.0s.jpg",
+  "log": [
+   "4"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "きらりんの「はぴはぴキンキンすぺしゃる」いかがですか～？",
+    "frame": "0191_dialogue_1451.0s.jpg",
+    "t": 1451.0
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "未央ちゃん特製、「幸せの黄色い肉」もあるよ～☆",
+    "frame": "0192_dialogue_1456.6s.jpg",
+    "t": 1456.6
+   },
+   {
+    "type": "line",
+    "speaker": "子供",
+    "text": "ふええ……。",
+    "frame": "0193_dialogue_1458.4s.jpg",
+    "t": 1458.4
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "んにゅ？",
+    "frame": "0194_dialogue_1460.4s.jpg",
+    "t": 1460.4
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "お？どしたの？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "子供",
+    "text": "うぅう……ママ……。",
+    "frame": "0195_dialogue_1465.6s.jpg",
+    "t": 1465.6
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "きゅぴーん！きらりんアンテナ発動！なんか聞こえるにぃ……ん……。小っちゃい子の困ってる声がすゆ！",
+    "frame": "0196_dialogue_1478.4s.jpg",
+    "t": 1478.4
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "ええっ？ 大変じゃん！ どのあたりから？ 私じゃ人混みでよく見えなくて……。",
+    "frame": "0197_dialogue_1486.2s.jpg",
+    "t": 1486.2
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "んーと……は、はっけーーーん！！ あっち！小っちゃい子が泣いてゆ！",
+    "frame": "0198_dialogue_1494.6s.jpg",
+    "t": 1494.6
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "あっちだね、オッケー！早くいこう！",
+    "frame": "0199_dialogue_1500.2s.jpg",
+    "t": 1500.2
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "きらりん戦隊、出動！",
+    "frame": "0200_dialogue_1505.0s.jpg",
+    "t": 1505.0
+   },
+   {
+    "type": "line",
+    "speaker": "子供",
+    "text": "う、うえぇん、ママ～？",
+    "frame": "0201_dialogue_1511.8s.jpg",
+    "t": 1511.8
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "そこのキミ！どうしたの？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "子供",
+    "text": "え……きらりちゃんと、みおちゃん……？",
+    "frame": "0202_dialogue_1520.8s.jpg",
+    "t": 1520.8
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "そうだよぉ～。ママとはぐれちゃったのかな？",
+    "frame": "0203_dialogue_1527.0s.jpg",
+    "t": 1527.0
+   },
+   {
+    "type": "line",
+    "speaker": "子供",
+    "text": "ちいちゃん、カキ氷食べたくて走ってきたら、ママ……いないの……。",
+    "frame": "0204_dialogue_1533.0s.jpg",
+    "t": 1533.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "大丈夫？",
+    "frame": "0205_dialogue_1545.2s.jpg",
+    "t": 1545.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "おーい、未央ちゃん、きらりちゃーん！ 慌てて走ってくのが見えて追いかけてきたんだけど……。 なにかあった？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "Pちゃん！早苗ちゃん！えーとねぇ……。",
+    "frame": "0206_dialogue_1551.2s.jpg",
+    "t": 1551.2
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "実は、この子が迷子みたいで……。お母さんとはぐれちゃったんだってさ。",
+    "frame": "0207_dialogue_1557.8s.jpg",
+    "t": 1557.8
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "迷子？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちいちゃん",
+    "text": "うう、うえええ……。",
+    "frame": "0208_dialogue_1564.8s.jpg",
+    "t": 1564.8
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "ああっ、ほら、キミにはこの未央ちゃん特製お肉をあげる！ 美味しいよ？ 幸せだよ？",
+    "frame": "0209_dialogue_1574.2s.jpg",
+    "t": 1574.2
+   },
+   {
+    "type": "line",
+    "speaker": "ちいちゃん",
+    "text": "おにく……ありがとー……。",
+    "frame": "0210_dialogue_1577.6s.jpg",
+    "t": 1577.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "連れていこう",
+    "frame": "0211_dialogue_1584.4s.jpg",
+    "t": 1584.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "プロデューサー君、迷子センターってあったっけ？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "よし！ママを探しながら連れて行きましょう！ 迷子のことならこの早苗さんに任せなさい♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "未央～、きらりちゃん、早苗さーん、呼び込み交代するよ～。……って、どうしたの？",
+    "frame": "0212_dialogue_1604.8s.jpg",
+    "t": 1604.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "なになに、トラブル？ ってその子は……。",
+    "frame": "0213_dialogue_1610.2s.jpg",
+    "t": 1610.2
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "あ、美嘉ねえにさとしん。もう交代の時間か～。実は迷子見つけたんだよ～。",
+    "frame": "0214_dialogue_1619.6s.jpg",
+    "t": 1619.6
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "それで親御さんを探しつつ迷子センターに 連れて行こうって話してたの。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "おーおー。よしよし。お姉さんたちがついてるから、もう大丈夫だぞ☆",
+    "frame": "0215_dialogue_1636.2s.jpg",
+    "t": 1636.2
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "きらりが抱っこして連れてってあげゆ！ えーい☆ びよーん☆",
+    "frame": "0216_dialogue_1645.4s.jpg",
+    "t": 1645.4
+   },
+   {
+    "type": "line",
+    "speaker": "ちいちゃん",
+    "text": "きゃー☆ たかいーっ！",
+    "frame": "0217_dialogue_1649.2s.jpg",
+    "t": 1649.2
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "きらりちゃんが抱っこするとホントに高いよね。",
+    "frame": "0218_dialogue_1655.0s.jpg",
+    "t": 1655.0
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "ちょっとしたアトラクション気分？ いいなぁ楽しそう。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちいちゃん",
+    "text": "あっ、ママ！",
+    "frame": "0219_dialogue_1667.0s.jpg",
+    "t": 1667.0
+   },
+   {
+    "type": "line",
+    "speaker": "ママ",
+    "text": "ちいちゃん！よかった！",
+    "frame": "0222_dialogue_1672.0s.jpg",
+    "t": 1672.0
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "この子のお母さんですか？",
+    "frame": "0223_dialogue_1676.0s.jpg",
+    "t": 1676.0
+   },
+   {
+    "type": "line",
+    "speaker": "ママ",
+    "text": "はい！ ああ、みなさんは……！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちいちゃん",
+    "text": "みおちゃんに おにくもらったの！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ママ",
+    "text": "まぁ、ありがとうございます。 アイドルのみなさんに保護していただくなんて……。",
+    "frame": "0224_dialogue_1689.0s.jpg",
+    "t": 1689.0
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "いえいえ、これも仕事みたいなもんですから～。",
+    "frame": "0225_dialogue_1694.8s.jpg",
+    "t": 1694.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "混んでるのもぶっちゃけはぁとたちのせいみたいとこもあるしね～。",
+    "frame": "0226_dialogue_1701.0s.jpg",
+    "t": 1701.0
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "早く見つかって良かったね～。ちいちゃんも、もうママから離れないようにね★",
+    "frame": "0227_dialogue_1709.0s.jpg",
+    "t": 1709.0
+   },
+   {
+    "type": "line",
+    "speaker": "ちいちゃん",
+    "text": "はい！ごめんなさい！",
+    "frame": "0228_dialogue_1712.8s.jpg",
+    "t": 1712.8
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "えらいえらい！そんなえらい子には……じゃーん！「はぴはぴキンキンすぺしゃる」☆プレゼント！",
+    "frame": "0229_dialogue_1725.0s.jpg",
+    "t": 1725.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "じゃあ、ママさんには、はぁとのカクテルプレゼント☆",
+    "frame": "0230_dialogue_1731.6s.jpg",
+    "t": 1731.6
+   },
+   {
+    "type": "line",
+    "speaker": "ちいちゃん",
+    "text": "わぁ、きらりちゃんありがとー！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ママ",
+    "text": "本当にありがとうございました！",
+    "frame": "0231_dialogue_1738.2s.jpg",
+    "t": 1738.2
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "親子は去って行った……",
+    "frame": "0232_dialogue_1741.4s.jpg",
+    "t": 1741.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "そろそろ行こうか",
+    "frame": "0233_dialogue_1743.0s.jpg",
+    "t": 1743.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "なし",
+    "text": "親子は去って行った……",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "LIVEの時間だね？",
+    "frame": "0234_dialogue_1746.2s.jpg",
+    "t": 1746.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "いよいよこのビーチを はぁとたち一色に染める時間ね☆",
+    "frame": "0235_dialogue_1751.4s.jpg",
+    "t": 1751.4
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "私たちのLIVEで、みんなをもっと楽しませちゃおう！",
+    "frame": "0236_dialogue_1757.2s.jpg",
+    "t": 1757.2
+   }
+  ]
+ },
+ {
+  "id": "ep5",
+  "tab": "第5話",
+  "title": "Ready to go☆",
+  "summary": "きらり、美嘉、未央、早苗、心のLIVEは大成功！ LIVEの盛り上がりを受け、海の家も完売御礼の 大盛況で幕を閉じた。無事に仕事をやり切り、 ここからは自分たちの時間だと海へ駆け出す5人。 持ち込んだ水鉄砲での打ち上げは、夕暮れまで続いたの だった。",
+  "start_s": 1757,
+  "title_frame": "0237_dialogue_1770.4s.jpg",
+  "log": [
+   "5"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "みんな～っ！今日はありがとーっ！！",
+    "frame": "0237_dialogue_1770.4s.jpg",
+    "t": 1770.4
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "まだまだ楽しんでってね～！",
+    "frame": "0238_dialogue_1774.2s.jpg",
+    "t": 1774.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "引き続きはぁとたちの「SUN♡FLOWER」もよろしくね～ん☆",
+    "frame": "0239_dialogue_1780.4s.jpg",
+    "t": 1780.4
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "曲もお店も、よろしくにぃ～☆",
+    "frame": "0240_dialogue_1785.8s.jpg",
+    "t": 1785.8
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "アツい真夏の海、満喫していってねー！",
+    "frame": "0241_dialogue_1790.0s.jpg",
+    "t": 1790.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "スウィーティーでシュガシュガで ハピハピ盛り盛りなLIVE、大成功ーっ☆",
+    "frame": "0242_dialogue_1804.2s.jpg",
+    "t": 1804.2
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "おつかれー★ 楽しかったねー！",
+    "frame": "0243_dialogue_1808.2s.jpg",
+    "t": 1808.2
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "青空の下、海とみんなに囲まれてのLIVE！最高だったわね！ なごみP このまましばらく、休憩する？",
+    "frame": "0244_dialogue_1815.4s.jpg",
+    "t": 1815.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "お疲れさま",
+    "frame": "0245_dialogue_1817.0s.jpg",
+    "t": 1817.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "このまましばらく、休憩する？",
+    "frame": "0246_dialogue_1819.8s.jpg",
+    "t": 1819.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "うーん、全然元気だからさー、お店戻りたいかも！今ってスタッフさんに任せちゃってるでしょ？それに、もっともっとみんなとお話ししたい！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "うんうん、お客さんもまだまだ来てくれてるみたいだし。いいでしょ、プロデューサー？",
+    "frame": "0247_dialogue_1841.8s.jpg",
+    "t": 1841.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "いいよ",
+    "frame": "0248_dialogue_1843.0s.jpg",
+    "t": 1843.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "ありがと★ じゃあみんな、最後まで気合いれて、いっくよー！",
+    "frame": "0249_dialogue_1850.4s.jpg",
+    "t": 1850.4
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "海の家「SUN♡FLOWER」",
+    "frame": "0250_dialogue_1855.6s.jpg",
+    "t": 1855.6
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "満員御礼！無事完売！おめでとーっ！！",
+    "frame": "0251_dialogue_1861.8s.jpg",
+    "t": 1861.8
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "おめでとー！ありがとー！やりきったよーっ！！",
+    "frame": "0252_dialogue_1867.2s.jpg",
+    "t": 1867.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ねぇねぇプロデューサー☆ まだ明るいし……はぁとたちのお願い、覚えてる？",
+    "frame": "0253_dialogue_1874.8s.jpg",
+    "t": 1874.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "遊んでいいよ",
+    "frame": "0254_dialogue_1876.2s.jpg",
+    "t": 1876.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "心・早苗",
+    "text": "打ち上げだーっ☆ 打ち上げだーっ！！",
+    "frame": "0255_dialogue_1879.6s.jpg",
+    "t": 1879.6
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "イエーイ★",
+    "frame": "0256_dialogue_1883.0s.jpg",
+    "t": 1883.0
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "みんな、持ってきた遊び道具、取りに行くわよー！",
+    "frame": "0257_dialogue_1888.6s.jpg",
+    "t": 1888.6
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "あっ！早苗ちゃん、待ってー！",
+    "frame": "0259_dialogue_1895.2s.jpg",
+    "t": 1895.2
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "にゅっふっふっふ……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "きらりんの秘密兵器……ハピハピ☆海水シューター！！",
+    "frame": "0261_dialogue_1913.0s.jpg",
+    "t": 1913.0
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "ハッピー注入～ふんふふふんふふ～ん♪ にょわにょわにょわ～……♪",
+    "frame": "0262_dialogue_1924.6s.jpg",
+    "t": 1924.6
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "わっ、きらりんがタンク背負ってる！ ええい、負けるか！ 未央ちゃんも応戦だー！",
+    "frame": "0264_dialogue_1934.6s.jpg",
+    "t": 1934.6
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "ちゃーんす！未央ちゃん、覚悟！にょわー☆",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "うおおう！あぶなっ！ふっふっふ……今度はこちらの番だ！そりゃーっ！",
+    "frame": "0265_dialogue_1953.0s.jpg",
+    "t": 1953.0
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "うっきゃーっ☆ 冷たーい！！",
+    "frame": "0266_dialogue_1958.2s.jpg",
+    "t": 1958.2
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "……いいぞきらりちゃーん！",
+    "frame": "0267_dialogue_1964.8s.jpg",
+    "t": 1964.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ほらほら早苗さん、はぁとたちも参戦するぞ☆",
+    "frame": "0268_dialogue_1971.0s.jpg",
+    "t": 1971.0
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "若い子たちにはまだまだ負けないわよ～！ それそれーっ！",
+    "frame": "0269_dialogue_1977.0s.jpg",
+    "t": 1977.0
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "キャーっ！あははは！",
+    "frame": "0270_dialogue_1981.4s.jpg",
+    "t": 1981.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "楽しそうだ……",
+    "frame": "0271_dialogue_1983.0s.jpg",
+    "t": 1983.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "スキありーっ☆",
+    "frame": "0272_dialogue_1986.8s.jpg",
+    "t": 1986.8
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "……プロデューサーも油断大敵だよ～★",
+    "frame": "0273_dialogue_1991.2s.jpg",
+    "t": 1991.2
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "よーし、集中攻撃だーっ！",
+    "frame": "0274_dialogue_1995.4s.jpg",
+    "t": 1995.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "逃げる",
+    "frame": "0275_dialogue_1997.0s.jpg",
+    "t": 1997.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "Pちゃんめがけて……発射！ きらりん☆びーむあ～い！",
+    "frame": "0277_dialogue_2007.8s.jpg",
+    "t": 2007.8
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "わーつ、流れ弾だ～！！あははは～！",
+    "frame": "0278_dialogue_2013.2s.jpg",
+    "t": 2013.2
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "撃ち合……打ち上げは夕暮れまで続いた……",
+    "frame": "0279_dialogue_2021.4s.jpg",
+    "t": 2021.4
+   }
+  ]
+ },
+ {
+  "id": "ed",
+  "tab": "ED",
+  "title": "Summer has come☆",
+  "summary": "イベントを終え人々の間で海の家「SUN♡FLOWER」が話題になっていることを知って喜きらり、美嘉、未央、早苗、心。たくさんの人たちが協力してくれたのは、みんなが頑張っているからだと話すP。彼女たちの頑張りは周囲に笑顔の花を咲かせ、暑い夏をもっとアツくて、楽しいものにしてくれることだろう。",
+  "start_s": 2021,
+  "title_frame": "0280_dialogue_2032.8s.jpg",
+  "log": [
+   "ED"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "見た？ あたしたちの海の家、すっごい話題になってるわよ！",
+    "frame": "0281_dialogue_2038.6s.jpg",
+    "t": 2038.6
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "きらりんとさとしんのカキ氷とカクテル、みんな可愛い～って写真載せてたね！",
+    "frame": "0282_dialogue_2046.2s.jpg",
+    "t": 2046.2
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "美嘉ちゃんのペイントもいっぱい写真あったにぃ☆",
+    "frame": "0283_dialogue_2052.4s.jpg",
+    "t": 2052.4
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "未央のカレーチキンも、みんな「美味しい」って書いてたね。早苗さんのゲソモロコシも、超ウケてた。",
+    "frame": "0284_dialogue_2061.8s.jpg",
+    "t": 2061.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "うんうん、大盛況でトラブルも少なかったし、みんな楽しんでくれたみたいではぁとカンゲキ☆",
+    "frame": "0285_dialogue_2070.6s.jpg",
+    "t": 2070.6
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "ねー。いやー、よかったわ。 じゃ、プロデューサー君のところにいきましたっか。",
+    "frame": "0287_dialogue_2080.6s.jpg",
+    "t": 2080.6
+   },
+   {
+    "type": "header",
+    "speaker": "",
+    "text": "お疲れさま",
+    "frame": "0288_dialogue_2090.2s.jpg",
+    "t": 2090.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "今回のイベントどうだった？",
+    "frame": "0289_dialogue_2093.0s.jpg",
+    "t": 2093.0
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "すっごい楽しかった！",
+    "frame": "0290_dialogue_2097.0s.jpg",
+    "t": 2097.0
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "自分たちで商品をプロデュースするのも、みんなと一緒にできてはぴはぴだったぁ☆",
+    "frame": "0291_dialogue_2105.2s.jpg",
+    "t": 2105.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "未央ちゃんと早苗さんの煌部屋はちょーっと驚いたけどねー。完成度は高くてびっくりした☆",
+    "frame": "0292_dialogue_2114.8s.jpg",
+    "t": 2114.8
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "LIVEもすっごい良かったわよね！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "太陽が海に反射してキラキラしててさぁ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "お客さんの笑顔もキラキラしてて！",
+    "frame": "0293_dialogue_2131.0s.jpg",
+    "t": 2131.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "とってもシュガシュガ☆スウィーティーだったよね～☆ プロデューサーから見て、どうだった？",
+    "frame": "0294_dialogue_2140.2s.jpg",
+    "t": 2140.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "楽しいイベントだった",
+    "frame": "0295_dialogue_2142.0s.jpg",
+    "t": 2142.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "えへへ♪ Pちゃんも、ありがとにい。 お店の準備もいっぱいで手伝ってくれたし、遊ぶ時間もくれて。",
+    "frame": "0296_dialogue_2153.6s.jpg",
+    "t": 2153.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "海では海水の集中砲火も浴びてたよね～。よっ！水も滴るいいプロデューサー！",
+    "frame": "0297_dialogue_2163.0s.jpg",
+    "t": 2163.0
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "もちろん、プロデューサー君だけじゃないわよね。スタッフさんたちも、設営から撤収まで頑張ってくれて。たぶん、あたしたちが気づけてない苦労もあったよね。",
+    "frame": "0298_dialogue_2176.6s.jpg",
+    "t": 2176.6
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "そうだね。私たち、すっごく楽しかったけど、それは周りの海の家とか、みんなの協力があったからなんだよね。",
+    "frame": "0299_dialogue_2187.6s.jpg",
+    "t": 2187.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "どうして協力してくれると思う？",
+    "frame": "0300_dialogue_2190.6s.jpg",
+    "t": 2190.6
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "どうして……？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "うーん、お客さんがいっぱい来るから……？",
+    "frame": "0301_dialogue_2201.0s.jpg",
+    "t": 2201.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "みんなが頑張ってるからだよ",
+    "frame": "0302_dialogue_2203.0s.jpg",
+    "t": 2203.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "うっきゃー！ そんなこと言われると、嬉し恥ずすかぃー！",
+    "frame": "0303_dialogue_2210.8s.jpg",
+    "t": 2210.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "なになに？ そんな褒めても何も出ないけど、悪い気はしないから……もっと褒めろ☆",
+    "frame": "0304_dialogue_2219.6s.jpg",
+    "t": 2219.6
+   },
+   {
+    "type": "line",
+    "speaker": "早苗",
+    "text": "でもそう言ってもらえるとさ～、また頑張りたいって思うわよね。",
+    "frame": "0305_dialogue_2227.2s.jpg",
+    "t": 2227.2
+   },
+   {
+    "type": "line",
+    "speaker": "美嘉",
+    "text": "こうやって元気いっぱいのアタシたちでまた集まって… …。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "ファンのみんなを元気にして、私たちも元気をもらって。",
+    "frame": "0306_dialogue_2241.2s.jpg",
+    "t": 2241.2
+   },
+   {
+    "type": "line",
+    "speaker": "きらり",
+    "text": "ハピハピでい～っぱいにしたいにぃ☆",
+    "frame": "0307_dialogue_2247.6s.jpg",
+    "t": 2247.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "イベントは終わったけど、夏はまだまだこれからなんだよね☆",
+    "frame": "0308_dialogue_2253.6s.jpg",
+    "t": 2253.6
+   },
+   {
+    "type": "line",
+    "speaker": "未央",
+    "text": "よーし、またみんなで集まって、思いっきり楽しいことしよう！",
+    "frame": "0309_dialogue_2262.2s.jpg",
+    "t": 2262.2
+   },
+   {
+    "type": "line",
+    "speaker": "一同",
+    "text": "おーっ！",
+    "frame": "0310_dialogue_2265.2s.jpg",
+    "t": 2265.2,
+    "csv_only": true
+   }
+  ]
+ }
+]
