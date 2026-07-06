@@ -1,0 +1,2302 @@
+[
+ {
+  "id": "trailer",
+  "tab": "予告",
+  "title": "予告",
+  "summary": "",
+  "start_s": 0,
+  "title_frame": "0002_dialogue_27.0s.jpg",
+  "log": [
+   "Tr1",
+   "Tr2"
+  ],
+  "entries": [
+   {
+    "type": "header",
+    "speaker": "",
+    "text": "LIVE Carnival イベント近日開催予定!!",
+    "frame": "0001_dialogue_23.6s.jpg",
+    "t": 23.6
+   },
+   {
+    "type": "sub",
+    "speaker": "",
+    "text": "予告1",
+    "frame": "0002_dialogue_27.0s.jpg",
+    "t": 27.0
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "『拝啓、リサちゃん。リサちゃんが転校していってしまって、私はさびしいです』。",
+    "frame": "0003_dialogue_36.8s.jpg",
+    "t": 36.8
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "『小学校のお友達は、みんな忘れちゃったかもしれないけど……私は、ずっと覚えているからね』。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "『いつかきっと、リサちゃんにまた会えるって、信じてるから。そのときは、約束の指輪をつけていくね』。",
+    "frame": "0004_dialogue_58.8s.jpg",
+    "t": 58.8
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "『オウムアムアに幸運を』の楽曲に乗せて贈る、ノンストップショートムービー。楽しみに、お待ちください♪",
+    "frame": "0005_dialogue_68.8s.jpg",
+    "t": 68.8
+   },
+   {
+    "type": "sub",
+    "speaker": "",
+    "text": "予告2",
+    "frame": "0006_dialogue_74.0s.jpg",
+    "t": 74.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "アタシは、オトナになることをやめた。 アップデートをやめた。 自分で何も考えない、つまらない人形にはならない。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "アタシの大切なモノを、なにもかも奪っていくこの世界。そんなつまらない世界に、アタシは全力で反抗してやるわ。",
+    "frame": "0007_dialogue_99.6s.jpg",
+    "t": 99.6
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "この世界すべてを、ぶっ壊してやる。邪魔するヤツは、全員ぶっ殺してやるの。",
+    "frame": "0008_dialogue_109.4s.jpg",
+    "t": 109.4
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "『オウムアムアに幸運を』の楽曲に乗せて贈る、孤独な少女の復讐劇。見ないと……ぶっ殺すわよ！",
+    "frame": "0009_dialogue_130.2s.jpg",
+    "t": 130.2
+   }
+  ]
+ },
+ {
+  "id": "op",
+  "tab": "OP",
+  "title": "Making of Spin-off！",
+  "summary": "『オウムアムアに幸運を』――管理統制された世界に生きる5人の少女たちの、友情と叛逆の物語。そんな短い映像作品の撮影に臨むことになった、ちとせ、梨沙、志希、心、奈緒。今回の仕事をやりきって多くのことを学び、素晴らしい作品にしよう、というPの言葉に、アイドルたちは力強く頷いた。",
+  "start_s": 130,
+  "title_frame": "0010_dialogue_168.2s.jpg",
+  "log": [
+   "OP_B",
+   "OP"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "……チトセちゃんは……すごいね。勇気があって、カッコよくて、綺麗で……。アタシも……チトセちゃんみたいに、なれたら……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "リサちゃんは、綺麗で可愛いっ。自信持って♪ それに……私は知ってるよっ？ リサちゃんが、本当はとっても強い子だって。",
+    "frame": "0010_dialogue_168.2s.jpg",
+    "t": 168.2
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "そう、かな……。ううん、全然、そんなことないよ。アタシなんて、全然……いつも弱気だし、強くなんか……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "そんなこと言わないのっ。そうだっ！ 今度、良い物をあげるっ♪ リサちゃんにぴったりの、とっておきのお守りだよっ！",
+    "frame": "0011_dialogue_204.8s.jpg",
+    "t": 204.8
+   },
+   {
+    "type": "line",
+    "speaker": "監督",
+    "text": "カーット！ふたりとも、オッケー！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "AD",
+    "text": "出演者のみなさん、いったん休憩でーす。休憩後はC11から再開でーす。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ・梨沙",
+    "text": "お疲れさまでした。",
+    "frame": "0012_dialogue_220.8s.jpg",
+    "t": 220.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "お疲れさま",
+    "frame": "0013_dialogue_222.4s.jpg",
+    "t": 222.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "お昼のお弁当、用意してあるよ。",
+    "frame": "0014_dialogue_225.0s.jpg",
+    "t": 225.0
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "あはっ。ありがとう♪",
+    "frame": "0015_dialogue_228.4s.jpg",
+    "t": 228.4
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "チトセとリサの子供時代。大事な友だちだった、ふたり。ここから、物語が始まるんだよなあ……！",
+    "frame": "0016_dialogue_243.0s.jpg",
+    "t": 243.0
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "お芝居がちょっと難しかったけど……上手くできてたかな？ 小学生の頃なんて……もうずいぶん前のことだし。",
+    "frame": "0017_dialogue_257.0s.jpg",
+    "t": 257.0
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "ああ！演技、良かったよ！ 快活だったころのチトセの小学生らしさが出ててさ！",
+    "frame": "0018_dialogue_267.4s.jpg",
+    "t": 267.4
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "さっきのちとせちゃんの演技が編集されて、本映像では12歳のチトセになるんだよね？",
+    "frame": "0019_dialogue_277.0s.jpg",
+    "t": 277.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "便利なもんだよねぇ。ま、アタシもお芝居しやすかったし。いいことだわ！",
+    "frame": "0020_dialogue_286.6s.jpg",
+    "t": 286.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "いやー、現代の映像技術ってマジすごいわ。その気になったら、なんでもできちゃうじゃん。はぁとのお肌も、ぴっちぴちの十代肌に加工してほしいわぁー☆",
+    "frame": "0021_dialogue_301.6s.jpg",
+    "t": 301.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ほら、ほらほら！ほらほらプロデューサー！ ここは、「今のはぁとも十分綺麗だよ」って言うところだぞ☆ 早く、ほら早く、言えよ☆",
+    "frame": "0022_dialogue_317.2s.jpg",
+    "t": 317.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "佐藤、静かに キレイダヨ",
+    "frame": "0023_dialogue_320.2s.jpg",
+    "t": 320.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "うーん、ありがと☆ ……って、なるかっ！棒読みにもほどがあるぞ☆ この大根役者っ！",
+    "frame": "0024_dialogue_330.4s.jpg",
+    "t": 330.4
+   },
+   {
+    "type": "note",
+    "speaker": "",
+    "text": "このシーンはプロデューサーのセリフ選択で分岐します。動画は青（右）ボタン＝Pが棒読みで「キレイダヨ」と応じるルートです。もう一方のルートを選ぶと、直後の心のセリフが「はい……。じゃないっつーの☆ このテンプレやんの何回目だよ、オイ☆」に変化します。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "ふふっ、仲良しだね♪",
+    "frame": "0025_dialogue_336.2s.jpg",
+    "t": 336.2
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "仲良しっていうか……まぁ、仲良しなのかしらね、コレも。",
+    "frame": "0026_dialogue_345.0s.jpg",
+    "t": 345.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "さて、午後はさっきの続き…… 転校していくリサに、チトセが指輪を渡すシーンよね。",
+    "frame": "0027_dialogue_356.2s.jpg",
+    "t": 356.2
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "最後の方で、リサがチトセに見せる指輪、だっけ？",
+    "frame": "0028_dialogue_363.0s.jpg",
+    "t": 363.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "そう！大事なシーンよ！ここからのリサの行動は、この指輪がキーなんだから。撮影も気合いいれていかなきゃ！",
+    "frame": "0029_dialogue_375.2s.jpg",
+    "t": 375.2
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "あたし、このシーン好きなんだよ。 子どもの頃の友情を、ずっと胸に抱いてる、みたいな。 いいよなぁ……。",
+    "frame": "0030_dialogue_389.2s.jpg",
+    "t": 389.2
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "小さい頃に抱いた気持ちを、ずっとずっと、忘れないでいて…… ロマンチックだよね。",
+    "frame": "0031_dialogue_400.2s.jpg",
+    "t": 400.2
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "あたしはあそこがはやく撮りたいなー。シンちゃんが仲間になって、車で一緒に逃げるとこ。絶対楽しいよ！カーチェイス！爆発！どーん！",
+    "frame": "0032_dialogue_415.0s.jpg",
+    "t": 415.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "……あ、でもそこのシーンって。",
+    "frame": "0033_dialogue_421.6s.jpg",
+    "t": 421.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "シキちゃんは乗り物酔いする設定じゃない。 車内でダウンしてるからほとんど見せ場ないでしょ？",
+    "frame": "0034_dialogue_429.8s.jpg",
+    "t": 429.8
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "そーだったのだー。 学者は、頭脳労働専門だもんねー。",
+    "frame": "0035_dialogue_436.8s.jpg",
+    "t": 436.8
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "あたしの見せ場なんだから、任せてくれよなっ。アクションシーンで、活躍するぞーっ！",
+    "frame": "0036_dialogue_444.4s.jpg",
+    "t": 444.4
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "アタシもショットガンぶっ放すわよ！",
+    "frame": "0037_dialogue_450.0s.jpg",
+    "t": 450.0
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "みんな、役作りがいらないね！",
+    "frame": "0038_dialogue_454.8s.jpg",
+    "t": 454.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ありのままをお出しするという演技テク……ってオイ☆",
+    "frame": "0039_dialogue_461.0s.jpg",
+    "t": 461.0
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "にゃはは♪ まぁまぁ、冗談冗談。じょーだんだよ。",
+    "frame": "0040_dialogue_466.6s.jpg",
+    "t": 466.6
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "あたしだってちゃんと役作りしてんの。……っと。そろそろ休憩も終わりか。",
+    "frame": "0041_dialogue_476.0s.jpg",
+    "t": 476.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "あ……っと、やば。早く食べちゃわないと。つい、喋りすぎちゃったわね。",
+    "frame": "0042_dialogue_486.0s.jpg",
+    "t": 486.0
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "あはっ。私も、つい夢中になっちゃった。こういう現場でお話するのって、楽しいんだね。",
+    "frame": "0043_dialogue_496.2s.jpg",
+    "t": 496.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "……まだ撮影は始まったばかりだけど。ひとまず、みんなが楽しそうに撮影に臨んでいて、よかったよ。",
+    "frame": "0044_dialogue_502.6s.jpg",
+    "t": 502.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "みんなを応援する",
+    "frame": "0045_dialogue_504.4s.jpg",
+    "t": 504.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "このお仕事は、短い映像作品だけれど、役作りにアクションに、やるべきことは多い。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "とはいえ、オーディションを経て、自分で掴んだ役どころ。きちんとやりきって、多くのことを学んで素晴らしい作品を作り上げよう。",
+    "frame": "0046_dialogue_518.8s.jpg",
+    "t": 518.8
+   },
+   {
+    "type": "line",
+    "speaker": "一同",
+    "text": "はいっ！",
+    "frame": "0047_dialogue_521.2s.jpg",
+    "t": 521.2
+   }
+  ]
+ },
+ {
+  "id": "ep1",
+  "tab": "第1話",
+  "title": "Enemies of the World",
+  "summary": "『アップデート』を拒否し、12歳の体のまま生きるリサ。多大な犠牲を払いながらもおかしな世界を壊すため、単身市庁舎へと向かっていた。チトセとの思い出を、心の支えにしながら。リサの起こした騒動を眺めるシキ、シン、ナオもまた、自分たちの思惑のため、市庁舎への潜入計画を立てていた。",
+  "start_s": 521,
+  "title_frame": "0048_dialogue_681.6s.jpg",
+  "log": [
+   "1"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "はあっ……はあっ……！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "そろそろ、逃げ切れた……？……っ！ 追手……………………。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "つったく！しつこいわねっ！顔も意志も名前もない、人形の分際でっ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "ひとまず、今のが最後の追手だった……か。どうせまた、すぐに集まってくるんだろうけど……ちょっと、休憩。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "ふうー……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "……チトセちゃん。やっぱりアタシ、強くなんかないよ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "アタシを助けてくれた人、アタシに協力してくれた人……みんな、消されちゃった……。アタシは、誰も守れなかった……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "……いつまで、こんなこと続けるんだろ、アタシ。アタシもみんなと一緒に、大人しく『アップデート』されればよかったのかな……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "……ううん、ダメ。そうじゃないって、決めたんだもん。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "アタシは誰のことも守れなかったけど……だからこそ、みんなの仇を絶対に討つ。追手……………………。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "あーもう。ほんっと、しつこいヤツら。さすがに、市庁舎近くまで来ると警備が厚いわね。……ま、むしゃくしゃしてるし、ちょうどいいわ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "……お願い、チトセちゃん。アタシに勇気と、力を貸して。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "こんなおかしい世界、絶対にぶち壊してやるから！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "シン",
+    "text": "今日は……やけに街が騒がしいね。",
+    "frame": "0049_dialogue_689.6s.jpg",
+    "t": 689.6
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "チッ……あたしらが潜伏してることがバレたかっ！？",
+    "frame": "0050_dialogue_696.2s.jpg",
+    "t": 696.2
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "人形たちは走り回ってるけど、 あたしたちの方に来てるわけじゃない。 あれなら大丈夫だよ。",
+    "frame": "0051_dialogue_705.6s.jpg",
+    "t": 705.6
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "案外、あたしたち以外にも叛逆者がいるのかもね♪",
+    "frame": "0052_dialogue_713.0s.jpg",
+    "t": 713.0
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "ほんとにそんなヤツがいるんなら、仲間に引き入れようぜ。戦力は多い方がいい。",
+    "frame": "0053_dialogue_721.8s.jpg",
+    "t": 721.8
+   },
+   {
+    "type": "line",
+    "speaker": "シン",
+    "text": "それはどーかな。ちゃんとした思想があるならいいけど、ただの凶悪犯かもよ。",
+    "frame": "0054_dialogue_729.8s.jpg",
+    "t": 729.8
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "たしかに。結局、あたしらでやるしかねーか。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "んで？ このクソッタレな世界を脱出するためには、なにが必要なんだっけ？",
+    "frame": "0055_dialogue_746.4s.jpg",
+    "t": 746.4
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "モー、ナオちゃんってば。あたし、汚い言葉は嫌いってずっと言ってるでしょ。はい、罰金。",
+    "frame": "0056_dialogue_755.4s.jpg",
+    "t": 755.4
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "やっぱ理不尽だよこのシステム。",
+    "frame": "0057_dialogue_759.6s.jpg",
+    "t": 759.6
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "話を戻して…… この世界を脱出するためには、まずは世界の構造を知らないと。 つまり……。",
+    "frame": "0058_dialogue_770.8s.jpg",
+    "t": 770.8
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "あたしたちの次のミッションは、敵の本拠地、市庁舎への潜入ってわけ。",
+    "frame": "0059_dialogue_779.4s.jpg",
+    "t": 779.4
+   },
+   {
+    "type": "line",
+    "speaker": "シン",
+    "text": "市庁舎って…… この世界を操ってる『マスター』がいる場所なんじゃないの？ 危なくない？",
+    "frame": "0060_dialogue_788.0s.jpg",
+    "t": 788.0
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "危ないよ。でも……。",
+    "frame": "0061_dialogue_792.4s.jpg",
+    "t": 792.4
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "やるしかねーんだよな。いいぜ、いこう。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "この閉じた世界から、飛び出るために！",
+    "frame": "0062_dialogue_804.2s.jpg",
+    "t": 804.2
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "『拝啓、リサちゃん。お元気ですか？』。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "リサちゃんとお別れしてから、もうずいぶんと時間が経ちましたね。",
+    "frame": "0063_dialogue_820.8s.jpg",
+    "t": 820.8
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "『私は、穏やかだけれど、代わり映えのない毎日を送っています』。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "『変わったことといえば、式の準備が始まったことぐらいです。もうすぐ私も結婚する年齢だと、通知が来たから』。",
+    "frame": "0064_dialogue_840.8s.jpg",
+    "t": 840.8
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "『これからは自分のためではなく、夫と子どものために生きていく……なんて、なんだか不思議です』。",
+    "frame": "0065_dialogue_851.0s.jpg",
+    "t": 851.0
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "……こんな文面で、いいのかしら。",
+    "frame": "0066_dialogue_858.0s.jpg",
+    "t": 858.0
+   },
+   {
+    "type": "line",
+    "speaker": "店員",
+    "text": "ご注文のセイロンティーです。",
+    "frame": "0068_dialogue_862.4s.jpg",
+    "t": 862.4
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "ありがとう。",
+    "frame": "0069_dialogue_865.0s.jpg",
+    "t": 865.0
+   },
+   {
+    "type": "line",
+    "speaker": "店員",
+    "text": "あら……お手紙、ですか？ いまどき、めずらしいですね。大事な方へ？",
+    "frame": "0070_dialogue_871.8s.jpg",
+    "t": 871.8
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "ええ、そうなんです。 大事な私の……お友だちに。",
+    "frame": "0071_dialogue_881.0s.jpg",
+    "t": 881.0
+   },
+   {
+    "type": "line",
+    "speaker": "店員",
+    "text": "それは素敵ですね。 では、ごゆっくり。",
+    "frame": "0072_dialogue_885.2s.jpg",
+    "t": 885.2
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "………………。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "『たとえ……リサちゃんがどこにいるとしても。この素敵な世界で、幸せな日々を送っていますように』。",
+    "frame": "0075_dialogue_901.2s.jpg",
+    "t": 901.2
+   }
+  ]
+ },
+ {
+  "id": "ep2",
+  "tab": "第2話",
+  "title": "Shoot Your Heart",
+  "summary": "現場への移動のために集まった5人は、撮影中の作品の話で盛り上がる。一方でちとせは、4人の芝居への熱意を、一歩引いたところで見ていた。どうしてみんな、あんなにがんばれるのだろうか。そんなちとせに梨沙は、役とたくさん向き合い、自分たちとの撮影を楽しめばいい。と言うのだった。",
+  "start_s": 901,
+  "title_frame": "0076_dialogue_907.8s.jpg",
+  "log": [
+   "2"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "ふわぁああ……おはよー…… って、悪い。遅れちゃったか？",
+    "frame": "0077_dialogue_919.0s.jpg",
+    "t": 919.0
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "ううん、おはよう♪ 奈緒ちゃんこそ、お疲れさま。 昨日も遅くまでアクションのレッスンだったんでしょ？",
+    "frame": "0078_dialogue_931.0s.jpg",
+    "t": 931.0
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "おう、ありがと。おかげで毎日筋肉痛が酷いけど……まぁ、楽しんでるよ。本番ではバッチリ決めてやるから、楽しみにしててくれ。",
+    "frame": "0079_dialogue_945.8s.jpg",
+    "t": 945.8
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "ふふ、カッコいい演技、期待してるね♪",
+    "frame": "0080_dialogue_951.2s.jpg",
+    "t": 951.2
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "さてと…… 今日は、追手からバスで逃げるシーンの撮影からだ！ ごーごー！",
+    "frame": "0081_dialogue_961.4s.jpg",
+    "t": 961.4
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "珍しく朝からテンション高いわね。徹夜？ それより、心って運転できたのね。 あんまり車に乗ってるイメージなかったけど。",
+    "frame": "0082_dialogue_976.8s.jpg",
+    "t": 976.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……キャハッ☆",
+    "frame": "0083_dialogue_980.0s.jpg",
+    "t": 980.0
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "ええっ！？ なんだよその反応！？大丈夫か！？",
+    "frame": "0084_dialogue_987.0s.jpg",
+    "t": 987.0
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "にゃはは、メーデーメーデー！",
+    "frame": "0085_dialogue_992.2s.jpg",
+    "t": 992.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "大丈夫だよ",
+    "frame": "0086_dialogue_994.2s.jpg",
+    "t": 994.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "もともとそこそこ運転できたし…… たくさん練習したからね。",
+    "frame": "0087_dialogue_999.0s.jpg",
+    "t": 999.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "なこみP",
+    "text": "もともとそこそこ運転できたし……たくさん練習したからね。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "やぁん、プロデューサー！ そんなにあっさりネタばらししちゃらめぇ☆",
+    "frame": "0088_dialogue_1005.2s.jpg",
+    "t": 1005.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "一緒に重ねたあののアツぅいドライブは、ふたりだけのひ・み・つでしょ☆",
+    "frame": "0089_dialogue_1014.8s.jpg",
+    "t": 1014.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "焦らせないでよ、もう……。一瞬、ホントに運転できないのかと思ったじゃない。",
+    "frame": "0090_dialogue_1023.6s.jpg",
+    "t": 1023.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "ねー。クレイジーな匂いに、わくわくしちゃったよー。……ふふん♪",
+    "frame": "0091_dialogue_1031.8s.jpg",
+    "t": 1031.8
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "志希ちゃん、ずっと触ってるそれ、なぁに？",
+    "frame": "0092_dialogue_1038.6s.jpg",
+    "t": 1038.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "物語にリアリティを加える、スペシャルなフレーバー♪が、入ったト・ワ・レ♪",
+    "frame": "0093_dialogue_1050.6s.jpg",
+    "t": 1050.6
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "それ、小道具？ こんなとこに持ち出していいやつなのか？",
+    "frame": "0094_dialogue_1058.4s.jpg",
+    "t": 1058.4
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "だいじょーぶ。私物だけど、劇中には持ち込まないよん。",
+    "frame": "0095_dialogue_1066.4s.jpg",
+    "t": 1066.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "どんな匂いなの？ 嗅がせて嗅がせて～♪ 大人の女に似合うフレーバーなんじゃな～い？",
+    "frame": "0096_dialogue_1073.8s.jpg",
+    "t": 1073.8
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "やめておいた方がいいよ？",
+    "frame": "0097_dialogue_1076.8s.jpg",
+    "t": 1076.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "いいから貸してってば～♪ このはぁと、まとわせて似合わない匂いなんてないから～♪",
+    "frame": "0098_dialogue_1085.8s.jpg",
+    "t": 1085.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "心～？ そろそろ移動するけど、吐き気は治まった～？ ロケバス乗る前から乗り物酔いして……アレ何なのよもう。",
+    "frame": "0099_dialogue_1104.6s.jpg",
+    "t": 1104.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "ふふん。あれが……リアリティと言う名のフレーバーだよ。",
+    "frame": "0100_dialogue_1113.6s.jpg",
+    "t": 1113.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "声をかける",
+    "frame": "0101_dialogue_1115.2s.jpg",
+    "t": 1115.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "盛り上がっているところ悪いけど、みんな、時間だ。いこうか。",
+    "frame": "0102_dialogue_1120.2s.jpg",
+    "t": 1120.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "なこみP",
+    "text": "盛り上がっているところ悪いけど、みんな、時間だ。いこうか。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "一同",
+    "text": "はーい♪",
+    "frame": "0103_dialogue_1123.0s.jpg",
+    "t": 1123.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "はーい……って、なんなのよあれ……。",
+    "frame": "0105_dialogue_1130.8s.jpg",
+    "t": 1130.8
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "ねぇねぇ、魔法使いさん♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "みんな、楽しそうだね。目が輝いてる。お芝居への熱量がとっても高くて、尊敬しちゃうな。",
+    "frame": "0106_dialogue_1151.4s.jpg",
+    "t": 1151.4
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "奈緒ちゃんはアクションの練習に本気で打ち込んでいるし、梨沙ちゃんの演技だって、大人に負けてない。心さんも、志希ちゃんも、みんなそう。",
+    "frame": "0107_dialogue_1167.8s.jpg",
+    "t": 1167.8
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "あんなにがんばれるのは……やっぱりみんな……アイドルだから？",
+    "frame": "0108_dialogue_1178.4s.jpg",
+    "t": 1178.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "そうだね",
+    "frame": "0109_dialogue_1179.8s.jpg",
+    "t": 1179.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "でも、ちとせももう、アイドルだから。頑張って。",
+    "frame": "0110_dialogue_1185.4s.jpg",
+    "t": 1185.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "なこみP",
+    "text": "でも、ちとせももう、アイドルだから。頑張って。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "がんばって……がんばってかぁ。 うん、がんばる♪",
+    "frame": "0111_dialogue_1198.0s.jpg",
+    "t": 1198.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "ねぇ、ちとせ。",
+    "frame": "0112_dialogue_1203.8s.jpg",
+    "t": 1203.8
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "なぁに、梨沙ちゃん？",
+    "frame": "0113_dialogue_1207.2s.jpg",
+    "t": 1207.2
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "まずは謝るわ。ごめんなさい。さっき、ちとせがプロデューサーと話してること、聞いちゃって。",
+    "frame": "0114_dialogue_1218.4s.jpg",
+    "t": 1218.4
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "ううん、いいよ。……すこし、恥ずかしいけど。",
+    "frame": "0115_dialogue_1227.0s.jpg",
+    "t": 1227.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "お芝居に……ううん、どんなお仕事にだって、アタシは本気よ。",
+    "frame": "0116_dialogue_1238.6s.jpg",
+    "t": 1238.6
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "それはもちろん、アタシたちがアイドルで、ファンに夢を与える存在だから……ってのもあるけど。でもね、きっとそれだけじゃなくて……。",
+    "frame": "0118_dialogue_1253.8s.jpg",
+    "t": 1253.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "楽しくて、好きだからよ！ 共演するみんなや、現場のスタッフさんたち…… この作品や、自分が演じる役のコト、全部！",
+    "frame": "0119_dialogue_1271.2s.jpg",
+    "t": 1271.2
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "……好きだから。お仕事だから、だけじゃないんだ、アイドルって。私も……好きになれるかな。",
+    "frame": "0120_dialogue_1291.6s.jpg",
+    "t": 1291.6
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "なれるわよ、きっと。まだ撮影の期間は長いんだから。チトセにいっぱい向き合って…… アタシたちとの撮影を、楽しみなさい♪",
+    "frame": "0121_dialogue_1310.8s.jpg",
+    "t": 1310.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "じゃ、スタッフさん、お願い♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "志希ちゃんも人形ちゃんも、準備おっけー。ばしゃっといっちゃってー。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "スタッフ",
+    "text": "はーい、じゃあ撮りまーす！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "#撮影中 #off-shot #楽しい現場♪ ってとこかしら。",
+    "frame": "0122_dialogue_1343.8s.jpg",
+    "t": 1343.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "さーて、今日もせいいっぱい、暴れてやりました！",
+    "frame": "0123_dialogue_1350.8s.jpg",
+    "t": 1350.8
+   }
+  ]
+ },
+ {
+  "id": "ep3",
+  "tab": "第3話",
+  "title": "Link/Ring",
+  "summary": "市庁舎内部に潜入したリサは、同じくメインルームを目指していたシキ、シン、ナオと遭遇。リサの目的は制御装置を破壊して、自分もろとも世界を壊すこと。そんなリサを、シキは世界からの脱出計画に誘う。同じ頃、チトセはリサとの日々を恋しく思い、決められた結婚に対して乗り気になれずにいた。",
+  "start_s": 1350,
+  "title_frame": "0124_dialogue_1360.2s.jpg",
+  "log": [
+   "3"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "おい、まだ終わらねーのかよ。早くしないと、ヤバいぞ！いくらあたしでも、守り切れねーかもしれねーし。",
+    "frame": "0125_dialogue_1370.0s.jpg",
+    "t": 1370.0
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "焦らない焦らない。もうちょっとでデータを吸出しおわる……。シンちゃんのほうは？",
+    "frame": "0127_dialogue_1380.4s.jpg",
+    "t": 1380.4
+   },
+   {
+    "type": "line",
+    "speaker": "シン",
+    "text": "ん。ごまかそうとしてるけど、建物の間取りに不自然な空間がある……きっと、ここがメインルームじゃないかな。",
+    "frame": "0128_dialogue_1392.4s.jpg",
+    "t": 1392.4
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "よし！じゃあ、早いとこいこうぜ！ 警備が集まってくる前に！",
+    "frame": "0129_dialogue_1400.2s.jpg",
+    "t": 1400.2
+   },
+   {
+    "type": "line",
+    "speaker": "警備人形",
+    "text": "・・・・・・・・。",
+    "frame": "0131_dialogue_1407.0s.jpg",
+    "t": 1407.0
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "相変わらず、数だけは多いけど……思ったよりなんとかなるわね。",
+    "frame": "0134_dialogue_1417.4s.jpg",
+    "t": 1417.4
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "この調子なら、市庁舎の一番奥までたどり着けそう。そこまでいけば……。",
+    "frame": "0135_dialogue_1426.0s.jpg",
+    "t": 1426.0
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "……いよいよか。ようやくこの世界を、ぶっ壊せる！",
+    "frame": "0136_dialogue_1436.2s.jpg",
+    "t": 1436.2
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "……手を上げて！",
+    "frame": "0138_dialogue_1443.0s.jpg",
+    "t": 1443.0
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "チッ……！来やがった！",
+    "frame": "0141_dialogue_1449.2s.jpg",
+    "t": 1449.2
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "あーん……ゲームオーバー？",
+    "frame": "0142_dialogue_1454.2s.jpg",
+    "t": 1454.2
+   },
+   {
+    "type": "line",
+    "speaker": "シン",
+    "text": "って……人形じゃ、ない？",
+    "frame": "0143_dialogue_1459.6s.jpg",
+    "t": 1459.6
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "……アンタたちこそ。いったい何者？ 『マスター』の手下……じゃなさそうね。",
+    "frame": "0145_dialogue_1477.4s.jpg",
+    "t": 1477.4
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "どきなさい。 アタシはね、アンタたちの後ろにある機械に…… この世界の制御装置に、用があるの。",
+    "frame": "0146_dialogue_1492.8s.jpg",
+    "t": 1492.8
+   },
+   {
+    "type": "line",
+    "speaker": "シン",
+    "text": "ああ、やっぱりこれがその装置ってことなんだ？ 教えてくれてありがとね。 ……で？ そっちはこの装置に、なんの用？",
+    "frame": "0148_dialogue_1509.4s.jpg",
+    "t": 1509.4
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "見た感じ、キミもこの世界の管理側には見えないけど。むしろ、あたしたちと……同じ匂い。",
+    "frame": "0149_dialogue_1522.4s.jpg",
+    "t": 1522.4
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "それをアンタたちに話す義理がある？ ……脇のふたり、おかしな動きをしたら撃つわよ。",
+    "frame": "0151_dialogue_1535.2s.jpg",
+    "t": 1535.2
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "チッ……ガキにしては目ざといな。",
+    "frame": "0153_dialogue_1542.4s.jpg",
+    "t": 1542.4
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "こう見えて年食ってんのよ。……ま、いいわ。教えてあげる。アタシはね、その装置をぶっ壊して、この世界をぶっ壊すのよ。",
+    "frame": "0155_dialogue_1562.8s.jpg",
+    "t": 1562.8
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "世界を……！",
+    "frame": "0157_dialogue_1567.2s.jpg",
+    "t": 1567.2
+   },
+   {
+    "type": "line",
+    "speaker": "シン",
+    "text": "壊す……！？",
+    "frame": "0158_dialogue_1571.2s.jpg",
+    "t": 1571.2
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "そう来たか……。 キミは、なんでそんなことを？",
+    "frame": "0159_dialogue_1578.2s.jpg",
+    "t": 1578.2
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "決まってるでしょ。女がモノをぶっ壊すって言ってんの。復讐よ。",
+    "frame": "0161_dialogue_1589.4s.jpg",
+    "t": 1589.4
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "こんな偽りだらけの、くだらない世界…… 自由も、温かい居場所も、アタシから何もかもを奪った世界を、 ぶち壊してやるの。",
+    "frame": "0162_dialogue_1606.4s.jpg",
+    "t": 1606.4
+   },
+   {
+    "type": "line",
+    "speaker": "シン",
+    "text": "自分もろとも？",
+    "frame": "0164_dialogue_1612.2s.jpg",
+    "t": 1612.2
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "構わないわ。むしろ……好都合よ。",
+    "frame": "0166_dialogue_1622.8s.jpg",
+    "t": 1622.8
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "イカれてやがる……！ そんなことさせるかよ！",
+    "frame": "0168_dialogue_1630.4s.jpg",
+    "t": 1630.4
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "そ。じゃあ、アンタたちは一足早く死なせてあげる。",
+    "frame": "0170_dialogue_1641.2s.jpg",
+    "t": 1641.2
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "上等だ……！ このあたしは簡単にやられやしねーぞ……！",
+    "frame": "0172_dialogue_1649.8s.jpg",
+    "t": 1649.8
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "ナオちゃん待って。それよりも……ね、キミ。復讐なんて、非生産的なことはやめにして、あたしたちと組まない？",
+    "frame": "0173_dialogue_1663.6s.jpg",
+    "t": 1663.6
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "は？非生産的、ですって……？アンタたちに、アタシのなにがわかるっていうのよ！！",
+    "frame": "0175_dialogue_1678.0s.jpg",
+    "t": 1678.0
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "わからないよ。だからこそ、あたしはあたしの都合で、キミに提案をしてる。",
+    "frame": "0177_dialogue_1688.2s.jpg",
+    "t": 1688.2
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "あたしたちはね、この世界を脱出して、 外の世界に行こうと考えてる。 キミの知識は、役に立ちそう。",
+    "frame": "0178_dialogue_1699.4s.jpg",
+    "t": 1699.4
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "……外の、世界。",
+    "frame": "0180_dialogue_1705.6s.jpg",
+    "t": 1705.6
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "この世界はくだらない。そう思うのは勝手だけど。 だからこそ、この世界に執着する必要なんてない。 この世界には、心中してやる価値なんてないよ。",
+    "frame": "0182_dialogue_1723.8s.jpg",
+    "t": 1723.8
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "あたしたちと一緒に外に出て、もっと広い世界を見に行かない？はじき出されたもの同士、ピクニックと洒落込もうよ。",
+    "frame": "0183_dialogue_1736.2s.jpg",
+    "t": 1736.2
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "アタシが……。アタシは……。",
+    "frame": "0185_dialogue_1744.8s.jpg",
+    "t": 1744.8
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "『拝啓、リサちゃん』。",
+    "frame": "0186_dialogue_1752.2s.jpg",
+    "t": 1752.2
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "『最近はみんな、結婚の話ばかりです。なんだか少し、退屈してきちゃったわ。結婚ってもっと、ワクワクするものかと思っていたから』。",
+    "frame": "0187_dialogue_1770.8s.jpg",
+    "t": 1770.8
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "……なぜかしら。 最近、リサちゃんのことをよく思い出すの。 ふたりで遊んでたあの頃……すごく楽しかった。",
+    "frame": "0188_dialogue_1786.8s.jpg",
+    "t": 1786.8
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "『あの頃に戻れたら……。そんなことはできないと、わかっているのに』。",
+    "frame": "0189_dialogue_1796.6s.jpg",
+    "t": 1796.6
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "『リサちゃんが、この世界のどこかで…… 幸せに、元気に過ごしていることを願っています』。",
+    "frame": "0190_dialogue_1809.8s.jpg",
+    "t": 1809.8
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "ふう……。…………あれ？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "そういえば…… あの指輪、どこにしまったのかしら……？",
+    "frame": "0191_dialogue_1827.0s.jpg",
+    "t": 1827.0
+   }
+  ]
+ },
+ {
+  "id": "ep4",
+  "tab": "第4話",
+  "title": "Step on with You",
+  "summary": "撮影は進み、山場のシーンに突入。難しい演技が求められるちとせを心配するPに、ちとせは大丈夫だと微笑む。この撮影期間でチトセと向き合い、好きになれた。新しい一歩を踏み出すチトセを、きちんと表現してあげたい。だから、できる。その言葉通り、撮影はみんなが満足して終えられる出来になった。",
+  "start_s": 1827,
+  "title_frame": "0192_dialogue_1835.2s.jpg",
+  "log": [
+   "4"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "うおっ、バスが傾いてる！ これ、すごいなー！",
+    "frame": "0193_dialogue_1843.2s.jpg",
+    "t": 1843.2
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "わぁお♪ こうやって撮影するんだ♪",
+    "frame": "0194_dialogue_1849.6s.jpg",
+    "t": 1849.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "見て見て、タイヤの張りぼてもあるよー♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "これ、奈緒ちゃんがはぁとに投げるやつ？",
+    "frame": "0195_dialogue_1861.6s.jpg",
+    "t": 1861.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "だねー♪ へいへい奈緒ちゃん、ぱーす♪",
+    "frame": "0196_dialogue_1869.4s.jpg",
+    "t": 1869.4
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "うおっと。張りぼてでもまぁまぁ重いな！",
+    "frame": "0197_dialogue_1878.0s.jpg",
+    "t": 1878.0
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "本物のタイヤだったら、何十キロくらい？",
+    "frame": "0198_dialogue_1885.8s.jpg",
+    "t": 1885.8
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "マジ！？ え、ナオってそれをあんな風にポンポン投げてるのか？",
+    "frame": "0199_dialogue_1894.6s.jpg",
+    "t": 1894.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "シンも放り投げてたような…… やだ、はぁとったら超怪力☆",
+    "frame": "0200_dialogue_1903.2s.jpg",
+    "t": 1903.2
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "そんな心さんに、パース！",
+    "frame": "0201_dialogue_1908.8s.jpg",
+    "t": 1908.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "よっしゃ、任せろ☆ もいっかい奈緒ちゃんにパース！",
+    "frame": "0202_dialogue_1916.2s.jpg",
+    "t": 1916.2
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "まったく……みんな、コドモみたいなことして。",
+    "frame": "0203_dialogue_1924.8s.jpg",
+    "t": 1924.8
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "あはっ♪ 楽しそう！ 私たちも交ざっちゃおっか！",
+    "frame": "0204_dialogue_1931.6s.jpg",
+    "t": 1931.6
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "へ？ ちょ、もうっ、ちとせったら！ 調子に乗って、倒れないでよ！？",
+    "frame": "0205_dialogue_1938.6s.jpg",
+    "t": 1938.6
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "休憩中",
+    "frame": "0206_dialogue_1945.4s.jpg",
+    "t": 1945.4
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "お昼だーっ！ ロケ弁、ロケ弁……っと。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "はーい、お茶いる人ー☆",
+    "frame": "0207_dialogue_1958.4s.jpg",
+    "t": 1958.4
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "クンクン……んー 今日のお弁当は、ネギチャーシュー弁当？",
+    "frame": "0208_dialogue_1967.8s.jpg",
+    "t": 1967.8
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "お、当たり！ すごいな！犬かよっ！",
+    "frame": "0209_dialogue_1975.6s.jpg",
+    "t": 1975.6
+   },
+   {
+    "type": "line",
+    "speaker": "一同",
+    "text": "ごちそうさまでした！",
+    "frame": "0210_dialogue_1981.2s.jpg",
+    "t": 1981.2
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "よーし、午後も気合いいれてくぞ！",
+    "frame": "0211_dialogue_1987.4s.jpg",
+    "t": 1987.4
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ・志希",
+    "text": "おー♪",
+    "frame": "0212_dialogue_1991.4s.jpg",
+    "t": 1991.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……プロデューサー、ちょっといい？ ちとせちゃんのことなんだけど。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "午後の撮影ってさ、ちとせちゃんが叫ぶシーンもあるでしょ？今回のお話的に、山場だし、難しいとこだと思うし……ちゃーんと、見といてあげてね。",
+    "frame": "0214_dialogue_2014.2s.jpg",
+    "t": 2014.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "もちろん",
+    "frame": "0215_dialogue_2016.0s.jpg",
+    "t": 2016.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "うっし☆ 頼りにしてるぞ、プロデューサー☆",
+    "frame": "0216_dialogue_2021.2s.jpg",
+    "t": 2021.2
+   },
+   {
+    "type": "line",
+    "speaker": "スタッフ",
+    "text": "打ち合わせはいりまーす！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "（……………あれ？ さっき、別の打ち合わせへいくって……）",
+    "frame": "0217_dialogue_2035.6s.jpg",
+    "t": 2035.6
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "（……そっか。心配してくれてるんだ。優しいね。それがお仕事だとしても……嬉しい。）",
+    "frame": "0218_dialogue_2050.0s.jpg",
+    "t": 2050.0
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "ありがとね、魔法使いさん♪",
+    "frame": "0219_dialogue_2056.2s.jpg",
+    "t": 2056.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "撮影、がんばって",
+    "frame": "0220_dialogue_2057.8s.jpg",
+    "t": 2057.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "きっと、大丈夫。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "だって、この撮影期間で 私もチトセちゃんのこと、好きになっちゃったから。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "レッスンや撮影を経験して、前よりずっとわかってきたんだ。 チトセちゃんのこと。チトセちゃんの、カッコいいところ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "きっと……チトセちゃんは、自分のことを諦めてたんだと思う。世界は変えられないって。この世の全てはそういうものだって、受け入れちゃってた。",
+    "frame": "0221_dialogue_2103.0s.jpg",
+    "t": 2103.0
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "だからこそ、せめて…… 大好きな友だちだったリサちゃんの幸せを、ずっと願ってた。 でも……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "チトセちゃんは、リサちゃんたちに突然連れ出されて…… いろんな変化や真実に戸惑いながら…… 新しい一歩を、きちんと踏み出すの。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "アクセルを踏み込んで、スピードを上げて変わっていく…… チトセちゃんの勇気や強さを、きちんと表現してあげたい。 だから私、ちゃんとできるよ。",
+    "frame": "0222_dialogue_2148.4s.jpg",
+    "t": 2148.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "ちゃんと見ているよ",
+    "frame": "0223_dialogue_2149.8s.jpg",
+    "t": 2149.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "うん♪ じゃあ、行ってきます♪",
+    "frame": "0224_dialogue_2155.8s.jpg",
+    "t": 2155.8
+   },
+   {
+    "type": "line",
+    "speaker": "ナレーション",
+    "text": "その日の撮影は長引いたものの、 みんなは満足した笑顔で撮影を終えた……",
+    "frame": null,
+    "t": null
+   }
+  ]
+ },
+ {
+  "id": "ep5",
+  "tab": "第5話",
+  "title": "Get Back My Story",
+  "summary": "シキたちの誘いに乗ったリサの協力もあり、脱出計画の準備はほぼ完了。最後にチトセを助けるべく、4人は結婚式場へ向かった。式が終わるとチトセの『再アップデート』が始まってしまう。そして、誰かに決められた運命を歩む。…だが運命は変わり、チトセはリサたちと新しい物語へ飛び出すのだった。",
+  "start_s": 2155,
+  "title_frame": "0225_dialogue_2386.6s.jpg",
+  "log": [
+   "5"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "世界を脱出する準備は、整ったよ。ありがとね、リサちゃん。キミの協力のおかげだよ。もう少しだけパーツがいるけど……ブラックボックスはほぼ完成。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "……礼を言うのは、こっちのほうよ。アンタたちのおかげで、アタシはまた前を向けた。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "追い詰められて、何も見えなくなって、自分だけしか信じられなくなってたアタシに……進む道があるって気づかせてくれた。……感謝してるわ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "へへっ。ま、仲間だからな。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "それでね、実は……みんなにもうひとつだけ、お願いがあるの。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "シン",
+    "text": "お願い？珍しいじゃん。お願いごとなんて。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "もうひとり、助けたい人がいるの。子どもの頃にアタシを救ってくれた、大切な友だち。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "昔、あの子がアタシを救ってくれたみたいに。みんながアタシを救ってくれたみたいに。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "この世界にとらわれて、抜け出せないでいるあの子を……今度はアタシが、救いたいの！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "でも、アタシひとりじゃきっとできない。だから……お願い。みんなの力を貸して。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "シン",
+    "text": "とりあえず……道、教えてくれる？ドライバーだから、行き先がわからないとなー。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "しょうがねえな。何人かかってきても、あたしがぶっ飛ばしてやるよ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "みんな……！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "もちろんシキちゃんは頭脳労働！じゃあ、いこうか……あたしたちの、ラストミッションに！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "（……今日、私のための人生は終わる。）",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "（これからは夫と、いつか生まれる子どものための人生。それが妻として、母としての『正しい』生き方。）",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "（この世界では、そう決まってる。それが幸せ。そう、みんな言ってる。だって私は、女の子だから……）",
+    "frame": "0225_dialogue_2386.6s.jpg",
+    "t": 2386.6
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "みんな、ついたわ。さあ、準備はいい？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "シキ",
+    "text": "リサちゃんを先頭に突入して、ナオちゃんがひと暴れ、あたしが目標を確保。ふたりで担いで大脱走。我ながら、完璧な作戦。",
+    "frame": "0226_dialogue_2414.2s.jpg",
+    "t": 2414.2
+   },
+   {
+    "type": "line",
+    "speaker": "シン",
+    "text": "んで、みんなはそのままバスに乗り込んで、この世界とはおさらば……！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ナオ",
+    "text": "最後の大勝負……うずうずしてきたぜ！ ひと暴れ、ぶちかましてやろーじゃねぇか。",
+    "frame": "0227_dialogue_2433.8s.jpg",
+    "t": 2433.8
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "行くわよ！ アタシたちの自由を、取り戻しに！",
+    "frame": "0228_dialogue_2441.8s.jpg",
+    "t": 2441.8
+   },
+   {
+    "type": "line",
+    "speaker": "神父",
+    "text": "新婦よ。病める時も、健やかなる時も。夫を助け、子の為に生きることを誓いますか？",
+    "frame": "0229_dialogue_2451.4s.jpg",
+    "t": 2451.4
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "………………。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "（もうすぐ、アップデートが始まる。私の幸せを再定義する、アップデートが。そうすれば、こんな気持ちは、きっと消える……）",
+    "frame": "0230_dialogue_2475.2s.jpg",
+    "t": 2475.2
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "（自分以外の、誰かのために生きる…… そうやって私は、幸せになる。それでいい。 それでいいはずなのに……）",
+    "frame": "0231_dialogue_2493.2s.jpg",
+    "t": 2493.2
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "（なぜ、私の心はこんなにもざわついているの……）",
+    "frame": "0232_dialogue_2501.8s.jpg",
+    "t": 2501.8
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "待たせたわね！",
+    "frame": "0234_dialogue_2507.4s.jpg",
+    "t": 2507.4
+   },
+   {
+    "type": "line",
+    "speaker": "神父",
+    "text": "なっ！？ 何者だ！！",
+    "frame": "0235_dialogue_2511.0s.jpg",
+    "t": 2511.0
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "な、なに？どういうことっ？",
+    "frame": "0236_dialogue_2516.8s.jpg",
+    "t": 2516.8
+   },
+   {
+    "type": "line",
+    "speaker": "リサ",
+    "text": "その花嫁、アタシたちがいただくわ！",
+    "frame": "0238_dialogue_2524.4s.jpg",
+    "t": 2524.4
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "（こうして…… どこかの誰かに決められた、私の運命は終わりを告げ……）",
+    "frame": "0240_dialogue_2535.6s.jpg",
+    "t": 2535.6
+   },
+   {
+    "type": "line",
+    "speaker": "チトセ",
+    "text": "――私たちの新しい物語が、始まった！",
+    "frame": "0241_dialogue_2547.4s.jpg",
+    "t": 2547.4
+   }
+  ]
+ },
+ {
+  "id": "ed",
+  "tab": "ED",
+  "title": "Curtain Call",
+  "summary": "無事にクランクアップし、Pの手配したお疲れ旅行に来た5人。作品の映像を見返しながら当時を思い返す。撮影時は夢中だったが、とても大変で、しかし終わるのが惜しいほど楽しかった。世界を飛び出した魅力的な少女たちと、これからの自分たちの行く末に幸運を。そう祈りながら、5人とPは乾杯をした。",
+  "start_s": 2547,
+  "title_frame": "0242_dialogue_2552.8s.jpg",
+  "log": [
+   "ED"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "んじゃ、乾杯の音頭は我らがプロデューサーに お願いするってことで☆ はよ☆",
+    "frame": "0243_dialogue_2561.8s.jpg",
+    "t": 2561.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "まずはみんな、撮影お疲れさま。怪我もなく無事に終わって、よかったよ。それじゃあ……作品の完成に。",
+    "frame": "0244_dialogue_2571.4s.jpg",
+    "t": 2571.4
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "乾杯！",
+    "frame": "0245_dialogue_2573.2s.jpg",
+    "t": 2573.2
+   },
+   {
+    "type": "line",
+    "speaker": "一同",
+    "text": "かんぱ～い♪",
+    "frame": "0246_dialogue_2577.0s.jpg",
+    "t": 2577.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "つくう～☆ やっぱ、仕事の締めはこうでなきゃ。 お疲れ旅行の手配、ありがとねプロデューサー☆",
+    "frame": "0249_dialogue_2590.6s.jpg",
+    "t": 2590.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "そちらこそ 運転お疲れさま",
+    "frame": "0250_dialogue_2592.2s.jpg",
+    "t": 2592.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "はぁとのドライブテク、すごかっただろ☆ なんか最近、運転はまっちゃってさー。",
+    "frame": "0251_dialogue_2600.4s.jpg",
+    "t": 2600.4
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "撮影の練習が、趣味になっちゃったんだ？",
+    "frame": "0252_dialogue_2605.6s.jpg",
+    "t": 2605.6
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "そういうこともあるんだね。撮影の前後で、変わっちゃうなんて。",
+    "frame": "0253_dialogue_2612.8s.jpg",
+    "t": 2612.8
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "あるある。あたしも、後部座席のバッドトリップが趣味になっちゃったりねー。",
+    "frame": "0254_dialogue_2621.2s.jpg",
+    "t": 2621.2
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "……志希が言うと、ちょっと本当っぽいから怖いわね。帰りはず助手席に座りなさいよ。",
+    "frame": "0255_dialogue_2632.2s.jpg",
+    "t": 2632.2
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "奈緒ちゃんも、どうしてもタイヤ投げたくなったら言ってね？",
+    "frame": "0256_dialogue_2638.6s.jpg",
+    "t": 2638.6
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "なるかーっ！",
+    "frame": "0257_dialogue_2642.4s.jpg",
+    "t": 2642.4
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "そういえば、プロデューサー。 アレ、ちゃんと持ってきた？",
+    "frame": "0258_dialogue_2649.2s.jpg",
+    "t": 2649.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "もちろん",
+    "frame": "0259_dialogue_2650.8s.jpg",
+    "t": 2650.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "部屋に帰ったら、みんなで見よう。",
+    "frame": "0260_dialogue_2654.4s.jpg",
+    "t": 2654.4
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "ふふん、そうこなくっちゃ♪",
+    "frame": "0261_dialogue_2659.4s.jpg",
+    "t": 2659.4
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "くう……。いま見ると、この演技もうちょっとできたわね……。パパは褒めてくれたけど……甘えてられないわ。",
+    "frame": "0262_dialogue_2677.6s.jpg",
+    "t": 2677.6
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "私も、チトセちゃんのお嬢さま言葉が、今見るとちょっと…… おっかしい。笑っちゃう！",
+    "frame": "0263_dialogue_2689.2s.jpg",
+    "t": 2689.2
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "そういえば、思い出したんだけど…… このバス、すっごく美味しい匂いがしてたよね。 撮影のとき、お腹空いて大変だったなー。",
+    "frame": "0264_dialogue_2702.4s.jpg",
+    "t": 2702.4
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "わかる……。正直、ちょっと心さん……って思ってた。カレーの匂いさせすぎだろって。",
+    "frame": "0265_dialogue_2712.8s.jpg",
+    "t": 2712.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "どう考えてもはぁと悪くないけど……めんご☆ スポンサーは大事にな☆",
+    "frame": "0266_dialogue_2721.6s.jpg",
+    "t": 2721.6
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "あ、このシーン……。",
+    "frame": "0267_dialogue_2726.6s.jpg",
+    "t": 2726.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ちとせちゃんがアクセル踏むとこだ！ あれ、何テイク撮ったんだろ。 監督、めっちゃこだわってたよねー。",
+    "frame": "0268_dialogue_2735.6s.jpg",
+    "t": 2735.6
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "付き合ってくれて、ありがとう。",
+    "frame": "0269_dialogue_2740.4s.jpg",
+    "t": 2740.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "いいってことよ☆ その分、ちとせちゃんの頑張りも見られたし。",
+    "frame": "0270_dialogue_2746.8s.jpg",
+    "t": 2746.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "あのときは夢中だったけど…… 思い返すと、けっこう大変な撮影だったわよね。",
+    "frame": "0271_dialogue_2757.4s.jpg",
+    "t": 2757.4
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "そうだな。でも……。",
+    "frame": "0272_dialogue_2762.8s.jpg",
+    "t": 2762.8
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "きっと、思ってることはみんな同じ、だよね♪",
+    "frame": "0273_dialogue_2769.8s.jpg",
+    "t": 2769.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "楽しかった？",
+    "frame": "0274_dialogue_2772.0s.jpg",
+    "t": 2772.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "あたりまえじゃない♪",
+    "frame": "0275_dialogue_2776.2s.jpg",
+    "t": 2776.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ちょっとだけ、終わっちゃうのがもったいないぐらい。もっと、シンといろんな道を走りたかったかも。",
+    "frame": "0276_dialogue_2786.0s.jpg",
+    "t": 2786.0
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "本当に、終わっちゃうのかな？",
+    "frame": "0277_dialogue_2791.6s.jpg",
+    "t": 2791.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "そうでもないよ",
+    "frame": "0278_dialogue_2793.0s.jpg",
+    "t": 2793.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "映像作品としては完結したとしても…… 君たちや、あの作品を観た人たち。 その心の中に、あの5人が残っている限り。",
+    "frame": "0279_dialogue_2802.4s.jpg",
+    "t": 2802.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "あの作品の輝きは、失われることはないよ。",
+    "frame": "0280_dialogue_2806.4s.jpg",
+    "t": 2806.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "奈緒",
+    "text": "名作っていつまでも色あせないし、ずっといい作品だもんな。",
+    "frame": "0281_dialogue_2815.2s.jpg",
+    "t": 2815.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "この、この☆ プロデューサー、たまにはいいこと言うじゃん☆",
+    "frame": "0282_dialogue_2821.4s.jpg",
+    "t": 2821.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "だから……。 あの撮影で学んだことや、あの作品から受け取ったモノを、 これからも大事にしていってほしい。",
+    "frame": "0283_dialogue_2829.6s.jpg",
+    "t": 2829.6
+   },
+   {
+    "type": "line",
+    "speaker": "ちとせ",
+    "text": "……うん。演じるのは、楽しいことだって。忘れないよ。",
+    "frame": "0284_dialogue_2839.4s.jpg",
+    "t": 2839.4
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "なんかさー、いい雰囲気だからもういっかい乾杯しよ！ はい、プロデューサー！",
+    "frame": "0285_dialogue_2847.2s.jpg",
+    "t": 2847.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "それじゃあ…… 世界を飛び出した女の子たちと…… 君たち5人に！",
+    "frame": "0286_dialogue_2852.4s.jpg",
+    "t": 2852.4
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "幸運を！",
+    "frame": "0287_dialogue_2854.0s.jpg",
+    "t": 2854.0
+   },
+   {
+    "type": "line",
+    "speaker": "一同",
+    "text": "幸運をっ♪",
+    "frame": "0288_dialogue_2856.2s.jpg",
+    "t": 2856.2
+   }
+  ]
+ }
+]

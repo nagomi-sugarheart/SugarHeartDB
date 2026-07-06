@@ -6658,6 +6658,26 @@ input[name="dialogue-tab"] {
     border-radius: var(--r-sm);
     padding: 6px 12px;
 }
+/* 分岐（選択肢）に関する注記。OPのプロデューサー選択分岐などで使用 */
+.dss-branch-note {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin: 10px 0;
+    padding: 10px 14px;
+    font-size: 12.5px;
+    line-height: 1.7;
+    color: var(--sh-text-soft);
+    background: var(--sh-pink-soft, #fff0f5);
+    border: 1px dashed var(--sh-pink, #e58aad);
+    border-radius: var(--r-md, 10px);
+}
+.dss-branch-ic {
+    flex: none;
+    font-size: 14px;
+    color: var(--sh-pink, #e58aad);
+    line-height: 1.5;
+}
 .dss-log { margin-top: 16px; }
 .dss-log summary {
     cursor: pointer;
