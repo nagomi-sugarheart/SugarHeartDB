@@ -1,0 +1,2603 @@
+[
+ {
+  "id": "trailer",
+  "tab": "予告",
+  "title": "予告",
+  "summary": "",
+  "start_s": 0,
+  "title_frame": "0002_dialogue_44.4s.jpg",
+  "log": [
+   "Tr1",
+   "Tr2"
+  ],
+  "entries": [
+   {
+    "type": "header",
+    "speaker": "",
+    "text": "LIVE Groove Visual burst イベント近日開催予定!!",
+    "frame": "0001_dialogue_41.2s.jpg",
+    "t": 41.2
+   },
+   {
+    "type": "sub",
+    "speaker": "",
+    "text": "CoCo夏夏夏 Holiday 予告1",
+    "frame": "0002_dialogue_44.4s.jpg",
+    "t": 44.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "みんなやっほー☆ しゅがーはぁとでーっす♪ 季節違いの夏気分になってるみんなに、とっておき情報だぞ☆ な・ん・と……！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "はぁとたちの『CoCo夏夏夏 Holiday』を、オーストラリアで！披露することになったよ☆なんで海外かって？そこは感じろ☆",
+    "frame": "0003_dialogue_70.4s.jpg",
+    "t": 70.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "撮影にLIVEに、楽しいことが盛りだくさんっ！とびきり熱くて最高の夏を、一足先に楽しんじゃおっ☆",
+    "frame": "0004_dialogue_80.6s.jpg",
+    "t": 80.6
+   },
+   {
+    "type": "sub",
+    "speaker": "",
+    "text": "CoCo夏夏夏 Holiday 予告2",
+    "frame": "0005_dialogue_88.0s.jpg",
+    "t": 88.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "こんにちは、上田鈴帆たい！いやぁ、こことこぱり寒かねぇ！そげな寒さば吹っ飛ばす歌声、みんなに届けるばい！",
+    "frame": "0006_dialogue_104.0s.jpg",
+    "t": 104.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "はぁとしゃん、愛梨しゃんと一緒にオーストラリアで熱～い姿見せるけん、楽しみにしとってな！",
+    "frame": "0007_dialogue_115.2s.jpg",
+    "t": 115.2
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "楽しいことば思いっきり楽しんで、 幸せポイント貯めていくばいっ♪",
+    "frame": "0008_dialogue_124.0s.jpg",
+    "t": 124.0
+   }
+  ]
+ },
+ {
+  "id": "op",
+  "tab": "OP",
+  "title": "Our season has come！",
+  "summary": "『CoCo夏夏夏 Holiday』を起用したCMの仕事でオーストラリアへ行くことになった心、鈴帆、愛梨。LIVEと日程がバッティングしてしまったPに代わり、後輩Pが帯同して現地へと向かうことになる。旅の準備を手伝った梨沙や亜季に見送られながら、一行は慌ただしくもオーストラリアへと出立した。",
+  "start_s": 124,
+  "title_frame": "0009_dialogue_158.8s.jpg",
+  "log": [
+   "OP"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "夏だーーーーっ！！！！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ヤバ、めっちゃ綺麗ーっ！ 朝のエアーズロック、エモーい！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ほらほら、ちゃんと撮れてる？ はぁとたちも撮ってくれなきゃ、めっ、だぞ☆",
+    "frame": "0009_dialogue_158.8s.jpg",
+    "t": 158.8
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "感じるばい……大地のパワーを……。こん大自然の恵みを、地球が語りかけてきとうよ……！",
+    "frame": "0010_dialogue_171.2s.jpg",
+    "t": 171.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "荘厳で、おっきくて、くらくらしちゃいます……っ！ ……ぶぅ、クーラーついてるのにちょっと暑いなぁ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "熱中症になりかけてるんやなか？ しっかり水分を……って、愛梨しゃん！？ 撮影中に脱いだらいけーん！",
+    "frame": "0011_dialogue_196.2s.jpg",
+    "t": 196.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "まだ体がふわふわします～。 このアクティビティが人気の理由、わかっちゃった！",
+    "frame": "0012_dialogue_207.4s.jpg",
+    "t": 207.4
+   },
+   {
+    "type": "line",
+    "speaker": "撮影スタッフ",
+    "text": "はは、気に入ってもらえてよかった！ 機内の画もバッチリいいのもらいましたよ。 次もよろしくお願いします！",
+    "frame": "0013_dialogue_216.6s.jpg",
+    "t": 216.6
+   },
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "はーい♪",
+    "frame": "0014_dialogue_220.0s.jpg",
+    "t": 220.0
+   },
+   {
+    "type": "line",
+    "speaker": "？？？",
+    "text": "みなさん、お疲れさまです。 次の予定ですが……。",
+    "frame": "0015_dialogue_225.8s.jpg",
+    "t": 225.8
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "数か月前……",
+    "frame": "0016_dialogue_231.6s.jpg",
+    "t": 231.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "参ったな……",
+    "frame": "0017_dialogue_233.4s.jpg",
+    "t": 233.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "プロデューサー、おっすー☆ ってあれ、何しょぼくれた顔してんの？ 幸せ逃げるぞ☆",
+    "frame": "0019_dialogue_243.6s.jpg",
+    "t": 243.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "あっ、さてはその資料に悩みの種でもあんだろ☆ はぁとお姉さんに相談してみなって♪",
+    "frame": "0020_dialogue_252.0s.jpg",
+    "t": 252.0
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "心に仕事の資料を渡した……",
+    "frame": "0022_dialogue_259.2s.jpg",
+    "t": 259.2
+   },
+   {
+    "type": "line",
+    "speaker": "ナレーション",
+    "text": "心に仕事の資料を渡した……",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "旅行会社からの指名？ コンセプトは『エンジョイ・ホリデー』。『CoCo夏夏夏 Holiday』を使用したCM、PR動画撮影に……ロケ先のオーストラリア現地LIVE！",
+    "frame": "0023_dialogue_275.6s.jpg",
+    "t": 275.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "こういう音楽祭のスポンサーもやってるんだ、さっすが大手…… めっちゃ良い案件じゃん！悩む要素ある？",
+    "frame": "0024_dialogue_285.0s.jpg",
+    "t": 285.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "実は、別のLIVEとそのロケの日程がバッティングしていてね。 前から決まっていたのもあって、自分はLIVEに 同行しなければならないから、ロケには行けないんだ……。",
+    "frame": "0025_dialogue_294.8s.jpg",
+    "t": 294.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ああ、そっか。 そっち人数多いし、打ち合わせとか現地で仕事あるもんね。 急なトラブルなんかもあるかもだし……それで悩んでたのか。",
+    "frame": "0027_dialogue_308.8s.jpg",
+    "t": 308.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "（かと言って、ロケのほうを自分都合で断るわけにも……せっかくの彼女たちの仕事だ……どうしたものか……）",
+    "frame": "0028_dialogue_316.4s.jpg",
+    "t": 316.4
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "あれ、プロデューサーしゃんにはぁとしゃん！ 難しい顔して、どげんしたと？",
+    "frame": "0030_dialogue_326.8s.jpg",
+    "t": 326.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "もしかして、何か困ってたりしますか？ よければお話、聞かせてくださいっ！",
+    "frame": "0031_dialogue_336.2s.jpg",
+    "t": 336.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "当事者たち大集合☆ ってか？ んっとねー。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "なるほど……。でも、なんとかなりますって♪",
+    "frame": "0032_dialogue_350.8s.jpg",
+    "t": 350.8
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "ウチらの想いはひとつたい。こん仕事受けて、海ば越えて、歌いたか……！",
+    "frame": "0033_dialogue_360.2s.jpg",
+    "t": 360.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ギブミーお仕事☆ってわけ☆ だから、そんなに心配すんなって、プロデューサー♪",
+    "frame": "0034_dialogue_367.6s.jpg",
+    "t": 367.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "……確かに、君たちはもう一人前のアイドルだ。とはいえ、3人だけで行かせる訳にもいかない……と、なると……。",
+    "frame": "0035_dialogue_378.2s.jpg",
+    "t": 378.2
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "えっ？ わ、私が……ですか？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "ああ。申し訳ないが、事情は話した通りだ。 3人のオーストラリアロケには、君が帯同してほしい。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "でも、私には分不相応というか…… まだプロデュース業も慣れていませんし…… 彼女たちのことも、先輩ほど知りません。",
+    "frame": "0036_dialogue_409.0s.jpg",
+    "t": 409.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "彼女たちとなら大丈夫だ",
+    "frame": "0037_dialogue_411.0s.jpg",
+    "t": 411.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "全部を君に丸投げするわけじゃない。 それに、彼女たちと支え合えれば、問題はないはずだ。",
+    "frame": "0038_dialogue_418.4s.jpg",
+    "t": 418.4
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "……アイドルのみなさんのこと、信頼しているんですね。",
+    "frame": "0039_dialogue_423.8s.jpg",
+    "t": 423.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "プロデューサーだからね。",
+    "frame": "0040_dialogue_426.8s.jpg",
+    "t": 426.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "……というわけで、3人のお仕事には 彼女が同行することになった。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "みなさん、はじめまして。 まだ慣れないことも多く、至らぬ点があるかと思いますが、 みなさんのお役に立てるよう、精一杯務めさせていただきます。",
+    "frame": "0041_dialogue_442.8s.jpg",
+    "t": 442.8
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "上田鈴帆ばい！そげんばり堅か挨拶いらんいらん～ん！にぃっと笑うて！にぃっと！",
+    "frame": "0042_dialogue_454.4s.jpg",
+    "t": 454.4
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "ふふっ、十時愛梨です。これからお世話になりますっ♪",
+    "frame": "0043_dialogue_461.4s.jpg",
+    "t": 461.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "しゅがーはぁとでぇす☆ いぇい☆ 気軽にはぁと、って呼んでよね！ Pちゃん♪ よろしくぅ☆",
+    "frame": "0044_dialogue_469.8s.jpg",
+    "t": 469.8
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "Pちゃん……？ は、はい。よろしくお願いしますっ！",
+    "frame": "0045_dialogue_476.2s.jpg",
+    "t": 476.2
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "出発日",
+    "frame": "0046_dialogue_481.6s.jpg",
+    "t": 481.6
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "ビーチに行くならラウンドタオルを買うといいわ、敷物になるし。あっ、あと日焼け止め！あっちは真夏なんだから、塗るの忘れちゃ駄目よ！",
+    "frame": "0047_dialogue_493.0s.jpg",
+    "t": 493.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "あっ、持ってくるの忘れてましたぁ！買ってきますね～。えーっと、コンビニは～……あれれ？どっちでしょう～。",
+    "frame": "0048_dialogue_508.2s.jpg",
+    "t": 508.2
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "あっ、私が行きますから！ 愛梨さんはここにいてください！",
+    "frame": "0049_dialogue_514.0s.jpg",
+    "t": 514.0
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "慌ただしい出立も、良いものですな。 それにしても、オーストラリアですか……。",
+    "frame": "0051_dialogue_526.2s.jpg",
+    "t": 526.2
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "亜季じゃん、行ったことあると？",
+    "frame": "0052_dialogue_530.2s.jpg",
+    "t": 530.2
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "いえ、ですがリゾート地の撮影ならば、いくらか心得がありますから、資料を送っておくであります！それから、気温の変化で体調を崩さないよう、お気をつけて！",
+    "frame": "0053_dialogue_547.8s.jpg",
+    "t": 547.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "姿勢にも、ね！ あっちに着くまで10時間くらいかかるし。 暇だったら英語の勉強しててもいいかもね。 付け焼刃でも、案外侮れないから。",
+    "frame": "0055_dialogue_563.0s.jpg",
+    "t": 563.0
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "お待たせしました……！ あっいけない、もう搭乗時間になります！行きましょう！",
+    "frame": "0057_dialogue_572.2s.jpg",
+    "t": 572.2
+   },
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "いってきまーす！",
+    "frame": "0058_dialogue_576.0s.jpg",
+    "t": 576.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙・亜季",
+    "text": "いってらっしゃい！",
+    "frame": "0059_dialogue_579.2s.jpg",
+    "t": 579.2
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "現在",
+    "frame": "0060_dialogue_583.8s.jpg",
+    "t": 583.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "うし、記念撮影もバッチリ☆ 早速プロデューサーに送って……うわ、返信はや。 おっ、南国の景色も綺麗だなー♪",
+    "frame": "0061_dialogue_597.4s.jpg",
+    "t": 597.4
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "では、もう一度予定の確認を。 少し休憩を挟んで、シドニー行きの便に乗ります。 その後昼食をとり、自然公園での撮影を……。",
+    "frame": "0062_dialogue_610.2s.jpg",
+    "t": 610.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "うんうん、今はその休憩時間っしょ？なら、いったん仕事のことは忘れて遊ぼうぜ☆",
+    "frame": "0063_dialogue_621.4s.jpg",
+    "t": 621.4
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "せっかくのオーストラリアやけん、仕事気分だけじゃもったいなか！",
+    "frame": "0064_dialogue_629.6s.jpg",
+    "t": 629.6
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "え、ええ？ ですが……。",
+    "frame": "0065_dialogue_635.0s.jpg",
+    "t": 635.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "のんびり楽しく、バカンス気分がちょうどいいですよっ♪ さあさあ、行きましょ～♪",
+    "frame": "0066_dialogue_645.0s.jpg",
+    "t": 645.0
+   }
+  ]
+ },
+ {
+  "id": "ep1",
+  "tab": "第1話",
+  "title": "Pleasant day",
+  "summary": "オーストラリアでの仕事が始まり、アイドルたちは自然公園で動物とふれあいながら撮影を進めた。大自然に感銘を受けた鈴帆は、宿泊先のホテルでもインスピレーションのままに着ぐるみを作り始める。ロケ中に完成できるように後輩Pと心、愛梨も手伝いを申し出て、忙しく夜は更けるのだった。",
+  "start_s": 645,
+  "title_frame": "0067_dialogue_653.0s.jpg",
+  "log": [
+   "1"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "よーしよし、怖くなかよ……。カンガルーしゃん、友だちになってほしか……。",
+    "frame": "0068_dialogue_664.0s.jpg",
+    "t": 664.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "人懐っこくてカワイイ～♪ほれほれ、もっとちこ寄れ～☆",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "あっ、餌が服の中に～……ちょっと待ってね、んしょ……。ひゃっ！あはは、くすぐった～い♪",
+    "frame": "0069_dialogue_686.4s.jpg",
+    "t": 686.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "わっ、愛梨ちゃん人気者だな☆ ……いや、カンガルー多すぎない？",
+    "frame": "0070_dialogue_696.0s.jpg",
+    "t": 696.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "うひゃあーーー！！！",
+    "frame": "0072_dialogue_702.2s.jpg",
+    "t": 702.2
+   },
+   {
+    "type": "line",
+    "speaker": "撮影スタッフA",
+    "text": "おおっ、上田さんも人気者ですね！ あんなに追いかけられるなんて……ちゃんと撮ってるか！？",
+    "frame": "0074_dialogue_714.6s.jpg",
+    "t": 714.6
+   },
+   {
+    "type": "line",
+    "speaker": "撮影スタッフB",
+    "text": "はい、しっかり撮ってますっ！",
+    "frame": "0075_dialogue_718.6s.jpg",
+    "t": 718.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "うし、ここはぁとも撮れ最高級のキュートシーンを……カンガルーちゅわ～ん☆……あれ？おい、逃げんな☆",
+    "frame": "0077_dialogue_733.4s.jpg",
+    "t": 733.4
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "あっ、餌なくなっちゃった。ふう～、ちょっと休憩～。",
+    "frame": "0078_dialogue_743.2s.jpg",
+    "t": 743.2
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "お疲れさまです、愛梨さん。 では、鈴帆さんと心さ……はぁとさんも済んだら、次はコアラのブースに行きましょう。",
+    "frame": "0079_dialogue_754.2s.jpg",
+    "t": 754.2
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "そこ退いてほしかぁーーーーっ！！！！",
+    "frame": "0081_dialogue_762.8s.jpg",
+    "t": 762.8
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "え？……な、なんですかあのカンガルーの群れは！？",
+    "frame": "0083_dialogue_772.6s.jpg",
+    "t": 772.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "鈴帆ちゃん、もしかしてさっき話してた「地球を全身で感じたい」を実現できてるのかな？",
+    "frame": "0085_dialogue_784.6s.jpg",
+    "t": 784.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ワールドワイドな想いで動物と通じ合ったってことか……。泣けるな☆",
+    "frame": "0086_dialogue_792.8s.jpg",
+    "t": 792.8
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "い、意味がわかりません！！！！",
+    "frame": "0087_dialogue_796.4s.jpg",
+    "t": 796.4
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "そぉっと、そぉっとですよ……。",
+    "frame": "0088_dialogue_806.2s.jpg",
+    "t": 806.2
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "コアラ、着陸……！ 緊張の瞬間たい……！",
+    "frame": "0089_dialogue_816.0s.jpg",
+    "t": 816.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ヘリポートみたいに言うな☆ うお、けっこう力強いな……。",
+    "frame": "0090_dialogue_825.6s.jpg",
+    "t": 825.6
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "気をつけんしゃい、はぁとしゃん！ そのまま、根を張る木のようにじっとしとってな！",
+    "frame": "0091_dialogue_835.8s.jpg",
+    "t": 835.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "え～？や～ん、カ・ワ・イ・イ～♪ これ、じっとするの無理あるってぇ☆",
+    "frame": "0092_dialogue_844.4s.jpg",
+    "t": 844.4
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "でも、あんまり動いてびっくりさせちゃうと、ぎゅう～ってされちゃうらしいですよ、すごい力で！ 爪も意外と鋭いって！",
+    "frame": "0093_dialogue_859.4s.jpg",
+    "t": 859.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "えっ。 もしかしてさっき渡された防弾チョッキみたいなのって、 そういう意味？",
+    "frame": "0094_dialogue_869.8s.jpg",
+    "t": 869.8
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "収録後",
+    "frame": "0095_dialogue_876.0s.jpg",
+    "t": 876.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "はあ、遊んだ遊んだ～！ クーラー最高……昨日までは暖房ガンガンの部屋だったのになぁ。",
+    "frame": "0097_dialogue_889.6s.jpg",
+    "t": 889.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "そろそろ体も慣れてきましたね。えっと、撮影の前乗りしたから……明日で3日目かな♪",
+    "frame": "0098_dialogue_902.4s.jpg",
+    "t": 902.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "んであと2日は撮影でー、5日目にLIVE！ で、スケジュール変更ナシだよね？ Pちゃん☆",
+    "frame": "0099_dialogue_913.0s.jpg",
+    "t": 913.0
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "はい、そちらで間違いありません。……あの、鈴帆さんは先ほどから何を？",
+    "frame": "0100_dialogue_922.6s.jpg",
+    "t": 922.6
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "瞑想ばい。",
+    "frame": "0101_dialogue_928.8s.jpg",
+    "t": 928.8
+   },
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "瞑想？",
+    "frame": "0102_dialogue_933.0s.jpg",
+    "t": 933.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "ウチは感動したけん……このオーストラリアの大自然に。インスピレーションが今、降ってきそうで……んお、おおお……！！",
+    "frame": "0103_dialogue_955.8s.jpg",
+    "t": 955.8
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "きたきたきた、きたぶぁいっ！！ こん情熱、今すぐ布にぶつけるけんねー！",
+    "frame": "0104_dialogue_965.4s.jpg",
+    "t": 965.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "着ぐるみ作るってこと？ でも、材料なんて持ってきてたっけ？",
+    "frame": "0105_dialogue_973.8s.jpg",
+    "t": 973.8
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "フフ、悔らないでほしか……。ここに、あるばい！",
+    "frame": "0106_dialogue_983.4s.jpg",
+    "t": 983.4
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "なるほど、圧縮袋！ あれ、もうほとんど完成してる？",
+    "frame": "0107_dialogue_993.4s.jpg",
+    "t": 993.4
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "実は出発前から作っとったんよ。あとは仕上げにいくつか付け足すだけ！",
+    "frame": "0108_dialogue_1005.0s.jpg",
+    "t": 1005.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "それならロケ中にも完成するってわけか。せっかくだし、はぁとも手伝うよ☆",
+    "frame": "0109_dialogue_1014.2s.jpg",
+    "t": 1014.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "私も着ぐるみって一度作ってみたかったんです♪ お手伝いしますよっ！",
+    "frame": "0110_dialogue_1022.8s.jpg",
+    "t": 1022.8
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "では、私も……着ぐるみに応用できるかわかりませんが、裁縫の心得はありますし。なにより、みなさんに夜更かしをしてほしくはないので……。",
+    "frame": "0111_dialogue_1033.8s.jpg",
+    "t": 1033.8
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "みんな……！ ウチは幸せ者たい……嬉しかよ～～～っ！",
+    "frame": "0112_dialogue_1047.4s.jpg",
+    "t": 1047.4
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "ここにはエアーズロックをそびえ立たせるばい。ん～……もうひとつ、ワンポイントが欲しかね…",
+    "frame": "0113_dialogue_1063.6s.jpg",
+    "t": 1063.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "なら、やっぱり飛行機は外せないかなぁ……？",
+    "frame": "0114_dialogue_1070.0s.jpg",
+    "t": 1070.0
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "……私たち、着ぐるみを作っているんですよね？",
+    "frame": "0115_dialogue_1075.0s.jpg",
+    "t": 1075.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "そのうち慣れるよ☆ でさでさ、もうちょいここのディティール凝ったほうが……。",
+    "frame": "0116_dialogue_1083.2s.jpg",
+    "t": 1083.2
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "その後も意見を出し合っていき、忙しなく夜は更けていった……",
+    "frame": "0117_dialogue_1087.4s.jpg",
+    "t": 1087.4
+   }
+  ]
+ },
+ {
+  "id": "ep2",
+  "tab": "第2話",
+  "title": "Just in case",
+  "summary": "熱帯雨林の観光中、後輩Pとはぐれてしまった3人。 困った時のためにと梨沙に持たされた包みの中には、 裕子のサイキックスプーンが入っていた。 スプーンが示す方角へ進んでいくと、電話で裕子から 透視での指示を受けて歩いていた後輩Pと合流する。 不意の危機が去り、胸を撫で下ろ一行だった。",
+  "start_s": 1087,
+  "title_frame": "0118_dialogue_1096.6s.jpg",
+  "log": [
+   "2"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "では、本日の予定を再確認します。午前は自由時間となりますので、要望のあった熱帯雨林の観光へ……。",
+    "frame": "0119_dialogue_1104.6s.jpg",
+    "t": 1104.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "はい！スケジュール帳出すのでちょっと待ってくださ…… あれ？これって……。",
+    "frame": "0120_dialogue_1116.6s.jpg",
+    "t": 1116.6
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "ん？ なんね、その妙に雰囲気のある包みは？",
+    "frame": "0121_dialogue_1123.2s.jpg",
+    "t": 1123.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "えっと、これは……。",
+    "frame": "0122_dialogue_1128.4s.jpg",
+    "t": 1128.4
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "出発日",
+    "frame": "0123_dialogue_1133.4s.jpg",
+    "t": 1133.4
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "あ、そうだこれ！忘れるところだったわ。渡してくれてユッコに頼まれてたのよ、はい。",
+    "frame": "0124_dialogue_1142.8s.jpg",
+    "t": 1142.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "これ……なんだろう？ なんだか妙に雰囲気があるんですけど……。",
+    "frame": "0125_dialogue_1150.8s.jpg",
+    "t": 1150.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "アタシも中身については知らないわ。「本当に困った時は、これを使ってください！ さいきっく☆手助けが発動します！」って押し付けられたから。",
+    "frame": "0126_dialogue_1164.2s.jpg",
+    "t": 1164.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "さいきっく☆手助け……はあ。",
+    "frame": "0127_dialogue_1170.0s.jpg",
+    "t": 1170.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "ま、アンタたちのことだから心配ないとは思うけど。もしもの時は、開けてみても損はないかもね。",
+    "frame": "0128_dialogue_1181.4s.jpg",
+    "t": 1181.4
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "では、私からはこれを……！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "エアガンは検査引っかかっちゃうでしょー！",
+    "frame": "0129_dialogue_1191.2s.jpg",
+    "t": 1191.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "……ってことがあって。 本当に困った時しか、開けちゃダメらしいんですけど。",
+    "frame": "0130_dialogue_1202.0s.jpg",
+    "t": 1202.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "えー、でも中身、気になんない？ 今開けちゃっても許されるっしょ☆",
+    "frame": "0131_dialogue_1210.8s.jpg",
+    "t": 1210.8
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "いいや、託されたものは然るべき時にこそ開けるものばい……。今はその時じゃなか。",
+    "frame": "0132_dialogue_1221.6s.jpg",
+    "t": 1221.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "もぉ、つれな～い☆ こんな最高のお仕事、困ることなんてこの先あるわけ……",
+    "frame": "0133_dialogue_1230.0s.jpg",
+    "t": 1230.0
+   },
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "困った……。困りましたぁ……。困ったばい……。",
+    "frame": "0134_dialogue_1236.8s.jpg",
+    "t": 1236.8
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "十数分前……",
+    "frame": "0135_dialogue_1249.2s.jpg",
+    "t": 1249.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "まさか、こんなことになるなんて……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "自然の恵みがウチらを呼んどる……！ 尊か時間を、体の芯まで感じたか～！",
+    "frame": "0136_dialogue_1260.6s.jpg",
+    "t": 1260.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "鈴帆ちゃん、こっちに不思議な色の鳥さんがいますよっ♪ あれ？待って～！",
+    "frame": "0139_dialogue_1273.6s.jpg",
+    "t": 1273.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "あっ、こらこら！ 迷子警察だぞー！",
+    "frame": "0141_dialogue_1279.4s.jpg",
+    "t": 1279.4
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "ええと、次の撮影に必要なものは……。 …………あれ？ みなさん？",
+    "frame": "0143_dialogue_1288.4s.jpg",
+    "t": 1288.4
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "そして現在……",
+    "frame": "0144_dialogue_1293.4s.jpg",
+    "t": 1293.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "んー、Pちゃんの電話繋がんな。 ってか通話中……？ とりあえずメッセ飛ばしとくか。",
+    "frame": "0145_dialogue_1306.2s.jpg",
+    "t": 1306.2
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "亜季しゃんは、迷った時は星で方角を読む言いよったけど、……空、明るかねぇ。",
+    "frame": "0146_dialogue_1319.0s.jpg",
+    "t": 1319.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "……来ましたね、然るべき時が。",
+    "frame": "0147_dialogue_1324.2s.jpg",
+    "t": 1324.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "あっ、例のアレか。ついに……開けちゃう？",
+    "frame": "0148_dialogue_1330.0s.jpg",
+    "t": 1330.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "えいっ！",
+    "frame": "0149_dialogue_1332.0s.jpg",
+    "t": 1332.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "早っ！つと、これ……って？",
+    "frame": "0151_dialogue_1338.8s.jpg",
+    "t": 1338.8
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "……スプーンやね。やや直角気味に曲がった。",
+    "frame": "0152_dialogue_1346.2s.jpg",
+    "t": 1346.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "何に使うんだよっ！！！！",
+    "frame": "0153_dialogue_1351.6s.jpg",
+    "t": 1351.6
+   },
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "……。",
+    "frame": "0155_dialogue_1356.0s.jpg",
+    "t": 1356.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "もしかしたら、サイキックパワーで手助けしてくれるのかも！ ほら、このスプーンが曲がった向きに進んでいけば……。",
+    "frame": "0156_dialogue_1367.0s.jpg",
+    "t": 1367.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "道案内か。迷ったら棒倒しで進むのと同じばい！",
+    "frame": "0157_dialogue_1374.6s.jpg",
+    "t": 1374.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "同じかっ！？最初っから方向指定されてるんだけど！？",
+    "frame": "0158_dialogue_1379.8s.jpg",
+    "t": 1379.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "でも、適当に歩いたらもっと迷っちゃいそうですし。ここは信じてみませんか？",
+    "frame": "0159_dialogue_1389.8s.jpg",
+    "t": 1389.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "それもそうだね……じゃあ、行ってみっか☆ スプーンの導きがあらんことを！",
+    "frame": "0160_dialogue_1399.4s.jpg",
+    "t": 1399.4
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "鈴帆さーーん！ 愛梨さーーん！ 佐藤さーーん！",
+    "frame": "0162_dialogue_1413.2s.jpg",
+    "t": 1413.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "はぁとって呼べーーっ☆ って、この声……Pちゃんじゃん！",
+    "frame": "0163_dialogue_1423.0s.jpg",
+    "t": 1423.0
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "はあ、はあ……ああ、みなさん……！良かった……！ご無事で……！",
+    "frame": "0165_dialogue_1433.0s.jpg",
+    "t": 1433.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "わわっ、抱き着くなんて大げさですよ～。 でも、心配させちゃってすみませんでした……。",
+    "frame": "0167_dialogue_1446.6s.jpg",
+    "t": 1446.6
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "あっ、す、すみません……！つい昔の癖で……。",
+    "frame": "0168_dialogue_1453.4s.jpg",
+    "t": 1453.4
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "よかよか。ウチも勝手に突っ走ってごめんたい！みんなで再会を祝うばい、ぎゅーっ♪",
+    "frame": "0169_dialogue_1466.2s.jpg",
+    "t": 1466.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……にしても、なんで合流できたんだろ？ やっぱスプーンのおかげ……なんてな☆",
+    "frame": "0170_dialogue_1475.8s.jpg",
+    "t": 1475.8
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "実はみなさんとはぐれた後、どうしようと思っていたら、梨沙さんたちから電話があって。裕子さんに、透視？というものををしていただいたんです。",
+    "frame": "0171_dialogue_1488.6s.jpg",
+    "t": 1488.6
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "それで、言われるがままに歩いていたら……みなさんがいて。",
+    "frame": "0172_dialogue_1494.2s.jpg",
+    "t": 1494.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……ガチめのエスパー？",
+    "frame": "0173_dialogue_1499.0s.jpg",
+    "t": 1499.0
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "とにかく、本当にタイミングが良かったです。まるでみなさん、仲間の危機がわかるみたいでした。そういう勘、みたいなのって……あるんですかね。",
+    "frame": "0174_dialogue_1512.0s.jpg",
+    "t": 1512.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "ん？ そういえば、通話中やったのって…",
+    "frame": "0175_dialogue_1519.0s.jpg",
+    "t": 1519.0
+   },
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "あっ。",
+    "frame": "0176_dialogue_1522.6s.jpg",
+    "t": 1522.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ま、まあとにかく……めでたしめでたしってことで☆",
+    "frame": "0177_dialogue_1529.4s.jpg",
+    "t": 1529.4
+   }
+  ]
+ },
+ {
+  "id": "ep3",
+  "tab": "第3話",
+  "title": "Shining smile",
+  "summary": "海で撮影を進める愛梨と心。ハプニングはあるものの スケジュール自体は滞りなく進行していた。 鈴帆は完成した着ぐるみを3人で着たいと提案し、 オーストラリアを一緒に表現した姿を撮影する。 不安にならず自然体のまま楽しむ3人を見て、 後輩Pは自分も気軽でいてよいのかと思い始める。",
+  "start_s": 1529,
+  "title_frame": "0178_dialogue_1560.0s.jpg",
+  "log": [
+   "3"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "ついに、ついに……完成ばい……っ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "んんーっ、気持ちいい～♪ やっぱ海は最高だな☆",
+    "frame": "0178_dialogue_1560.0s.jpg",
+    "t": 1560.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "足を入れるだけでも、涼しいですね～♪ そういえば、鈴帆ちゃんは……？",
+    "frame": "0179_dialogue_1568.8s.jpg",
+    "t": 1568.8
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "準備があるとのことで、もう少したら向かうと連絡が。なので先におふたりのシーンだけ、撮影をお願いできますか？",
+    "frame": "0180_dialogue_1577.8s.jpg",
+    "t": 1577.8
+   },
+   {
+    "type": "line",
+    "speaker": "心・愛梨",
+    "text": "おっけー☆ わかりました♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "えへへっ、いきますよー……えいっ♪",
+    "frame": "0181_dialogue_1589.8s.jpg",
+    "t": 1589.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "うひゃっ！ ちょ、けっこう勢い強くない？ このこのーっ☆",
+    "frame": "0182_dialogue_1596.6s.jpg",
+    "t": 1596.6
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "（ハプニングはいくらかあるものの、スケジュールは滞りなく進行……不思議だ。どうしてこんなに自然体でできるんだろう……）",
+    "frame": "0184_dialogue_1608.2s.jpg",
+    "t": 1608.2
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "現地の男性たちが、英語で話しかけてきた……",
+    "frame": "0185_dialogue_1617.2s.jpg",
+    "t": 1617.2
+   },
+   {
+    "type": "line",
+    "speaker": "現地の人",
+    "text": "Hi, cutie！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "現地の男性たちが、英語で話しかけてきた……",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "はい？ えーっと……？ あっ、もしかして一緒に遊びたいんですか？",
+    "frame": "0186_dialogue_1628.4s.jpg",
+    "t": 1628.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "いやこれ、ナンパじゃね？ さすが愛梨ちゃん……国境を越えるオーラってわけか。",
+    "frame": "0187_dialogue_1637.2s.jpg",
+    "t": 1637.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "そうなんですか？ でも、おしゃべりだけだったら大丈夫ですよね♪",
+    "frame": "0188_dialogue_1645.8s.jpg",
+    "t": 1645.8
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "えっ！？ ちょ、ちょっと待ってください！ ええっと……す、すとーっぷ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "はあ、はあ……。 勘弁してください……通訳さんが来てくれたから助かったものの。 私の英語力は……悲惨なんですよ……っ！",
+    "frame": "0189_dialogue_1669.0s.jpg",
+    "t": 1669.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "あ、すみません……無視するのも悪いかなと思って。次からは気を付けますねっ。",
+    "frame": "0190_dialogue_1680.6s.jpg",
+    "t": 1680.6
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "おーい！ あれ？ どげんしたと？",
+    "frame": "0191_dialogue_1686.6s.jpg",
+    "t": 1686.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……ってわけ。 ま、ホントにヤバそうだったらはぁとが助けたし☆",
+    "frame": "0192_dialogue_1694.8s.jpg",
+    "t": 1694.8
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "なるほど、なるほど……なら、ちょうどよかね！ はぁとしゃん、愛梨しゃん。 ふたりとも更衣室に来てほしか！",
+    "frame": "0193_dialogue_1708.2s.jpg",
+    "t": 1708.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "着ぐるみのお手伝いですね！ わかりました♪",
+    "frame": "0194_dialogue_1713.8s.jpg",
+    "t": 1713.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "な、なんじゃこりゃーー！！！！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "ふっふっふ……もともとはひとり用やったけど、3人用に分けて仕立てたよ！ これで至高の一枚が完成するばい♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "これ、私たちも着るの？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "もちろん！ふたりとももっと楽しみたか～思うて、ひと針ひと針、想い込めて縫い上げたけん……。 一緒に、オーストラリアにならんと？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……も、もー。 そーいうことなら、仕方ないな☆",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "はいっ♪ 愛梨、ひと肌脱いじゃいます！ あ、この場合は……ひと肌着る、かな？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "感じるばい……地球の鼓動を……。ウチの身体も、地球の一部に……。ああ、すべての命が……尊か……。",
+    "frame": "0195_dialogue_1797.8s.jpg",
+    "t": 1797.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "オーストラリアへ～、いざ☆ はぁとと丸、出航～！さっぷーん♪ 冷たっ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "はあ、ふ……ん、ちょっと暑いかも……。 でも、じいっと……！ 今の私は木！オーストラリアの……木ですっ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "あの、これは……？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "オーストラリアたい！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "なるほど、海のそばでそれらを纏うことで完成すると……。いや、そうじゃなくてですね？",
+    "frame": "0196_dialogue_1843.6s.jpg",
+    "t": 1843.6
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "これなら悪い虫も寄り付かんし、オーストラリアへの愛も叫べるし、一石二鳥ばい♪",
+    "frame": "0197_dialogue_1853.4s.jpg",
+    "t": 1853.4
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "……はぁとさんの防水加工は？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ちょ、待って。 なんか、重っ……ち、沈没する！！",
+    "frame": "0198_dialogue_1866.0s.jpg",
+    "t": 1866.0
+   },
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "はぁとしゃーー！！！！ はぁとさーー！！！！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "……すみません、予定を狂わせてしまって。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "撮影スタッフ",
+    "text": "あははっ、まあこれはこれでいいんじゃないですか？ 求めてたものの斜め上だけど……ほら。 あのキラキラした笑顔。楽しそうじゃないですか。",
+    "frame": "0199_dialogue_1891.6s.jpg",
+    "t": 1891.6
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "……そう、ですね。……………ふふっ。",
+    "frame": "0200_dialogue_1896.4s.jpg",
+    "t": 1896.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ふいー……あわや沈没船だった。",
+    "frame": "0201_dialogue_1904.6s.jpg",
+    "t": 1904.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "いっぱい汗をかいちゃいましたけど、楽しかったですぅ……。はふぅ、喉渇いちゃった……。",
+    "frame": "0202_dialogue_1914.4s.jpg",
+    "t": 1914.4
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "おふたりとも、お飲み物をどうぞ。 鈴帆さんも休憩してくださいね。一番重量のあるものを着て…… あれ、鈴帆さんは？ えーと……あ、誰かと話してる？",
+    "frame": "0203_dialogue_1928.4s.jpg",
+    "t": 1928.4
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "ん？ナイス？着ぐるみのこと？へへ、ベリベリサンキューたい♪",
+    "frame": "0204_dialogue_1939.0s.jpg",
+    "t": 1939.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ワオ、もう現地の人と仲良くなってるじゃん。機内イングリッシュの成果か～？",
+    "frame": "0205_dialogue_1947.2s.jpg",
+    "t": 1947.2
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "……あの、みなさんすいぶん自然体ですけど。 こういうロケに行く時、不安になったりしないんですか？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "私は、けっこう不安で……なんて言ったら、みなさんを不安にさせてしまうかもしれないんですけど。……やっぱり、慣れでしょうか？",
+    "frame": "0206_dialogue_1965.8s.jpg",
+    "t": 1965.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "んー……慣れもあるかもですけど、不安に思ってても、楽しくはないじゃないですか。",
+    "frame": "0207_dialogue_1975.4s.jpg",
+    "t": 1975.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "やっぱさ、どんだけ離れたとこにいても、思ってることは同じだと思うんだよね。",
+    "frame": "0208_dialogue_1984.4s.jpg",
+    "t": 1984.4
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "私たちはプロデューサーさんを信じていますし、プロデューサーさんも、私たちを信じてくれていますから♪",
+    "frame": "0209_dialogue_1995.2s.jpg",
+    "t": 1995.2
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "それに、同じもんを見たか思うとる！ 仲間とファン……みーんなの笑顔！ だから、離れててもそばにおる気がして、不安はなか♪",
+    "frame": "0210_dialogue_2013.0s.jpg",
+    "t": 2013.0
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "（笑顔……信頼……。 先輩もそういう風に思って、私に任せてくれた……？）",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "（それに……今回のお仕事は『エンジョイ・ホリデー』。体を動かして、思い切り汗をかいて、笑って。くよくよせずに、楽しむのが大事……彼女たちみたいに。）",
+    "frame": "0211_dialogue_2036.4s.jpg",
+    "t": 2036.4
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "（……私もちょっと、身軽になってよかったのかな。）",
+    "frame": "0212_dialogue_2040.8s.jpg",
+    "t": 2040.8
+   }
+  ]
+ },
+ {
+  "id": "ep4",
+  "tab": "第4話",
+  "title": "Our hearts as one",
+  "summary": "現地でのLIVE前日。振り付けの確認を終えた3人は自由時間を利用してショッピングを楽しんだ。夜には事務所とテレビ電話で近況を報告し合う。遠く離れた場所で、季節すら違っていても、同じ星の上、空はひとつで心も繋がっている。一同はLIVEを成功させようと誓い合うのだった。",
+  "start_s": 2040,
+  "title_frame": "0213_dialogue_2049.2s.jpg",
+  "log": [
+   "4"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "Jewelry Days♪",
+    "frame": "0214_dialogue_2052.6s.jpg",
+    "t": 2052.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "……うん、振り付けも大丈夫そうですねっ♪",
+    "frame": "0215_dialogue_2058.0s.jpg",
+    "t": 2058.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "はぁ、明日はもうLIVEやね……わくわくしてきたとよ♪",
+    "frame": "0216_dialogue_2066.8s.jpg",
+    "t": 2066.8
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "明日のLIVEに備えて、本日は撮影の予定は入っておりません。自由に過ごしてもらって大丈夫ですよ。",
+    "frame": "0217_dialogue_2074.6s.jpg",
+    "t": 2074.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "はーい♪ けど、観光はもういっぱいいしたし…… 今日はショッピングデーにすっか☆",
+    "frame": "0218_dialogue_2085.4s.jpg",
+    "t": 2085.4
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "シドニー",
+    "frame": "0219_dialogue_2091.4s.jpg",
+    "t": 2091.4
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "このコアラのキーホルダー、ふわふわで可愛い～♪ 買っていっちゃおうかな♪",
+    "frame": "0220_dialogue_2101.2s.jpg",
+    "t": 2101.2
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "アボリジナルのブーメラン……？ むむ……何か浮かんでできそうばい……。",
+    "frame": "0221_dialogue_2110.4s.jpg",
+    "t": 2110.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "あっ、そういえば……。",
+    "frame": "0222_dialogue_2114.8s.jpg",
+    "t": 2114.8
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "出発日",
+    "frame": "0223_dialogue_2119.8s.jpg",
+    "t": 2119.8
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "その……オーストラリアにまつわるミリタリーグッズが何かあれば、お土産にお願いしたく……っ！",
+    "frame": "0224_dialogue_2130.8s.jpg",
+    "t": 2130.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "美味しいお菓子もお願いね♪ 帰国したら、みんなでLIVE成功のお祝いしましょう！",
+    "frame": "0225_dialogue_2139.0s.jpg",
+    "t": 2139.0
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "素敵なパーティーになりそうでありますな！こちらも準備をしておくであります！",
+    "frame": "0226_dialogue_2147.6s.jpg",
+    "t": 2147.6
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "現在",
+    "frame": "0227_dialogue_2152.6s.jpg",
+    "t": 2152.6
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "……っくしゅん！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "あら、風邪？ ちゃんと体あったくしなきゃダメよー。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "いえ、そういうのではなく……。もしかしたら、オーストラリアからの風でしょうか。",
+    "frame": "0228_dialogue_2172.8s.jpg",
+    "t": 2172.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "あー、それはあるかも。この間もいろいろあったしね、ジャングルで迷子って。",
+    "frame": "0229_dialogue_2183.8s.jpg",
+    "t": 2183.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "今頃お土産でも買ってくれてるのかしら。気になるなら、メッセでも送ってみる？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "いえ、それならば後で……",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "ただいまーっ♪",
+    "frame": "0230_dialogue_2204.0s.jpg",
+    "t": 2204.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "ふう、いっぱい買っちゃったぁ。 なんとかキャリーには収まるかなぁ……？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "……あ。 そのこと完全に忘れとったばい。 どげんしよう、",
+    "frame": "0231_dialogue_2222.0s.jpg",
+    "t": 2222.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ぬいぐるみなら圧縮袋でなんとかなるっしょ☆……そういや、着ぐるみも増えてたけど……足りる？",
+    "frame": "0232_dialogue_2235.4s.jpg",
+    "t": 2235.4
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "みなさん、お帰りなさ……す、すごい荷物ですね。部屋に置きに行きましょうか。それから、この後の予定なんですが……。",
+    "frame": "0234_dialogue_2247.6s.jpg",
+    "t": 2247.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "もしもーし、プロデューサー！ お、見えた。声も聞こえてるー？",
+    "frame": "0235_dialogue_2257.4s.jpg",
+    "t": 2257.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "ちゃんと聞こえてるよ",
+    "frame": "0236_dialogue_2259.4s.jpg",
+    "t": 2259.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "不思議なもんやねえ…… 飛行機やと10時間なのに、電話やと一瞬ばい。",
+    "frame": "0237_dialogue_2268.4s.jpg",
+    "t": 2268.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "わかるわー、現代に生まれたでよかった☆ そうだ、あのふたりも通話来るんでしょ？",
+    "frame": "0238_dialogue_2276.8s.jpg",
+    "t": 2276.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "そろそろ、あっちも合流する頃かな。……お、噂をすれば。",
+    "frame": "0239_dialogue_2282.4s.jpg",
+    "t": 2282.4
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "あ、あー。映像明瞭、音声よし。繋がったであります！",
+    "frame": "0240_dialogue_2292.4s.jpg",
+    "t": 2292.4
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "亜季しゃん、梨沙しゃん！久しぶりやなあ～！",
+    "frame": "0241_dialogue_2299.6s.jpg",
+    "t": 2299.6
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "みんな、体調崩したりしてないでしょうね？",
+    "frame": "0242_dialogue_2304.2s.jpg",
+    "t": 2304.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "みんな元気ですよ～♪ ん～……なんだか少しだけ、反応が遅れてるような……。気のせい？",
+    "frame": "0243_dialogue_2316.2s.jpg",
+    "t": 2316.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ラグかな？ ほら、テレビとかでもよく見るっしょ。海外との生中継で、若干反応遅れてるの。",
+    "frame": "0244_dialogue_2326.6s.jpg",
+    "t": 2326.6
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "距離が離れているためですかな。一部のテレビ電話などは、衛星通信を用いるため、遅れが生じると聞いたことがありますし。",
+    "frame": "0245_dialogue_2339.0s.jpg",
+    "t": 2339.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "プロデューサーも、近況報告しなさいよ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "こっちは順調だよ。 ちょうど今ゲネが終わったところで、明日の本番も問題なく迎えられると思う。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "それはよかったであります！ 我々も打ち上げの準備がはかどるというもの……あ。 と、ところで、撮影のお仕事は順調ですか？",
+    "frame": "0246_dialogue_2365.0s.jpg",
+    "t": 2365.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "バッチリばい♪ 楽しか映像になっとるよ！",
+    "frame": "0247_dialogue_2370.8s.jpg",
+    "t": 2370.8
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "ぶふっ、そう言われると、映像を観るのが楽しみになりますな！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "やっぱそっち、クーラーガンガンなのかしら。こっちは暖房ガンガンに入れてもらってるんだけど。",
+    "frame": "0248_dialogue_2388.0s.jpg",
+    "t": 2388.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "お外歩いてると、ふわふわしてきちゃうくらい暑いですねぇ。ふふっ、それにしても……こっちは真夏で、そっちは真冬。同じ星の上なのに、そうじゃないみたい。",
+    "frame": "0249_dialogue_2409.2s.jpg",
+    "t": 2409.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "でも、時差はあるけど喋れてるわけだし。あんま離れてるって感じは、意外としないよね。科学に感謝☆",
+    "frame": "0250_dialogue_2420.0s.jpg",
+    "t": 2420.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "で。アンタたち、明々後日くらいには帰ってくるんでしょ？",
+    "frame": "0251_dialogue_2426.2s.jpg",
+    "t": 2426.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "もう帰国の話！？ そこは先にLIVEの話だろ☆",
+    "frame": "0252_dialogue_2432.4s.jpg",
+    "t": 2432.4
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "ふふ……梨沙殿も私も、成功すると信じておりますからな。いつも通り、気負わず全力でぶつかってきてください！ ということをお伝えしたいのでは？",
+    "frame": "0253_dialogue_2448.8s.jpg",
+    "t": 2448.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "ま、そういうこと。プロデューサーもでしょ？",
+    "frame": "0254_dialogue_2455.6s.jpg",
+    "t": 2455.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "もちろん 信じているからね",
+    "frame": "0255_dialogue_2457.6s.jpg",
+    "t": 2457.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "季節が違っても、場所が離れてても、私たちの心は繋がってる……。",
+    "frame": "0256_dialogue_2466.6s.jpg",
+    "t": 2466.6
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "色は違っても、こん空はひとつたい。",
+    "frame": "0257_dialogue_2473.2s.jpg",
+    "t": 2473.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "ああ、その通りだよ。だから、みんなで一緒にLIVEを成功させよう。",
+    "frame": "0258_dialogue_2479.8s.jpg",
+    "t": 2479.8
+   },
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "おーっ☆ はいっ！ おーっ！",
+    "frame": "0259_dialogue_2482.6s.jpg",
+    "t": 2482.6
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "……あの、先輩。この仕事を任せてくださって、ありがとうございます。私、必ず彼女たちのLIVEが成功するよう、サポートを続けます。",
+    "frame": "0260_dialogue_2495.0s.jpg",
+    "t": 2495.0
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "そして、別の場所であったとしても。一緒に、LIVEの大成功を祝いましょう……きっと。",
+    "frame": "0261_dialogue_2503.4s.jpg",
+    "t": 2503.4
+   }
+  ]
+ },
+ {
+  "id": "ep5",
+  "tab": "第5話",
+  "title": "The sky has no border",
+  "summary": "LIVE当日。現地にちなんだ土産物を相談しながら、オーストラリアでの思い出を振り返るアイドルたち。素敵な時間だったが、まだまだ全然遊び足りない。仕事が終わった後もたくさん遊ぼうと笑い合う3人。そして迎えた本番では、後輩Pとも一緒に円陣を組みみんなでLIVEを盛り上げようと心をひとつにする。",
+  "start_s": 2503,
+  "title_frame": "0262_dialogue_2512.8s.jpg",
+  "log": [
+   "5"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "あ、このあたりなんかいんじゃないですか？ 民族っぽい感じで、可愛いですよっ♪",
+    "frame": "0263_dialogue_2522.4s.jpg",
+    "t": 2522.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "いいねいいね☆ オーストラリア感あるぅ☆ やっぱ、ブレスレットとかネックレスとかがよさげ？",
+    "frame": "0264_dialogue_2532.6s.jpg",
+    "t": 2532.6
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "小道具にブーメランを使うんは……。",
+    "frame": "0265_dialogue_2537.6s.jpg",
+    "t": 2537.6
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "確か衣装に収納はなかったはずなので……。 MCの時に使う、でいきましょう。 ……あ、投げるのはダメですからね？",
+    "frame": "0266_dialogue_2548.2s.jpg",
+    "t": 2548.2
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "よっしゃあああ！ 言葉の壁なんか取っ払って、良かMC見せるばい！",
+    "frame": "0267_dialogue_2558.6s.jpg",
+    "t": 2558.6
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "ふふ、お願いしますね。……でも、なんだかすみません。私の提案で、貴重な時間を……。",
+    "frame": "0268_dialogue_2568.8s.jpg",
+    "t": 2568.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ん？ 大事なコトっしょ☆ オーストラリアにちなんで何かワンポイント入れるのは、はぁとも大賛成だし☆",
+    "frame": "0269_dialogue_2580.8s.jpg",
+    "t": 2580.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "せっかく旅行会社さんがスポンサーさんですし、この国の魅力を身につけたいですもん。いろんな人が、旅行してみたいって思えるように♪",
+    "frame": "0270_dialogue_2595.0s.jpg",
+    "t": 2595.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "ウチらを使いたいって言ってくれたけん、予想以上の成果を見せる恩返しば当然たい！",
+    "frame": "0271_dialogue_2604.8s.jpg",
+    "t": 2604.8
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "みなさん……。ありがとうございます！",
+    "frame": "0272_dialogue_2610.0s.jpg",
+    "t": 2610.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "いーってことよ、ナイスプロデュース☆",
+    "frame": "0273_dialogue_2616.2s.jpg",
+    "t": 2616.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "しっかし、あっという間だったなぁ。今日のLIVEでこのお仕事も終わりかぁ……。",
+    "frame": "0274_dialogue_2625.8s.jpg",
+    "t": 2625.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "明日一日休んだら、明後日には帰国ですもんね。本当、長いようで短かったなぁ。",
+    "frame": "0275_dialogue_2638.0s.jpg",
+    "t": 2638.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "ちょっと寂しか……。もう第二の故郷みたいになったったい。",
+    "frame": "0276_dialogue_2645.8s.jpg",
+    "t": 2645.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "早すぎだろ☆",
+    "frame": "0277_dialogue_2648.4s.jpg",
+    "t": 2648.4
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "でも、とっても素敵な時間を過ごせたのは本当ですよ。あんまりお仕事って感じ、しませんでしたし♪",
+    "frame": "0278_dialogue_2659.6s.jpg",
+    "t": 2659.6
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "そうたい！楽しいことして、それを撮影してもろうて！カメラがあるっちゅうことも、けっこう忘れてたばい。",
+    "frame": "0279_dialogue_2672.0s.jpg",
+    "t": 2672.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "んー、否定できない☆ 遊び足りないもんな☆ ね、鈴帆ちゃん！最終日なにしよっか？",
+    "frame": "0280_dialogue_2681.6s.jpg",
+    "t": 2681.6
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "ウチ？ウチは…… 観光名所がまだまだあるけん、回ってみたいばい！ 会えてない動物たちにも、会ってみたいか……！",
+    "frame": "0281_dialogue_2696.2s.jpg",
+    "t": 2696.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "ふふっ♪ 予定立てなきゃですねっ！ んー……一日で足りるかな？",
+    "frame": "0282_dialogue_2707.8s.jpg",
+    "t": 2707.8
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "くう～、残念……！ なら、帰ってからいっぱい遊ぶたい。 お仕事が終わっても、ウチらの友情は不滅ばい！",
+    "frame": "0283_dialogue_2722.4s.jpg",
+    "t": 2722.4
+   },
+   {
+    "type": "line",
+    "speaker": "心・愛梨",
+    "text": "もちろんっ♪",
+    "frame": "0284_dialogue_2725.4s.jpg",
+    "t": 2725.4
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "今日、私たちの歌を届けるのは…… 普段はなかなか会えない、海の向こうの人たちっ。",
+    "frame": "0285_dialogue_2739.0s.jpg",
+    "t": 2739.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "でも、そげなこと関係なかね。思いっきり楽しめば、きっとどげん人も笑顔になってくれるばい♪",
+    "frame": "0286_dialogue_2751.0s.jpg",
+    "t": 2751.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "当然☆ だからめいっぱい楽しんで、最っ高に盛り上げちゃお☆",
+    "frame": "0287_dialogue_2759.0s.jpg",
+    "t": 2759.0
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "（あの光に照らされるのは、きっと、いつだって変わらない。楽しいことを、思いっきり楽しめる人たち。そうして、その姿で笑顔を届ける人たち。）",
+    "frame": "0288_dialogue_2775.8s.jpg",
+    "t": 2775.8
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "（……昔、ステージの上で 無邪気に笑ってた、あの頃の私みたいに。）",
+    "frame": "0289_dialogue_2782.8s.jpg",
+    "t": 2782.8
+   },
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "Pちゃん！ Pさん！ Pしゃん！",
+    "frame": "0290_dialogue_2786.6s.jpg",
+    "t": 2786.6
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "は、はい！わわっ!?",
+    "frame": "0291_dialogue_2791.4s.jpg",
+    "t": 2791.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "円陣組もうぜ☆ Pちゃんも、はぁとたちの仲間なんだからさ☆",
+    "frame": "0292_dialogue_2798.8s.jpg",
+    "t": 2798.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "それに……日本のみんなも、 今頃こんな風に、えいえいおーってしてる気がするんですっ！ 私たちと同じように、アツアツの気持ちになって♪",
+    "frame": "0293_dialogue_2814.8s.jpg",
+    "t": 2814.8
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "確かに時差は2時間くらいですから、その可能性はありますね……。",
+    "frame": "0294_dialogue_2820.6s.jpg",
+    "t": 2820.6
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "そげなことやなか～！ 心で通じ合っとろうもん、みいんな！",
+    "frame": "0295_dialogue_2831.0s.jpg",
+    "t": 2831.0
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "心で……そうか。うん、そうですね……心で！",
+    "frame": "0296_dialogue_2841.0s.jpg",
+    "t": 2841.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "さあ！ 違う場所でも、同じ空の下でファンに歌を贈るばい！",
+    "frame": "0297_dialogue_2851.0s.jpg",
+    "t": 2851.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "私たちを知らない人にも、届くようにっ！",
+    "frame": "0298_dialogue_2857.0s.jpg",
+    "t": 2857.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "地球同時LIVEなんて……めちゃアツいに決まってる！ 夏も冬も、盛り上がっていくぞーーっ！！",
+    "frame": "0299_dialogue_2868.2s.jpg",
+    "t": 2868.2
+   },
+   {
+    "type": "line",
+    "speaker": "みんな",
+    "text": "おーーっ！！！！",
+    "frame": "0300_dialogue_2874.2s.jpg",
+    "t": 2874.2
+   }
+  ]
+ },
+ {
+  "id": "ed",
+  "tab": "ED",
+  "title": "Enjoy a Holiday！",
+  "summary": "オーストラリアロケを終えて日本に帰国した3人をアイドルたちとPが迎える。お土産を贈り合ったり、熱帯雨林で活躍したスプーンの正体が判明したり、和気藹々とした雰囲気に。そして一同は、他の面々と合流して、LIVE成功のお祝いをしようと盛り上がる。アツい夏はこれからだ。",
+  "start_s": 2886,
+  "title_frame": "0302_dialogue_2889.4s.jpg",
+  "log": [
+   "ED"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "冬だーーーーっ！！！！",
+    "frame": "0302_dialogue_2889.4s.jpg",
+    "t": 2889.4
+   },
+   {
+    "type": "line",
+    "speaker": "3人",
+    "text": "ただいまーっ♪",
+    "frame": "0303_dialogue_2894.4s.jpg",
+    "t": 2894.4
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "ただいま戻りました。",
+    "frame": "0305_dialogue_2897.4s.jpg",
+    "t": 2897.4
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙・亜季",
+    "text": "おかえりなさい！",
+    "frame": "0307_dialogue_2901.6s.jpg",
+    "t": 2901.6
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "亜季しゃん……頼まれてたブツばい。受け取ってほしか。",
+    "frame": "0309_dialogue_2910.4s.jpg",
+    "t": 2910.4
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "はっ！しかと受け取……おおっ……レーションに帽子！？それにワッペンも……！こんなにたくさんですか！？",
+    "frame": "0311_dialogue_2923.0s.jpg",
+    "t": 2923.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "せっかくの海外やけん、ビビっときたもんを買ってきたばい♪ みんなで選んだんよ！",
+    "frame": "0313_dialogue_2932.4s.jpg",
+    "t": 2932.4
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "ありがとうございます……！ 大事に飾り、大事に食べるでありますっ！",
+    "frame": "0315_dialogue_2942.6s.jpg",
+    "t": 2942.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "お菓子もいっぱいありますよ～♪ ナッツに、チョコに、クッキー！ それからそれから～♪",
+    "frame": "0318_dialogue_2954.6s.jpg",
+    "t": 2954.6
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "す、すごい出てくるわ……。",
+    "frame": "0320_dialogue_2960.0s.jpg",
+    "t": 2960.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "あと、コスメもちょろっと買ってきたよ☆ 梨沙ちゃん、これとか使ってたっしょ？",
+    "frame": "0322_dialogue_2968.0s.jpg",
+    "t": 2968.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "えっ！？ このハンドクリーム、ちょうど欲しかったのよ！ ありがとっ♪",
+    "frame": "0324_dialogue_2976.6s.jpg",
+    "t": 2976.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "プロデューサーさん！ おかえりなさいっ♪ そして、LIVEツアー、お疲れさまです！",
+    "frame": "0326_dialogue_2989.0s.jpg",
+    "t": 2989.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "こっちからもお土産があるよ。 みんなで食べよう。",
+    "frame": "0327_dialogue_2993.4s.jpg",
+    "t": 2993.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "お、さっすが☆ ジーマーミ豆腐、食べたかったんだよねぇ♪",
+    "frame": "0328_dialogue_2999.8s.jpg",
+    "t": 2999.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "あまぁいお菓子がたくさんですね～♪ 素敵な打ち上げになりそうっ！",
+    "frame": "0329_dialogue_3007.4s.jpg",
+    "t": 3007.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……あ、そういえばさ。あのスプーンって、なんだったの？保安検査で引っかかんなかったからよかったけど。",
+    "frame": "0330_dialogue_3018.0s.jpg",
+    "t": 3018.0
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "ああ、ダウジングロッドと間違えたらしく…… ですが、結果オーライでありましたな！ 本当はウルルに眠るパワーの源を探ってほしかったそうですが。",
+    "frame": "0332_dialogue_3035.0s.jpg",
+    "t": 3035.0
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "ダウジングロッドだったら間違いなく引っかかってたわね。 それで……アンタたちみんな、 お仕事は大成功させてきたんでしょうね？",
+    "frame": "0333_dialogue_3051.0s.jpg",
+    "t": 3051.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "もちろんたい！LIVEだけじゃなか。撮影もウチららしく、アチチなもんが撮れたばい♪ な、Pしゃん？",
+    "frame": "0335_dialogue_3064.4s.jpg",
+    "t": 3064.4
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "ええ、先方も期待以上だと仰ってくださっていましたよ。いろいろハプニングは起きましたし、不安に思うことも多々ありましたけど……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "そんな気持ちも、みなさんは吹き飛ばしてくれました。違う国であろうと関係なしに思いっきり楽しんで、その楽しむ姿で、たくさんの人々に笑顔を届けてくれて。",
+    "frame": "0337_dialogue_3087.4s.jpg",
+    "t": 3087.4
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "言葉が通じなくても、遠く離れた人であっても、心を通わせられたと思います。みなさんは間違いなく、日本が誇るアイドルですよ。",
+    "frame": "0338_dialogue_3098.4s.jpg",
+    "t": 3098.4
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "……えへへ～、嬉しかぁ♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "どこだって全力で、歌って踊って笑わせて、みーんなが楽しい気持ちになれば、ばり最高たい♪",
+    "frame": "0339_dialogue_3120.2s.jpg",
+    "t": 3120.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "ふふっ♪ Pさんも、ありがとうございましたっ！ いろいろ迷惑もかけちゃいましたけど……楽しかったです♪",
+    "frame": "0340_dialogue_3134.2s.jpg",
+    "t": 3134.2
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "いえ、迷惑だなんて。それに私も……本当に、楽しかったですから。もうこんなに楽しい時間は、ないかもしれないってくらい。",
+    "frame": "0342_dialogue_3146.4s.jpg",
+    "t": 3146.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "おいおい、なーに寂しいこと言ってんだ☆",
+    "frame": "0344_dialogue_3153.0s.jpg",
+    "t": 3153.0
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "わっ！はぁとさん……。",
+    "frame": "0346_dialogue_3157.6s.jpg",
+    "t": 3157.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "はぁとたちはすぅっとアイドルやってくんだからさ、その間は、どこにいたってどっかしらで見てるでしょ？",
+    "frame": "0348_dialogue_3169.8s.jpg",
+    "t": 3169.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "その瞬間が楽しくないなんて、ノースウィーティー☆ ずうっとスウィーティーでいてもらうから、覚悟しろ☆",
+    "frame": "0349_dialogue_3179.8s.jpg",
+    "t": 3179.8
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "へへっ、はぁとしゃんの言う通りやね。笑顔を届ける相手は、ファンだけじゃなか。あんたもそうばい、Pしゃん！",
+    "frame": "0350_dialogue_3192.2s.jpg",
+    "t": 3192.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "これからも、よろしくお願いしますね♪ Pさん！",
+    "frame": "0351_dialogue_3198.6s.jpg",
+    "t": 3198.6
+   },
+   {
+    "type": "line",
+    "speaker": "後輩P",
+    "text": "……はい！",
+    "frame": "0353_dialogue_3202.4s.jpg",
+    "t": 3202.4
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "それから～、LIVE成功のお祝い！みんな呼んで、早速しましょうっ♪",
+    "frame": "0355_dialogue_3213.8s.jpg",
+    "t": 3213.8
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "ええ！ツアーに行ってた連中も引っ張ってきましょう。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "亜季",
+    "text": "楽しい夜になりそうですな！ 私は祝砲の準備をしておくでありますっ！",
+    "frame": "0357_dialogue_3229.2s.jpg",
+    "t": 3229.2
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "それ、クラッカーよね……！？",
+    "frame": "0358_dialogue_3234.0s.jpg",
+    "t": 3234.0
+   },
+   {
+    "type": "line",
+    "speaker": "鈴帆",
+    "text": "はっ……ウチも、くす玉の着ぐるみを……！",
+    "frame": "0360_dialogue_3241.4s.jpg",
+    "t": 3241.4
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "もう用意してるとかっ……！？",
+    "frame": "0362_dialogue_3246.0s.jpg",
+    "t": 3246.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "ふふっ……はあ、ふう。暖房のせいか、ちょっと暑いですね。もしかしたら、オーストラリアより暑いかも……。",
+    "frame": "0364_dialogue_3262.6s.jpg",
+    "t": 3262.6
+   },
+   {
+    "type": "line",
+    "speaker": "梨沙",
+    "text": "脱ごうとしないっ……！？ ……って、もう！ ツッコミが足りないわよーーっ！！",
+    "frame": "0366_dialogue_3272.0s.jpg",
+    "t": 3272.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛梨",
+    "text": "ふふっ♪ 梨沙ちゃんも汗かいてきちゃったみたいですね～。",
+    "frame": "0368_dialogue_3280.0s.jpg",
+    "t": 3280.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ふふっ、日本の夏はこれからっ！ ガンガン、アツくしていこうぜっ☆",
+    "frame": "0369_dialogue_3288.2s.jpg",
+    "t": 3288.2
+   }
+  ]
+ }
+]
