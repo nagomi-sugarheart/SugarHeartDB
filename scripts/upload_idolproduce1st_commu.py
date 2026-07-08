@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 """第1回 アイドルプロデュース コミュ画像のCloudinaryアップロード
 
-- G:\マイドライブ\アイプロはぁと の 1.png〜145.png（45は演出一覧のスクショのため除外）
+使い方: python upload_idolproduce1st_commu.py [kokoro|nana]
+- kokoro: G:\マイドライブ\アイプロはぁと → Deresute/Event/IdolProduce1st/commu/{NNNN}
+  （45は演出一覧のスクショ＝セリフ撮り漏れのため除外）
+- nana:   G:\マイドライブ\アイプロ菜々   → Deresute/Event/IdolProduce1st/commu_nana/{NNNN}
 - PNG(約4MB)をJPEG(q90)に変換してからアップロードする
-- public_id: Deresute/Event/IdolProduce1st/commu/0001 〜 0145
 - 完了後 _cloudinary_upload_map.json に追記
 環境変数 CLOUDINARY_URL が必要。
 """
@@ -30,24 +32,35 @@ assert cloudinary.config().cloud_name == "dnmzdghoi", "CLOUDINARY_URL 未設定"
 
 sys.stdout.reconfigure(encoding="utf-8")
 
+TARGETS = {
+    "kokoro": {
+        "src": Path(r"G:\マイドライブ\アイプロはぁと"),
+        "base": "Deresute/Event/IdolProduce1st/commu",
+        "skip": {45},  # 演出一覧のスクショ（セリフの撮り漏れ箇所）
+    },
+    "nana": {
+        "src": Path(r"G:\マイドライブ\アイプロ菜々"),
+        "base": "Deresute/Event/IdolProduce1st/commu_nana",
+        "skip": set(),
+    },
+}
+target = TARGETS[sys.argv[1] if len(sys.argv) > 1 else "kokoro"]
+
 REPO = Path(__file__).parent.parent
-SRC_DIR = Path(r"G:\マイドライブ\アイプロはぁと")
 MAP_FILE = REPO / "_cloudinary_upload_map.json"
-BASE = "Deresute/Event/IdolProduce1st"
-SKIP = {45}  # 演出一覧のスクショ（セリフの撮り漏れ箇所）
 
 tmpdir = Path(tempfile.mkdtemp(prefix="ip1st_"))
 jobs = []
 for n in range(1, 146):
-    if n in SKIP:
+    if n in target["skip"]:
         continue
-    src = SRC_DIR / f"{n}.png"
+    src = target["src"] / f"{n}.png"
     if not src.exists():
         print(f"  missing: {src}")
         continue
     jpg = tmpdir / f"{n:04d}.jpg"
     Image.open(src).convert("RGB").save(jpg, "JPEG", quality=90)
-    jobs.append((jpg, f"{BASE}/commu/{n:04d}"))
+    jobs.append((jpg, f"{target['base']}/{n:04d}"))
 
 print(f"アップロード対象: {len(jobs)} 件")
 
