@@ -6649,6 +6649,12 @@ input[name="dialogue-tab"] {
     background: var(--grad-sugar-soft);
     border: 1.5px dashed rgba(253,137,185,0.30);
 }
+/* モバマス系の縦型フレーム（3:4前後）用のshot枠 */
+.dss-lines.mobamas-shots .ev-shot,
+.dss-lines.mobamas-shots .ev-dialog-row.no-shot::before {
+    aspect-ratio: 3 / 4;
+    width: 64px;
+}
 .dss-stage-text {
     display: inline-block;
     font-size: 12.5px;
