@@ -14,6 +14,76 @@
    {
     "type": "sub",
     "speaker": "",
+    "text": "Twitter告知",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "しゅがしゅが～？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "菜々",
+    "text": "み～ん゛！あう゛っ",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "パイセン！パイセンどうした～？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "菜々",
+    "text": "っ…ナナは…ナナはもう…ダメかもしれません…！腰がぁ…腰がぁ…あうぅ……なーんてことになっても大丈夫！ナナたちが体験した温泉は幻の若返りの湯！疲労、腰痛、肩こり、肌荒れ、なんでも効果ありの美人の湯です☆",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "って宣伝こんな感じでいいの？ちょっとさ、温泉にフォーカスしすぎて間にあったあ～んなことやこ～んなこと、はぐらかしてな～い？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "菜々",
+    "text": "そっ、それはきっと、この場所では赤裸々に語れない大人の事情があるんですよ！ナナは17歳なので！ちょっとわかりませんけどぉ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "んじゃま、気になる人は見てもらえばいっか☆しゅがしゅが☆み～んの秘境温泉を目指した大・冒・険…☆アーンドハンディカメラで密着取材♪そしてぇ～…ア・レ☆",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "菜々",
+    "text": "今回も思いっきりやっちゃってますから！みんなー！楽しみにしていてくださいねー！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心・菜々",
+    "text": "しゅがしゅが☆み～んのド根性～☆",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "sub",
+    "speaker": "",
     "text": "イベント告知",
     "frame": "0001_dialogue_80.2s.jpg",
     "t": 80.2
