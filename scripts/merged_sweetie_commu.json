@@ -1,0 +1,1114 @@
+{
+ "key": "sweetie",
+ "title": "What is Sweetie？",
+ "summary": "心がセンターのLIVEが決まり、一緒にステージに立つ菜々、比奈、美玲、柚とレッスンに励んでいく。しかしある日、心以外の4人に素朴な疑問が浮かぶ。「スウィーティーって、どういう意味なんだ？」スウィーティーをわかろうとしていくが、心自身も上手く伝えられず、理解は意外にも難航して…！？",
+ "title_frame": "0001_dialogue_3.8s.jpg",
+ "entries": [
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "アイドル夢見て、苦節26年…… やっと名前が売れてきて、お仕事も増えてきたところ？ 健気なはぁとの頑張り、報われてきたかも♪",
+   "frame": "0002_dialogue_25.2s.jpg",
+   "t": 25.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "でもはぁとはまだ満足しない！ この調子で、全世界をスウィーティーにしちゃうから…… 待ってろよ、人類☆",
+   "frame": "0003_dialogue_35.0s.jpg",
+   "t": 35.0
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "しゃーす、おはよーみんな～♪",
+   "frame": "0005_dialogue_43.0s.jpg",
+   "t": 43.0
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "おはようございます、はぁとちゃんっ。",
+   "frame": "0006_dialogue_46.4s.jpg",
+   "t": 46.4
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "おはよう、佐藤",
+   "frame": "0007_dialogue_47.6s.jpg",
+   "t": 47.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "はあだとっつってんだろ☆ で、なになに？ みんなもお仕事の話～？",
+   "frame": "0008_dialogue_54.2s.jpg",
+   "t": 54.2
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "そうそう。 アタシたちで同じステージに立つらしいっす。",
+   "frame": "0009_dialogue_61.0s.jpg",
+   "t": 61.0
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "おぉ～、やったやった☆ はぁと、期待に応えて頑張っちゃう♪",
+   "frame": "0011_dialogue_67.6s.jpg",
+   "t": 67.6
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "ウチも心に手を貸してやるからな。安心してていいぞッ。",
+   "frame": "0012_dialogue_73.6s.jpg",
+   "t": 73.6
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "柚チャンもいい仕事するからね～。サポート役、期待しててっ。",
+   "frame": "0013_dialogue_79.6s.jpg",
+   "t": 79.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ん？サポート？どゆこと？",
+   "frame": "0015_dialogue_84.6s.jpg",
+   "t": 84.6
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "今回のLIVE、メインは佐藤だ",
+   "frame": "0016_dialogue_86.0s.jpg",
+   "t": 86.0
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "え？ メイン？ はぁとが？ マジで。",
+   "frame": "0017_dialogue_90.4s.jpg",
+   "t": 90.4
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "ナナもはぁとちゃんの頑張りを知ってるから、自分のことみたいにうれしくって……！",
+   "frame": "0018_dialogue_103.6s.jpg",
+   "t": 103.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "菜々パイセン、んな大げさな……まぁ実際うれしいですけど？ はぁ～、時代がはぁとに追い付いてきた感あるな☆",
+   "frame": "0019_dialogue_114.2s.jpg",
+   "t": 114.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "うっし、もっともっとスウィーティー広めてこ☆ みんなもよろしくね♪",
+   "frame": "0020_dialogue_120.0s.jpg",
+   "t": 120.0
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "レッスンルーム",
+   "frame": "0021_dialogue_124.4s.jpg",
+   "t": 124.4
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "こうして、地獄のレッスンが始まった……。",
+   "frame": "0022_dialogue_128.8s.jpg",
+   "t": 128.8
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "じゃあこの辺で、いったん休憩入れましょ。飲み物もあるっすよ～。",
+   "frame": "0023_dialogue_141.8s.jpg",
+   "t": 141.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ぷはぁ～！スウィーティー、補給完了！ はぁと、まだまだいけちゃうぞ☆",
+   "frame": "0024_dialogue_154.0s.jpg",
+   "t": 154.0
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "............。",
+   "frame": "0025_dialogue_156.4s.jpg",
+   "t": 156.4
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "ん？ どうしたっすか、美玲ちゃん。ジュース嫌いでした？",
+   "frame": "0026_dialogue_162.0s.jpg",
+   "t": 162.0
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "えっ？ あぁ、いや、大丈夫。 その……ちょっとだけ、気になることがあって。",
+   "frame": "0027_dialogue_171.8s.jpg",
+   "t": 171.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "なんだなんだ、シャイな10代か～？ 悩みがあるならはぁとにお任せ♪ 年の功とか言うなよ☆",
+   "frame": "0028_dialogue_182.4s.jpg",
+   "t": 182.4
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "じゃあ……心に質問なんだけどさ。",
+   "frame": "0029_dialogue_187.6s.jpg",
+   "t": 187.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "おう、どんとこーい☆",
+   "frame": "0030_dialogue_191.2s.jpg",
+   "t": 191.2
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "スウィーティーって、どういう意味なんだ？",
+   "frame": "0031_dialogue_196.6s.jpg",
+   "t": 196.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "……えっ？ そこ？",
+   "frame": "0032_dialogue_199.6s.jpg",
+   "t": 199.6
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "おー、鋭いトコ突いてきたねー。ぐさーっと。",
+   "frame": "0033_dialogue_207.2s.jpg",
+   "t": 207.2
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "心がいつも言ってるだろ？ なんとなく流してたけど、考えてみたらよくわかんないなって。",
+   "frame": "0034_dialogue_217.2s.jpg",
+   "t": 217.2
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "甘いって意味かと思ってたけど、どう考えても甘くないところでも使ってるし……。",
+   "frame": "0035_dialogue_224.2s.jpg",
+   "t": 224.2
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "んー……可愛いとかじゃないっすか？そういう意味もあったような。",
+   "frame": "0036_dialogue_231.6s.jpg",
+   "t": 231.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "スウィーティーってのは……スウィーティーだよ？",
+   "frame": "0037_dialogue_236.6s.jpg",
+   "t": 236.6
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "待て、答えになってないぞッ！",
+   "frame": "0038_dialogue_241.0s.jpg",
+   "t": 241.0
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "いや、口で説明するのは難しくって。はぁと的にきゅんとくるっていうか……もう、考えるより感じておくれ！",
+   "frame": "0039_dialogue_253.8s.jpg",
+   "t": 253.8
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "きゅんとくるって、つまり心が動くってことですよね？感激するとか、琴線に触れるとか。",
+   "frame": "0040_dialogue_263.4s.jpg",
+   "t": 263.4
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "美玲ちゃんだったら、例えばカッコイイって思う瞬間が近いのかもしれませんよ。",
+   "frame": "0041_dialogue_270.4s.jpg",
+   "t": 270.4
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "なるほど、それがスウィーティーかッ！",
+   "frame": "0042_dialogue_275.0s.jpg",
+   "t": 275.0
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "さすが菜々さん、心さんのことワカってるって感じっすね。",
+   "frame": "0043_dialogue_281.0s.jpg",
+   "t": 281.0
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "えへへっ。ふたりでステージに立った仲ですから♪",
+   "frame": "0044_dialogue_287.0s.jpg",
+   "t": 287.0
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "いや……そういうのとも、ちょっと違う気がする。",
+   "frame": "0045_dialogue_293.6s.jpg",
+   "t": 293.6
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "ええっ！ナナ、わかってませんでしたか！？",
+   "frame": "0046_dialogue_298.2s.jpg",
+   "t": 298.2
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "みんな、レッスンの調子はどう？",
+   "frame": "0047_dialogue_300.2s.jpg",
+   "t": 300.2
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "あ、プロデューサーサン！ 大変だよ、早くもメンバーが分裂の危機なんだっ！",
+   "frame": "0048_dialogue_308.4s.jpg",
+   "t": 308.4
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "ええッ！？ いやいや、ウチもそこまでは考えてないぞッ！",
+   "frame": "0049_dialogue_314.0s.jpg",
+   "t": 314.0
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "数分後",
+   "frame": "0050_dialogue_318.2s.jpg",
+   "t": 318.2
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "というわけで、スウィーティーとは何なのかという疑問が湧いてしまいまして。",
+   "frame": "0051_dialogue_329.6s.jpg",
+   "t": 329.6
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "ならそれを宿題にしよう",
+   "frame": "0052_dialogue_330.8s.jpg",
+   "t": 330.8
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "えぇッ！？",
+   "frame": "0056_dialogue_336.8s.jpg",
+   "t": 336.8
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "宿題……？ 本番までの、ですか？",
+   "frame": "0060_dialogue_355.4s.jpg",
+   "t": 355.4
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "みんなは、スウィーティーを理解できるように。佐藤は、スウィーティーをみんなに伝えられるように。それができれば、もっといいLIVEに",
+   "frame": "0061_dialogue_364.0s.jpg",
+   "t": 364.0
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "なるほど……。つまりアタシたちにも、スウィーティーになれってことだね？面白そうだし、柚チャン賛成！",
+   "frame": "0062_dialogue_375.6s.jpg",
+   "t": 375.6
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "なんか熱い展開になってきたっスねぇ。アタシも嫌いじゃないっよ、こういうの♪",
+   "frame": "0063_dialogue_381.8s.jpg",
+   "t": 381.8
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "……わかりました、プロデューサーさん。 ナナも今回だけは、スウィーティーウサミンになりますっ！",
+   "frame": "0064_dialogue_392.6s.jpg",
+   "t": 392.6
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "ウチも負けないぞ！ 最初に言い出した責任ってヤツもあるからなッ！",
+   "frame": "0065_dialogue_399.6s.jpg",
+   "t": 399.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "おぉぅ、なんぞこのスポ根展開……。 みんな、めっちゃ気合入ってるぅ……。",
+   "frame": "0066_dialogue_407.2s.jpg",
+   "t": 407.2
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "はぁとちゃんも、一緒に頑張りましょう！ ナナたちも、はぁとちゃんのスウィーティー、 頑張って勉強しますから！",
+   "frame": "0067_dialogue_415.2s.jpg",
+   "t": 415.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "……わかりました！ うっし、それならはぁとも本気出すしかないっすわ！",
+   "frame": "0068_dialogue_424.4s.jpg",
+   "t": 424.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "はぁとだけのスウィーティー、みんなにも分けあげる♪ ばっちり覚悟決めとけよ☆",
+   "frame": "0069_dialogue_432.2s.jpg",
+   "t": 432.2
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "それでは、スウィーティーランニングを始めましょうっ！ はぁとちゃん、お願いします！",
+   "frame": "0070_dialogue_449.2s.jpg",
+   "t": 449.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "おっけ、いっくぞ～♪ みんな、はぁとについてきてっ！",
+   "frame": "0071_dialogue_454.4s.jpg",
+   "t": 454.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "いっちにっ、スウィーティー！",
+   "frame": "0072_dialogue_457.6s.jpg",
+   "t": 457.6
+  },
+  {
+   "type": "line",
+   "speaker": "菜々・美玲・比奈・柚",
+   "text": "いっちにっ、スウィーティー！",
+   "frame": "0073_dialogue_461.2s.jpg",
+   "t": 461.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "さんしー、スウィーティー！",
+   "frame": "0074_dialogue_464.6s.jpg",
+   "t": 464.6
+  },
+  {
+   "type": "line",
+   "speaker": "菜々・美玲・比奈・柚",
+   "text": "さんしー、スウィーティー！",
+   "frame": "0075_dialogue_467.8s.jpg",
+   "t": 467.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ぜぇ、はぁ……ど、どうよみんな。スウィーティーになった！？",
+   "frame": "0077_dialogue_480.2s.jpg",
+   "t": 480.2
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "なった……ような、なってないような……？",
+   "frame": "0078_dialogue_487.6s.jpg",
+   "t": 487.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "なってよ、もっと本気で！ スウィーティーを受け止めて、全身で！",
+   "frame": "0079_dialogue_494.6s.jpg",
+   "t": 494.6
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "ファミレス",
+   "frame": "0080_dialogue_499.8s.jpg",
+   "t": 499.8
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "やっぱり基本が大事だよ！ 甘～いキモチ、これこそスウィーティー♪",
+   "frame": "0081_dialogue_508.4s.jpg",
+   "t": 508.4
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "というわけで……今日はみんなで、スイーツを食べまくろう！",
+   "frame": "0082_dialogue_514.4s.jpg",
+   "t": 514.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "はあん、ステキ♪ みんながはぁとに、『食・べ・て☆』って言ってる…… もう最高にスウィーティー♪",
+   "frame": "0083_dialogue_525.8s.jpg",
+   "t": 525.8
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "いいんじゃないっすか？ アイスとか乗っければ、実質スイーツっす。",
+   "frame": "0084_dialogue_537.8s.jpg",
+   "t": 537.8
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "み、みなさん…… 一応言っておきますけど、食べすぎには気をつけましょうね？",
+   "frame": "0085_dialogue_546.2s.jpg",
+   "t": 546.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "だいじょぶだいじょぶ、食べた分は燃やせばオッケー☆ 伊達にアラサーやってねーし♪",
+   "frame": "0086_dialogue_553.6s.jpg",
+   "t": 553.6
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "えっ……？",
+   "frame": "0087_dialogue_556.0s.jpg",
+   "t": 556.0
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "いっちにっ！スウィーティー！！",
+   "frame": "0089_dialogue_563.0s.jpg",
+   "t": 563.0
+  },
+  {
+   "type": "line",
+   "speaker": "菜々・美玲・比奈・柚",
+   "text": "さんしーっ！スウィーティー！！",
+   "frame": "0090_dialogue_566.6s.jpg",
+   "t": 566.6
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "食堂",
+   "frame": "0091_dialogue_570.4s.jpg",
+   "t": 570.4
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "スウィーティーを知るために、頭と体にスウィーティーをたたき込むっすよ！",
+   "frame": "0092_dialogue_576.2s.jpg",
+   "t": 576.2
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "おーっ！ で、何をやるんだ？",
+   "frame": "0093_dialogue_580.8s.jpg",
+   "t": 580.8
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "スウィーティーの書き取りっす！ 何事も最初は真似！ 模写から入るのが基本っすよ！ まずは目標100回から！",
+   "frame": "0094_dialogue_590.0s.jpg",
+   "t": 590.0
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "えーと……『すういーていー』っと。",
+   "frame": "0095_dialogue_599.2s.jpg",
+   "t": 599.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "あー、違うよ美玲ちゃん。スウィーティーは、基本はカタカナ。",
+   "frame": "0096_dialogue_606.2s.jpg",
+   "t": 606.2
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "じゃあさじゃあさ、これは？『スウィ～ティ～』。",
+   "frame": "0097_dialogue_612.6s.jpg",
+   "t": 612.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "んー、アリ……いや、アリ寄りのナシか？ こう、微妙なズレっぽいものが……。",
+   "frame": "0098_dialogue_624.6s.jpg",
+   "t": 624.6
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "基準がわからないっス……！",
+   "frame": "0099_dialogue_629.4s.jpg",
+   "t": 629.4
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "うーん…… 手応えっぽいものは、感じてるような気が…… しなくもないんだけど。",
+   "frame": "0100_dialogue_640.8s.jpg",
+   "t": 640.8
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "難しいっすね、スウィーティー……。心さんもアタシたちも、こんなに頑張ってるのに……。",
+   "frame": "0101_dialogue_648.8s.jpg",
+   "t": 648.8
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "で、心は何やってるんだ？",
+   "frame": "0102_dialogue_653.2s.jpg",
+   "t": 653.2
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "スウィーティーについて、外部アドバイザーに聞いてみるって。",
+   "frame": "0103_dialogue_659.6s.jpg",
+   "t": 659.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "あーもしもし、マリナル？ いきなりですまんけど、ちょっと聞いていいかな？ うん。あのさ、スウィーティーって何？",
+   "frame": "0104_dialogue_674.4s.jpg",
+   "t": 674.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "……はぁ、ああ……まぁそうだよね。ん、それだけ。ありがと。",
+   "frame": "0105_dialogue_683.4s.jpg",
+   "t": 683.4
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "どうでした？",
+   "frame": "0107_dialogue_689.4s.jpg",
+   "t": 689.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "私に聞かれても困るって。",
+   "frame": "0108_dialogue_692.4s.jpg",
+   "t": 692.4
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "ですよねー。",
+   "frame": "0109_dialogue_697.6s.jpg",
+   "t": 697.6
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "元はと言えば……ウチが変なこと言い出したせいで……。 それでこんなに、みんなに迷惑を……。",
+   "frame": "0110_dialogue_714.4s.jpg",
+   "t": 714.4
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "そんなことないですよ！ 迷惑だなんて、絶対に違いますっ！",
+   "frame": "0111_dialogue_721.2s.jpg",
+   "t": 721.2
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "美玲ちゃんがきっかけをくれたから、みんながこんなに真剣になれたんスよ。それだけは、絶対に間違ってないっス。",
+   "frame": "0112_dialogue_731.6s.jpg",
+   "t": 731.6
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "LIVEのためには必要なこと、だよね。 プロデューサーサンも言ってたし、 アタシもその通りだと思うよ。 うん。",
+   "frame": "0113_dialogue_742.0s.jpg",
+   "t": 742.0
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "そっか……そうだなッ。ちょっと弱気になってた。ウチらしくないなッ！",
+   "frame": "0114_dialogue_752.2s.jpg",
+   "t": 752.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "……もう、みんなったら……。",
+   "frame": "0115_dialogue_758.2s.jpg",
+   "t": 758.2
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "え？ はぁとちゃん、何ですか？",
+   "frame": "0116_dialogue_763.4s.jpg",
+   "t": 763.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "いや、何でもない。はぁと、ちょいと外の空気吸ってくるっ。",
+   "frame": "0117_dialogue_771.0s.jpg",
+   "t": 771.0
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "みんな、どこまでマジなのさ。はぁとのためにさぁ……うるっときちゃうだろ？",
+   "frame": "0118_dialogue_784.6s.jpg",
+   "t": 784.6
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "宿題の答えは出そう？",
+   "frame": "0119_dialogue_786.8s.jpg",
+   "t": 786.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "なんつーか、もどかしいな。 はぁとのハートには、スウィーティーがちゃんとおるのに…… 言葉にできなくってさ。",
+   "frame": "0120_dialogue_820.6s.jpg",
+   "t": 820.6
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "気持ちを伝えるのは言葉だけじゃないよ",
+   "frame": "0121_dialogue_822.6s.jpg",
+   "t": 822.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ん？言葉だけじゃないって……他にあるってこと？",
+   "frame": "0122_dialogue_831.2s.jpg",
+   "t": 831.2
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "だって佐藤は、誰よりもスウィーティーなアイドルなんだから。",
+   "frame": "0123_dialogue_836.6s.jpg",
+   "t": 836.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "…………ねぇ、プロデューサー。 用意してほしいものがあるんだけど、いい？",
+   "frame": "0124_dialogue_852.8s.jpg",
+   "t": 852.8
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "あ、はぁとちゃん。とりあえず、次のスウィーティーのネタなんですけど……。",
+   "frame": "0125_dialogue_861.0s.jpg",
+   "t": 861.0
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "すとーっぷ！ 今日はもうトレーニングはおしまいっ。",
+   "frame": "0126_dialogue_866.4s.jpg",
+   "t": 866.4
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "ええつ、いいんスか？ 本番まであまり余裕ないっすよ？",
+   "frame": "0127_dialogue_872.4s.jpg",
+   "t": 872.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "へーきへーき☆ 代わりに、これからスウィーティー合宿始めっから♪ モチ、プロデューサー公認で☆",
+   "frame": "0128_dialogue_881.8s.jpg",
+   "t": 881.8
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "ええっ、合宿って、どこに！？",
+   "frame": "0129_dialogue_888.0s.jpg",
+   "t": 888.0
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "はぁとのおうち♪ いまから全員集合な☆",
+   "frame": "0130_dialogue_893.6s.jpg",
+   "t": 893.6
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "心の部屋",
+   "frame": "0131_dialogue_898.8s.jpg",
+   "t": 898.8
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "お、お邪魔しまーす……。",
+   "frame": "0132_dialogue_902.6s.jpg",
+   "t": 902.6
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "おー、ここが心サンの部屋かぁ。思ってたより普通のフンイキかも？",
+   "frame": "0133_dialogue_911.0s.jpg",
+   "t": 911.0
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "ミシンじゃないっすか？ 心さん、自分で衣装作ったりしてまスし。",
+   "frame": "0134_dialogue_924.4s.jpg",
+   "t": 924.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "んもう、あんまりいろんなとこ触っちゃらめぇ☆ はぁとのシークレット、いっぱいあるんだぞ♪",
+   "frame": "0135_dialogue_932.8s.jpg",
+   "t": 932.8
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "っと、こ、ゴメン。壊しちゃったら大変だモンなッ。",
+   "frame": "0136_dialogue_939.2s.jpg",
+   "t": 939.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "なーんて、冗談♪ わざわざ呼んだんだから、ちょっとくらいはサービスしちゃう♪ ちょっとだけな☆",
+   "frame": "0137_dialogue_947.8s.jpg",
+   "t": 947.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "でも今日のメインは……じゃーん！ コ・レ・だ・ぞ☆",
+   "frame": "0138_dialogue_956.2s.jpg",
+   "t": 956.2
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "なんすか、それ。アニメの円盤とか？",
+   "frame": "0140_dialogue_964.4s.jpg",
+   "t": 964.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ううん、それよりももっと激レアな……世界で一番スウィーティーなアイドルの、極秘映像～♪",
+   "frame": "0141_dialogue_977.2s.jpg",
+   "t": 977.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "はーい、ちゅうもーく♪ しゅがっとスウィーティーなアイドル、しゅがーはぁとだぞ♪ え、本名？ んもう、それはいいから☆",
+   "frame": "0142_dialogue_990.6s.jpg",
+   "t": 990.6
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "……これって……昔の心？",
+   "frame": "0143_dialogue_997.8s.jpg",
+   "t": 997.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "そう、熱烈にスカウトされて、どうしてもって言われて、アイドルのオーディション受けにきたときのヤツ♪",
+   "frame": "0144_dialogue_1011.8s.jpg",
+   "t": 1011.8
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "あはは、ナルホド～。場の空気がひしひし伝わってくるね♪",
+   "frame": "0145_dialogue_1018.4s.jpg",
+   "t": 1018.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "しゃーす、みんな～♪ はぁとと一緒に、スウィーティーなコール決めよ☆ せーの、シュガ・シュガ・きゅんっ♪ おいこら、ノリ悪いぞ☆",
+   "frame": "0146_dialogue_1034.2s.jpg",
+   "t": 1034.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "これは、初めて立ったステージかな？ やぁん、はぁとったらめっちゃわか～い♪ でもいまと思わんなーい☆",
+   "frame": "0147_dialogue_1047.4s.jpg",
+   "t": 1047.4
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "確かに……っていうか、そこまで昔じゃないっすよね？",
+   "frame": "0148_dialogue_1055.4s.jpg",
+   "t": 1055.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "んもう、マジつっこみはらめぇ♪ はぁとはいつでも、いまを生きてるの☆",
+   "frame": "0149_dialogue_1063.2s.jpg",
+   "t": 1063.2
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "数分後",
+   "frame": "0150_dialogue_1068.2s.jpg",
+   "t": 1068.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ふう、これでおしまいっ♪ 恥ずかしいトコロもいっぱ見せちゃったかも？",
+   "frame": "0151_dialogue_1077.6s.jpg",
+   "t": 1077.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "だってはぁとは、スウィーティーアイドルだもん。見てる人をみ～んなスウィーティーな気持ちにする、はぁとだし？",
+   "frame": "0152_dialogue_1092.6s.jpg",
+   "t": 1092.6
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "……ひんっ！ はううっ……は、はぁとちゃんっ……えぐ、うう……。",
+   "frame": "0153_dialogue_1104.0s.jpg",
+   "t": 1104.0
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "だって、はぁとちゃん…… すごく頑張り屋で、いっぱい伝わってきて……えうぅ……。",
+   "frame": "0154_dialogue_1122.4s.jpg",
+   "t": 1122.4
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "あはは……でもアタシもこういうの、好きっすよ。自分らしさを貫き通すって、いいじゃないスか。",
+   "frame": "0155_dialogue_1135.6s.jpg",
+   "t": 1135.6
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "心サンって、一緒にいて面白いとか楽しいとかあるけど…… 何より、元気がもらえるのかもね。 ファンの人も、きっとこんな気持ちなのかな～♪",
+   "frame": "0156_dialogue_1149.8s.jpg",
+   "t": 1149.8
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "うんうん。カッコイイのとは違うって言ってたけど…… やっぱウチ的にグッとくるし、心はカッコイイと思うぞッ。",
+   "frame": "0157_dialogue_1161.4s.jpg",
+   "t": 1161.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "えへへ、アリガト♪ なら……伝わったかな？",
+   "frame": "0158_dialogue_1169.4s.jpg",
+   "t": 1169.4
+  },
+  {
+   "type": "line",
+   "speaker": "美玲",
+   "text": "ああ、ちゃんと届いた。心の気持ち、スウィーティー……はっきり感じたぞッ。",
+   "frame": "0159_dialogue_1179.8s.jpg",
+   "t": 1179.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "だったら、きっといけるよね。みんなで最高のLIVEを……目指スウィーティー！",
+   "frame": "0160_dialogue_1189.8s.jpg",
+   "t": 1189.8
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "LIVE終了後",
+   "frame": "0162_dialogue_1203.2s.jpg",
+   "t": 1203.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ふは～っ…… みんな、おつかれっしたぁ～。",
+   "frame": "0163_dialogue_1208.6s.jpg",
+   "t": 1208.6
+  },
+  {
+   "type": "line",
+   "speaker": "比奈",
+   "text": "みんなのスウィーティーコール、すごかったっスね。大盛り上がりだったっス♪",
+   "frame": "0164_dialogue_1224.2s.jpg",
+   "t": 1224.2
+  },
+  {
+   "type": "line",
+   "speaker": "菜々",
+   "text": "トレーニングの甲斐がありましたね。おかげでファンのみんなにも、スウィーティーを届けられました……♪",
+   "frame": "0165_dialogue_1233.4s.jpg",
+   "t": 1233.4
+  },
+  {
+   "type": "line",
+   "speaker": "柚",
+   "text": "うんうん。今日のアタシたちは、世界で一番！スウィーティーなアイドルだったよねっ☆",
+   "frame": "0166_dialogue_1242.2s.jpg",
+   "t": 1242.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "そりゃもう！はぁとの的にも大合格☆ スウィーティーのココロ、みっちり教えてあげたし♪",
+   "frame": "0167_dialogue_1252.0s.jpg",
+   "t": 1252.0
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "佐藤、みんな、 お疲れ様",
+   "frame": "0168_dialogue_1253.6s.jpg",
+   "t": 1253.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "でも、わかってる♪ これってアレだろ、プロデューサーなりの照れ隠し☆ んもう、カワイイやつだな～♪",
+   "frame": "0169_dialogue_1272.8s.jpg",
+   "t": 1272.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "それで……プロデューサー的には、どうだった？感想は、ちゃんと素直に教えてね☆",
+   "frame": "0170_dialogue_1282.8s.jpg",
+   "t": 1282.8
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "最高にスウィーティーなLIVEだったよ。",
+   "frame": "0171_dialogue_1285.8s.jpg",
+   "t": 1285.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "……だろ～☆ でもはぁと、まだまだ満足してないからな♪",
+   "frame": "0172_dialogue_1292.2s.jpg",
+   "t": 1292.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "世界をもっともっとスウィーティーにしてく、はぁとの大活躍！ これからもず～っと、見とけよ☆",
+   "frame": "0173_dialogue_1301.6s.jpg",
+   "t": 1301.6
+  }
+ ]
+}
