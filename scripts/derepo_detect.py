@@ -26,13 +26,13 @@ def src_path(n):
     for q in SRC.glob(f"{n}_*.jpeg"): return q
     raise FileNotFoundError(n)
 
-def detect_icons(img):
+def detect_icons(img, thr=22):
     """アイコン列 x[18,118] の行方向分散でアイコン（＝投稿）の上端を検出。
     アイコンは絵柄で高分散、背景（白/薄ピンク）は低分散。返り値は枠上端yのリスト。"""
     g = np.asarray(img.convert("L")).astype(float)
     h = g.shape[0]
     rowstd = g[:, 18:118].std(axis=1)
-    on = rowstd > 22
+    on = rowstd > thr
     tops = []
     y = 0
     while y < h:
@@ -44,6 +44,17 @@ def detect_icons(img):
         else:
             y += 1
     return tops
+
+def detect_icons_n(img, target):
+    """書き起こしの投稿数 target に一致する閾値でアイコンを検出する。
+    淡いアイコンを取りこぼす/背景を拾う場合に閾値を調整して数を合わせる。"""
+    if target is None:
+        return detect_icons(img)
+    for thr in [22, 21, 20, 19, 18, 23, 24, 17, 25, 16, 26]:
+        tops = detect_icons(img, thr)
+        if len(tops) == target:
+            return tops
+    return detect_icons(img)                  # 合わなければ既定
 
 def main():
     n = int(sys.argv[1])

@@ -11,7 +11,7 @@ import numpy as np
 from PIL import Image
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-from derepo_detect import detect_icons, src_path
+from derepo_detect import detect_icons, detect_icons_n, src_path
 
 REPO = Path(__file__).parent.parent
 IMGDIR = REPO / "scripts" / "derepo_img"
@@ -129,7 +129,7 @@ def process(n, save=True, hints=None):
     img = Image.open(src_path(n)).convert("RGB")
     a = np.asarray(img).astype(int)
     H = img.size[1]
-    tops = detect_icons(img)
+    tops = detect_icons_n(img, len(hints) if hints else None)   # 書き起こし数に合わせる
     posts = []
     for i, t in enumerate(tops):
         y_next = tops[i + 1] if i + 1 < len(tops) else H
