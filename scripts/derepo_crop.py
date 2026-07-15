@@ -76,42 +76,75 @@ def detect_attachment(a, y0, y1):
         if rr:
             s, e = max(rr, key=lambda r: r[1] - r[0])
         return ("photo", (PH_X0, y0 + max(0, s - 3), PH_X1, y0 + e + 3))
-    # スタンプ: x[xl,xr]内の content 行で上下に拡張
-    sub = content[:, xl:xr + 1].sum(axis=1) > max(6, (xr - xl) * 0.12)
-    rr = _runs(sub, 14, 40)
-    if rr:
-        s, e = max(rr, key=lambda r: r[1] - r[0])
+    # スタンプ: コアから下方向のみ緩く拡張（上は本文を拾わないよう控えめ。淡い髪の上拡張は
+    # process()側で「スタンプのみ投稿」に限定して行う）
+    ext = ((sat > 45) | (gray < 185))[:, xl:xr + 1].sum(axis=1)
+    thr = max(10, (xr - xl) * 0.12)
+    n2 = len(ext)
+    while e < n2 and ext[e] > thr: e += 1
     x0 = max(PH_X0, DET_X0 + xl - 14); x1 = min(PH_X1, DET_X0 + xr + 14)
-    return ("stamp", (x0, y0 + max(0, s - 6), x1, y0 + e + 6))
+    return ("stamp", (x0, y0 + max(0, s - 5), x1, y0 + e + 5))
 
 def fallback_box(a, t, y_next, kind):
-    """自動検出が拾えなかった添付の箱を、輪郭(暗い)＋彩度で推定する。
-    kind='photo' はフル幅、'stamp' はアバター右の絵柄範囲。"""
+    """添付の箱を推定する。kind='photo' はフル幅、'stamp' は左側のキャラ絵柄。
+    スタンプは「切らない」ことを優先し、名前直下から絵柄下端までを囲む
+    （キャプション文が絵柄に近接する場合は含んでよい）。"""
     H = a.shape[0]
-    y0 = min(H, t + 46)                       # 名前行の下から
+    if kind == "photo":
+        y0 = min(H, t + 46); y1 = min(H, y_next - 2)
+        if y1 - y0 < 30: return None
+        seg = a[y0:y1, DET_X0:PH_X1, :]
+        sat = seg.max(2) - seg.min(2); gray = seg.mean(2)
+        content = (sat > 45) | (gray < 150)
+        rows = _runs(content.sum(axis=1) > 25, 18, 40)
+        if not rows: return None
+        s, e = max(rows, key=lambda r: r[1] - r[0])
+        return (PH_X0, y0 + max(0, s - 5), PH_X1, y0 + e + 5)
+    # --- stamp ---
+    # 上端は名前行の直下に固定（スキン色の頭が背景と区別できず切れるのを防ぐ）。
+    # 下端のみ検出（顔など淡い部分のギャップは許容）。x は左側の絵柄範囲に限定。
+    SX0, SX1 = 138, 360
+    y0 = min(H, t + 38)
     y1 = min(H, y_next - 2)
     if y1 - y0 < 30: return None
-    x0d = DET_X0
-    seg = a[y0:y1, x0d:PH_X1, :]
+    seg = a[y0:y1, SX0:SX1, :]
     sat = seg.max(2) - seg.min(2); gray = seg.mean(2)
-    content = (sat > 45) | (gray < 150)
-    rows = _runs(content.sum(axis=1) > 25, 18, 40)
-    if not rows: return None
-    s, e = max(rows, key=lambda r: r[1] - r[0])
-    colf = content[s:e].mean(axis=0)
-    cols = np.where(colf > 0.12)[0]
-    if kind == "stamp":                        # スタンプは左側。右のタイムスタンプを除外
-        cols = cols[cols < (620 - x0d)]
-    if len(cols) == 0: return None
-    xl, xr = int(cols.min()), int(cols.max())
-    ay0, ay1 = y0 + max(0, s - 5), y0 + e + 5
-    if kind == "photo":
-        return (PH_X0, ay0, PH_X1, ay1)
-    return (max(PH_X0, x0d + xl - 14), ay0, min(PH_X1, x0d + xr + 14), ay1)
+    content = (sat > 48) | (gray < 165)
+    rc = content.sum(axis=1) > 12
+    if not rc.any(): return None
+    bottom = 0; gapc = 0
+    for y in range(len(rc)):
+        if rc[y]: bottom = y; gapc = 0
+        else:
+            gapc += 1
+            if gapc > 55 and bottom > 0: break   # 絵柄下端の先の背景で停止（顔の隙間は許容）
+    colf = content[:bottom + 1].mean(axis=0)
+    cols = np.where(colf > 0.08)[0]
+    xl = int(cols.min()) if len(cols) else 0
+    xr = int(cols.max()) if len(cols) else (SX1 - SX0 - 1)
+    return (max(PH_X0, SX0 + xl - 12), y0, min(PH_X1, SX0 + xr + 12), y0 + bottom + 6)
+
+def extend_stamp_top(a, box, t):
+    """スタンプのみ投稿で、コアより上の淡い髪などを名前行の下まで取り込む。"""
+    x0, y0, x1, y1 = box
+    seg = a[:, x0:x1, :]
+    sat = seg.max(2) - seg.min(2); gray = seg.mean(2)
+    ext = ((sat > 45) | (gray < 185)).sum(axis=1)
+    thr = max(10, (x1 - x0) * 0.12)
+    floor = t + 52                             # 名前行より下で止める
+    s = y0
+    while s > floor and ext[s - 1] > thr: s -= 1
+    return (x0, s, x1, y1)
+
+def load_texts(n):
+    p = TEXTDIR / f"{n}.json"
+    if not p.exists(): return None
+    return [pp.get("text", "") for pp in json.loads(p.read_text(encoding="utf-8")).get("posts", [])]
 
 def process(n, save=True, hints=None):
     if hints is None:
         hints = load_hints(n)
+    texts = load_texts(n)
     img = Image.open(src_path(n)).convert("RGB")
     a = np.asarray(img).astype(int)
     H = img.size[1]
@@ -123,10 +156,12 @@ def process(n, save=True, hints=None):
         att = detect_attachment(a, min(H, t + 8), y_next)   # (kind, box) or None
         hint = hints[i] if (hints and i < len(hints)) else None
         kind, box = (att if att else (None, None))
-        if hint in ("photo", "stamp"):        # 書き起こし側の判定を優先
-            kind = hint
-            if box is None:
-                box = fallback_box(a, t, y_next, hint)
+        if hint == "stamp":                    # スタンプは常にfallback（キャラ本体＝最長連続域）
+            kind = "stamp"; box = fallback_box(a, t, y_next, "stamp")
+        elif hint == "photo":
+            kind = "photo"
+            if not (box and kind == "photo" and att and att[0] == "photo"):
+                box = (att[1] if (att and att[0] == "photo") else None) or fallback_box(a, t, y_next, "photo")
         elif hint is False:                    # 添付なしと明示
             kind, box = None, None
         rec = {"i": i, "parent": i == 0, "icon_top": t, "photo": None, "stamp": None}
