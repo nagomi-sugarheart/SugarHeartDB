@@ -54,7 +54,7 @@
                             <h4>その他</h4>\n\
                             <ul>\n\
                                 <li><a href="Deresute/CostumeList.html">衣装一覧</a></li>\n\
-                                <li><a class="disabled">シンデレラシアター</a></li>\n\
+                                <li><a href="Deresute/CinderellaTheater/CinderellaTheater.html">シンデレラシアター</a></li>\n\
                                 <li><a href="Deresute/Other/Other.html">その他</a></li>\n\
                             </ul>\n\
                         </div>\n\
@@ -132,7 +132,7 @@
                     <li><a href="Deresute/Event/EventList.html">メインイベント</a></li>\n\
                     <li><a href="Deresute/GuestCommu/GuestCommu.html">ゲスト参加コミュ＆映り込みカード</a></li>\n\
                     <li><a href="Deresute/CostumeList.html">衣装一覧</a></li>\n\
-                    <li><a class="disabled">シンデレラシアター</a></li>\n\
+                    <li><a href="Deresute/CinderellaTheater/CinderellaTheater.html">シンデレラシアター</a></li>\n\
                     <li><a href="Deresute/Other/Other.html">その他</a></li>\n\
                 </ul>\n\
             </li>\n\
