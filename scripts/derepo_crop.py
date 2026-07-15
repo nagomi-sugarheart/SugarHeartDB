@@ -101,28 +101,9 @@ def fallback_box(a, t, y_next, kind):
         s, e = max(rows, key=lambda r: r[1] - r[0])
         return (PH_X0, y0 + max(0, s - 5), PH_X1, y0 + e + 5)
     # --- stamp ---
-    # スタンプは位置・サイズがほぼ固定。上端は明示的に固定（名前の少し下＝icon_top+30）。
-    # 下端と右端のみ検出（顔など淡い部分のギャップは許容）。x左端も固定。
-    SX0, SX1 = 138, 380
-    y0 = min(H, t + 56)                        # 名前(〜t+55)の下・スタンプ(t+62〜)の少し上に固定
-    y1 = min(H, y_next - 2)
-    if y1 - y0 < 30: return None
-    seg = a[y0:y1, SX0:SX1, :]
-    sat = seg.max(2) - seg.min(2); gray = seg.mean(2)
-    content = (sat > 48) | (gray < 165)
-    rc = content.sum(axis=1) > 12
-    if not rc.any(): return None
-    bottom = 0; gapc = 0
-    for y in range(len(rc)):
-        if rc[y]: bottom = y; gapc = 0
-        else:
-            gapc += 1
-            if gapc > 55 and bottom > 0: break   # 絵柄下端の先の背景で停止（顔の隙間は許容）
-    colf = content[:bottom + 1].mean(axis=0)
-    cols = np.where(colf > 0.08)[0]
-    xl = int(cols.min()) if len(cols) else 0
-    xr = int(cols.max()) if len(cols) else (SX1 - SX0 - 1)
-    return (max(PH_X0, SX0 + xl - 12), y0, min(PH_X1, SX0 + xr + 12), y0 + bottom + 6)
+    # スタンプのキャンバスは位置・サイズとも固定（名前は〜t+55、絵柄は t+62〜t+245、x 164〜340）。
+    # 検出はせず固定ボックスで切り出す（川島瑞樹のスタンプを基準に全アイドルで確認済み）。
+    return (164, min(H, t + 56), 340, min(H, t + 245))
 
 def extend_stamp_top(a, box, t):
     """スタンプのみ投稿で、コアより上の淡い髪などを名前行の下まで取り込む。"""
