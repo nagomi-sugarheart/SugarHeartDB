@@ -60,7 +60,8 @@ def assign_years(imgs):
         result[(n, i)] = base + years[k]
     return result
 
-def render_post(n, i, p, year, is_parent):
+def render_post(n, i, p, year, is_first, indent=False, side=False):
+    is_parent = is_first
     date = f"{year}-{p['md']} {p.get('time','')}".strip()
     text = esc(p["text"])
     # #タグを強調
@@ -74,15 +75,13 @@ def render_post(n, i, p, year, is_parent):
     if p.get("stamp"):
         # スタンプ（小さな一枚絵）は本文下にインラインで表示
         stamp_html = f'\n        <div class="dp-stamp"><img class="lightbox-trigger" src="{CDN}/{n}/stamp{i}" alt="{esc(p["name"])}のスタンプ" loading="lazy"></div>'
-    if is_parent and p.get("photo"):
+    if p.get("photo"):
         photo_html = f'<div class="dp-photo"><img class="lightbox-trigger" src="{CDN}/{n}/photo{i}" alt="{esc(p["name"])}の投稿画像" loading="lazy"></div>'
-        cls = "dp has-photo"
-    elif p.get("photo"):
-        # 返信の写真は本文下にフル幅
-        photo_html = f'<div class="dp-photo"><img class="lightbox-trigger" src="{CDN}/{n}/photo{i}" alt="{esc(p["name"])}の投稿画像" loading="lazy"></div>'
+        if side:                              # 親のみPCで本文と写真を横並び
+            cls = "dp has-photo"
     src_html = (f'<div class="dp-src"><a href="{CDN}/src/{n}" target="_blank" rel="noopener">'
-                f'📷 元の公式スクリーンショットを見る</a></div>') if is_parent else ""
-    reply_cls = "" if is_parent else " dp-reply"
+                f'📷 元の公式スクリーンショットを見る</a></div>') if is_first else ""
+    reply_cls = " dp-reply" if indent else ""
     return (f'<article class="{cls}{reply_cls}">\n'
             f'      <div class="dp-body">\n'
             f'        <div class="dp-top">\n'
@@ -103,12 +102,19 @@ def main():
     for n in sorted(imgs):                        # 0,1,2.. = 新→古
         posts = imgs[n]
         if not posts: continue
-        parent = render_post(n, 0, posts[0], years[(n, 0)], True)
-        replies = ""
+        names = {p["name"] for p in posts}
+        mixed = len(names) > 1                     # 複数アイドル→親＋返信、単独→フラット
+        parent = render_post(n, 0, posts[0], years[(n, 0)], True, indent=False, side=mixed)
+        rest = ""
         if len(posts) > 1:
-            rep = "\n    ".join(render_post(n, i, posts[i], years[(n, i)], False) for i in range(1, len(posts)))
-            replies = f'\n    <div class="dp-replies">\n    {rep}\n    </div>'
-        threads.append(f'  <section class="dp-thread">\n    {parent}{replies}\n  </section>')
+            body = "\n    ".join(
+                render_post(n, i, posts[i], years[(n, i)], False, indent=mixed, side=False)
+                for i in range(1, len(posts)))
+            if mixed:
+                rest = f'\n    <div class="dp-replies">\n    {body}\n    </div>'
+            else:
+                rest = f'\n    {body}'
+        threads.append(f'  <section class="dp-thread">\n    {parent}{rest}\n  </section>')
     feed = "\n".join(threads)
     n_posts = sum(len(v) for v in imgs.values())
     page = PAGE.replace("{{FEED}}", feed).replace("{{NIMG}}", str(len(imgs))).replace("{{NPOST}}", str(n_posts))
