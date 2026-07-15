@@ -499,7 +499,7 @@ def load_story_entries(idol_map):
     ]
     # スキップするファイル名パターン
     SKIP_FILES = {'index.html', 'EventList.html', 'CardList.html', 'CostumeList.html',
-                  'OtherGameCenter.html'}
+                  'OtherGameCenter.html', 'Derepo.html'}
 
     html_files = []
     for pattern in patterns:
@@ -545,6 +545,34 @@ def load_story_entries(idol_map):
     return entries
 
 
+def load_derepo_entries(idol_map):
+    """でれぽ書き起こし(scripts/derepo_text/*.json)から検索エントリを生成する。
+    HTMLは解析せず、書き起こしJSONを直接読む（生成ページと二重計上しない）。"""
+    full_to_short = {full: short for short, full in idol_map.items()}
+    entries = []
+    pat = os.path.join(BASE_DIR, 'scripts', 'derepo_text', '*.json')
+    for path in sorted(glob.glob(pat), key=lambda p: int(os.path.splitext(os.path.basename(p))[0])):
+        try:
+            with open(path, encoding='utf-8') as f:
+                data = json.load(f)
+        except Exception:
+            continue
+        for post in data.get('posts', []):
+            name = post.get('name', '').strip()
+            text = post.get('text', '').strip()
+            if not text:
+                continue
+            entries.append({
+                'type':    'story',
+                'title':   'でれぽ',
+                'text':    text,
+                'idol':    full_to_short.get(name, name),
+                'context': 'でれぽ',
+                'url':     'Deresute/CinderellaTheater/Derepo.html',
+            })
+    return entries
+
+
 # ─────────────────────────────────────────────
 # メイン処理
 # ─────────────────────────────────────────────
@@ -566,7 +594,11 @@ def main():
     story_entries = load_story_entries(idol_map)
     print(f'  → {len(story_entries)} エントリ')
 
-    all_entries = card_entries + unit_entries + story_entries
+    print('でれぽエントリ生成中...')
+    derepo_entries = load_derepo_entries(idol_map)
+    print(f'  → {len(derepo_entries)} エントリ')
+
+    all_entries = card_entries + unit_entries + story_entries + derepo_entries
     print(f'合計: {len(all_entries)} エントリ')
 
     os.makedirs(os.path.join(BASE_DIR, 'data'), exist_ok=True)

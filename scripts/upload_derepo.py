@@ -42,8 +42,10 @@ def main():
         for p in posts:
             i = p["i"]
             jobs.append((IMGDIR / f"{n}_{i}_av.png", f"Deresute/Derepo/{n}/av{i}"))
-            if p["photo"]:
+            if p.get("photo"):
                 jobs.append((IMGDIR / f"{n}_{i}_photo.png", f"Deresute/Derepo/{n}/photo{i}"))
+            if p.get("stamp"):
+                jobs.append((IMGDIR / f"{n}_{i}_stamp.png", f"Deresute/Derepo/{n}/stamp{i}"))
         # 元スクショ（10MB超はJPEG圧縮）
         src = src_path(n)
         if src.stat().st_size > 10 * 1024 * 1024:

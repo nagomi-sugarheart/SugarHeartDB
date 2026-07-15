@@ -27,8 +27,10 @@ def load():
         t = json.loads(p.read_text(encoding="utf-8"))
         b = json.loads((BOX / f"{n}.json").read_text(encoding="utf-8")) if (BOX / f"{n}.json").exists() else {"posts": []}
         photos = {pp["i"]: bool(pp.get("photo")) for pp in b["posts"]}
+        stamps = {pp["i"]: bool(pp.get("stamp")) for pp in b["posts"]}
         for i, post in enumerate(t["posts"]):
             post["photo"] = photos.get(i, False)
+            post["stamp"] = stamps.get(i, False)
         imgs[n] = t["posts"]
     return imgs
 
@@ -68,6 +70,10 @@ def render_post(n, i, p, year, is_parent):
     star_html = f'<div class="dp-star"><b>★</b>{star}</div>' if star is not None else ""
     photo_html = ""
     cls = "dp"
+    stamp_html = ""
+    if p.get("stamp"):
+        # スタンプ（小さな一枚絵）は本文下にインラインで表示
+        stamp_html = f'\n        <div class="dp-stamp"><img class="lightbox-trigger" src="{CDN}/{n}/stamp{i}" alt="{esc(p["name"])}のスタンプ" loading="lazy"></div>'
     if is_parent and p.get("photo"):
         photo_html = f'<div class="dp-photo"><img class="lightbox-trigger" src="{CDN}/{n}/photo{i}" alt="{esc(p["name"])}の投稿画像" loading="lazy"></div>'
         cls = "dp has-photo"
@@ -84,7 +90,7 @@ def render_post(n, i, p, year, is_parent):
             f'          <div class="dp-id"><div class="dp-name">{esc(p["name"])}</div><div class="dp-time">{esc(date)}</div></div>\n'
             f'          {star_html}\n'
             f'        </div>\n'
-            f'        <div class="dp-text">{text}</div>\n'
+            f'        <div class="dp-text">{text}</div>{stamp_html}\n'
             f'        {src_html}\n'
             f'      </div>\n'
             f'      {photo_html}\n'
@@ -155,6 +161,8 @@ PAGE = '''<!DOCTYPE html>
 .dp-src a:hover{color:#ff8bb3;border-color:#ff8bb3;}
 .dp-photo{background:#f7eef3;}
 .dp-photo img{display:block;width:100%;height:100%;object-fit:cover;cursor:zoom-in;}
+.dp-stamp{margin:10px 2px 0;}
+.dp-stamp img{display:block;width:auto;max-width:150px;max-height:170px;border-radius:10px;cursor:zoom-in;}
 .dp-replies{margin:8px 0 0 34px;padding-left:16px;border-left:2px solid #f0e3ea;
   display:flex;flex-direction:column;gap:10px;}
 .dp-reply .dp-avatar{width:46px;height:46px;border-radius:12px;}
@@ -194,6 +202,7 @@ PAGE = '''<!DOCTYPE html>
 </div>
 
 <script src="components/common.js"></script>
+<script src="components/idol-badge.js"></script>
 </body>
 </html>
 '''

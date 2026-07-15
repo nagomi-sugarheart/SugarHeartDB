@@ -198,6 +198,8 @@
     document.querySelectorAll('.ev-dialog-row .ev-text').forEach(injectCopyBtn);
     // 形式E: .v2-dialogue-content .v2-accord-body p（デレステカード詳細セリフ）
     document.querySelectorAll('.v2-dialogue-content .v2-accord-body p').forEach(injectCopyBtn);
+    // 形式G: .dp-text（でれぽ投稿本文）
+    document.querySelectorAll('.dp-text').forEach(injectCopyBtn);
   }
 
   if (document.readyState === 'loading') {

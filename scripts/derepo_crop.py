@@ -21,31 +21,59 @@ IMGDIR.mkdir(exist_ok=True); BOXDIR.mkdir(exist_ok=True)
 CROP_X0, CROP_X1, CROP_H = 26, 137, 111
 PH_X0, PH_X1 = 122, 1088             # 添付写真の想定x範囲
 
-def detect_photo(a, y0, y1):
-    """[y0,y1)内で添付写真の帯を探す。x[140,1060]の平均彩度が高い連続行。"""
-    seg = a[y0:y1, 140:1060, :]
-    if seg.shape[0] < 60: return None
-    sat = seg.max(2) - seg.min(2)
-    rowsat = sat.mean(axis=1)
-    on = rowsat > 45
-    best = None
-    y = 0; n = len(on)
+def _runs(mask, gap, minlen):
+    """Trueの連続run（ギャップ<=gapを連結、長さ>=minlen）を返す。"""
+    n = len(mask); f = mask.copy(); y = 0
     while y < n:
-        if on[y]:
+        if not f[y]:
             s = y
-            while y < n and on[y]: y += 1
-            if (y - s) >= 120:               # 十分な高さ=写真
-                if best is None or (y - s) > (best[1] - best[0]):
-                    best = (s, y)
+            while y < n and not f[y]: y += 1
+            if 0 < s and y < n and (y - s) <= gap: f[s:y] = True
         else:
             y += 1
-    if best:
-        s, e = best
-        # 低閾値で上下端まで拡張（写真の淡い縁を取りこぼさない）
-        while s > 0 and rowsat[s - 1] > 26: s -= 1
-        while e < n and rowsat[e] > 26: e += 1
-        return (y0 + max(0, s - 3), y0 + e + 3)
-    return None
+    out = []; y = 0
+    while y < n:
+        if f[y]:
+            s = y
+            while y < n and f[y]: y += 1
+            if (y - s) >= minlen: out.append((s, y))
+        else:
+            y += 1
+    return out
+
+def detect_attachment(a, y0, y1):
+    """[y0,y1)内で添付画像（写真/スタンプ）を探す。
+    彩度コアで検出→輪郭込みで全体を切り出す。横に広い(>500px)=写真、狭い=スタンプ。
+    返り値 (kind, (x0,y0,x1,y1)) or None。"""
+    if y1 - y0 < 60: return None
+    seg = a[y0:y1, PH_X0:PH_X1, :]
+    sat = seg.max(2) - seg.min(2)
+    gray = seg.mean(2)
+    core = sat > 80                          # 絵柄の彩度コア（淡い背景を除外）
+    runs = _runs(core.sum(axis=1) > 10, 20, 40)
+    if not runs: return None
+    s, e = max(runs, key=lambda r: r[1] - r[0])
+    # x範囲（コアの色付き列）
+    colf = core[s:e].mean(axis=0)
+    cols = np.where(colf > 0.15)[0]
+    if len(cols) == 0: return None
+    xl, xr = int(cols.min()), int(cols.max())
+    width = xr - xl
+    # 輪郭込みで全体に拡張（彩度 or 暗い輪郭）。写真はフル幅、スタンプはx範囲内で。
+    content = (sat > 60) | (gray < 140)
+    if width > 500:                          # 写真
+        rc = content.sum(axis=1) > 60
+        rr = _runs(rc, 12, 100)
+        if rr:
+            s, e = max(rr, key=lambda r: r[1] - r[0])
+        return ("photo", (PH_X0, y0 + max(0, s - 3), PH_X1, y0 + e + 3))
+    # スタンプ: x[xl,xr]内の content 行で上下に拡張
+    sub = content[:, xl:xr + 1].sum(axis=1) > max(6, (xr - xl) * 0.12)
+    rr = _runs(sub, 14, 40)
+    if rr:
+        s, e = max(rr, key=lambda r: r[1] - r[0])
+    x0 = PH_X0 + max(0, xl - 8); x1 = PH_X0 + min(PH_X1 - PH_X0, xr + 8)
+    return ("stamp", (x0, y0 + max(0, s - 6), x1, y0 + e + 6))
 
 def process(n, save=True):
     img = Image.open(src_path(n)).convert("RGB")
@@ -55,17 +83,16 @@ def process(n, save=True):
     posts = []
     for i, t in enumerate(tops):
         y_next = tops[i + 1] if i + 1 < len(tops) else H
-        # アバター
         box_av = (CROP_X0, max(0, t), CROP_X1, min(H, t + CROP_H))
-        # 写真: このアイコン下端〜次アイコンの手前で探索
-        ph = detect_photo(a, min(H, t + CROP_H + 4), y_next)
-        rec = {"i": i, "parent": i == 0, "icon_top": t, "photo": None}
+        att = detect_attachment(a, min(H, t + CROP_H + 4), y_next)
+        rec = {"i": i, "parent": i == 0, "icon_top": t, "photo": None, "stamp": None}
         if save:
             img.crop(box_av).save(IMGDIR / f"{n}_{i}_av.png")
-        if ph:
-            rec["photo"] = [PH_X0, ph[0], PH_X1, ph[1]]
+        if att:
+            kind, box = att
+            rec[kind] = list(box)
             if save:
-                img.crop((PH_X0, ph[0], PH_X1, ph[1])).save(IMGDIR / f"{n}_{i}_photo.png")
+                img.crop(tuple(box)).save(IMGDIR / f"{n}_{i}_{kind}.png")
         posts.append(rec)
     if save:
         (BOXDIR / f"{n}.json").write_text(json.dumps({"image": n, "size": img.size, "posts": posts},
@@ -77,7 +104,8 @@ def main():
     posts = process(n)
     print(f"画像{n}: {len(posts)}投稿")
     for p in posts:
-        print(f"  [{p['i']}] {'親' if p['parent'] else '返信'} top={p['icon_top']} photo={p['photo']}")
+        att = "photo" if p["photo"] else ("stamp" if p["stamp"] else "-")
+        print(f"  [{p['i']}] {'親' if p['parent'] else '返信'} top={p['icon_top']} 添付={att}")
 
 if __name__ == "__main__":
     main()
