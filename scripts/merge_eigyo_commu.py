@@ -39,7 +39,7 @@ EIGYO = [
     ("gaisen", "しゅがみんの凱旋LIVE！", "しゅがみんの凱旋LIVE！_202607152119",
      "しゅがみんの凱旋LIVE！", "中央", "2020/02/10", "GWtXivnVGm4", "ShugaminGaisenLive"),
     ("oshinobi", "しゅがみんとお忍び！", "しゅがみんとお忍び！_202607152119",
-     "しゅがみんとお忍び！", "南", "2024/10/28", "", "ShugaminToOshinobi"),
+     "しゅがみんとお忍び！", "南", "2024/10/28", "rODmqNVocLA", "ShugaminToOshinobi"),
 ]
 
 # 主要な出演キャラ（無言ビート救済・地の文誤判定回避用）
