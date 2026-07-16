@@ -30,6 +30,12 @@ CROP_X0, CROP_X1, CROP_H = 26, 137, 111
 PH_X0, PH_X1 = 122, 1088             # 添付写真の切り出しx範囲
 DET_X0 = 140                          # 添付検出のx開始（アバター枠 x..137 を避ける）
 
+# 手動スタンプボックス上書き （(画像番号, 投稿index): (x0,y0,x1,y1)）
+# 通常の固定ボックスに合わないスタンプ（装飾テキストが立ち絵にずれて重なる等）を個別指定。
+STAMP_OVERRIDE = {
+    (0, 13): (164, 3574, 340, 3748),  # 榊原里美: 装飾テキスト「ドゥドゥドゥド♪」込みの立ち絵を1枚として切り出す
+}
+
 def _runs(mask, gap, minlen):
     """Trueの連続run（ギャップ<=gapを連結、長さ>=minlen）を返す。"""
     n = len(mask); f = mask.copy(); y = 0
@@ -138,7 +144,7 @@ def process(n, save=True, hints=None):
         hint = hints[i] if (hints and i < len(hints)) else None
         kind, box = (att if att else (None, None))
         if hint == "stamp":                    # スタンプは常にfallback（キャラ本体＝最長連続域）
-            kind = "stamp"; box = fallback_box(a, t, y_next, "stamp")
+            kind = "stamp"; box = STAMP_OVERRIDE.get((n, i)) or fallback_box(a, t, y_next, "stamp")
         elif hint == "photo":
             kind = "photo"
             if not (box and kind == "photo" and att and att[0] == "photo"):
