@@ -6,7 +6,8 @@
 - public_id: Deresute/Eigyo/{pid}/commu/{num} ・ Deresute/Eigyo/{pid}/log
 - 完了後 _cloudinary_upload_map.json に追記
 
-環境変数 CLOUDINARY_URL が必要（cloudinary://<api_key>:<api_secret>@dnmzdghoi）。
+認証情報はリポジトリ直下の .env（CLOUDINARY_APIKEY / CLOUDINARY_APISECRETKEY）から
+自動読み込みする。環境変数に設定済みならそちらを優先。
 """
 import json
 import os
@@ -21,17 +22,38 @@ import cloudinary
 import cloudinary.uploader as up
 from PIL import Image
 
+sys.stdout.reconfigure(encoding="utf-8")
+
+REPO = Path(__file__).parent.parent
+
+
+def load_dotenv(path):
+    """.env を素朴にパースして os.environ に取り込む（未設定のキーのみ）"""
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+
+
+load_dotenv(REPO / ".env")
+
 ssl._create_default_https_context = ssl._create_unverified_context
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 cloudinary.CERT_KWARGS = {"cert_reqs": "CERT_NONE"}
 up._http = urllib3.PoolManager(cert_reqs="CERT_NONE")
 
-cloudinary.config(secure=True)  # CLOUDINARY_URL から読み込み
-assert cloudinary.config().cloud_name == "dnmzdghoi", "CLOUDINARY_URL 未設定"
-
-sys.stdout.reconfigure(encoding="utf-8")
-
-REPO = Path(__file__).parent.parent
+cloudinary.config(
+    cloud_name="dnmzdghoi",
+    api_key=os.environ["CLOUDINARY_APIKEY"],
+    api_secret=os.environ["CLOUDINARY_APISECRETKEY"],
+    secure=True,
+    api_proxy=None,
+)
+assert cloudinary.config().cloud_name == "dnmzdghoi", "Cloudinary 認証情報が読み込めません"
 FRAMES_ROOT = Path(r"C:\Users\sawas\Downloads\comm_frames")
 LOG_DIR = Path(r"G:\マイドライブ\コミュ")
 MERGED = REPO / "scripts" / "merged_eigyo_commu.json"
