@@ -3,17 +3,23 @@
 動画から抽出したスクショ＋dialogues.csvと、コミュログ画像＋JSONを突合して、
 イベント詳細ページにshot付・タブ形式のイベントコミュを組み込む。
 
-**参考実装（テンプレート）: 凸凹スピードスター**
+**参考実装（テンプレート）: 凸凹スピードスター / Happy New Yeah！**
 - 突合: `scripts/merge_dekoboko_commu.py` → `scripts/merged_commu.json`
 - アップロード: `scripts/upload_dekoboko_commu.py`
 - HTML生成: `scripts/generate_dekoboko_commu_html.py`
-- 完成ページ: `Deresute/Event/DekobokoSpeedStar.html`
+- 完成ページ: `Deresute/Event/DekobokoSpeedStar.html` / `Deresute/Event/HappyNewYeah.html`
+
+**【重要】スクリプト・データはイベント別の名前で作成する**（`merged_commu.json` を上書きしない）。
+例: `merge_{event}_commu.py` → `merged_{event}_commu.json`、`generate_{event}_commu_html.py`、
+`upload_{event}_commu.py`。既存イベントのデータ（CreateYoutubeで再利用）を保護するため。
 
 ## ユーザーが毎回指定するもの
 1. **スクショフォルダ**（例 `C:\Users\sawas\Downloads\comm_frames\{イベント名}_{日時}`）
    - `NNNN_dialogue_{秒}s.jpg`（動画フレーム）と `dialogues.csv` が入っている
 2. **ログフォルダ**（例 `G:\マイドライブ\コミュ`）
    - 話ごとの `{イベント名}_{code}_log.json` と `{イベント名}_{code}_log.png`（code: Tr1/Tr2/OP/1〜5/ED）
+   - **ファイル名の記号は全角のことがある**（例 `Happy New Yeah！_OP_log.json` の全角！）。ユーザー指定の
+     イベント名の記号と実ファイル名が一致するか `ls` で確認し、プレフィックス変数で吸収すること
 3. **YouTubeのURL**（埋め込み・再生ボタン用）
 4. 対象のイベントページ（`Deresute/Event/*.html`。なければどこに作るかユーザーに確認）
 
@@ -48,6 +54,12 @@
 - 完全表示のセリフは**CSVテキストを優先**（JSONより高品質）。JSONはshotなし行と途中フレームの補完に使う
 - 記号（……。）のみのセリフ同士は同一とみなす／途中フレームはJSON行の前方部分と比較して救済
 - 同一セリフの途中→完全フレームはshotを後のフレームに差し替え、重複行は除去
+- **Pのセリフ（選択肢）はログJSONに存在しない**ため、話者がPの行は突合せず常にCSVのまま出力する
+  （近い語を含むアイドルのセリフへ誤マージするのを防ぐ。Happy New Yeahで対応済み）
+- **メタデータが正しいこともある**。凸凹ではOPが4話の複製だったが、Happy New YeahのOPは正しかった。
+  CSVタイトルカードと照合し、正しければJSONの title/summary をそのまま使う
+- センターテキストに本文と同一のナレーションが二重に入る場合（JSONで speaker==dialogue）は、
+  JSON側をスキップしCSVのセンターテキスト側を採用して重複を防ぐ
 
 ### 3. 品質検証（Sonnetサブエージェントを並行活用）
 - merge_report の「JSON未マッチ」「低類似」行を確認。P台詞はフレーム画像をReadで目視確認
@@ -76,9 +88,21 @@
   - パネルは `<div class="tab-panel" data-tab="dss-{id}">`（先頭タブのみ `active` クラス付与）
   - `switchTab()` は common.js 既存。`.tab-panel` の表示切替はCSSの `.active` で行う
 - 行: `.ev-dialog-row` + `.ev-shot` + `.ev-text > .ud-dialogue`（コピーボタン・話者バッジ・ライトボックス自動対応）
+  - **shotなし行は `.ev-dialog-row no-shot`（`.ev-shot` を出さない）のままでよい**。CSSの
+    `.dss-lines .ev-dialog-row.no-shot::before` がショット枠のプレースホルダー（ピンクの点線枠）を
+    自動描画し、全行がshot付きレイアウトに揃う。あとからスクショを追加する場合は merged JSON の
+    該当行に `frame` を設定して再生成すれば実画像に置き換わる（generatorの分岐は変更不要）
 - 各タブ先頭: タイトルカード画像・話タイトル・要約・「▶ この話からYouTubeで再生」ボタン（`data-start`属性）
+  - **話ごとの英語タイトルカードが動画に無いイベントもある**（Happy New Yeah等。予告カードと場所カードのみ）。
+    その場合は各話先頭の場所カード（無ければ先頭セリフ）のフレームを `title_frame` に使う。
+    先頭がセリフの話（例: 第2話）は先頭行を本文からも除外しないこと
 - 各タブ末尾: `<details class="dss-log">` でコミュログ画像
 - **CSSの `.dss-*` は style.css に定義済み**（凸凹で追加。白箱スタイルは `.dss-commu .tab-panel` に適用）。新規追加不要
+  - タイトルカード画像は `.dss-title-card img { width:100%; max-width:100% }`、モバイルは
+    `@media(max-width:640px)` で `.dss-ep-head` を縦積み・`.dss-title-card` を全幅にして画面はみ出しを防ぐ
+  - **style.css を変更したら、コミュページの `<link href="style.css?v=YYYYMMDD">` のクエリを更新する**
+    （モバイルブラウザは `style.css` を強くキャッシュするため。バージョンを上げないと旧CSSのまま
+    表示され、タイトル画像のはみ出しや再生ボタンの未整形が起きる）
 - 動画セクション（上から順に）:
   1. **楽曲MV用の `box-area`**（アイドルプロデュース以外のイベントで設置。MV未定ならプレースホルダー＋コメントアウトのiframe雛形）
   2. コミュ動画の `box-area`（`<iframe id="dss-player">`）

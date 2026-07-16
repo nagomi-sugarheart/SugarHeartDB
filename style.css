@@ -6603,7 +6603,7 @@ input[name="dialogue-tab"] {
     overflow: hidden;
     border: 1px solid var(--sh-line);
 }
-.dss-title-card img { width: 100%; display: block; cursor: zoom-in; }
+.dss-title-card img { width: 100%; max-width: 100%; display: block; cursor: zoom-in; }
 .dss-ep-eyebrow {
     font-family: var(--font-display);
     font-size: 11px;
@@ -6639,7 +6639,22 @@ input[name="dialogue-tab"] {
     flex-direction: column;
     gap: 10px;
 }
-.dss-lines .ev-dialog-row.no-shot { padding-left: 86px; }
+/* shotが未取得の行にも、あとからスクショを差し込む前提でショット枠のプレースホルダーを表示する */
+.dss-lines .ev-dialog-row.no-shot::before {
+    content: "";
+    width: 72px;
+    flex-shrink: 0;
+    aspect-ratio: 16 / 10;
+    border-radius: var(--r-sm);
+    background: var(--grad-sugar-soft);
+    border: 1.5px dashed rgba(253,137,185,0.30);
+}
+/* モバマス系の縦型フレーム（3:4前後）用のshot枠 */
+.dss-lines.mobamas-shots .ev-shot,
+.dss-lines.mobamas-shots .ev-dialog-row.no-shot::before {
+    aspect-ratio: 3 / 4;
+    width: 64px;
+}
 .dss-stage-text {
     display: inline-block;
     font-size: 12.5px;
@@ -6648,6 +6663,26 @@ input[name="dialogue-tab"] {
     border: 1px dashed var(--sh-line);
     border-radius: var(--r-sm);
     padding: 6px 12px;
+}
+/* 分岐（選択肢）に関する注記。OPのプロデューサー選択分岐などで使用 */
+.dss-branch-note {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin: 10px 0;
+    padding: 10px 14px;
+    font-size: 12.5px;
+    line-height: 1.7;
+    color: var(--sh-text-soft);
+    background: var(--sh-pink-soft, #fff0f5);
+    border: 1px dashed var(--sh-pink, #e58aad);
+    border-radius: var(--r-md, 10px);
+}
+.dss-branch-ic {
+    flex: none;
+    font-size: 14px;
+    color: var(--sh-pink, #e58aad);
+    line-height: 1.5;
 }
 .dss-log { margin-top: 16px; }
 .dss-log summary {
@@ -6669,5 +6704,19 @@ input[name="dialogue-tab"] {
     .dss-commu .tab-item { flex: 1 1 22%; }
     .dss-ep-head { flex-direction: column; }
     .dss-title-card { width: 100%; }
-    .dss-lines .ev-dialog-row.no-shot { padding-left: 0; }
 }
+
+/* ============================================================
+   アイドルプロデュース（IdolProduce1st）: 場所タブ内のセクション見出し
+============================================================ */
+.ip1-group { margin-bottom: 24px; }
+.ip1-group-head {
+    font-family: var(--font-display);
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--sh-pink-deep);
+    border-left: 3px solid var(--sh-pink-deep);
+    padding-left: 8px;
+    margin: 18px 0 10px;
+}
+.ip1-sub > .tab-list { margin-top: 4px; }

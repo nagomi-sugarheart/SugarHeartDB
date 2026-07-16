@@ -1,0 +1,35 @@
+{
+ "image": 50,
+ "size": [
+  1206,
+  905
+ ],
+ "posts": [
+  {
+   "i": 0,
+   "parent": true,
+   "icon_top": 37,
+   "photo": null,
+   "stamp": null
+  },
+  {
+   "i": 1,
+   "parent": false,
+   "icon_top": 320,
+   "photo": null,
+   "stamp": null
+  },
+  {
+   "i": 2,
+   "parent": false,
+   "icon_top": 569,
+   "photo": null,
+   "stamp": [
+    164,
+    625,
+    340,
+    814
+   ]
+  }
+ ]
+}

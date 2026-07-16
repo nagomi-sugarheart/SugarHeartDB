@@ -259,6 +259,8 @@ class DialogueParser(HTMLParser):
         self._in_standalone_ev_text_f = False
         self._standalone_ev_text_f_depth = -1
         self._standalone_ev_text_f_text = ''
+        self._standalone_ev_who = ''      # 行内 .speaker[data-who] の話者
+        self._f_skip_depth = -1           # ラベル・話者名・注記をテキストから除外する領域
 
         self._stack = []  # タグスタックで深さ管理
 
@@ -330,6 +332,19 @@ class DialogueParser(HTMLParser):
             self._in_standalone_ev_text_f = True
             self._standalone_ev_text_f_depth = len(self._stack)
             self._standalone_ev_text_f_text = ''
+            self._standalone_ev_who = ''
+            self._f_skip_depth = -1
+        # ev-text 内の speaker スパン（話者を取得し、名前はテキストから除外）・
+        # ev-condition ラベル・dss-stage-text 注記はテキストに含めない
+        if self._in_standalone_ev_text_f and self._f_skip_depth < 0:
+            if tag == 'span' and self._has_class(attrs_dict, 'speaker'):
+                who = attrs_dict.get('data-who', '')
+                if who:
+                    self._standalone_ev_who = who
+                self._f_skip_depth = len(self._stack)
+            elif tag == 'div' and (self._has_class(attrs_dict, 'ev-condition')
+                                   or self._has_class(attrs_dict, 'dss-stage-text')):
+                self._f_skip_depth = len(self._stack)
 
         # 形式D: .v2-accord > (head の speaker) + .ev-text
         if tag == 'div' and self._has_class(attrs_dict, 'v2-accord'):
@@ -405,11 +420,15 @@ class DialogueParser(HTMLParser):
         if self._in_v2_dialogue and depth < self._v2_dialogue_depth:
             self._in_v2_dialogue = False
 
+        # 形式F: 除外領域（speaker / ev-condition / dss-stage-text）終了
+        if self._f_skip_depth >= 0 and depth <= self._f_skip_depth:
+            self._f_skip_depth = -1
         # 形式F終了: ev-text
         if self._in_standalone_ev_text_f and depth < self._standalone_ev_text_f_depth:
             text = self._standalone_ev_text_f_text.strip()
-            if text:
-                self.entries.append(('心', text))
+            who = self._standalone_ev_who or '心'
+            if text and who not in ('P', 'ナレーション'):
+                self.entries.append((who, text))
             self._in_standalone_ev_text_f = False
         # 形式F終了: ev-dialog-row
         if self._in_standalone_ev_row and depth < self._standalone_ev_row_depth:
@@ -460,7 +479,7 @@ class DialogueParser(HTMLParser):
         if self._in_v2_p_e:
             self._v2_p_e_text += data
 
-        if self._in_standalone_ev_text_f:
+        if self._in_standalone_ev_text_f and self._f_skip_depth < 0:
             self._standalone_ev_text_f_text += data
 
 
@@ -480,7 +499,7 @@ def load_story_entries(idol_map):
     ]
     # スキップするファイル名パターン
     SKIP_FILES = {'index.html', 'EventList.html', 'CardList.html', 'CostumeList.html',
-                  'OtherGameCenter.html'}
+                  'OtherGameCenter.html', 'Derepo.html'}
 
     html_files = []
     for pattern in patterns:
@@ -526,6 +545,34 @@ def load_story_entries(idol_map):
     return entries
 
 
+def load_derepo_entries(idol_map):
+    """でれぽ書き起こし(scripts/derepo_text/*.json)から検索エントリを生成する。
+    HTMLは解析せず、書き起こしJSONを直接読む（生成ページと二重計上しない）。"""
+    full_to_short = {full: short for short, full in idol_map.items()}
+    entries = []
+    pat = os.path.join(BASE_DIR, 'scripts', 'derepo_text', '*.json')
+    for path in sorted(glob.glob(pat), key=lambda p: int(os.path.splitext(os.path.basename(p))[0])):
+        try:
+            with open(path, encoding='utf-8') as f:
+                data = json.load(f)
+        except Exception:
+            continue
+        for post in data.get('posts', []):
+            name = post.get('name', '').strip()
+            text = post.get('text', '').strip()
+            if not text:
+                continue
+            entries.append({
+                'type':    'story',
+                'title':   'でれぽ',
+                'text':    text,
+                'idol':    full_to_short.get(name, name),
+                'context': 'でれぽ',
+                'url':     'Deresute/CinderellaTheater/Derepo.html',
+            })
+    return entries
+
+
 # ─────────────────────────────────────────────
 # メイン処理
 # ─────────────────────────────────────────────
@@ -547,7 +594,11 @@ def main():
     story_entries = load_story_entries(idol_map)
     print(f'  → {len(story_entries)} エントリ')
 
-    all_entries = card_entries + unit_entries + story_entries
+    print('でれぽエントリ生成中...')
+    derepo_entries = load_derepo_entries(idol_map)
+    print(f'  → {len(derepo_entries)} エントリ')
+
+    all_entries = card_entries + unit_entries + story_entries + derepo_entries
     print(f'合計: {len(all_entries)} エントリ')
 
     os.makedirs(os.path.join(BASE_DIR, 'data'), exist_ok=True)

@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260708">
 </head>
 <body>
 <script src="components/header.js"></script>
@@ -116,14 +116,11 @@
         <h2>動画 <span class="sub">/ MOVIE</span></h2>
         <a class="anchor">#movie</a>
     </div>
-    <div class="box-area">
-        <div class="box-title">イベントコミュ・楽曲MVなど</div>
-        <!-- 動画を追加する場合は以下の形式で記述する
+    <div class="box-area" id="ip1-movie">
+        <div class="box-title">イベントコミュ（予告・OP・ED）</div>
         <div class="video-container-landscape">
-            <iframe src="https://www.youtube.com/embed/XXXXXXXXXXX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe id="ip1-player" src="https://www.youtube.com/embed/OqdhhFIaXt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        -->
-        <p class="box-text placeholder-text">動画は準備中です。</p>
     </div>
 
     <div class="sec-head">
@@ -131,20 +128,887 @@
         <h2>イベントコミュ <span class="sub">/ COMMU</span></h2>
         <a class="anchor">#commu</a>
     </div>
-    <div class="box-area">
-        <div class="box-title">コミュ詳細</div>
-        <!-- コミュのテキスト化が完了したら、話数ごとに .v2-accord ブロックを追加する
-        <div class="v2-accord">
-            <div class="v2-accord-head"><span class="v2-accord-lbl">第1話 タイトル</span><span class="v2-accord-arrow">▾</span></div>
-            <div class="v2-accord-body">
-                <div class="script-block">
-                    <div class="script-row" data-who="心"><span class="who">心</span><div class="line">セリフ</div></div>
-                </div>
-            </div>
-        </div>
-        -->
-        <p class="box-text placeholder-text">コミュのテキスト化を進めています。</p>
+    <div class="dss-branch-note"><span class="dss-branch-ic">✦</span>
+        アイドルプロデュースのコミュは、探索場面ごとの「お仕事」セリフと、プロデューサーの選択結果で
+        「ノーマル」「グッド」「パーフェクト」に分岐する「コミュイベント」「スペシャルコミュイベント」で構成されています。
+        画面はゲーム内「演出一覧」の並び順に掲載しています。
     </div>
+    <!-- 以下は scripts/generate_idolproduce1st_commu_html.py が生成する（手動編集しない） -->
+    <!-- IP1-COMMU-START -->
+<section class="tab-group dss-commu">
+    <div class="tab-list">
+        <button class="tab-item active" onclick="switchTab(this,'ip1-trailer')">予告</button>
+        <button class="tab-item" onclick="switchTab(this,'ip1-op')">OP</button>
+        <button class="tab-item" onclick="switchTab(this,'ip1-main')">心</button>
+        <button class="tab-item" onclick="switchTab(this,'ip1n-main')">菜々</button>
+        <button class="tab-item" onclick="switchTab(this,'ip1-ed')">ED</button>
+    </div>
+    <div class="tab-panel active" data-tab="ip1-trailer">
+    <div class="dss-ep-head">
+        <div class="dss-title-card"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0002" alt="予告 タイトルカード" loading="lazy"></div>
+        <div class="dss-ep-meta">
+            <div class="dss-ep-eyebrow">予告</div>
+            <h3 class="dss-ep-title">予告</h3>
+            <button class="dss-play" data-start="0">▶ この話からYouTubeで再生</button>
+        </div>
+    </div>
+    <div class="dss-lines">
+        <div class="ev-condition"><span class="ev-label">Twitter告知</span></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">しゅがしゅが～？</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">み～ん゛！あう゛っ</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">パイセン！パイセンどうした～？</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">っ…ナナは…ナナはもう…ダメかもしれません…！腰がぁ…腰がぁ…あうぅ……なーんてことになっても大丈夫！ナナたちが体験した温泉は幻の若返りの湯！疲労、腰痛、肩こり、肌荒れ、なんでも効果ありの美人の湯です☆</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">って宣伝こんな感じでいいの？ちょっとさ、温泉にフォーカスしすぎて間にあったあ～んなことやこ～んなこと、はぐらかしてな～い？</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">そっ、それはきっと、この場所では赤裸々に語れない大人の事情があるんですよ！ナナは17歳なので！ちょっとわかりませんけどぉ！</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">んじゃま、気になる人は見てもらえばいっか☆しゅがしゅが☆み～んの秘境温泉を目指した大・冒・険…☆アーンドハンディカメラで密着取材♪そしてぇ～…ア・レ☆</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">今回も思いっきりやっちゃってますから！みんなー！楽しみにしていてくださいねー！</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心・菜々">心・菜々</span><div class="line">しゅがしゅが☆み～んのド根性～☆</div></div></div></div>
+        <div class="ev-condition"><span class="ev-label">イベント告知</span></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0001" alt="アイドルプロデュース 幻の秘境温泉を、探せ!!! イベント近日開催予定!!" loading="lazy"></div><div class="ev-text"><div class="dss-stage-text">アイドルプロデュース 幻の秘境温泉を、探せ!!! イベント近日開催予定!!</div></div></div>
+        <div class="ev-condition"><span class="ev-label">予告1</span></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0003" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ピピッ☆ 応援の声、受信しました♪ 『しゅがしゅが☆み～ん』の 歌って踊れる声優アイドル、ウサミンこと、ナナでーっす！ ……え？ これはハンディカメラ？ 密着取材ですか～！？</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">……じゃなくって、取材するのは……山奥？ 桜の咲きほこる、幻の秘境温泉！ 温泉…… いやぁ～、いいですねぇ……どんな効能があるんでしょう……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0004" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">村のみなさんもずっと笑顔で、素敵すぎるほど素敵なところ。あ゛あ゛～～癒される～～♪……あ、あのっ、よかったら……ナナたちと一緒に、ポカポカしませんか……なんちゃって～☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0005" alt="予告2" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">予告2</span></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0006" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">みんな、今日もスウィーティー？『しゅがしゅが☆み～ん』のお砂糖みたいに甘～いアイドル、しゅがーはぁとだぞ☆だけど……最近のはぁとはちょっぴりお疲れノンスウィーティー。</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">『しゅがみん』にはちょーっと体を張ったお仕事が多いワケ。でもでもそれって、みんなは頑張るはぁとたちが大好きってコトでしょ？ だったらやるっきゃなーい☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0007" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">って感じで、必死で駆けてきたら……ついにきたぞ、ご褒美が！行くぞ？行っちゃうぞ？ドキッ☆ 美人の湯で温泉ロケ～！今まで以上に可愛くなっちゃうから、覚悟し・と・け☆</div></div></div></div>
+    </div>
+    <details class="dss-log">
+        <summary>コミュログ画像を表示（予告1）</summary>
+        <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/log/Tr1" alt="予告 コミュログ（予告1）" loading="lazy">
+    </details>
+    <details class="dss-log">
+        <summary>コミュログ画像を表示（予告2）</summary>
+        <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/log/Tr2" alt="予告 コミュログ（予告2）" loading="lazy">
+    </details>
+    </div>
+    <div class="tab-panel" data-tab="ip1-op">
+    <div class="dss-ep-head">
+        <div class="dss-title-card"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0008" alt="ドキドキ☆温泉ロケ！ タイトルカード" loading="lazy"></div>
+        <div class="dss-ep-meta">
+            <div class="dss-ep-eyebrow">オープニング</div>
+            <h3 class="dss-ep-title">ドキドキ☆温泉ロケ！</h3>
+            <p class="dss-ep-summary">「しゅがみんは逆境でこそ輝く」。ファンからのそんな期待のため、体を張り続けてきた菜々と心。だが、ご褒美のような温泉ロケが突然降って湧く。意気揚々と撮影に向かうふたり。しかし待っていたのはこれまで以上にハードな番組。崖を越え山を制覇した先にある幻の秘境温泉を探すロケだった。</p>
+            <button class="dss-play" data-start="209">▶ この話からYouTubeで再生</button>
+        </div>
+    </div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="ナレーション">ナレーション</span><div class="line">こうして、デレ湖のスッティーは、最後までスタッフの前に姿を現すことなく、謎だけを残していった……。</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="ナレーション">ナレーション</span><div class="line">スペシャル番組 スタッフ探検シリーズ 緑の悪魔 湖に棲む幻の恐竜を追え！！</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="ナレーション">ナレーション</span><div class="line">～完～</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0009" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">あー……すっごい番組だったな……。今も震えが止まらんわ……マジで……☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0010" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はい……手に汗握って見ちゃいました……。 本当のほんっとーに、すごかったと思います……っ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0011" alt="菜々・心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々・心">菜々・心</span><div class="line">スタッフさんの苦労が！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0012" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ジャングルで猛獣に追われ、逃げ込んだ先は呪いが降りかかると噂の遺跡……それでも、体に鞭打って調査を続行……考えただけでお疲れスウィーティー！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0013" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">しかも、スタッフの方々ってナナたち……じゃなかった……はぁとちゃんと同じくらいの年齢でしたよね！？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0014" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">やぁん、菜々パイセン、はっきり言っちゃら～めっ☆ でも、そう考えるとますます大変だったと思うわ。これから体力が減る一方の人間に、あの仕打ち……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0015" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">正直、ナナは他人事に思えませんでした。ファンのみなさんが、「しゅがみんは逆境でこそ輝く」って言うから、ナナたちずっと、この番組みたいに体を張ったお仕事ばかりするんじゃないかって。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0016" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">それな～☆ でもでも、お仕事をもらえるだけで幸せっ♪ だから何でも頑張るぞっ♪ そう思ってたはぁとたちに、突然降って湧いた幸せの～……</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0017" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">温泉ロケ！！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0019" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ナナたち、最近のお仕事ではずっと体張ってましたから！限界を迎える前に、プロデューサーさんがご褒美をくれたんだと思います。お仕事ではあるけど、ゆっくり癒されてって♪</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">プロデューサー！おっはスウィーティー♪今ね、ちょうど次のお仕事の話してたとこ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0021" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">とってもスウィーティーなお仕事をもらえて、 はぁとたち、プロデューサーにマジで愛されてるな～って♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0022" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">これからその打ち合わせですよね！ 秘境温泉レポ、すっごく楽しみにしてます♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0023" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">テレビで特集されたことのない、隠れ家的温泉宿…… オフ感を大事にってことで、はぁとたちがハンディカメラで 取材するんだよな？</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">それもまた素敵ですよね！ナナとはぁとちゃんとプロデューサーさんで温泉……えへへ……♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0024" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あ、もちろんお仕事なので気合は入れますけど！ でもでも、やっぱり温泉ロケで求められてるのは、リラックスしてるナナたちの姿かなって！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0025" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">とにかくにも、『しゅがしゅが☆み～ん』は、次のお仕事にドキドキが止まらないってコト♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0026" alt="Pのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="P">P</span><div class="line">それはよかった</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0027" alt="Pのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="P">P</span><div class="line">それじゃあ、行こうか。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0028" alt="菜々・心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々・心">菜々・心</span><div class="line">へ？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0029" alt="Pのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="P">P</span><div class="line">崖を登りに 山を制覇しに</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あ、あうう……腕が……ぶるぶる……っ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0030" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">くっ……パイセン！今！はぁとの手を掴んで！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0031" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">は、はいっ！はぁ……はぁ……ぜぇ……！</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">うぅ……ちくしょー……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0032" alt="菜々・心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々・心">菜々・心</span><div class="line">温泉、どこですかーっ！？ 温泉、どこだよーっ！？</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="ナレーション">ナレーション</span><div class="line">スペシャル番組 しゅがしゅが☆み～ん探検シリーズ 山奥にある幻の秘境温泉を、探せ！！</div></div></div></div>
+    </div>
+    <details class="dss-log">
+        <summary>コミュログ画像を表示（OP）</summary>
+        <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/log/OP" alt="OP コミュログ（OP）" loading="lazy">
+    </details>
+    </div>
+    <div class="tab-panel" data-tab="ip1-main">
+    <div class="tab-group ip1-sub">
+        <div class="tab-list">
+            <button class="tab-item active" onclick="switchTab(this,'ip1-yama')">山中</button>
+            <button class="tab-item" onclick="switchTab(this,'ip1-mura')">村</button>
+            <button class="tab-item" onclick="switchTab(this,'ip1-yu')">若返りの湯</button>
+            <button class="tab-item" onclick="switchTab(this,'ip1-misaki')">岬</button>
+            <button class="tab-item" onclick="switchTab(this,'ip1-sky')">上空</button>
+            <button class="tab-item" onclick="switchTab(this,'ip1-kizuna')">絆Lv</button>
+        </div>
+    <div class="tab-panel active" data-tab="ip1-yama">
+    <div class="dss-ep-head"><div class="dss-ep-meta">
+        <div class="dss-ep-eyebrow">佐藤心 / IDOL PRODUCE</div>
+        <h3 class="dss-ep-title">山中</h3>
+    </div></div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">お仕事</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0001" alt="お仕事①（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事①</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">山道でもしゅがーはぁとはとっても元気♪ 筋肉痛はあとでくる～♪ って歌わすな☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0002" alt="お仕事②（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事②</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">凸凹道もなんのその！ でも今目の前にあるのは…… 道じゃなくて、崖じゃね？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0003" alt="お仕事③（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事③</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">アイドルはときに体を張るし、崖にも登るもの…… はぁと知ってはいたんだけどね。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0004" alt="お仕事④（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事④</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">おーいプロデューサー、 崩れたメイクは、見ないふりをするんだぞ？ な？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0005" alt="お仕事⑤（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑤</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">プロデューサー、 水ちょうだい……ん、 こっこっこ……ぷっはぁ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0006" alt="お仕事⑥（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑥</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">いくぜパイセン、気合注入☆ いけるぞしゅがみん！ やれるぞしゅがみん！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0007" alt="お仕事⑦（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑦</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ふたりならどうにかなるし、 3人だったら…… なんとでもなる☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0008" alt="お仕事⑧（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑧</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">あ、あの木の実美味しそ～。 ……あ～ん、届かない☆ ちょ、見て見ぬふりすんな☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0009" alt="イベント発生（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">しゅー……がー……はー…… しゅー……がー……はー…… あーん、あーん、早く温泉に入りたいよおおおおおおおお！ オルルルルルルルルァッ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0010" alt="ノーマル（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">雄叫び？ 咆哮？ ノンノンノン☆ 声上げて気合入れようとしてんの！ ……あ、今やまびこ聞こえたな。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0011" alt="グッド（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ううん、だめよはぁと……現状を嘆いて吠えるんじゃなくて、突破することを考えるの！ そう、例えば可愛くおねだりして…… プロデューサー、おんぶして？ ……おい、無視すんな☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0012" alt="パーフェクト（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ま、ただの温泉ロケじゃないのはちょっと予想してたけど。 プロデューサーは、獣道も突っ走るはぁとたちが好きだもんな♪ 期待はば～っちり超えてあげる。覚悟しとけ☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0013" alt="イベント発生（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">な、菜々パイセン！？ どうした！？ 脚が小鹿のようにがくがくだぞ！？ ……え？ 脚よりも腰のがヤバめ？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0014" alt="ノーマル（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">無茶振りは上等でも、無理はノンスウィーティー！ ちょい休憩しよっか。はぁ……どっこいせっ☆ プロデューサー、湿布あったらくれ♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0015" alt="グッド（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ピンチのときも、支え合うのがユニットだもん！ パイセン、気合の掛け声いくぞ♪ しゅがしゅが～？ みーん！！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0016" alt="パーフェクト（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">うんうん、キッツいときはスウィーティーな気分になりたいよね。 休憩する今がチャンスだぞ、プロデューサー。 ほら、言って？ 「頑張ってるふたりは、超々々可愛いよ」って♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0017" alt="イベント発生（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">見て見て、プロデューサー！ はぁと、謎の祠発見しちゃった♪ かなり昔のっぽいけど、ちゃんと果物とか供えてあるんだよね。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0018" alt="ノーマル（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">つまり～……近くに人が住んでるってこと♪ よっしゃ、行くか！『しゅがしゅが☆み～ん』を ここぞとばかりに売り込んで、熱烈なファンにしちゃる☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0019" alt="グッド（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">おやつのチョコバーを供えて…… しゅがーはぁとの可愛さを、全人類に届けてみせる☆ お願いっていうより、宣誓になっちった♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0020" alt="パーフェクト（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">崖の近くでも、しっかり支えてくれる人がいる。 どっかで聞いた話で、親近感わいちゃった♪ ふふっ、元気回復したし、このまま、山を制覇すっぞ☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0021" alt="イベント発生（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">パイセンと……プロデューサーと……一緒だもん……。 ぜぇ……はぁ……これくらいのサバイバル……平気だっつうの！ …………いっけなーい！ 乱暴な言葉出ちゃったメンゴ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0022" alt="ノーマル（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">今のはカット！カットな？ こら、プロデューサー、 カメラを回さない！ちょっ、菜々パイセンまで！？ いい撮れ高？ ダメダメ！ノンスウィーティーだし！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0023" alt="グッド（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">……たしかに、スウィーティー切れかもな。 崖登ったり茂みかきわけるのに必死で気づかんかった。 プロデューサーは、いつもはぁとのことをよく見てくれてるよね。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0024" alt="パーフェクト（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">人間、必死になると本音出るっていうよね～。 そ、今のはふたりへの素直な気持ちだから。 ちょい言葉は乱暴でも、忘れてとまでは言わないぞ♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0025" alt="イベント発生（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">あーん、脚が棒になったー！ もう動けないかもー！ そしたらずっとここにいて…… 3人でなっちゃうかー？ アダムとイヴ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0026" alt="ノーマル（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">でも、それはらめぇ……☆ だって、はぁとはみんなのアイドルだから……♪ よっし、あともうちょい根性出してくスウィーティー！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0027" alt="グッド（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">そうそう、しゅがみんなら、どんな山の中でも 生きていけるし！……ってそれ褒め言葉だよな？ 褒め言葉として受け取っとくぞ？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0028" alt="パーフェクト（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ま、まずはアイドルとして、目の前のお仕事を スウィーティーにこなさないとだし？ ……アダムとイヴは、もうちょい先までお預けな？</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0029" alt="イベント発生（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">……っ！あー、今、脳内ぶっ飛んでたわ。スウィーティー キングダムで水飴入り練乳がぶ飲みする白昼夢見てた…… 山を登るには、ちょーっとキツくなってきたかも……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0030" alt="ノーマル（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">はぁとは甘～い夢を見るだけじゃ満足しない…… 夢は現実で叶えてこそ、だもんな。どんなにキツくても、 ここは3人4脚で乗り越えてくとこ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0031" alt="グッド（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">そのとき、空から助けの手が伸ばされたのです…… サンキュ、パイセン！ この恩はあとで絶対返すんで！ 手を掴んで……しゅがしゅが……ふんぬぅうううううぅ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0032" alt="パーフェクト（山中） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">はは……プロデューサーってば、 この手でどこまでも引っ張り上げてくれるんだよな。 佐藤ならまだやれるだろうって、力強くさ。</div></div></div></div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-panel" data-tab="ip1-mura">
+    <div class="dss-ep-head"><div class="dss-ep-meta">
+        <div class="dss-ep-eyebrow">佐藤心 / IDOL PRODUCE</div>
+        <h3 class="dss-ep-title">村</h3>
+    </div></div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">お仕事</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0033" alt="お仕事①（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事①</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">わざわざ村長みたいな人が挨拶に来たんだよね。 久々のお客さんだからって。律儀☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0034" alt="お仕事②（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事②</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ちょうど村祭りがあって、 ぴったりの着物もあって…… タイミング良すぎない？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0035" alt="お仕事③（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事③</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ここにいると、はぁとたちピンクと黄色で超目立つ！ 天性のアイドルだな♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0036" alt="お仕事④（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事④</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">風きもちー、空気もうめー！ パイセンも一緒に深呼吸♪ すー、はー☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0037" alt="お仕事⑤（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑤</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">お腹いっぱーい♪ 大皿いっぱい料理出てきて、 ちょい実家を思い出した☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0038" alt="お仕事⑥（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑥</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">そっちの部屋、行かない方がいいかも。 なんかお札がいっぱい貼ってあったし？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0039" alt="お仕事⑦（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑦</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">温泉への道は聞けたけどさ、 立ち入り禁止の場所があるから、あとで案内するって。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0040" alt="お仕事⑧（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑧</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">お祭りではお面つけるんだって。 でも急だから、はぁとたちのはないみたい。</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0041" alt="イベント発生（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">びっくりしたな、村に入った途端、めっちゃもてなされたもん。 村に若者が来たから安泰とか言われたし。 なんか村の神様？ も満足するんだとか。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0042" alt="ノーマル（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">やっぱ山の奥なだけあって、外から観光に来る人も 少ないらしくってさ。久々のお客さんだからって めっちゃ美味しい料理用意してくれたわ。スウィーティー♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0043" alt="グッド（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">聞いた？ プロデューサー、聞いた？ 若者だって！ 若くてきれいなお嬢さんだって！やっぱわかる人には わかっちゃうな―。はぁともまだまだぴちぴちだって☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0044" alt="パーフェクト（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">最初は遠慮があったけど、今はいろんな人と仲良くなったし、 おもてなしのお礼に、しゅがみんから一曲どーよ？ よし、プロデューサーからOK出たし、歌うか、パイセン！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0045" alt="イベント発生（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">さっき、この家の外れで看板見つけてさ。 どこに案内する看板か気になったんだけど、 文字がかすれてて読めなかったわ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0046" alt="ノーマル（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">で、村の人に聞いたら、ここの名所は温泉と たくさんある祠くらいなんだってさ。 小さい村だから、すぐ見て回れるらしいし、あとで行くか！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0047" alt="グッド（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">はぁとにはわかる！ あの看板が指し示すのは…… デートスポットになる絶景☆ ってことで～、 プロデューサー、このあとふたりで行ってみる？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0048" alt="パーフェクト（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">村の人に聞いてみたんだけど、知らないって言われたんだよね。 誰も知らない、まだ見ぬ場所……これ、番組的にチャンスじゃん？ あとで菜々パイセンも誘って行ってみよーっと！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0049" alt="イベント発生（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">事務所で配れるお土産、何かないかなって聞いたら これもらっちった！ 村に代々伝わる工芸品らしくて、 お守りにして持っとくといいんだって。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0050" alt="ノーマル（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">んー、中身なんだろ？ もちろん取り出したりする気は ないんだけどさ、なーんか甘い香りしてるし。 ドライフラワーでも入ってんのかな～？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0051" alt="グッド（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">たくさんもらったから、事務所のみんなの分はあるよ。 裁縫道具もちゃんと持ってきてるし、ひとりひとりの 個性に合わせて、はぁとが可愛～くデコっちゃう♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0052" alt="パーフェクト（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">プロデューサーの分もおそろいでもらってきた☆ もちろん、はぁとがちゃんと刺繍してあげたぞ！ 「あい らぶ しゅがーはぁと」って♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0053" alt="イベント発生（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">秘境っていうだけあって、ちょっと変わった場所ではあるよね。 ここにしかない伝統とか、言い伝えとかいっぱいあって。 レポも兼ねて、パイセンとばっちり調査してたの。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0054" alt="ノーマル（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">村長さんに「あの祠に行ったんか」って言われたから、 チョコバーお供えしてきたって答えといた。 よくわからんけど感謝されちった♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0055" alt="グッド（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">子どもたちに、村に伝わる歌を教えてもらったんだよね。 何語かわかんない歌だったけど。お返しに、『凸凹スピードスター』を 教えといた。もちろん、振りもつけて☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0056" alt="パーフェクト（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ここがどんな村だったとしてもさ、3人でなら なんとかなるっしょって思ってる。今までもそうしてきたし。 もしかしなくても、はぁとたちってば無敵かも♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0057" alt="イベント発生（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ふぁ～……ちょいねむぅ…… あれだけ頑張って山の中進んできたからかなー……。 ん……ちょっと気、抜けちゃったわ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0058" alt="ノーマル（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">山で叫んで疲れたし、いっぱい食べたら眠くなってきて…… ちっかーう！ はぁとは赤ちゃんでも牛でもなーい！ プロデューサーの可愛いアイドル☆ りぴーとあふたみー♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0059" alt="グッド（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">プロデューサー、ちょっとここに座ってみて？ それで……ころーん☆ ほれほれ、今こそはぁとを膝枕で甘やかして？ ね？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0060" alt="パーフェクト（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">でも、疲れてるのはプロデューサーも同じでしょ？ ほら、肩貸して？ はぁとはいつも鍛えてるから体力あるし、 時間が来たら、優しく起こしてあげる……♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0061" alt="イベント発生（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">んー、今ね、撮ってた映像見返してたとこ。 プロデューサーも、可愛いはぁと、チェックしたい？ ……おい、首を横に振んな☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0062" alt="ノーマル（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">おぉう、めっちゃブレてる映像あるなー。 これは泥に足を滑らせてパイセンと転んだときのね。 水も泥も滴ってこそのいい女だけど……あんま見んな☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0063" alt="グッド（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ま、プロデューサーにとっては今さらかな。 ずっと近くではぁとたちのこと見てたわけだし☆ んもう、いいとこどりしちゃってこのこの～☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0064" alt="パーフェクト（村） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">とか言って、いざ見始めると誰よりも真剣な顔して チェックすんの、プロデューサーは。んで、その横顔 見てると思うんだよね。すっごく愛されてるなって。</div></div></div></div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-panel" data-tab="ip1-yu">
+    <div class="dss-ep-head"><div class="dss-ep-meta">
+        <div class="dss-ep-eyebrow">佐藤心 / IDOL PRODUCE</div>
+        <h3 class="dss-ep-title">若返りの湯</h3>
+    </div></div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">お仕事</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0065" alt="お仕事①（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事①</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ふぁ～…… お昼に酷使した体をやっと癒せる～☆ スウィーティー温泉で♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0066" alt="お仕事②（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事②</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">表情だけで、いい温泉って伝わるけど…… レポだから、ちゃんと言葉にしないとな。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0067" alt="お仕事③（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事③</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">お色気はぁと、見ていいぞ？ ちらりん♪ 目を逸らすのは照れてるからだよな☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0068" alt="お仕事④（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事④</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">桜の花びらをプロデューサーに飾って…… すっごくスウィーティー♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0069" alt="お仕事⑤（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑤</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ほれほれプロデューサー、 脚だけでも浸かってみ？ 一緒にぴちぴちになろっ？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0070" alt="お仕事⑥（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑥</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">菜々パイセンはどう？ 肩こり腰痛に効く？ それは……わかるわ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0071" alt="お仕事⑦（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑦</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">パイセンがビバミンミンなら、はぁとはビバスウィーティー♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0072" alt="お仕事⑧（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑧</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">わぶっ！菜々パイセン！？ それならはぁともお返しで、 美人の湯攻撃☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0073" alt="イベント発生（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">はぁとたちがやってきたのは～…… そう、秘境の温泉！見てみ？ この時期だけど満開の桜！ 風流なスウィーティー風呂、楽しむしかないっしょ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0074" alt="ノーマル（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">にしてもこの桜、変わった色のもまざってるような……？ 品種の問題かな―？ もしくは、使ってる肥料が特別だったり…… 違う違う、パイセンをビビらせたいワケじゃなくって！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0075" alt="グッド（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">どう、プロデューサー？ めっちゃ上手くレポできたろ☆ しゅがみんはバラエティだけじゃない、知的なレポも しゅがみん流にこなせるってとこ、見せられたっしょ♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0076" alt="パーフェクト（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">じゃ、さっそく温泉に入っちゃお☆ この先もきっちりレポってみせるから、プロデューサーと ふたりでしっぽり浸かるのは、またあとで……なんて、いやん☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0077" alt="イベント発生（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">レポのとき、菜々パイセンと約束したことがあるんだよね。 プロデューサーなら見当ついてるっしょ。 ……そ、「よっこいせ」って言わないこと！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0078" alt="ノーマル（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">そしたらあったか～い温泉に浸かったとき 別の声が出ちった☆ 「あ゛～ごぐら゛ぐ～」っつって☆ もしかしてプロデューサー、聞いてた？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0079" alt="グッド（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">気をつけながらゆっくり肩まで浸かって…… よっこい……しゅーがはっ☆ うん、いい湯加減～♪ 今のはセーフだろ？ セーフだよな♪ セーフ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0080" alt="パーフェクト（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">「破ったら、ノンスウィーティーな罰ゲームだぞ☆」って パイセンに言った手前な……プロデューサー、はぁとが 言いそうになったら口ふさいで！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0081" alt="イベント発生（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ちなみにこの温泉、浸かったら不老不死になれるって言い伝えが あるとか！ つまり、永遠の若さが手に入る美人の湯って ことだろ？ たっぷり浸かっとくか。2000秒くらい☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0082" alt="ノーマル（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">困ったなー、ただでさえはぁと、身も心も若いって 言われてるから？ 温泉効果で赤ちゃんレベルになっちゃう んじゃね？ ばぶー♪ なんつって☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0083" alt="グッド（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">プロデューサーが入るときは、はぁとを呼んで？ 背中くらい流すからさ。さっき、菜々パイセンとはぁとに 湿布貼ってくれたお礼な？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0084" alt="パーフェクト（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ま、今以上に肌がぴっちぴちになったとしても、はぁとが培った 年相応……ううん、年齢以上の深みは消えない！ プロデューサー と一緒に、アイドルやって身につけた魅力だからな♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0085" alt="イベント発生（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ねぇねぇ、プロデューサー♪ こっち向いて？ ……おい、向けよ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0086" alt="ノーマル（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">もっと見惚れろ！ もしくは顔赤くしてどぎまぎしろ！ はぁとのバスタオル姿だぞ！？ バ・ス・タ・オ・ル！ お色気たっぷりの貴重な姿でしょ？ うっふん♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0087" alt="グッド（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">やー、桜ばっかり見られたらさ、こっち向けよって 思うじゃん？ はぁとはプロデューサーのアイドルなんだから、 目を逸らしちゃダメだぞ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0088" alt="パーフェクト（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">プロデューサーのことだから、はぁとたちのこと考えて 静かにしてるってわかってるんだけどさ……やっぱり、 構ってもらえないと寂しいじゃん？ ……なんつって、本気☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0089" alt="イベント発生（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">よーし、次は、はぁとが菜々パイセンを撮る番！ お色気もキュートも、はぁとカメラマンに任せとけ☆ ささ、パイセンも温泉に入って、リラックスしましょ♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0090" alt="ノーマル（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">恥ずかしがることないって！ はぁととパイセンの仲だろ？ ばっちり魅力引き出してみせるし……え？ 近いと肌質が わかっちゃうから？ それは……メンゴ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0091" alt="グッド（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">さっき、菜々パイセンにはぁとを撮ってもらったじゃん？ その映像見たらさ、「ああ、はぁとの魅力、しっかりわかって くれてるんだな」って嬉しくなって、はぁともやりたくなったの♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0092" alt="パーフェクト（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">そして映像ちぇーっく！ わお！ このパイセン、めっちゃ リラックスした笑顔向けてくれてる！ たしか プロデューサーが撮ってたときのだよね？ さすが☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0093" alt="イベント発生（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">お風呂上がりには、さっきパイセンが着てた浴衣…… っていうかほぼ着物なアレ、はぁとにも着せて もらえるって！ いや～ん、楽しみ♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0094" alt="ノーマル（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">なんかねー、村祭りの正装？ なんだって！ ひらひらしてるし、ステージで着て踊ったら映えるんじゃね？ 着替えたら、「回ってー！」って言えよ、プロデューサー♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0095" alt="グッド（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">はぁとにも似合うって、村の人たちのお墨つきだし♪ 「これを着たら、お連れさんもメロメロよ！」って！ やぁん、照れるぅ♪ でも、よくわかってるぅ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0096" alt="パーフェクト（若返りの湯） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">プロデューサーの心を射止めるには、大人な和装で 普段とのギャップを出すのがベスト！ こちとら前に ウェディングの仕事したときに学んだんで！ 覚悟しとけ☆</div></div></div></div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-panel" data-tab="ip1-misaki">
+    <div class="dss-ep-head"><div class="dss-ep-meta">
+        <div class="dss-ep-eyebrow">佐藤心 / IDOL PRODUCE</div>
+        <h3 class="dss-ep-title">岬</h3>
+    </div></div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">お仕事</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0097" alt="お仕事①（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事①</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">夜はまだまだこれからだぞ☆ ドッキリが待ってるかもしれないし？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0098" alt="お仕事②（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事②</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">んー……、んー……？ 地図見たらさ、目的地が違うような…… 気のせいか☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0099" alt="お仕事③（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事③</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">プロデューサーの話も聞かせろよ☆ 仕事の話でも恋バナでも、なんでもこい！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0100" alt="お仕事④（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事④</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">プロデューサーを撮影中―♪ カメラの充電余ってたし、横顔でも撮っとくかって。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0101" alt="お仕事⑤（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑤</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">帰るまでがロケなんで。 お互い、気を抜かずに駆け抜けましょ、パイセン☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0102" alt="お仕事⑥（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑥</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">しゅがみんは凸凹道を突っ走る…… どころか、崖まで登れてパワーアップ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0103" alt="お仕事⑦（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑦</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ひと通りレポも撮影もした！ ってことで、3人で…… ひとまずお疲れさまでした！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0104" alt="お仕事⑧（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑧</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ドキドキの非日常が、 アイドルには日常だもんな。 ずっと楽しめるわ、これ♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0105" alt="イベント発生（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">さっき？ ああ、村の人たちとちょっと話してたんだよね。 村祭り用の供物がほしいって言ってたから、協力しといた。 うん、あげたぞ？ しゅがーはぁとのプロマイド☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0106" alt="ノーマル（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">「はぁとの魂がこもったとっておきの一枚！」って 言ったら受け取ってくれてさ。一番可愛～く 映ってるのをあげて、大正解だったな♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0107" alt="グッド（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">その顔……さてはプロデューサーも欲しかった？ 大丈夫、100枚でも1000枚でもあげるから、スウィーティーな はぁとアルバムにしまっとけ☆ そんなのない？ 作れ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0108" alt="パーフェクト（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">いつでもはぁとのファンにあげられるように……ってワケじゃ なくて、お守り代わりに持ってたんだよね。デビューしたての 頃に撮ったやつ。見るたびに、頑張ろうって思えるからさ。</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0109" alt="イベント発生（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">この辺は村からちょい外れてるからかな？ ギリ電波も通じるっぽい。だからだと思うんだけど…… はぁとのスマホ、さっきから通知来まくってるわ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0110" alt="ノーマル（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">プロデューサーの方もそうなんじゃね？ お仕事の連絡も 来てそうだけど、お仕事とはいえ連絡とれなくなったら 心配しそうなアイドル、けっこういると思うんだよね。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0111" alt="グッド（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">お、いつメンから連絡来てた！ 「温泉いいな、お土産話楽しみにしてる」だって！ 語っちゃうか、文字通り、山越え谷越えの道のりを♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0112" alt="パーフェクト（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">親からだな。「連絡通じないけどどこにいるの？ さすがに心配する」……そんなに長い間連絡してなかったっけ？ 「今は、プロデューサーと温泉に来ています☆」っと。</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0113" alt="イベント発生（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">月も星空も綺麗……ロマンティックでスウィーティーな 景色だな☆ 世界にプロデューサーとふたりだけみたい ……って、なんか声しない？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0114" alt="ノーマル（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">やっぱ、はぁとにアイドルのオーラがあるから？ どこにいても、 ファンに見つかっちゃう☆ 村の子かなー？ 隠れてないで、 優しいはぁとお姉ちゃんの前に出ておいで～♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0115" alt="グッド（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">逃げた、とか逃がすな、とか聞こえるけど…… 飼ってる鶏でも脱走した？ はぁとたちは、別に逃げてないし？ これははぁとたちなりの、お忍びで・え・と☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0116" alt="パーフェクト（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">うおっ、菜々パイセンじゃん！ びっくりした―。 急に茂みから出てきてどしたん？ いいよいいよ、このまま3人でデートしよっか♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0117" alt="イベント発生（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">プロデューサー、どしたん？ そんなに熱い瞳で、はぁとをじっと見つめて……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0118" alt="ノーマル（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">このあと出発？ 相変わらずのハードスケジュールだけど、 オッケー♪ ふたりきりで「逃げよう」なんて言うから、 アブナイお誘いかと思ったぞ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0119" alt="グッド（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ん……っ。 あ、髪に花びらついてた？ そっか……。 びっくりした……思わず目つぶっちゃったわ……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0120" alt="パーフェクト（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">もしかして、湯上がりはぁとに見惚れて……ぷぇっくしょん☆ あー、湯冷めしないように、上着かけてくれんの？ ありがとう……そんなに優しいと、惚れるぞ☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0121" alt="イベント発生（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">村を出たいっていう子がいてさ、色々話したんだよね。 夢を叶えたいからってことだったけど、不安そうな顔してて…… はぁとを見てみろ、大丈夫だからって伝えといた。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0122" alt="ノーマル（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">上京するときって、不安と期待で胸いっぱいになるんだよね。 無邪気だった少女時代のはぁとだって……あ、今も 無邪気で純粋な可愛い少女だったわ。てへっ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0123" alt="グッド（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">はぁとを見てたら、わかるはずだもん。いつでもどこでも、 夢は突っ走るパワーをくれる。それがあれば、どんな壁も ぶち壊せるって。物理的なパワーじゃなくてな？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0124" alt="パーフェクト（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">村を出た先で、あの子も出会えるといいよね。自分の夢を 肯定してくれる、唯一無二の大切な人に……おい、 プロデューサーの話をする真面目なはぁとだぞ。よ～く聞いとけ？</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0125" alt="イベント発生（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">夜、誰かと一緒にいる時間って好きなんだよね。 いつメンと飲んでるときもそうなんだけどさ、 こうやってプロデューサーといるときも、大好き☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0126" alt="ノーマル（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">お祭り、けっこう静かだったなー。何かの儀式？ の準備でみんな 忙しいらしくて。ま、綺麗な着物を着たスウィーティーな はぁとをプロデューサーにお披露目できたし、大満足♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0127" alt="グッド（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">独りでめげそうな夜も、明日はどうしても頑張りたいって夜も、 プロデューサーのことを思い出してパワーもらってんの。 つまりー、なんていうかー、ずっと一緒☆ みたいな？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0128" alt="パーフェクト（岬） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">毎晩、一緒にいる時間があるといいよね。 出迎えたり出迎えられたり、家族みたいにさ。 あ、ちょい待ち、実家から電話……プロデューサーも話す？</div></div></div></div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-panel" data-tab="ip1-sky">
+    <div class="dss-ep-head"><div class="dss-ep-meta">
+        <div class="dss-ep-eyebrow">佐藤心 / IDOL PRODUCE</div>
+        <h3 class="dss-ep-title">上空</h3>
+    </div></div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">お仕事</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0129" alt="お仕事①（上空） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事①</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">くぅっ……プロデューサー、 やっぱかっけぇ……。 はぁともヘリで駆けつけたーい！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0130" alt="お仕事②（上空） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事②</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">簡単に人生諦められんなら、 崖っぷちで粘ってない！ パイセン、するよ、脱出！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0131" alt="お仕事③（上空） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事③</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">独りだったら、思いきれてなかったかも。 ありがと、プロデューサー、パイセン！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0132" alt="イベント発生（上空） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ふふっ、あははっ、なにこれ♪ 菜々パイセンとダッシュで 村を出て、そしたら迎えのヘリが来てさ、こんなとんでも展開、 一周回って笑うしかないっしょ！ あーっ、楽しい☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0133" alt="ノーマル（上空） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">っていうかプロデューサー、これ、村人も込みで全部ドッキリだな？ いや～、村の様子が変だなって途中から思ってたし。 あ！ ドッキリだったら可愛～い反応見せつければよかった！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0134" alt="グッド（上空） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">マジで今、どうにかなるモードだわ！ 全速力で必死に駆けて、手を取り合って縄はしごのぼって！ パイセン、加速するよ！ しゅがしゅが～？ みーん！！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0135" alt="パーフェクト（上空） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">このまま3人でどこまで行ける？ どこまで行っちゃう？ この3人なら、たとえ世界の果てだって！ あははっ、言っててすっげぇ青春感あるわ☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0136" alt="イベント発生（上空） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">あばよ、謎の村♪ 懐かしくなったらまた来るから、 その日までに、全員がはぁとのファンになってること！ 約束な☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0137" alt="ノーマル（上空） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ヘリに乗ってもまだ見送ってくれてるみんなには、 投げキッスをプレゼント♪ どんなときでも ファンを想って行動するのがはぁとだもん☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0138" alt="グッド（上空） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">めっちゃもてなされたし、綺麗なお嬢さんって言ってもらえて 嬉しかったけど、はぁとはまだ、どこかに留まるつもりはないの。 まだまだプロデューサーのアイドルしなきゃだから☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0139" alt="パーフェクト（上空） 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">引き留めたい気持ちもわかるんだけどね……でも、はぁとには やりたいことがまだまだいっぱいあるの！ プロデューサーや 菜々パイセンと一緒に、アイドル道、全速力で駆けていくとかな☆</div></div></div></div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-panel" data-tab="ip1-kizuna">
+    <div class="dss-ep-head"><div class="dss-ep-meta">
+        <div class="dss-ep-eyebrow">佐藤心 / IDOL PRODUCE</div>
+        <h3 class="dss-ep-title">絆Lv</h3>
+    </div></div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">絆Lvアップセリフ</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0140" alt="絆Lvアップセリフ① 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">絆Lvアップセリフ①</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ほらぁ、待ってたんだろ～？ はぁとからのプレゼント☆ んもう、遠慮すんなって☆ はぁとがプロデューサーを想って 選んだんだから、もらって嬉しいこと間違いなし、だぞ♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0141" alt="絆Lvアップセリフ② 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">絆Lvアップセリフ②</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">受け取ってね、はぁとの気・持・ち♪ 返品は受けつけてないけど、お返しなら大歓迎な？ ってコトで、プロデューサーの気持ちも、はぁとにちょーだい☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0142" alt="絆Lvアップセリフ③ 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">絆Lvアップセリフ③</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">これはね～、はぁとのビッグハートが詰まったプレゼント♪ ん？ 「嬉しいよ。でもはぁとがいるだけで幸せだから」？ え、そんなこと言ってない？ 言えよ☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">絆Lv到達セリフ</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0143" alt="絆Lv到達セリフ① 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">絆Lv到達セリフ①</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">あ゛～……根性出した……限界超えたわぁ、マジで、 でもこれって嬉しいことなんだよね。プロデューサーとなら なんでもできるって、はぁとを無敵にさせてくれるから♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0144" alt="絆Lv到達セリフ② 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">絆Lv到達セリフ②</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">はぁとの可愛いとこも根性出すとこも、大人なとこも 好きって言ってくれる人がいてさ。その人の前だと、 いろんな自分を見せたくなんの。……あれ、聞いてる？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu/0145" alt="絆Lv到達セリフ③ 心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">絆Lv到達セリフ③</span></div><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">どんなにキツくても、ピンチでも、はぁとはアイドルでいる 自分が好き！ 夢を諦めなくて、プロデューサーと出会って、 素敵にプロデュースされた、今の自分に恥じない仕事をすんの♪</div></div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-panel" data-tab="ip1n-main">
+    <div class="tab-group ip1-sub">
+        <div class="tab-list">
+            <button class="tab-item active" onclick="switchTab(this,'ip1n-yama')">山中</button>
+            <button class="tab-item" onclick="switchTab(this,'ip1n-mura')">村</button>
+            <button class="tab-item" onclick="switchTab(this,'ip1n-yu')">若返りの湯</button>
+            <button class="tab-item" onclick="switchTab(this,'ip1n-misaki')">岬</button>
+            <button class="tab-item" onclick="switchTab(this,'ip1n-sky')">上空</button>
+            <button class="tab-item" onclick="switchTab(this,'ip1n-kizuna')">絆Lv</button>
+        </div>
+    <div class="tab-panel active" data-tab="ip1n-yama">
+    <div class="dss-ep-head"><div class="dss-ep-meta">
+        <div class="dss-ep-eyebrow">安部菜々 / IDOL PRODUCE</div>
+        <h3 class="dss-ep-title">山中</h3>
+    </div></div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">お仕事</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0001" alt="お仕事①（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事①</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">撮っちゃいますよぉ♪ あ～んな秘密やこ～んな秘密 ……えっ、なぜカメラをナナに……？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0002" alt="お仕事②（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事②</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">メルヘンな森ですね！ どこからか鳥さんの声が 「グェー！」って♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0003" alt="お仕事③（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事③</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ケータイが使えなくてもOK！ ウサミン星からの電波、届いてます！ ビビッ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0004" alt="お仕事④（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事④</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">お弁当にしましょうか！ プロデューサーさんのぶんも作ってきたんです。 どうぞ♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0005" alt="お仕事⑤（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑤</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あれ？ プロデューサーさんどこですかーっ？ き、霧の中に……！？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0006" alt="お仕事⑥（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑥</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はぁとちゃんはぜーはー言いながら、 いつも最後までやりきっちゃうんです！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0007" alt="お仕事⑦（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑦</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ウ～サ、ミンッ！ ウ～サ、ミンッ！ イメトレはバッチリですよ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0008" alt="お仕事⑧（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑧</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">アイドルといえば崖……？ なら今日もナナはとってもアイドル！ キャハ☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0009" alt="イベント発生（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あれは……小さな洞窟でしょうか？ 奥に祠があるみたい…… ちょっと覗いてみませんか？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0010" alt="ノーマル（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">よいしょっと……。 あ、可愛いお地蔵さんですねぇ。真っ赤なハンカチを巻いて……♪ 変わったお顔です。ウサミン星のご先祖様だったり、なんて♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0011" alt="グッド（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">わわっ、足もとが……！ せ、せーふ☆ ナナってば、はしゃいじゃってますね…… プロデューサーさんがそばにいるから、つい安心して……えへへ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0012" alt="パーフェクト（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">さぁ、飛び込みますよぉ！ ナナと手をつないで、せーのっ☆ ……あ、すすみませんっ、 いつものバラエティのノリで……キャハッ☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0013" alt="イベント発生（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はぁとちゃんはナナのこと、 「パイセン」って呼んで慕ってくれるんです。 でも、ナナのほうが頼りにしてるくらいで……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0014" alt="ノーマル（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">しっかりしてて、ムードメーカーで、 泣き虫のナナに気合を注入してくれて！ ナナよりも年…………年上だなって！ さすがだなって！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0015" alt="グッド（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">素敵な人たちに囲まれて、ナナ、毎日が幸せでずぅ……うぅうっ。 素敵なのは、はぁとちゃんと、それからもちろん……。 気づいてないなら、内緒です☆ キャハ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0016" alt="パーフェクト（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">繊細だけど強い子だから、ナナがしてあげられることは あんまりなくて。でも、一緒にいることはできます。 プロデューサーさんがいつも、ナナに安心をくれるみたいに！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0017" alt="イベント発生（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ええっ！？ 服に虫がついてる……！？ ど、どこっ、どこですかぁ！？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0018" alt="ノーマル（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">プロデューサーさんは苦手なんですか～！？ ナ、ナナは、ナナも、へ、へへ平気です！ ウサミン星では、部屋にいるペットみたいなものですから！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0019" alt="グッド（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あっ、もういないんですね……ナナってば慌てんぼうで……！ プロデューサーさんには、 恥ずかしいナナばかりお見せしちゃって……えへへ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0020" alt="パーフェクト（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">んっ……！ はぁ……取ってくれてありがとうございますぅぅ！ ま、まだ、ついてませんかっ！？ あ、でも…… そんなに近くで見つめられると……う……ウ～サミン☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0021" alt="イベント発生（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ビビッ☆ ウサミン星からメッセージを受信しました☆ 今回もドキドキがいっぱいの大冒険になるそうです♪ どんな展開が待ってるんでしょうか……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0022" alt="ノーマル（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">山奥の村で、謎の怪異に襲われるホラーな展開……？ こ、怖いこと言わないでくださいよぉぉ！ そんなの誰も望んでません……よね……？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0023" alt="グッド（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">愛と勇気、夢と希望にあふれるレポートになりますよぉ！ プロデューサーさんと作る、 ナナたちの番組なんですから！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0024" alt="パーフェクト（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ドキドキいっぱいの……ラブロマンスですかぁ！？ あはは、そんな、相手役とかいませんし…… あ、あのあのっ、えっと……想像しちゃうじゃないですか～っ！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0025" alt="イベント発生（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はぁ……ふぅ……。 ず、ずいぶん歩いたり、登ったりしましたねぇ……。 こ……腰が……。ひ、膝が……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0026" alt="ノーマル（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">なんのっ、へこたれませんよぉ！ アイドル歴は長いですから！ 底力があるんです！ ウサミンパワーで、よっこら……あ、アウッ！？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0027" alt="グッド（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">むこうの木陰でひと休み、ですね♪ ふぃ～～～～♪ あっ、い、今のは、聞かなかったことにしてください～。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0028" alt="パーフェクト（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">お、おんぶですかぁ！？ そ、そんな、悪いですし……は、恥ずかしいですよぉ。 で、でも……甘えちゃいます。カメラは回さないでくださいね……♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0029" alt="イベント発生（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ひ～、崖～！ 高い～！ こわ゛い～！ ひっく……ぐすん……。 ダメですぅ～！ もう上にも下にも進めませんよぉ～！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0030" alt="ノーマル（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">腕が……脚が……ぷ、ぷるぷる、ぷるぷるしますぅぅ！ だーれーかー！ 助けてください～！ ああ……ああああああ～！！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0031" alt="グッド（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">なんの、アイドルナナ、崖っぷちで耐えるのは得意です！ ああ、あれは……はぁとちゃん～！ た、助けにきてくれたんですねぇ～！ うっうっ……怖かったぁ～～！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0032" alt="パーフェクト（山中） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ナナは崖っぷちから這い上がったんです！ プロデューサーさんに手を引いてもらって……！ まだまだ崖のひとつやふたつ！ 見守っていてくださ～い！</div></div></div></div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-panel" data-tab="ip1n-mura">
+    <div class="dss-ep-head"><div class="dss-ep-meta">
+        <div class="dss-ep-eyebrow">安部菜々 / IDOL PRODUCE</div>
+        <h3 class="dss-ep-title">村</h3>
+    </div></div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">お仕事</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0033" alt="お仕事①（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事①</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">笑顔が素敵な村ですねぇ♪ みんな、ずっと笑ってます。 ずっと……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0034" alt="お仕事②（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事②</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">「17歳」って言ったらみなさん急に親切に……。 す、すごいご馳走も……！ どどどどうしましょう……？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0035" alt="お仕事③（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事③</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">温泉の場所、案内してくれるそうです 優しい人たちでよかった……うっうっ……</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0036" alt="お仕事④（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事④</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">村を散策してみませんか？ プロデューサーさんが一緒なら、夜も安心なので！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0037" alt="お仕事⑤（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑤</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">おばあちゃんのおうちとおんなじ匂いがするんです。 ウサミン星にルーツがあるのかも……？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0038" alt="お仕事⑥（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑥</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はぁとちゃん、馴染むのが早い……！ 村のみなさんと歌ってますね！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0039" alt="お仕事⑦（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑦</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">どこから来たのか聞かれて 空を指さしたら、みなさん青ざめて…… 引かれちゃいましたかね？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0040" alt="お仕事⑧（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑧</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">誰にだって内緒の設定はありますから…… あまり詮索しすぎるのも……。</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0041" alt="イベント発生（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">庭の桜の木、綺麗でしたね。 ……あのっ、プロデューサーさん…… 一緒に眺めにいきませんか？ な、なんちゃって～☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0042" alt="ノーマル（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">山の上のほうにも桜がありましたね。 近くで眺めてみたいです。 ……でも、なんで色が違うんでしょうか……？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0043" alt="グッド（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">じつは、さっきちょっと眺めてきたんですけど……。 せっかくプロデューサーさんがいるのに、 ひとりで見るのはもったいないなって。えへへ……♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0044" alt="パーフェクト（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">花を眺めると、思い出すんです。 それぞれの季節の、いろんなお仕事のこと。 プロデューサーさんの、笑った顔も、真剣な顔も……。</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0045" alt="イベント発生（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">屋敷のまわりを歩いてきました。探険取材です☆ ナナが気になったのは、ですね……</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0046" alt="ノーマル（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">村のみなさんの笑顔です。 会う人会う人、びっくりするくらい優しくて……！ 最初は避けられてたように感じましたけど、気のせいでしたねっ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0047" alt="グッド（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">赤い鳥居が、山の奥のほうまで いくつもいくつも続いていました。 プロデューサーさん、一緒に数えながらくぐりませんか？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0048" alt="パーフェクト（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">それは、プロデューサーさんが隣にいないことで……。 どんなときも一緒なのが当たり前になっちゃってて。 ナナってば、甘えん坊ですよね。17歳ですから。えへへ☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0049" alt="イベント発生（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はぁとちゃん、村のみなさんに囲まれてますねぇ。 あ、また大きな笑い声が……♪ ナナもはぁとちゃんみたいに、人の輪の中心になれたら……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0050" alt="ノーマル（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ナナはずっとメイド喫茶のメイドさんでしたし、 接客は得意なんですけど……。 「もえもえきゅん♪」は……引かれちゃいますかね……？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0051" alt="グッド（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はぁとちゃんとナナは、ぴったり凸凹の関係なんです。 はぁとちゃんが開けてくれた突破口に、ナナも最高速で…… いきますよぉ～！ やりますよぉ～！！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0052" alt="パーフェクト（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">でも！ ナナだけのいいところ、 プロデューサーさんにいっぱい教えてもらったので！ 引かれてもいいんです！ 何度でもアタック！ ミンッ！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0053" alt="イベント発生（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">可愛い浴衣ですよね♪ 村の人が貸してくれたんです。 えへへ、どうですか、プロデューサーさん？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0054" alt="ノーマル（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">そ、そうですよねっ、 まだ着てもいないのに、わからないですよね。 プロデューサーさん……なんだか難しい顔してる……？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0055" alt="グッド（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">そうだ、プロデューサーさん用の浴衣はないんでしょうか？ 聞いてみますねっ。 そのまま、ナナとペアルックになっちゃったり……♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0056" alt="パーフェクト（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">新しい服は、最初にプロデューサーさんに チェックしてもらう癖がついちゃいまして☆ いいねって言ってもらえると、ナナは安心するんです。</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0057" alt="イベント発生（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">わあ、可愛いお人形さんが置いてありますねぇ！ 髪の毛がツヤツヤで、 お肌も真っ白で、唇が真っ赤で……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0058" alt="ノーマル（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">「さわるな」！？ ひゃあああ、こ、ごめんなさいいぃぃ。 び、びっくりしちゃいましたぁぁ。 村のみなさん、急に怖いお顔になるから……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0059" alt="グッド（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">まるで生きてるみたいなお顔をしています。 こんにちは♪ ナナはウサミン星から来ました♪ あなたは？ なんて♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0060" alt="パーフェクト（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">抱っこしちゃいましょう♪ よしよし……可愛いですねぇ……♪ プロデューサーさんも、子どもは好きですか？</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0061" alt="イベント発生（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">お布団がふたつ敷いてありますねぇ…… も、ももしかして、 ナナとプロデューサーさん、同じお部屋で寝るんですかぁっ！？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0062" alt="ノーマル（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あ……はぁとちゃんとナナのお布団ですよね。 ナナったら、とんでもない勘違いを……。 わ、忘れてください……あはは……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0063" alt="グッド（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">プロデューサーさんは廊下で寝るなんて…… だ、ダメですよぉ！ 風邪をひいちゃいます！ もうひとつお部屋を貸してもらえないか聞いてきますね。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0064" alt="パーフェクト（村） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ナナはもうある意味、プロデューサーさんのところへ お嫁に行ったようなものなので……。 な、なんでもないですっ。き、聞こえなかったですよね……ホッ。</div></div></div></div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-panel" data-tab="ip1n-yu">
+    <div class="dss-ep-head"><div class="dss-ep-meta">
+        <div class="dss-ep-eyebrow">安部菜々 / IDOL PRODUCE</div>
+        <h3 class="dss-ep-title">若返りの湯</h3>
+    </div></div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">お仕事</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0065" alt="お仕事①（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事①</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">効能は、美肌、腰痛…… わ、若返りっ！？ ゆっくりしていきましょう！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0066" alt="お仕事②（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事②</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あ゛あ゛～極楽ですぅ～～♪ ……はっ、いまのシーンはあとで編集を……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0067" alt="お仕事③（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事③</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">桃源郷って、こんな景色をいうんでしょうね。 この世のものじゃないみたい……♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0068" alt="お仕事④（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事④</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">プロデューサーさんも、ナナたちのレポを楽しんで！ ……まぁ、その、バスタオル巻いてますしっ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0069" alt="お仕事⑤（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑤</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">プロデューサーさんも体のツラいとこ、 一気に治しちゃいましょう♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0070" alt="お仕事⑥（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑥</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はぁとちゃんと、のんびり語り合いました。 運命って不思議だなって。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0071" alt="お仕事⑦（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑦</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">コホン……この温泉の歴史はですねぇ……ひゃあっ！ はぁとちゃん、急にお湯かけないで～！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0072" alt="お仕事⑧（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑧</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">「入浴前に体にすり込むように」って渡されたの…… 美容クリームですかね？</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0073" alt="イベント発生（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ナナで～っす☆ ウサミン星からはるばる、地球の温泉をレポートです♪ なんと……「不老不死の湯」！？ 効能は……えーと……？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0074" alt="ノーマル（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">肩こり、腰痛、冷え性、とれない疲れ……。 魅惑的な効能がいっぱいですねぇ♪ お悩みの方は、ナナと一緒にぜひぜひ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0075" alt="グッド（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">美肌、美白、若返り……ゴ、ゴクリ。 ナナもさっそく浸かってみたいと思いまーっす！ え？ まだ？ 焦りすぎ？ 焦ってなんていませんよぉ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0076" alt="パーフェクト（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">不老不死。つまり、いつまでも夢が続くってことですよね。 10年後も100年後も1000年後も、 ナナは永遠にみんなのアイドルですよぉ！ キャハッ☆</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0077" alt="イベント発生（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はっ！ ガサガサ物音が……！？ 気のせいでしょうか……？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0078" alt="ノーマル（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あ、風の音でしたか……。 ナナのウサミンイヤーは、小さな音まで拾えちゃう！ 自慢の耳です！ ミンッ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0079" alt="グッド（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">森のおさるさんたちでしょうか？ 一緒に浸かって、ポカポカできたら楽しいかも……♪ おいで～、ウッキッキ☆ ……じゃなかった、ウ～サミン☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0080" alt="パーフェクト（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">プロデューサーさん、そんなに血相変えなくても……！ でも、ナナのために慌ててくれて……嬉しいです。 お仕事のあとに、一緒に入りませんか？ 気分を変えるためにも！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0081" alt="イベント発生（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ゆっくりお湯に浸かっていると、 泡みたいに浮かんでくるんです。 昔のこと……今のこと……未来のこと……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0082" alt="ノーマル（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">昔はよく、洗面器に石鹸とタオルを入れて、寒い道を……。 そのっ、ウサミン星の、伝統のスタイルなんですっ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0083" alt="グッド（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ポカポカで、そして、ドキドキで。 プロデューサーさんと寄り添い合う 今の毎日が、ナナはとっても楽しいんです……♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0084" alt="パーフェクト（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">まだ見つけていない秘境も、たくさんあると思うんです。 プロデューサーさんとふたりで観たい景色、 まだまだいっぱいあります！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0085" alt="イベント発生（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">え……えへへ……。 顔が真っ赤、ですかね……？ ちょ、ちょっとのぼせちゃったかも……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0086" alt="ノーマル（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">温泉の効能が気になってですね……欲張っちゃいました……。 フラフラ……フラフラミン……。 むこうで冷ましてきます～。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0087" alt="グッド（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">冷たいタオル、ありがとうございます。ふぃい…… あっ、すみません、つい腕につかまっちゃいまして……。 もう大丈夫ですっ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0088" alt="パーフェクト（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">どうでしょう、つるすべ美肌になれたでしょうか？ ……えへへ、プロデューサーさんに褒められると、 もっとのぼせちゃいます♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0089" alt="イベント発生（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あの……はぁとちゃん？ カメラが、その……。ち、近い……ような……？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0090" alt="ノーマル（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あ、あんまり寄りすぎると、 電波に乗せられない秘密がですね……！ 17歳のお肌とか……！ おなかとか……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0091" alt="グッド（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">い、色っぽい、ですか？ アイドルだし自信を持って……？ は、はいっ、大人の……じゃなくて17歳の色気ミンミンでいきますっ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0092" alt="パーフェクト（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">みんなに夢と希望を届けるために、 ナナはメルヘンチェンジしているのでっ！ ゼロ距離のナナは、プロデューサーさんの心にしまっていてください～！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0093" alt="イベント発生（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">桜の色が、水面に揺れて綺麗です。 花びらもいっぱい浮いていますね……♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0094" alt="ノーマル（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あ……花びら、流れていっちゃいました……。 あれ？ また何かこっちに流れて…… ひゃあっ！ 虫っ！？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0095" alt="グッド（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">花びらに囲まれて、お姫様気分です♪ アニメのお姫様って、お風呂で物の怪にさらわれたりしますけど…… ナナは安心です。守ってくれる人がいますから♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0096" alt="パーフェクト（若返りの湯） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ひとつ、ふたつ……。花びらと一緒に、数えていたんです。 ナナが今日までやってきたお仕事の数。 プロデューサーさんが叶えてくれた、夢の数ですっ。</div></div></div></div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-panel" data-tab="ip1n-misaki">
+    <div class="dss-ep-head"><div class="dss-ep-meta">
+        <div class="dss-ep-eyebrow">安部菜々 / IDOL PRODUCE</div>
+        <h3 class="dss-ep-title">岬</h3>
+    </div></div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">お仕事</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0097" alt="お仕事①（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事①</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">お月様が綺麗……故郷の星を思い出します。 みんな、今夜は何してるかな……♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0098" alt="お仕事②（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事②</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">……。黙ってると、ナナの胸のドキドキが聞こえちゃいそう……。 えっと……キャハ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0099" alt="お仕事③（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事③</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">守られてるって感じます。 ウサミン星や地球のファンとプロデューサーさんに。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0100" alt="お仕事④（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事④</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">祠の神様に、もうひとつお願いことを。 ナナの幸せな日々が、ずっと続きますように……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0101" alt="お仕事⑤（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑤</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">村でもらったお守り袋は、 おそろいの記念品ですね。 はぁとちゃんの刺繍入り！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0102" alt="お仕事⑥（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑥</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">は、はぁとちゃん……！ これはね、ちょっとふたりで風にあたってただけで……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0103" alt="お仕事⑦（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑦</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ひゃあっ！？ コ、コウモリさん……？ いっぱいいますねぇ……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0104" alt="お仕事⑧（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事⑧</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">今だけはカメラをしまって内緒話です☆ 今はお月様しか見てないから……。</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0105" alt="イベント発生（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">静かな夜ですね。 月の光のなかに、プロデューサーさんとナナの足音だけが響いて……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0106" alt="ノーマル（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">えへへ、プロデューサーさんとゆっくりできて、 ナナはもう大満足ですっ。 みんなに心配かけちゃいますし、そろそろ戻りましょうか。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0107" alt="グッド（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">プロデューサーさん、さっきははぁとちゃんとふたりで、 どんなお話をしてたんでしょう……？ いえ！ その！ ただちょっと気になって！ 深い意味はないんです！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0108" alt="パーフェクト（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あっ、ナナ、おしゃべりしすぎでしょうか？ プロデューサーさんといると、ついつい口数が多くなっちゃうんです。 へんなナナですね……♪ えへへ……♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0109" alt="イベント発生（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">電灯もないですし、足もとに気をつけなきゃ……。 ……え？ なんですか、プロデューサーさん？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0110" alt="ノーマル（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">わぁっ！？ ナナ、いまなにかつまずいて……！？ これは……斧！？ なんでこんなところに……？ 農家の方の忘れ物、でしょうか？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0111" alt="グッド（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">では……プロデューサーさんの袖につかまって……。 ……暗闇でも、プロデューサーさんがいるから ナナは歩いていけるんですね。ふふっ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0112" alt="パーフェクト（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はぐれないように、手を……ですか……？ あ、あのっ、あんまりこっちを見ないでくださいね？ 暗くてよかったです。今、どんな顔してるかバレなくて……♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0113" alt="イベント発生（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">一緒に眺めた桜、綺麗でしたね。 ちょっと変わった色のもあったり……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0114" alt="ノーマル（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">土が違うんでしょうか……？ 村の人に聞いても、はぐらかされちゃいましたし……。 でも、はい！ とっても綺麗でしたねっ♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0115" alt="グッド（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">今年もやりたかった、プロデューサーさんと一緒のお花見。 お仕事しながら叶っちゃいました♪ アイドルの日々って、やっぱり素敵です☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0116" alt="パーフェクト（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ナナも、ちょっと変わった色のアイドルかもですけど……。 だから、プロデューサーさんに見つけてもらえたんです。 必死に咲こうとしたから、出会えたんです！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0117" alt="イベント発生（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ふぅ……夜風が気持ちいい……！ 温泉であったまったからでしょうか、 ぜんぜん寒くないんです……♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0118" alt="ノーマル（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">へくちゅっ！ あれ？ うう……いつのまにか冷えてたみたいです……。 ああっ、ハンカチすみませ……へ、へくちゅっ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0119" alt="グッド（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">上着をかけてくれて、ありがとうございます。 やっぱりプロデューサーさんは、 ナナ以上にナナのこと、わかってくれてるんですね……えへへ♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0120" alt="パーフェクト（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">プロデューサーさんと寄り添って歩く道は、 風が吹いてもポカポカなんです。 だから、ずっと歩いてこられたんですよ。</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント②</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0121" alt="イベント発生（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">秘境にある温泉も、ばっちりレポートできました！ ナナとプロデューサーさんのお仕事、 今回も大成功ですね！ ミン☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0122" alt="ノーマル（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">でも、ナナが知らない景色も、 もっとたくさんあるって思うんです。 まだまだいけますよぉ！ ピカピカのJKですし！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0123" alt="グッド（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ナナ自身が知らないナナの魅力も、まだまだあるのかな……なんて♪ プロデューサーさんは、きっとこれからも いろんなナナを見つけてくれますね……♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0124" alt="パーフェクト（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">誰にも内緒の、秘密のナナもいたりして……♪ プロデューサーさんがいつか、探しにきてくれたら…… そして、受けとめてくれたら……ありのままのナナを、いつか！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント③</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0125" alt="イベント発生（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ナナはきっと、 「夢を叶えた人間」なんだと思います。 でも、夢を叶えたそのあとも……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0126" alt="ノーマル（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あ、急にへんなこと言っちゃってすみません。 でも、こんな月の綺麗な夜にしかしゃべれないことって、 ありますよね。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0127" alt="グッド（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">仲間と、プロデューサーさんと、いっぱい笑っていきたいです。 アイドルとしての、当たり前の日々を、 なにげない毎日を、今日も楽しかったなって。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0128" alt="パーフェクト（岬） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">今いるここが、「ずっと続く夢の中」で、 やっと手に入れたキラキラの宝物なんです。 ナナはいつまでも放しませんよ。ねっ、プロデューサーさん♪ ぎゅっ☆</div></div></div></div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-panel" data-tab="ip1n-sky">
+    <div class="dss-ep-head"><div class="dss-ep-meta">
+        <div class="dss-ep-eyebrow">安部菜々 / IDOL PRODUCE</div>
+        <h3 class="dss-ep-title">上空</h3>
+    </div></div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">お仕事</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0129" alt="お仕事①（上空） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事①</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">え゛ぇ゛～ん！ ナナは、人生17年で終わりたくないですよぉ～！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0130" alt="お仕事②（上空） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事②</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はぁとちゃん……？ えっ、念のため奪った斧で、橋を落としておく……！？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0131" alt="お仕事③（上空） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">お仕事③</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">そのとき空から、不思議な光と、ヘリの轟音が降りてきたのです……！ た、助かりましたぁぁ！</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">コミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0132" alt="イベント発生（上空） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はぁ、はぁ、な、なんとか空に脱出しましたけど、 もうダメです……膝が……腰が……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0133" alt="ノーマル（上空） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ああっ、まだまだ諦めていない方たちが！ 熱心すぎるファンの方々でしょうかぁ！ さよ～なら～！ ま、またいつか会えますよぉ、たぶん！ キャ、キャハ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0134" alt="グッド（上空） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">こ、ここはっ……火事場のウサミンパワー！ ナナは、激しいステージをいっぱい乗りこえてきたんです！ ベテランアイドル、17歳なんです！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0135" alt="パーフェクト（上空） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">プロデューサーさんも火事場のウサミンパワーを……？ そ、そんなっ、ふらふらのナナをぎゅっと支えて…… でも、ナナがお姫様なのはそういう設定なだけで……ドキドキミン……。</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">スペシャルコミュイベント①</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0136" alt="イベント発生（上空） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">イベント発生</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">村のみなさん、ナナが「17歳の娘」ってところにこだわってました……。 だから、ナナたちが全員、助かるには……！ ナナが……ホントのことを言えば……っ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0137" alt="ノーマル（上空） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">ノーマル</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">うっうっ、夢は今日で終わりです……。 プロデューサーさん、ナナが本当は何歳でも…… まだ、アイドルを名乗れますか……？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0138" alt="グッド（上空） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">グッド</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ナナがどうなっても、プロデューサーさんが助かるなら……！ プロデューサーさんのおかげで、ナナは今日まで来たんです。 本望ですよぉ！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0139" alt="パーフェクト（上空） 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">パーフェクト</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ナナも、ナナの秘密も、未来も、夢も、ぜんぶ守ってみせる！？ うっうっうっ、プロデューサーさぁぁぁん！ やっぱりプロデューサーさんは、ナナのプロデューサーさんですぅぅ！</div></div></div></div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-panel" data-tab="ip1n-kizuna">
+    <div class="dss-ep-head"><div class="dss-ep-meta">
+        <div class="dss-ep-eyebrow">安部菜々 / IDOL PRODUCE</div>
+        <h3 class="dss-ep-title">絆Lv</h3>
+    </div></div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">絆Lvアップセリフ</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0140" alt="絆Lvアップセリフ① 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">絆Lvアップセリフ①</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ビビッ☆ ウサミン星からプレゼントが届きました♪ 中身は……なんと！ ウサミンパワーたっぷりの、 プロデューサーさんが元気になっちゃうアレです！ どうぞ♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0141" alt="絆Lvアップセリフ② 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">絆Lvアップセリフ②</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">あ、あのっ！ プロデューサーさんに贈り物を用意してて、 ナナなりに、いろいろたくさん、考えましてですねっ……。 喜んでくれたらいいなって。え、えへへ…………キャハッ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0142" alt="絆Lvアップセリフ③ 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">絆Lvアップセリフ③</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">プロデューサーさんには、いつもい～っぱいもらってばっかりで。 だから今日は、ナナからお返しをしたいんです。 あげて、もらって。そんな毎日がずっと続いたら、楽しいですし♪</div></div></div></div>
+    </div>
+    </div>
+    <div class="ip1-group">
+    <div class="ip1-group-head">絆Lv到達セリフ</div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0143" alt="絆Lv到達セリフ① 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">絆Lv到達セリフ①</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ひ～……ふ～……。今回もいろんなことがありますねぇ……。 でも！ 一緒にもっと先の景色を見たいからっ！ パワー注入です！ プロデューサーさんも、せ～のっ……ウーサミン、ハイッ☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0144" alt="絆Lv到達セリフ② 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">絆Lv到達セリフ②</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">うぅぅ、ナナってば、いつもバタバタしてばっかりで～！ プロデューサーさんには恥ずかしいところも見せちゃってますぅ ……それでも、アイドルは、やっぱり楽しい……えへへ♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_nana/0145" alt="絆Lv到達セリフ③ 菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ev-condition"><span class="ev-label">絆Lv到達セリフ③</span></div><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">いつのまにか、ずいぶん遠いところまで来ちゃいましたね。 プロデューサーさんが隣にいるのも、気づいたら当たり前で。 これからも、ナナと一緒に歩いてくださいね♪</div></div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="tab-panel" data-tab="ip1-ed">
+    <div class="dss-ep-head">
+        <div class="dss-title-card"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0034" alt="転んでも立って走り出せ！ タイトルカード" loading="lazy"></div>
+        <div class="dss-ep-meta">
+            <div class="dss-ep-eyebrow">エンディング</div>
+            <h3 class="dss-ep-title">転んでも立って走り出せ！</h3>
+            <p class="dss-ep-summary">様々な苦境を乗り越え、秘境温泉へと辿りついた 菜々と心。温泉でこれまでの疲れを癒すふたりは 秘境村の本当の姿を目撃する。あわや儀式の供物に なりかけるも、Pの機転で無事に生還。一息ついた のもつかの間、舞い込んできたホラー映画撮影へ、 転んでもただでは起きないと、臨むのだった。</p>
+            <button class="dss-play" data-start="454">▶ この話からYouTubeで再生</button>
+        </div>
+    </div>
+    <div class="dss-lines">
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0035" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">あ゛～……よっこい……しゅーがはっ☆ ごぐら゛ぐだわ～……。 肩こりと腰痛がとれていく～……♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0037" alt="瑞樹のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="瑞樹">瑞樹</span><div class="line">心ちゃん、菜々ちゃん、お疲れさま……あら。これって前に言ってた温泉ロケの映像かしら？ ロケ中にメッセージもくれたわよね。メッセージは文字化けしてて読めなくなってたから、ちょっと心配してたのよ。でも……ふふっ、とってもリラックスした表情だわ。いいロケだったみたいね♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0039" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">うん、とってもスウィーティーな温泉だったわ。このときはまだ、な……？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0040" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はい……このときは、まだ……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0042" alt="芳乃のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="芳乃">芳乃</span><div class="line">誘いの声に導かれて来てみればー。 おやー？映像に映っている、この温泉はー……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0043" alt="小梅のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="小梅">小梅</span><div class="line">…………。桜……綺麗な色だね……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0046" alt="瑞樹のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="瑞樹">瑞樹</span><div class="line">山奥にある温泉って言ってたものね。きっとその山固有の桜なのよ。</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">聞いたんです！ 供物は17歳の娘が望ましい、活きがいいからって……。はぁとちゃんもきっと、ナナと同じ17歳だと思われてます！</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">だからここでナナが……ナナが本当のことを言えば……！</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">本当のこと！？ んなもん知るか！ 『しゅがしゅが☆み～ん』は夢と希望のアイドルだろ！？ 本当のことで、夢と希望を壊しちゃノンスウィーティー！</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">パイセンが永遠の17歳であろうとなかろうと、みんなで脱出するんだよ！ ここを！</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はぁとちゃん……！ あっ、上！ 上を見てください！</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">いねぇと思ったら、助け呼んできてくれたとかマジかよ、プロデューサー……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0047" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ラスト一発！ド根性見せるぞパイセン！</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">はいっ！ しゅがしゅが～？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0048" alt="菜々・心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々・心">菜々・心</span><div class="line">み～ん！！</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="ナレーション">ナレーション</span><div class="line">スペシャル番組 しゅがしゅが☆み～ん探検シリーズ 謎の村に閉じ込められたふたり、脱出なるか！？（ドッキリ）</div></div></div></div>
+        <div class="ev-dialog-row no-shot"><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="ナレーション">ナレーション</span><div class="line">～完～</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0049" alt="瑞樹のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="瑞樹">瑞樹</span><div class="line">えっと……ふたりとも、大変だったのね……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0051" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">それはもう……！よくわからない儀式の準備が進められてて、そこに用意されてた籠のサイズがちょうどぴったりナナたちが入れるくらいだったってわかったときは、すっごく怖くて……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0052" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">ま、演出過剰だったから途中でドッキリって気づけたわ。ヘリに乗ってたスタッフさんに問い詰めても、はっきりとは言わんかったけど。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0053" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">でもでも、ただのドッキリなだけあって、芳乃ちゃんも小梅ちゃんも、映像見てて変な感じはしなかったっしょ？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0054" alt="芳乃・小梅のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="芳乃・小梅">芳乃・小梅</span><div class="line">…………。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0056" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">お願い、なんか言って☆</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0057" alt="瑞樹のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="瑞樹">瑞樹</span><div class="line">そ、そういえば、スタッフの人ははっきり言ってくれなかったってことだけど、どんな感じだったの？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0059" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">えっと……行く予定とは違うところにいたとか、村でずっと待ってたけど来なかったとか、とにかく要領を得ない感じでしたね。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0060" alt="芳乃のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="芳乃">芳乃</span><div class="line">なるほどー。やはり、彼の地に迷いこんでしまった、と……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0062" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">え？ なに？ どゆこと？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0063" alt="芳乃のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="芳乃">芳乃</span><div class="line">いえいえー、おふたりが無事に帰ってこられたことが、何よりでしてー。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0064" alt="小梅のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="小梅">小梅</span><div class="line">いろんな人が……ふたりに感謝してるよ……。ほら、その子も……。やっとあの場所から出られたって……。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0066" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">その子って、うしろに誰もいないんですけど！？ まだドッキリが続いてるんですか！？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0068" alt="菜々たちが、楽しそう？に話している……" loading="lazy"></div><div class="ev-text"><div class="dss-stage-text">菜々たちが、楽しそう？に話している……</div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0069" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">ブ、ブブブブ、プロデューサーさん！ ドッキリってまだ続いてます！？ やっぱり！ 思いっきり騙されたあとですから、もう通じませんよ！ ……あれ？ でも、カメラがどこにもありませんよね。どこに隠してあるんですか？</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0070" alt="Pのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="P">P</span><div class="line">うん 何それ 知らない</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0071" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">え、プロデューサー、マジ顔じゃん……。そうだ！地図出して地図！はぁとたちが登った山、芳乃ちゃんたちに確認してもらうし！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0072" alt="Pのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="P">P</span><div class="line">そんなことより、ふたりに次のお仕事が来てるよ。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0073" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">……まさか、また体を張ります！？ いえ、お仕事は嬉しいんですけど……ちょーっとだけでいいから、体に優しくできたらなって……！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0074" alt="Pのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="P">P</span><div class="line">大丈夫。今度は映画のお仕事だから。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0076" alt="菜々・心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々・心">菜々・心</span><div class="line">「劇場版 恐怖の地シリーズ C県T村を訪れた 女たち」。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0078" alt="小梅のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="小梅">小梅</span><div class="line">わぁ……楽しそう……♪</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0080" alt="菜々・心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々・心">菜々・心</span><div class="line">…………や、やってやりますよ！ …………やってやろうじゃん！</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0081" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">転んでもただでは起き上がらない。</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0082" alt="菜々のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々">菜々</span><div class="line">それがナナたち、</div></div></div></div>
+        <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/commu_ev/0083" alt="菜々・心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="菜々・心">菜々・心</span><div class="line">『しゅがしゅが☆み～ん』！！</div></div></div></div>
+    </div>
+    <details class="dss-log">
+        <summary>コミュログ画像を表示（ED）</summary>
+        <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Event/IdolProduce1st/log/ED" alt="ED コミュログ（ED）" loading="lazy">
+    </details>
+    </div>
+</section>
+<!-- IP1-COMMU-END -->
 
     <div class="related-foot">
         <div class="related">
@@ -159,6 +1023,28 @@
 
 </main>
 
+<div class="sh-lightbox" id="sh-lightbox">
+    <span class="sh-lightbox-close" id="sh-lightbox-close">×</span>
+    <img class="sh-lightbox-img" id="sh-lightbox-img" src="" alt="">
+</div>
+
 <script src="components/common.js"></script>
+<script src="components/idol-badge.js"></script>
+<script>
+(function () {
+    'use strict';
+    var VIDEO_ID = 'OqdhhFIaXt0';
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.dss-play').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var t = parseInt(btn.dataset.start, 10) || 0;
+                var player = document.getElementById('ip1-player');
+                player.src = 'https://www.youtube.com/embed/' + VIDEO_ID + '?start=' + t + '&autoplay=1';
+                document.getElementById('ip1-movie').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        });
+    });
+})();
+</script>
 </body>
 </html>

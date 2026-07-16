@@ -1,0 +1,60 @@
+- generic [ref=f11e2]:
+  - generic [ref=f11e3]:
+    - heading "でれぽ タイムライン" [level=1] [ref=f11e4]:
+      - generic [ref=f11e5]: でれぽ
+      - text: タイムライン
+    - paragraph [ref=f11e6]: デレステの「でれぽ」投稿を書き起こしとあわせてまとめています。（モック / サンプル4件）
+  - generic [ref=f11e7]:
+    - article [ref=f11e8]:
+      - generic [ref=f11e9]:
+        - generic [ref=f11e10]:
+          - img "高森藍子" [ref=f11e11]
+          - generic [ref=f11e12]:
+            - generic [ref=f11e13]: 高森藍子
+            - generic [ref=f11e14]: 2024-03-30 15:12
+          - generic [ref=f11e15]:
+            - generic [ref=f11e16]: ★
+            - text: "1757"
+        - generic [ref=f11e17]: "私たちのメモリアルです♪ #フォトアルバム"
+        - link "📷 元の公式スクリーンショットを見る" [ref=f11e19] [cursor=pointer]:
+          - /url: img/src0.jpeg
+      - img "フォトアルバム" [ref=f11e21]
+    - article [ref=f11e22]:
+      - generic [ref=f11e23]:
+        - generic [ref=f11e24]:
+          - img "小早川紗枝" [ref=f11e25]
+          - generic [ref=f11e26]:
+            - generic [ref=f11e27]: 小早川紗枝
+            - generic [ref=f11e28]: 2024-03-30 15:17
+          - generic [ref=f11e29]:
+            - generic [ref=f11e30]: ★
+            - text: "799"
+        - generic [ref=f11e31]: 春夏秋冬。いろんなことがありましたなあ。
+        - link "📷 元の公式スクリーンショットを見る" [ref=f11e33] [cursor=pointer]:
+          - /url: img/src0.jpeg
+    - article [ref=f11e34]:
+      - generic [ref=f11e35]:
+        - generic [ref=f11e36]:
+          - img "若林智香" [ref=f11e37]
+          - generic [ref=f11e38]:
+            - generic [ref=f11e39]: 若林智香
+            - generic [ref=f11e40]: 2024-03-30 15:19
+          - generic [ref=f11e41]:
+            - generic [ref=f11e42]: ★
+            - text: "768"
+        - generic [ref=f11e43]: とっても朝早かったりっ☆
+        - link "📷 元の公式スクリーンショットを見る" [ref=f11e45] [cursor=pointer]:
+          - /url: img/src0.jpeg
+    - article [ref=f11e46]:
+      - generic [ref=f11e47]:
+        - generic [ref=f11e48]:
+          - img "松本沙理奈" [ref=f11e49]
+          - generic [ref=f11e50]:
+            - generic [ref=f11e51]: 松本沙理奈
+            - generic [ref=f11e52]: 2024-03-30 15:21
+          - generic [ref=f11e53]:
+            - generic [ref=f11e54]: ★
+            - text: "721"
+        - generic [ref=f11e55]: 夜のお楽しみだったりね……♪
+        - link "📷 元の公式スクリーンショットを見る" [ref=f11e57] [cursor=pointer]:
+          - /url: img/src0.jpeg

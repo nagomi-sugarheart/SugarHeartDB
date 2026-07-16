@@ -1,0 +1,422 @@
+{
+ "commu": "永遠に輝きを放つ乙女たち☆",
+ "page": "Mobamas/CinderellaHistory.html",
+ "source_frames": "永遠に輝きを放つ乙女たち☆_202607041009",
+ "cloudinary_base": "Mobamas/CinderellaHistory/EienNiKagayaki",
+ "entries": [
+  {
+   "type": "stage",
+   "speaker": "",
+   "text": "事務所",
+   "frame": "0001_dialogue_1.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "おはようございまーす…… って、こんな早い時間に事務所にいるのは、ちひろさんやプロデューサーくんくらいか。",
+   "frame": "0002_dialogue_5.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "(………………ううん、誰かがいる気配がするわ……)",
+   "frame": "0003_dialogue_7.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "(黄色とピンクの、なんだかすごい子がいる……！)",
+   "frame": "0004_dialogue_10.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "(気づいた……！？っていうか、すっごい見てる。うわっ、近づいてきた！！)",
+   "frame": "0005_dialogue_16.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "……せんぱい？",
+   "frame": "0006_dialogue_21.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "？？？",
+   "text": "あー……えっと、 アイドルの人なのかなーって！ それとも、ギョーカイの人？",
+   "frame": "0007_dialogue_24.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "私はこの事務所のアイドルよ。 こんにちは。それで貴方は…… あっ、もしかして アイドル志望の子かしら？",
+   "frame": "0008_dialogue_27.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "可愛い衣装を着てるし、オーディションかな？ 会場は、事務所じゃなくて別の場所なんだけど……。",
+   "frame": "0009_dialogue_30.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "道わかる？　教えよっか？",
+   "frame": "0010_dialogue_33.0s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "？？？",
+   "text": "ノンノンノ〜ン！ お姉さんってば、ノンスウィーティー☆可愛いってのは認めるけど〜、これは、はぁとの私服だぞ♪",
+   "frame": "0011_dialogue_37.0s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "そ・れ・に…はぁとはもう、スカウトされ済みの合格済み！期待の超新星が、みんなの前に現れるまで、秒読みなわけ☆",
+   "frame": "0012_dialogue_41.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "私服……？ えっ、貴方まさか、その服着て街歩いてるの！？ えっ？ 大丈夫？",
+   "frame": "0013_dialogue_45.0s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "おっ、そこにツッコむとは、センパイってば常識枠～♪",
+   "frame": "0014_dialogue_47.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "でもまた、ノンノン！ノンスウィーティー☆",
+   "frame": "0015_dialogue_50.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "はぁとは、着たい服を仕立てて着てるだけ！ 誰にも迷惑かけてないぞ☆ だから大丈夫！",
+   "frame": "0016_dialogue_53.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "あ、手作りなのね、その服。",
+   "frame": "0017_dialogue_55.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "そそっ、可愛いっしょ☆ まっ、TPOに合わせて 色々着るけどな！ てへっ♪",
+   "frame": "0018_dialogue_58.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "そうなんだ。………………あははっ！事務所にまた個性的な子が増えたのね！",
+   "frame": "0019_dialogue_62.0s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "……って、あー！ それ！ センパイ！ それ！",
+   "frame": "0020_dialogue_64.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "ん？ どれ？",
+   "frame": "0021_dialogue_66.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "センパイが、持ってる、そのまぁるーいもの！ なぁ～に？",
+   "frame": "0022_dialogue_70.0s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "ああ、これ。おやきよ。実家からいっぱい送られてきたから、差し入れにね。",
+   "frame": "0023_dialogue_76.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "事務所の冷蔵庫に入れておいたら、きっと誰か食べると思うし。",
+   "frame": "0024_dialogue_78.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "はいはいはーい！ はぁとが食べまーす！ 長野名物のお・や・き☆",
+   "frame": "0025_dialogue_83.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "あら、長野の名物だってよくわかったわね。",
+   "frame": "0026_dialogue_85.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "ふるさとのソウルフードだし？ はぁとの心に残る味だし！",
+   "frame": "0027_dialogue_89.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "貴方も長野出身なの？ 奇遇ね！ 今度、地元のあるある話に花を咲かせましょうか♪",
+   "frame": "0028_dialogue_92.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "うんうん、咲かせるぅー☆ っつーか、長野から東京へ、そしてアイドルへ！ とかお互いロマンありすぎだろ☆",
+   "frame": "0029_dialogue_96.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "ねぇなんでなんで？ なんでセンパイはアイドルに なったの？",
+   "frame": "0030_dialogue_99.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "私？ そうね……最初は熱心にスカウトされたから、かな。退屈じゃなければいいやって感じだったの。",
+   "frame": "0031_dialogue_104.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "でも、今はとっても楽しくアイドルやらせてもらってる♪ 貴方は？ どうしてアイドルになろうと思ったの？",
+   "frame": "0032_dialogue_108.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "はぁとはね、マジだから！ マジでみんなに愛されたいし、 マジでかわいくなりたいっ！ 全部マジなの。わかる？",
+   "frame": "0033_dialogue_112.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "まぁ……なんとなく？",
+   "frame": "0034_dialogue_114.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "おけおけ☆ そんなんで、はぁとはアイドル一年生！だけど、歳が歳なんで☆ ガチで本気出してくから♪",
+   "frame": "0035_dialogue_118.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "ふふっ、そうね。本気って大切だものね。",
+   "frame": "0036_dialogue_121.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "でも貴方、そんなに焦る必要ないんじゃない？見たところ若そうだし、そんな必死にならな……",
+   "frame": "0037_dialogue_124.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "ちょっ、今なんて！？ もっかい言って！ 心のボイスレコーダーに永久保存すっから！！",
+   "frame": "0038_dialogue_128.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "…………待って。貴方、いったい何歳なの？",
+   "frame": "0039_dialogue_131.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "やぁん！ 歳は聞いちゃらーめ☆ でもセンパイとはおやきの仲だし？ ホントのはぁとを教えてあ・げ・る♪",
+   "frame": "0040_dialogue_135.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "はぁと",
+   "text": "アナタのはぁとをシュガシュガスウィート☆佐藤心こと、しゅがーはぁと26歳☆よろしくねぇっ♪",
+   "frame": "0041_dialogue_139.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "はい次〜！ センパイの番☆",
+   "frame": "0042_dialogue_142.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "貴方の心にビッグウェーブ。沢田麻理菜こと沢田麻理菜、26歳よ。よろしくね！",
+   "frame": "0043_dialogue_146.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ナイスノリ！ って名前、まんまかよ☆",
+   "frame": "0044_dialogue_148.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "まあ、そこはいいじゃない♪ ノリは完璧だったでしょ？",
+   "frame": "0045_dialogue_151.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "まぁね～☆ ってか同郷で同じ年って マジか！ びびるわー。",
+   "frame": "0047_dialogue_158.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "それは私の台詞ね。だって、正直…………",
+   "frame": "0048_dialogue_160.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "23歳くらいかと思ってたもの。",
+   "frame": "0049_dialogue_163.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ちょっ！ 何リアルな数字出してたんだよ☆ そこは16歳とか言っとけ！",
+   "frame": "0050_dialogue_168.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "んー、16歳には見えないかなー♪",
+   "frame": "0051_dialogue_171.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "言ったな～！？ このこの～☆",
+   "frame": "0052_dialogue_174.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "あははっ、私たち気が合うみたいね！",
+   "frame": "0053_dialogue_177.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "うんうん！ ナガノメイトの運命を 感じるぞっ♪",
+   "frame": "0054_dialogue_181.0s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "ナガノメイトかぁ～。 まぁもしかしたら、この先 二人でユニットを組むことも あるかもしれないけど。",
+   "frame": "0055_dialogue_184.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "おっ、それいいじゃん！ んじゃユニット名は『永遠に輝きを放つ乙女たち』で決定〜☆",
+   "frame": "0056_dialogue_188.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "乙女はちょっと無理があるんじゃない？",
+   "frame": "0057_dialogue_191.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "無理じゃなーいっ☆",
+   "frame": "0058_dialogue_193.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "ていうか、 ユニット名『ナガノメイト』 じゃないんだ？",
+   "frame": "0059_dialogue_195.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "それは愛称だから♪ とりま、もーっと親睦深めて、 二人のすんごい乙女ヂカラを ぶつけちゃろー！ 物理で☆",
+   "frame": "0060_dialogue_200.6s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "それ絶対痛いヤツでしょ。",
+   "frame": "0061_dialogue_203.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "おい、誰が痛いって？ 全っ然痛くないし☆",
+   "frame": "0062_dialogue_205.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ま、そんなとこで、親睦の第一歩を踏みまーす！ はぁとは麻理菜ちゃんのこと、マリナルって呼ぶね☆",
+   "frame": "0063_dialogue_209.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "沢田麻理菜だから、マ・リ・ナ・ル♪ 可愛いだろー☆",
+   "frame": "0064_dialogue_213.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "いいわよ。 好きなように呼んでね、心。",
+   "frame": "0065_dialogue_215.0s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "ええ、心♪",
+   "frame": "0066_dialogue_219.2s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ああん、いけずぅ……。 マリナルったら、マリナルぅ！",
+   "frame": "0067_dialogue_222.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "聞こえてるわよ、心。",
+   "frame": "0068_dialogue_225.4s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "麻理菜",
+   "text": "はいはい。し～ん☆",
+   "frame": "0069_dialogue_231.8s.jpg"
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "おいっ！　そこははぁとって呼べよ☆",
+   "frame": "0070_dialogue_235.2s.jpg"
+  }
+ ]
+}

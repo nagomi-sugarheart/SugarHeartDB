@@ -6,3 +6,9 @@
 .netlify
 __pycache__/
 CLAUDE.local.md
+
+# でれぽ 作業用の切り出し画像（Cloudinaryへ上げるためコミット不要）
+scripts/derepo_img/
+scripts/derepo_tmp/
+
+scripts/derepo_slices/

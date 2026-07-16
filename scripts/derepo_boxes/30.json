@@ -1,0 +1,28 @@
+{
+ "image": 30,
+ "size": [
+  1206,
+  647
+ ],
+ "posts": [
+  {
+   "i": 0,
+   "parent": true,
+   "icon_top": 38,
+   "photo": null,
+   "stamp": null
+  },
+  {
+   "i": 1,
+   "parent": false,
+   "icon_top": 320,
+   "photo": null,
+   "stamp": [
+    164,
+    376,
+    340,
+    565
+   ]
+  }
+ ]
+}

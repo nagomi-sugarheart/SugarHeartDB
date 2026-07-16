@@ -1,0 +1,974 @@
+{
+ "key": "arisu",
+ "title": "Be honest with yourself",
+ "summary": "フェスでソロ曲を披露することになったありす。 薫や、仁奈、心、夕美らとレッスンを重ねていく。 LIVEが近づいたある日、PからLIVEへ招待したい人を 尋ねられたありす。メンバーが親族を招待するなか、 ありすは父母に話を伝えることすらできていた。 寂しくなんかない。そう言い張るありすの本心は…。",
+ "title_frame": "0001_dialogue_5.2s.jpg",
+ "entries": [
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "次のLIVEフェスで、私のソロ曲を……ですか？",
+   "frame": "0002_dialogue_12.6s.jpg",
+   "t": 12.6
+  },
+  {
+   "type": "line",
+   "speaker": "薫",
+   "text": "わーっ！ありすちゃん、おめでとーっ！",
+   "frame": "0004_dialogue_21.0s.jpg",
+   "t": 21.0
+  },
+  {
+   "type": "line",
+   "speaker": "仁奈",
+   "text": "おめでとーごぜーます！",
+   "frame": "0005_dialogue_24.4s.jpg",
+   "t": 24.4
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……ありがとうございます。 おふたりとも、フェス、一緒に頑張りましょう。 それと、私のサポートも……よろしくお願いします。",
+   "frame": "0006_dialogue_39.4s.jpg",
+   "t": 39.4
+  },
+  {
+   "type": "line",
+   "speaker": "薫",
+   "text": "はーいっ！ いーっぱい笑ってー！",
+   "frame": "0007_dialogue_45.6s.jpg",
+   "t": 45.6
+  },
+  {
+   "type": "line",
+   "speaker": "仁奈",
+   "text": "いーっぱい踊ろー！ 『いんふぁいと』の気持ちになるですよー！",
+   "frame": "0008_dialogue_54.2s.jpg",
+   "t": 54.2
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "『in fact』です、仁奈ちゃん。あまり笑顔で踊るような曲調ではないのですが……。それはおいおい。レッスンで合わせていきましょう。",
+   "frame": "0009_dialogue_67.8s.jpg",
+   "t": 67.8
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "忙しくなるぞ",
+   "frame": "0010_dialogue_70.0s.jpg",
+   "t": 70.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……望むところですよ。私、やりきってみせます。最高のステージにしましょう。",
+   "frame": "0011_dialogue_79.2s.jpg",
+   "t": 79.2
+  },
+  {
+   "type": "line",
+   "speaker": "薫・仁奈",
+   "text": "おーっ！ おーっ！",
+   "frame": "0012_dialogue_82.6s.jpg",
+   "t": 82.6
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "ありすの自宅",
+   "frame": "0013_dialogue_87.4s.jpg",
+   "t": 87.4
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "ただいま。………………ふう。",
+   "frame": "0014_dialogue_92.2s.jpg",
+   "t": 92.2
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "ん、メール……お母さん、今日も遅いんだ。............。ご飯食べて、寝なくちゃ……。",
+   "frame": "0016_dialogue_106.4s.jpg",
+   "t": 106.4
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "翌日",
+   "frame": "0017_dialogue_111.2s.jpg",
+   "t": 111.2
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "ありすちゃん、お疲れさま！ 今日から、私もレッスンに参加するよ。 よろしくね！",
+   "frame": "0018_dialogue_119.0s.jpg",
+   "t": 119.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "夕美さん。よろしくお願いします。また、ご一緒できて、嬉しいです。",
+   "frame": "0019_dialogue_127.2s.jpg",
+   "t": 127.2
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "私もだよっ！ 感動のお花がいーっぱい咲くような、 そんなステージ、目指そうね！",
+   "frame": "0020_dialogue_135.8s.jpg",
+   "t": 135.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "おっつスウィーティー☆ ありすちゃん。 お仕事でちゃんと絡むのは初めてかな？ はぁとだぞ♪ よろスウィーティー☆",
+   "frame": "0022_dialogue_149.4s.jpg",
+   "t": 149.4
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……よろしくお願いします。佐藤さん。",
+   "frame": "0023_dialogue_156.8s.jpg",
+   "t": 156.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "あー。はぁとのことは、はぁとちゃん☆ って、呼んでくれていーんだぞ☆ だぞ☆",
+   "frame": "0024_dialogue_165.0s.jpg",
+   "t": 165.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "えっと……いえ。大丈夫です。",
+   "frame": "0025_dialogue_170.8s.jpg",
+   "t": 170.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "もー！そんなカワイゲないこと言ってたら、こっちも橘って呼ぶぞー☆",
+   "frame": "0026_dialogue_179.2s.jpg",
+   "t": 179.2
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "どうぞ。問題ありません。橘です。よろしくお願いします。佐藤さん。",
+   "frame": "0027_dialogue_187.8s.jpg",
+   "t": 187.8
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ぐぬぬ……。ちょっとプロデューサー、どういうシツケしてんの！？オトナに対する礼儀、ビシっと教えてやってー！",
+   "frame": "0028_dialogue_200.0s.jpg",
+   "t": 200.0
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "静かに、佐藤",
+   "frame": "0029_dialogue_202.4s.jpg",
+   "t": 202.4
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "さ、レッスン始めましょうか。",
+   "frame": "0030_dialogue_207.0s.jpg",
+   "t": 207.0
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "おいーーーっ！？！？",
+   "frame": "0031_dialogue_210.4s.jpg",
+   "t": 210.4
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "あははっ！初めましてだけど、息は合ってる……のかな？",
+   "frame": "0032_dialogue_219.0s.jpg",
+   "t": 219.0
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "事務所",
+   "frame": "0033_dialogue_226.0s.jpg",
+   "t": 226.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……プロデューサーさん。レッスン、先ほど終わりました。",
+   "frame": "0034_dialogue_233.0s.jpg",
+   "t": 233.0
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "調子はどう？",
+   "frame": "0035_dialogue_234.4s.jpg",
+   "t": 234.4
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "はい、順調です。振りも入りましたし、歌も……まだ途上ですけど、自分なりに。……それで、お話とは？",
+   "frame": "0036_dialogue_248.8s.jpg",
+   "t": 248.8
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "あ……ええと。どうでしょう、確認してみないと、即答はできません。",
+   "frame": "0037_dialogue_263.2s.jpg",
+   "t": 263.2
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "じゃあ、確認よろしく。",
+   "frame": "0038_dialogue_265.8s.jpg",
+   "t": 265.8
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "…………私、お仕事もらえたんだよ。 今度久しぶりに、ソロで大きなステージで歌うの。 だから…………。",
+   "frame": "0039_dialogue_295.0s.jpg",
+   "t": 295.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……はぁ。ご飯食べて寝なくちゃ。",
+   "frame": "0040_dialogue_302.4s.jpg",
+   "t": 302.4
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "レッスンルーム",
+   "frame": "0041_dialogue_308.6s.jpg",
+   "t": 308.6
+  },
+  {
+   "type": "line",
+   "speaker": "薫",
+   "text": "ねぇねぇ、夕美ちゃんは招待する人、決めたーっ？",
+   "frame": "0042_dialogue_314.2s.jpg",
+   "t": 314.2
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "うん！家族と大学のお友だちの分をお願いしたよ。薫ちゃんは？",
+   "frame": "0043_dialogue_320.6s.jpg",
+   "t": 320.6
+  },
+  {
+   "type": "line",
+   "speaker": "薫",
+   "text": "かおるもねー、パパとママの分！いっぱい応援してくるって！えへへ！",
+   "frame": "0044_dialogue_328.6s.jpg",
+   "t": 328.6
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "そうなんだっ。 じゃあ、お互いに、良いところを見せないとね！",
+   "frame": "0045_dialogue_335.0s.jpg",
+   "t": 335.0
+  },
+  {
+   "type": "line",
+   "speaker": "薫",
+   "text": "うん！だから、今日もいっぱいレッスン頑張っちゃった！……あっ。ありすちゃんはー！？決めた？招待する人！",
+   "frame": "0046_dialogue_346.6s.jpg",
+   "t": 346.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "あ、えっと……まだ確認中なので、決まっていません。 …………お先に失礼します。",
+   "frame": "0047_dialogue_361.0s.jpg",
+   "t": 361.0
+  },
+  {
+   "type": "line",
+   "speaker": "薫",
+   "text": "あっ……うんっ！ばいばーいっ！……ねえ、夕美ちゃん。ありすちゃん、怒ってた？かおる、なにか悪いことしちゃった……？",
+   "frame": "0049_dialogue_380.2s.jpg",
+   "t": 380.2
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "……大丈夫！ 薫ちゃんが悪いんじゃないからっ。 ねっ、心さん！",
+   "frame": "0050_dialogue_388.2s.jpg",
+   "t": 388.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "えっ、そこでコッチに振るー！？ まーなんだその、世間話も話題は選べよ！ってね☆ でも子どもだし。しゃーない！ドンマイ☆",
+   "frame": "0051_dialogue_404.0s.jpg",
+   "t": 404.0
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "心さん……！",
+   "frame": "0052_dialogue_408.2s.jpg",
+   "t": 408.2
+  },
+  {
+   "type": "line",
+   "speaker": "仁奈",
+   "text": "どうかしゃがりましたか？ ありすちゃん、走っていっちまったですよ。",
+   "frame": "0054_dialogue_419.4s.jpg",
+   "t": 419.4
+  },
+  {
+   "type": "line",
+   "speaker": "薫",
+   "text": "わかんないの。えっと、かおるがね……。",
+   "frame": "0055_dialogue_425.4s.jpg",
+   "t": 425.4
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "薫ちゃん、いったんストップ。きっと、急いでただけだよ。",
+   "frame": "0056_dialogue_431.6s.jpg",
+   "t": 431.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "あー、ちびっこふたり！ はぁとが良いものをア・ゲ・ル☆ ほらっ☆ あまあまスウィーティー飴ちゃんだぞぉ☆",
+   "frame": "0057_dialogue_446.0s.jpg",
+   "t": 446.0
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "あっ、じゃあ私もっ！ おやつにぴったり、ひまわりの種ーっ！",
+   "frame": "0058_dialogue_454.4s.jpg",
+   "t": 454.4
+  },
+  {
+   "type": "line",
+   "speaker": "仁奈",
+   "text": "ハムスターの気持ちに、なるですよ……！",
+   "frame": "0059_dialogue_468.0s.jpg",
+   "t": 468.0
+  },
+  {
+   "type": "line",
+   "speaker": "薫",
+   "text": "ありがとー！",
+   "frame": "0060_dialogue_471.0s.jpg",
+   "t": 471.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "…………。メールで……？ でも……忙しいから……。",
+   "frame": "0061_dialogue_483.8s.jpg",
+   "t": 483.8
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "事務所",
+   "frame": "0062_dialogue_489.0s.jpg",
+   "t": 489.0
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "あの、お疲れさまです、プロデューサーさん。",
+   "frame": "0063_dialogue_495.2s.jpg",
+   "t": 495.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "おつかれーっす☆ ね。ちょっと、いい？",
+   "frame": "0064_dialogue_500.8s.jpg",
+   "t": 500.8
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "もちろん",
+   "frame": "0065_dialogue_502.4s.jpg",
+   "t": 502.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "ありすちゃんのことだけどさ。……何か、あるんでしょ？ 家族的なやつ？ 今日、ちょーっとモヤってしてたから。いちおー、報告ね。",
+   "frame": "0066_dialogue_515.6s.jpg",
+   "t": 515.6
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "大丈夫だった？",
+   "frame": "0067_dialogue_517.8s.jpg",
+   "t": 517.8
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "なんとか、その場は。 でも、ありすちゃん、暗い顔のまま帰っちゃって……。",
+   "frame": "0068_dialogue_525.2s.jpg",
+   "t": 525.2
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "あの子……っていうか、あの子たち。まだ子どもだからさ、ちゃんと面倒みてやってよ？ ……たのむぞ☆ プロデューサー！",
+   "frame": "0069_dialogue_536.6s.jpg",
+   "t": 536.6
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "ふたりとも ありがとう",
+   "frame": "0070_dialogue_538.0s.jpg",
+   "t": 538.0
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "よせって！照れるぞ☆ あ、じゃあじゃあ、ごほうびとして、 はぁとにスウィーティーなボーナスを……。",
+   "frame": "0071_dialogue_548.2s.jpg",
+   "t": 548.2
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "静かに、佐藤",
+   "frame": "0072_dialogue_549.6s.jpg",
+   "t": 549.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "おいーーーっ！！ テンプレ回答キメてんじゃねーぞ☆",
+   "frame": "0073_dialogue_555.0s.jpg",
+   "t": 555.0
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "翌日",
+   "frame": "0074_dialogue_560.2s.jpg",
+   "t": 560.2
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "事務所まで来てもらうよう、ありすの母親と連絡をとった事を伝えた……",
+   "frame": "0075_dialogue_571.0s.jpg",
+   "t": 571.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "え……それで、来てくれるんですか? だって、忙しいのに……来るはずがありません。",
+   "frame": "0076_dialogue_585.4s.jpg",
+   "t": 585.4
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "来てくれるよ よかったね",
+   "frame": "0077_dialogue_587.8s.jpg",
+   "t": 587.8
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "べ、別に何も良いことないです。 だいたい、親を呼び出されるなんて…… 私、何も悪い事はしていないと思いますけど。",
+   "frame": "0078_dialogue_600.4s.jpg",
+   "t": 600.4
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "あ……それは、はい。すみません。まだ、予定を聞けてなくって……。",
+   "frame": "0079_dialogue_616.4s.jpg",
+   "t": 616.4
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "一緒に聞いてみよう",
+   "frame": "0080_dialogue_618.8s.jpg",
+   "t": 618.8
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "............。 プロデューサーさん、母から何か連絡は……？",
+   "frame": "0081_dialogue_636.0s.jpg",
+   "t": 636.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "そう、ですか……。 まぁ、しかたありません。 母は本当に優秀な人で、仕事で忙しいんです。本当に……。",
+   "frame": "0082_dialogue_655.0s.jpg",
+   "t": 655.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "…………。そろそろレッスンの時間ですね。…………面談はリスケしましょう。",
+   "frame": "0083_dialogue_671.6s.jpg",
+   "t": 671.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "いえ。母の事で、プロデューサーさんの大切なお時間を、すみません。お手数おかけしました。……失礼します。",
+   "frame": "0084_dialogue_686.8s.jpg",
+   "t": 686.8
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "レッスンルーム",
+   "frame": "0085_dialogue_692.6s.jpg",
+   "t": 692.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……おはようございます。",
+   "frame": "0086_dialogue_698.4s.jpg",
+   "t": 698.4
+  },
+  {
+   "type": "line",
+   "speaker": "薫",
+   "text": "おはようございまーっ！",
+   "frame": "0087_dialogue_704.4s.jpg",
+   "t": 704.4
+  },
+  {
+   "type": "line",
+   "speaker": "仁奈",
+   "text": "おはよーこぜーまーすっ！ ありすちゃん、元気でやがりましたか？",
+   "frame": "0088_dialogue_712.2s.jpg",
+   "t": 712.2
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "え……？",
+   "frame": "0089_dialogue_715.6s.jpg",
+   "t": 715.6
+  },
+  {
+   "type": "line",
+   "speaker": "薫",
+   "text": "こないだ帰るとき、ありすちゃん、怒ってたみたいだったから……。ごめんね？きっと、かおるが怒らせちゃったんだよね。",
+   "frame": "0090_dialogue_728.6s.jpg",
+   "t": 728.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "............。",
+   "frame": "0091_dialogue_731.4s.jpg",
+   "t": 731.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "あーりーすちゃん！おっつスウィーティー☆ ……プロデューサーの呼び出し、どうだった？",
+   "frame": "0093_dialogue_742.2s.jpg",
+   "t": 742.2
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "えっ。 なんで、それを……？",
+   "frame": "0094_dialogue_747.2s.jpg",
+   "t": 747.2
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "こないだね、様子がいつもと違ってたから、私たち、心配していたの。それで、プロデューサーさんに相談して……。",
+   "frame": "0095_dialogue_759.4s.jpg",
+   "t": 759.4
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "............。",
+   "frame": "0096_dialogue_763.0s.jpg",
+   "t": 763.0
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "ありすちゃん？",
+   "frame": "0097_dialogue_766.8s.jpg",
+   "t": 766.8
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……そんなこと……私、頼んでません。",
+   "frame": "0098_dialogue_775.4s.jpg",
+   "t": 775.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "……おいおーい☆ 寂しいんだろー？ 顔に出てるってば！ そんな顔しといて「頼んでない」はないだろーが☆",
+   "frame": "0100_dialogue_793.4s.jpg",
+   "t": 793.4
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……！ 本当に寂しくありません……。 私を寂しい子扱いするのは、やめてくださいっ！",
+   "frame": "0101_dialogue_804.6s.jpg",
+   "t": 804.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "しかも、それで親を呼び出すなんて…… そんなこと、誰にも頼んでません。",
+   "frame": "0102_dialogue_814.2s.jpg",
+   "t": 814.2
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "でも……。ご両親にLIVEへ来てくれるか聞けないくらい、ちゃんとお話できていないんだよね？",
+   "frame": "0103_dialogue_826.4s.jpg",
+   "t": 826.4
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "それは……確かに今は忙しくて、不在がちですけど、両親はふたりとも立派に仕事をしているからで……。",
+   "frame": "0104_dialogue_839.6s.jpg",
+   "t": 839.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "だから、私は気にしてません。だから……寂しくなんかありません……！",
+   "frame": "0105_dialogue_847.8s.jpg",
+   "t": 847.8
+  },
+  {
+   "type": "line",
+   "speaker": "薫",
+   "text": "ありすちゃん……。",
+   "frame": "0106_dialogue_853.8s.jpg",
+   "t": 853.8
+  },
+  {
+   "type": "line",
+   "speaker": "仁奈",
+   "text": "……ありすちゃんは、すげーですね。",
+   "frame": "0107_dialogue_859.6s.jpg",
+   "t": 859.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "え……？",
+   "frame": "0108_dialogue_863.0s.jpg",
+   "t": 863.0
+  },
+  {
+   "type": "line",
+   "speaker": "仁奈",
+   "text": "仁奈は……仁奈は……パパとママに会えないと、さみしーです。",
+   "frame": "0109_dialogue_875.4s.jpg",
+   "t": 875.4
+  },
+  {
+   "type": "line",
+   "speaker": "仁奈",
+   "text": "けど、やっぱり、ひとりになると、すげーさみしーから……。仁奈も、ありすちゃんの気持ちになりてーです。ありすちゃんみたいに、強く……。うう……。",
+   "frame": "0110_dialogue_917.0s.jpg",
+   "t": 917.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "あ……そんな……。",
+   "frame": "0111_dialogue_925.0s.jpg",
+   "t": 925.0
+  },
+  {
+   "type": "line",
+   "speaker": "薫",
+   "text": "仁奈ちゃん……。ごめんね、かおる……かおる、知らなくて……。うう～……。",
+   "frame": "0112_dialogue_938.6s.jpg",
+   "t": 938.6
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "仁奈ちゃん、薫ちゃん……おいで。",
+   "frame": "0113_dialogue_943.6s.jpg",
+   "t": 943.6
+  },
+  {
+   "type": "line",
+   "speaker": "薫・仁奈",
+   "text": "夕美ちゃん～！ 夕美おねーさん～。",
+   "frame": "0115_dialogue_949.8s.jpg",
+   "t": 949.8
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "私、私は……。",
+   "frame": "0116_dialogue_955.8s.jpg",
+   "t": 955.8
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "......",
+   "frame": "0117_dialogue_957.8s.jpg",
+   "t": 957.8
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "……自分を責めないで。子どもが親に会えなくて寂しいなんて、普通だから！寂しいときは、寂しいって口に出しても、誰も責めないから。",
+   "frame": "0118_dialogue_974.4s.jpg",
+   "t": 974.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "うん。子どもは、いーっぱい甘えていーんだぞ。子どもをこじらせると、ロクな大人にならないしさ。素直なことは、いいことでもあるんだから。",
+   "frame": "0120_dialogue_989.4s.jpg",
+   "t": 989.4
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……夕美さん、佐藤さん。",
+   "frame": "0121_dialogue_994.6s.jpg",
+   "t": 994.6
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "……はぁとちゃん、だぞ☆",
+   "frame": "0122_dialogue_1000.0s.jpg",
+   "t": 1000.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……ぐすっ。 それは結構です……。",
+   "frame": "0123_dialogue_1006.6s.jpg",
+   "t": 1006.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありすの母",
+   "text": "ありす……！",
+   "frame": "0125_dialogue_1012.0s.jpg",
+   "t": 1012.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……お母さん！ プロデューサーさんも……。",
+   "frame": "0126_dialogue_1019.8s.jpg",
+   "t": 1019.8
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "待たせてごめんな",
+   "frame": "0127_dialogue_1023.0s.jpg",
+   "t": 1023.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありすの母",
+   "text": "ごめんね。遅くなって……。",
+   "frame": "0128_dialogue_1026.6s.jpg",
+   "t": 1026.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "おっ……",
+   "frame": "0129_dialogue_1028.0s.jpg",
+   "t": 1028.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "おっ……お母さん……。ううっ、うう~~……！",
+   "frame": "0130_dialogue_1035.6s.jpg",
+   "t": 1035.6
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "フェス当日",
+   "frame": "0131_dialogue_1041.6s.jpg",
+   "t": 1041.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "あれから、母と……お母さんと話をしました。甘えていて申し訳なかったと、謝られました。ひとりで何でも出来るから、頼り切っていた、と。",
+   "frame": "0132_dialogue_1078.6s.jpg",
+   "t": 1078.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "知らなかったんですけど、大人も甘えるものなんですね……。……プロデューサーさんも、誰かに甘えたり、するんですか？",
+   "frame": "0133_dialogue_1103.8s.jpg",
+   "t": 1103.8
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "もちろん",
+   "frame": "0134_dialogue_1106.0s.jpg",
+   "t": 1106.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "そっか……じゃあ、誰でも甘えるのは仕方ない事ですね。 でも、どうするのが甘えるということか、まだわからず……。 教えていただけませんか？よければ、具体的に。",
+   "frame": "0135_dialogue_1126.2s.jpg",
+   "t": 1126.2
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "ずっと、 そばにいてほしい",
+   "frame": "0136_dialogue_1128.0s.jpg",
+   "t": 1128.0
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……！ な、何を言いだすんですか、いきなり……！ えっ、それが、甘えるということなんですか……？",
+   "frame": "0137_dialogue_1141.8s.jpg",
+   "t": 1141.8
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "次はありすの番だよ",
+   "frame": "0138_dialogue_1143.6s.jpg",
+   "t": 1143.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "そ、そんな……言えるわけないじゃないですか。バカなんですか。大バカですか。",
+   "frame": "0139_dialogue_1153.4s.jpg",
+   "t": 1153.4
+  },
+  {
+   "type": "line",
+   "speaker": "P",
+   "text": "伝えたい相手が、いるよね？",
+   "frame": "0140_dialogue_1155.6s.jpg",
+   "t": 1155.6
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "今の私の最高をお見せします。来てくれた両親に、ファンのみなさんに、それから……。プロデューサーさんに。",
+   "frame": "0141_dialogue_1185.4s.jpg",
+   "t": 1185.4
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "……ずっと、そばで見ていてくれても、いいですよ。じゃあ……行ってきます。",
+   "frame": "0142_dialogue_1199.2s.jpg",
+   "t": 1199.2
+  },
+  {
+   "type": "line",
+   "speaker": "仁奈",
+   "text": "気持ち、みんなに届けるでごぜーますよ！ 仁奈もいん……『いんふぁくと』の気持ちになるですよ！",
+   "frame": "0143_dialogue_1224.8s.jpg",
+   "t": 1224.8
+  },
+  {
+   "type": "line",
+   "speaker": "夕美",
+   "text": "うんっ。切ない曲だけど、悲しいだけじゃないから……。難しいけど、ありすちゃんの舞台に華を添えられるように！",
+   "frame": "0144_dialogue_1237.4s.jpg",
+   "t": 1237.4
+  },
+  {
+   "type": "line",
+   "speaker": "心",
+   "text": "最上級にキレーなはぁとを魅せちゃうぞ♪ ぼやっとしてると主役くっちゃうからな☆ 頑張れよ☆",
+   "frame": "0146_dialogue_1249.4s.jpg",
+   "t": 1249.4
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "薫さん、仁奈ちゃん、夕美さん、心さん。みなさんのおかげで、今回はひとつ、大人になれました。だから、みんなで一緒に届けましょうっ。よろしくお願いしますっ。",
+   "frame": "0147_dialogue_1271.0s.jpg",
+   "t": 1271.0
+  },
+  {
+   "type": "stage",
+   "speaker": "",
+   "text": "LIVE",
+   "frame": "0148_dialogue_1274.8s.jpg",
+   "t": 1274.8
+  },
+  {
+   "type": "scene",
+   "speaker": "",
+   "text": "LIVE後",
+   "frame": "0149_dialogue_1282.2s.jpg",
+   "t": 1282.2
+  },
+  {
+   "type": "line",
+   "speaker": "ありす",
+   "text": "今日はLIVE、観に来てくれてありがとう。それから……ずっと……じゃなくても、私は大丈夫だから、たまにでいいから……そばにいてね。",
+   "frame": "0150_dialogue_1317.6s.jpg",
+   "t": 1317.6
+  }
+ ]
+}

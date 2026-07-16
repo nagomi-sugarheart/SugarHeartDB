@@ -6,12 +6,17 @@
 /* ============================================================
    タブ切り替え
    - .tab-group 内でスコープして動作（グループをまたがない）
+   - .tab-group の入れ子にも対応（自分のグループ直属のタブのみ切り替える）
    - 呼び出し: onclick="switchTab(this,'タブID')"
 ============================================================ */
 function switchTab(btn, tab) {
     var g = btn.closest('.tab-group');
-    g.querySelectorAll('.tab-item').forEach(function (b) { b.classList.remove('active'); });
-    g.querySelectorAll('.tab-panel').forEach(function (c) { c.classList.remove('active'); });
+    g.querySelectorAll('.tab-item').forEach(function (b) {
+        if (b.closest('.tab-group') === g) b.classList.remove('active');
+    });
+    g.querySelectorAll('.tab-panel').forEach(function (c) {
+        if (c.closest('.tab-group') === g) c.classList.remove('active');
+    });
     btn.classList.add('active');
     g.querySelector('.tab-panel[data-tab="' + tab + '"]').classList.add('active');
 }

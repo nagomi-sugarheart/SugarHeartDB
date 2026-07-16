@@ -1,0 +1,3083 @@
+[
+ {
+  "id": "trailer",
+  "tab": "予告",
+  "title": "予告",
+  "summary": "",
+  "start_s": 0,
+  "title_frame": "0002_dialogue_24.6s.jpg",
+  "log": [
+   "Tr1",
+   "Tr2"
+  ],
+  "entries": [
+   {
+    "type": "header",
+    "speaker": "",
+    "text": "LIVE Carnival イベント近日開催予定!!",
+    "frame": "0001_dialogue_20.8s.jpg",
+    "t": 20.8
+   },
+   {
+    "type": "sub",
+    "speaker": "",
+    "text": "予告1",
+    "frame": "0002_dialogue_24.6s.jpg",
+    "t": 24.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "やぁん、お待たせっ☆ 真夏のリゾートビーチに、しゅがーはぁとが来ちゃったぞ☆ 今年のアニバーサリーは、太陽に水着に、もう眩しすぎっ☆",
+    "frame": "0003_dialogue_38.6s.jpg",
+    "t": 38.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "とってもゴージャスなテーマ曲、『Go Just Go！』を歌って踊ったら、テンションアゲアゲで、サイッコーの夏になるんだから☆",
+    "frame": "0004_dialogue_48.2s.jpg",
+    "t": 48.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "待ちきれない？ ダメダメ、もうちょっとだけ…… はぁとたちと過ごすひととき、楽しみにしててね☆",
+    "frame": "0005_dialogue_57.4s.jpg",
+    "t": 57.4
+   },
+   {
+    "type": "sub",
+    "speaker": "",
+    "text": "予告2",
+    "frame": "0006_dialogue_62.8s.jpg",
+    "t": 62.8
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "ハロー♪ ゆいだよー♪ あのねみんな、聞いて聞いて！ホント、ちょースゴイんだって！",
+    "frame": "0007_dialogue_72.8s.jpg",
+    "t": 72.8
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "今年はねー、ゆいたちみーんな、海外のリゾートでバカンスできるんだって！ヤバくない？",
+    "frame": "0008_dialogue_84.8s.jpg",
+    "t": 84.8
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "あとねー、今回の新曲も、ちょーイイ感じだから！ 加蓮ちゃんと、志希ちゃんに、りあむちゃん、はぁとさんと、それからそれからー……みんなみーんな！",
+    "frame": "0009_dialogue_103.6s.jpg",
+    "t": 103.6
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "みーんなで歌って、ちょー楽しい夏にしよ！ テンションあげて待っててね！ばいばーい！",
+    "frame": "0010_dialogue_114.2s.jpg",
+    "t": 114.2
+   }
+  ]
+ },
+ {
+  "id": "op",
+  "tab": "OP",
+  "title": "Go Just Go！",
+  "summary": "アニバーサリーLIVEを終え、事務所総出でバカンスに繰り出したアイドルたち。仕事の忙しさからも、街の喧騒からも離れ、普段頑張っているご褒美で来た海外リゾートでの休暇。あれもしたい、これもしたいと、浮かれを隠すことなく、アイドルたちははしゃぐ。めいっぱい楽しんで、夏をエンジョイ！",
+  "start_s": 114,
+  "title_frame": "0011_dialogue_125.6s.jpg",
+  "log": [
+   "OP_B"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "今から歌うのは、ゆいたちのアニバーサリーを記念した一曲☆ 夏にぴったりの、すっごくアガる曲だから…… みんな、楽しむ準備はオッケー？",
+    "frame": "0012_dialogue_142.2s.jpg",
+    "t": 142.2
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "今だけは、めんどくさいことも全部忘れちゃって、歌って、踊って、叫んで、ハイになっちゃおうよ！",
+    "frame": "0013_dialogue_151.8s.jpg",
+    "t": 151.8
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "じゃあ、いつくよ～？ せーのっ！",
+    "frame": "0014_dialogue_157.8s.jpg",
+    "t": 157.8
+   },
+   {
+    "type": "line",
+    "speaker": "一同",
+    "text": "『Go Just Go！』",
+    "frame": "0015_dialogue_161.2s.jpg",
+    "t": 161.2
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "アニバーサリーLIVEは、大熱狂に包まれた……",
+    "frame": "0017_dialogue_168.0s.jpg",
+    "t": 168.0
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "LIVE終了後",
+    "frame": "0018_dialogue_172.6s.jpg",
+    "t": 172.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "みんなお疲れさま",
+    "frame": "0019_dialogue_174.4s.jpg",
+    "t": 174.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "アニバーサリーLIVEは、大熱狂に包まれた……",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "プロデューサーも、お疲れさまです。 今回も、ファンのみなさんに喜んでもらえて、よかったですね。",
+    "frame": "0020_dialogue_184.2s.jpg",
+    "t": 184.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "バカンスの話をする",
+    "frame": "0021_dialogue_186.0s.jpg",
+    "t": 186.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "みんな、今日はゆっくり体を休めてほしいんだけど…… その前に、ひとつ連絡があるんだ。",
+    "frame": "0022_dialogue_193.4s.jpg",
+    "t": 193.4
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "連絡っていうと、もしかしてアレかしら？ アニバーサリー記念の……。",
+    "frame": "0023_dialogue_200.2s.jpg",
+    "t": 200.2
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "ご褒美おいしいご褒美！！",
+    "frame": "0024_dialogue_204.6s.jpg",
+    "t": 204.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "事務所のアイドルみんなで行く、バカンスだ！",
+    "frame": "0025_dialogue_209.8s.jpg",
+    "t": 209.8
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "青い空♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "綺麗な海！",
+    "frame": "0026_dialogue_223.2s.jpg",
+    "t": 223.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "お洒落なホテル☆",
+    "frame": "0027_dialogue_227.8s.jpg",
+    "t": 227.8
+   },
+   {
+    "type": "line",
+    "speaker": "唯・加蓮",
+    "text": "リゾートだーっ♪",
+    "frame": "0028_dialogue_232.6s.jpg",
+    "t": 232.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "明日は丸一日、自由行動だよ。アクティビティもいろいろあるから、確認しておいてね。",
+    "frame": "0029_dialogue_239.0s.jpg",
+    "t": 239.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "やったーっ♪ 遊び放題だねっ！",
+    "frame": "0030_dialogue_245.4s.jpg",
+    "t": 245.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "いやー、想像してた100倍豪華なリゾートじゃん！ はぁと、もうドキドキが止まんない☆",
+    "frame": "0031_dialogue_254.8s.jpg",
+    "t": 254.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "しかも、事務所のアイドル全員でとか…… え、ヤバくない？ この金、どっから出てるの？ ホントにただの休暇？ ドッキリ企画じゃなくて？",
+    "frame": "0032_dialogue_270.2s.jpg",
+    "t": 270.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "バレたか 違うよ",
+    "frame": "0033_dialogue_274.0s.jpg",
+    "t": 274.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "マ！？ えっ、待って、それ、ここで当てたらマズくない？ もしかしてぼく、企画クラッシャーで干されちゃったり！？",
+    "frame": "0034_dialogue_287.8s.jpg",
+    "t": 287.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "もう……プロデューサーさん、りあむで遊ばないの。これでドッキリなんて、絶対割に合わないし……それに、からかう時の顔してるよ。",
+    "frame": "0035_dialogue_301.6s.jpg",
+    "t": 301.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "だ、騙された！？ひいっ！ ぼく今ホントにびっくりしたんだからな！！ Pサマのバカ～っ！！",
+    "frame": "0036_dialogue_314.4s.jpg",
+    "t": 314.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "頑張っているみんなへの、ご褒美だと思ってくれればいいよ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "そっか！ご褒美か！まあたしかに？ぼくたち超～～～～～頑張ってるし？このぐらい当然か！あーうん、知ってた！！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "すごい勢いで調子に乗ったね……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "相変わらず、りあむちゃんは面白いね～♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "それで…… みんなは、どういう感じで過ごすか、もう予定立てた？",
+    "frame": "0037_dialogue_321.2s.jpg",
+    "t": 321.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "バレたか 違うよ",
+    "frame": "0038_dialogue_322.8s.jpg",
+    "t": 322.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "頑張っているみんなへの、ご褒美だと思ってくれればいいよ。",
+    "frame": "0039_dialogue_327.4s.jpg",
+    "t": 327.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "そっか！ご褒美か！ まぁたしかに？ぼくたち超～～～～～頑張ってるし？ このぐらい当然か！あーうん、知ってた！！",
+    "frame": "0040_dialogue_343.8s.jpg",
+    "t": 343.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "すごい勢いで調子に乗ったね……。",
+    "frame": "0041_dialogue_349.2s.jpg",
+    "t": 349.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "相変わらず、りあむちゃんは面白いね～♪",
+    "frame": "0042_dialogue_355.0s.jpg",
+    "t": 355.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "それで……みんなは、どういう感じで過ごすか、もう予定立てた？",
+    "frame": "0043_dialogue_361.6s.jpg",
+    "t": 361.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "私は、卯月ちゃんたちとショッピングに行こうかなって。たしか、大きなショッピングモールがあるんですよ。",
+    "frame": "0044_dialogue_371.6s.jpg",
+    "t": 371.6
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "いいですね! 私も、朋ちゃんたちと ご当地の開運グッズを買いに行く約束をしてるんです♪",
+    "frame": "0045_dialogue_380.4s.jpg",
+    "t": 380.4
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "あ、そうなんですか？ だったら、途中でいいお店を見つけたら、情報交換しちゃいませんか？",
+    "frame": "0046_dialogue_390.2s.jpg",
+    "t": 390.2
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "いいですね、ぜひぜひ♪",
+    "frame": "0047_dialogue_394.6s.jpg",
+    "t": 394.6
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "よろしくお願いします♪ それから、あとは……せっかくですし、プールやビーチにも行きたいですよねっ！",
+    "frame": "0048_dialogue_405.4s.jpg",
+    "t": 405.4
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "だよねだよね！やっぱ断然、夏はプールとビーチっしょ！もー、ゆい、待ちきれないよ～！",
+    "frame": "0049_dialogue_417.2s.jpg",
+    "t": 417.2
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "あ、けど、聞いてみないと。ちなったんはカフェとかで過ごしたいタイプかな～。でもでも、ゆい的には絶対、プールとビーチは外せないし！",
+    "frame": "0050_dialogue_433.2s.jpg",
+    "t": 433.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "わかるよ唯さん！リゾートと言えば水着！うひひっ♪ああん、もう、あたしも待ちきれないよ～っ！",
+    "frame": "0051_dialogue_445.0s.jpg",
+    "t": 445.0
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "……清良さんが、こっち見てるよ？",
+    "frame": "0052_dialogue_451.6s.jpg",
+    "t": 451.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "ひいっ！あたし、何にもしてませんっ！まだ！",
+    "frame": "0053_dialogue_458.4s.jpg",
+    "t": 458.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "「まだ」ってオイ☆",
+    "frame": "0054_dialogue_462.4s.jpg",
+    "t": 462.4
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "ふぁあ……。さっすがみんな、元気ー。あたしは移動で疲れちゃったし、しばらくはお休みモードー。",
+    "frame": "0055_dialogue_476.4s.jpg",
+    "t": 476.4
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あ……それは……ぼくもわかる。引きこもりだから……。",
+    "frame": "0056_dialogue_485.4s.jpg",
+    "t": 485.4
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "あー、たしか、部屋で過ごす子たちもいたよ。杏とか紗南ちゃんが、ゲームするって。あきらちゃんとかもそうじゃない？",
+    "frame": "0057_dialogue_495.6s.jpg",
+    "t": 495.6
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あきらちゃんは……どうだろ？ こういうとこはフツーに楽しむんじゃ。 ゲーム好きっていっても陽の者だし……。",
+    "frame": "0058_dialogue_506.4s.jpg",
+    "t": 506.4
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "ホント、こういう場所って、過ごし方に性格出るわよね～。",
+    "frame": "0060_dialogue_513.6s.jpg",
+    "t": 513.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "そーいう瑞樹さんは？",
+    "frame": "0061_dialogue_517.4s.jpg",
+    "t": 517.4
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "私はね、もう、すぅ～っと悩み中なのよ～！こういうときって、全て楽しみつくしたいのよねえ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "やっぱりスパは外せないし、ショッピングもしたいし、ビーチにも繰り出したいけれど……アクティビティも魅力的。夜はもちろん、楓ちゃんたちと飲みたいし……。",
+    "frame": "0062_dialogue_542.2s.jpg",
+    "t": 542.2
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "ね、心ちゃんは？どう過ごす？",
+    "frame": "0063_dialogue_546.6s.jpg",
+    "t": 546.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "とりあえず、サーフィンには誘われてるんで、それは行こうかなーって。そのあとは、ノリで☆",
+    "frame": "0064_dialogue_556.0s.jpg",
+    "t": 556.0
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "ノリね☆ たしかに、それもわかるわ。予定をこなすのに夢中になったら、楽しくなくなっちゃうし。",
+    "frame": "0065_dialogue_566.2s.jpg",
+    "t": 566.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "過ごし方は、みんなに任せるよ",
+    "frame": "0066_dialogue_568.2s.jpg",
+    "t": 568.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "さっき言った通り、これは休暇だからね。もちろん、海外だからある程度は付き添わせてもらうけれど。なんにせよ、とりあえず……。",
+    "frame": "0067_dialogue_577.2s.jpg",
+    "t": 577.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "めいっぱい楽しんで",
+    "frame": "0068_dialogue_580.0s.jpg",
+    "t": 580.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "よーし！ じゃあ、それぞれで楽しんじゃおう！ エンジョイ・サマー！",
+    "frame": "0069_dialogue_589.0s.jpg",
+    "t": 589.0
+   },
+   {
+    "type": "line",
+    "speaker": "一同",
+    "text": "エンジョイ・サマー♪",
+    "frame": "0070_dialogue_593.4s.jpg",
+    "t": 593.4
+   }
+  ]
+ },
+ {
+  "id": "ep1",
+  "tab": "第1話",
+  "title": "Sunshine in Summer！",
+  "summary": "昼にシーフードを堪能した唯、加蓮。そこに、せっかくのバカンスだというのに先ほどまで寝ていた志希が加わり、クルージングへ向かう。船備え付けのプールには花が浮かび、ぜいたくな遊びに3人ともご満悦。クルージングを堪能し、志希と別れて再びふたりになった唯たちは、次はプールへと向かった。",
+  "start_s": 593,
+  "title_frame": "0071_dialogue_601.0s.jpg",
+  "log": [
+   "1"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "お昼のシーフード、美味しかったね～っ！ 見た目もちょーオシャレだったし！ エビ！カニ！カニっぽいエビ！",
+    "frame": "0072_dialogue_613.2s.jpg",
+    "t": 613.2
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "ロブスターね。みんなではしゃいで、バシャバシャ撮っちゃったの、ちょっと恥ずかしかったね。……まぁ、日本じゃないし、いっか。",
+    "frame": "0073_dialogue_625.4s.jpg",
+    "t": 625.4
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "いーよいーよ！ 周り気にして楽しめないとかなんか、ソンっしょ！ なんか、そーいうコトワザもあった？ 気がするし！",
+    "frame": "0074_dialogue_637.2s.jpg",
+    "t": 637.2
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "旅の恥はかき捨て、ね♪ でも、人の迷惑になることはしちゃダメよ？",
+    "frame": "0075_dialogue_647.0s.jpg",
+    "t": 647.0
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "あ、瑞樹さん！ だいじょーぶ、わかってるって！ もち、店員ちゃんとも撮ってきた☆",
+    "frame": "0076_dialogue_658.0s.jpg",
+    "t": 658.0
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "ふふっ、元気ね。ふたりは、ご飯終わったところ？",
+    "frame": "0077_dialogue_665.6s.jpg",
+    "t": 665.6
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "そういう川島さんたちは……ショッピングの帰り？",
+    "frame": "0078_dialogue_671.6s.jpg",
+    "t": 671.6
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "そうなんです。みんなで観光もしてきちゃいました～。",
+    "frame": "0079_dialogue_678.6s.jpg",
+    "t": 678.6
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "芽衣子さんたちに教わりながら、 チキンとか、いろいろ食べ歩きもしちゃいました。 美味しかったから、今度、自分でも作ってみたいです♪",
+    "frame": "0080_dialogue_691.4s.jpg",
+    "t": 691.4
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "あるお店で、茄子ちゃんがちょうど10万人目のお客さんだって、お祝いされ始めたときは、びっくりしちゃったわね♪",
+    "frame": "0081_dialogue_701.4s.jpg",
+    "t": 701.4
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "あれはちょっと、びっくりしちゃいましたね。 でも、お土産をたくさんもらえてよかったです♪",
+    "frame": "0082_dialogue_710.6s.jpg",
+    "t": 710.6
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "いいな、いいなー♪ ショッピングと観光、楽しそうだなー♪ どうする加蓮ちゃん、午後はショッピングに行っちゃう？",
+    "frame": "0083_dialogue_723.6s.jpg",
+    "t": 723.6
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "んー、それもあり。でもせっかくだし、ここでしかできないこともしないし……。",
+    "frame": "0084_dialogue_732.4s.jpg",
+    "t": 732.4
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "あ、それなら！クルーザーなんてどうですか？午後からの枠に空きがあるって、プロデューサーさんが言ってました。",
+    "frame": "0085_dialogue_743.6s.jpg",
+    "t": 743.6
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "クルーザー！？",
+    "frame": "0086_dialogue_747.8s.jpg",
+    "t": 747.8
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "そういえば、アクティビティの説明で見たかも。ヘー、いいじゃん。なんか楽しそう。行ってみよっか。",
+    "frame": "0087_dialogue_757.8s.jpg",
+    "t": 757.8
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "オッケー♪ うわーっ、ゆい、ワクワクしてきた！",
+    "frame": "0088_dialogue_764.2s.jpg",
+    "t": 764.2
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "ふふっ、ぜひ楽しんできて♪ さて、私は……ビーチに繰り出すわ。",
+    "frame": "0089_dialogue_774.2s.jpg",
+    "t": 774.2
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "いいですねー。私も午後は水着で出かけちゃおうかな♪",
+    "frame": "0090_dialogue_782.4s.jpg",
+    "t": 782.4
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "じゃあ、私たちも次の予定へ♪ 加蓮さん、唯さん、いってらっしゃい♪",
+    "frame": "0091_dialogue_790.0s.jpg",
+    "t": 790.0
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "ありがとー♪",
+    "frame": "0092_dialogue_793.8s.jpg",
+    "t": 793.8
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "さて、プロデューサーさんに連絡とって……っと。準備してまたここに集合でいい？",
+    "frame": "0093_dialogue_804.0s.jpg",
+    "t": 804.0
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "りょーかいっ！",
+    "frame": "0094_dialogue_807.2s.jpg",
+    "t": 807.2
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "ごめんごめん、待った？",
+    "frame": "0096_dialogue_814.8s.jpg",
+    "t": 814.8
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "んーん。 じゃあiこっか……って、アレ？",
+    "frame": "0097_dialogue_821.4s.jpg",
+    "t": 821.4
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "んんー……。 太陽の……光……。",
+    "frame": "0098_dialogue_829.6s.jpg",
+    "t": 829.6
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "志希？ どうしたの、なんかフラフラして。",
+    "frame": "0099_dialogue_835.6s.jpg",
+    "t": 835.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "あー、加蓮ちゃんに唯ちゃん。おはよー。",
+    "frame": "0100_dialogue_841.0s.jpg",
+    "t": 841.0
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "おはよー☆ って、もうお昼だよ？",
+    "frame": "0101_dialogue_847.2s.jpg",
+    "t": 847.2
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "にゃはは、しってるー。 でも、志希ちゃんは寝起きだから、おはよーだよ。",
+    "frame": "0102_dialogue_855.4s.jpg",
+    "t": 855.4
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "えっ、今まで寝てたの！？",
+    "frame": "0103_dialogue_858.8s.jpg",
+    "t": 858.8
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "もったいなーっ！？ せっかくのバカンスなんだよ！？",
+    "frame": "0104_dialogue_864.8s.jpg",
+    "t": 864.8
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "だからこそ、睡眠を選ぶということがよりいっそう輝く…… そんなことを思ったり思わなかったりする志希ちゃんなのでした。",
+    "frame": "0105_dialogue_880.8s.jpg",
+    "t": 880.8
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "いや絶対もったいないっしょ！ 全然リゾート楽しんでないじゃん！ ……あ、そーだ、いいこと思いついた！",
+    "frame": "0106_dialogue_892.6s.jpg",
+    "t": 892.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "んー……？",
+    "frame": "0107_dialogue_896.0s.jpg",
+    "t": 896.0
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "花びら追加、いっくよ～♪ それそれーっ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "あはは、唯、やりすぎ！ すごいことになってるじゃん！",
+    "frame": "0108_dialogue_910.8s.jpg",
+    "t": 910.8
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "ん～♪ かぐわしいスメル～♪",
+    "frame": "0109_dialogue_916.2s.jpg",
+    "t": 916.2
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "んーっ、気持ちいーっ♪ 開放感ある！ こんなセレブみたいな体験できるなんて、思わなかったよ。",
+    "frame": "0110_dialogue_930.0s.jpg",
+    "t": 930.0
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "志希ちゃんも、楽しんでるー？",
+    "frame": "0111_dialogue_934.2s.jpg",
+    "t": 934.2
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "楽しんでるよーん♪ 海の匂いに、花の匂い、それから、楽しそうなキミたちの匂い。刺激的ではないけど、心安らぐ香り。リラクゼーション～♪",
+    "frame": "0112_dialogue_951.0s.jpg",
+    "t": 951.0
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "なら良かった。無理に連れてきちゃったかなって、ちょっと心配だったから。",
+    "frame": "0113_dialogue_958.4s.jpg",
+    "t": 958.4
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "志希ちゃんはNoと言えるアイドルなので、お気遣いなくだよ。で、ふたりは午前中はどんな感じで遊んでたの？",
+    "frame": "0114_dialogue_968.4s.jpg",
+    "t": 968.4
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "ゆいはねー、みんなと遊びまくってた！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "最初は美嘉ちゃんや里奈ちゃんとビーチで遊んでー、でも途中から渚ちゃんたちと合流して、櫂ちゃんと水泳勝負して、それから、エマちゃんとビーチバレー大会に出てー……。",
+    "frame": "0115_dialogue_991.0s.jpg",
+    "t": 991.0
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "おお～、すごい！ 満喫してるね～♪",
+    "frame": "0116_dialogue_997.8s.jpg",
+    "t": 997.8
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "なんか唯、あちこちに居たよね……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "私は凛と奈緒のふたりと過ごしてたよ。 最近のお互いの話とかしながら、ゆっくりしてた。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "あ、奏が海を見ながら黄昏てたから、水かけて、あと美波とか楓さんをけしかけたかな。で、お昼ぐらいに、唯と合流したんだよね。",
+    "frame": "0117_dialogue_1025.0s.jpg",
+    "t": 1025.0
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "そーそー。それで、今はここを満喫中～♪ ってことで……そりゃっ！",
+    "frame": "0118_dialogue_1036.0s.jpg",
+    "t": 1036.0
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "わっぷ！ ふふん、やったね？ お返しお返しーっ！",
+    "frame": "0119_dialogue_1044.4s.jpg",
+    "t": 1044.4
+   },
+   {
+    "type": "line",
+    "speaker": "唯・加蓮",
+    "text": "あははっ♪",
+    "frame": "0120_dialogue_1051.2s.jpg",
+    "t": 1051.2
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "ふい～。満喫した～。",
+    "frame": "0121_dialogue_1060.4s.jpg",
+    "t": 1060.4
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "私たち、このままプールで遊ぶけど、志希はどうする？",
+    "frame": "0122_dialogue_1067.2s.jpg",
+    "t": 1067.2
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "あたしはビーチにいこっかな！ってことで、アデュー♪",
+    "frame": "0123_dialogue_1075.4s.jpg",
+    "t": 1075.4
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "ばいばーい♪",
+    "frame": "0124_dialogue_1079.2s.jpg",
+    "t": 1079.2
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "それで……プールは今、誰がいるのかなー？ って、あれは……。",
+    "frame": "0126_dialogue_1090.6s.jpg",
+    "t": 1090.6
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "心さんと……りあむ……？",
+    "frame": "0127_dialogue_1095.0s.jpg",
+    "t": 1095.0
+   }
+  ]
+ },
+ {
+  "id": "ep2",
+  "tab": "第2話",
+  "title": "Heartful Time！",
+  "summary": "唯たちがクルージングを楽しんでいる頃、プールではりあむがおろおろしていた。光の空間に慣れず、ぼっちは嫌だけど人とは会話が続かない…。そんなりあむに、通りがかった心が共に過ごしてくれることに。途中で愛海も加わり、面倒見のよさを見せる心に、りあむは新たなママみを見出すのだった。",
+  "start_s": 1095,
+  "title_frame": "0128_dialogue_1104.6s.jpg",
+  "log": [
+   "2"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "さーてっ、午前中はビッグウェーブに乗りまくったし、午後はプールで映え散らかしちゃうぞ☆っと……ん？",
+    "frame": "0129_dialogue_1115.8s.jpg",
+    "t": 1115.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "おろおろ……おろおろおろおろ……。",
+    "frame": "0131_dialogue_1121.8s.jpg",
+    "t": 1121.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……んー。 なんか、口で「おろおろ」言ってる子ちゃんがいるなー……。 こういうの見過ごせねーはぁとで……健気☆",
+    "frame": "0132_dialogue_1132.8s.jpg",
+    "t": 1132.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "おーい、りあむちゃん。そんな隅っこでおろおろして、どしたん？プール、入れぱ？",
+    "frame": "0133_dialogue_1141.0s.jpg",
+    "t": 1141.0
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あうっ！佐藤さん！",
+    "frame": "0134_dialogue_1145.6s.jpg",
+    "t": 1145.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "は・あ・とって呼んで☆",
+    "frame": "0135_dialogue_1150.8s.jpg",
+    "t": 1150.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あつ、はい。佐藤はぁとさん。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "いや、なんていうか、その…… ぼくが一緒にプールなんて、許されるのかなって……。 そもそも、こんな光の空間にいたら消えちゃいそうだし……。",
+    "frame": "0136_dialogue_1172.2s.jpg",
+    "t": 1172.2
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あとやっぱ、普通にぼっちで浮いちゃってどうしようみたいな？正直、誰か声をかけてくれるのを期待してたけど実際に声かけられるとそれはそれで会話もたないっていうか。",
+    "frame": "0138_dialogue_1185.8s.jpg",
+    "t": 1185.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "前にリゾートで撮影あったときは Pサマがいろいろいい感じにしてくれたんだけど、 なんかPサマ忙しそうだし？ はい詰め終わった、みたいな？",
+    "frame": "0139_dialogue_1198.8s.jpg",
+    "t": 1198.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "オッケーわかった！ 御託はいいから行くぞ、おりゃ☆",
+    "frame": "0140_dialogue_1203.6s.jpg",
+    "t": 1203.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ほれ、別に怖くもなんともないでしょ？ リゾートっつったって、プールはプールなんだから。",
+    "frame": "0141_dialogue_1214.8s.jpg",
+    "t": 1214.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "ああー……極楽ぅ～……。ありがとう、はぁとさん。ウザかわキャラ同士、これからも……仲良く……。",
+    "frame": "0142_dialogue_1229.2s.jpg",
+    "t": 1229.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "だーれがウザかわだっつーの☆ はぁとは正統派きゃわいいだろうが☆ そんなこと言ってると、スウィーティーにすんぞ☆",
+    "frame": "0143_dialogue_1241.4s.jpg",
+    "t": 1241.4
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "スウィーティーにするって何！？",
+    "frame": "0144_dialogue_1246.2s.jpg",
+    "t": 1246.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "（うひひ……ふたりとも盛り上がってるなぁ。だ・か・ら……今がチャンス！）",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "（すうー……っと、なるべく波を立てないように泳いで……うひひ♪ 目標のりあむ山まで、あとすこし……）",
+    "frame": "0145_dialogue_1274.4s.jpg",
+    "t": 1274.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "はーい、愛海ちゃん♪ そ・こ・ま・で。",
+    "frame": "0146_dialogue_1279.2s.jpg",
+    "t": 1279.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "ぎゃふっ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "あーん、バレた！ あやめ師匠直伝の棟方流忍術、水遁・風林火山を破るとは……。 やるね、はぁと山♪",
+    "frame": "0147_dialogue_1298.2s.jpg",
+    "t": 1298.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "普通に超見えてたわ！",
+    "frame": "0148_dialogue_1301.8s.jpg",
+    "t": 1301.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "残念、りあむ山はお預けかぁ……。 ま、でもいいや、眼福眼福う～♪",
+    "frame": "0149_dialogue_1312.8s.jpg",
+    "t": 1312.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "た、楽しそうだね……。",
+    "frame": "0150_dialogue_1317.6s.jpg",
+    "t": 1317.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "だって、ここにいる子はみーんな水着なんだもん♪ 選び放題よりどりみどり、マウンテンがバイキングだよ～っ♪",
+    "frame": "0151_dialogue_1328.8s.jpg",
+    "t": 1328.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "マウンテンがバイキングって……なんだそれ！ 意味わかんないし！あはは！",
+    "frame": "0152_dialogue_1337.6s.jpg",
+    "t": 1337.6
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "って……あう。",
+    "frame": "0154_dialogue_1344.2s.jpg",
+    "t": 1344.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "なに、どしたんりあむちゃん。お腹空いてんの？",
+    "frame": "0155_dialogue_1349.6s.jpg",
+    "t": 1349.6
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あ……お昼食べてなくて……。",
+    "frame": "0156_dialogue_1355.6s.jpg",
+    "t": 1355.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "え、どうしたの？ 調子でも悪いんですか？ 大丈夫？",
+    "frame": "0157_dialogue_1362.2s.jpg",
+    "t": 1362.2
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "今日は、リゾートでテンションあがって、調子のって 朝ご飯いっぱい食べたんだけど、ぼく、いつも朝食食べないから、 つまりお昼にお腹空かなくて……。",
+    "frame": "0158_dialogue_1379.6s.jpg",
+    "t": 1379.6
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "だから、どっちかっていうと、悪いのは頭？ そんで今になって安心してきたら、なんか お腹空いてきた、みたいな……そういう、めんどくさいヤツ？",
+    "frame": "0159_dialogue_1396.6s.jpg",
+    "t": 1396.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "あーあー、わかったわかった！ はぁとたちに任せろって☆",
+    "frame": "0160_dialogue_1403.0s.jpg",
+    "t": 1403.0
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "え？ なにこれ？ プールに浮かべて食べんの？ バカなの？ セレブ気取りなの？ 年収が高いとこうなるの？",
+    "frame": "0161_dialogue_1415.8s.jpg",
+    "t": 1415.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "バカとかいうなし☆ これがイマドキのオシャレなんだぞ☆ んで、どうする？ りあむちゃんはやらないの？",
+    "frame": "0162_dialogue_1425.2s.jpg",
+    "t": 1425.2
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "やる！！",
+    "frame": "0163_dialogue_1429.8s.jpg",
+    "t": 1429.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ほらほら、りあむちゃん、あーん☆",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あ、あーん……♪うへへ……ああ、ちょっとキモいの出ちゃった。めんこ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "まったくぅ、このはぁとに「あーん」させるなんて☆ 超超スウィート大サービスなんだから☆ ありがたく感謝しろよ☆",
+    "frame": "0164_dialogue_1458.2s.jpg",
+    "t": 1458.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……ってかんじで、午前は過ごしてたんだけど、菜々パイセンの腰がノウツになっちゃったから、波乗りしゅがみんは解散したってわけ！",
+    "frame": "0165_dialogue_1471.2s.jpg",
+    "t": 1471.2
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "すご。サーフィンとか、陽の極みじゃん。ぼくが乗れるのはネットサーフィンと、あとは……あっ、時代のビッグウェーブ乗れてるな！？",
+    "frame": "0166_dialogue_1485.8s.jpg",
+    "t": 1485.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "調子はノリノリだね！？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "……ふう。 けっこうお喋りしたし、あたしはそろそろいきますね。 まだ見ぬお山が、あたしを呼んでいる！",
+    "frame": "0167_dialogue_1500.8s.jpg",
+    "t": 1500.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "懲りないし飽きないねぇ。",
+    "frame": "0168_dialogue_1504.6s.jpg",
+    "t": 1504.6
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "あたしの生きがいだもん！ んじゃ、ふたり山とも、またね♪",
+    "frame": "0169_dialogue_1511.8s.jpg",
+    "t": 1511.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "いやっほーうっ！！",
+    "frame": "0170_dialogue_1515.8s.jpg",
+    "t": 1515.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "ばいばーい♪",
+    "frame": "0171_dialogue_1518.6s.jpg",
+    "t": 1518.6
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "はー……。愛海ちゃん、めっちゃ元気、超かわいかった。わきわきされてもよかったかもしんない。",
+    "frame": "0173_dialogue_1531.0s.jpg",
+    "t": 1531.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "好きなことをあんだけまっすぐ楽しめるって、いいことだよ。 まぁ、向かう先はともかく……。",
+    "frame": "0174_dialogue_1540.2s.jpg",
+    "t": 1540.2
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "おーい、りあむ！心さーん！",
+    "frame": "0175_dialogue_1546.2s.jpg",
+    "t": 1546.2
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あ、ママ！唯ちゃん！",
+    "frame": "0176_dialogue_1551.4s.jpg",
+    "t": 1551.4
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "加蓮ちゃん、ママなの？ なにそれウケる！",
+    "frame": "0177_dialogue_1557.6s.jpg",
+    "t": 1557.6
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "心さん、気を付けて。あんまりりあむの世話を焼くと、ママになるから。",
+    "frame": "0178_dialogue_1564.8s.jpg",
+    "t": 1564.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "なにそのホラーな世界観。初耳なんだけど。",
+    "frame": "0179_dialogue_1570.2s.jpg",
+    "t": 1570.2
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "え？ はぁとママはもうとっくにママだけど？",
+    "frame": "0180_dialogue_1575.2s.jpg",
+    "t": 1575.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ギャーツ！！ やめろし！加蓮ちゃんのママはギャグで済むけど、 はぁとの年になると重みが違うんだよ！！",
+    "frame": "0181_dialogue_1582.8s.jpg",
+    "t": 1582.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ほら、響子ちゃんとか！ 響子ちゃんとかぴったりじゃん！",
+    "frame": "0182_dialogue_1588.4s.jpg",
+    "t": 1588.4
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "響ちゃんかぁ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "え、なに？ 響子は違うの？ 意外……。",
+    "frame": "0183_dialogue_1598.8s.jpg",
+    "t": 1598.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "いや……年下ママはヤババじゃん。",
+    "frame": "0184_dialogue_1604.6s.jpg",
+    "t": 1604.6
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "だって響ちゃんはさ、年下だし？普通に受け入れられちゃいそうだし？さすがのぼくにも、ここは越えたらマズいラインってわかる。",
+    "frame": "0186_dialogue_1617.4s.jpg",
+    "t": 1617.4
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "よくわかんないけど、こだわりがあんだねー。",
+    "frame": "0187_dialogue_1624.4s.jpg",
+    "t": 1624.4
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "うわわ、クルーザーとかアツい！ 絶対楽しいじゃん！いいないいなー。ぼくももっと遊びたい！",
+    "frame": "0188_dialogue_1638.0s.jpg",
+    "t": 1638.0
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "うん！まだまだ遊んじゃお！",
+    "frame": "0189_dialogue_1643.6s.jpg",
+    "t": 1643.6
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "じゃあじゃあ、このままみんなでゴーゴーゴーゴー！",
+    "frame": "0190_dialogue_1652.4s.jpg",
+    "t": 1652.4
+   }
+  ]
+ },
+ {
+  "id": "ep3",
+  "tab": "第3話",
+  "title": "Their Hot Vacation ！",
+  "summary": "りあむが心にママみを見出していた頃、茄子、響子、瑞樹は買い出しにきていた。3人は買ったものを他のアイドルに渡すと、今日は気遣いなしで遊ぼうと、まずは波打ち際まで競走。負けた茄子は、海定番の体を砂で埋める罰ゲームに。ナス形に埋められていると、他のアイドルたちも集まってきたのだった。",
+  "start_s": 1652,
+  "title_frame": "0191_dialogue_1664.0s.jpg",
+  "log": [
+   "3"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "リクエストがあったものと、追加で適当に見繕ったもの、全部そろってる？",
+    "frame": "0192_dialogue_1674.2s.jpg",
+    "t": 1674.2
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "はい、オッケーです♪",
+    "frame": "0193_dialogue_1677.4s.jpg",
+    "t": 1677.4
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "けっこうな量になっちゃいましたね。 3人で来て良かったです。",
+    "frame": "0194_dialogue_1685.0s.jpg",
+    "t": 1685.0
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "ビーチバレー大会、盛り上がってますもんね。応援してる人も増えて、けっこうな人数でしたから！今は確か、穂乃香ちゃん柚ちゃんペアが4連勝中でしたっけ？",
+    "frame": "0195_dialogue_1699.6s.jpg",
+    "t": 1699.6
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "あのふたり、息が合ってるのよねえ。ミズキスパイクが、まさかふたりがかりで防がれるなんて。私も、まだまだ磨きをかけないと。",
+    "frame": "0196_dialogue_1714.0s.jpg",
+    "t": 1714.0
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "よいしょっと…… さ、みんなのところに戻りましょ。",
+    "frame": "0197_dialogue_1721.6s.jpg",
+    "t": 1721.6
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "ふふっ。なんだか私たち、午前中も午後もお買いものしてばっかりですねー。",
+    "frame": "0198_dialogue_1733.4s.jpg",
+    "t": 1733.4
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "午前中は……。 瑞樹さんにも、茄子さんにも、ご迷惑をおかけしました。",
+    "frame": "0199_dialogue_1742.0s.jpg",
+    "t": 1742.0
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "ご迷惑って……ああ、アレのこと？ 別に、気にしてないわよ！",
+    "frame": "0200_dialogue_1750.6s.jpg",
+    "t": 1750.6
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "数時間前",
+    "frame": "0201_dialogue_1755.8s.jpg",
+    "t": 1755.8
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "なんとなく、このあたりに……あ！ 響子ちゃん、見つけました～！",
+    "frame": "0202_dialogue_1765.0s.jpg",
+    "t": 1765.0
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "さっすが茄子ちゃん！ 響子ちゃん、こんなところにいたのね～！",
+    "frame": "0203_dialogue_1772.6s.jpg",
+    "t": 1772.6
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "え？あれ？ 卯月ちゃん？ 美穂ちゃん……？",
+    "frame": "0204_dialogue_1780.2s.jpg",
+    "t": 1780.2
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "ふたりとも、探してたわよ～。響子ちゃんとはぐれちゃって、どこを探しても見つからないんです～って。",
+    "frame": "0205_dialogue_1791.0s.jpg",
+    "t": 1791.0
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "へ？ あっ、本当だ……たくさん連絡来てる！ 私、全然気づかなくて……。",
+    "frame": "0206_dialogue_1800.6s.jpg",
+    "t": 1800.6
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "いいんですよー。 なにはともあれ、見つかってよかったです～。",
+    "frame": "0207_dialogue_1807.6s.jpg",
+    "t": 1807.6
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "響子ちゃんがそんなに夢中になるなんて、なにを見ていたの？ ……あら、可愛いアクセサリー♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "ふふっ、だから卯月ちゃんたち、見つけられなかったのね。食品コーナーとか、香辛料なんかのスペースをずっと探してたって言ってたわ。",
+    "frame": "0208_dialogue_1832.6s.jpg",
+    "t": 1832.6
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "ご……ごめんなさいっ！ つい、みとれちゃって……。",
+    "frame": "0209_dialogue_1838.8s.jpg",
+    "t": 1838.8
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "いいわよいいわよ♪ むしろ、響子ちゃんの年相応なところが見られて、ちょっと安心したわ♪",
+    "frame": "0210_dialogue_1849.0s.jpg",
+    "t": 1849.0
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "せっかくですし、 このまま、私たちでアクセサリーを見てまわりませんか？",
+    "frame": "0211_dialogue_1857.2s.jpg",
+    "t": 1857.2
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "いいわね！いきましょ！",
+    "frame": "0212_dialogue_1861.4s.jpg",
+    "t": 1861.4
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "響子ちゃんは、いっつもお姉さんしてますから。こういうときぐらい、はしゃいじゃえばいいんですよ♪",
+    "frame": "0213_dialogue_1872.8s.jpg",
+    "t": 1872.8
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "そうよ♪私たちや、プロデューサー君だっているんだし！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "それに、茄子ちゃんもよ！ さりげなーく気配りしてるの、ミズキにはお見通しなんだから☆",
+    "frame": "0214_dialogue_1889.8s.jpg",
+    "t": 1889.8
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "気配りなんて、そんな。 それに、それを言うなら、瑞樹さんだって気配りしていませんか？",
+    "frame": "0215_dialogue_1899.6s.jpg",
+    "t": 1899.6
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "ふふっ…… なんだか私たち、ちょっと似てるのかも♪",
+    "frame": "0216_dialogue_1906.6s.jpg",
+    "t": 1906.6
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "気配り三姉妹、長女のミズキでぇす♪",
+    "frame": "0217_dialogue_1912.0s.jpg",
+    "t": 1912.0
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "はーい、みなさん、冷たいものを買ってきましたよ～！",
+    "frame": "0218_dialogue_1921.0s.jpg",
+    "t": 1921.0
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "ここに置いておくので、取っていってくださいね！",
+    "frame": "0219_dialogue_1926.2s.jpg",
+    "t": 1926.2
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "……ねぇ、響子ちゃん、茄子ちゃん。一緒に遊ばない？気遣いっこなしで、海を満喫しちゃいましょう！",
+    "frame": "0220_dialogue_1936.6s.jpg",
+    "t": 1936.6
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "ふふっ♪ なにして遊びましょう？ 泳いじゃいます？",
+    "frame": "0221_dialogue_1943.0s.jpg",
+    "t": 1943.0
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "そうねぇ……。 じゃあまず、波打ち際まで競走よ！ 一番遅かった子が、砂に埋められちゃう、アレ！",
+    "frame": "0222_dialogue_1954.2s.jpg",
+    "t": 1954.2
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "早速いくわよ！よーい、ドン！",
+    "frame": "0223_dialogue_1957.6s.jpg",
+    "t": 1957.6
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "わ、わわっ！",
+    "frame": "0225_dialogue_1963.0s.jpg",
+    "t": 1963.0
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "み、瑞樹さんズルいです～っ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "はあつ、はあつ……か、勝ちました～っ♪",
+    "frame": "0227_dialogue_1980.0s.jpg",
+    "t": 1980.0
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "はあっ、はあっ……響子ちゃん、若いわね……。純粋な……若さに……負けたわ……。",
+    "frame": "0228_dialogue_1991.8s.jpg",
+    "t": 1991.8
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "はあつ、はあつ…… わ、私、瑞樹さんより、わか……。",
+    "frame": "0229_dialogue_2001.8s.jpg",
+    "t": 2001.8
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "わかったわっ！ 響子ちゃん、埋めるわよっ！",
+    "frame": "0230_dialogue_2007.6s.jpg",
+    "t": 2007.6
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "おーっ！",
+    "frame": "0231_dialogue_2010.6s.jpg",
+    "t": 2010.6
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "お、思ったより容赦がないっ！ だいぶしっかり埋められちゃってっ！",
+    "frame": "0232_dialogue_2022.6s.jpg",
+    "t": 2022.6
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "うーん、もう一工夫欲しいわ。落書きでもすればいいのかしら？",
+    "frame": "0233_dialogue_2031.4s.jpg",
+    "t": 2031.4
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "あ、それなら、こんな感じでどうでしょう？ ごにょごにょ……。",
+    "frame": "0234_dialogue_2039.4s.jpg",
+    "t": 2039.4
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "いいわね！それでいきましょう！",
+    "frame": "0235_dialogue_2044.0s.jpg",
+    "t": 2044.0
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "えっ、なんですか？なにされちゃうんですか、私っ！？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "……あ、待ってください？ なんかちょっと、わかってきましたよ。 これって、アレですよね。アレでしょう？",
+    "frame": "0236_dialogue_2062.0s.jpg",
+    "t": 2062.0
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "最後に、茄子ちゃんの胸元にヘタの部分を作って……完成ね！",
+    "frame": "0237_dialogue_2072.4s.jpg",
+    "t": 2072.4
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "やっぱり、夏といえばこれですよね！ カレーにしたり、揚げ浸しにしたり……。",
+    "frame": "0238_dialogue_2082.2s.jpg",
+    "t": 2082.2
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "ナスですか～～～～～～っ！！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "わ、わぁ……砂が思ったより熱くて…… 蒸されちゃいそうです……。",
+    "frame": "0239_dialogue_2100.2s.jpg",
+    "t": 2100.2
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "……すんすん、すんすん。かぐわしいこの匂いは……。",
+    "frame": "0240_dialogue_2108.6s.jpg",
+    "t": 2108.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "蒸しナスだーっ！！",
+    "frame": "0241_dialogue_2112.8s.jpg",
+    "t": 2112.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "え、茄子さんのおナスが食べ放題！？",
+    "frame": "0242_dialogue_2117.6s.jpg",
+    "t": 2117.6
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "もうっ！！",
+    "frame": "0243_dialogue_2120.8s.jpg",
+    "t": 2120.8
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "志希さん、愛海ちゃん！",
+    "frame": "0244_dialogue_2124.6s.jpg",
+    "t": 2124.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "これはなに？ 埋まればいいの？ じゃあみんな、面白い感じによろしく～。",
+    "frame": "0245_dialogue_2134.0s.jpg",
+    "t": 2134.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "ハードルを上げつつ、自分から埋まりにいく!?",
+    "frame": "0246_dialogue_2139.2s.jpg",
+    "t": 2139.2
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "よーし、手加減しないわよ！",
+    "frame": "0247_dialogue_2145.2s.jpg",
+    "t": 2145.2
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "じゃあ……志希さんは、ネコちゃん形の砂山にしちゃいます！",
+    "frame": "0248_dialogue_2152.2s.jpg",
+    "t": 2152.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "響子さんの作ったネコちゃんが、頭から離れない……。なんだろう、あの……なに……？",
+    "frame": "0249_dialogue_2166.2s.jpg",
+    "t": 2166.2
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "……ネコは概念だよ。おや、あれは……。",
+    "frame": "0250_dialogue_2172.8s.jpg",
+    "t": 2172.8
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "あ、みんないるじゃん！ おーいっ！",
+    "frame": "0251_dialogue_2180.0s.jpg",
+    "t": 2180.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "はぁとたちも、遊びにきたぞーっ☆",
+    "frame": "0252_dialogue_2184.2s.jpg",
+    "t": 2184.2
+   }
+  ]
+ },
+ {
+  "id": "ep4",
+  "tab": "第4話",
+  "title": "Summer Will Go on！",
+  "summary": "楽しい時間が過ぎるのは早く、気がつけばもう夕方になっていた。陽が沈むと夏も暗くなってしまうと落ち込むりあむ。だが、夜でも楽しいことはあるし、何より陽はまだ沈んでいない。夏も今日という日も、まだ終わっていない。みんなと遊び倒したりあむは、夏を思う存分満喫していった。",
+  "start_s": 2184,
+  "title_frame": "0253_dialogue_2190.6s.jpg",
+  "log": [
+   "4"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "ばばーん！！ ようやく絶好調になってきたりあむちゃん！ 高級リゾートのビーチに参上だよ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "リゾートを遊びつくしてやる！ 水着まみれにもなってやる！ りあむちゃんの夏、始まったな！！",
+    "frame": "0254_dialogue_2208.8s.jpg",
+    "t": 2208.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "って感じだったのに、もう夕方じゃん！！終わるよ！りあむちゃんの夏！！",
+    "frame": "0255_dialogue_2225.4s.jpg",
+    "t": 2225.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "まぁ、プールに出てきた時点で昼過ぎだったし？",
+    "frame": "0256_dialogue_2232.0s.jpg",
+    "t": 2232.0
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "うぐ……正論オブ正論。 もっとスウィーティーに甘かしてほしいよう～。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "うう。ホント、ぼくってやつはいっつもそう。うじうじしてる間に、全部乗り遅れる。起きたらだいたい昼だし。生活リズムのせい？それな。",
+    "frame": "0257_dialogue_2257.8s.jpg",
+    "t": 2257.8
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "あはは、夜行性だとそうなるよね。あたしも、日が沈んでから起きたりするなー。",
+    "frame": "0258_dialogue_2267.6s.jpg",
+    "t": 2267.6
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "わかり手じゃん……不健康な仲間同士、深夜のSNSとかで会ったらやさしくよろしくしよう？ エアリプとかで。",
+    "frame": "0259_dialogue_2278.8s.jpg",
+    "t": 2278.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "とか言ってる間に…… あああ、陽が沈んでくぅ…… りあむちゃんの夏が、暗くなっちゃうよう……。",
+    "frame": "0260_dialogue_2291.2s.jpg",
+    "t": 2291.2
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "大丈夫。日が落ちたら、日が落ちた後の楽しいことがありますよ、りあむちゃん♪",
+    "frame": "0261_dialogue_2300.6s.jpg",
+    "t": 2300.6
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "そうよ！どんなことにも遅すぎるなんてないわ！いつからだって、楽しむ気持ちがあれば、そこから楽しめるんだから！",
+    "frame": "0262_dialogue_2312.6s.jpg",
+    "t": 2312.6
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "っていうかさー、りあむ。ここには、アイドルがこんなにたくさんいるんだよ？",
+    "frame": "0263_dialogue_2322.6s.jpg",
+    "t": 2322.6
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "暗くなるわけないじゃん！ ゆいたちの夏、まだまだまだまだ、これからっしょ！",
+    "frame": "0264_dialogue_2331.4s.jpg",
+    "t": 2331.4
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "え……エモ～～～～っ！！",
+    "frame": "0265_dialogue_2337.0s.jpg",
+    "t": 2337.0
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "えー、それでは始めるわね。ビーチバレー対決番外編！試合開始！",
+    "frame": "0266_dialogue_2350.2s.jpg",
+    "t": 2350.2
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "響子、頼りにしてる！絶対勝とうね！",
+    "frame": "0267_dialogue_2357.0s.jpg",
+    "t": 2357.0
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "任せてください加蓮さん！ 私のアツアツスパイクで、お料理しちゃいますっ！",
+    "frame": "0268_dialogue_2364.8s.jpg",
+    "t": 2364.8
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "りあむちゃん、がんばれ～。がんばったら、ほめてあげよ～♪",
+    "frame": "0269_dialogue_2372.0s.jpg",
+    "t": 2372.0
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "チヤホヤ！されてぇ！ ぼくたち自堕落コンビの底力、見せてやろーぜ…… っていやもう、名前からして勝てないし、実質1対2じゃないこれ？",
+    "frame": "0270_dialogue_2387.4s.jpg",
+    "t": 2387.4
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "ねーねー、砂浜に落書きしよーよ！ みんなのサインとか、メッセージ☆ ここにゆいたちが来たよーって。",
+    "frame": "0271_dialogue_2402.4s.jpg",
+    "t": 2402.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "おっ、なんかそれ、アイドルっぽいな。いいぞ、やっちゃうか☆ は・あ・とっと……。",
+    "frame": "0272_dialogue_2413.6s.jpg",
+    "t": 2413.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "ICHINOSEっと…… これ、いつまで残るのかなー？",
+    "frame": "0273_dialogue_2421.0s.jpg",
+    "t": 2421.0
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "ずーっと残ってるよ、きっと！だって、楽しい思い出に変わっちゃうもん！",
+    "frame": "0274_dialogue_2430.2s.jpg",
+    "t": 2430.2
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "あ、ほら、見てください。 波打ち際に、ボトルが流れ着いてますよ。",
+    "frame": "0275_dialogue_2440.6s.jpg",
+    "t": 2440.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "お、雰囲気あるぅ。しかも、紙が入ってるじゃん☆ もしかしてアレか？ 誰かの恥ずかしい青春ポエムとか…… ラブレター的な……中身は？",
+    "frame": "0276_dialogue_2455.4s.jpg",
+    "t": 2455.4
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "なんでしょうね、これ……？ 地図みたいな絵に、ドクロと宝箱のマーク……。なんだか、わくわくしてきますね♪",
+    "frame": "0277_dialogue_2468.8s.jpg",
+    "t": 2468.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ちょちょちょ！ストップ！ み、見なかったことにしよ！ なにか別のお話がはじまっちゃいそうだから！！",
+    "frame": "0278_dialogue_2477.0s.jpg",
+    "t": 2477.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "りあむ山、食らえーっ！ ぱしゃぱしゃーっ♪",
+    "frame": "0279_dialogue_2486.4s.jpg",
+    "t": 2486.4
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "うわわ！やったな！お返ししてやるーって、うわ、これあれじゃん！水ぱしゃぱしゃじゃん！アイドルかよ！",
+    "frame": "0280_dialogue_2502.0s.jpg",
+    "t": 2502.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "もっともっといっちゃうよ！ それそれ、ぱしゃぱしゃー♪",
+    "frame": "0281_dialogue_2509.2s.jpg",
+    "t": 2509.2
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あ、愛海ちゃん……水の掛け合いにしては、近くない？ 気のせい？ 気のせいか？ ぼくが人との距離感分からないちゃんだから気になるだけ？",
+    "frame": "0283_dialogue_2523.6s.jpg",
+    "t": 2523.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "あれって、もしかしなくても……。",
+    "frame": "0284_dialogue_2529.0s.jpg",
+    "t": 2529.0
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "愛海、どさくさに紛れようとしてる……。",
+    "frame": "0285_dialogue_2534.2s.jpg",
+    "t": 2534.2
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "こうしてさー、ビーチチェアで寝転がってると、ちょっとオトナになったなーって感じ。",
+    "frame": "0286_dialogue_2546.0s.jpg",
+    "t": 2546.0
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "そうねぇ。ゆっくり過ごす時間を楽しめるのは、オトナかもしれないわね。",
+    "frame": "0287_dialogue_2554.8s.jpg",
+    "t": 2554.8
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "ねー。でもさー、やっぱ海に入ってる方が楽しいな！いまのゆいは！",
+    "frame": "0288_dialogue_2567.0s.jpg",
+    "t": 2567.0
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "ふふっ、そうね！いきましょうか！",
+    "frame": "0289_dialogue_2572.6s.jpg",
+    "t": 2572.6
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "そろそろホントに、夜になっちゃうねー。",
+    "frame": "0290_dialogue_2581.6s.jpg",
+    "t": 2581.6
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "夕ご飯を食べたら、今度はナイトプールかな！",
+    "frame": "0291_dialogue_2587.2s.jpg",
+    "t": 2587.2
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あのさ。ぼく、間違ってたわ。",
+    "frame": "0292_dialogue_2594.2s.jpg",
+    "t": 2594.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ん？なんの話？いまさら気づいた人生？",
+    "frame": "0293_dialogue_2599.2s.jpg",
+    "t": 2599.2
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あーうんそうそうそう。よく言われる。ぼくの人生、間違えっぱなし。じゃなくて！ここにいるのは間違ってないし！",
+    "frame": "0294_dialogue_2612.2s.jpg",
+    "t": 2612.2
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "なにより、言ってた通りだった。みんなと一緒にいたら――。",
+    "frame": "0295_dialogue_2618.6s.jpg",
+    "t": 2618.6
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "夏、終わんないわ！！",
+    "frame": "0296_dialogue_2622.8s.jpg",
+    "t": 2622.8
+   }
+  ]
+ },
+ {
+  "id": "ep5",
+  "tab": "第5話",
+  "title": "Paradise for Everyone！！",
+  "summary": "夜も更け、バカンスの余韻に浸るアイドルたちに合流したP。今回の旅行は、普段の重圧から離れ、アイドルとしての楽しさを思い出すために計画したものだと告げる。Pのそんな想いに、感じ入る少女たち。今回のお礼として、アイドルたちは撮った写真に寄せ書きを入れ、Pに贈るのだった。",
+  "start_s": 2622,
+  "title_frame": "0297_dialogue_2633.6s.jpg",
+  "log": [
+   "5"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "あら、みんな。ここにいたのね。",
+    "frame": "0298_dialogue_2635.8s.jpg",
+    "t": 2635.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "あ、瑞樹さん！ 楓ちゃんたちとの飲みは、終わった？",
+    "frame": "0299_dialogue_2644.2s.jpg",
+    "t": 2644.2
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "私は、ちょっと酔い醒ましにね。楓ちゃんたちもその辺りにいると思うわ。",
+    "frame": "0301_dialogue_2652.2s.jpg",
+    "t": 2652.2
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "ぷか～……。",
+    "frame": "0303_dialogue_2657.4s.jpg",
+    "t": 2657.4
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "ぷか～……。",
+    "frame": "0304_dialogue_2661.8s.jpg",
+    "t": 2661.8
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "で……あのふたりは？",
+    "frame": "0306_dialogue_2668.2s.jpg",
+    "t": 2668.2
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "昼間にはしゃぎ過ぎたから、果ててるんだって！ 果ててるってなんだろね、ウケる！",
+    "frame": "0307_dialogue_2677.2s.jpg",
+    "t": 2677.2
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "そう……。まあ、事故とかじゃないならいいわ。……って、あら？",
+    "frame": "0309_dialogue_2685.8s.jpg",
+    "t": 2685.8
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "プロデューサー、お疲れさまです～。見ての通り、満喫してますよ～。",
+    "frame": "0310_dialogue_2697.6s.jpg",
+    "t": 2697.6
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "Ｐサマ！！もー、こんなにぼくを放置して！大変だったんだぞ、みんなが！！",
+    "frame": "0312_dialogue_2705.0s.jpg",
+    "t": 2705.0
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "プロデューサーさん、こっちのドリンクを、どうぞ！ りあむちゃんも、",
+    "frame": "0313_dialogue_2713.6s.jpg",
+    "t": 2713.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "ありがとう",
+    "frame": "0314_dialogue_2718.0s.jpg",
+    "t": 2718.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あ、ありがと……。やっぱ、ママだわ……。この夏の覇権ママ確定。響子ママしか勝たん。",
+    "frame": "0315_dialogue_2730.2s.jpg",
+    "t": 2730.2
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "越えたらマズいラインの話は……？",
+    "frame": "0317_dialogue_2735.2s.jpg",
+    "t": 2735.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "プロデューサー、お昼はどこにいたの？ 海でもプールでもぜんぜん見かけなかったけど……。",
+    "frame": "0319_dialogue_2744.8s.jpg",
+    "t": 2744.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "市街の方に行く子たちのサポートをしたり、アクティビティに同行したり、旅行会社といろいろ調整をしたり、まぁ、いろいろとね……。",
+    "frame": "0320_dialogue_2753.8s.jpg",
+    "t": 2753.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "マジお疲れさま☆",
+    "frame": "0322_dialogue_2758.2s.jpg",
+    "t": 2758.2
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "この人数だもの…… ただ旅行にいくだけでも、そりゃ大変よねぇ……。",
+    "frame": "0323_dialogue_2766.0s.jpg",
+    "t": 2766.0
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "それで、Ｐサマ？そろそろ種明かしは？",
+    "frame": "0326_dialogue_2772.6s.jpg",
+    "t": 2772.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "種明かし？",
+    "frame": "0327_dialogue_2774.6s.jpg",
+    "t": 2774.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "あるんでしょ、今回も。「今回はこれを学んでほしかったんだ（キリッ）（ドヤッ）」みたいなの。もったいぶらないで、早く言っちゃえよ。",
+    "frame": "0330_dialogue_2790.0s.jpg",
+    "t": 2790.0
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "え、ないの？ みんなの絆を深めて……とかは？",
+    "frame": "0331_dialogue_2800.4s.jpg",
+    "t": 2800.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "もちろん、仲良くなってくれたら嬉しい。実際、会社にはそういった名目で申請はしたけれど……でも、それが目的というわけではないんだ。",
+    "frame": "0332_dialogue_2811.0s.jpg",
+    "t": 2811.0
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "楽しむって……遊ぶってこと？",
+    "frame": "0333_dialogue_2821.8s.jpg",
+    "t": 2821.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "そう。みんなは、アイドルとして成長している。ファンや現場の期待も大きくなって、視野が広がって、いろいろなことを、背負ってくれている。",
+    "frame": "0334_dialogue_2833.2s.jpg",
+    "t": 2833.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "だから、そういうことを全て、忘れてほしくて。",
+    "frame": "0335_dialogue_2838.4s.jpg",
+    "t": 2838.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "忘れちゃうんですか！？",
+    "frame": "0337_dialogue_2842.4s.jpg",
+    "t": 2842.4
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "どしたの！？キャラブレしてるよ！？働き過ぎで、おかしくなっちゃったの！？やっぱ労働は毒なの！？",
+    "frame": "0339_dialogue_2851.4s.jpg",
+    "t": 2851.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "りあむにはそういうことを、口うるさく言ったことないよな。",
+    "frame": "0340_dialogue_2856.0s.jpg",
+    "t": 2856.0
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "言われてみればそうだったかもしれない。普段のＰとオタクみたいなことしちゃったわ。オタクだからしかたない。ごめん。",
+    "frame": "0341_dialogue_2857.6s.jpg",
+    "t": 2857.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "……ともかく",
+    "frame": "0343_dialogue_2870.2s.jpg",
+    "t": 2870.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "君たちのやりたいことが、やるべきことにすり替わってしまっていないか……すり替えてしまっていないか。気になっていたんだ。",
+    "frame": "0344_dialogue_2879.8s.jpg",
+    "t": 2879.8
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "プロデューサー……。",
+    "frame": "0346_dialogue_2883.6s.jpg",
+    "t": 2883.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "アイドルであることを、楽しい。今だからこそ、そう思ってほしい。これはプロデューサーとしてじゃなく、ただの……。",
+    "frame": "0347_dialogue_2892.8s.jpg",
+    "t": 2892.8
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "なるほどねぇ。プロデューサー君、君の気持ちはわかったわ。けど……ひとつ、大事なことが抜けてるわよ？",
+    "frame": "0349_dialogue_2909.6s.jpg",
+    "t": 2909.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "そーそー。だったらプロデューサーも、等しくなきゃね？",
+    "frame": "0351_dialogue_2917.6s.jpg",
+    "t": 2917.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "オトナのしがらみってやつはいろいろとあるだろうけどさ。それこそ夏のせいにして、全部忘れちゃえよ☆",
+    "frame": "0353_dialogue_2928.6s.jpg",
+    "t": 2928.6
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "ゆいたちだって！プロデューサーちゃんに、ゆいたちのプロデュース、楽しいって思ってほしいもん☆",
+    "frame": "0354_dialogue_2938.8s.jpg",
+    "t": 2938.8
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "ふふっ♪ じゃあ、いっしょに遊んじゃいましょう！！",
+    "frame": "0355_dialogue_2948.2s.jpg",
+    "t": 2948.2
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "翌日",
+    "frame": "0356_dialogue_2959.4s.jpg",
+    "t": 2959.4
+   },
+   {
+    "type": "line",
+    "speaker": "ナレーション",
+    "text": "みんなと過ごす夏を、まだまだめいっぱい楽しむことにした……",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "ねぇねぇPサマ！ ぼく、いいものもってきた！",
+    "frame": "0357_dialogue_2964.0s.jpg",
+    "t": 2964.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "……これは？",
+    "frame": "0358_dialogue_2966.0s.jpg",
+    "t": 2966.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "えー？ まさか、Pサマ知らないの？ インスタントカメラだよ、インスタントカメラ。アイドルといえば、インスタントカメラっしょ。映えるよ？",
+    "frame": "0359_dialogue_2980.4s.jpg",
+    "t": 2980.4
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "覚えたての単語？ で、撮ったらプロデューサーさんの家か机にでも飾るとか？",
+    "frame": "0360_dialogue_2990.4s.jpg",
+    "t": 2990.4
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "真面目になりすぎないように、楽しくやろう！っていつでも思い出せるね！",
+    "frame": "0361_dialogue_2998.6s.jpg",
+    "t": 2998.6
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "いいわね！ じゃあ、カメラはホテルの人にお願いしましょ。",
+    "frame": "0362_dialogue_3006.6s.jpg",
+    "t": 3006.6
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "あの、写真にみんなでひとことずつ書いちゃいません？ この思い出を、寄せ書きみたいに！",
+    "frame": "0363_dialogue_3018.4s.jpg",
+    "t": 3018.4
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "いいですね！楽しかった、この夏の思い出に！飾れば、ハッピー間違いなしですよ！",
+    "frame": "0364_dialogue_3029.0s.jpg",
+    "t": 3029.0
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "え。その一枚ぼくがほしい。 集合でサインありだから1500円くらいでどう？ くれ。家宝にするから。2000円でもいい！よ！",
+    "frame": "0365_dialogue_3044.4s.jpg",
+    "t": 3044.4
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "買わないの！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "じゃあ、まずはゆいから！『アガるサイコーの夏☆』っと。",
+    "frame": "0366_dialogue_3056.0s.jpg",
+    "t": 3056.0
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "そうねぇ……。 『フレッシュ&リフレッシュ！』 ありがとね、プロデューサー君♪",
+    "frame": "0367_dialogue_3067.2s.jpg",
+    "t": 3067.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "『はぁとにメロメロ☆』……嘘書くな？ホントだろ？ホントだって言え☆",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "『笑顔でハッピー♪』 幸せそうな顔を見ると、幸せな気持ちになりますよね。 だから、プロデューサーも、笑顔で！",
+    "frame": "0368_dialogue_3091.4s.jpg",
+    "t": 3091.4
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "『潮風はすてきな隠し味♪』 いっぱい潮風を浴びて、楽しかったですねっ。",
+    "frame": "0369_dialogue_3101.4s.jpg",
+    "t": 3101.4
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "『水着パラダイス！』 ……ああ、待って！消そうとしないで！",
+    "frame": "0370_dialogue_3108.6s.jpg",
+    "t": 3108.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "んーとね……。じゃあ、『アドレナリンどばばーっ♪』っと。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "『アイドルは太陽！』 ま、ぼくはやみちゃんですけどね！",
+    "frame": "0371_dialogue_3124.2s.jpg",
+    "t": 3124.2
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "『人生楽しもう！』っと。 ふふっ。楽しかったよね、プロデューサーさん♪",
+    "frame": "0372_dialogue_3133.6s.jpg",
+    "t": 3133.6
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "……これで全員、書き終わった？ ん、オッケー♪",
+    "frame": "0373_dialogue_3140.2s.jpg",
+    "t": 3140.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "んじゃ……はい！ ちょっち今さらだけど…… アニバーサリーおめでと、プロデューサー☆",
+    "frame": "0374_dialogue_3149.8s.jpg",
+    "t": 3149.8
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "これからも、ゆいたちと一緒の時間を、いーっぱい楽しんでね♪",
+    "frame": "0375_dialogue_3158.6s.jpg",
+    "t": 3158.6
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "それじゃ、これからも全力で遊んじゃうぞー！",
+    "frame": "0376_dialogue_3164.8s.jpg",
+    "t": 3164.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "この夏は、まだまだ終わらせないぞーーー！",
+    "frame": "0377_dialogue_3171.6s.jpg",
+    "t": 3171.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "帰ったら 仕事だからね",
+    "frame": "0378_dialogue_3174.2s.jpg",
+    "t": 3174.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "ぴぇーーーーーーん！！",
+    "frame": "0379_dialogue_3178.0s.jpg",
+    "t": 3178.0
+   },
+   {
+    "type": "line",
+    "speaker": "一同",
+    "text": "あははっ♪",
+    "frame": "0380_dialogue_3187.4s.jpg",
+    "t": 3187.4
+   }
+  ]
+ },
+ {
+  "id": "ed",
+  "tab": "ED",
+  "title": "Ordinary Sunny Day",
+  "summary": "ひと時の休暇も終わり、戻ってきた日常。 アイドルたちはバカンス前と変わらない賑やかさで、 ファンを一層魅了している。あの砂浜で見た、 真夏の太陽のように。また今日も、楽しい日に なりそうだ。思い出の写真を見やりながら、 Pはアイドルたちの元へと向かうのだった。",
+  "start_s": 3187,
+  "title_frame": "0381_dialogue_3192.8s.jpg",
+  "log": [
+   "ED"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "ヤバいってこれ、もうギリギリじゃん！ ほら、早く！",
+    "frame": "0382_dialogue_3198.8s.jpg",
+    "t": 3198.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "寝坊してごめんなさああああああああああ！！",
+    "frame": "0383_dialogue_3203.8s.jpg",
+    "t": 3203.8
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "あはは♪ スリルたっぷりの展開だね～♪",
+    "frame": "0384_dialogue_3209.6s.jpg",
+    "t": 3209.6
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "プロデューサーちゃん、ゆいたち、お仕事いってくるね！",
+    "frame": "0385_dialogue_3215.0s.jpg",
+    "t": 3215.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "いってらっしゃい",
+    "frame": "0386_dialogue_3216.8s.jpg",
+    "t": 3216.8,
+    "csv_only": true
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "バカンスは終わって、また忙しいお仕事の日々が戻ってきた……",
+    "frame": "0387_dialogue_3226.4s.jpg",
+    "t": 3226.4
+   },
+   {
+    "type": "line",
+    "speaker": "一同",
+    "text": "いってきまーす♪",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ナレーション",
+    "text": "バカンスは終わって、また忙しいお仕事の日々が戻ってきた……",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "プロデューサーさん、お疲れさまです。 コーヒーを淹れたんですけど、いかがですか？",
+    "frame": "0389_dialogue_3235.2s.jpg",
+    "t": 3235.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "ありがとう",
+    "frame": "0390_dialogue_3236.8s.jpg",
+    "t": 3236.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "響子はこのあと、レッスンだよね？",
+    "frame": "0391_dialogue_3239.4s.jpg",
+    "t": 3239.4
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "はい、もう少したしたら。それで待ってたんですけど、たしかそろそろ、心さんたちの出た旅番組の時間だなって思って。",
+    "frame": "0392_dialogue_3250.4s.jpg",
+    "t": 3250.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "一緒に見ようか",
+    "frame": "0393_dialogue_3252.2s.jpg",
+    "t": 3252.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "はいっ♪",
+    "frame": "0394_dialogue_3253.8s.jpg",
+    "t": 3253.8
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "ん～、お湯の成分が肌にしみこんだ感じがするわね～♪ 見てほら心ちゃん、私のお肌！ぷるぷるじゃない？",
+    "frame": "0396_dialogue_3267.4s.jpg",
+    "t": 3267.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "うわ、ほんとだ！ やーん、はぁとたち、ますますスウィーティーになっちゃう☆",
+    "frame": "0397_dialogue_3275.6s.jpg",
+    "t": 3275.6
+   },
+   {
+    "type": "line",
+    "speaker": "瑞樹",
+    "text": "あら？ 地元のお酒？ じゃあ、いただくわね。……ん～っ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "とっても飲みやすくて、はぁと、ホントに酔っちゃいそう☆",
+    "frame": "0398_dialogue_3294.2s.jpg",
+    "t": 3294.2
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "すごいですよね、ふたりとも。どんどんファン層が広がっていってて。",
+    "frame": "0399_dialogue_3301.6s.jpg",
+    "t": 3301.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "みんな頑張っているよね",
+    "frame": "0400_dialogue_3303.4s.jpg",
+    "t": 3303.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ナレーション",
+    "text": "……それで思い出したけど。そろそろファンレターのチェックをしないといけないような……",
+    "frame": "0401_dialogue_3308.8s.jpg",
+    "t": 3308.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "ぶーろーでゅーーさーーーーっ！！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "もうっ！またお山じゃん！！ お山に登れる仕事って言ってたから期待してたのに！！ 山を登る仕事じゃん！！もーーっ！！",
+    "frame": "0403_dialogue_3328.0s.jpg",
+    "t": 3328.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "あの撮影は、スタッフさんが楽しかったって喜んでたよ。ありがとう。",
+    "frame": "0404_dialogue_3333.8s.jpg",
+    "t": 3333.8
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "あたしも楽しかったよ！ありがとう！ でも、ちーがーうーのーーーーっ！！ このままじゃあたし、健脚アイドルになっちゃうよーーーーっ！",
+    "frame": "0405_dialogue_3346.4s.jpg",
+    "t": 3346.4
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "愛海ちゃん、よしよし。 レッスン、一緒にいきましょう？",
+    "frame": "0407_dialogue_3354.2s.jpg",
+    "t": 3354.2
+   },
+   {
+    "type": "line",
+    "speaker": "愛海",
+    "text": "うわーん、茄子さーんっ！ …………うひひ。",
+    "frame": "0408_dialogue_3363.6s.jpg",
+    "t": 3363.6
+   },
+   {
+    "type": "line",
+    "speaker": "茄子",
+    "text": "あ、そういえば。プロデューサー、ちひろさんからこれ、預かり物です。",
+    "frame": "0409_dialogue_3371.4s.jpg",
+    "t": 3371.4
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "ファンレターの束を渡された……",
+    "frame": "0411_dialogue_3374.8s.jpg",
+    "t": 3374.8
+   },
+   {
+    "type": "line",
+    "speaker": "ナレーション",
+    "text": "ファンレターの束を渡された……",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "響子",
+    "text": "それじゃあ、そろそろ私たちは失礼しますね。プロデューサーさんのお仕事の邪魔になってもいけないですし。",
+    "frame": "0412_dialogue_3384.2s.jpg",
+    "t": 3384.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "レッスン頑張って",
+    "frame": "0413_dialogue_3386.2s.jpg",
+    "t": 3386.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "響子・愛海・茄子",
+    "text": "はーい♪",
+    "frame": "0414_dialogue_3388.4s.jpg",
+    "t": 3388.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "ファンレターを確認する",
+    "frame": "0416_dialogue_3392.8s.jpg",
+    "t": 3392.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ファン",
+    "text": "『唯ちゃん、今日も笑顔が輝いてました！』 『ピンク頭ちゃん、名前忘れましたけど頑張って！』 『しゅがーはぁとちゃん、応援してます！』",
+    "frame": "0417_dialogue_3402.6s.jpg",
+    "t": 3402.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "いろいろなファンのもとに、みんなの個性の輝きが、きちんと届いているようだ。まるで、真夏の太陽のように……",
+    "frame": "0418_dialogue_3410.6s.jpg",
+    "t": 3410.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "デスクの写真を見る",
+    "frame": "0419_dialogue_3412.4s.jpg",
+    "t": 3412.4,
+    "csv_only": true
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "あのリゾートで撮った写真だ。 楽しそうなみんなと、自分が写っている……",
+    "frame": "0420_dialogue_3419.0s.jpg",
+    "t": 3419.0
+   },
+   {
+    "type": "line",
+    "speaker": "ナレーション",
+    "text": "いろいろなファンのもとに、みんなの個性の輝きが、きちんと届いているようだ。まるで、真夏の太陽のように……",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ナレーション",
+    "text": "あのリゾートで撮った写真だ。楽しそうなみんなと、自分が写っている……",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "……気負っていたのは、こっちだったのかもしれないな。",
+    "frame": "0421_dialogue_3423.2s.jpg",
+    "t": 3423.2
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "「プロデューサーさん！ ごめん、ちょっとこっちの現場来られる？ りあむがやらかしちゃって！」",
+    "frame": "0423_dialogue_3434.8s.jpg",
+    "t": 3434.8
+   },
+   {
+    "type": "line",
+    "speaker": "りあむ",
+    "text": "「おおおおおん、ごめんねPサマあああああああ！！」",
+    "frame": "0424_dialogue_3440.0s.jpg",
+    "t": 3440.0
+   },
+   {
+    "type": "line",
+    "speaker": "唯",
+    "text": "「あははは！やっぱ、ちょーウケる！」",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "志希",
+    "text": "「来るまではなんとかないどくから、よろしくね～♪」",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "……ぶつ。……あはは！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "加蓮",
+    "text": "「笑いごとじゃないんだってば！そういうことで、お願い！」",
+    "frame": "0425_dialogue_3461.6s.jpg",
+    "t": 3461.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "大丈夫 すぐいくよ",
+    "frame": "0426_dialogue_3463.8s.jpg",
+    "t": 3463.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "また今日も、楽しい日になりそうだ。",
+    "frame": "0428_dialogue_3466.8s.jpg",
+    "t": 3466.8
+   }
+  ]
+ }
+]
