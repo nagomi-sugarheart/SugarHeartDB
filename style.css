@@ -3445,6 +3445,12 @@ input[name="dialogue-tab"] {
     .unit-search-input { min-width: 0; }
     .unit-sort-group { flex-wrap: wrap; }
 }
+.list-empty {
+    text-align: center;
+    color: var(--sh-text-soft);
+    font-size: 13px;
+    padding: 28px 0 8px;
+}
 .size-filter {
     display: flex;
     gap: 4px;
