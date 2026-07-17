@@ -6961,3 +6961,200 @@ input[name="dialogue-tab"] {
     margin: 18px 0 10px;
 }
 .ip1-sub > .tab-list { margin-top: 4px; }
+
+/* ============================================================
+   歌唱曲一覧（General/SongList.html）
+============================================================ */
+.song-list { display: flex; flex-direction: column; gap: 12px; }
+
+.song-item {
+    background: var(--sh-bg-card);
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+.song-item[open] { box-shadow: var(--shadow-md); }
+
+.song-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
+.song-head::-webkit-details-marker { display: none; }
+
+.song-jk { flex-shrink: 0; width: 62px; height: 62px; }
+.song-jk-img {
+    width: 62px; height: 62px;
+    border-radius: var(--r-md);
+    object-fit: cover;
+    display: block;
+    box-shadow: var(--shadow-sm);
+}
+.song-jk-none {
+    display: flex; align-items: center; justify-content: center;
+    border-radius: var(--r-md);
+    background: var(--sh-pink-mist);
+    color: var(--sh-pink);
+    font-size: 26px;
+}
+
+.song-headmain { flex: 1; min-width: 0; }
+.song-title {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--sh-text);
+    line-height: 1.35;
+    display: flex; align-items: center; flex-wrap: wrap; gap: 6px;
+    margin-bottom: 5px;
+}
+.song-singers { gap: 6px; }
+.song-singers .idol { width: 38px; }
+.song-singers .idol .ic img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto; }
+.song-singers .idol.shin .ic img { border: 2px solid var(--sh-pink); }
+.song-singers .idol .nm { display: block; font-size: 8.5px; color: var(--sh-text-soft); margin-top: 2px; text-align: center; }
+.song-singers .idol.no-icon .nm {
+    display: inline-block;
+    font-size: 10px;
+    color: var(--sh-pink-deep);
+    background: var(--sh-pink-mist);
+    border-radius: var(--r-pill);
+    padding: 3px 8px;
+    margin-top: 8px;
+}
+
+/* 属性バッジ */
+.song-attr, .dere-attr {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: var(--r-pill);
+    padding: 2px 9px;
+    line-height: 1.5;
+}
+.attr-cute { background: #ef2782; }
+.attr-cool { background: #006aff; }
+.attr-passion { background: #f49207; }
+.attr-all { background: linear-gradient(100deg, #ef2782 33.33%, #006aff 33.33% 66.67%, #f49207 66.67%); }
+
+.song-caret {
+    flex-shrink: 0;
+    width: 10px; height: 10px;
+    border-right: 2px solid var(--sh-pink);
+    border-bottom: 2px solid var(--sh-pink);
+    transform: rotate(45deg);
+    transition: transform 0.2s;
+    margin-right: 4px;
+}
+.song-item[open] .song-caret { transform: rotate(-135deg); }
+
+/* 本文 */
+.song-body {
+    padding: 4px 14px 16px;
+    border-top: 1px dashed var(--sh-line-soft);
+}
+.song-note {
+    font-size: 12px;
+    color: var(--sh-text-soft);
+    background: var(--sh-pink-mist);
+    border-radius: var(--r-md);
+    padding: 8px 11px;
+    margin: 12px 0 6px;
+    line-height: 1.6;
+}
+.song-orig-singers { font-size: 12px; color: var(--sh-text-soft); margin: 8px 0 4px; line-height: 1.6; }
+.song-orig-singers b { color: var(--sh-pink-deep); }
+
+.song-meta { margin: 10px 0 0; }
+.song-mrow { display: flex; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--sh-line-soft); font-size: 12.5px; }
+.song-mrow dt { flex-shrink: 0; width: 78px; color: var(--sh-text-mute); font-weight: 700; }
+.song-mrow dd { flex: 1; margin: 0; color: var(--sh-text); line-height: 1.55; }
+
+/* デレステ情報 */
+.song-sub {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--sh-pink-deep);
+    border-left: 3px solid var(--sh-pink);
+    padding-left: 7px;
+    margin: 16px 0 8px;
+}
+.dere-info { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+.dere-fact { font-size: 11.5px; color: var(--sh-text-soft); }
+.dere-fact b { color: var(--sh-text-mute); font-weight: 700; margin-right: 4px; }
+.dere-levels { display: flex; flex-wrap: wrap; gap: 6px; }
+.dere-lv {
+    display: flex; flex-direction: column; align-items: center;
+    min-width: 52px;
+    background: var(--sh-bg-alt);
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-md);
+    padding: 5px 8px;
+}
+.dere-lv .lv-name { font-size: 8.5px; color: var(--sh-text-mute); letter-spacing: 0.02em; }
+.dere-lv .lv-num { font-size: 16px; font-weight: 700; color: var(--sh-pink-deep); line-height: 1.2; }
+
+/* イベントボタン */
+.song-rel { margin: 14px 0 4px; }
+.song-rel .rel-btn {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 7px 14px;
+    background: var(--sh-bg-alt);
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-pill);
+    color: var(--sh-pink-deep);
+    text-decoration: none;
+    font-size: 12px; font-weight: 700;
+    transition: background 0.18s, transform 0.18s, box-shadow 0.18s;
+}
+.song-rel .rel-btn::before { content: "◆"; color: var(--sh-pink); font-size: 0.5rem; }
+.song-rel .rel-btn:hover { background: var(--sh-pink-soft); transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+/* LIVE披露 */
+.song-lives { margin-top: 14px; border: 1px solid var(--sh-line-soft); border-radius: var(--r-md); overflow: hidden; }
+.song-lives > summary {
+    cursor: pointer; list-style: none;
+    padding: 9px 12px;
+    background: var(--sh-bg-alt);
+    font-size: 12.5px; font-weight: 700; color: var(--sh-pink-deep);
+}
+.song-lives > summary::-webkit-details-marker { display: none; }
+.song-lives > summary::after { content: "＋"; float: right; color: var(--sh-pink); }
+.song-lives[open] > summary::after { content: "－"; }
+.live-table { padding: 4px 0; }
+.live-row {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    gap: 2px 10px;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--sh-line-soft);
+    font-size: 11.5px;
+}
+.live-row:last-child { border-bottom: none; }
+.live-date { color: var(--sh-text-mute); font-weight: 700; grid-row: span 2; }
+.live-date .lv-tag {
+    display: inline-block; margin-left: 4px;
+    font-size: 8.5px; font-weight: 700; color: #fff; background: var(--sh-pink);
+    border-radius: var(--r-pill); padding: 1px 5px; vertical-align: middle;
+}
+.live-ev { color: var(--sh-text); line-height: 1.5; }
+.live-venue { display: block; font-size: 10.5px; color: var(--sh-text-mute); margin-top: 1px; }
+.live-perf { grid-column: 2; color: var(--sh-text-soft); line-height: 1.55; }
+
+.song-source { font-size: 10.5px; color: var(--sh-text-mute); margin-top: 14px; line-height: 1.6; }
+
+@media (max-width: 640px) {
+    .song-jk, .song-jk-img { width: 52px; height: 52px; }
+    .song-title { font-size: 14px; }
+    .song-singers .idol { width: 34px; }
+    .song-singers .idol .ic img { width: 30px; height: 30px; }
+    .live-row { grid-template-columns: 74px 1fr; }
+    .song-mrow dt { width: 66px; }
+}

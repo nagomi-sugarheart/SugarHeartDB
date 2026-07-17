@@ -102,25 +102,25 @@
 	- [x] その他
 - [ ] その他
 	- [x] シンデレラガールズ劇場（無印／わいど☆／アニメの一覧ページ・絞込み対応）
-	- [ ] 歌唱曲
-		- [ ] 命燃やして恋せよ乙女
-		- [ ] Take me☆Take you
-		- [ ] SUN♡FLOWER
-		- [ ] Happy New Yeah!
-		- [ ] CoCo夏夏夏Holiday
-		- [ ] 凸凹スピードスター
-		- [ ] しゅがーはぁと☆レボリューション
-		- [ ] 躍るFLAGSHIP
-		- [ ] オウムアムアに幸運を
-		- [ ] Go Just Go!
-		- [ ] ダンシング・デッド
-		- [ ] 世界はそれを愛と呼ぶんだぜ
-		- [ ] 認めてくれなくたっていいよ
-		- [ ] 熱情エナモラル
-		- [ ] Sweet memories
-		- [ ] （ダンス・ダンス・ダンス）
-		- [ ] もしも「カワイイ」が世界からなくなっても
-		- [ ] シンデレラNo.1
+	- [x] 歌唱曲（歌唱曲一覧ページに統合：General/SongList.html）
+		- [x] 命燃やして恋せよ乙女
+		- [x] Take me☆Take you
+		- [x] SUN♡FLOWER
+		- [x] Happy New Yeah!
+		- [x] CoCo夏夏夏Holiday
+		- [x] 凸凹スピードスター
+		- [x] しゅがーはぁと☆レボリューション
+		- [x] 躍るFLAGSHIP
+		- [x] オウムアムアに幸運を
+		- [x] Go Just Go!
+		- [x] ダンシング・デッド
+		- [x] 世界はそれを愛と呼ぶんだぜ
+		- [x] 認めてくれなくたっていいよ
+		- [x] 熱情エナモラル
+		- [x] Sweet memories
+		- [x] （ダンス・ダンス・ダンス）
+		- [x] もしも「カワイイ」が世界からなくなっても
+		- [x] シンデレラNo.1
 	- [ ] ライブ
 		- [ ] THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 石川公演
 		- [ ] THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! SSA公演
