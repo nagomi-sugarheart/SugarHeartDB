@@ -6484,6 +6484,21 @@ input[name="dialogue-tab"] {
     text-align: center;
 }
 
+/* ゲームセンター等: 単体スクショの表示 */
+.gc-figure { margin: 0; }
+.gc-shot {
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+    display: block;
+    border-radius: var(--r-sm);
+    border: 1px solid var(--sh-line);
+    box-shadow: var(--shadow-sm);
+    cursor: zoom-in;
+    transition: opacity 0.15s;
+}
+.gc-shot:hover { opacity: 0.88; }
+
 /* ----------------------------------------------------------
    Popmas speech bubble (P's line)
 ---------------------------------------------------------- */
