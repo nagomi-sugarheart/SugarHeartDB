@@ -6879,6 +6879,34 @@ input[name="dialogue-tab"] {
     .dss-title-card { width: 100%; }
 }
 
+/* dss-commu 補助: 楽曲MV／ログのみ注記 */
+.dss-note {
+    font-size: 12.5px;
+    color: var(--sh-text-soft);
+    background: var(--sh-bg-alt);
+    border: 1px dashed var(--sh-line);
+    border-radius: var(--r-sm);
+    padding: 10px 12px;
+    margin-top: 12px;
+}
+
+/* ============================================================
+   EVERLASTING & EVERAFTER: イベント区切り
+============================================================ */
+.ee-block { margin-bottom: 40px; }
+.ee-head {
+    border-bottom: 2px solid var(--sh-pink);
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+}
+.ee-head h2 {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    color: var(--sh-pink-deep);
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
 /* ============================================================
    アイドルプロデュース（IdolProduce1st）: 場所タブ内のセクション見出し
 ============================================================ */
