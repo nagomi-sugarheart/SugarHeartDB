@@ -6499,6 +6499,31 @@ input[name="dialogue-tab"] {
 }
 .gc-shot:hover { opacity: 0.88; }
 
+/* ウワサ等: 横長バナーの縦積み */
+.uwasa-stack { display: flex; flex-direction: column; gap: 14px; margin-top: 6px; }
+.uwasa-stack .gc-shot { max-width: 760px; }
+
+/* スタンプ */
+.stamp-shot {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    background: var(--sh-bg-alt);
+    border-radius: var(--r-sm);
+    border: 1px solid var(--sh-line);
+    cursor: zoom-in;
+    transition: opacity 0.15s;
+}
+.stamp-shot:hover { opacity: 0.88; }
+
+/* ローディング: ループ再生する短尺動画 */
+.loop-vid {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #000;
+}
+
 /* ----------------------------------------------------------
    Popmas speech bubble (P's line)
 ---------------------------------------------------------- */
