@@ -7267,6 +7267,101 @@ input[name="dialogue-tab"] {
 .solo-remix-info { flex: 1; margin: 0; }
 
 /* ============================================================
+   参加ライブ一覧（LiveList）
+============================================================ */
+.sh-tag[data-tag="cast"] { background: var(--sh-pink); }
+.sh-tag[data-tag="xr"]   { background: #7b6fff; }
+
+.ll-dot-cast { background: var(--sh-pink); }
+.ll-dot-xr   { background: #7b6fff; }
+
+.ll-filters { margin: 12px 0 8px; }
+
+.ll-concert-card,
+.ll-song-card {
+    border: 1px solid var(--sh-line);
+    border-radius: var(--r-sm);
+    margin-bottom: 10px;
+    background: var(--sh-bg-card);
+    overflow: hidden;
+}
+.ll-concert-card[open] { border-color: var(--sh-pink-soft); }
+.ll-song-card[open]    { border-color: #c4bfff; }
+
+.ll-concert-head,
+.ll-song-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 16px;
+    cursor: pointer;
+    list-style: none;
+    flex-wrap: wrap;
+    user-select: none;
+}
+.ll-concert-head::-webkit-details-marker,
+.ll-song-head::-webkit-details-marker { display: none; }
+.ll-concert-head::after,
+.ll-song-head::after {
+    content: '▶';
+    font-size: 0.68rem;
+    color: var(--sh-text-mute);
+    margin-left: auto;
+    transition: transform 0.18s;
+    flex-shrink: 0;
+}
+.ll-concert-card[open] .ll-concert-head::after,
+.ll-song-card[open] .ll-song-head::after { transform: rotate(90deg); }
+
+.ll-date { display: flex; flex-direction: column; align-items: center; min-width: 46px; flex-shrink: 0; }
+.ll-y    { font-size: 0.7rem; color: var(--sh-text-mute); line-height: 1; }
+.ll-md   { font-size: 0.9rem; font-weight: 700; color: var(--sh-text); }
+.ll-date-sm { font-size: 0.8rem; color: var(--sh-text-mute); min-width: 80px; flex-shrink: 0; }
+
+.ll-event-name { flex: 1; font-size: 0.88rem; color: var(--sh-text); line-height: 1.5; }
+.ll-song-title { flex: 1; font-size: 0.92rem; font-weight: 600; color: var(--sh-text); }
+.ll-song-count { font-size: 0.8rem; color: var(--sh-text-mute); flex-shrink: 0; }
+
+.ll-setlist,
+.ll-perf-list {
+    border-top: 1px solid var(--sh-line);
+    background: var(--sh-bg-alt);
+    padding: 4px 0;
+}
+.ll-track {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    padding: 5px 16px;
+    border-bottom: 1px dotted var(--sh-line);
+    flex-wrap: wrap;
+}
+.ll-track:last-child { border-bottom: none; }
+.ll-track-num   { font-size: 0.73rem; color: var(--sh-text-mute); min-width: 36px; flex-shrink: 0; }
+.ll-track-title { font-size: 0.88rem; font-weight: 600; color: var(--sh-text); min-width: 150px; }
+.ll-track-with  { font-size: 0.8rem; color: var(--sh-text-soft); flex: 1; }
+
+.ll-perf-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 6px 16px;
+    border-bottom: 1px dotted var(--sh-line);
+    flex-wrap: wrap;
+}
+.ll-perf-row:last-child { border-bottom: none; }
+.ll-perf-num   { font-size: 0.73rem; color: var(--sh-text-mute); flex-shrink: 0; }
+.ll-perf-event { font-size: 0.86rem; color: var(--sh-text); flex: 1; min-width: 180px; }
+.ll-perf-with  { font-size: 0.8rem; color: var(--sh-text-soft); flex-basis: 100%; padding-left: 100px; }
+
+@media (max-width: 600px) {
+    .ll-track, .ll-perf-row { padding: 5px 10px; }
+    .ll-perf-with { padding-left: 0; }
+    .ll-track-title { min-width: 90px; }
+    .ll-perf-event { min-width: 0; }
+}
+
+/* ============================================================
    衣装一覧（CostumeList）
 ============================================================ */
 .costume-ol {
