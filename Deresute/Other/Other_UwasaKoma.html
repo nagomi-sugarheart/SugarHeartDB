@@ -64,14 +64,14 @@
         <h2 class="box-title">ローディング</h2>
         <div class="pm-gallery">
             <figure class="pm-gallery-item">
-                <video class="loop-vid" autoplay loop muted playsinline preload="metadata">
+                <video class="loop-vid" autoplay muted playsinline preload="auto">
                     <source src="https://res.cloudinary.com/dnmzdghoi/video/upload/Deresute/KomaUwasaStamp/loading_aniputi.mp4" type="video/mp4">
                     <source src="https://res.cloudinary.com/dnmzdghoi/video/upload/Deresute/KomaUwasaStamp/loading_aniputi.webm" type="video/webm">
                 </video>
                 <figcaption class="pm-gallery-cap">あにぷち</figcaption>
             </figure>
             <figure class="pm-gallery-item">
-                <video class="loop-vid" autoplay loop muted playsinline preload="metadata">
+                <video class="loop-vid" autoplay muted playsinline preload="auto">
                     <source src="https://res.cloudinary.com/dnmzdghoi/video/upload/Deresute/KomaUwasaStamp/loading_aniputi_nostalgie.mp4" type="video/mp4">
                     <source src="https://res.cloudinary.com/dnmzdghoi/video/upload/Deresute/KomaUwasaStamp/loading_aniputi_nostalgie.webm" type="video/webm">
                 </video>
@@ -89,12 +89,20 @@
 
 <script src="components/common.js"></script>
 <script>
-/* ローディング動画をミュート・ループで確実に再生（自動再生ブロック対策） */
+/* ローディング動画: ミュート自動再生 + シームレスループ（timeupdate で終端直前に巻き戻し） */
 (function () {
     var vids = document.querySelectorAll('.loop-vid');
+    vids.forEach(function (v) {
+        v.muted = true;
+        /* 終端 150ms 前に先頭へ戻して黒フラッシュを防ぐ */
+        v.addEventListener('timeupdate', function () {
+            if (this.duration && this.currentTime >= this.duration - 0.15) {
+                this.currentTime = 0;
+            }
+        });
+    });
     function playAll() {
         vids.forEach(function (v) {
-            v.muted = true;
             var p = v.play();
             if (p && p.catch) p.catch(function () {});
         });
