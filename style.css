@@ -7265,3 +7265,23 @@ input[name="dialogue-tab"] {
     box-shadow: var(--shadow-sm);
 }
 .solo-remix-info { flex: 1; margin: 0; }
+
+/* ============================================================
+   衣装一覧（CostumeList）
+============================================================ */
+.costume-ol {
+    margin: 20px 0 0;
+    padding-left: 1.8em;
+    line-height: 1.9;
+    columns: 2;
+    column-gap: 40px;
+}
+.costume-ol li {
+    break-inside: avoid;
+    padding: 2px 0;
+    font-size: 0.92rem;
+    color: var(--sh-text);
+}
+@media (max-width: 600px) {
+    .costume-ol { columns: 1; }
+}
