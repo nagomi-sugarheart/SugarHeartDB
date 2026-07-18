@@ -7380,3 +7380,69 @@ input[name="dialogue-tab"] {
 @media (max-width: 600px) {
     .costume-ol { columns: 1; }
 }
+
+/* ============================================================
+   ルームアイテム（Other_Room）
+============================================================ */
+.room-card {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    border: 1px solid var(--sh-line);
+    border-radius: var(--r-sm);
+    background: var(--sh-bg-card);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.room-card-img {
+    width: 260px;
+    flex-shrink: 0;
+    object-fit: cover;
+    cursor: pointer;
+    display: block;
+    background: #111;
+}
+.room-card-body {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 16px 14px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.room-card-name {
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: var(--sh-text);
+    margin: 0 0 6px;
+    line-height: 1.4;
+}
+.room-card-desc {
+    font-size: 0.86rem;
+    color: var(--sh-text-soft);
+    line-height: 1.75;
+    margin: 0 0 10px;
+}
+.room-card-stats {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 3px 12px;
+    font-size: 0.82rem;
+}
+.room-card-stats dt {
+    color: var(--sh-text-mute);
+    white-space: nowrap;
+}
+.room-card-stats dd {
+    color: var(--sh-text);
+    margin: 0;
+}
+.room-card-stats .unsellable {
+    color: #e04040;
+    font-weight: 600;
+}
+@media (max-width: 640px) {
+    .room-card { flex-direction: column; }
+    .room-card-img { width: 100%; max-height: 200px; }
+    .room-card-body { padding: 12px; }
+}
