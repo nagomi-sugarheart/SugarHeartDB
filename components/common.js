@@ -243,6 +243,29 @@ function initV2Cycler(images, imgId, counterId) {
             } catch (e) {}
         }
 
+        /* URL ハッシュで tab-group のタブを自動切り替えしてスクロール */
+        if (location.hash) {
+            var tabId = location.hash.slice(1);
+            var tabPanel = document.querySelector('.tab-panel[data-tab="' + tabId + '"]');
+            if (tabPanel) {
+                var tabGroup = tabPanel.closest('.tab-group');
+                if (tabGroup) {
+                    tabGroup.querySelectorAll('.tab-item').forEach(function (b) {
+                        if (b.closest('.tab-group') === tabGroup) b.classList.remove('active');
+                    });
+                    tabGroup.querySelectorAll('.tab-panel').forEach(function (c) {
+                        if (c.closest('.tab-group') === tabGroup) c.classList.remove('active');
+                    });
+                    var tabBtn = tabGroup.querySelector('.tab-item[onclick*="\'' + tabId + '\'"]');
+                    if (tabBtn) tabBtn.classList.add('active');
+                    tabPanel.classList.add('active');
+                    setTimeout(function () {
+                        tabGroup.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 50);
+                }
+            }
+        }
+
         /* ep-block アコーディオン (PuchiDerella) */
         document.querySelectorAll('.ep-block .ep-head').forEach(function (h) {
             h.style.cursor = 'pointer';
