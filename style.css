@@ -7157,4 +7157,111 @@ input[name="dialogue-tab"] {
     .song-singers .idol .ic img { width: 30px; height: 30px; }
     .live-row { grid-template-columns: 74px 1fr; }
     .song-mrow dt { width: 66px; }
+    .song-cd-area { flex-direction: column; }
+    .song-jk2 { width: 100%; max-width: 160px; margin: 0 auto; }
+    .filter-row { flex-direction: column; }
+    .filter-input, .filter-select { width: 100%; max-width: 100%; }
+    .solo-remix-item { flex-direction: column; }
+    .solo-remix-jk { width: 100%; max-width: 140px; margin: 0 auto; }
 }
+
+/* 検索・絞り込みフィルター */
+.song-filter {
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    background: var(--sh-pink-mist);
+    border-radius: var(--r-lg);
+    border: 1px solid var(--sh-line-soft);
+}
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+.filter-input {
+    flex: 2;
+    min-width: 160px;
+    padding: 8px 12px;
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-pill);
+    font-size: 13px;
+    background: #fff;
+    color: var(--sh-text);
+    outline: none;
+    transition: border-color 0.18s;
+}
+.filter-input:focus { border-color: var(--sh-pink); }
+.filter-select {
+    flex: 1;
+    min-width: 140px;
+    padding: 8px 10px;
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-pill);
+    font-size: 13px;
+    background: #fff;
+    color: var(--sh-text);
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.18s;
+}
+.filter-select:focus { border-color: var(--sh-pink); }
+.filter-result {
+    margin: 8px 0 0;
+    font-size: 11.5px;
+    color: var(--sh-text-mute);
+    text-align: right;
+}
+.filter-result #sf-msg {
+    font-weight: 700;
+    color: var(--sh-pink-deep);
+}
+
+/* 2枚目ジャケット（CDジャケット）+ メタ情報エリア */
+.song-cd-area {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.song-cd-area .song-meta { flex: 1; margin: 0; }
+.song-jk2 {
+    flex-shrink: 0;
+    width: 28%;
+    max-width: 120px;
+    min-width: 70px;
+}
+.song-jk2-img {
+    width: 100%;
+    display: block;
+    border-radius: var(--r-md);
+    object-fit: cover;
+    box-shadow: var(--shadow-sm);
+}
+
+/* ソロ・リミックス収録CDセクション */
+.song-solo-remix { margin-top: 4px; }
+.solo-remix-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    background: var(--sh-bg-alt);
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-md);
+}
+.solo-remix-jk {
+    flex-shrink: 0;
+    width: 22%;
+    max-width: 90px;
+    min-width: 60px;
+}
+.solo-remix-jk-img {
+    width: 100%;
+    display: block;
+    border-radius: var(--r-md);
+    object-fit: cover;
+    box-shadow: var(--shadow-sm);
+}
+.solo-remix-info { flex: 1; margin: 0; }

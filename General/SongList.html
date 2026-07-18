@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
-    <link rel="stylesheet" href="style.css?v=20260718a">
+    <link rel="stylesheet" href="style.css?v=20260718b">
 </head>
 <body>
 <script src="components/header.js"></script>
@@ -27,13 +27,69 @@
 <section class="page-hero">
     <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>歌唱曲一覧</strong></div>
     <h1>歌唱曲一覧 <span class="sub">/ GENERAL</span></h1>
-    <p class="summary">佐藤心（しゅがーはぁと）が歌唱する楽曲の一覧です。曲名をタップすると、作詞・作曲・発売日、デレステ実装情報（属性・難易度・実装日・ジャケット）、LIVEでの披露履歴を確認できます。</p>
+    <p class="summary">佐藤心（しゅがーはぁと）が歌唱する楽曲の一覧です。曲名をタップすると、作詞・作曲・発売日、デレステ実装情報（属性・難易度・実装日）、ソロ・リミックス収録CD情報、LIVEでの披露履歴を確認できます。</p>
 </section>
 
 <div class="page">
   <div class="box-area">
+
+    <div class="song-filter">
+      <div class="filter-row">
+        <input type="search" id="sf-q" class="filter-input" placeholder="曲名・アイドル名で検索…" oninput="sfFilter()" autocomplete="off">
+        <select id="sf-count" class="filter-select" onchange="sfFilter()">
+          <option value="">歌唱人数（すべて）</option>
+          <option value="1">ソロ（1人）</option>
+          <option value="2">デュオ（2人）</option>
+          <option value="3">トリオ（3人）</option>
+          <option value="4">カルテット（4人）</option>
+          <option value="5">クインテット（5人）</option>
+          <option value="9">9人</option>
+        </select>
+        <select id="sf-idol" class="filter-select" onchange="sfFilter()">
+          <option value="">歌唱アイドル（すべて）</option>
+      <option value="佐藤心">佐藤心</option>
+      <option value="高垣楓">高垣楓</option>
+      <option value="三船美優">三船美優</option>
+      <option value="安部菜々">安部菜々</option>
+      <option value="片桐早苗">片桐早苗</option>
+      <option value="森久保乃々">森久保乃々</option>
+      <option value="島村卯月">島村卯月</option>
+      <option value="前川みく">前川みく</option>
+      <option value="依田芳乃">依田芳乃</option>
+      <option value="本田未央">本田未央</option>
+      <option value="城ヶ崎美嘉">城ヶ崎美嘉</option>
+      <option value="諸星きらり">諸星きらり</option>
+      <option value="渋谷凛">渋谷凛</option>
+      <option value="三村かな子">三村かな子</option>
+      <option value="上田鈴帆">上田鈴帆</option>
+      <option value="十時愛梨">十時愛梨</option>
+      <option value="小日向美穂">小日向美穂</option>
+      <option value="北条加蓮">北条加蓮</option>
+      <option value="一ノ瀬志希">一ノ瀬志希</option>
+      <option value="神谷奈緒">神谷奈緒</option>
+      <option value="黒埼ちとせ">黒埼ちとせ</option>
+      <option value="的場梨沙">的場梨沙</option>
+      <option value="夢見りあむ">夢見りあむ</option>
+      <option value="大槻唯">大槻唯</option>
+      <option value="鷹富士茄子">鷹富士茄子</option>
+      <option value="棟方愛海">棟方愛海</option>
+      <option value="川島瑞樹">川島瑞樹</option>
+      <option value="五十嵐響子">五十嵐響子</option>
+      <option value="及川雫">及川雫</option>
+      <option value="村上巴">村上巴</option>
+      <option value="久川凪">久川凪</option>
+      <option value="ライラ">ライラ</option>
+      <option value="鷺沢文香">鷺沢文香</option>
+      <option value="輿水幸子">輿水幸子</option>
+      <option value="イヴ・サンタクロース">イヴ・サンタクロース</option>
+      <option value="神崎蘭子">神崎蘭子</option>
+        </select>
+      </div>
+      <p class="filter-result"><span id="sf-msg">19曲</span>表示中</p>
+    </div>
+
     <div class="song-list">
-      <details class="song-item" data-attr="all">
+      <details class="song-item" data-attr="all" data-title="命燃やして恋せよ乙女" data-singers="高垣楓,佐藤心,三船美優,安部菜々,片桐早苗" data-count="5">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/inochi" alt="命燃やして恋せよ乙女 ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -49,6 +105,8 @@
           <span class="song-caret" aria-hidden="true"></span>
         </summary>
         <div class="song-body">
+        <div class="song-cd-area">
+          <div class="song-jk2"><img class="song-jk2-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/inochi_jacket2" alt="命燃やして恋せよ乙女 CDジャケット" loading="lazy"></div>
           <dl class="song-meta">
           <div class="song-mrow"><dt>区分</dt><dd>宵乙女</dd></div>
           <div class="song-mrow"><dt>作詞</dt><dd>森由里子</dd></div>
@@ -56,10 +114,11 @@
           <div class="song-mrow"><dt>編曲</dt><dd>TAKT(TRYTONELABO)</dd></div>
           <div class="song-mrow"><dt>CD／配信</dt><dd>THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER 12 命燃やして恋せよ乙女(2017/08/09)</dd></div>
           </dl>
+        </div>
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-all">全タイプ</span>
+                        <span class="dere-attr attr-all">全タイプ</span>
             <span class="dere-fact"><b>実装日</b>2016/12/31</span>
             <span class="dere-fact"><b>BPM</b>112</span>
             <span class="dere-fact"><b>時間</b>2:04</span>
@@ -74,6 +133,16 @@
             <div class="dere-lv"><span class="lv-name">LIGHT</span><span class="lv-num">7</span></div>
             <div class="dere-lv"><span class="lv-name">TRICK</span><span class="lv-num">17</span></div>
           </div>
+        </div>
+        <div class="song-solo-remix">
+          <h4 class="song-sub">ソロ・リミックス収録CD</h4>
+        <div class="solo-remix-item">
+          <div class="solo-remix-jk"><img class="solo-remix-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/inochi_solo_remix" alt="THE IDOLM@STER CINDERELLA GIRLS SS3A Live Sound Booth♪ 会場オリジナルCD" loading="lazy"></div>
+          <dl class="solo-remix-info">
+            <div class="song-mrow"><dt>収録CD</dt><dd>THE IDOLM@STER CINDERELLA GIRLS SS3A Live Sound Booth♪ 会場オリジナルCD</dd></div>
+            <div class="song-mrow"><dt>発売日</dt><dd>2018-09-08</dd></div>
+          </dl>
+        </div>
         </div>
         <div class="song-rel">
           <a class="rel-btn" href="Deresute/Event/InochiMoyashiteKoiseyoOtome.html">イベントページを見る</a>
@@ -93,7 +162,7 @@
         </details>
         </div>
       </details>
-      <details class="song-item" data-attr="all">
+      <details class="song-item" data-attr="all" data-title="Take me☆Take you" data-singers="高垣楓,三船美優,森久保乃々,島村卯月,安部菜々,前川みく,依田芳乃,本田未央,佐藤心" data-count="9">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/takeme" alt="Take me☆Take you ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -123,7 +192,7 @@
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-all">全タイプ</span>
+                        <span class="dere-attr attr-all">全タイプ</span>
             <span class="dere-fact"><b>実装日</b>2017/09/08</span>
             <span class="dere-fact"><b>BPM</b>180</span>
             <span class="dere-fact"><b>時間</b>2:03</span>
@@ -138,6 +207,16 @@
             <div class="dere-lv"><span class="lv-name">LIGHT</span><span class="lv-num">6</span></div>
             <div class="dere-lv"><span class="lv-name">TRICK</span><span class="lv-num">16</span></div>
           </div>
+        </div>
+        <div class="song-solo-remix">
+          <h4 class="song-sub">ソロ・リミックス収録CD</h4>
+        <div class="solo-remix-item">
+          <div class="solo-remix-jk"><img class="solo-remix-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/takeme_solo_remix" alt="THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Celebration Land オリジナルCD" loading="lazy"></div>
+          <dl class="solo-remix-info">
+            <div class="song-mrow"><dt>収録CD</dt><dd>THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Celebration Land オリジナルCD</dd></div>
+            <div class="song-mrow"><dt>発売日</dt><dd>2021-12-22</dd></div>
+          </dl>
+        </div>
         </div>
         <div class="song-rel">
           <a class="rel-btn" href="Deresute/Event/TakeMeTakeYou.html">イベントページを見る</a>
@@ -160,7 +239,7 @@
         </details>
         </div>
       </details>
-      <details class="song-item" data-attr="passion">
+      <details class="song-item" data-attr="passion" data-title="SUN♡FLOWER" data-singers="本田未央,片桐早苗,佐藤心,城ヶ崎美嘉,諸星きらり" data-count="5">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/sunflower" alt="SUN♡FLOWER ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -186,7 +265,7 @@
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-passion">パッション</span>
+                        <span class="dere-attr attr-passion">パッション</span>
             <span class="dere-fact"><b>実装日</b>2018/07/19</span>
             <span class="dere-fact"><b>BPM</b>165</span>
             <span class="dere-fact"><b>時間</b>2:09</span>
@@ -202,6 +281,7 @@
             <div class="dere-lv"><span class="lv-name">TRICK</span><span class="lv-num">15</span></div>
           </div>
         </div>
+
         <div class="song-rel">
           <a class="rel-btn" href="Deresute/Event/SunFlower.html">イベントページを見る</a>
         </div>
@@ -225,7 +305,7 @@
         </details>
         </div>
       </details>
-      <details class="song-item" data-attr="all">
+      <details class="song-item" data-attr="all" data-title="Happy New Yeah!" data-singers="島村卯月,渋谷凛,本田未央,佐藤心,三村かな子" data-count="5">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/happynewyeah" alt="Happy New Yeah! ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -241,16 +321,19 @@
           <span class="song-caret" aria-hidden="true"></span>
         </summary>
         <div class="song-body">
+        <div class="song-cd-area">
+          <div class="song-jk2"><img class="song-jk2-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/happynewyeah_jacket2" alt="Happy New Yeah! CDジャケット" loading="lazy"></div>
           <dl class="song-meta">
           <div class="song-mrow"><dt>作詞</dt><dd>八城雄太</dd></div>
           <div class="song-mrow"><dt>作曲</dt><dd>高取ヒデアキ</dd></div>
           <div class="song-mrow"><dt>編曲</dt><dd>籠島裕昌</dd></div>
           <div class="song-mrow"><dt>CD／配信</dt><dd>先行配信 (2018年8月28日)／THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER 25 Happy New Yeah!(2019/01/23)</dd></div>
           </dl>
+        </div>
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-all">全タイプ</span>
+                        <span class="dere-attr attr-all">全タイプ</span>
             <span class="dere-fact"><b>実装日</b>2018/01/01</span>
             <span class="dere-fact"><b>BPM</b>172</span>
             <span class="dere-fact"><b>時間</b>2:06</span>
@@ -265,6 +348,16 @@
             <div class="dere-lv"><span class="lv-name">LIGHT</span><span class="lv-num">7</span></div>
             <div class="dere-lv"><span class="lv-name">TRICK</span><span class="lv-num">16</span></div>
           </div>
+        </div>
+        <div class="song-solo-remix">
+          <h4 class="song-sub">ソロ・リミックス収録CD</h4>
+        <div class="solo-remix-item">
+          <div class="solo-remix-jk"><img class="solo-remix-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/happynewyeah_solo_remix" alt="THE IDOLM@STER CINDERELLA GIRLS 7thLIVE TOUR Special 3chord♪ Glowing Rock! 会場オリジナルCD" loading="lazy"></div>
+          <dl class="solo-remix-info">
+            <div class="song-mrow"><dt>収録CD</dt><dd>THE IDOLM@STER CINDERELLA GIRLS 7thLIVE TOUR Special 3chord♪ Glowing Rock! 会場オリジナルCD</dd></div>
+            <div class="song-mrow"><dt>発売日</dt><dd>2020-02-14</dd></div>
+          </dl>
+        </div>
         </div>
         <div class="song-rel">
           <a class="rel-btn" href="Deresute/Event/HappyNewYeah.html">イベントページを見る</a>
@@ -282,7 +375,7 @@
         </details>
         </div>
       </details>
-      <details class="song-item" data-attr="passion">
+      <details class="song-item" data-attr="passion" data-title="CoCo夏夏夏Holiday" data-singers="上田鈴帆,佐藤心,十時愛梨" data-count="3">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/coconatsu" alt="CoCo夏夏夏Holiday ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -296,6 +389,8 @@
           <span class="song-caret" aria-hidden="true"></span>
         </summary>
         <div class="song-body">
+        <div class="song-cd-area">
+          <div class="song-jk2"><img class="song-jk2-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/coconatsu_jacket2" alt="CoCo夏夏夏Holiday CDジャケット" loading="lazy"></div>
           <dl class="song-meta">
           <div class="song-mrow"><dt>区分</dt><dd>MASTER SEASONS SUMMER!</dd></div>
           <div class="song-mrow"><dt>作詞</dt><dd>Funta3</dd></div>
@@ -303,10 +398,11 @@
           <div class="song-mrow"><dt>編曲</dt><dd>Funta7</dd></div>
           <div class="song-mrow"><dt>CD／配信</dt><dd>THE IDOLM@STER CINDERELLA GIRLS MASTER SEASONS SUMMER!</dd></div>
           </dl>
+        </div>
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-passion">パッション</span>
+                        <span class="dere-attr attr-passion">パッション</span>
             <span class="dere-fact"><b>実装日</b>2022/01/30</span>
             <span class="dere-fact"><b>BPM</b>195</span>
             <span class="dere-fact"><b>時間</b>2:10</span>
@@ -319,6 +415,16 @@
             <div class="dere-lv"><span class="lv-name">MASTER+</span><span class="lv-num">30</span></div>
             <div class="dere-lv"><span class="lv-name">ⓁMASTER+</span><span class="lv-num">30</span></div>
           </div>
+        </div>
+        <div class="song-solo-remix">
+          <h4 class="song-sub">ソロ・リミックス収録CD</h4>
+        <div class="solo-remix-item">
+          <div class="solo-remix-jk"><img class="solo-remix-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/coco_solo_remix" alt="THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! オリジナルCD MASTER SEASONS SUMMER! SOLO REMIX" loading="lazy"></div>
+          <dl class="solo-remix-info">
+            <div class="song-mrow"><dt>収録CD</dt><dd>THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! オリジナルCD MASTER SEASONS SUMMER! SOLO REMIX</dd></div>
+            <div class="song-mrow"><dt>発売日</dt><dd>2018-11-09</dd></div>
+          </dl>
+        </div>
         </div>
         <div class="song-rel">
           <a class="rel-btn" href="Deresute/Event/CoCoNatsuHoliday.html">イベントページを見る</a>
@@ -334,7 +440,7 @@
         </details>
         </div>
       </details>
-      <details class="song-item" data-attr="cute">
+      <details class="song-item" data-attr="cute" data-title="凸凹スピードスター" data-singers="安部菜々,佐藤心" data-count="2">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/dekoboko" alt="凸凹スピードスター ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -347,6 +453,8 @@
           <span class="song-caret" aria-hidden="true"></span>
         </summary>
         <div class="song-body">
+        <div class="song-cd-area">
+          <div class="song-jk2"><img class="song-jk2-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/dekoboko_jacket2" alt="凸凹スピードスター CDジャケット" loading="lazy"></div>
           <dl class="song-meta">
           <div class="song-mrow"><dt>区分</dt><dd>しゅがしゅが☆み～ん</dd></div>
           <div class="song-mrow"><dt>作詞</dt><dd>ゆよゆっぺ</dd></div>
@@ -354,10 +462,11 @@
           <div class="song-mrow"><dt>編曲</dt><dd>ゆよゆっぺ</dd></div>
           <div class="song-mrow"><dt>CD／配信</dt><dd>先行配信 (2018年8月28日)／THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER 28 凸凹スピードスター(2019年5月1日)</dd></div>
           </dl>
+        </div>
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-cute">キュート</span>
+                        <span class="dere-attr attr-cute">キュート</span>
             <span class="dere-fact"><b>実装日</b>2018/07/31</span>
             <span class="dere-fact"><b>BPM</b>230</span>
             <span class="dere-fact"><b>時間</b>2:06</span>
@@ -372,6 +481,16 @@
             <div class="dere-lv"><span class="lv-name">LIGHT</span><span class="lv-num">8</span></div>
             <div class="dere-lv"><span class="lv-name">TRICK</span><span class="lv-num">17</span></div>
           </div>
+        </div>
+        <div class="song-solo-remix">
+          <h4 class="song-sub">ソロ・リミックス収録CD</h4>
+        <div class="solo-remix-item">
+          <div class="solo-remix-jk"><img class="solo-remix-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/dekoboko_solo_remix" alt="THE IDOLM@STER CINDERELLA GIRLS Live Broadcast 24magic ～シンデレラたちの24時間生放送！～ オリジナルCD" loading="lazy"></div>
+          <dl class="solo-remix-info">
+            <div class="song-mrow"><dt>収録CD</dt><dd>THE IDOLM@STER CINDERELLA GIRLS Live Broadcast 24magic ～シンデレラたちの24時間生放送！～ オリジナルCD</dd></div>
+            <div class="song-mrow"><dt>発売日</dt><dd>2020-10-07</dd></div>
+          </dl>
+        </div>
         </div>
         <div class="song-rel">
           <a class="rel-btn" href="Deresute/Event/DekobokoSpeedStar.html">イベントページを見る</a>
@@ -393,7 +512,7 @@
         </details>
         </div>
       </details>
-      <details class="song-item" data-attr="passion">
+      <details class="song-item" data-attr="passion" data-title="しゅがーはぁと☆レボリューション" data-singers="佐藤心" data-count="1">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/sugarheart_revo" alt="しゅがーはぁと☆レボリューション ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -415,7 +534,7 @@
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-passion">パッション</span>
+                        <span class="dere-attr attr-passion">パッション</span>
             <span class="dere-fact"><b>実装日</b>2019/10/10</span>
             <span class="dere-fact"><b>BPM</b>180</span>
             <span class="dere-fact"><b>時間</b>2:08</span>
@@ -430,6 +549,7 @@
             <div class="dere-lv"><span class="lv-name">TRICK</span><span class="lv-num">16</span></div>
           </div>
         </div>
+
         <details class="song-lives">
           <summary>LIVEでの披露一覧（4回）</summary>
           <div class="live-table">
@@ -441,7 +561,7 @@
         </details>
         </div>
       </details>
-      <details class="song-item" data-attr="all">
+      <details class="song-item" data-attr="all" data-title="躍るFLAGSHIP" data-singers="小日向美穂,佐藤心,北条加蓮" data-count="3">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/flagship" alt="躍るFLAGSHIP ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -455,6 +575,8 @@
           <span class="song-caret" aria-hidden="true"></span>
         </summary>
         <div class="song-body">
+        <div class="song-cd-area">
+          <div class="song-jk2"><img class="song-jk2-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/flagship_jacket2" alt="躍るFLAGSHIP CDジャケット" loading="lazy"></div>
           <dl class="song-meta">
           <div class="song-mrow"><dt>区分</dt><dd>3chord for the Dance!</dd></div>
           <div class="song-mrow"><dt>作詞</dt><dd>只野菜摘</dd></div>
@@ -462,10 +584,11 @@
           <div class="song-mrow"><dt>編曲</dt><dd>BNSI(ミフメイ)</dd></div>
           <div class="song-mrow"><dt>CD／配信</dt><dd>THE IDOLM@STER CINDERELLA MASTER 3chord for the Dance! (2020/02/19)</dd></div>
           </dl>
+        </div>
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-all">全タイプ</span>
+                        <span class="dere-attr attr-all">全タイプ</span>
             <span class="dere-fact"><b>実装日</b>2021/03/19</span>
             <span class="dere-fact"><b>BPM</b>141</span>
             <span class="dere-fact"><b>時間</b>2:13</span>
@@ -478,6 +601,16 @@
             <div class="dere-lv"><span class="lv-name">MASTER+</span><span class="lv-num">29</span></div>
             <div class="dere-lv"><span class="lv-name">ⓁMASTER+</span><span class="lv-num">29</span></div>
           </div>
+        </div>
+        <div class="song-solo-remix">
+          <h4 class="song-sub">ソロ・リミックス収録CD</h4>
+        <div class="solo-remix-item">
+          <div class="solo-remix-jk"><img class="solo-remix-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/odoru_solo_remix" alt="THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let&#x27;s AMUSEMENT!!! 会場オリジナルCD OKINAWA" loading="lazy"></div>
+          <dl class="solo-remix-info">
+            <div class="song-mrow"><dt>収録CD</dt><dd>THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let&#x27;s AMUSEMENT!!! 会場オリジナルCD OKINAWA</dd></div>
+            <div class="song-mrow"><dt>発売日</dt><dd>2025-06-07</dd></div>
+          </dl>
+        </div>
         </div>
         <div class="song-rel">
           <a class="rel-btn" href="Deresute/Event/OdoruFlagship.html">イベントページを見る</a>
@@ -493,7 +626,7 @@
         </details>
         </div>
       </details>
-      <details class="song-item" data-attr="cool">
+      <details class="song-item" data-attr="cool" data-title="オウムアムアに幸運を" data-singers="一ノ瀬志希,神谷奈緒,黒埼ちとせ,佐藤心,的場梨沙" data-count="5">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/oumuamua" alt="オウムアムアに幸運を ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -519,7 +652,7 @@
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-cool">クール</span>
+                        <span class="dere-attr attr-cool">クール</span>
             <span class="dere-fact"><b>実装日</b>2020/06/30</span>
             <span class="dere-fact"><b>BPM</b>180</span>
             <span class="dere-fact"><b>時間</b>2:01</span>
@@ -533,6 +666,7 @@
             <div class="dere-lv"><span class="lv-name">ⓁMASTER+</span><span class="lv-num">29</span></div>
           </div>
         </div>
+
         <div class="song-rel">
           <a class="rel-btn" href="Deresute/Event/OumuamuaKooun.html">イベントページを見る</a>
         </div>
@@ -548,7 +682,7 @@
         </details>
         </div>
       </details>
-      <details class="song-item" data-attr="all">
+      <details class="song-item" data-attr="all" data-title="Go Just Go!" data-singers="夢見りあむ,大槻唯,北条加蓮,佐藤心,一ノ瀬志希,鷹富士茄子,棟方愛海,川島瑞樹,五十嵐響子" data-count="9">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/gojustgo" alt="Go Just Go! ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -568,6 +702,8 @@
           <span class="song-caret" aria-hidden="true"></span>
         </summary>
         <div class="song-body">
+        <div class="song-cd-area">
+          <div class="song-jk2"><img class="song-jk2-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/gojustgo_jacket2" alt="Go Just Go! CDジャケット" loading="lazy"></div>
           <dl class="song-meta">
           <div class="song-mrow"><dt>区分</dt><dd>スターライトステージ5周年曲</dd></div>
           <div class="song-mrow"><dt>作詞</dt><dd>八城雄太</dd></div>
@@ -575,10 +711,11 @@
           <div class="song-mrow"><dt>編曲</dt><dd>TAKU INOUE</dd></div>
           <div class="song-mrow"><dt>CD／配信</dt><dd>THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER GOLD RUSH! 01 Go Just Go!(2020/09/16)</dd></div>
           </dl>
+        </div>
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-all">全タイプ</span>
+                        <span class="dere-attr attr-all">全タイプ</span>
             <span class="dere-fact"><b>実装日</b>2020/08/31</span>
             <span class="dere-fact"><b>BPM</b>128</span>
             <span class="dere-fact"><b>時間</b>2:19</span>
@@ -594,6 +731,7 @@
             <div class="dere-lv"><span class="lv-name">FORTE</span><span class="lv-num">30</span></div>
           </div>
         </div>
+
         <div class="song-rel">
           <a class="rel-btn" href="Deresute/Event/GoJustGo.html">イベントページを見る</a>
         </div>
@@ -610,7 +748,7 @@
         </details>
         </div>
       </details>
-      <details class="song-item" data-attr="passion">
+      <details class="song-item" data-attr="passion" data-title="ダンシング・デッド" data-singers="及川雫,佐藤心,諸星きらり" data-count="3">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/dancingdead" alt="ダンシング・デッド ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -624,6 +762,8 @@
           <span class="song-caret" aria-hidden="true"></span>
         </summary>
         <div class="song-body">
+        <div class="song-cd-area">
+          <div class="song-jk2"><img class="song-jk2-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/dancingdead_jacket2" alt="ダンシング・デッド CDジャケット" loading="lazy"></div>
           <dl class="song-meta">
           <div class="song-mrow"><dt>区分</dt><dd>Fav+rica</dd></div>
           <div class="song-mrow"><dt>作詞</dt><dd>PandaBoY</dd></div>
@@ -631,10 +771,11 @@
           <div class="song-mrow"><dt>編曲</dt><dd>PandaBoY</dd></div>
           <div class="song-mrow"><dt>CD／配信</dt><dd>先行配信(2022/12/07)、THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER PLATINUM NUMBER 03 ダンシング・デッド(2023/07/12)</dd></div>
           </dl>
+        </div>
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-passion">パッション</span>
+                        <span class="dere-attr attr-passion">パッション</span>
             <span class="dere-fact"><b>実装日</b>2022/10/19</span>
             <span class="dere-fact"><b>BPM</b>115</span>
             <span class="dere-fact"><b>時間</b>2:06</span>
@@ -648,6 +789,7 @@
             <div class="dere-lv"><span class="lv-name">ⓁMASTER+</span><span class="lv-num">30</span></div>
           </div>
         </div>
+
         <div class="song-rel">
           <a class="rel-btn" href="Deresute/Event/DancingDead.html">イベントページを見る</a>
         </div>
@@ -660,7 +802,7 @@
         </details>
         </div>
       </details>
-      <details class="song-item" data-attr="passion">
+      <details class="song-item" data-attr="passion" data-title="世界はそれを愛と呼ぶんだぜ" data-singers="佐藤心" data-count="1">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/sekaiwa" alt="世界はそれを愛と呼ぶんだぜ ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -672,6 +814,8 @@
           <span class="song-caret" aria-hidden="true"></span>
         </summary>
         <div class="song-body">
+        <div class="song-cd-area">
+          <div class="song-jk2"><img class="song-jk2-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/sekaiwa_jacket2" alt="世界はそれを愛と呼ぶんだぜ CDジャケット" loading="lazy"></div>
           <dl class="song-meta">
           <div class="song-mrow"><dt>区分</dt><dd>カバー曲（佐藤心 ソロ）</dd></div>
           <div class="song-mrow"><dt>原曲歌唱</dt><dd>サンボマスター</dd></div>
@@ -679,10 +823,11 @@
           <div class="song-mrow"><dt>作曲</dt><dd>山口隆</dd></div>
           <div class="song-mrow"><dt>CD／配信</dt><dd>THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER HEART TICKER! 05 Teeenage☆Groovin&#x27;(2024/04/10)</dd></div>
           </dl>
+        </div>
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-passion">パッション</span>
+                        <span class="dere-attr attr-passion">パッション</span>
             <span class="dere-fact"><b>実装日</b>2023/09/20</span>
             <span class="dere-fact"><b>BPM</b>142</span>
             <span class="dere-fact"><b>時間</b>2:20</span>
@@ -695,9 +840,10 @@
           </div>
         </div>
 
+
         </div>
       </details>
-      <details class="song-item" data-attr="all">
+      <details class="song-item" data-attr="all" data-title="認めてくれなくたっていいよ" data-singers="依田芳乃,村上巴,佐藤心,夢見りあむ,久川凪" data-count="5">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/mitomete" alt="認めてくれなくたっていいよ ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -714,6 +860,8 @@
         </summary>
         <div class="song-body">
         <p class="song-note">デレステではキュート／クール／パッションの3バージョンがあり、佐藤心はパッションver.（2025/07/08実装）を歌唱。</p>
+        <div class="song-cd-area">
+          <div class="song-jk2"><img class="song-jk2-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/mitomete_jacket2" alt="認めてくれなくたっていいよ CDジャケット" loading="lazy"></div>
           <dl class="song-meta">
           <div class="song-mrow"><dt>区分</dt><dd>jewelries! 004 シリーズ共通曲</dd></div>
           <div class="song-mrow"><dt>作詞</dt><dd>八城雄太</dd></div>
@@ -721,10 +869,11 @@
           <div class="song-mrow"><dt>編曲</dt><dd>井上馨太(MONACA)</dd></div>
           <div class="song-mrow"><dt>CD／配信</dt><dd>jewelries! 004 シリーズ共通曲(2022/09/28)</dd></div>
           </dl>
+        </div>
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-all">全タイプ</span>
+                        <span class="dere-attr attr-all">全タイプ</span>
             <span class="dere-fact"><b>実装日</b>2025/07/08</span>
             <span class="dere-fact"><b>BPM</b>133</span>
             <span class="dere-fact"><b>時間</b>2:13</span>
@@ -738,6 +887,7 @@
             <div class="dere-lv"><span class="lv-name">ⓁMASTER+</span><span class="lv-num">29</span></div>
           </div>
         </div>
+
         <details class="song-lives">
           <summary>LIVEでの披露一覧（6回）</summary>
           <div class="live-table">
@@ -751,7 +901,7 @@
         </details>
         </div>
       </details>
-      <details class="song-item" data-attr="passion">
+      <details class="song-item" data-attr="passion" data-title="熱情エナモラル" data-singers="依田芳乃,村上巴,佐藤心,夢見りあむ,久川凪" data-count="5">
         <summary class="song-head">
           <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/enamorar" alt="熱情エナモラル ジャケット" loading="lazy"></div>
           <div class="song-headmain">
@@ -777,7 +927,7 @@
         <div class="song-dere">
           <h4 class="song-sub">デレステ</h4>
           <div class="dere-info">
-            <span class="dere-attr attr-passion">パッション</span>
+                        <span class="dere-attr attr-passion">パッション</span>
             <span class="dere-fact"><b>実装日</b>2025/06/27</span>
             <span class="dere-fact"><b>BPM</b>124</span>
             <span class="dere-fact"><b>時間</b>2:17</span>
@@ -792,6 +942,7 @@
             <div class="dere-lv"><span class="lv-name">FORTE</span><span class="lv-num">29</span></div>
           </div>
         </div>
+
         <div class="song-rel">
           <a class="rel-btn" href="Deresute/Event/NetsujouEnamorar.html">イベントページを見る</a>
         </div>
@@ -806,9 +957,74 @@
         </details>
         </div>
       </details>
-      <details class="song-item">
+      <details class="song-item" data-attr="all" data-title="Next Chapter" data-singers="鷹富士茄子,一ノ瀬志希,佐藤心,ライラ,鷺沢文香" data-count="5">
         <summary class="song-head">
-          <div class="song-jk song-jk-none"><span>♪</span></div>
+          <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/nextchapter" alt="Next Chapter ジャケット" loading="lazy"></div>
+          <div class="song-headmain">
+            <div class="song-title">Next Chapter<span class="song-attr attr-all">全タイプ</span></div>
+            <div class="song-singers gekijo-cast">
+          <div class="idol"><span class="ic"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/data/iconimg/takafujikako_icon01" alt="鷹富士茄子" loading="lazy"></span><span class="nm">鷹富士茄子</span></div>
+          <div class="idol"><span class="ic"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/data/iconimg/ichinoseshiki_icon01" alt="一ノ瀬志希" loading="lazy"></span><span class="nm">一ノ瀬志希</span></div>
+          <div class="idol shin"><span class="ic"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/data/iconimg/satoshin_icon01" alt="佐藤心" loading="lazy"></span><span class="nm">佐藤心</span></div>
+          <div class="idol"><span class="ic"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/data/iconimg/layla_icon01" alt="ライラ" loading="lazy"></span><span class="nm">ライラ</span></div>
+          <div class="idol"><span class="ic"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/data/iconimg/sagisawafumika_icon01" alt="鷺沢文香" loading="lazy"></span><span class="nm">鷺沢文香</span></div>
+            </div>
+          </div>
+          <span class="song-caret" aria-hidden="true"></span>
+        </summary>
+        <div class="song-body">
+        <div class="song-cd-area">
+          <div class="song-jk2"><img class="song-jk2-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/nextchapter_jacket2" alt="Next Chapter CDジャケット" loading="lazy"></div>
+          <dl class="song-meta">
+          <div class="song-mrow"><dt>区分</dt><dd>GroupB BEST5</dd></div>
+          <div class="song-mrow"><dt>作詞</dt><dd>大森祥子</dd></div>
+          <div class="song-mrow"><dt>作曲</dt><dd>設楽哲也</dd></div>
+          <div class="song-mrow"><dt>編曲</dt><dd>設楽哲也</dd></div>
+          <div class="song-mrow"><dt>CD／配信</dt><dd>THE IDOLM@STER CINDERELLA MASTER Dreamy Anniversary &amp; Next Chapter（2023/10/25）</dd></div>
+          </dl>
+        </div>
+        <div class="song-dere">
+          <h4 class="song-sub">デレステ</h4>
+          <div class="dere-info">
+                        <span class="dere-attr attr-all">全タイプ</span>
+            <span class="dere-fact"><b>実装日</b>2023/06/29</span>
+            <span class="dere-fact"><b>BPM</b>108</span>
+            <span class="dere-fact"><b>時間</b>2:06</span>
+          </div>
+          <div class="dere-levels">
+            <div class="dere-lv"><span class="lv-name">DEBUT</span><span class="lv-num">6</span></div>
+            <div class="dere-lv"><span class="lv-name">REGULAR</span><span class="lv-num">12</span></div>
+            <div class="dere-lv"><span class="lv-name">PRO</span><span class="lv-num">16</span></div>
+            <div class="dere-lv"><span class="lv-name">MASTER</span><span class="lv-num">24</span></div>
+            <div class="dere-lv"><span class="lv-name">MASTER+</span><span class="lv-num">28</span></div>
+          </div>
+        </div>
+        <div class="song-solo-remix">
+          <h4 class="song-sub">ソロ・リミックス収録CD</h4>
+        <div class="solo-remix-item">
+          <div class="solo-remix-jk"><img class="solo-remix-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/nextchapter_solo_remix" alt="THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let&#x27;s AMUSEMENT!!! 会場オリジナルCD TOKYO" loading="lazy"></div>
+          <dl class="solo-remix-info">
+            <div class="song-mrow"><dt>収録CD</dt><dd>THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let&#x27;s AMUSEMENT!!! 会場オリジナルCD TOKYO</dd></div>
+            <div class="song-mrow"><dt>発売日</dt><dd>2025-04-26</dd></div>
+          </dl>
+        </div>
+        </div>
+        <div class="song-rel">
+          <a class="rel-btn" href="Deresute/Event/NextChapter.html">イベントページを見る</a>
+        </div>
+        <details class="song-lives">
+          <summary>LIVEでの披露一覧（3回）</summary>
+          <div class="live-table">
+            <div class="live-row"><div class="live-date">2023-09-10</div><div class="live-ev">THE IDOLM@STER CINDERELLA GIRLS Shout out Live!!! DAY2<span class="live-venue">愛知・愛知県国際展示場 ホールA</span></div><div class="live-perf">森下来奈、市ノ瀬加那、藍原ことみ</div></div>
+            <div class="live-row"><div class="live-date">2025-09-06</div><div class="live-ev">THE IDOLM@STER CINDERELLA GIRLS 10th MEMORIAL LIVE STARLIGHT STAGE DAY1<span class="live-venue">神奈川・Kアリーナ横浜</span></div><div class="live-perf">森下来奈、東山奈央、原田彩楓 ／ Next Chapter (Medley Size)</div></div>
+            <div class="live-row"><div class="live-date">2025-11-30<span class="lv-tag">xR</span></div><div class="live-ev">CINDERELLA GIRLS fes. Once Upon a St@rs DAY2 第4公演 Ever Starlight<span class="live-venue">千葉・幕張メッセ 国際展示場ホール9-10</span></div><div class="live-perf">佐藤心、鷺沢文香</div></div>
+          </div>
+        </details>
+        </div>
+      </details>
+      <details class="song-item" data-title="Sweet memories" data-singers="佐藤心" data-count="1">
+        <summary class="song-head">
+          <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/enamorar" alt="Sweet memories ジャケット" loading="lazy"></div>
           <div class="song-headmain">
             <div class="song-title">Sweet memories</div>
             <div class="song-singers gekijo-cast">
@@ -828,11 +1044,12 @@
           </dl>
 
 
+
         </div>
       </details>
-      <details class="song-item">
+      <details class="song-item" data-title="ダンス・ダンス・ダンス" data-singers="佐藤心" data-count="1">
         <summary class="song-head">
-          <div class="song-jk song-jk-none"><span>♪</span></div>
+          <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/dance_dance_dance" alt="ダンス・ダンス・ダンス ジャケット" loading="lazy"></div>
           <div class="song-headmain">
             <div class="song-title">ダンス・ダンス・ダンス</div>
             <div class="song-singers gekijo-cast">
@@ -851,6 +1068,7 @@
           <div class="song-mrow"><dt>編曲</dt><dd>TAKU INOUE</dd></div>
           <div class="song-mrow"><dt>CD／配信</dt><dd>THE IDOLM@STER STARLIT SEASON 04(2022/04/13)</dd></div>
           </dl>
+
 
         <details class="song-lives">
           <summary>LIVEでの披露一覧（13回）</summary>
@@ -872,9 +1090,9 @@
         </details>
         </div>
       </details>
-      <details class="song-item">
+      <details class="song-item" data-title="もしも「カワイイ」が世界からなくなっても" data-singers="輿水幸子,佐藤心" data-count="2">
         <summary class="song-head">
-          <div class="song-jk song-jk-none"><span>♪</span></div>
+          <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/moshimo_kawaii" alt="もしも「カワイイ」が世界からなくなっても ジャケット" loading="lazy"></div>
           <div class="song-headmain">
             <div class="song-title">もしも「カワイイ」が世界からなくなっても</div>
             <div class="song-singers gekijo-cast">
@@ -894,6 +1112,7 @@
           <div class="song-mrow"><dt>CD／配信</dt><dd>【配信】(2025/00/00)</dd></div>
           </dl>
 
+
         <details class="song-lives">
           <summary>LIVEでの披露一覧（3回）</summary>
           <div class="live-table">
@@ -904,9 +1123,9 @@
         </details>
         </div>
       </details>
-      <details class="song-item">
+      <details class="song-item" data-title="シンデレラNo.1" data-singers="安部菜々,イヴ・サンタクロース,神崎蘭子" data-count="3">
         <summary class="song-head">
-          <div class="song-jk song-jk-none"><span>♪</span></div>
+          <div class="song-jk"><img class="song-jk-img" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/SongList/jacket/cinderella_no1" alt="シンデレラNo.1 ジャケット" loading="lazy"></div>
           <div class="song-headmain">
             <div class="song-title">シンデレラNo.1</div>
             <div class="song-singers gekijo-cast">
@@ -927,6 +1146,7 @@
           <div class="song-mrow"><dt>CD／配信</dt><dd>【先行配信】(2026/05/27)</dd></div>
           </dl>
 
+
         <details class="song-lives">
           <summary>LIVEでの披露一覧（5回）</summary>
           <div class="live-table">
@@ -944,6 +1164,34 @@
   </div>
 </div>
 
+<script>
+(function() {
+  function sfFilter() {
+    var q = (document.getElementById('sf-q').value || '').toLowerCase();
+    var cnt = document.getElementById('sf-count').value;
+    var idol = document.getElementById('sf-idol').value;
+    var items = document.querySelectorAll('.song-item');
+    var shown = 0;
+    items.forEach(function(el) {
+      var title = (el.dataset.title || '').toLowerCase();
+      var singers = el.dataset.singers || '';
+      var count = parseInt(el.dataset.count || '0');
+      var show = true;
+      if (q && title.indexOf(q) < 0 && singers.toLowerCase().indexOf(q) < 0) show = false;
+      if (cnt) {
+        var n = parseInt(cnt);
+        if (count !== n) show = false;
+      }
+      if (idol && (',' + singers + ',').indexOf(',' + idol + ',') < 0) show = false;
+      el.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    var msg = document.getElementById('sf-msg');
+    if (msg) msg.textContent = shown;
+  }
+  window.sfFilter = sfFilter;
+})();
+</script>
 
 </body>
 </html>

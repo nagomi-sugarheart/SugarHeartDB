@@ -1,224 +1,238 @@
 {
-  "命燃やして恋せよ乙女": {
-    "type": "全タイプ",
-    "time": "2:04",
-    "bpm": "112",
-    "release": "2016/12/31",
-    "levels": {
-      "DEBUT": "8",
-      "REGULAR": "12",
-      "PRO": "17",
-      "MASTER": "25",
-      "MASTER+": "29",
-      "ⓁMASTER+": "29",
-      "LIGHT": "7",
-      "TRICK": "17"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ "命燃やして恋せよ乙女": {
+  "type": "全タイプ",
+  "time": "2:04",
+  "bpm": "112",
+  "release": "2016/12/31",
+  "levels": {
+   "DEBUT": "8",
+   "REGULAR": "12",
+   "PRO": "17",
+   "MASTER": "25",
+   "MASTER+": "29",
+   "ⓁMASTER+": "29",
+   "LIGHT": "7",
+   "TRICK": "17"
   },
-  "Take me☆Take you": {
-    "type": "全タイプ",
-    "time": "2:03",
-    "bpm": "180",
-    "release": "2017/09/08",
-    "levels": {
-      "DEBUT": "7",
-      "REGULAR": "13",
-      "PRO": "18",
-      "MASTER": "24",
-      "MASTER+": "28",
-      "ⓁMASTER+": "27",
-      "LIGHT": "6",
-      "TRICK": "16"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "Take me☆Take you": {
+  "type": "全タイプ",
+  "time": "2:03",
+  "bpm": "180",
+  "release": "2017/09/08",
+  "levels": {
+   "DEBUT": "7",
+   "REGULAR": "13",
+   "PRO": "18",
+   "MASTER": "24",
+   "MASTER+": "28",
+   "ⓁMASTER+": "27",
+   "LIGHT": "6",
+   "TRICK": "16"
   },
-  "SUN♡FLOWER": {
-    "type": "パッション",
-    "time": "2:09",
-    "bpm": "165",
-    "release": "2018/07/19",
-    "levels": {
-      "DEBUT": "8",
-      "REGULAR": "13",
-      "PRO": "18",
-      "MASTER": "26",
-      "MASTER+": "29",
-      "ⓁMASTER+": "29",
-      "LIGHT": "5",
-      "TRICK": "15"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "SUN♡FLOWER": {
+  "type": "パッション",
+  "time": "2:09",
+  "bpm": "165",
+  "release": "2018/07/19",
+  "levels": {
+   "DEBUT": "8",
+   "REGULAR": "13",
+   "PRO": "18",
+   "MASTER": "26",
+   "MASTER+": "29",
+   "ⓁMASTER+": "29",
+   "LIGHT": "5",
+   "TRICK": "15"
   },
-  "Happy New Yeah!": {
-    "type": "全タイプ",
-    "time": "2:06",
-    "bpm": "172",
-    "release": "2018/01/01",
-    "levels": {
-      "DEBUT": "9",
-      "REGULAR": "14",
-      "PRO": "19",
-      "MASTER": "26",
-      "MASTER+": "29",
-      "ⓁMASTER+": "29",
-      "LIGHT": "7",
-      "TRICK": "16"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "Happy New Yeah!": {
+  "type": "全タイプ",
+  "time": "2:06",
+  "bpm": "172",
+  "release": "2018/01/01",
+  "levels": {
+   "DEBUT": "9",
+   "REGULAR": "14",
+   "PRO": "19",
+   "MASTER": "26",
+   "MASTER+": "29",
+   "ⓁMASTER+": "29",
+   "LIGHT": "7",
+   "TRICK": "16"
   },
-  "CoCo夏夏夏 Holiday": {
-    "type": "パッション",
-    "time": "2:10",
-    "bpm": "195",
-    "release": "2022/01/30",
-    "levels": {
-      "DEBUT": "8",
-      "REGULAR": "14",
-      "PRO": "19",
-      "MASTER": "27",
-      "MASTER+": "30",
-      "ⓁMASTER+": "30"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "CoCo夏夏夏 Holiday": {
+  "type": "パッション",
+  "time": "2:10",
+  "bpm": "195",
+  "release": "2022/01/30",
+  "levels": {
+   "DEBUT": "8",
+   "REGULAR": "14",
+   "PRO": "19",
+   "MASTER": "27",
+   "MASTER+": "30",
+   "ⓁMASTER+": "30"
   },
-  "凸凹スピードスター": {
-    "type": "キュート",
-    "time": "2:06",
-    "bpm": "230",
-    "release": "2018/07/31",
-    "levels": {
-      "DEBUT": "9",
-      "REGULAR": "14",
-      "PRO": "19",
-      "MASTER": "27",
-      "MASTER+": "31",
-      "ⓁMASTER+": "31",
-      "LIGHT": "8",
-      "TRICK": "17"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "凸凹スピードスター": {
+  "type": "キュート",
+  "time": "2:06",
+  "bpm": "230",
+  "release": "2018/07/31",
+  "levels": {
+   "DEBUT": "9",
+   "REGULAR": "14",
+   "PRO": "19",
+   "MASTER": "27",
+   "MASTER+": "31",
+   "ⓁMASTER+": "31",
+   "LIGHT": "8",
+   "TRICK": "17"
   },
-  "しゅがーはぁと☆レボリューション": {
-    "type": "パッション",
-    "time": "2:08",
-    "bpm": "180",
-    "release": "2019/10/10",
-    "levels": {
-      "DEBUT": "8",
-      "REGULAR": "13",
-      "PRO": "18",
-      "MASTER": "27",
-      "MASTER+": "29",
-      "LIGHT": "8",
-      "TRICK": "16"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "しゅがーはぁと☆レボリューション": {
+  "type": "パッション",
+  "time": "2:08",
+  "bpm": "180",
+  "release": "2019/10/10",
+  "levels": {
+   "DEBUT": "8",
+   "REGULAR": "13",
+   "PRO": "18",
+   "MASTER": "27",
+   "MASTER+": "29",
+   "LIGHT": "8",
+   "TRICK": "16"
   },
-  "躍るFLAGSHIP": {
-    "type": "全タイプ",
-    "time": "2:13",
-    "bpm": "141",
-    "release": "2021/03/19",
-    "levels": {
-      "DEBUT": "8",
-      "REGULAR": "13",
-      "PRO": "17",
-      "MASTER": "25",
-      "MASTER+": "29",
-      "ⓁMASTER+": "29"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "躍るFLAGSHIP": {
+  "type": "全タイプ",
+  "time": "2:13",
+  "bpm": "141",
+  "release": "2021/03/19",
+  "levels": {
+   "DEBUT": "8",
+   "REGULAR": "13",
+   "PRO": "17",
+   "MASTER": "25",
+   "MASTER+": "29",
+   "ⓁMASTER+": "29"
   },
-  "オウムアムアに幸運を": {
-    "type": "クール",
-    "time": "2:01",
-    "bpm": "180",
-    "release": "2020/06/30",
-    "levels": {
-      "DEBUT": "6",
-      "REGULAR": "13",
-      "PRO": "19",
-      "MASTER": "26",
-      "MASTER+": "29",
-      "ⓁMASTER+": "29"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "オウムアムアに幸運を": {
+  "type": "クール",
+  "time": "2:01",
+  "bpm": "180",
+  "release": "2020/06/30",
+  "levels": {
+   "DEBUT": "6",
+   "REGULAR": "13",
+   "PRO": "19",
+   "MASTER": "26",
+   "MASTER+": "29",
+   "ⓁMASTER+": "29"
   },
-  "Go Just Go!": {
-    "type": "全タイプ",
-    "time": "2:19",
-    "bpm": "128",
-    "release": "2020/08/31",
-    "levels": {
-      "DEBUT": "8",
-      "REGULAR": "14",
-      "PRO": "18",
-      "MASTER": "26",
-      "MASTER+": "29",
-      "ⓁMASTER+": "29",
-      "PIANO": "25",
-      "FORTE": "30"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "Go Just Go!": {
+  "type": "全タイプ",
+  "time": "2:19",
+  "bpm": "128",
+  "release": "2020/08/31",
+  "levels": {
+   "DEBUT": "8",
+   "REGULAR": "14",
+   "PRO": "18",
+   "MASTER": "26",
+   "MASTER+": "29",
+   "ⓁMASTER+": "29",
+   "PIANO": "25",
+   "FORTE": "30"
   },
-  "ダンシング・デッド": {
-    "type": "パッション",
-    "time": "2:06",
-    "bpm": "115",
-    "release": "2022/10/19",
-    "levels": {
-      "DEBUT": "7",
-      "REGULAR": "13",
-      "PRO": "19",
-      "MASTER": "27",
-      "MASTER+": "30",
-      "ⓁMASTER+": "30"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "ダンシング・デッド": {
+  "type": "パッション",
+  "time": "2:06",
+  "bpm": "115",
+  "release": "2022/10/19",
+  "levels": {
+   "DEBUT": "7",
+   "REGULAR": "13",
+   "PRO": "19",
+   "MASTER": "27",
+   "MASTER+": "30",
+   "ⓁMASTER+": "30"
   },
-  "世界はそれを愛と呼ぶんだぜ": {
-    "type": "パッション",
-    "time": "2:20",
-    "bpm": "142",
-    "release": "2023/09/20",
-    "levels": {
-      "DEBUT": "6",
-      "REGULAR": "13",
-      "PRO": "18",
-      "MASTER": "26"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "世界はそれを愛と呼ぶんだぜ": {
+  "type": "パッション",
+  "time": "2:20",
+  "bpm": "142",
+  "release": "2023/09/20",
+  "levels": {
+   "DEBUT": "6",
+   "REGULAR": "13",
+   "PRO": "18",
+   "MASTER": "26"
   },
-  "認めてくれなくたっていいよ": {
-    "type": "全タイプ",
-    "time": "2:13",
-    "bpm": "133",
-    "release": "2025/07/08",
-    "levels": {
-      "DEBUT": "7",
-      "REGULAR": "12",
-      "PRO": "17",
-      "MASTER": "26",
-      "MASTER+": "29",
-      "ⓁMASTER+": "29"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "認めてくれなくたっていいよ": {
+  "type": "全タイプ",
+  "time": "2:13",
+  "bpm": "133",
+  "release": "2025/07/08",
+  "levels": {
+   "DEBUT": "7",
+   "REGULAR": "12",
+   "PRO": "17",
+   "MASTER": "26",
+   "MASTER+": "29",
+   "ⓁMASTER+": "29"
   },
-  "熱情エナモラル": {
-    "type": "パッション",
-    "time": "2:17",
-    "bpm": "124",
-    "release": "2025/06/27",
-    "levels": {
-      "DEBUT": "8",
-      "REGULAR": "13",
-      "PRO": "18",
-      "MASTER": "26",
-      "MASTER+": "29",
-      "PIANO": "26",
-      "FORTE": "29"
-    },
-    "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
-  }
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "熱情エナモラル": {
+  "type": "パッション",
+  "time": "2:17",
+  "bpm": "124",
+  "release": "2025/06/27",
+  "levels": {
+   "DEBUT": "8",
+   "REGULAR": "13",
+   "PRO": "18",
+   "MASTER": "26",
+   "MASTER+": "29",
+   "PIANO": "26",
+   "FORTE": "29"
+  },
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3029/entry/tB2g83XU.png"
+ },
+ "Next Chapter": {
+  "type": "全タイプ",
+  "time": "2:06",
+  "bpm": "108",
+  "release": "2023/06/29",
+  "levels": {
+   "DEBUT": "6",
+   "REGULAR": "12",
+   "PRO": "16",
+   "MASTER": "24",
+   "MASTER+": "28"
+  },
+  "jacket": "https://cdn.gamerch.com/contents/wiki/3825/entry/hcq301UE.png"
+ }
 }

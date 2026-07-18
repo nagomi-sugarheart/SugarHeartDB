@@ -1,764 +1,787 @@
 {
-  "命燃やして恋せよ乙女": [
-    {
-      "date": "2017-07-08",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 幕張公演",
-      "venue": "千葉・幕張メッセイベントホール",
-      "performers": "原田彩楓、三宅麻理恵、和氣あず未"
-    },
-    {
-      "date": "2017-07-09",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 幕張公演",
-      "venue": "千葉・幕張メッセイベントホール",
-      "performers": "原田彩楓、三宅麻理恵、和氣あず未"
-    },
-    {
-      "date": "2017-08-12",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! さいたまスーパーアリーナ公演",
-      "venue": "埼玉・さいたまスーパーアリーナ",
-      "performers": "花守ゆみり、原田彩楓、三宅麻理恵、和氣あず未"
-    },
-    {
-      "date": "2018-12-01",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! ナゴヤドーム公演 DAY1",
-      "venue": "愛知・ナゴヤドーム",
-      "performers": "嘉山未紗、田澤茉純、原田彩楓、三宅麻理恵、和氣あず未"
-    },
-    {
-      "date": "2021-01-09",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS Broadcast & LIVE Happy New Yell !!! DAY1",
-      "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセ 国際展示場1～3ホール)",
-      "performers": "河瀬茉希、大空直美、洲崎綾、花谷麻妃、飯田友子"
-    },
-    {
-      "date": "2021-01-10",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS Broadcast & LIVE Happy New Yell !!! DAY2",
-      "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセ 国際展示場1～3ホール)",
-      "performers": "高橋花林、三宅麻理恵、会沢紗弥、原田彩楓、杜野まこ"
-    },
-    {
-      "date": "2021-11-28",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Celebration Land DAY2",
-      "venue": "千葉・幕張メッセ イベントホール",
-      "performers": "花井美春、三宅麻理恵、森下来奈、立花理香"
-    },
-    {
-      "date": "2025-09-07",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th MEMORIAL LIVE STARLIGHT STAGE DAY2",
-      "venue": "神奈川・Kアリーナ横浜",
-      "performers": "星希成奏、赤﨑千夏、原優子／命燃やして恋せよ乙女 (Medley Size)"
-    }
-  ],
-  "Take me☆Take you": [
-    {
-      "date": "2016-11-19",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5th Anniversary Party ニコ生SP",
-      "venue": "千葉・森のホール21",
-      "performers": "高橋花林、原田彩楓、高田憂希"
-    },
-    {
-      "date": "2017-07-08",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 幕張公演",
-      "venue": "千葉・幕張メッセイベントホール",
-      "performers": "三宅麻理恵、原田彩楓、原紗友里"
-    },
-    {
-      "date": "2017-07-09",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 幕張公演",
-      "venue": "千葉・幕張メッセイベントホール",
-      "performers": "三宅麻理恵、原田彩楓、原紗友里"
-    },
-    {
-      "date": "2017-07-29",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 福岡公演",
-      "venue": "福岡・西日本総合展示場 新館",
-      "performers": "高田憂希、種﨑敦美、高森奈津美"
-    },
-    {
-      "date": "2017-07-30",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 福岡公演",
-      "venue": "福岡・西日本総合展示場 新館",
-      "performers": "高田憂希、種﨑敦美、高森奈津美"
-    },
-    {
-      "date": "2017-08-12",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! さいたまスーパーアリーナ公演",
-      "venue": "埼玉・さいたまスーパーアリーナ（アリーナモード）",
-      "performers": "高田憂希、高橋花林、高森奈津美、花守ゆみり、原田彩楓、三宅麻理恵"
-    },
-    {
-      "date": "2017-11-19",
-      "tag": "",
-      "event": "アイドルマスター シンデレラガールズ 6th Anniversary Memorial Party",
-      "venue": "千葉・舞浜アンフィシアター",
-      "performers": "朝井彩加、津田美波、中島由貴"
-    },
-    {
-      "date": "2018-12-01",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! ナゴヤドーム公演 DAY1",
-      "venue": "愛知・ナゴヤドーム",
-      "performers": "大橋彩香、原紗友里、高田憂希、高橋花林、原田彩楓、三宅麻理恵"
-    },
-    {
-      "date": "2021-01-09",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS Broadcast & LIVE Happy New Yell !!! DAY1",
-      "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセ 国際展示場1～3ホール)",
-      "performers": "#ユニット名募集中 [富田美憂、梅澤めぐ、星希成奏]"
-    },
-    {
-      "date": "2022-04-03",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND!!! DAY2",
-      "venue": "埼玉・ベルーナドーム(西武ドーム)",
-      "performers": "高橋花林、大橋彩香、原田彩楓、高田憂希"
-    },
-    {
-      "date": "2025-11-29",
-      "tag": "xR",
-      "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY1 第1公演 Luminaria Tiara",
-      "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
-      "performers": "佐藤心、本田未央、森久保乃々、島村卯月、安部菜々"
-    }
-  ],
-  "SUN♡FLOWER": [
-    {
-      "date": "2017-07-08",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 幕張公演",
-      "venue": "千葉・幕張メッセイベントホール",
-      "performers": "山下七海、佳村はるか、原紗友里、和氣あず未、杜野まこ"
-    },
-    {
-      "date": "2017-07-09",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 幕張公演",
-      "venue": "千葉・幕張メッセイベントホール",
-      "performers": "山下七海、佳村はるか、原紗友里、和氣あず未、杜野まこ"
-    },
-    {
-      "date": "2017-07-29",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 福岡公演",
-      "venue": "福岡・西日本総合展示場 新館",
-      "performers": "木村珠莉、高田憂希、金子有希、春野ななみ、山本希望"
-    },
-    {
-      "date": "2017-07-30",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 福岡公演",
-      "venue": "福岡・西日本総合展示場 新館",
-      "performers": "木村珠莉、高田憂希、金子有希、春野ななみ、山本希望"
-    },
-    {
-      "date": "2017-08-13",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! さいたまスーパーアリーナ公演",
-      "venue": "埼玉・さいたまスーパーアリーナ",
-      "performers": "原紗友里、金子有希、春野ななみ、山本希望、佳村はるか"
-    },
-    {
-      "date": "2018-03-03",
-      "tag": "",
-      "event": "アイドルマスター シンデレラガールズ劇場 すぷりんぐふぇすてぃばる 2018 DAY1",
-      "venue": "千葉・舞浜アンフィシアター",
-      "performers": "のぐちゆり、鈴木絵理、松嵜麗"
-    },
-    {
-      "date": "2018-03-04",
-      "tag": "",
-      "event": "アイドルマスター シンデレラガールズ劇場 すぷりんぐふぇすてぃばる 2018 DAY2",
-      "venue": "千葉・舞浜アンフィシアター",
-      "performers": "のぐちゆり、和氣あず未、松嵜麗"
-    },
-    {
-      "date": "2018-07-07",
-      "tag": "",
-      "event": "Anisong World Matsuri at Anime Expo 2018 Japan Kawaii Live",
-      "venue": "ロサンゼルス・Microsoft Theater",
-      "performers": "松嵜麗、黒沢ともよ"
-    },
-    {
-      "date": "2019-06-16",
-      "tag": "",
-      "event": "アイドルマスター シンデレラガールズ コロムビアCD オリコン週間ランキングトップ10累計100タイトル突破記念 プロデューサーさん感謝祭 in 新木場スタジオコースト",
-      "venue": "東京・新木場STUDIO COAST",
-      "performers": "松嵜麗、原紗友里、高田憂希（AJURIKAによるDJ）"
-    },
-    {
-      "date": "2019-09-03",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 7thLIVE TOUR Special 3chord♪ Comical Pops! 1日目",
-      "venue": "千葉・幕張メッセ国際展示場 展示ホール9－11",
-      "performers": "会沢紗弥、五十嵐裕美、金子真由美、牧野由依"
-    },
-    {
-      "date": "2019-09-04",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 7thLIVE TOUR Special 3chord♪ Comical Pops! 2日目",
-      "venue": "千葉・幕張メッセ国際展示場 展示ホール9－11",
-      "performers": "会沢紗弥、五十嵐裕美、金子真由美、牧野由依"
-    },
-    {
-      "date": "2022-01-30",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Tropical Land DAY2",
-      "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセイベントホール)",
-      "performers": "松田颯水、原紗友里、田澤茉純"
-    },
-    {
-      "date": "2025-06-07",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 沖縄公演 DAY1",
-      "venue": "沖縄・沖縄サントリーアリーナ",
-      "performers": "安齋由香里、小市眞琴、春瀬なつみ、生田輝"
-    }
-  ],
-  "Happy New Yeah!": [
-    {
-      "date": "2018-11-10",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! メットライフドーム公演 DAY1",
-      "venue": "埼玉・メットライフドーム",
-      "performers": "大坪由佳、大橋彩香、東山奈央、花守ゆみり、原紗友里、福原綾香、藤本彩花、村中知、杜野まこ"
-    },
-    {
-      "date": "2019-01-06",
-      "tag": "",
-      "event": "アイドルマスター シンデレラガールズ スターライトクルーズ トーク＆ライブ ファーストシーティング",
-      "venue": "ぱしふぃっくびいなす（クルーズ客船）",
-      "performers": "五十嵐裕美、青木瑠璃子、松嵜麗、山本希望、佐藤亜美菜、藍原ことみ"
-    },
-    {
-      "date": "2019-01-06",
-      "tag": "",
-      "event": "アイドルマスター シンデレラガールズ スターライトクルーズ トーク＆ライブ セカンドシーティング",
-      "venue": "ぱしふぃっくびいなす（クルーズ客船）",
-      "performers": "五十嵐裕美、青木瑠璃子、松嵜麗、山本希望、佐藤亜美菜、藍原ことみ"
-    },
-    {
-      "date": "2021-01-09",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS Broadcast & LIVE Happy New Yell !!! DAY1",
-      "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセ 国際展示場1～3ホール)",
-      "performers": "朝井彩加、梅澤めぐ、大空直美、立花理香、照井春佳、都丸ちよ、花谷麻妃、牧野由依、飯田友子、桜咲千依、河瀬茉希、洲崎綾、鈴木みのり、富田美憂、中澤ミナ、ルゥ ティン、生田輝、高田憂希、深川芹亜、星希成奏、松田颯水"
-    },
-    {
-      "date": "2021-01-10",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS Broadcast & LIVE Happy New Yell !!! DAY2",
-      "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセ 国際展示場1～3ホール)",
-      "performers": "会沢紗弥、藍原ことみ、天野聡美、高森奈津美、津田美波、新田ひより、三宅麻理恵、嘉山未紗、高橋花林、田辺留依、千菅春香、長島光那、原田彩楓、渕上舞、松井恵理子、村中知、森下来奈、金子有希、武田羅梨沙多胡、田澤茉純、杜野まこ"
-    },
-    {
-      "date": "2025-09-06",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th MEMORIAL LIVE STARLIGHT STAGE DAY1",
-      "venue": "神奈川・Kアリーナ横浜",
-      "performers": "松永あかね、森下来奈 ※頭サビはMC組も歌唱／ Happy New Yeah! (Medley Size)"
-    }
-  ],
-  "CoCo夏夏夏 Holiday": [
-    {
-      "date": "2018-11-11",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! メットライフドーム公演 DAY2",
-      "venue": "埼玉・メットライフドーム",
-      "performers": "花守ゆみり、原紗友里、原優子、春瀬なつみ、安野希世乃"
-    },
-    {
-      "date": "2022-01-29",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Tropical Land DAY1",
-      "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセイベントホール)",
-      "performers": "大坪由佳、星希成奏、田澤茉純、伊達朱里紗"
-    },
-    {
-      "date": "2022-01-30",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Tropical Land DAY2",
-      "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセイベントホール)",
-      "performers": "大坪由佳、星希成奏、田澤茉純、伊達朱里紗"
-    },
-    {
-      "date": "2025-06-08",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 沖縄公演 DAY2",
-      "venue": "沖縄・沖縄サントリーアリーナ",
-      "performers": "田澤茉純、生田輝、のぐちゆり"
-    }
-  ],
-  "凸凹スピードスター": [
-    {
-      "date": "2018-11-10",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! メットライフドーム公演 DAY1",
-      "venue": "埼玉・メットライフドーム",
-      "performers": "しゅがしゅが☆み～ん [花守ゆみり、三宅麻理恵]"
-    },
-    {
-      "date": "2018-11-11",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! メットライフドーム公演 DAY2",
-      "venue": "埼玉・メットライフドーム",
-      "performers": "しゅがしゅが☆み～ん [花守ゆみり、三宅麻理恵]"
-    },
-    {
-      "date": "2022-04-03",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND!!! DAY2",
-      "venue": "埼玉・ベルーナドーム(西武ドーム)",
-      "performers": "藤本彩花、のぐちゆり／凸と凹？が駆け抜ける『凸凹スピードスター』(Medley Size)"
-    },
-    {
-      "date": "2023-06-25",
-      "tag": "",
-      "event": "「THE IDOLM@STER CINDERELLA GIRLS U149 ANIMATION MASTER」CDシリーズ発売記念イベント in 科学技術館サイエンスホール【1部】",
-      "venue": "東京・科学技術館サイエンスホール",
-      "performers": "黒沢ともよ"
-    },
-    {
-      "date": "2023-06-25",
-      "tag": "",
-      "event": "「THE IDOLM@STER CINDERELLA GIRLS U149 ANIMATION MASTER」CDシリーズ発売記念イベント in 科学技術館サイエンスホール【2部】",
-      "venue": "東京・科学技術館サイエンスホール",
-      "performers": "黒沢ともよ"
-    },
-    {
-      "date": "2024-12-14",
-      "tag": "xR",
-      "event": "M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE DAY1",
-      "venue": "千葉・幕張メッセ 国際展示場 展示ホール3",
-      "performers": "しゅがしゅが☆み～ん［佐藤心、安部菜々］"
-    },
-    {
-      "date": "2024-12-15",
-      "tag": "xR",
-      "event": "M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE DAY2",
-      "venue": "千葉・幕張メッセ 国際展示場 展示ホール3",
-      "performers": "しゅがしゅが☆み～ん［佐藤心、安部菜々］"
-    },
-    {
-      "date": "2025-04-27",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 東京公演 DAY2",
-      "venue": "東京・有明アリーナ",
-      "performers": "天野聡美、新田ひより"
-    },
-    {
-      "date": "2025-09-07",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th MEMORIAL LIVE STARLIGHT STAGE DAY2",
-      "venue": "神奈川・Kアリーナ横浜",
-      "performers": "サイキックヒーツ［赤﨑千夏、鈴木絵理］／凸凹スピードスター (Medley Size)"
-    },
-    {
-      "date": "2025-11-30",
-      "tag": "xR",
-      "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY2 第4公演 Ever Starlight",
-      "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
-      "performers": "しゅがしゅが☆み～ん［安部菜々、佐藤心］"
-    }
-  ],
-  "しゅがーはぁと☆レボリューション": [
-    {
-      "date": "2024-12-14",
-      "tag": "xR",
-      "event": "M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE DAY1",
-      "venue": "千葉・幕張メッセ 国際展示場 展示ホール3",
-      "performers": "佐藤心"
-    },
-    {
-      "date": "2024-12-15",
-      "tag": "xR",
-      "event": "M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE DAY2",
-      "venue": "千葉・幕張メッセ 国際展示場 展示ホール3",
-      "performers": "佐藤心"
-    },
-    {
-      "date": "2025-11-29",
-      "tag": "xR",
-      "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY1 第1公演 Luminaria Tiara",
-      "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
-      "performers": "佐藤心／しゅがーはぁと☆レボリューション (GAME VERSION)"
-    },
-    {
-      "date": "2025-11-30",
-      "tag": "xR",
-      "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY2 第4公演 Ever Starlight",
-      "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
-      "performers": "佐藤心／しゅがーはぁと☆レボリューション (GAME VERSION)"
-    }
-  ],
-  "躍るFLAGSHIP": [
-    {
-      "date": "2021-01-10",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS Broadcast & LIVE Happy New Yell !!! DAY2",
-      "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセ 国際展示場1～3ホール)",
-      "performers": "津田美波、渕上舞"
-    },
-    {
-      "date": "2022-01-30",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Tropical Land DAY2",
-      "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセイベントホール)",
-      "performers": "フェアリーテイル＊マイテイル［津田美波、鈴木みのり］"
-    },
-    {
-      "date": "2022-04-03",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND!!! DAY2",
-      "venue": "埼玉・ベルーナドーム(西武ドーム)",
-      "performers": "モノクロームリリィ［飯田友子、渕上舞］／躍るFLAGSHIP (Medley Size)"
-    },
-    {
-      "date": "2025-11-30",
-      "tag": "xR",
-      "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY2 第3公演 Princess Riot",
-      "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
-      "performers": "北条加蓮、神谷奈緒"
-    }
-  ],
-  "オウムアムアに幸運を": [
-    {
-      "date": "2020-02-15",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 7thLIVE TOUR Special 3chord♪ Glowing Rock! DAY1",
-      "venue": "大阪・京セラドーム大阪",
-      "performers": "佐倉薫、松井恵理子"
-    },
-    {
-      "date": "2020-02-16",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 7thLIVE TOUR Special 3chord♪ Glowing Rock! DAY2",
-      "venue": "大阪・京セラドーム大阪",
-      "performers": "佐倉薫、松井恵理子"
-    },
-    {
-      "date": "2021-12-25",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! CosmoStar Land DAY1",
-      "venue": "愛知・愛知県国際展示場 ホールA",
-      "performers": "藍原ことみ、千菅春香、集貝はな"
-    },
-    {
-      "date": "2022-04-03",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND!!! DAY2",
-      "venue": "埼玉・ベルーナドーム(西武ドーム)",
-      "performers": "藍原ことみ、集貝はな、佐倉薫"
-    },
-    {
-      "date": "2025-04-27",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 東京公演 DAY2",
-      "venue": "東京・有明アリーナ",
-      "performers": "藍原ことみ、集貝はな、松井恵理子"
-    }
-  ],
-  "Go Just Go!": [
-    {
-      "date": "2020-09-05",
-      "tag": "",
-      "event": "24magic 〜シンデレラたちの24時間生放送！〜 ★オープニング★(THE IDOLM@STER CINDERELLA GIRLS Live Broadcast 24magic 〜シンデレラたちの24時間生放送！〜)",
-      "venue": "生配信番組",
-      "performers": "森下来奈、山下七海、星希成奏、渕上舞、藤本彩花"
-    },
-    {
-      "date": "2021-07-11",
-      "tag": "",
-      "event": "CINDERELLA REAL PARTY! 07 Derepa is Gentle and Elegant 昼の部",
-      "venue": "東京・有楽町よみうりホール",
-      "performers": "大坪由佳、原紗友里、青木瑠璃子、桜咲千依"
-    },
-    {
-      "date": "2021-07-11",
-      "tag": "",
-      "event": "CINDERELLA REAL PARTY! 07 Derepa is Gentle and Elegant 夜の部",
-      "venue": "東京・有楽町よみうりホール",
-      "performers": "大坪由佳、原紗友里、青木瑠璃子、桜咲千依"
-    },
-    {
-      "date": "2022-01-29",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Tropical Land DAY1",
-      "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセイベントホール)",
-      "performers": "大坪由佳、津田美波、中島由貴、新田ひより、上坂すみれ、河瀬茉希、鈴木みのり、原田彩楓、原紗友里、生田輝、金子有希、武田羅梨沙多胡、田澤茉純、伊達朱里紗、のぐちゆり、星希成奏、松田颯水、杜野まこ、山下七海"
-    },
-    {
-      "date": "2022-01-30",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Tropical Land DAY2",
-      "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセイベントホール)",
-      "performers": "大坪由佳、津田美波、中島由貴、新田ひより、上坂すみれ、河瀬茉希、鈴木みのり、原田彩楓、原紗友里、生田輝、金子有希、武田羅梨沙多胡、田澤茉純、伊達朱里紗、のぐちゆり、星希成奏、松田颯水、杜野まこ、山下七海"
-    },
-    {
-      "date": "2022-04-03",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND!!! DAY2",
-      "venue": "埼玉・ベルーナドーム(西武ドーム)",
-      "performers": "富田美憂、梅澤めぐ、星希成奏、河瀬茉希／友情で繋ぐ『Go Just Go!』(Medley Size)"
-    }
-  ],
-  "ダンシング・デッド": [
-    {
-      "date": "2022-11-27",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS Twinkle LIVE Constellation Gradation DAY2",
-      "venue": "埼玉・ベルーナドーム(西武プリンスドーム)",
-      "performers": "のぐちゆり、松嵜麗 ※曲途中でゾンビダンサーズが登場"
-    },
-    {
-      "date": "2025-09-06",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th MEMORIAL LIVE STARLIGHT STAGE DAY1",
-      "venue": "神奈川・Kアリーナ横浜",
-      "performers": "木村珠莉、のぐちゆり、松嵜麗 ※曲途中でゾンビダンサーズが登場"
-    }
-  ],
-  "世界はそれを愛と呼ぶんだぜ": [],
-  "認めてくれなくたっていいよ": [
-    {
-      "date": "2022-09-03",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS LIKE4LIVE #cg_ootd DAY1",
-      "venue": "愛知・日本ガイシホール",
-      "performers": "髙野麻美、中澤ミナ、花井美春、大橋彩香、森下来奈、花谷麻妃、鈴木絵理、星希成奏、高田憂希、富田美憂、春瀬なつみ、立花日菜、藤本彩花、金子有希、井上ほの花、鈴木みのり、中島由貴、梅澤めぐ、小市眞琴、深川芹亜、青木志貴、会沢紗弥、五十嵐裕美"
-    },
-    {
-      "date": "2022-09-04",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS LIKE4LIVE #cg_ootd DAY2",
-      "venue": "愛知・日本ガイシホール",
-      "performers": "髙野麻美、中澤ミナ、花井美春、大橋彩香、森下来奈、花谷麻妃、鈴木絵理、星希成奏、安齋由香里、富田美憂、青木瑠璃子、立花日菜、集貝はな、金子有希、天野聡美、鈴木みのり、中島由貴、梅澤めぐ、小市眞琴、深川芹亜、青木志貴、会沢紗弥、五十嵐裕美"
-    },
-    {
-      "date": "2023-09-09",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS Shout out Live!!! DAY1",
-      "venue": "愛知・愛知県国際展示場 ホールA",
-      "performers": "立花日菜、山下七海、木村珠莉、金子有希、安野希世乃、高田憂希"
-    },
-    {
-      "date": "2023-09-10",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS Shout out Live!!! DAY2",
-      "venue": "愛知・愛知県国際展示場 ホールA",
-      "performers": "生田輝、立花日菜、山下七海、木村珠莉、金子有希、安野希世乃、高田憂希、松田颯水"
-    },
-    {
-      "date": "2025-06-28",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 福岡公演 DAY1",
-      "venue": "福岡・マリンメッセ福岡",
-      "performers": "佐倉薫、関口理咲、高田憂希、東山奈央、鈴木みのり、神谷早矢佳、嘉山未紗、津田美波、中島由貴、松田颯水、福原綾香、千菅春香、原田彩楓、鈴木絵理、立花日菜、赤﨑千夏、桜咲千依、長江里加、伊達朱里紗、長野佑紀／アンコール"
-    },
-    {
-      "date": "2025-07-24",
-      "tag": "VLV",
-      "event": "【アイマス縛り歌枠】#ヴイアラ歌枠リレー 先輩の曲をたくさん歌います！【#ヴイアラ / 上水流宇宙】",
-      "venue": "リアルタイム配信・上水流 宇宙 / Cosmo Kamizuru 【ヴイアラ】【876プロ】",
-      "performers": "上水流宇宙 ※CGアイドルでの歌唱"
-    }
-  ],
-  "熱情エナモラル": [
-    {
-      "date": "2025-06-28",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 福岡公演 DAY1",
-      "venue": "福岡・マリンメッセ福岡",
-      "performers": "高田憂希、立花日菜、伊達朱里紗"
-    },
-    {
-      "date": "2025-06-29",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 福岡公演 DAY2",
-      "venue": "福岡・マリンメッセ福岡",
-      "performers": "高田憂希、立花日菜、伊達朱里紗"
-    },
-    {
-      "date": "2026-05-24",
-      "tag": "",
-      "event": "CINDERELLA REAL PARTY! 12 ～デレパをプロデュース～ 昼の部",
-      "venue": "東京・ヒューリックホール東京",
-      "performers": "大木咲絵子、原田彩楓、原涼子"
-    },
-    {
-      "date": "2026-05-24",
-      "tag": "",
-      "event": "CINDERELLA REAL PARTY! 12 ～デレパをプロデュース～ 夜の部",
-      "venue": "東京・ヒューリックホール東京",
-      "performers": "大木咲絵子、原田彩楓、原涼子"
-    }
-  ],
-  "SWEET MEMORIES": [],
-  "ダンス・ダンス・ダンス": [
-    {
-      "date": "2023-06-11",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 燿城夜祭 -かがやきよまつり- DAY2",
-      "venue": "大阪・大阪城ホール",
-      "performers": "髙野麻美、藍原ことみ、佳村はるか"
-    },
-    {
-      "date": "2023-07-26",
-      "tag": "VLV",
-      "event": "【アイマス縛り歌枠】最後まで盛り上がっていきますよ！！【#ヴイアラ歌枠リレー 上水流宇宙】",
-      "venue": "リアルタイム配信 【PROJECT vα-liv】 上水流宇宙 YouTube公式チャンネル",
-      "performers": "上水流宇宙 ※2DCGアイドルでの歌唱"
-    },
-    {
-      "date": "2023-11-26",
-      "tag": "VLV",
-      "event": "【#ヴイアラ3Dお披露目リレー】念願のダンスの初披露〜！最高のパフォーマンスお見逃しなく！【#ヴイアラ 上水流宇宙】",
-      "venue": "リアルタイム配信 上水流 宇宙 / Cosmo Kamizuru 【ヴイアラ】 YouTube公式チャンネル(会場：ヴイアラスタジオ＝東京・MIRAIKEN studio)",
-      "performers": "上水流宇宙※リアルタイム歌唱＋3Dモデルのダンス／ダンス・ダンス・ダンス(GAME Ver.)"
-    },
-    {
-      "date": "2024-06-01",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS UNIT LIVE TOUR ConnecTrip! 東京公演 昼公演",
-      "venue": "東京・Zepp DiverCity Tokyo",
-      "performers": "富田美憂、森下来奈、梅澤めぐ"
-    },
-    {
-      "date": "2024-06-01",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS UNIT LIVE TOUR ConnecTrip! 東京公演 夜公演",
-      "venue": "東京・Zepp DiverCity Tokyo",
-      "performers": "富田美憂、森下来奈、梅澤めぐ"
-    },
-    {
-      "date": "2024-08-25",
-      "tag": "xR",
-      "event": "961 PRODUCTION presents 『Re:FLAME』 Re:FRAME/SUN",
-      "venue": "京都・ロームシアター京都 メインホール、配信：ASOBI STAGE",
-      "performers": "プロジェクト・フェアリー［我那覇響、星井美希、四条貴音］"
-    },
-    {
-      "date": "2024-09-12",
-      "tag": "VLV",
-      "event": "【#上水流宇宙誕生祭2024】Club Cosmoにようこそ！18歳の誕生日に18曲歌います！【#ヴイアラ / 上水流宇宙】",
-      "venue": "リアルタイム配信・上水流 宇宙 / Cosmo Kamizuru 【ヴイアラ】【876プロ】",
-      "performers": "上水流宇宙 ※2DCGアイドルでの歌唱／ダンス・ダンス・ダンス (GAME Ver.)"
-    },
-    {
-      "date": "2024-12-15",
-      "tag": "xR",
-      "event": "M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE DAY2",
-      "venue": "千葉・幕張メッセ 国際展示場 展示ホール3",
-      "performers": "佐藤心、速水奏、高垣楓"
-    },
-    {
-      "date": "2025-02-01",
-      "tag": "xR",
-      "event": "961 PRODUCTION presents 『Re:FLAME』 追加公演 Re:FLAME/DUSK",
-      "venue": "大阪・フェニーチェ堺 大ホール、配信：ASOBI STAGE",
-      "performers": "奥空心白"
-    },
-    {
-      "date": "2025-06-11",
-      "tag": "VLV",
-      "event": "vortex CORE DAY3",
-      "venue": "リアルタイム配信・zaiko(オンライン)",
-      "performers": "上水流宇宙"
-    },
-    {
-      "date": "2025-08-02",
-      "tag": "",
-      "event": "THE IDOLM@STER 765PRO ALLSTARS LIVE ～NEVER END IDOL!!!!!!!!!!!!!～ DAY1",
-      "venue": "神奈川・Kアリーナ横浜",
-      "performers": "釘宮理恵、沼倉愛美、長谷川明子、今井麻美"
-    },
-    {
-      "date": "2025-09-07",
-      "tag": "",
-      "event": "THE IDOLM@STER CINDERELLA GIRLS 10th MEMORIAL LIVE STARLIGHT STAGE DAY2",
-      "venue": "神奈川・Kアリーナ横浜",
-      "performers": "生田輝、山下七海／ダンス・ダンス・ダンス (Medley Size)"
-    },
-    {
-      "date": "2026-05-15",
-      "tag": "xR",
-      "event": "Miki Hoshii SOLO SHOWCASE「THE FUTURE SPOTLIGHT」",
-      "venue": "シカゴ・Grand Ballroom (Hyatt Regency O'Hare Chicago)",
-      "performers": "星井美希"
-    }
-  ],
-  "もしも「カワイイ」が世界からなくなっても": [
-    {
-      "date": "2025-10-24",
-      "tag": "xR",
-      "event": "アイドルマスター シンデレラガールズ 15周年イヤー直前！生配信",
-      "venue": "YouTube アイドルマスターチャンネル",
-      "performers": "カワスウィーティーなボクはぁと(仮)［輿水幸子、佐藤心］"
-    },
-    {
-      "date": "2025-11-29",
-      "tag": "xR",
-      "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY1 第1公演 Luminaria Tiara",
-      "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
-      "performers": "カワスウィーティーなボクはぁと(仮)［輿水幸子、佐藤心］"
-    },
-    {
-      "date": "2025-11-30",
-      "tag": "xR",
-      "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY2 第4公演 Ever Starlight",
-      "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
-      "performers": "カワスウィーティーなボクはぁと(仮)［輿水幸子、佐藤心］"
-    }
-  ],
-  "シンデレラNo.1": [
-    {
-      "date": "2026-05-09",
-      "tag": "",
-      "event": "CINDERELLA GIRLS MUSICAL STARLIGHT HIGH SCHOOL! DAY1 夜公演",
-      "venue": "千葉・森のホール21(松戸市文化会館)大ホール",
-      "performers": "中島由貴、藤本彩花、井上ほの花、大木咲絵子、長江里加、高橋花林、二ノ宮ゆい、武田羅梨沙多胡、鈴木絵理"
-    },
-    {
-      "date": "2026-05-10",
-      "tag": "",
-      "event": "CINDERELLA GIRLS MUSICAL STARLIGHT HIGH SCHOOL! DAY2 昼公演",
-      "venue": "千葉・森のホール21(松戸市文化会館)大ホール",
-      "performers": "中島由貴、藤本彩花、井上ほの花、大木咲絵子、長江里加、高橋花林、二ノ宮ゆい、武田羅梨沙多胡、鈴木絵理"
-    },
-    {
-      "date": "2026-05-10",
-      "tag": "",
-      "event": "CINDERELLA GIRLS MUSICAL STARLIGHT HIGH SCHOOL! DAY2 夜公演",
-      "venue": "千葉・森のホール21(松戸市文化会館)大ホール",
-      "performers": "中島由貴、藤本彩花、井上ほの花、大木咲絵子、長江里加、高橋花林、二ノ宮ゆい、武田羅梨沙多胡、鈴木絵理"
-    },
-    {
-      "date": "2026-05-24",
-      "tag": "",
-      "event": "CINDERELLA REAL PARTY! 12 ～デレパをプロデュース～ 昼の部",
-      "venue": "東京・ヒューリックホール東京",
-      "performers": "大木咲絵子、青木瑠璃子、原田彩楓、原紗友里、原涼子／シンデレラNo.1 (SHORT ver.)"
-    },
-    {
-      "date": "2026-05-24",
-      "tag": "",
-      "event": "CINDERELLA REAL PARTY! 12 ～デレパをプロデュース～ 夜の部",
-      "venue": "東京・ヒューリックホール東京",
-      "performers": "大木咲絵子、青木瑠璃子、原田彩楓、原紗友里、原涼子／シンデレラNo.1 (SHORT ver.)"
-    }
-  ]
+ "命燃やして恋せよ乙女": [
+  {
+   "date": "2017-07-08",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 幕張公演",
+   "venue": "千葉・幕張メッセイベントホール",
+   "performers": "原田彩楓、三宅麻理恵、和氣あず未"
+  },
+  {
+   "date": "2017-07-09",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 幕張公演",
+   "venue": "千葉・幕張メッセイベントホール",
+   "performers": "原田彩楓、三宅麻理恵、和氣あず未"
+  },
+  {
+   "date": "2017-08-12",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! さいたまスーパーアリーナ公演",
+   "venue": "埼玉・さいたまスーパーアリーナ",
+   "performers": "花守ゆみり、原田彩楓、三宅麻理恵、和氣あず未"
+  },
+  {
+   "date": "2018-12-01",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! ナゴヤドーム公演 DAY1",
+   "venue": "愛知・ナゴヤドーム",
+   "performers": "嘉山未紗、田澤茉純、原田彩楓、三宅麻理恵、和氣あず未"
+  },
+  {
+   "date": "2021-01-09",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS Broadcast & LIVE Happy New Yell !!! DAY1",
+   "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセ 国際展示場1～3ホール)",
+   "performers": "河瀬茉希、大空直美、洲崎綾、花谷麻妃、飯田友子"
+  },
+  {
+   "date": "2021-01-10",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS Broadcast & LIVE Happy New Yell !!! DAY2",
+   "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセ 国際展示場1～3ホール)",
+   "performers": "高橋花林、三宅麻理恵、会沢紗弥、原田彩楓、杜野まこ"
+  },
+  {
+   "date": "2021-11-28",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Celebration Land DAY2",
+   "venue": "千葉・幕張メッセ イベントホール",
+   "performers": "花井美春、三宅麻理恵、森下来奈、立花理香"
+  },
+  {
+   "date": "2025-09-07",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th MEMORIAL LIVE STARLIGHT STAGE DAY2",
+   "venue": "神奈川・Kアリーナ横浜",
+   "performers": "星希成奏、赤﨑千夏、原優子／命燃やして恋せよ乙女 (Medley Size)"
+  }
+ ],
+ "Take me☆Take you": [
+  {
+   "date": "2016-11-19",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5th Anniversary Party ニコ生SP",
+   "venue": "千葉・森のホール21",
+   "performers": "高橋花林、原田彩楓、高田憂希"
+  },
+  {
+   "date": "2017-07-08",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 幕張公演",
+   "venue": "千葉・幕張メッセイベントホール",
+   "performers": "三宅麻理恵、原田彩楓、原紗友里"
+  },
+  {
+   "date": "2017-07-09",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 幕張公演",
+   "venue": "千葉・幕張メッセイベントホール",
+   "performers": "三宅麻理恵、原田彩楓、原紗友里"
+  },
+  {
+   "date": "2017-07-29",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 福岡公演",
+   "venue": "福岡・西日本総合展示場 新館",
+   "performers": "高田憂希、種﨑敦美、高森奈津美"
+  },
+  {
+   "date": "2017-07-30",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 福岡公演",
+   "venue": "福岡・西日本総合展示場 新館",
+   "performers": "高田憂希、種﨑敦美、高森奈津美"
+  },
+  {
+   "date": "2017-08-12",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! さいたまスーパーアリーナ公演",
+   "venue": "埼玉・さいたまスーパーアリーナ（アリーナモード）",
+   "performers": "高田憂希、高橋花林、高森奈津美、花守ゆみり、原田彩楓、三宅麻理恵"
+  },
+  {
+   "date": "2017-11-19",
+   "tag": "",
+   "event": "アイドルマスター シンデレラガールズ 6th Anniversary Memorial Party",
+   "venue": "千葉・舞浜アンフィシアター",
+   "performers": "朝井彩加、津田美波、中島由貴"
+  },
+  {
+   "date": "2018-12-01",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! ナゴヤドーム公演 DAY1",
+   "venue": "愛知・ナゴヤドーム",
+   "performers": "大橋彩香、原紗友里、高田憂希、高橋花林、原田彩楓、三宅麻理恵"
+  },
+  {
+   "date": "2021-01-09",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS Broadcast & LIVE Happy New Yell !!! DAY1",
+   "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセ 国際展示場1～3ホール)",
+   "performers": "#ユニット名募集中 [富田美憂、梅澤めぐ、星希成奏]"
+  },
+  {
+   "date": "2022-04-03",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND!!! DAY2",
+   "venue": "埼玉・ベルーナドーム(西武ドーム)",
+   "performers": "高橋花林、大橋彩香、原田彩楓、高田憂希"
+  },
+  {
+   "date": "2025-11-29",
+   "tag": "xR",
+   "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY1 第1公演 Luminaria Tiara",
+   "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
+   "performers": "佐藤心、本田未央、森久保乃々、島村卯月、安部菜々"
+  }
+ ],
+ "SUN♡FLOWER": [
+  {
+   "date": "2017-07-08",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 幕張公演",
+   "venue": "千葉・幕張メッセイベントホール",
+   "performers": "山下七海、佳村はるか、原紗友里、和氣あず未、杜野まこ"
+  },
+  {
+   "date": "2017-07-09",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 幕張公演",
+   "venue": "千葉・幕張メッセイベントホール",
+   "performers": "山下七海、佳村はるか、原紗友里、和氣あず未、杜野まこ"
+  },
+  {
+   "date": "2017-07-29",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 福岡公演",
+   "venue": "福岡・西日本総合展示場 新館",
+   "performers": "木村珠莉、高田憂希、金子有希、春野ななみ、山本希望"
+  },
+  {
+   "date": "2017-07-30",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 福岡公演",
+   "venue": "福岡・西日本総合展示場 新館",
+   "performers": "木村珠莉、高田憂希、金子有希、春野ななみ、山本希望"
+  },
+  {
+   "date": "2017-08-13",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! さいたまスーパーアリーナ公演",
+   "venue": "埼玉・さいたまスーパーアリーナ",
+   "performers": "原紗友里、金子有希、春野ななみ、山本希望、佳村はるか"
+  },
+  {
+   "date": "2018-03-03",
+   "tag": "",
+   "event": "アイドルマスター シンデレラガールズ劇場 すぷりんぐふぇすてぃばる 2018 DAY1",
+   "venue": "千葉・舞浜アンフィシアター",
+   "performers": "のぐちゆり、鈴木絵理、松嵜麗"
+  },
+  {
+   "date": "2018-03-04",
+   "tag": "",
+   "event": "アイドルマスター シンデレラガールズ劇場 すぷりんぐふぇすてぃばる 2018 DAY2",
+   "venue": "千葉・舞浜アンフィシアター",
+   "performers": "のぐちゆり、和氣あず未、松嵜麗"
+  },
+  {
+   "date": "2018-07-07",
+   "tag": "",
+   "event": "Anisong World Matsuri at Anime Expo 2018 Japan Kawaii Live",
+   "venue": "ロサンゼルス・Microsoft Theater",
+   "performers": "松嵜麗、黒沢ともよ"
+  },
+  {
+   "date": "2019-06-16",
+   "tag": "",
+   "event": "アイドルマスター シンデレラガールズ コロムビアCD オリコン週間ランキングトップ10累計100タイトル突破記念 プロデューサーさん感謝祭 in 新木場スタジオコースト",
+   "venue": "東京・新木場STUDIO COAST",
+   "performers": "松嵜麗、原紗友里、高田憂希（AJURIKAによるDJ）"
+  },
+  {
+   "date": "2019-09-03",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 7thLIVE TOUR Special 3chord♪ Comical Pops! 1日目",
+   "venue": "千葉・幕張メッセ国際展示場 展示ホール9－11",
+   "performers": "会沢紗弥、五十嵐裕美、金子真由美、牧野由依"
+  },
+  {
+   "date": "2019-09-04",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 7thLIVE TOUR Special 3chord♪ Comical Pops! 2日目",
+   "venue": "千葉・幕張メッセ国際展示場 展示ホール9－11",
+   "performers": "会沢紗弥、五十嵐裕美、金子真由美、牧野由依"
+  },
+  {
+   "date": "2022-01-30",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Tropical Land DAY2",
+   "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセイベントホール)",
+   "performers": "松田颯水、原紗友里、田澤茉純"
+  },
+  {
+   "date": "2025-06-07",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 沖縄公演 DAY1",
+   "venue": "沖縄・沖縄サントリーアリーナ",
+   "performers": "安齋由香里、小市眞琴、春瀬なつみ、生田輝"
+  }
+ ],
+ "Happy New Yeah!": [
+  {
+   "date": "2018-11-10",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! メットライフドーム公演 DAY1",
+   "venue": "埼玉・メットライフドーム",
+   "performers": "大坪由佳、大橋彩香、東山奈央、花守ゆみり、原紗友里、福原綾香、藤本彩花、村中知、杜野まこ"
+  },
+  {
+   "date": "2019-01-06",
+   "tag": "",
+   "event": "アイドルマスター シンデレラガールズ スターライトクルーズ トーク＆ライブ ファーストシーティング",
+   "venue": "ぱしふぃっくびいなす（クルーズ客船）",
+   "performers": "五十嵐裕美、青木瑠璃子、松嵜麗、山本希望、佐藤亜美菜、藍原ことみ"
+  },
+  {
+   "date": "2019-01-06",
+   "tag": "",
+   "event": "アイドルマスター シンデレラガールズ スターライトクルーズ トーク＆ライブ セカンドシーティング",
+   "venue": "ぱしふぃっくびいなす（クルーズ客船）",
+   "performers": "五十嵐裕美、青木瑠璃子、松嵜麗、山本希望、佐藤亜美菜、藍原ことみ"
+  },
+  {
+   "date": "2021-01-09",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS Broadcast & LIVE Happy New Yell !!! DAY1",
+   "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセ 国際展示場1～3ホール)",
+   "performers": "朝井彩加、梅澤めぐ、大空直美、立花理香、照井春佳、都丸ちよ、花谷麻妃、牧野由依、飯田友子、桜咲千依、河瀬茉希、洲崎綾、鈴木みのり、富田美憂、中澤ミナ、ルゥ ティン、生田輝、高田憂希、深川芹亜、星希成奏、松田颯水"
+  },
+  {
+   "date": "2021-01-10",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS Broadcast & LIVE Happy New Yell !!! DAY2",
+   "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセ 国際展示場1～3ホール)",
+   "performers": "会沢紗弥、藍原ことみ、天野聡美、高森奈津美、津田美波、新田ひより、三宅麻理恵、嘉山未紗、高橋花林、田辺留依、千菅春香、長島光那、原田彩楓、渕上舞、松井恵理子、村中知、森下来奈、金子有希、武田羅梨沙多胡、田澤茉純、杜野まこ"
+  },
+  {
+   "date": "2025-09-06",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th MEMORIAL LIVE STARLIGHT STAGE DAY1",
+   "venue": "神奈川・Kアリーナ横浜",
+   "performers": "松永あかね、森下来奈 ※頭サビはMC組も歌唱／ Happy New Yeah! (Medley Size)"
+  }
+ ],
+ "CoCo夏夏夏 Holiday": [
+  {
+   "date": "2018-11-11",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! メットライフドーム公演 DAY2",
+   "venue": "埼玉・メットライフドーム",
+   "performers": "花守ゆみり、原紗友里、原優子、春瀬なつみ、安野希世乃"
+  },
+  {
+   "date": "2022-01-29",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Tropical Land DAY1",
+   "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセイベントホール)",
+   "performers": "大坪由佳、星希成奏、田澤茉純、伊達朱里紗"
+  },
+  {
+   "date": "2022-01-30",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Tropical Land DAY2",
+   "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセイベントホール)",
+   "performers": "大坪由佳、星希成奏、田澤茉純、伊達朱里紗"
+  },
+  {
+   "date": "2025-06-08",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 沖縄公演 DAY2",
+   "venue": "沖縄・沖縄サントリーアリーナ",
+   "performers": "田澤茉純、生田輝、のぐちゆり"
+  }
+ ],
+ "凸凹スピードスター": [
+  {
+   "date": "2018-11-10",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! メットライフドーム公演 DAY1",
+   "venue": "埼玉・メットライフドーム",
+   "performers": "しゅがしゅが☆み～ん [花守ゆみり、三宅麻理恵]"
+  },
+  {
+   "date": "2018-11-11",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! メットライフドーム公演 DAY2",
+   "venue": "埼玉・メットライフドーム",
+   "performers": "しゅがしゅが☆み～ん [花守ゆみり、三宅麻理恵]"
+  },
+  {
+   "date": "2022-04-03",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND!!! DAY2",
+   "venue": "埼玉・ベルーナドーム(西武ドーム)",
+   "performers": "藤本彩花、のぐちゆり／凸と凹？が駆け抜ける『凸凹スピードスター』(Medley Size)"
+  },
+  {
+   "date": "2023-06-25",
+   "tag": "",
+   "event": "「THE IDOLM@STER CINDERELLA GIRLS U149 ANIMATION MASTER」CDシリーズ発売記念イベント in 科学技術館サイエンスホール【1部】",
+   "venue": "東京・科学技術館サイエンスホール",
+   "performers": "黒沢ともよ"
+  },
+  {
+   "date": "2023-06-25",
+   "tag": "",
+   "event": "「THE IDOLM@STER CINDERELLA GIRLS U149 ANIMATION MASTER」CDシリーズ発売記念イベント in 科学技術館サイエンスホール【2部】",
+   "venue": "東京・科学技術館サイエンスホール",
+   "performers": "黒沢ともよ"
+  },
+  {
+   "date": "2024-12-14",
+   "tag": "xR",
+   "event": "M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE DAY1",
+   "venue": "千葉・幕張メッセ 国際展示場 展示ホール3",
+   "performers": "しゅがしゅが☆み～ん［佐藤心、安部菜々］"
+  },
+  {
+   "date": "2024-12-15",
+   "tag": "xR",
+   "event": "M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE DAY2",
+   "venue": "千葉・幕張メッセ 国際展示場 展示ホール3",
+   "performers": "しゅがしゅが☆み～ん［佐藤心、安部菜々］"
+  },
+  {
+   "date": "2025-04-27",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 東京公演 DAY2",
+   "venue": "東京・有明アリーナ",
+   "performers": "天野聡美、新田ひより"
+  },
+  {
+   "date": "2025-09-07",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th MEMORIAL LIVE STARLIGHT STAGE DAY2",
+   "venue": "神奈川・Kアリーナ横浜",
+   "performers": "サイキックヒーツ［赤﨑千夏、鈴木絵理］／凸凹スピードスター (Medley Size)"
+  },
+  {
+   "date": "2025-11-30",
+   "tag": "xR",
+   "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY2 第4公演 Ever Starlight",
+   "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
+   "performers": "しゅがしゅが☆み～ん［安部菜々、佐藤心］"
+  }
+ ],
+ "しゅがーはぁと☆レボリューション": [
+  {
+   "date": "2024-12-14",
+   "tag": "xR",
+   "event": "M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE DAY1",
+   "venue": "千葉・幕張メッセ 国際展示場 展示ホール3",
+   "performers": "佐藤心"
+  },
+  {
+   "date": "2024-12-15",
+   "tag": "xR",
+   "event": "M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE DAY2",
+   "venue": "千葉・幕張メッセ 国際展示場 展示ホール3",
+   "performers": "佐藤心"
+  },
+  {
+   "date": "2025-11-29",
+   "tag": "xR",
+   "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY1 第1公演 Luminaria Tiara",
+   "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
+   "performers": "佐藤心／しゅがーはぁと☆レボリューション (GAME VERSION)"
+  },
+  {
+   "date": "2025-11-30",
+   "tag": "xR",
+   "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY2 第4公演 Ever Starlight",
+   "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
+   "performers": "佐藤心／しゅがーはぁと☆レボリューション (GAME VERSION)"
+  }
+ ],
+ "躍るFLAGSHIP": [
+  {
+   "date": "2021-01-10",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS Broadcast & LIVE Happy New Yell !!! DAY2",
+   "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセ 国際展示場1～3ホール)",
+   "performers": "津田美波、渕上舞"
+  },
+  {
+   "date": "2022-01-30",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Tropical Land DAY2",
+   "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセイベントホール)",
+   "performers": "フェアリーテイル＊マイテイル［津田美波、鈴木みのり］"
+  },
+  {
+   "date": "2022-04-03",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND!!! DAY2",
+   "venue": "埼玉・ベルーナドーム(西武ドーム)",
+   "performers": "モノクロームリリィ［飯田友子、渕上舞］／躍るFLAGSHIP (Medley Size)"
+  },
+  {
+   "date": "2025-11-30",
+   "tag": "xR",
+   "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY2 第3公演 Princess Riot",
+   "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
+   "performers": "北条加蓮、神谷奈緒"
+  }
+ ],
+ "オウムアムアに幸運を": [
+  {
+   "date": "2020-02-15",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 7thLIVE TOUR Special 3chord♪ Glowing Rock! DAY1",
+   "venue": "大阪・京セラドーム大阪",
+   "performers": "佐倉薫、松井恵理子"
+  },
+  {
+   "date": "2020-02-16",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 7thLIVE TOUR Special 3chord♪ Glowing Rock! DAY2",
+   "venue": "大阪・京セラドーム大阪",
+   "performers": "佐倉薫、松井恵理子"
+  },
+  {
+   "date": "2021-12-25",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! CosmoStar Land DAY1",
+   "venue": "愛知・愛知県国際展示場 ホールA",
+   "performers": "藍原ことみ、千菅春香、集貝はな"
+  },
+  {
+   "date": "2022-04-03",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND!!! DAY2",
+   "venue": "埼玉・ベルーナドーム(西武ドーム)",
+   "performers": "藍原ことみ、集貝はな、佐倉薫"
+  },
+  {
+   "date": "2025-04-27",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 東京公演 DAY2",
+   "venue": "東京・有明アリーナ",
+   "performers": "藍原ことみ、集貝はな、松井恵理子"
+  }
+ ],
+ "Go Just Go!": [
+  {
+   "date": "2020-09-05",
+   "tag": "",
+   "event": "24magic 〜シンデレラたちの24時間生放送！〜 ★オープニング★(THE IDOLM@STER CINDERELLA GIRLS Live Broadcast 24magic 〜シンデレラたちの24時間生放送！〜)",
+   "venue": "生配信番組",
+   "performers": "森下来奈、山下七海、星希成奏、渕上舞、藤本彩花"
+  },
+  {
+   "date": "2021-07-11",
+   "tag": "",
+   "event": "CINDERELLA REAL PARTY! 07 Derepa is Gentle and Elegant 昼の部",
+   "venue": "東京・有楽町よみうりホール",
+   "performers": "大坪由佳、原紗友里、青木瑠璃子、桜咲千依"
+  },
+  {
+   "date": "2021-07-11",
+   "tag": "",
+   "event": "CINDERELLA REAL PARTY! 07 Derepa is Gentle and Elegant 夜の部",
+   "venue": "東京・有楽町よみうりホール",
+   "performers": "大坪由佳、原紗友里、青木瑠璃子、桜咲千依"
+  },
+  {
+   "date": "2022-01-29",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Tropical Land DAY1",
+   "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセイベントホール)",
+   "performers": "大坪由佳、津田美波、中島由貴、新田ひより、上坂すみれ、河瀬茉希、鈴木みのり、原田彩楓、原紗友里、生田輝、金子有希、武田羅梨沙多胡、田澤茉純、伊達朱里紗、のぐちゆり、星希成奏、松田颯水、杜野まこ、山下七海"
+  },
+  {
+   "date": "2022-01-30",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND TOUR!!! Tropical Land DAY2",
+   "venue": "リアルタイム配信(配信ASOBISTAGE／会場：千葉・幕張メッセイベントホール)",
+   "performers": "大坪由佳、津田美波、中島由貴、新田ひより、上坂すみれ、河瀬茉希、鈴木みのり、原田彩楓、原紗友里、生田輝、金子有希、武田羅梨沙多胡、田澤茉純、伊達朱里紗、のぐちゆり、星希成奏、松田颯水、杜野まこ、山下七海"
+  },
+  {
+   "date": "2022-04-03",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th ANNIVERSARY M@GICAL WONDERLAND!!! DAY2",
+   "venue": "埼玉・ベルーナドーム(西武ドーム)",
+   "performers": "富田美憂、梅澤めぐ、星希成奏、河瀬茉希／友情で繋ぐ『Go Just Go!』(Medley Size)"
+  }
+ ],
+ "ダンシング・デッド": [
+  {
+   "date": "2022-11-27",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS Twinkle LIVE Constellation Gradation DAY2",
+   "venue": "埼玉・ベルーナドーム(西武プリンスドーム)",
+   "performers": "のぐちゆり、松嵜麗 ※曲途中でゾンビダンサーズが登場"
+  },
+  {
+   "date": "2025-09-06",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th MEMORIAL LIVE STARLIGHT STAGE DAY1",
+   "venue": "神奈川・Kアリーナ横浜",
+   "performers": "木村珠莉、のぐちゆり、松嵜麗 ※曲途中でゾンビダンサーズが登場"
+  }
+ ],
+ "世界はそれを愛と呼ぶんだぜ": [],
+ "認めてくれなくたっていいよ": [
+  {
+   "date": "2022-09-03",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS LIKE4LIVE #cg_ootd DAY1",
+   "venue": "愛知・日本ガイシホール",
+   "performers": "髙野麻美、中澤ミナ、花井美春、大橋彩香、森下来奈、花谷麻妃、鈴木絵理、星希成奏、高田憂希、富田美憂、春瀬なつみ、立花日菜、藤本彩花、金子有希、井上ほの花、鈴木みのり、中島由貴、梅澤めぐ、小市眞琴、深川芹亜、青木志貴、会沢紗弥、五十嵐裕美"
+  },
+  {
+   "date": "2022-09-04",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS LIKE4LIVE #cg_ootd DAY2",
+   "venue": "愛知・日本ガイシホール",
+   "performers": "髙野麻美、中澤ミナ、花井美春、大橋彩香、森下来奈、花谷麻妃、鈴木絵理、星希成奏、安齋由香里、富田美憂、青木瑠璃子、立花日菜、集貝はな、金子有希、天野聡美、鈴木みのり、中島由貴、梅澤めぐ、小市眞琴、深川芹亜、青木志貴、会沢紗弥、五十嵐裕美"
+  },
+  {
+   "date": "2023-09-09",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS Shout out Live!!! DAY1",
+   "venue": "愛知・愛知県国際展示場 ホールA",
+   "performers": "立花日菜、山下七海、木村珠莉、金子有希、安野希世乃、高田憂希"
+  },
+  {
+   "date": "2023-09-10",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS Shout out Live!!! DAY2",
+   "venue": "愛知・愛知県国際展示場 ホールA",
+   "performers": "生田輝、立花日菜、山下七海、木村珠莉、金子有希、安野希世乃、高田憂希、松田颯水"
+  },
+  {
+   "date": "2025-06-28",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 福岡公演 DAY1",
+   "venue": "福岡・マリンメッセ福岡",
+   "performers": "佐倉薫、関口理咲、高田憂希、東山奈央、鈴木みのり、神谷早矢佳、嘉山未紗、津田美波、中島由貴、松田颯水、福原綾香、千菅春香、原田彩楓、鈴木絵理、立花日菜、赤﨑千夏、桜咲千依、長江里加、伊達朱里紗、長野佑紀／アンコール"
+  },
+  {
+   "date": "2025-07-24",
+   "tag": "VLV",
+   "event": "【アイマス縛り歌枠】#ヴイアラ歌枠リレー 先輩の曲をたくさん歌います！【#ヴイアラ / 上水流宇宙】",
+   "venue": "リアルタイム配信・上水流 宇宙 / Cosmo Kamizuru 【ヴイアラ】【876プロ】",
+   "performers": "上水流宇宙 ※CGアイドルでの歌唱"
+  }
+ ],
+ "熱情エナモラル": [
+  {
+   "date": "2025-06-28",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 福岡公演 DAY1",
+   "venue": "福岡・マリンメッセ福岡",
+   "performers": "高田憂希、立花日菜、伊達朱里紗"
+  },
+  {
+   "date": "2025-06-29",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS STARLIGHT STAGE 10th ANNIVERSARY TOUR Let’s AMUSEMENT!!! 福岡公演 DAY2",
+   "venue": "福岡・マリンメッセ福岡",
+   "performers": "高田憂希、立花日菜、伊達朱里紗"
+  },
+  {
+   "date": "2026-05-24",
+   "tag": "",
+   "event": "CINDERELLA REAL PARTY! 12 ～デレパをプロデュース～ 昼の部",
+   "venue": "東京・ヒューリックホール東京",
+   "performers": "大木咲絵子、原田彩楓、原涼子"
+  },
+  {
+   "date": "2026-05-24",
+   "tag": "",
+   "event": "CINDERELLA REAL PARTY! 12 ～デレパをプロデュース～ 夜の部",
+   "venue": "東京・ヒューリックホール東京",
+   "performers": "大木咲絵子、原田彩楓、原涼子"
+  }
+ ],
+ "SWEET MEMORIES": [],
+ "ダンス・ダンス・ダンス": [
+  {
+   "date": "2023-06-11",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 燿城夜祭 -かがやきよまつり- DAY2",
+   "venue": "大阪・大阪城ホール",
+   "performers": "髙野麻美、藍原ことみ、佳村はるか"
+  },
+  {
+   "date": "2023-07-26",
+   "tag": "VLV",
+   "event": "【アイマス縛り歌枠】最後まで盛り上がっていきますよ！！【#ヴイアラ歌枠リレー 上水流宇宙】",
+   "venue": "リアルタイム配信 【PROJECT vα-liv】 上水流宇宙 YouTube公式チャンネル",
+   "performers": "上水流宇宙 ※2DCGアイドルでの歌唱"
+  },
+  {
+   "date": "2023-11-26",
+   "tag": "VLV",
+   "event": "【#ヴイアラ3Dお披露目リレー】念願のダンスの初披露〜！最高のパフォーマンスお見逃しなく！【#ヴイアラ 上水流宇宙】",
+   "venue": "リアルタイム配信 上水流 宇宙 / Cosmo Kamizuru 【ヴイアラ】 YouTube公式チャンネル(会場：ヴイアラスタジオ＝東京・MIRAIKEN studio)",
+   "performers": "上水流宇宙※リアルタイム歌唱＋3Dモデルのダンス／ダンス・ダンス・ダンス(GAME Ver.)"
+  },
+  {
+   "date": "2024-06-01",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS UNIT LIVE TOUR ConnecTrip! 東京公演 昼公演",
+   "venue": "東京・Zepp DiverCity Tokyo",
+   "performers": "富田美憂、森下来奈、梅澤めぐ"
+  },
+  {
+   "date": "2024-06-01",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS UNIT LIVE TOUR ConnecTrip! 東京公演 夜公演",
+   "venue": "東京・Zepp DiverCity Tokyo",
+   "performers": "富田美憂、森下来奈、梅澤めぐ"
+  },
+  {
+   "date": "2024-08-25",
+   "tag": "xR",
+   "event": "961 PRODUCTION presents 『Re:FLAME』 Re:FRAME/SUN",
+   "venue": "京都・ロームシアター京都 メインホール、配信：ASOBI STAGE",
+   "performers": "プロジェクト・フェアリー［我那覇響、星井美希、四条貴音］"
+  },
+  {
+   "date": "2024-09-12",
+   "tag": "VLV",
+   "event": "【#上水流宇宙誕生祭2024】Club Cosmoにようこそ！18歳の誕生日に18曲歌います！【#ヴイアラ / 上水流宇宙】",
+   "venue": "リアルタイム配信・上水流 宇宙 / Cosmo Kamizuru 【ヴイアラ】【876プロ】",
+   "performers": "上水流宇宙 ※2DCGアイドルでの歌唱／ダンス・ダンス・ダンス (GAME Ver.)"
+  },
+  {
+   "date": "2024-12-15",
+   "tag": "xR",
+   "event": "M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE DAY2",
+   "venue": "千葉・幕張メッセ 国際展示場 展示ホール3",
+   "performers": "佐藤心、速水奏、高垣楓"
+  },
+  {
+   "date": "2025-02-01",
+   "tag": "xR",
+   "event": "961 PRODUCTION presents 『Re:FLAME』 追加公演 Re:FLAME/DUSK",
+   "venue": "大阪・フェニーチェ堺 大ホール、配信：ASOBI STAGE",
+   "performers": "奥空心白"
+  },
+  {
+   "date": "2025-06-11",
+   "tag": "VLV",
+   "event": "vortex CORE DAY3",
+   "venue": "リアルタイム配信・zaiko(オンライン)",
+   "performers": "上水流宇宙"
+  },
+  {
+   "date": "2025-08-02",
+   "tag": "",
+   "event": "THE IDOLM@STER 765PRO ALLSTARS LIVE ～NEVER END IDOL!!!!!!!!!!!!!～ DAY1",
+   "venue": "神奈川・Kアリーナ横浜",
+   "performers": "釘宮理恵、沼倉愛美、長谷川明子、今井麻美"
+  },
+  {
+   "date": "2025-09-07",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th MEMORIAL LIVE STARLIGHT STAGE DAY2",
+   "venue": "神奈川・Kアリーナ横浜",
+   "performers": "生田輝、山下七海／ダンス・ダンス・ダンス (Medley Size)"
+  },
+  {
+   "date": "2026-05-15",
+   "tag": "xR",
+   "event": "Miki Hoshii SOLO SHOWCASE「THE FUTURE SPOTLIGHT」",
+   "venue": "シカゴ・Grand Ballroom (Hyatt Regency O'Hare Chicago)",
+   "performers": "星井美希"
+  }
+ ],
+ "もしも「カワイイ」が世界からなくなっても": [
+  {
+   "date": "2025-10-24",
+   "tag": "xR",
+   "event": "アイドルマスター シンデレラガールズ 15周年イヤー直前！生配信",
+   "venue": "YouTube アイドルマスターチャンネル",
+   "performers": "カワスウィーティーなボクはぁと(仮)［輿水幸子、佐藤心］"
+  },
+  {
+   "date": "2025-11-29",
+   "tag": "xR",
+   "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY1 第1公演 Luminaria Tiara",
+   "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
+   "performers": "カワスウィーティーなボクはぁと(仮)［輿水幸子、佐藤心］"
+  },
+  {
+   "date": "2025-11-30",
+   "tag": "xR",
+   "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY2 第4公演 Ever Starlight",
+   "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
+   "performers": "カワスウィーティーなボクはぁと(仮)［輿水幸子、佐藤心］"
+  }
+ ],
+ "シンデレラNo.1": [
+  {
+   "date": "2026-05-09",
+   "tag": "",
+   "event": "CINDERELLA GIRLS MUSICAL STARLIGHT HIGH SCHOOL! DAY1 夜公演",
+   "venue": "千葉・森のホール21(松戸市文化会館)大ホール",
+   "performers": "中島由貴、藤本彩花、井上ほの花、大木咲絵子、長江里加、高橋花林、二ノ宮ゆい、武田羅梨沙多胡、鈴木絵理"
+  },
+  {
+   "date": "2026-05-10",
+   "tag": "",
+   "event": "CINDERELLA GIRLS MUSICAL STARLIGHT HIGH SCHOOL! DAY2 昼公演",
+   "venue": "千葉・森のホール21(松戸市文化会館)大ホール",
+   "performers": "中島由貴、藤本彩花、井上ほの花、大木咲絵子、長江里加、高橋花林、二ノ宮ゆい、武田羅梨沙多胡、鈴木絵理"
+  },
+  {
+   "date": "2026-05-10",
+   "tag": "",
+   "event": "CINDERELLA GIRLS MUSICAL STARLIGHT HIGH SCHOOL! DAY2 夜公演",
+   "venue": "千葉・森のホール21(松戸市文化会館)大ホール",
+   "performers": "中島由貴、藤本彩花、井上ほの花、大木咲絵子、長江里加、高橋花林、二ノ宮ゆい、武田羅梨沙多胡、鈴木絵理"
+  },
+  {
+   "date": "2026-05-24",
+   "tag": "",
+   "event": "CINDERELLA REAL PARTY! 12 ～デレパをプロデュース～ 昼の部",
+   "venue": "東京・ヒューリックホール東京",
+   "performers": "大木咲絵子、青木瑠璃子、原田彩楓、原紗友里、原涼子／シンデレラNo.1 (SHORT ver.)"
+  },
+  {
+   "date": "2026-05-24",
+   "tag": "",
+   "event": "CINDERELLA REAL PARTY! 12 ～デレパをプロデュース～ 夜の部",
+   "venue": "東京・ヒューリックホール東京",
+   "performers": "大木咲絵子、青木瑠璃子、原田彩楓、原紗友里、原涼子／シンデレラNo.1 (SHORT ver.)"
+  }
+ ],
+ "Next Chapter": [
+  {
+   "date": "2023-09-10",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS Shout out Live!!! DAY2",
+   "venue": "愛知・愛知県国際展示場 ホールA",
+   "performers": "森下来奈、市ノ瀬加那、藍原ことみ"
+  },
+  {
+   "date": "2025-09-06",
+   "tag": "",
+   "event": "THE IDOLM@STER CINDERELLA GIRLS 10th MEMORIAL LIVE STARLIGHT STAGE DAY1",
+   "venue": "神奈川・Kアリーナ横浜",
+   "performers": "森下来奈、東山奈央、原田彩楓 ／ Next Chapter (Medley Size)"
+  },
+  {
+   "date": "2025-11-30",
+   "tag": "xR",
+   "event": "CINDERELLA GIRLS fes. Once Upon a St@rs DAY2 第4公演 Ever Starlight",
+   "venue": "千葉・幕張メッセ 国際展示場ホール9-10",
+   "performers": "佐藤心、鷺沢文香"
+  }
+ ]
 }
