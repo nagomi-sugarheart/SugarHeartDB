@@ -6862,6 +6862,8 @@ input[name="dialogue-tab"] {
     background: var(--grad-sugar-soft);
     border: 1.5px dashed rgba(253,137,185,0.30);
 }
+/* Twitter告知行は画像枠なし（プレースホルダーも非表示） */
+.dss-lines .ev-dialog-row.no-shot.no-frame::before { display: none; }
 /* モバマス系の縦型フレーム（3:4前後）用のshot枠 */
 .dss-lines.mobamas-shots .ev-shot,
 .dss-lines.mobamas-shots .ev-dialog-row.no-shot::before {
