@@ -2222,12 +2222,34 @@ input[name="dialogue-tab"] {
     color: var(--sh-text-mute);
 }
 
+.event-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .event-title h3 {
     font-family: var(--font-display);
     font-size: 0.95rem;
     font-weight: 400;
     color: var(--sh-text);
     margin: 0 0 8px 0;
+}
+
+.event-thumb {
+    width: 80px;
+    aspect-ratio: 16 / 9;
+    flex-shrink: 0;
+    border-radius: var(--r-sm);
+    overflow: hidden;
+    background: var(--sh-bg-soft);
+}
+
+.event-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .event-tags {
@@ -2940,6 +2962,8 @@ input[name="dialogue-tab"] {
     .event-row .event-reward{ grid-area: reward; }
     .event-row .event-note  { grid-area: note; }
 
+    .event-thumb { width: 60px; }
+
     /* Toolbar — not sticky on mobile */
     .toolbar {
         position: static;
@@ -2967,6 +2991,8 @@ input[name="dialogue-tab"] {
     .event-row {
         grid-template-columns: 70px 1fr;
     }
+
+    .event-thumb { width: 52px; }
 
     .event-date .m { font-size: 1.1rem; }
 }
