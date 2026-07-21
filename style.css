@@ -2183,7 +2183,7 @@ input[name="dialogue-tab"] {
 
 .event-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     background: #ffffff;
     border-radius: var(--r-md);
     border: 1px solid var(--sh-line-soft);
