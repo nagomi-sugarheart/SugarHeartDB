@@ -2,15 +2,15 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-	<base href="/SugarHeartDB/">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/SugarHeartDB/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>参加ライブ一覧｜SugarHeartDB</title>
-    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）の参加ライブ一覧をまとめたページです。">
+    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（花守ゆみり）の参加ライブ一覧をまとめたページです。">
     <meta name="author" content="なごみ（@nagomi_IMCG）">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
     <meta property="og:title" content="参加ライブ一覧｜SugarHeartDB">
-    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）の参加ライブ一覧をまとめたページです。">
+    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（花守ゆみり）の参加ライブ一覧をまとめたページです。">
     <meta property="og:site_name" content="SugarHeartDB">
     <meta property="og:image" content="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+">
     <meta name="twitter:card" content="summary">
@@ -18,22 +18,295 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260718">
 </head>
 <body>
 <script src="components/header.js"></script>
 
-
 <section class="page-hero">
     <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>参加ライブ一覧</strong></div>
     <h1>参加ライブ一覧 <span class="sub">/ GENERAL</span></h1>
-    <p class="summary">しゅがーはぁと（佐藤心）の関連情報をまとめたページです。</p>
+    <p class="summary"><strong>キャストLIVE</strong>は花守ゆみりさんが生出演した公演、<strong>XR LIVE</strong>はデレステのXR機能を用いた公演です。佐藤心として歌唱した楽曲・共演者を掲載しています。</p>
 </section>
 
-<div class="box-area">
-    <p class="box-text placeholder-text">準備中</p>
+<div class="page">
+
+    <div class="tab-group ll-tabs">
+        <div class="tab-list">
+            <button class="tab-item active" onclick="switchTab(this,'ll-concerts')">公演から見る</button>
+            <button class="tab-item" onclick="switchTab(this,'ll-songs')">歌唱曲から見る</button>
+        </div>
+
+        <div class="filters ll-filters" id="ll-filter-row">
+            <button class="filter-chip active" data-filter="all" onclick="llFilter(this,'all')">
+                <span class="dot"></span>すべて
+            </button>
+            <button class="filter-chip" data-filter="CAST" onclick="llFilter(this,'CAST')">
+                <span class="dot ll-dot-cast"></span>キャストLIVE
+            </button>
+            <button class="filter-chip" data-filter="XR" onclick="llFilter(this,'XR')">
+                <span class="dot ll-dot-xr"></span>XR LIVE
+            </button>
+        </div>
+
+        <div class="tab-panel active" data-tab="ll-concerts">
+            <div id="ll-concerts"></div>
+        </div>
+
+        <div class="tab-panel" data-tab="ll-songs">
+            <div id="ll-songs"></div>
+        </div>
+    </div>
+
 </div>
 
+<script src="components/common.js"></script>
+<script>
+(function () {
+    /* === データ === */
+    var LIVES = [
+        {
+            date: '2017-05-27',
+            event: 'THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 石川公演 DAY1',
+            type: 'CAST',
+            songs: [
+                { num: 'M01', title: 'Yes! Party Time!!', with: '青木瑠璃子、飯田友子、大坪由佳、金子有希、洲崎綾、髙野麻美、高橋花林、種﨑敦美、津田美波、長島光那、花守ゆみり、原優子、春瀬なつみ、牧野由依、安野希世乃' },
+                { num: 'M05', title: '私色ギフト', with: '髙野麻美、花守ゆみり、春瀬なつみ、高橋花林' },
+                { num: 'M10', title: '絶対特権主張しますっ！', with: '春瀬なつみ、原優子、花守ゆみり、金子有希、安野希世乃' },
+                { num: 'M13', title: 'Star!!', with: '青木瑠璃子、飯田友子、大坪由佳、金子有希、洲崎綾、髙野麻美、高橋花林、種﨑敦美、津田美波、長島光那、花守ゆみり、原優子、春瀬なつみ、牧野由依、安野希世乃' },
+                { num: 'M18', title: 'Love∞Destiny', with: '津田美波、金子有希、牧野由依、花守ゆみり、青木瑠璃子' },
+                { num: 'M20', title: "Sweet Witches' Night 〜6人目はだぁれ〜", with: '髙野麻美、花守ゆみり、高橋花林、大坪由佳、種﨑敦美' },
+                { num: 'M22', title: '夕映えプレゼント', with: '青木瑠璃子、飯田友子、大坪由佳、金子有希、洲崎綾、髙野麻美、高橋花林、種﨑敦美、津田美波、長島光那、花守ゆみり、原優子、春瀬なつみ、牧野由依、安野希世乃' },
+                { num: 'EN1', title: 'M@GIC☆', with: '青木瑠璃子、飯田友子、大坪由佳、金子有希、洲崎綾、髙野麻美、高橋花林、種﨑敦美、津田美波、長島光那、花守ゆみり、原優子、春瀬なつみ、牧野由依、安野希世乃' },
+                { num: 'EN2', title: 'お願い！シンデレラ', with: '青木瑠璃子、飯田友子、大坪由佳、金子有希、洲崎綾、髙野麻美、高橋花林、種﨑敦美、津田美波、長島光那、花守ゆみり、原優子、春瀬なつみ、牧野由依、安野希世乃' }
+            ]
+        },
+        {
+            date: '2017-05-28',
+            event: 'THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! 石川公演 DAY2',
+            type: 'CAST',
+            songs: [
+                { num: 'M01', title: 'Yes! Party Time!!', with: '青木瑠璃子、飯田友子、大坪由佳、金子有希、洲崎綾、髙野麻美、高橋花林、種﨑敦美、津田美波、長島光那、花守ゆみり、原優子、春瀬なつみ、牧野由依、安野希世乃' },
+                { num: 'M05', title: '私色ギフト', with: '髙野麻美、花守ゆみり、春瀬なつみ、高橋花林' },
+                { num: 'M11', title: '絶対特権主張しますっ！', with: '春瀬なつみ、原優子、花守ゆみり、金子有希、安野希世乃' },
+                { num: 'M13', title: 'Star!!', with: '青木瑠璃子、飯田友子、大坪由佳、金子有希、洲崎綾、髙野麻美、高橋花林、種﨑敦美、津田美波、長島光那、花守ゆみり、原優子、春瀬なつみ、牧野由依、安野希世乃' },
+                { num: 'M18', title: 'Love∞Destiny', with: '津田美波、金子有希、牧野由依、花守ゆみり、青木瑠璃子' },
+                { num: 'M20', title: "Sweet Witches' Night 〜6人目はだぁれ〜", with: '髙野麻美、花守ゆみり、高橋花林、大坪由佳、種﨑敦美' },
+                { num: 'M22', title: '夕映えプレゼント', with: '青木瑠璃子、飯田友子、大坪由佳、金子有希、洲崎綾、髙野麻美、高橋花林、種﨑敦美、津田美波、長島光那、花守ゆみり、原優子、春瀬なつみ、牧野由依、安野希世乃' },
+                { num: 'EN1', title: 'M@GIC☆', with: '青木瑠璃子、飯田友子、大坪由佳、金子有希、洲崎綾、髙野麻美、高橋花林、種﨑敦美、津田美波、長島光那、花守ゆみり、原優子、春瀬なつみ、牧野由依、安野希世乃' },
+                { num: 'EN2', title: 'お願い！シンデレラ', with: '青木瑠璃子、飯田友子、大坪由佳、金子有希、洲崎綾、髙野麻美、高橋花林、種﨑敦美、津田美波、長島光那、花守ゆみり、原優子、春瀬なつみ、牧野由依、安野希世乃' }
+            ]
+        },
+        {
+            date: '2017-08-12',
+            event: 'THE IDOLM@STER CINDERELLA GIRLS 5thLIVE TOUR Serendipity Parade!!! さいたまスーパーアリーナ公演 DAY1',
+            type: 'CAST',
+            songs: [
+                { num: 'M01', title: 'Yes! Party Time!!', with: '五十嵐裕美、上坂すみれ、桜咲千依、大坪由佳、嘉山未紗、木村珠莉、黒沢ともよ、佐藤亜美菜、下地紫野、洲崎綾、高田憂希、高橋花林、高森奈津美、田澤茉純、立花理香、都丸ちよ、中島由貴、新田ひより、のぐちゆり、花守ゆみり、原田彩楓、春瀬なつみ、藤田茜、牧野由依、松井恵理子、松嵜麗、三宅麻理恵、杜野まこ、和氣あず未' },
+                { num: 'M15', title: '命燃やして恋せよ乙女', with: '花守ゆみり、原田彩楓、三宅麻理恵、和氣あず未' },
+                { num: 'M21', title: 'Near to You', with: '下地紫野、高田憂希、高橋花林、都丸ちよ、新田ひより、のぐちゆり、花守ゆみり、原田彩楓、原田ひとみ、三宅麻理恵' },
+                { num: 'Md03', title: "LET'S GO HAPPY!!（メドレー）", with: '花守ゆみり、原田彩楓、三宅麻理恵、和氣あず未' },
+                { num: 'Md06', title: 'メルヘンデビュー！（メドレー）', with: '花守ゆみり' },
+                { num: 'Md16', title: 'メッセージ（メドレー）', with: '嘉山未紗、高橋花林、田澤茉純、都丸ちよ、中島由貴、新田ひより、のぐちゆり、花守ゆみり、原田彩楓、藤田茜' },
+                { num: 'M24', title: 'Take me☆Take you', with: '高田憂希、高橋花林、高森奈津美、花守ゆみり、原田彩楓、三宅麻理恵' },
+                { num: 'M31', title: '夕映えプレゼント', with: '全員' },
+                { num: 'EN2', title: 'M@GIC☆', with: '大坪由佳、嘉山未紗、木村珠莉、黒沢ともよ、下地紫野、洲崎綾、高田憂希、高橋花林、高森奈津美、田澤茉純、中島由貴、花守ゆみり、春瀬なつみ、牧野由依、松井恵理子' },
+                { num: 'EN3', title: 'お願い！シンデレラ', with: '全員' }
+            ]
+        },
+        {
+            date: '2018-11-10',
+            event: 'THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! メットライフドーム公演 DAY1',
+            type: 'CAST',
+            songs: [
+                { num: 'M01', title: 'イリュージョニスタ！', with: '大橋彩香、福原綾香、原紗友里、藍原ことみ、飯田友子、桜咲千依、金子真由美、髙野麻美、立花理香、花守ゆみり、原優子、三宅麻理恵、安野希世乃、山本希望、佳村はるか、ルゥ ティン 他' },
+                { num: 'M08', title: 'Starry-Go-Round', with: '大橋彩香、福原綾香、原紗友里、藍原ことみ、飯田友子、桜咲千依、金子真由美、髙野麻美、立花理香、花守ゆみり、原優子、三宅麻理恵、安野希世乃、山本希望、佳村はるか、ルゥ ティン 他' },
+                { num: 'M12', title: '凸凹スピードスター', with: 'しゅがしゅが☆み〜ん（花守ゆみり、三宅麻理恵）' },
+                { num: 'M18', title: '桜の頃', with: '桜咲千依、立花理香、花守ゆみり、藤本彩花' },
+                { num: 'M31', title: 'Happy New Yeah!', with: '大坪由佳、大橋彩香、東山奈央、花守ゆみり、原紗友里、福原綾香、藤本彩花、村中知、杜野まこ' },
+                { num: 'M32', title: 'Stage Bye Stage', with: '全員' },
+                { num: 'EN1', title: "GOIN'!!!", with: '全員' },
+                { num: 'EN2', title: 'お願い！シンデレラ', with: '全員' }
+            ]
+        },
+        {
+            date: '2018-11-11',
+            event: 'THE IDOLM@STER CINDERELLA GIRLS 6thLIVE MERRY-GO-ROUNDOME!!! メットライフドーム公演 DAY2',
+            type: 'CAST',
+            songs: [
+                { num: 'M01', title: 'イリュージョニスタ！', with: '大橋彩香、福原綾香、原紗友里、藍原ことみ、飯田友子、桜咲千依、金子真由美、髙野麻美、立花理香、花守ゆみり、原優子、三宅麻理恵、安野希世乃、山本希望、佳村はるか、ルゥ ティン 他' },
+                { num: 'M07', title: 'Starry-Go-Round', with: '大橋彩香、福原綾香、原紗友里、藍原ことみ、飯田友子、桜咲千依、金子真由美、髙野麻美、立花理香、花守ゆみり、原優子、三宅麻理恵、安野希世乃、山本希望、佳村はるか、ルゥ ティン 他' },
+                { num: 'M08', title: 'CoCo夏夏夏 Holiday', with: '花守ゆみり、原紗友里、原優子、春瀬なつみ、安野希世乃' },
+                { num: 'M10', title: '凸凹スピードスター', with: 'しゅがしゅが☆み〜ん（花守ゆみり、三宅麻理恵）' },
+                { num: 'M32', title: 'Stage Bye Stage', with: '全員' },
+                { num: 'EN1', title: "GOIN'!!!", with: '全員' },
+                { num: 'EN2', title: 'お願い！シンデレラ', with: '全員' }
+            ]
+        },
+        {
+            date: '2024-12-14',
+            event: 'M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE DAY1',
+            type: 'XR',
+            songs: [
+                { num: 'M07', title: 'しゅがーはぁと☆レボリューション', with: '佐藤心' },
+                { num: 'M10', title: '凸凹スピードスター', with: 'しゅがしゅが☆み～ん（佐藤心、安部菜々）' },
+                { num: 'M11', title: 'お願い！シンデレラ', with: 'CINDERELLA GIRLS（佐藤心、安部菜々、久川凪、久川颯、速水奏、高垣楓）' }
+            ]
+        },
+        {
+            date: '2024-12-15',
+            event: 'M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE DAY2',
+            type: 'XR',
+            songs: [
+                { num: 'M04', title: 'しゅがーはぁと☆レボリューション', with: '佐藤心' },
+                { num: 'M06', title: '凸凹スピードスター', with: 'しゅがしゅが☆み～ん（佐藤心、安部菜々）' },
+                { num: 'M10', title: 'ダンス・ダンス・ダンス', with: '佐藤心、速水奏、高垣楓' },
+                { num: 'M11', title: 'お願い！シンデレラ', with: 'CINDERELLA GIRLS（佐藤心、安部菜々、久川凪、久川颯、速水奏、高垣楓）' }
+            ]
+        },
+        {
+            date: '2025-11-29',
+            event: 'CINDERELLA GIRLS fes. Once Upon a St@rs DAY1 第1公演 Luminaria Tiara',
+            type: 'XR',
+            songs: [
+                { num: 'M06', title: 'もしも「カワイイ」が世界からなくなっても', with: 'カワスウィーティーなボクはぁと(仮)（輿水幸子、佐藤心）' },
+                { num: 'M07', title: 'しゅがーはぁと☆レボリューション', with: '佐藤心' },
+                { num: 'M25', title: 'Take me☆Take you', with: '佐藤心、本田未央、森久保乃々、島村卯月、安部菜々' },
+                { num: 'EN2', title: 'お願い！シンデレラ', with: '島村卯月、安部菜々、輿水幸子、辻野あかり、双葉杏、久川颯、森久保乃々、本田未央、赤城みりあ、佐藤心、城ヶ崎美嘉、城ヶ崎莉嘉、久川凪、諸星きらり、夢見りあむ' }
+            ]
+        },
+        {
+            date: '2025-11-30',
+            event: 'CINDERELLA GIRLS fes. Once Upon a St@rs DAY2 第4公演 Ever Starlight',
+            type: 'XR',
+            songs: [
+                { num: 'M05', title: 'しゅがーはぁと☆レボリューション', with: '佐藤心' },
+                { num: 'M06', title: 'もしも「カワイイ」が世界からなくなっても', with: 'カワスウィーティーなボクはぁと(仮)（輿水幸子、佐藤心）' },
+                { num: 'M08', title: '凸凹スピードスター', with: 'しゅがしゅが☆み～ん（安部菜々、佐藤心）' },
+                { num: 'M14', title: 'Next Chapter', with: '佐藤心、鷺沢文香' },
+                { num: 'EN2', title: 'お願い！シンデレラ', with: '島村卯月、辻野あかり、輿水幸子、安部菜々、橘ありす、渋谷凛、砂塚あきら、鷺沢文香、本田未央、夢見りあむ、佐藤心、赤城みりあ' }
+            ]
+        }
+    ];
 
+    /* === ユーティリティ === */
+    function esc(s) {
+        return String(s)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    function typeTag(type) {
+        if (type === 'CAST') return '<span class="sh-tag sh-tag-sm" data-tag="cast">キャストLIVE</span>';
+        if (type === 'XR')   return '<span class="sh-tag sh-tag-sm" data-tag="xr">XR LIVE</span>';
+        return '';
+    }
+
+    /* === 公演から見る === */
+    function renderConcerts(filter) {
+        var root = document.getElementById('ll-concerts');
+        var lives = filter === 'all' ? LIVES : LIVES.filter(function (l) { return l.type === filter; });
+
+        if (lives.length === 0) {
+            root.innerHTML = '<p class="placeholder-text" style="padding:20px 0">該当する公演はありません</p>';
+            return;
+        }
+
+        root.innerHTML = lives.map(function (live) {
+            var parts = live.date.split('-');
+            var y = parts[0], m = parts[1], d = parts[2];
+            var tracks = live.songs.map(function (s) {
+                return '<div class="ll-track">' +
+                    '<span class="ll-track-num">' + esc(s.num) + '</span>' +
+                    '<span class="ll-track-title">' + esc(s.title) + '</span>' +
+                    '<span class="ll-track-with">' + esc(s.with) + '</span>' +
+                    '</div>';
+            }).join('');
+
+            return '<details class="ll-concert-card" data-type="' + live.type + '">' +
+                '<summary class="ll-concert-head">' +
+                '<div class="ll-date"><span class="ll-y">' + y + '</span><span class="ll-md">' + m + '/' + d + '</span></div>' +
+                typeTag(live.type) +
+                '<span class="ll-event-name">' + esc(live.event) + '</span>' +
+                '<span class="ll-song-count">' + live.songs.length + '曲</span>' +
+                '</summary>' +
+                '<div class="ll-setlist">' + tracks + '</div>' +
+                '</details>';
+        }).join('');
+    }
+
+    /* === 歌唱曲から見る：ユニーク曲リスト構築 === */
+    function buildSongMap(filter) {
+        var lives = filter === 'all' ? LIVES : LIVES.filter(function (l) { return l.type === filter; });
+        var map = [];
+        var seen = {};
+
+        lives.forEach(function (live) {
+            live.songs.forEach(function (s) {
+                var key = s.title;
+                if (!seen[key]) {
+                    seen[key] = { title: s.title, types: [], perfs: [] };
+                    map.push(seen[key]);
+                }
+                var entry = seen[key];
+                if (entry.types.indexOf(live.type) < 0) entry.types.push(live.type);
+                entry.perfs.push({ date: live.date, event: live.event, num: s.num, with: s.with, type: live.type });
+            });
+        });
+
+        return map;
+    }
+
+    /* === 歌唱曲から見る === */
+    function renderSongs(filter) {
+        var root = document.getElementById('ll-songs');
+        var songs = buildSongMap(filter);
+
+        if (songs.length === 0) {
+            root.innerHTML = '<p class="placeholder-text" style="padding:20px 0">該当する曲はありません</p>';
+            return;
+        }
+
+        root.innerHTML = songs.map(function (song) {
+            var typeTags = song.types.map(typeTag).join('');
+            var perfs = song.perfs.map(function (p) {
+                var parts = p.date.split('-');
+                return '<div class="ll-perf-row">' +
+                    '<span class="ll-date-sm">' + parts[0] + '/' + parts[1] + '/' + parts[2] + '</span>' +
+                    typeTag(p.type) +
+                    '<span class="ll-perf-num">' + esc(p.num) + '</span>' +
+                    '<span class="ll-perf-event">' + esc(p.event) + '</span>' +
+                    '<span class="ll-perf-with">' + esc(p.with) + '</span>' +
+                    '</div>';
+            }).join('');
+
+            return '<details class="ll-song-card">' +
+                '<summary class="ll-song-head">' +
+                typeTags +
+                '<span class="ll-song-title">' + esc(song.title) + '</span>' +
+                '<span class="ll-song-count">' + song.perfs.length + '公演</span>' +
+                '</summary>' +
+                '<div class="ll-perf-list">' + perfs + '</div>' +
+                '</details>';
+        }).join('');
+    }
+
+    /* === フィルター切り替え === */
+    window.llFilter = function (btn, filter) {
+        document.querySelectorAll('#ll-filter-row .filter-chip').forEach(function (b) {
+            b.classList.remove('active');
+        });
+        btn.classList.add('active');
+        renderConcerts(filter);
+        renderSongs(filter);
+    };
+
+    /* === 初期描画 === */
+    renderConcerts('all');
+    renderSongs('all');
+}());
+</script>
 </body>
 </html>

@@ -62,6 +62,72 @@ function toggleSort(btn) {
 }
 
 /* ============================================================
+   イベント一覧 検索・並び替え（拡張版）
+   - .event-table 内の article.event-row を対象にする
+   - 検索: data-name（無ければ行テキスト）に対する部分一致（大文字小文字/全半角無視）
+   - 並び替え: key='date'（日付） / 'name'（イベント名）。同じボタン再クリックで昇順/降順トグル
+   - 呼び出し: oninput="filterEventList(this.value)" / onclick="sortEventList(this,'date')"
+============================================================ */
+function filterEventList(q) {
+    var table = document.querySelector('.event-table');
+    if (!table) return;
+    q = (q || '').trim().toLowerCase();
+    var rows = table.querySelectorAll('article.event-row');
+    var shown = 0;
+    rows.forEach(function (r) {
+        var hay = (r.dataset.name || r.textContent || '').toLowerCase();
+        var hit = !q || hay.indexOf(q) !== -1;
+        r.style.display = hit ? '' : 'none';
+        if (hit) shown++;
+    });
+    var empty = document.getElementById('event-empty');
+    if (empty) empty.style.display = shown ? 'none' : '';
+    var cnt = document.getElementById('event-count');
+    if (cnt) cnt.textContent = shown;
+}
+
+function sortEventList(btn, key) {
+    var table = document.querySelector('.event-table');
+    if (!btn || !table) return;
+    var rows = Array.from(table.querySelectorAll('article.event-row'));
+    rows.forEach(function (r, i) {
+        if (!r.dataset.origIdx) r.dataset.origIdx = 'idx-' + String(i).padStart(4, '0');
+    });
+    // 同じキーの再クリックでトグル、別キーへ切り替えたら既定方向から
+    var active = btn.dataset.sortKey === key;
+    var order = active ? (btn.dataset.order === 'asc' ? 'desc' : 'asc')
+                       : (key === 'name' ? 'asc' : 'desc');
+    rows.sort(function (a, b) {
+        var av, bv;
+        if (key === 'name') {
+            av = a.dataset.name || a.textContent;
+            bv = b.dataset.name || b.textContent;
+            var c = av.localeCompare(bv, 'ja');
+            return order === 'asc' ? c : -c;
+        }
+        av = a.dataset.date || a.dataset.origIdx;
+        bv = b.dataset.date || b.dataset.origIdx;
+        return order === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+    });
+    rows.forEach(function (r) { table.appendChild(r); });
+    // ボタン状態を更新（同じ並び替えグループ内でトグル）
+    var grp = btn.closest('.unit-sort-group') || document;
+    grp.querySelectorAll('.unit-sort-btn').forEach(function (b) {
+        b.classList.remove('active');
+    });
+    btn.classList.add('active');
+    btn.dataset.sortKey = key;
+    btn.dataset.order = order;
+    var labels = {
+        'date-desc': '新しい順 ▼', 'date-asc': '古い順 ▲',
+        'name-asc': '名前順 あ→ん', 'name-desc': '名前順 ん→あ'
+    };
+    if (btn.dataset.baseLabel) {
+        btn.textContent = labels[key + '-' + order] || btn.dataset.baseLabel;
+    }
+}
+
+/* ============================================================
    画像サイクラー
    - 呼び出し: initV2Cycler(画像パス配列, img要素ID, カウンター要素ID)
    - カウンターIDが 'xxx-counter' なら 'xxx-total' を自動探索
@@ -177,6 +243,29 @@ function initV2Cycler(images, imgId, counterId) {
             } catch (e) {}
         }
 
+        /* URL ハッシュで tab-group のタブを自動切り替えしてスクロール */
+        if (location.hash) {
+            var tabId = location.hash.slice(1);
+            var tabPanel = document.querySelector('.tab-panel[data-tab="' + tabId + '"]');
+            if (tabPanel) {
+                var tabGroup = tabPanel.closest('.tab-group');
+                if (tabGroup) {
+                    tabGroup.querySelectorAll('.tab-item').forEach(function (b) {
+                        if (b.closest('.tab-group') === tabGroup) b.classList.remove('active');
+                    });
+                    tabGroup.querySelectorAll('.tab-panel').forEach(function (c) {
+                        if (c.closest('.tab-group') === tabGroup) c.classList.remove('active');
+                    });
+                    var tabBtn = tabGroup.querySelector('.tab-item[onclick*="\'' + tabId + '\'"]');
+                    if (tabBtn) tabBtn.classList.add('active');
+                    tabPanel.classList.add('active');
+                    setTimeout(function () {
+                        tabGroup.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 50);
+                }
+            }
+        }
+
         /* ep-block アコーディオン (PuchiDerella) */
         document.querySelectorAll('.ep-block .ep-head').forEach(function (h) {
             h.style.cursor = 'pointer';
@@ -184,6 +273,15 @@ function initV2Cycler(images, imgId, counterId) {
                 h.parentElement.classList.toggle('open');
             });
         });
+
+        /* イベント一覧 並び替えボタンの初期化＋既定並び替え適用 */
+        var evDefaultBtn = document.querySelector('.unit-sort-group .unit-sort-btn[data-default]');
+        if (evDefaultBtn && document.querySelector('.event-table')) {
+            document.querySelectorAll('.unit-sort-group .unit-sort-btn').forEach(function (b) {
+                b.dataset.baseLabel = b.textContent.trim();
+            });
+            sortEventList(evDefaultBtn, evDefaultBtn.dataset.sortKeyName || 'date');
+        }
 
         /* ライトボックス（#sh-lightbox が存在するページのみ） */
         var lb = document.getElementById('sh-lightbox');

@@ -1,0 +1,2911 @@
+[
+ {
+  "id": "op",
+  "tab": "OP",
+  "title": "Reward and reaction",
+  "summary": "仕事のご褒美で焼肉屋を訪れた乃々、ほたる、裕美。慣れない場所ながらも食事を楽しんでいた3人に、Pは次の仕事の説明をする。新曲の収録だけでなく、ミニLIVEとMV撮影もあると聞いて、驚く3人。ワンステップスとして歌える喜びを胸に、仕事を必ず成功させようと意気込むのだった。",
+  "start_s": 0,
+  "title_frame": "0001_dialogue_2.8s.jpg",
+  "log": [
+   "OP"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "ほたる・裕美・乃々",
+    "text": "...... ...... ......",
+    "frame": "0002_dialogue_5.8s.jpg",
+    "t": 5.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "注文しないの？",
+    "frame": "0003_dialogue_7.4s.jpg",
+    "t": 7.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "あ……その、えっと……。",
+    "frame": "0004_dialogue_12.8s.jpg",
+    "t": 12.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "ううう……。",
+    "frame": "0005_dialogue_16.2s.jpg",
+    "t": 16.2
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "ね、ねえ、プロデューサーさん。 私たち……どうして焼肉屋さんに連れてこられたの？",
+    "frame": "0006_dialogue_24.6s.jpg",
+    "t": 24.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "バラエティの仕事、よく頑張ったからね",
+    "frame": "0007_dialogue_28.2s.jpg",
+    "t": 28.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる・裕美・乃々",
+    "text": "うっ……。うっ……。ううう……。",
+    "frame": "0008_dialogue_32.2s.jpg",
+    "t": 32.2
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……ほんっと、大変だったよね。二度もプールに落ちちゃったし……。",
+    "frame": "0009_dialogue_42.0s.jpg",
+    "t": 42.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "す、すみません……。私が、足を滑らせたりしなければ……。",
+    "frame": "0010_dialogue_51.6s.jpg",
+    "t": 51.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "もうぜったいぜったい……今回のようなお仕事は、遠慮したいんですけど……。",
+    "frame": "0011_dialogue_60.6s.jpg",
+    "t": 60.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "今日は、頑張った3人へのご褒美だよ",
+    "frame": "0012_dialogue_63.6s.jpg",
+    "t": 63.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "そ、そういうことだったんですか……。えっと、ありがとうございます……。",
+    "frame": "0013_dialogue_74.4s.jpg",
+    "t": 74.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "じゃあ、お言葉に甘えて……注文しちゃおっかな。私は、エビね。あと野菜の盛り合わせも。",
+    "frame": "0014_dialogue_88.6s.jpg",
+    "t": 88.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "じゃ、じゃあもりくぼは……手羽先を。えっ？ないんですか？それじゃ……鶏ももでいいです。塩で……。",
+    "frame": "0015_dialogue_107.4s.jpg",
+    "t": 107.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "あっ……冷麺、おいしそう…… 頼んでも、いいですか？",
+    "frame": "0016_dialogue_118.2s.jpg",
+    "t": 118.2
+   },
+   {
+    "type": "line",
+    "speaker": "店員",
+    "text": "へいっ！ エビに野菜に鶏もも、冷麺ひとつ！",
+    "frame": "0017_dialogue_125.0s.jpg",
+    "t": 125.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "あと、普通のお肉も！",
+    "frame": "0018_dialogue_129.0s.jpg",
+    "t": 129.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "あ、ほたるちゃん。こっち、焼けたみたいだよ。はい♪",
+    "frame": "0020_dialogue_141.4s.jpg",
+    "t": 141.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "あ、ありがとうございます……。……すみません、私が焼こうとすると何故かすぐ焦げるか、燃えてしまって……。",
+    "frame": "0021_dialogue_156.2s.jpg",
+    "t": 156.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "乃々、 ホルモン焼けてるよ",
+    "frame": "0022_dialogue_157.8s.jpg",
+    "t": 157.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "むぐむぐ…… うう……か、噛み切れないい……。",
+    "frame": "0024_dialogue_168.2s.jpg",
+    "t": 168.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "が、頑張って、乃々さん……！",
+    "frame": "0025_dialogue_174.0s.jpg",
+    "t": 174.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "あごが疲れる前にお水で流し込んだほうがいいよ、乃々ちゃん……！",
+    "frame": "0026_dialogue_181.6s.jpg",
+    "t": 181.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "むぐむぐ……むぐむぐ……むりむりい……。",
+    "frame": "0027_dialogue_191.0s.jpg",
+    "t": 191.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "ところで……",
+    "frame": "0028_dialogue_199.6s.jpg",
+    "t": 199.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる・裕美・乃々",
+    "text": "……？ ……？ ……？",
+    "frame": "0029_dialogue_203.6s.jpg",
+    "t": 203.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "今日はもうひとつ話があって",
+    "frame": "0030_dialogue_205.6s.jpg",
+    "t": 205.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる・裕美・乃々",
+    "text": "……！ ……！ ……。",
+    "frame": "0031_dialogue_208.8s.jpg",
+    "t": 208.8
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "そ、そうなんですか……？",
+    "frame": "0032_dialogue_214.4s.jpg",
+    "t": 214.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "もう。ぜったい何かくるって、思ってたんだ……。",
+    "frame": "0033_dialogue_221.4s.jpg",
+    "t": 221.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "ううっ……このテーブルの下、狭いぃ……。",
+    "frame": "0034_dialogue_231.2s.jpg",
+    "t": 231.2
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "って乃々ちゃん、ここ事務所じゃなくてお店だよっ。とりあえず出て！",
+    "frame": "0035_dialogue_238.6s.jpg",
+    "t": 238.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "でも……お話って、お仕事の説明なんですよね？ プロデューサーさん。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "だったら、私は嬉しいです…… やらせてもらえるなら、 エキストラでも、ひな壇でも、地方ロケでも……。",
+    "frame": "0037_dialogue_263.8s.jpg",
+    "t": 263.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "え、ええ～……。そんなこと言ってると、無人島とかに送られそうなんですけど……乃々流し、ダメ、ぜったいい……。",
+    "frame": "0038_dialogue_282.0s.jpg",
+    "t": 282.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "乃々流しは、今回はしないけど……。",
+    "frame": "0039_dialogue_286.2s.jpg",
+    "t": 286.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "3人で、新曲を歌ってもらいたい",
+    "frame": "0040_dialogue_288.0s.jpg",
+    "t": 288.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる・裕美・乃々",
+    "text": "ええっ！？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "私たち、3人の曲……！？",
+    "frame": "0041_dialogue_296.2s.jpg",
+    "t": 296.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "わ……つ、わああっ……！ 本当ですか、プロデューサーさんっ……！ すごいです……！",
+    "frame": "0042_dialogue_308.2s.jpg",
+    "t": 308.2
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "あっ！ ほたるちゃんっ、おハシっ！ 割りバシに、火がついちゃってるっ！",
+    "frame": "0043_dialogue_315.0s.jpg",
+    "t": 315.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "えっ……！？ あああぁ～つ！？",
+    "frame": "0045_dialogue_323.0s.jpg",
+    "t": 323.0
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……はああ。すぐ消えて、良かったです……。",
+    "frame": "0046_dialogue_334.8s.jpg",
+    "t": 334.8
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "プロデューサーさん…… ありがとうございます、濡れたおしぼりをかけてくれて。 あやうく、お店が火事になってしまうところでした……。",
+    "frame": "0047_dialogue_349.4s.jpg",
+    "t": 349.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "そ、そこまで大げさでは…… ……あれ？ なんの話してたんでしたっけ……？",
+    "frame": "0048_dialogue_362.4s.jpg",
+    "t": 362.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "そうだった！ この3人で、歌わせてもらえるんだよねっ！プロデューサーさん！",
+    "frame": "0049_dialogue_373.6s.jpg",
+    "t": 373.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "それに、MV撮影もするよ",
+    "frame": "0050_dialogue_375.4s.jpg",
+    "t": 375.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる・裕美・乃々",
+    "text": "はい！ うんっ！ えええ……。",
+    "frame": "0051_dialogue_381.0s.jpg",
+    "t": 381.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "ミニLIVEもやるよ",
+    "frame": "0052_dialogue_382.4s.jpg",
+    "t": 382.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる・裕美・乃々",
+    "text": "はい！ うんっ！ えええええ……。",
+    "frame": "0053_dialogue_386.6s.jpg",
+    "t": 386.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……えっと……。乃々さん、私たちとじゃ、嫌ですか……？",
+    "frame": "0054_dialogue_395.6s.jpg",
+    "t": 395.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "そ、そんなことはないんですけど…… もりくぼは、基本的に、やらないくぼですから……。",
+    "frame": "0055_dialogue_410.8s.jpg",
+    "t": 410.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "もうっ。そんなこと、言わないでよ。乃々ちゃんのこと、頼りにしてるんだから！",
+    "frame": "0056_dialogue_419.4s.jpg",
+    "t": 419.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "そ、そうですね。よろしくお願いします、乃々さん。",
+    "frame": "0057_dialogue_427.8s.jpg",
+    "t": 427.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "ひ、ひえええ…… 期待しないでほしいんですけどぉ……。",
+    "frame": "0058_dialogue_438.2s.jpg",
+    "t": 438.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "で、でも……そうですね……。3人で歌うのだったら、少しは経験ありますし……あまりお邪魔にならないくらいなら、できるかと……。",
+    "frame": "0059_dialogue_462.4s.jpg",
+    "t": 462.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "う、うんっ……！ 私もせいいっぱい、頑張ってみます……！",
+    "frame": "0060_dialogue_471.0s.jpg",
+    "t": 471.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "よーしっ！ 私たち、ワンステップス3人での大きなお仕事…… 絶対ぜったい、成功させようねっ！",
+    "frame": "0061_dialogue_482.4s.jpg",
+    "t": 482.4
+   }
+  ]
+ },
+ {
+  "id": "ep1",
+  "tab": "第1話",
+  "title": "Step by steps",
+  "summary": "裕美の提案でMVの飾り付けを自分たちで行うことにした3人。小さなハプニングはあったものの、騒ぎを聞きつけた心と美優が加わり、事なきを得た。自分たちのこれまでを振り返りながら、3人は楽しく作業に励む。協力しあう姿は、危なっかしくも見る者の心を温かくするのだった。",
+  "start_s": 494,
+  "title_frame": "0063_dialogue_502.4s.jpg",
+  "log": [
+   "1"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "すみません、お待たせしました……！ ビーズのセット、持ってきましたよ……",
+    "frame": "0063_dialogue_502.4s.jpg",
+    "t": 502.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "あっ、ほたるちゃん。足元気をつけっ……",
+    "frame": "0064_dialogue_508.2s.jpg",
+    "t": 508.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "きゃああっ！？",
+    "frame": "0065_dialogue_513.6s.jpg",
+    "t": 513.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "ひいいい～っ……！？",
+    "frame": "0067_dialogue_517.6s.jpg",
+    "t": 517.6
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "わわっ……！ 乃々ちゃんほたるちゃん、大丈夫っ！？",
+    "frame": "0069_dialogue_528.0s.jpg",
+    "t": 528.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "わ、私は平気ですけど…… 乃々さん、ごめんなさいっ……！",
+    "frame": "0070_dialogue_536.4s.jpg",
+    "t": 536.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……ふえええ…… 星が、星が飛んでるんですけどぉ～……。",
+    "frame": "0071_dialogue_546.4s.jpg",
+    "t": 546.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "おーいっ！ 派手な音がしたけど どうしたどうしたっ？",
+    "frame": "0073_dialogue_557.0s.jpg",
+    "t": 557.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "あ、心さんに美優さん……。",
+    "frame": "0074_dialogue_562.2s.jpg",
+    "t": 562.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ってうわぁ……。 床一面が、ビーズでカラフルに……。",
+    "frame": "0076_dialogue_571.0s.jpg",
+    "t": 571.0
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "……ほたるちゃんと乃々ちゃん、ぶつかっちゃったんですね。見せてみて？",
+    "frame": "0077_dialogue_578.4s.jpg",
+    "t": 578.4
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "……ふたりとも、怪我とかは無いみたいですね。良かった……。",
+    "frame": "0078_dialogue_588.0s.jpg",
+    "t": 588.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "ほんと、良かった……。",
+    "frame": "0079_dialogue_594.2s.jpg",
+    "t": 594.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "乃々さん…… ぶつかって、ごめんなさい……。 ビーズも、ひっかけてしまって……。",
+    "frame": "0080_dialogue_603.2s.jpg",
+    "t": 603.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "い、いえ……そんなに痛くは、なかったですし。もりくぼの身体が、クッションになれたようなので……よかったです……。",
+    "frame": "0081_dialogue_620.2s.jpg",
+    "t": 620.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "す、すみません…… やっぱり私、お手伝いなんかしなかったほうが……。",
+    "frame": "0082_dialogue_631.2s.jpg",
+    "t": 631.2
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "それを言うなら、最初にやろうって言いだしたのは私のほうだし……悪いのは、ほたるちゃんじゃなくて私だよ。",
+    "frame": "0083_dialogue_643.0s.jpg",
+    "t": 643.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "ほいっ☆ 散らばったビーズ、だいたい集めたぞー。",
+    "frame": "0084_dialogue_649.6s.jpg",
+    "t": 649.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "あ……、ありがとうございます、心さん。心さんたちにも、ご迷惑をかけてしまって……。",
+    "frame": "0085_dialogue_662.2s.jpg",
+    "t": 662.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "んーなのいーっていーって☆ ……3人で、アクセ作ってたの？",
+    "frame": "0086_dialogue_670.8s.jpg",
+    "t": 670.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "えっと……あのね。 3人で今度、ユニットとして歌わせてもらえることになって。 MVも撮るんだけど……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "そのセットが、すごく可愛い洋館でね。せっかく自分たちのMVなんだから、自分たちで可愛い飾り付けをさせてって、プロデューサーさんにお願いしたんだ。",
+    "frame": "0087_dialogue_696.2s.jpg",
+    "t": 696.2
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "まぁ……それは素敵ですね。そのために、みんなでビーズの飾りや、木工細工を作っていたんですね。",
+    "frame": "0088_dialogue_708.4s.jpg",
+    "t": 708.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "あーあーうんうん☆ 自分たちのためのステージ用の衣装とか小物とか手作りするのって、すっごいワクワクするよな☆",
+    "frame": "0089_dialogue_724.2s.jpg",
+    "t": 724.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "ちまちました作業……落ち着きます……。ステージに立ったりするより、よっぽどもりくぼ向きで……。",
+    "frame": "0090_dialogue_741.2s.jpg",
+    "t": 741.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "乃々さんの木工細工も、 裕美ちゃんのアクセサリー作りも、すごく上手です…… 私は、不器用で……さっきみたいに、失敗してしまいますし……。",
+    "frame": "0091_dialogue_757.8s.jpg",
+    "t": 757.8
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "私、手作業をしていると、つい……暗いことを考えてしまいがちなんですよね……。せっかくふたりが、いてくれるのに……。",
+    "frame": "0092_dialogue_773.4s.jpg",
+    "t": 773.4
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "でも、ほたるちゃん。 乃々ちゃんも、裕美ちゃんも…… 以前よりも、とても明るくなったと思いますよ？",
+    "frame": "0093_dialogue_785.4s.jpg",
+    "t": 785.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "そ、そうでしょうか？ ……でも、たしかに…… 前はよく、辛気くさいって言われましたけど。 最近は、そんなこと無くなったような……。",
+    "frame": "0094_dialogue_803.4s.jpg",
+    "t": 803.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "うんっ、ほたるちゃん、明るくなったよ！ 私も、いつの間にかだけど カメラを避けるクセ、直ってきた気がするし……！",
+    "frame": "0095_dialogue_817.6s.jpg",
+    "t": 817.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "もりくぼは……特に変化なんか、無いと思うんですけど……。今でもお仕事の時などは、帰りたい気持ちであふれていますし……。",
+    "frame": "0096_dialogue_836.8s.jpg",
+    "t": 836.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "でもでもー、 ステージに立っちゃえば、バッチリ歌っちゃうんだろっ？ そんな乃々ちゃんはもう、立派なアイドルだぞ☆",
+    "frame": "0097_dialogue_849.0s.jpg",
+    "t": 849.0
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "えええ～……。",
+    "frame": "0098_dialogue_853.0s.jpg",
+    "t": 853.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……うん。きっと今までのお仕事やレッスンが、ちょっとずつでも……私たちを、成長させてくれてるんだよね！",
+    "frame": "0099_dialogue_863.2s.jpg",
+    "t": 863.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "はいっ……！ それに、この事務所の優しいみなさんと、 出会えたおかげです……！",
+    "frame": "0100_dialogue_872.6s.jpg",
+    "t": 872.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "ああっ…… な、なんだかいい話にまとまりつつあるんですけど……。",
+    "frame": "0101_dialogue_882.0s.jpg",
+    "t": 882.0
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "……乃々ちゃん。乃々ちゃんが作ってる、その木彫りの鳥さん……とっても可愛いですよ。",
+    "frame": "0102_dialogue_893.4s.jpg",
+    "t": 893.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "えっ……いえ、いえいえ……そんなことは……。……あ、ありがとう、ございます……。",
+    "frame": "0104_dialogue_910.6s.jpg",
+    "t": 910.6
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "それを見ていると……、お友だちと一緒に何かを作るのが楽しいっていう乃々ちゃんの気持ち……伝わります。その気持ちを、大切にしてくださいね。",
+    "frame": "0105_dialogue_927.6s.jpg",
+    "t": 927.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "あ、あう…… ……は、はい……。",
+    "frame": "0107_dialogue_938.4s.jpg",
+    "t": 938.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……ふふっ。 乃々ちゃん、あとで私に、木工細工の作り方を教えてね？",
+    "frame": "0108_dialogue_948.4s.jpg",
+    "t": 948.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "じゃ、じゃあもりくぼは…… ビーズアクセサリーの作り方を教えていただけると……。",
+    "frame": "0109_dialogue_961.0s.jpg",
+    "t": 961.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "うん、もちろん。教えあうのも、楽しそう……♪",
+    "frame": "0110_dialogue_968.2s.jpg",
+    "t": 968.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "な、なら私は……ふたりの、お手伝いが出来ればと。不器用でも、一生懸命やりますからっ。",
+    "frame": "0111_dialogue_981.0s.jpg",
+    "t": 981.0
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "数分後",
+    "frame": "0112_dialogue_988.2s.jpg",
+    "t": 988.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……うんうん♪ ちょっと危なっかしートコもあるけど…… 見てると、なんかほっこりする3人だな☆",
+    "frame": "0113_dialogue_1000.4s.jpg",
+    "t": 1000.4
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "……ふふっ。 年の近いお友だちって、いいですね……。",
+    "frame": "0114_dialogue_1006.8s.jpg",
+    "t": 1006.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……んじゃあ美優ちゃん、 年の近いダチのはぁとと、一緒に裁縫でもすっか☆",
+    "frame": "0115_dialogue_1015.2s.jpg",
+    "t": 1015.2
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "……はい♪ たまにはお酒の席じゃなく、 そうした時間も、楽しそうですね……。",
+    "frame": "0116_dialogue_1023.6s.jpg",
+    "t": 1023.6
+   }
+  ]
+ },
+ {
+  "id": "ep2",
+  "tab": "第2話",
+  "title": "Accustomed but…",
+  "summary": "なんとか新曲の歌録りを終えた乃々、ほたる、裕美。 スタッフに褒められたこともあり、3人の中には少しずつ自信が芽生えていた。そして、明るい気持ちで迎えたMV撮影前日。設営を手伝う3人は、 ディレクターの「メイキング映像を撮りたい」という要望にも、自分たちの意志で前向きに応じ てみせる。",
+  "start_s": 1023,
+  "title_frame": "0117_dialogue_1031.2s.jpg",
+  "log": [
+   "2"
+  ],
+  "entries": [
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "ワンステップスの3人が、収録に挑戦している……",
+    "frame": "0118_dialogue_1035.2s.jpg",
+    "t": 1035.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "な、なんとか、歌い終わりい……。",
+    "frame": "0119_dialogue_1043.6s.jpg",
+    "t": 1043.6
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……ど、どうだったかな。プロデューサーさん……。",
+    "frame": "0120_dialogue_1049.8s.jpg",
+    "t": 1049.8
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "あの、機材は、壊れたりしませんでしたか？ ちゃんと録音、してもらえましたか……？",
+    "frame": "0121_dialogue_1060.2s.jpg",
+    "t": 1060.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "大丈夫みたいだよ",
+    "frame": "0122_dialogue_1063.6s.jpg",
+    "t": 1063.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ディレクター",
+    "text": "……うん。 これで、いってみましょうか。 3人とも女の子らしく繊細で……とても可愛らしい歌声ね。",
+    "frame": "0123_dialogue_1073.0s.jpg",
+    "t": 1073.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美・乃々・ほたる",
+    "text": "……はぁぁ～……。",
+    "frame": "0124_dialogue_1077.4s.jpg",
+    "t": 1077.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……と、とりあえず…… なんとかなったんでしょうか……。",
+    "frame": "0125_dialogue_1085.4s.jpg",
+    "t": 1085.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……えへへ。 可愛らしいって、褒められちゃった……。 みんなで、いっぱいレッスンした甲斐あったねっ。",
+    "frame": "0126_dialogue_1097.4s.jpg",
+    "t": 1097.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "はい……！レッスンも、楽しかったですし…… アイドルらしい、可愛い歌が歌えて…… それも、ユニットでなんて。……私、とても幸せです……！",
+    "frame": "0127_dialogue_1117.8s.jpg",
+    "t": 1117.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "それは、まだ早いよ",
+    "frame": "0128_dialogue_1119.6s.jpg",
+    "t": 1119.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "ふふっ♪ そうだね！ MV収録にLIVEにお渡し会に……他にもたくさん！ これから楽しいこと、いっぱい待ってるんだから！",
+    "frame": "0129_dialogue_1136.4s.jpg",
+    "t": 1136.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "ふふ……そうでしたね。みんなでたくさんお仕事できると思うと……ワクワクして、胸がドキドキしちゃいます……♪",
+    "frame": "0131_dialogue_1151.4s.jpg",
+    "t": 1151.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "裕美さんもほたるちゃんも、 アイドルぢから……すごいです……。 キラキラ……まぶしい……。",
+    "frame": "0133_dialogue_1168.0s.jpg",
+    "t": 1168.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "もう、乃々ちゃんったら！ 私たちに出来るんだから、乃々ちゃんだって出来るはずだよ！ 今までちゃんとやってこれたんだし。",
+    "frame": "0134_dialogue_1181.8s.jpg",
+    "t": 1181.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……うぅ。 もりくぼは、やっぱりもりくぼだと思うんですけど。 ……で、でも……。",
+    "frame": "0135_dialogue_1197.0s.jpg",
+    "t": 1197.0
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "もりくぼと同じく、控え目なふたりが頑張ってるのを見ると…… な、なんだか、もりくぼも、もう少しやれるんじゃないかという気持ちが……。",
+    "frame": "0136_dialogue_1218.2s.jpg",
+    "t": 1218.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……あ、いえ。 すみません…… これはただの、もりくぼの思い上がりかも……。",
+    "frame": "0137_dialogue_1229.6s.jpg",
+    "t": 1229.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "そ、そんなことないですよ……！ 私も、乃々さんと同じ気持ちです……。",
+    "frame": "0138_dialogue_1239.0s.jpg",
+    "t": 1239.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "きっと、ふたりとプロデューサーさんがいてくれるから……ここまで大きな不幸もなく、準備やレッスンが出来てるなって。あ、ビーズはひっくり返しちゃいましたけど……。",
+    "frame": "0139_dialogue_1257.0s.jpg",
+    "t": 1257.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "ふふっ。あのときはびっくりしちゃったね。でも、ほたるちゃんの言う通り、準備はしっかり出来てるし……今度のMV撮影も、きっと今日みたいに、バッチリいけるはずだよ！",
+    "frame": "0141_dialogue_1276.8s.jpg",
+    "t": 1276.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "え、ええ……。それは……わからないですけど……。",
+    "frame": "0142_dialogue_1285.8s.jpg",
+    "t": 1285.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "それじゃあ、自信をもって撮影が出来るように……帰ったら、特訓しよっか♪",
+    "frame": "0143_dialogue_1295.6s.jpg",
+    "t": 1295.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "は、はい……！ 特訓、もっともっとやりましょう……♪ みんなでっ。",
+    "frame": "0144_dialogue_1306.2s.jpg",
+    "t": 1306.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……ひ、ひえぇ～……！",
+    "frame": "0145_dialogue_1313.0s.jpg",
+    "t": 1313.0
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "そして、MV撮影前日……",
+    "frame": "0146_dialogue_1322.4s.jpg",
+    "t": 1322.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美・乃々・ほたる",
+    "text": "おはようございます！ お、おはようございます……。 おはようございます……。",
+    "frame": "0147_dialogue_1326.8s.jpg",
+    "t": 1326.8
+   },
+   {
+    "type": "line",
+    "speaker": "設営チーフ",
+    "text": "はい、おはよう。 本日の設営は、僕たちが担当させてもらうから。 よろしくね。",
+    "frame": "0148_dialogue_1336.6s.jpg",
+    "t": 1336.6
+   },
+   {
+    "type": "line",
+    "speaker": "ディレクター",
+    "text": "スタッフのみなさん！ 今日はこの可愛い3人が、 僕たちと一緒にセット設営をしてくれますよ。拍手！",
+    "frame": "0149_dialogue_1343.6s.jpg",
+    "t": 1343.6
+   },
+   {
+    "type": "line",
+    "speaker": "スタッフA",
+    "text": "おー、可愛いー！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "スタッフB",
+    "text": "森久保ちゃん、初めて生で見たわー。",
+    "frame": "0151_dialogue_1357.2s.jpg",
+    "t": 1357.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "ひ、ひいい……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "あ、あはは……。",
+    "frame": "0152_dialogue_1366.4s.jpg",
+    "t": 1366.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "今日は、よろしくお願いします",
+    "frame": "0153_dialogue_1368.0s.jpg",
+    "t": 1368.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "設営チーフ",
+    "text": "はい、よろしく。まだ大道具班も出入りしているし、工具とかベニヤとかも出っぱなしだから、いろいろ気を付けて。安全第一でいこう！",
+    "frame": "0154_dialogue_1380.2s.jpg",
+    "t": 1380.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "は、はい……！ それは本当に……とてもとても、気をつけなくっちゃ……！",
+    "frame": "0155_dialogue_1391.0s.jpg",
+    "t": 1391.0
+   },
+   {
+    "type": "line",
+    "speaker": "ディレクター",
+    "text": "あ、そうでした。みんなが作ってるところ、撮らせてもらうけど大丈夫ですよね？メイキング映像、お客さんも喜んでくれると思いますし。",
+    "frame": "0156_dialogue_1402.0s.jpg",
+    "t": 1402.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美・乃々・ほたる",
+    "text": "えっ……！ えええ……。 えっ……！",
+    "frame": "0157_dialogue_1408.2s.jpg",
+    "t": 1408.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "それは……",
+    "frame": "0158_dialogue_1410.0s.jpg",
+    "t": 1410.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……し、心配しないでプロデューサーさん。 昔の私と違って、もうカメラを向けられても、 咄嗟に避けたりはしない……はずだし！",
+    "frame": "0159_dialogue_1424.6s.jpg",
+    "t": 1424.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "うう……も、もりくぼも…… むりではありますが…… むりなことは、いつものことなので……いいです……。",
+    "frame": "0160_dialogue_1443.8s.jpg",
+    "t": 1443.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "わかったよ",
+    "frame": "0161_dialogue_1445.6s.jpg",
+    "t": 1445.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……いいんですか？ プロデューサーさん。",
+    "frame": "0162_dialogue_1450.4s.jpg",
+    "t": 1450.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "無理はしないでね",
+    "frame": "0163_dialogue_1452.4s.jpg",
+    "t": 1452.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "裕美・乃々・ほたる",
+    "text": "はいっ。 はいぃ……。 はいっ。",
+    "frame": "0164_dialogue_1457.0s.jpg",
+    "t": 1457.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "それじゃあ、セッティングはじめよう！ ふたりともっ。",
+    "frame": "0165_dialogue_1463.8s.jpg",
+    "t": 1463.8
+   }
+  ]
+ },
+ {
+  "id": "ep3",
+  "tab": "第3話",
+  "title": "one misstep",
+  "summary": "セットの設営はPの備えもあって順調に進んでいた。そんな中、裕美は乃々とほたるに飾り付けを提案した理由を明かす。「ひとりじゃ出来ないことをしたい」という彼女の想いに共感し、心をひとつにする3人。そしてついにセットが完成。裕美はふたりに、この場で振り付けの確認をしようと提案するが…。",
+  "start_s": 1463,
+  "title_frame": "0166_dialogue_1470.6s.jpg",
+  "log": [
+   "3"
+  ],
+  "entries": [
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "ワンステップスの3人は、 自分たちのMVセットのための飾り付けをしていた……",
+    "frame": "0167_dialogue_1474.4s.jpg",
+    "t": 1474.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "あの……裕美さん。もりくぼの彫った鳥さん、こんな目立つところに置いていただいて、いいんでしょうか……？",
+    "frame": "0168_dialogue_1492.0s.jpg",
+    "t": 1492.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "いいに決まってるよ！ 乃々ちゃん、とってもセンス良いもん♪",
+    "frame": "0169_dialogue_1498.0s.jpg",
+    "t": 1498.0
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "そ……そうでしょうか……。えへへ……そんなふうに言ってもらったこと、はじめて……。",
+    "frame": "0170_dialogue_1512.6s.jpg",
+    "t": 1512.6
+   },
+   {
+    "type": "line",
+    "speaker": "スタッフB",
+    "text": "……あれ？ 注文しておいたはずの壁紙とベニヤ、届いてないの？",
+    "frame": "0171_dialogue_1521.2s.jpg",
+    "t": 1521.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……！",
+    "frame": "0172_dialogue_1525.4s.jpg",
+    "t": 1525.4
+   },
+   {
+    "type": "line",
+    "speaker": "スタッフA",
+    "text": "……ん？ こっちの電動ドライバーも故障か……参ったな。 充電切れってわけでもなさそうだし……。",
+    "frame": "0173_dialogue_1534.8s.jpg",
+    "t": 1534.8
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……！",
+    "frame": "0174_dialogue_1539.2s.jpg",
+    "t": 1539.2
+   },
+   {
+    "type": "line",
+    "speaker": "設営チーフ",
+    "text": "うーん……おかしいな。どうも今日は、突発的なトラブルが多い気が……。",
+    "frame": "0175_dialogue_1547.8s.jpg",
+    "t": 1547.8
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……。あ、あの……プロデューサーさん。これってもしかして……、やっぱり私の……。",
+    "frame": "0176_dialogue_1561.6s.jpg",
+    "t": 1561.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "大丈夫だよ",
+    "frame": "0177_dialogue_1564.2s.jpg",
+    "t": 1564.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "資材の手配、すぐに出来ますよ。",
+    "frame": "0179_dialogue_1572.4s.jpg",
+    "t": 1572.4
+   },
+   {
+    "type": "line",
+    "speaker": "設営チーフ",
+    "text": "ほんとかい！？ やぁ、助かるよ！",
+    "frame": "0180_dialogue_1577.8s.jpg",
+    "t": 1577.8
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "プロデューサーさん……すみません、ありがとう、ございます……！もしかして、あらかじめトラブルがあったときの備えを……？",
+    "frame": "0181_dialogue_1595.6s.jpg",
+    "t": 1595.6
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "さすがプロデューサーさん、勘も準備もいいんだから♪",
+    "frame": "0182_dialogue_1602.2s.jpg",
+    "t": 1602.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "ほんとに……もりくぼを探すときも、勘がよいので……困るような……困らないような……。",
+    "frame": "0183_dialogue_1620.0s.jpg",
+    "t": 1620.0
+   },
+   {
+    "type": "line",
+    "speaker": "設営チーフ",
+    "text": "じゃあちょっと、こっちに来てくれプロデューサーくん。足りない資材を確認してもらうから。",
+    "frame": "0184_dialogue_1628.8s.jpg",
+    "t": 1628.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "わかりました",
+    "frame": "0185_dialogue_1630.6s.jpg",
+    "t": 1630.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "よーしっ。あっちはプロデューサーさんに任せて…… 私たちは飾りつけの続きを頑張ろう、ふたりとも！",
+    "frame": "0186_dialogue_1641.8s.jpg",
+    "t": 1641.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……と、とりあえず…… これで一通り、完成……でしょうか……。",
+    "frame": "0187_dialogue_1658.0s.jpg",
+    "t": 1658.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "はぁ…… 良かった、無事に最後まで出来て……。",
+    "frame": "0188_dialogue_1666.8s.jpg",
+    "t": 1666.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "うんっ！ お疲れさま、乃々ちゃんほたるちゃん！",
+    "frame": "0189_dialogue_1673.0s.jpg",
+    "t": 1673.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……お庭も、部屋の中も。 私たちらしく、可愛く出来たよね。 良かった……。",
+    "frame": "0190_dialogue_1683.0s.jpg",
+    "t": 1683.0
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……あ、あの……裕美さん。 そういえば……どうしてセットの飾りつけをしたいって 思ったんですか……？",
+    "frame": "0191_dialogue_1698.6s.jpg",
+    "t": 1698.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "言われてみれば、確かに……。私は、裕美ちゃんと乃々さんと一緒に色んな事が出来るのが嬉しくて、深く考えずに賛成しちゃいましたけど……。",
+    "frame": "0192_dialogue_1714.6s.jpg",
+    "t": 1714.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "も、もしかして……もりくぼが前に、裕美さんのビーズ細工とコラボをしたいって言ったのを、覚えていてくれたから……？",
+    "frame": "0193_dialogue_1733.6s.jpg",
+    "t": 1733.6
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "うん、もちろん覚えてたよ。……でもね、それだけじゃないの。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "この間……プロデューサーさんに、 3人で新しいお仕事をさせてもらえるって聞いたときに。 どうせなら、ひとりじゃ出来ないこと、したいって思ったんだ。",
+    "frame": "0194_dialogue_1759.6s.jpg",
+    "t": 1759.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "ひとりじゃ、出来ないこと……。",
+    "frame": "0195_dialogue_1765.8s.jpg",
+    "t": 1765.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "う、うん。やり方は他にもあったかも知れないけど…… これまでのお仕事を通じて、自分たちが成長してるってことが、ちゃんと、目に見える形に出来たら……嬉しいなって。",
+    "frame": "0196_dialogue_1789.0s.jpg",
+    "t": 1789.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "た、確かに……ちょっとずつではありますけど、私たち、成長できているはずですよね。",
+    "frame": "0197_dialogue_1802.0s.jpg",
+    "t": 1802.0
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "そ、そうですね……。アイドルになってしまってから、ほんとに色々ありましたし……。",
+    "frame": "0198_dialogue_1815.4s.jpg",
+    "t": 1815.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "こういう、飾りつけも……私ひとりでは、出来ないことです。みなさんと一緒に出来て、とっても嬉しい……。",
+    "frame": "0199_dialogue_1829.6s.jpg",
+    "t": 1829.6
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "あとは、明日のMV撮影だね……。……ね、ふたりとも。ちょっと振り付けの確認、してみない？",
+    "frame": "0200_dialogue_1843.4s.jpg",
+    "t": 1843.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……えっ？ 今から……ですか？",
+    "frame": "0201_dialogue_1850.0s.jpg",
+    "t": 1850.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "うん。明日の本番は1回で成功させて、プロデューサーさんをびっくりさせちゃお！……どうかな？",
+    "frame": "0202_dialogue_1862.4s.jpg",
+    "t": 1862.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "もりくぼは……その、いいですよ。遅かれ早かれ、という気もしますから……。",
+    "frame": "0203_dialogue_1876.6s.jpg",
+    "t": 1876.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "それじゃあ…… やって……みましょうか？",
+    "frame": "0204_dialogue_1884.0s.jpg",
+    "t": 1884.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "うんっ！",
+    "frame": "0205_dialogue_1886.8s.jpg",
+    "t": 1886.8
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる・裕美・乃々",
+    "text": "夢のステップ、ここから始めよう……♪",
+    "frame": "0206_dialogue_1896.4s.jpg",
+    "t": 1896.4
+   },
+   {
+    "type": "line",
+    "speaker": "スタッフA",
+    "text": "……あれ？ もうリハかな、ちょっと早いけど……。",
+    "frame": "0207_dialogue_1903.0s.jpg",
+    "t": 1903.0
+   },
+   {
+    "type": "line",
+    "speaker": "スタッフB",
+    "text": "わー、3人とも可愛いー♪",
+    "frame": "0208_dialogue_1906.4s.jpg",
+    "t": 1906.4
+   },
+   {
+    "type": "line",
+    "speaker": "ディレクター",
+    "text": "私服でのリハ……！カメラくん、メイキングで使うから、ちゃんと撮ってね！こういうの、ファンは喜ぶんですよね……。",
+    "frame": "0210_dialogue_1917.8s.jpg",
+    "t": 1917.8
+   },
+   {
+    "type": "line",
+    "speaker": "カメラマン",
+    "text": "うっす！",
+    "frame": "0211_dialogue_1921.8s.jpg",
+    "t": 1921.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "（あっ……カメラがこっち撮ってる……！ に、逃げないで……ちゃんと、笑顔でやらなきゃ！）",
+    "frame": "0212_dialogue_1933.2s.jpg",
+    "t": 1933.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "進むんだ♪",
+    "frame": "0213_dialogue_1936.6s.jpg",
+    "t": 1936.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "進むんだ♪",
+    "frame": "0214_dialogue_1939.4s.jpg",
+    "t": 1939.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "進むんだ…………っ！？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "きゃああっ！",
+    "frame": "0215_dialogue_1948.8s.jpg",
+    "t": 1948.8
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "わぁっ……！",
+    "frame": "0217_dialogue_1952.8s.jpg",
+    "t": 1952.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "ひっ……！",
+    "frame": "0219_dialogue_1955.8s.jpg",
+    "t": 1955.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "う、ううん……ごめんねふたりとも。怪我はない？",
+    "frame": "0220_dialogue_1962.4s.jpg",
+    "t": 1962.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "は、はいぃ……。ちょっと、何かのコードに引っかかっちゃいましたけど……。",
+    "frame": "0221_dialogue_1972.0s.jpg",
+    "t": 1972.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "飾りつけも、無事みたいですね。良かった……。……え？",
+    "frame": "0222_dialogue_1982.2s.jpg",
+    "t": 1982.2
+   },
+   {
+    "type": "line",
+    "speaker": "スタッフA",
+    "text": "お、おい……！ 照明スタンドが、いきなり傾いて……！",
+    "frame": "0225_dialogue_1991.8s.jpg",
+    "t": 1991.8
+   },
+   {
+    "type": "line",
+    "speaker": "スタッフB",
+    "text": "……積んでた塗料の缶のバランスが崩れて、木材にぶつかって……！",
+    "frame": "0227_dialogue_1999.8s.jpg",
+    "t": 1999.8
+   },
+   {
+    "type": "line",
+    "speaker": "スタッフC",
+    "text": "木材ごと、セットの壁が……倒れる！ う、うそ……！",
+    "frame": "0229_dialogue_2009.6s.jpg",
+    "t": 2009.6
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "翌日",
+    "frame": "0230_dialogue_2056.2s.jpg",
+    "t": 2056.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々・ほたる・裕美",
+    "text": "はあ……。 はああ……。 はあ……。",
+    "frame": "0231_dialogue_2062.8s.jpg",
+    "t": 2062.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "設営チーフ",
+    "text": "……うーん。こいつは、明日の撮影は無理か……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "設営チーフ",
+    "text": "安全のためには、壊れたセット以外の所も全部確認しなきゃだし。流石に、時間が足りないよ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ディレクター",
+    "text": "……というわけですね。誰も怪我しなかったから良かったですが……彼女たちの監督が、足りなかったんじゃないですか？",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々・ほたる・裕美",
+    "text": "……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々・ほたる・裕美",
+    "text": "はぁ……。はあぁ……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "……。 みんな、落ち込んじゃってますね……。 空気が、どんよりと……。",
+    "frame": "0232_dialogue_2076.0s.jpg",
+    "t": 2076.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "まぁ、無理もないよなー……。セットもスケジュールも組み直しになって、プロデューサーは謝罪アンド調整で走り回ってるみたいだし……。",
+    "frame": "0233_dialogue_2088.6s.jpg",
+    "t": 2088.6
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "お仕事を失敗してしまったときの辛さ……よく、わかります。……どうにか、励ましてあげたいですね……。",
+    "frame": "0234_dialogue_2100.0s.jpg",
+    "t": 2100.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……よーしっ☆ ここは人生経験豊富なはぁとお姉さんが、 自分の失敗トークでみんなに笑いを……っ！",
+    "frame": "0235_dialogue_2110.8s.jpg",
+    "t": 2110.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "待って、佐藤",
+    "frame": "0236_dialogue_2112.4s.jpg",
+    "t": 2112.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "だーからっ！はぁとって呼べって！……ありゃ？",
+    "frame": "0237_dialogue_2118.2s.jpg",
+    "t": 2118.2
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "あ……プロデューサーさん……？",
+    "frame": "0238_dialogue_2122.2s.jpg",
+    "t": 2122.2
+   }
+  ]
+ },
+ {
+  "id": "ep4",
+  "tab": "第4話",
+  "title": "Pluck up courage, and…",
+  "summary": "3人がセットを壊してしまったことで、Pは謝罪と調整に追われていた。責任を感じて、Pの帰りを事務所で待つ3人。謝る彼女たちに、Pもまた謝罪しつつ、胸の内を語る。失敗しても、また挑戦してほしい――。そんなPの言葉に背中を押され、3人は改めて気持ちを奮い立たせるのだった。",
+  "start_s": 2122,
+  "title_frame": "0239_dialogue_2138.6s.jpg",
+  "log": [
+   "4"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "裕美・乃々・ほたる",
+    "text": "……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……ごめんね。ふたりとも。",
+    "frame": "0240_dialogue_2145.0s.jpg",
+    "t": 2145.0
+   },
+   {
+    "type": "line",
+    "speaker": "乃々・ほたる",
+    "text": "……え？ ……え？",
+    "frame": "0241_dialogue_2148.2s.jpg",
+    "t": 2148.2
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "あのとき……私があそこで、明日の練習しようなんて言い出したから……いけないんだ。",
+    "frame": "0242_dialogue_2160.8s.jpg",
+    "t": 2160.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……ううん。 そもそも最初から、 セットの飾り付けなんて、しようとか、言いださなかったら……！",
+    "frame": "0243_dialogue_2173.0s.jpg",
+    "t": 2173.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……いいえ。違います、違いますよ裕美ちゃん…… やっぱり、私の不幸のせいです……。 普通はちょっと転んだだけで、あんな事にはならないですし……。",
+    "frame": "0244_dialogue_2191.8s.jpg",
+    "t": 2191.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "い、いえ……もりくぼなんかが、やれるかも……なんて、勘違いしてしまったせいで……コードに、引っかかって……。",
+    "frame": "0245_dialogue_2211.8s.jpg",
+    "t": 2211.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "ううんっ、私の……！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "私のせいですっ……。",
+    "frame": "0246_dialogue_2223.8s.jpg",
+    "t": 2223.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "うう……。",
+    "frame": "0247_dialogue_2228.2s.jpg",
+    "t": 2228.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "……ただいま",
+    "frame": "0248_dialogue_2230.8s.jpg",
+    "t": 2230.8,
+    "csv_only": true
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "裕美・乃々・ほたる ……っ！",
+    "frame": "0249_dialogue_2235.8s.jpg",
+    "t": 2235.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美・乃々・ほたる",
+    "text": "……っ！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "プロデューサーさん……お、おかえりなさい……。",
+    "frame": "0250_dialogue_2242.8s.jpg",
+    "t": 2242.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "帰らないで、待っててくれたの？",
+    "frame": "0251_dialogue_2244.2s.jpg",
+    "t": 2244.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……ほんとは……帰るどころか、どこかへ消えてしまいたいくらいでしたけど……。",
+    "frame": "0252_dialogue_2257.4s.jpg",
+    "t": 2257.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "でも……プロデューサーさんは、 私たちの……私のせいで、 いろんなところに 謝ったり、しなくてはいけなかったわけですし……。",
+    "frame": "0253_dialogue_2273.6s.jpg",
+    "t": 2273.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "で、ですので……机の下とかじゃなくて、ちゃんと、事務所で待ってなきゃなって…………その。ごめんなさい……。",
+    "frame": "0254_dialogue_2295.4s.jpg",
+    "t": 2295.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "プロデューサーさん、ごめんなさいっ……！私が、私がいけないんだ。ほたるちゃんも乃々ちゃんも、悪くないの！",
+    "frame": "0255_dialogue_2309.8s.jpg",
+    "t": 2309.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "私……出来るって、思っちゃったの！ 今の私なら、前と違って、大丈夫だって……うまく出来るって！ ごめんなさい、ごめんなさい……！",
+    "frame": "0256_dialogue_2333.2s.jpg",
+    "t": 2333.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "こっちこそ、ごめんね",
+    "frame": "0257_dialogue_2335.0s.jpg",
+    "t": 2335.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……え……？ ど、どうして……プロデューサーさんが、謝るの……？ 失敗したのは、私なのに……。",
+    "frame": "0258_dialogue_2348.6s.jpg",
+    "t": 2348.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "私の、不幸のせいなのに……。",
+    "frame": "0259_dialogue_2355.2s.jpg",
+    "t": 2355.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "もりくぼのせいなのでは……。",
+    "frame": "0260_dialogue_2359.8s.jpg",
+    "t": 2359.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "許可したのは、こっちだから",
+    "frame": "0261_dialogue_2361.6s.jpg",
+    "t": 2361.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "そんな……っ！ でも、私っ……！",
+    "frame": "0262_dialogue_2367.8s.jpg",
+    "t": 2367.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "気にしないでとは、言えないけど……。",
+    "frame": "0263_dialogue_2372.6s.jpg",
+    "t": 2372.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "3人に、また挑戦してほしいんだ",
+    "frame": "0264_dialogue_2374.2s.jpg",
+    "t": 2374.2,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "挑戦……。今日みたいに、失敗、してしまうかもしれないのに……それでも……？",
+    "frame": "0265_dialogue_2387.2s.jpg",
+    "t": 2387.2
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "もし失敗して、落ち込むとしても",
+    "frame": "0266_dialogue_2389.0s.jpg",
+    "t": 2389.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "それでも……また、挑戦っていうの、していかなくちゃなんですか……。",
+    "frame": "0267_dialogue_2400.0s.jpg",
+    "t": 2400.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "うまく言えないけど…… それって、怒られるよりも、厳しいよ。",
+    "frame": "0268_dialogue_2408.4s.jpg",
+    "t": 2408.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……さっきまでは、何でも出来そうな気がしてたのに。 失敗しちゃった今は……挑戦とか、考えるのも怖いの。 これじゃアイドルになったばかりの頃に、元通りっていうか……。",
+    "frame": "0269_dialogue_2433.6s.jpg",
+    "t": 2433.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……裕美ちゃん。きっと、そんなことないですよ……。",
+    "frame": "0270_dialogue_2442.2s.jpg",
+    "t": 2442.2
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "ほたるちゃん……？",
+    "frame": "0271_dialogue_2447.0s.jpg",
+    "t": 2447.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "さっき……どうして飾りつけしたいのかって、聞いたとき…… 裕美ちゃんは「ひとりじゃ出来ないことをしたいから」 って言ってくれました。",
+    "frame": "0272_dialogue_2463.6s.jpg",
+    "t": 2463.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "その「ひとりじゃ出来ない」中に、私も入ってるんだって思ったら……すごく、すごく嬉しかったんです。",
+    "frame": "0273_dialogue_2479.4s.jpg",
+    "t": 2479.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "この事務所に来るまで……私、友だちと何か作ったりとか、ぜんぜんした事なかったですし……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "だから……たとえ、失敗しちゃっても。 裕美ちゃんがそう言ってくれる人だってことや、 私の嬉しかった気持ちまでは、元通りにはなりませんから……。",
+    "frame": "0274_dialogue_2511.0s.jpg",
+    "t": 2511.0
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "もりくぼは……アイドルにされてしまってこのかた、むりな挑戦をさせられてばっかりでしたけど……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "でも……裕美さんや、ほたるちゃんは、さほどむりもなく、もりくぼに合わせてくれて。それでいて、キラキラしていて……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "ふたりとも、もりくぼと同じ、引っ込み思案なほうなのに…… すごいなぁって。いいなぁって……思ったんです。 もしかしたら、もりくぼにも何か出来るかもって……。",
+    "frame": "0275_dialogue_2581.2s.jpg",
+    "t": 2581.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "だから……今回のお仕事も、ほんとはむりと言いたいんですけど……でも……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "おふたりと、同じ歩幅で踏み出せるなら…… もうちょっとだけ、挑戦を、してみたいんです……。",
+    "frame": "0276_dialogue_2617.4s.jpg",
+    "t": 2617.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "乃々ちゃん、ほたるちゃんっ……！",
+    "frame": "0277_dialogue_2623.6s.jpg",
+    "t": 2623.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "失敗を恐れず、挑戦することは、とても勇気がいるけれど。……でも、これからも、",
+    "frame": "0278_dialogue_2632.8s.jpg",
+    "t": 2632.8
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "みんなの勇気を、支えさせてほしい",
+    "frame": "0279_dialogue_2634.6s.jpg",
+    "t": 2634.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "裕美・乃々・ほたる",
+    "text": "プロデューサーさんっ……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "う、うんっ……。支えてくれるプロデューサーさんのためにも……必ず、挽回してみせるよ……。",
+    "frame": "0280_dialogue_2650.4s.jpg",
+    "t": 2650.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "まだ、今回のお仕事だって、たくさんありますからね。撮影は、後回しになっちゃいましたけど……。",
+    "frame": "0281_dialogue_2663.2s.jpg",
+    "t": 2663.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "ミニLIVEの、ステージもありますし……。",
+    "frame": "0282_dialogue_2670.8s.jpg",
+    "t": 2670.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "た、ただ……？",
+    "frame": "0284_dialogue_2677.4s.jpg",
+    "t": 2677.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "今回は、 焼肉は無しだよ",
+    "frame": "0285_dialogue_2678.8s.jpg",
+    "t": 2678.8,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……えっ？ は、はい。",
+    "frame": "0286_dialogue_2683.0s.jpg",
+    "t": 2683.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "う、うん。…………ふふっ。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……ありがとう、プロデューサーさん。",
+    "frame": "0287_dialogue_2693.0s.jpg",
+    "t": 2693.0
+   }
+  ]
+ },
+ {
+  "id": "ep5",
+  "tab": "第5話",
+  "title": "…and, once more step！",
+  "summary": "迎えたLIVE当日の朝。乃々、ほたる、裕美の3人は それぞれのやり方で決意を新たにしていた。 失敗は怖いし、自信だってひとりじゃまだ足りない。 しかし3人が集まれば、きっと頑張れるはず。 緊張しながらも、3人は揃ってステージへ踏み出す。 小さくも、彼女たちにとってとても大きな一歩を。",
+  "start_s": 2703,
+  "title_frame": "0289_dialogue_2709.0s.jpg",
+  "log": [
+   "5"
+  ],
+  "entries": [
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "――そして、LIVE当日の朝……",
+    "frame": "0289_dialogue_2709.0s.jpg",
+    "t": 2709.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "『みんなの勇気を、支えさせてほしい』――",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "（プロデューサーさんは、ああ言ってくれたけど。私の勇気なんて…… アイドルとしてやっていくには、足りないのかもしれない……）",
+    "frame": "0291_dialogue_2736.0s.jpg",
+    "t": 2736.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "（……ううん。勇気だけじゃない。歌も、ダンスも、笑顔もうまくないし。特別なことなんて、なにも出来ない……）",
+    "frame": "0292_dialogue_2752.8s.jpg",
+    "t": 2752.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "（すぐ調子に乗っちゃって。過信して。それで、失敗して……。こんな私、やっぱり本当は、アイドルに向いてないのかな……）",
+    "frame": "0293_dialogue_2771.4s.jpg",
+    "t": 2771.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……でも。",
+    "frame": "0294_dialogue_2776.6s.jpg",
+    "t": 2776.6
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "（今は……もっと、先が見てみたい。このキラキラの、先にある世界を。）",
+    "frame": "0296_dialogue_2800.6s.jpg",
+    "t": 2800.6
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "だから、勇気を出して進むんだ。みんなと、一緒に……！",
+    "frame": "0297_dialogue_2812.6s.jpg",
+    "t": 2812.6
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "河川敷",
+    "frame": "0299_dialogue_2827.2s.jpg",
+    "t": 2827.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "はっ、はっ……、ふっ、ふっ……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "（裕美ちゃん、乃々さんや、プロデューサーさん……他のお仕事でご一緒させていただく、アイドルのみなさん……）",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "（私と一緒に、お仕事をしたり。ユニットを組んだりしたら……私の不幸が、みなさんにも伝染ってしまうかもしれない。失敗してしまうかもしれない。嫌われてしまうかもしれない……）",
+    "frame": "0300_dialogue_2870.0s.jpg",
+    "t": 2870.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "（それは、あまりにも怖くて。今でもときどき……仲良くしてくれる人たちからも、距離を取ってしまうことがあります。）",
+    "frame": "0301_dialogue_2887.4s.jpg",
+    "t": 2887.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……けれど……。",
+    "frame": "0302_dialogue_2892.4s.jpg",
+    "t": 2892.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "（私と、ユニットで良かったって……良かったって。幸せだって……心の底から、そう、思ってもらえるように……！）",
+    "frame": "0304_dialogue_2935.2s.jpg",
+    "t": 2935.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "だから……踏み出さなくちゃ！",
+    "frame": "0305_dialogue_2940.4s.jpg",
+    "t": 2940.4
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "街中",
+    "frame": "0307_dialogue_2947.6s.jpg",
+    "t": 2947.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……うう……。人がいっぱい……。な、なんだか今日は特に多いような……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "（人ごみ……いつまで経っても、苦手なんですけど。 LIVE会場どころか、事務所にたどり着くことですら、 もりくぼにはいつも困難で……）",
+    "frame": "0310_dialogue_2997.4s.jpg",
+    "t": 2997.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "（もりくほには……他にも、苦手なこと、いっぱいありすぎて……。アイドルは、もちろんですが……）",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "（……ステージで、お客さんのほうを向くとか、目を合わせたりとか、……ぜったいむりーい……なんですけど。…………でも、でも……）",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "（……これまでに、何度か出来てしまったのも、事実で……。いつぞやは、スポットライトと衣装の力を借りて……いつぞやは、ひゃっはーして、やけくぼで……）",
+    "frame": "0311_dialogue_3064.2s.jpg",
+    "t": 3064.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "（……それでも、もりくぼにしては、ありえないほど頑張ったと思いますけど…… 美玲ちゃんや、輝子ちゃんがいてくれましたし……）",
+    "frame": "0312_dialogue_3083.2s.jpg",
+    "t": 3083.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "（でももし……もしかしたら。ほたるちゃん、裕美さん……もりくほと、近い歩幅のふたりと、ステージに立ってしまったら……）",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "（もりくぼ、いつものもりくぼのままで…… もりくぼのことを、応援してくれるお客さんの方を…… 笑顔で、前を向くことが……できるかも……）",
+    "frame": "0313_dialogue_3137.4s.jpg",
+    "t": 3137.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "（……いえ、できない、かもですけど……。……でも、挑戦は……して、みたいので。だから……）",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "だ、だから……まず、この人ごみを乗り越え……事務所に、たどり着かなくては。誰にもぶつからないよう、隙間を、ささっと……。",
+    "frame": "0314_dialogue_3183.6s.jpg",
+    "t": 3183.6
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "LIVE会場",
+    "frame": "0315_dialogue_3190.0s.jpg",
+    "t": 3190.0
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "ざわざわ、がやがや……",
+    "frame": "0316_dialogue_3197.2s.jpg",
+    "t": 3197.2
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "舞台裏",
+    "frame": "0317_dialogue_3204.0s.jpg",
+    "t": 3204.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……こ、この足場のリフトが、せりあがって……舞台に出るんですね。故障しなければ……。",
+    "frame": "0318_dialogue_3219.8s.jpg",
+    "t": 3219.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "スタッフさんたちが、何度もチェックしてくれてるので…… 平気、だと思いますけど……。 本番ではもりくぼの心臓も、口から出てしまうかもですが……。",
+    "frame": "0319_dialogue_3241.8s.jpg",
+    "t": 3241.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……ねえ……ほたるちゃん。乃々ちゃん。今日のステージ……、自信、ある？",
+    "frame": "0320_dialogue_3256.0s.jpg",
+    "t": 3256.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……あ、あんまり……。運の無さには、自信あるんですけど……。",
+    "frame": "0321_dialogue_3265.6s.jpg",
+    "t": 3265.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "もりくぼは……いつも通りです……。",
+    "frame": "0322_dialogue_3273.8s.jpg",
+    "t": 3273.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……うん。私も、ぜんぜんないよ。でも……。",
+    "frame": "0323_dialogue_3285.4s.jpg",
+    "t": 3285.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "レッスンでやってきたこと、ちゃんと発揮できれば……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "来てくれたみなさんや、プロデューサーさんの期待に、応えるためなら……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "じ、自信が足りないのでしたら……3人で。ちょっとずつ、持ち寄って……集めれば……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……うん。 自信も、勇気も、3人でかき集めれば。 ひとり分くらいには、なるかもしれないよね……！",
+    "frame": "0324_dialogue_3334.0s.jpg",
+    "t": 3334.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "すぐ隣の、ふたりの……不安な気持ち……よく知ってる。まるで、鏡に映った自分みたいで……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "心臓が、どきどきしてるの……伝わってくる。繋いだ手も、ちょっとつめたくて、震えてる……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "それはもしかしたら、自分がそうなんですけど……隣のふたりにも、そうであってほしいって、思ってるだけかもしれませんけど……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "けれど、だからこそ……隣のふたりの、ほんの小さな勇気が……すごく、輝いて見える。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "願わくは……その勇気が、私にもあって。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "3人で、一歩……踏み出せますように……！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美・乃々・ほたる",
+    "text": "はい！",
+    "frame": "0325_dialogue_3436.4s.jpg",
+    "t": 3436.4
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "それじゃ、行こう……！",
+    "frame": "0326_dialogue_3442.4s.jpg",
+    "t": 3442.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる・乃々",
+    "text": "うんっ！",
+    "frame": "0327_dialogue_3445.8s.jpg",
+    "t": 3445.8
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる・乃々・裕美",
+    "text": "……せーのっ……",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる・乃々・裕美",
+    "text": "ステップ！",
+    "frame": "0328_dialogue_3459.2s.jpg",
+    "t": 3459.2
+   }
+  ]
+ },
+ {
+  "id": "ed",
+  "tab": "ED",
+  "title": "Everything, everyone steps",
+  "summary": "たくさんの挑戦を経て、乃々、ほたる、裕美の3人はユニットとして、またひとつ成長できた。そして迎えた、MV撮影のクランクアップ。スタッフに頑張りを認められ、3人はほっとする。勇気も幸せも、時には不幸すら分け合い、彼女たちの歩みはこれからも進んでいくのだった。",
+  "start_s": 3459,
+  "title_frame": "0329_dialogue_3465.6s.jpg",
+  "log": [
+   "ED"
+  ],
+  "entries": [
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "おはようございます……。……あっ、プロデューサーさん。お疲れさまです。",
+    "frame": "0330_dialogue_3473.0s.jpg",
+    "t": 3473.0
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "お疲れさまです",
+    "frame": "0331_dialogue_3474.6s.jpg",
+    "t": 3474.6,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "今日は少し、早く来すぎてしまって。プロデューサーさんは……",
+    "frame": "0332_dialogue_3483.0s.jpg",
+    "t": 3483.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "おーっと！ 美優ちゃんもプロデューサーも、静かに、静かにっ☆",
+    "frame": "0333_dialogue_3489.0s.jpg",
+    "t": 3489.0
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "えっ、心さん？ ……どうか、したんですか？",
+    "frame": "0334_dialogue_3494.6s.jpg",
+    "t": 3494.6
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "……ほれほれ☆ あれ見てみ？",
+    "frame": "0335_dialogue_3499.6s.jpg",
+    "t": 3499.6
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "すぅ……すぅ……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "すや……すや…… ……くしゅっ……。",
+    "frame": "0336_dialogue_3522.2s.jpg",
+    "t": 3522.2
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……うう……むにゃむにゃ……。",
+    "frame": "0337_dialogue_3529.2s.jpg",
+    "t": 3529.2
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "裕美ちゃん、乃々ちゃん、ほたるちゃん……事務所のソファで、寝ちゃったんですね。",
+    "frame": "0338_dialogue_3538.8s.jpg",
+    "t": 3538.8
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "レッスンに、LIVEに、撮影に…… みんな最近、すっごい頑張ってたからなー。",
+    "frame": "0339_dialogue_3547.0s.jpg",
+    "t": 3547.0
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "ふふっ……そうですね。 でも、そのぶん……みんな、とても成長していると思います……。",
+    "frame": "0340_dialogue_3557.0s.jpg",
+    "t": 3557.0
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "うんうん！ っていうかっていうか、若いもんに負けてらんないっつーか！ プロデューサー、はぁとたちにも何かお仕事頂戴ちょうだーい☆",
+    "frame": "0341_dialogue_3569.6s.jpg",
+    "t": 3569.6
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……う、ううん……。心さんの、声が……？",
+    "frame": "0342_dialogue_3580.2s.jpg",
+    "t": 3580.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "あ、やっべ……起こしちゃった？ごめんな～！",
+    "frame": "0343_dialogue_3587.6s.jpg",
+    "t": 3587.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "心さん、それに美優さん、プロデューサーさんも…… おはよう、ございます……。",
+    "frame": "0344_dialogue_3601.8s.jpg",
+    "t": 3601.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "あ、そっか…… 私たち……事務所で、寝ちゃってたんだね。",
+    "frame": "0345_dialogue_3613.0s.jpg",
+    "t": 3613.0
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "きっと疲れがたまっていたのね。 まだ寝ていて、いいんですよ……？",
+    "frame": "0346_dialogue_3621.6s.jpg",
+    "t": 3621.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "ううん……平気です。",
+    "frame": "0347_dialogue_3628.0s.jpg",
+    "t": 3628.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "うんっ。ちょっと寝たら、すっかり元気になったから。",
+    "frame": "0348_dialogue_3634.4s.jpg",
+    "t": 3634.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "くうっ……！ こ、これが若さのパワーか……！",
+    "frame": "0349_dialogue_3641.2s.jpg",
+    "t": 3641.2
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "ふふっ……。……今回のお仕事は、どうでしたか？ 3人で、色々なことに挑戦してみて……。",
+    "frame": "0350_dialogue_3652.4s.jpg",
+    "t": 3652.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "……は、はい……。 も、もりくぼにとっては、例によって大変でした、けど……。",
+    "frame": "0352_dialogue_3667.8s.jpg",
+    "t": 3667.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "つまづくことも、あったけど。 でも……。",
+    "frame": "0353_dialogue_3674.0s.jpg",
+    "t": 3674.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "絶対、ぜったい、みんなでまた、ステージに立ちたいですっ！",
+    "frame": "0354_dialogue_3684.2s.jpg",
+    "t": 3684.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "うんうん！ 頑張って歌うみんなの姿、めっちゃ可愛かったぞ☆",
+    "frame": "0355_dialogue_3692.4s.jpg",
+    "t": 3692.4
+   },
+   {
+    "type": "line",
+    "speaker": "美優",
+    "text": "……良かった。落ち込んでいたみたいだから、ちょっとだけ、心配でしたけど……。",
+    "frame": "0356_dialogue_3702.2s.jpg",
+    "t": 3702.2
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "プロデューサーも、ちゃんとみんなをフォローしてやったみたいだな☆ えらいぞ☆",
+    "frame": "0357_dialogue_3709.4s.jpg",
+    "t": 3709.4
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "みんなが、勇気を出したからだよ",
+    "frame": "0358_dialogue_3711.4s.jpg",
+    "t": 3711.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "裕美・ほたる・乃々",
+    "text": "えへへ……。むひゃ……。",
+    "frame": "0359_dialogue_3713.2s.jpg",
+    "t": 3713.2
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……プロデューサーさん。これからも、私たちを支えてね。みんな、まだまだ自分に自信が持ててないけど……だからこそ、挑戦したいこと、たくさんあるんだっ！",
+    "frame": "0360_dialogue_3731.6s.jpg",
+    "t": 3731.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "もちろん！",
+    "frame": "0361_dialogue_3733.0s.jpg",
+    "t": 3733.0,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "それに……LIVEやMV撮影を通じて……わかったことも、あって……。",
+    "frame": "0362_dialogue_3746.4s.jpg",
+    "t": 3746.4
+   },
+   {
+    "type": "line",
+    "speaker": "心",
+    "text": "へえっ？ なになーに☆",
+    "frame": "0363_dialogue_3751.4s.jpg",
+    "t": 3751.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "はい……♪ 勇気も、幸せも……分け合えるってこと、です♪",
+    "frame": "0364_dialogue_3761.4s.jpg",
+    "t": 3761.4
+   },
+   {
+    "type": "scene",
+    "speaker": "",
+    "text": "MV撮影、本番",
+    "frame": "0365_dialogue_3767.6s.jpg",
+    "t": 3767.6
+   },
+   {
+    "type": "line",
+    "speaker": "ディレクター",
+    "text": "これにてクランクアップです！みなさん、撮影お疲れさまでした！",
+    "frame": "0366_dialogue_3773.8s.jpg",
+    "t": 3773.8
+   },
+   {
+    "type": "line",
+    "speaker": "裕美・ほたる・乃々",
+    "text": "お疲れさまでしたっ。 お疲れさまでしたっ。 お疲れさまでしたっ……。",
+    "frame": "0367_dialogue_3782.4s.jpg",
+    "t": 3782.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "はあ……よ、良かった…… 無事に、終わって……。",
+    "frame": "0368_dialogue_3793.2s.jpg",
+    "t": 3793.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "本当に…… 野外の撮影もあったから不安だったんですけど、 天気にも恵まれて、良かったです……。",
+    "frame": "0369_dialogue_3804.8s.jpg",
+    "t": 3804.8
+   },
+   {
+    "type": "line",
+    "speaker": "設営チーフ",
+    "text": "うんうん。 3人とも、可愛かったよ！ 完成が楽しみだ！",
+    "frame": "0370_dialogue_3811.6s.jpg",
+    "t": 3811.6
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "あ……チーフさん。それにディレクターさんも。その節は、本当にごめんなさいっ！",
+    "frame": "0371_dialogue_3822.4s.jpg",
+    "t": 3822.4
+   },
+   {
+    "type": "line",
+    "speaker": "設営チーフ",
+    "text": "はっはっは。もう、そんなに何度も頭を下げんでも……嬢ちゃんのつむじも、見慣れちまったよ。",
+    "frame": "0372_dialogue_3831.4s.jpg",
+    "t": 3831.4
+   },
+   {
+    "type": "line",
+    "speaker": "ディレクター",
+    "text": "私たちは、怒ってなんかいませんよ。みなさんの頑張りは、きちんと伝わっていますから。",
+    "frame": "0373_dialogue_3838.0s.jpg",
+    "t": 3838.0
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "あ、ありがとう、ございます……。",
+    "frame": "0374_dialogue_3844.6s.jpg",
+    "t": 3844.6
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "じゃあ、頑張ったご褒美に…",
+    "frame": "0375_dialogue_3847.4s.jpg",
+    "t": 3847.4,
+    "csv_only": true
+   },
+   {
+    "type": "line",
+    "speaker": "P",
+    "text": "撮影で使ったイチゴのケーキ、3人で食べていいよ。",
+    "frame": "0376_dialogue_3852.2s.jpg",
+    "t": 3852.2
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "あれ？プロデューサーさんてば。ご褒美、今回は無しじゃなかったの？ふふっ……。",
+    "frame": "0377_dialogue_3862.8s.jpg",
+    "t": 3862.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "そ、それじゃあ遠慮なく……もりくぼたちが、おいしく、いただいてしまうんですけど……。……はい。ちょっとだけ、狙ってました……。",
+    "frame": "0378_dialogue_3882.6s.jpg",
+    "t": 3882.6
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "ふふっ……、まるで、絵本のお茶会みたいですね……。かわいいケーキもあって、幸せで……きゃっ！？",
+    "frame": "0379_dialogue_3897.4s.jpg",
+    "t": 3897.4
+   },
+   {
+    "type": "stage",
+    "speaker": "",
+    "text": "ばさささ……！",
+    "frame": "0380_dialogue_3899.6s.jpg",
+    "t": 3899.6
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "……あっ、鳥がっ……！？",
+    "frame": "0381_dialogue_3904.8s.jpg",
+    "t": 3904.8
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "カササギさんが、ほたるちゃんのケーキから……イチゴをくわえて、飛び去ってしまいました……。",
+    "frame": "0382_dialogue_3918.2s.jpg",
+    "t": 3918.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "だ、大丈夫です。二番目のイチゴを持っていかれただけで……下のほうは、綺麗なかままですから。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "落っことしてしまったり、転んでみなさんのケーキまで台無しにすることに比べれば、むしろ運が良いですし……。だから……いただきましょう。",
+    "frame": "0383_dialogue_3946.0s.jpg",
+    "t": 3946.0
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "乃々ちゃん……！",
+    "frame": "0384_dialogue_3950.4s.jpg",
+    "t": 3950.4
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "はい……っ。",
+    "frame": "0385_dialogue_3952.4s.jpg",
+    "t": 3952.4
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "あっ…… ふたりのイチゴが……私の、ケーキの上に……？",
+    "frame": "0386_dialogue_3963.6s.jpg",
+    "t": 3963.6
+   },
+   {
+    "type": "line",
+    "speaker": "裕美・乃々",
+    "text": "えへへっ。えへへ……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "そんなっ……ふたりとも、悪いですよっ……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "悪くないよっ。ほたるちゃんが喜んでくれるなら、私たちも幸せだし！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "それにきっと、立場が逆なら…… ほたるちゃんも同じことをしてくれたと思いますので……。",
+    "frame": "0387_dialogue_3995.2s.jpg",
+    "t": 3995.2
+   },
+   {
+    "type": "line",
+    "speaker": "ほたる",
+    "text": "……幸せも、不幸も……勇気も、分け合って進める……。だから、ユニット……なんですね。",
+    "frame": "0388_dialogue_4009.2s.jpg",
+    "t": 4009.2
+   },
+   {
+    "type": "line",
+    "speaker": "裕美",
+    "text": "ふふっ。そうだね！",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "乃々",
+    "text": "それじゃあ……み、みなさんで……。",
+    "frame": null,
+    "t": null
+   },
+   {
+    "type": "line",
+    "speaker": "裕美・ほたる・乃々",
+    "text": "いただきます♪",
+    "frame": "0389_dialogue_4022.2s.jpg",
+    "t": 4022.2
+   }
+  ]
+ }
+]

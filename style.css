@@ -33,6 +33,19 @@
     --tag-seasonal: #ff9b6a;
     --tag-collab:   #d97fb8;
 
+    /* Event type tag colours (Deresute) */
+    --tag-atapon:        #f97316;
+    --tag-live-groove:   #8b5cf6;
+    --tag-live-parade:   #3b82f6;
+    --tag-live-carnival: #10b981;
+    --tag-idolproduce:   #ec4899;
+    /* Event type tag colours (Mobamas) */
+    --tag-mob-prot:   #f97316;
+    --tag-mob-chall:  #06b6d4;
+    --tag-mob-royale: #3b82f6;
+    --tag-mob-dream:  #8b5cf6;
+    --tag-mob-puchi:  #f472b6;
+
     /* Typography */
     --font-display: "Yusei Magic", "Hiragino Maru Gothic ProN", system-ui, sans-serif;
     --font-body:    "Zen Maru Gothic", "Hiragino Maru Gothic ProN", system-ui, sans-serif;
@@ -1788,6 +1801,19 @@ input[name="dialogue-tab"] {
 .sh-tag[data-tag="seasonal"] { background: var(--tag-seasonal); }
 .sh-tag[data-tag="collab"]   { background: var(--tag-collab); }
 
+/* Deresute event type tags */
+.sh-tag[data-tag="atapon"]        { background: var(--tag-atapon); }
+.sh-tag[data-tag="live-groove"]   { background: var(--tag-live-groove); }
+.sh-tag[data-tag="live-parade"]   { background: var(--tag-live-parade); }
+.sh-tag[data-tag="live-carnival"] { background: var(--tag-live-carnival); }
+.sh-tag[data-tag="idolproduce"]   { background: var(--tag-idolproduce); }
+/* Mobamas event type tags */
+.sh-tag[data-tag="mob-prot"]   { background: var(--tag-mob-prot); }
+.sh-tag[data-tag="mob-chall"]  { background: var(--tag-mob-chall); }
+.sh-tag[data-tag="mob-royale"] { background: var(--tag-mob-royale); }
+.sh-tag[data-tag="mob-dream"]  { background: var(--tag-mob-dream); }
+.sh-tag[data-tag="mob-puchi"]  { background: var(--tag-mob-puchi); }
+
 /* ----------------------------------------------------------
    21. Rarity system
 ---------------------------------------------------------- */
@@ -2156,10 +2182,8 @@ input[name="dialogue-tab"] {
 }
 
 .event-row {
-    display: grid;
-    grid-template-columns: 110px 1.6fr 130px 2fr 0.9fr;
-    align-items: start;
-    gap: 0;
+    display: flex;
+    flex-direction: column;
     background: #ffffff;
     border-radius: var(--r-md);
     border: 1px solid var(--sh-line-soft);
@@ -2167,29 +2191,30 @@ input[name="dialogue-tab"] {
     overflow: hidden;
     border-left: 4px solid var(--sh-pink);
     transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
 }
 
 /* Dynamic accent colour from data-accent attribute */
-.event-row[data-accent="limited"]  { border-left-color: var(--tag-limited); }
-.event-row[data-accent="ranking"]  { border-left-color: var(--tag-ranking); }
-.event-row[data-accent="solo"]     { border-left-color: var(--tag-solo); }
-.event-row[data-accent="medley"]   { border-left-color: var(--tag-medley); }
-.event-row[data-accent="revival"]  { border-left-color: var(--tag-revival); }
-.event-row[data-accent="seasonal"] { border-left-color: var(--tag-seasonal); }
-.event-row[data-accent="collab"]   { border-left-color: var(--tag-collab); }
+.event-row[data-accent="atapon"]        { border-left-color: var(--tag-atapon); }
+.event-row[data-accent="live-groove"]   { border-left-color: var(--tag-live-groove); }
+.event-row[data-accent="live-parade"]   { border-left-color: var(--tag-live-parade); }
+.event-row[data-accent="live-carnival"] { border-left-color: var(--tag-live-carnival); }
+.event-row[data-accent="idolproduce"]   { border-left-color: var(--tag-idolproduce); }
+.event-row[data-accent="mob-prot"]      { border-left-color: var(--tag-mob-prot); }
+.event-row[data-accent="mob-chall"]     { border-left-color: var(--tag-mob-chall); }
+.event-row[data-accent="mob-royale"]    { border-left-color: var(--tag-mob-royale); }
+.event-row[data-accent="mob-dream"]     { border-left-color: var(--tag-mob-dream); }
+.event-row[data-accent="mob-puchi"]     { border-left-color: var(--tag-mob-puchi); }
 
 .event-row:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-2px);
 }
 
-.event-row > * {
-    padding: 14px 16px;
-    border-right: 1px solid var(--sh-line-soft);
-}
-
-.event-row > *:last-child {
-    border-right: none;
+/* Top section: date + info */
+.event-top {
+    display: flex;
+    align-items: stretch;
 }
 
 /* Date column */
@@ -2199,9 +2224,10 @@ input[name="dialogue-tab"] {
     align-items: center;
     justify-content: center;
     background: var(--sh-pink-hush);
-    gap: 0;
+    padding: 10px 14px;
+    min-width: 68px;
+    flex-shrink: 0;
     text-align: center;
-    min-height: 70px;
 }
 
 .event-date .m {
@@ -2222,44 +2248,45 @@ input[name="dialogue-tab"] {
     color: var(--sh-text-mute);
 }
 
-.event-title h3 {
+/* Info column */
+.event-info {
+    flex: 1;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    min-width: 0;
+}
+
+.event-info h3 {
     font-family: var(--font-display);
     font-size: 0.95rem;
     font-weight: 400;
     color: var(--sh-text);
-    margin: 0 0 8px 0;
+    margin: 0;
 }
 
 .event-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
-    margin-top: 6px;
 }
 
-.event-reward .item {
-    display: flex;
-    align-items: flex-start;
-    gap: 6px;
-    font-size: 0.85rem;
-    color: var(--sh-text-soft);
-    margin-bottom: 4px;
-}
-
-.event-reward .item::before {
-    content: "•";
-    color: var(--sh-pink);
+/* Full-width header image */
+.event-thumb {
+    width: 100%;
+    aspect-ratio: 4 / 1;
+    overflow: hidden;
+    background: var(--sh-bg-soft);
     flex-shrink: 0;
-    font-size: 1rem;
-    line-height: 1.4;
 }
 
-.event-note {
-    font-size: 0.82rem;
-    color: var(--sh-text-mute);
-    border-left: 2px solid var(--sh-line);
-    padding-left: 10px;
-    margin-top: 4px;
+.event-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* ----------------------------------------------------------
@@ -2924,22 +2951,6 @@ input[name="dialogue-tab"] {
 
     .card-name h3 { font-size: 0.82rem; }
 
-    /* Event rows */
-    .event-row {
-        grid-template-columns: 80px 1fr;
-        grid-template-areas:
-            "date title"
-            "date tags"
-            "reward reward"
-            "note note";
-    }
-
-    .event-row .event-date  { grid-area: date; }
-    .event-row .event-title { grid-area: title; }
-    .event-row .event-tags  { grid-area: tags; padding-top: 0; }
-    .event-row .event-reward{ grid-area: reward; }
-    .event-row .event-note  { grid-area: note; }
-
     /* Toolbar — not sticky on mobile */
     .toolbar {
         position: static;
@@ -2962,10 +2973,6 @@ input[name="dialogue-tab"] {
 
     .script-row {
         grid-template-columns: 80px 1fr;
-    }
-
-    .event-row {
-        grid-template-columns: 70px 1fr;
     }
 
     .event-date .m { font-size: 1.1rem; }
@@ -3444,6 +3451,179 @@ input[name="dialogue-tab"] {
 @media screen and (max-width: 900px) {
     .unit-search-input { min-width: 0; }
     .unit-sort-group { flex-wrap: wrap; }
+}
+.list-empty {
+    text-align: center;
+    color: var(--sh-text-soft);
+    font-size: 13px;
+    padding: 28px 0 8px;
+}
+
+/* ----------------------------------------------------------
+   シンデレラガールズ劇場 一覧
+---------------------------------------------------------- */
+.gekijo-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    align-items: start;
+}
+.gekijo-block {
+    background: #fff;
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.gekijo-thumb {
+    cursor: zoom-in;
+    background: var(--sh-pink-soft);
+    line-height: 0;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.gekijo-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: opacity 0.15s;
+}
+.gekijo-thumb::after {
+    content: "🔍 タップで全体表示";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    font-size: 10px;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0));
+    padding: 14px 8px 5px;
+    text-align: right;
+    pointer-events: none;
+}
+.gekijo-thumb:hover img { opacity: 0.85; }
+.gekijo-meta {
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.gekijo-head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.gekijo-date {
+    margin-left: auto;
+    font-size: 11px;
+    color: var(--sh-text-mute);
+    font-family: monospace;
+    white-space: nowrap;
+}
+.gekijo-title {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--sh-text);
+    line-height: 1.35;
+}
+.gekijo-ep {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    color: var(--sh-pink-deep);
+}
+.gekijo-type {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: var(--r-pill);
+    white-space: nowrap;
+}
+.gekijo-type.type-mujirushi { background: #eaecfb; color: #5560c0; }
+.gekijo-type.type-wide { background: var(--sh-pink-soft); color: var(--sh-pink-deep); }
+.gekijo-type.type-anime { background: #e6f5e6; color: #4a9a4a; }
+.gekijo-cast {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: flex-start;
+}
+.gekijo-cast .idol { width: 46px; text-align: center; }
+.gekijo-cast .idol img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+.gekijo-cast .idol.shin img { border: 2px solid var(--sh-pink); }
+.gekijo-cast .idol .nm {
+    display: block;
+    font-size: 9px;
+    color: var(--sh-text-soft);
+    margin-top: 3px;
+}
+.gekijo-cast .idol-empty {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px dashed var(--sh-line);
+    box-sizing: border-box;
+}
+.gekijo-cast .idol.no-icon { width: 46px; text-align: center; }
+.gekijo-cast .idol.no-icon::before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--sh-pink-soft);
+    margin: 0 auto;
+}
+.gekijo-rel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 2px;
+}
+.gekijo-rel::before {
+    content: "関連ページ";
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    color: var(--sh-text-mute);
+    margin-bottom: 1px;
+}
+.gekijo-rel .rel-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 11px;
+    background: var(--sh-bg-alt);
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-pill);
+    color: var(--sh-pink-deep);
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 1.3;
+    transition: background 0.18s, transform 0.18s, box-shadow 0.18s;
+}
+.gekijo-rel .rel-btn::before {
+    content: "◆";
+    color: var(--sh-pink);
+    font-size: 0.5rem;
+    flex-shrink: 0;
+}
+.gekijo-rel .rel-btn:hover {
+    background: var(--sh-pink-soft);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+    color: var(--sh-pink-deep);
 }
 .size-filter {
     display: flex;
@@ -6311,6 +6491,46 @@ input[name="dialogue-tab"] {
     text-align: center;
 }
 
+/* ゲームセンター等: 単体スクショの表示 */
+.gc-figure { margin: 0; }
+.gc-shot {
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+    display: block;
+    border-radius: var(--r-sm);
+    border: 1px solid var(--sh-line);
+    box-shadow: var(--shadow-sm);
+    cursor: zoom-in;
+    transition: opacity 0.15s;
+}
+.gc-shot:hover { opacity: 0.88; }
+
+/* ウワサ等: 横長バナーの縦積み */
+.uwasa-stack { display: flex; flex-direction: column; gap: 14px; margin-top: 6px; }
+.uwasa-stack .gc-shot { max-width: 760px; }
+
+/* スタンプ */
+.stamp-shot {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    background: var(--sh-bg-alt);
+    border-radius: var(--r-sm);
+    border: 1px solid var(--sh-line);
+    cursor: zoom-in;
+    transition: opacity 0.15s;
+}
+.stamp-shot:hover { opacity: 0.88; }
+
+/* ローディング: ループ再生する短尺動画 */
+.loop-vid {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #000;
+}
+
 /* ----------------------------------------------------------
    Popmas speech bubble (P's line)
 ---------------------------------------------------------- */
@@ -6649,6 +6869,8 @@ input[name="dialogue-tab"] {
     background: var(--grad-sugar-soft);
     border: 1.5px dashed rgba(253,137,185,0.30);
 }
+/* Twitter告知行は画像枠なし（プレースホルダーも非表示） */
+.dss-lines .ev-dialog-row.no-shot.no-frame::before { display: none; }
 /* モバマス系の縦型フレーム（3:4前後）用のshot枠 */
 .dss-lines.mobamas-shots .ev-shot,
 .dss-lines.mobamas-shots .ev-dialog-row.no-shot::before {
@@ -6706,6 +6928,34 @@ input[name="dialogue-tab"] {
     .dss-title-card { width: 100%; }
 }
 
+/* dss-commu 補助: 楽曲MV／ログのみ注記 */
+.dss-note {
+    font-size: 12.5px;
+    color: var(--sh-text-soft);
+    background: var(--sh-bg-alt);
+    border: 1px dashed var(--sh-line);
+    border-radius: var(--r-sm);
+    padding: 10px 12px;
+    margin-top: 12px;
+}
+
+/* ============================================================
+   EVERLASTING & EVERAFTER: イベント区切り
+============================================================ */
+.ee-block { margin-bottom: 40px; }
+.ee-head {
+    border-bottom: 2px solid var(--sh-pink);
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+}
+.ee-head h2 {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    color: var(--sh-pink-deep);
+    letter-spacing: 0.04em;
+    margin: 0;
+}
+
 /* ============================================================
    アイドルプロデュース（IdolProduce1st）: 場所タブ内のセクション見出し
 ============================================================ */
@@ -6720,3 +6970,488 @@ input[name="dialogue-tab"] {
     margin: 18px 0 10px;
 }
 .ip1-sub > .tab-list { margin-top: 4px; }
+
+/* ============================================================
+   歌唱曲一覧（General/SongList.html）
+============================================================ */
+.song-list { display: flex; flex-direction: column; gap: 12px; }
+
+.song-item {
+    background: var(--sh-bg-card);
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+.song-item[open] { box-shadow: var(--shadow-md); }
+
+.song-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
+.song-head::-webkit-details-marker { display: none; }
+
+.song-jk { flex-shrink: 0; width: 62px; height: 62px; }
+.song-jk-img {
+    width: 62px; height: 62px;
+    border-radius: var(--r-md);
+    object-fit: cover;
+    display: block;
+    box-shadow: var(--shadow-sm);
+}
+.song-jk-none {
+    display: flex; align-items: center; justify-content: center;
+    border-radius: var(--r-md);
+    background: var(--sh-pink-mist);
+    color: var(--sh-pink);
+    font-size: 26px;
+}
+
+.song-headmain { flex: 1; min-width: 0; }
+.song-title {
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--sh-text);
+    line-height: 1.35;
+    display: flex; align-items: center; flex-wrap: wrap; gap: 6px;
+    margin-bottom: 5px;
+}
+.song-singers { gap: 6px; }
+.song-singers .idol { width: 38px; }
+.song-singers .idol .ic img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto; }
+.song-singers .idol.shin .ic img { border: 2px solid var(--sh-pink); }
+.song-singers .idol .nm { display: block; font-size: 8.5px; color: var(--sh-text-soft); margin-top: 2px; text-align: center; }
+.song-singers .idol.no-icon .nm {
+    display: inline-block;
+    font-size: 10px;
+    color: var(--sh-pink-deep);
+    background: var(--sh-pink-mist);
+    border-radius: var(--r-pill);
+    padding: 3px 8px;
+    margin-top: 8px;
+}
+
+/* 属性バッジ */
+.song-attr, .dere-attr {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: var(--r-pill);
+    padding: 2px 9px;
+    line-height: 1.5;
+}
+.attr-cute { background: #ef2782; }
+.attr-cool { background: #006aff; }
+.attr-passion { background: #f49207; }
+.attr-all { background: linear-gradient(100deg, #ef2782 33.33%, #006aff 33.33% 66.67%, #f49207 66.67%); }
+
+.song-caret {
+    flex-shrink: 0;
+    width: 10px; height: 10px;
+    border-right: 2px solid var(--sh-pink);
+    border-bottom: 2px solid var(--sh-pink);
+    transform: rotate(45deg);
+    transition: transform 0.2s;
+    margin-right: 4px;
+}
+.song-item[open] .song-caret { transform: rotate(-135deg); }
+
+/* 本文 */
+.song-body {
+    padding: 4px 14px 16px;
+    border-top: 1px dashed var(--sh-line-soft);
+}
+.song-note {
+    font-size: 12px;
+    color: var(--sh-text-soft);
+    background: var(--sh-pink-mist);
+    border-radius: var(--r-md);
+    padding: 8px 11px;
+    margin: 12px 0 6px;
+    line-height: 1.6;
+}
+.song-orig-singers { font-size: 12px; color: var(--sh-text-soft); margin: 8px 0 4px; line-height: 1.6; }
+.song-orig-singers b { color: var(--sh-pink-deep); }
+
+.song-meta { margin: 10px 0 0; }
+.song-mrow { display: flex; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--sh-line-soft); font-size: 12.5px; }
+.song-mrow dt { flex-shrink: 0; width: 78px; color: var(--sh-text-mute); font-weight: 700; }
+.song-mrow dd { flex: 1; margin: 0; color: var(--sh-text); line-height: 1.55; }
+
+/* デレステ情報 */
+.song-sub {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--sh-pink-deep);
+    border-left: 3px solid var(--sh-pink);
+    padding-left: 7px;
+    margin: 16px 0 8px;
+}
+.dere-info { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+.dere-fact { font-size: 11.5px; color: var(--sh-text-soft); }
+.dere-fact b { color: var(--sh-text-mute); font-weight: 700; margin-right: 4px; }
+.dere-levels { display: flex; flex-wrap: wrap; gap: 6px; }
+.dere-lv {
+    display: flex; flex-direction: column; align-items: center;
+    min-width: 52px;
+    background: var(--sh-bg-alt);
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-md);
+    padding: 5px 8px;
+}
+.dere-lv .lv-name { font-size: 8.5px; color: var(--sh-text-mute); letter-spacing: 0.02em; }
+.dere-lv .lv-num { font-size: 16px; font-weight: 700; color: var(--sh-pink-deep); line-height: 1.2; }
+
+/* イベントボタン */
+.song-rel { margin: 14px 0 4px; }
+.song-rel .rel-btn {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 7px 14px;
+    background: var(--sh-bg-alt);
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-pill);
+    color: var(--sh-pink-deep);
+    text-decoration: none;
+    font-size: 12px; font-weight: 700;
+    transition: background 0.18s, transform 0.18s, box-shadow 0.18s;
+}
+.song-rel .rel-btn::before { content: "◆"; color: var(--sh-pink); font-size: 0.5rem; }
+.song-rel .rel-btn:hover { background: var(--sh-pink-soft); transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+
+/* LIVE披露 */
+.song-lives { margin-top: 14px; border: 1px solid var(--sh-line-soft); border-radius: var(--r-md); overflow: hidden; }
+.song-lives > summary {
+    cursor: pointer; list-style: none;
+    padding: 9px 12px;
+    background: var(--sh-bg-alt);
+    font-size: 12.5px; font-weight: 700; color: var(--sh-pink-deep);
+}
+.song-lives > summary::-webkit-details-marker { display: none; }
+.song-lives > summary::after { content: "＋"; float: right; color: var(--sh-pink); }
+.song-lives[open] > summary::after { content: "－"; }
+.live-table { padding: 4px 0; }
+.live-row {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    gap: 2px 10px;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--sh-line-soft);
+    font-size: 11.5px;
+}
+.live-row:last-child { border-bottom: none; }
+.live-date { color: var(--sh-text-mute); font-weight: 700; grid-row: span 2; }
+.live-date .lv-tag {
+    display: inline-block; margin-left: 4px;
+    font-size: 8.5px; font-weight: 700; color: #fff; background: var(--sh-pink);
+    border-radius: var(--r-pill); padding: 1px 5px; vertical-align: middle;
+}
+.live-ev { color: var(--sh-text); line-height: 1.5; }
+.live-venue { display: block; font-size: 10.5px; color: var(--sh-text-mute); margin-top: 1px; }
+.live-perf { grid-column: 2; color: var(--sh-text-soft); line-height: 1.55; }
+
+.song-source { font-size: 10.5px; color: var(--sh-text-mute); margin-top: 14px; line-height: 1.6; }
+
+@media (max-width: 640px) {
+    .song-jk, .song-jk-img { width: 52px; height: 52px; }
+    .song-title { font-size: 14px; }
+    .song-singers .idol { width: 34px; }
+    .song-singers .idol .ic img { width: 30px; height: 30px; }
+    .live-row { grid-template-columns: 74px 1fr; }
+    .song-mrow dt { width: 66px; }
+    .song-cd-area { flex-direction: column; }
+    .song-jk2 { width: 100%; max-width: 160px; margin: 0 auto; }
+    .filter-row { flex-direction: column; }
+    .filter-input, .filter-select { width: 100%; max-width: 100%; }
+    .solo-remix-item { flex-direction: column; }
+    .solo-remix-jk { width: 100%; max-width: 140px; margin: 0 auto; }
+}
+
+/* 検索・絞り込みフィルター */
+.song-filter {
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    background: var(--sh-pink-mist);
+    border-radius: var(--r-lg);
+    border: 1px solid var(--sh-line-soft);
+}
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+.filter-input {
+    flex: 2;
+    min-width: 160px;
+    padding: 8px 12px;
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-pill);
+    font-size: 13px;
+    background: #fff;
+    color: var(--sh-text);
+    outline: none;
+    transition: border-color 0.18s;
+}
+.filter-input:focus { border-color: var(--sh-pink); }
+.filter-select {
+    flex: 1;
+    min-width: 140px;
+    padding: 8px 10px;
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-pill);
+    font-size: 13px;
+    background: #fff;
+    color: var(--sh-text);
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.18s;
+}
+.filter-select:focus { border-color: var(--sh-pink); }
+.filter-result {
+    margin: 8px 0 0;
+    font-size: 11.5px;
+    color: var(--sh-text-mute);
+    text-align: right;
+}
+.filter-result #sf-msg {
+    font-weight: 700;
+    color: var(--sh-pink-deep);
+}
+
+/* 2枚目ジャケット（CDジャケット）+ メタ情報エリア */
+.song-cd-area {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.song-cd-area .song-meta { flex: 1; margin: 0; }
+.song-jk2 {
+    flex-shrink: 0;
+    width: 28%;
+    max-width: 120px;
+    min-width: 70px;
+}
+.song-jk2-img {
+    width: 100%;
+    display: block;
+    border-radius: var(--r-md);
+    object-fit: cover;
+    box-shadow: var(--shadow-sm);
+}
+
+/* ソロ・リミックス収録CDセクション */
+.song-solo-remix { margin-top: 4px; }
+.solo-remix-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    background: var(--sh-bg-alt);
+    border: 1px solid var(--sh-line-soft);
+    border-radius: var(--r-md);
+}
+.solo-remix-jk {
+    flex-shrink: 0;
+    width: 22%;
+    max-width: 90px;
+    min-width: 60px;
+}
+.solo-remix-jk-img {
+    width: 100%;
+    display: block;
+    border-radius: var(--r-md);
+    object-fit: cover;
+    box-shadow: var(--shadow-sm);
+}
+.solo-remix-info { flex: 1; margin: 0; }
+
+/* ============================================================
+   参加ライブ一覧（LiveList）
+============================================================ */
+.sh-tag[data-tag="cast"] { background: var(--sh-pink); }
+.sh-tag[data-tag="xr"]   { background: #7b6fff; }
+
+.ll-dot-cast { background: var(--sh-pink); }
+.ll-dot-xr   { background: #7b6fff; }
+
+.ll-filters { margin: 12px 0 8px; }
+
+.ll-concert-card,
+.ll-song-card {
+    border: 1px solid var(--sh-line);
+    border-radius: var(--r-sm);
+    margin-bottom: 10px;
+    background: var(--sh-bg-card);
+    overflow: hidden;
+}
+.ll-concert-card[open] { border-color: var(--sh-pink-soft); }
+.ll-song-card[open]    { border-color: #c4bfff; }
+
+.ll-concert-head,
+.ll-song-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 16px;
+    cursor: pointer;
+    list-style: none;
+    flex-wrap: wrap;
+    user-select: none;
+}
+.ll-concert-head::-webkit-details-marker,
+.ll-song-head::-webkit-details-marker { display: none; }
+.ll-concert-head::after,
+.ll-song-head::after {
+    content: '▶';
+    font-size: 0.68rem;
+    color: var(--sh-text-mute);
+    margin-left: auto;
+    transition: transform 0.18s;
+    flex-shrink: 0;
+}
+.ll-concert-card[open] .ll-concert-head::after,
+.ll-song-card[open] .ll-song-head::after { transform: rotate(90deg); }
+
+.ll-date { display: flex; flex-direction: column; align-items: center; min-width: 46px; flex-shrink: 0; }
+.ll-y    { font-size: 0.7rem; color: var(--sh-text-mute); line-height: 1; }
+.ll-md   { font-size: 0.9rem; font-weight: 700; color: var(--sh-text); }
+.ll-date-sm { font-size: 0.8rem; color: var(--sh-text-mute); min-width: 80px; flex-shrink: 0; }
+
+.ll-event-name { flex: 1; font-size: 0.88rem; color: var(--sh-text); line-height: 1.5; }
+.ll-song-title { flex: 1; font-size: 0.92rem; font-weight: 600; color: var(--sh-text); }
+.ll-song-count { font-size: 0.8rem; color: var(--sh-text-mute); flex-shrink: 0; }
+
+.ll-setlist,
+.ll-perf-list {
+    border-top: 1px solid var(--sh-line);
+    background: var(--sh-bg-alt);
+    padding: 4px 0;
+}
+.ll-track {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    padding: 5px 16px;
+    border-bottom: 1px dotted var(--sh-line);
+    flex-wrap: wrap;
+}
+.ll-track:last-child { border-bottom: none; }
+.ll-track-num   { font-size: 0.73rem; color: var(--sh-text-mute); min-width: 36px; flex-shrink: 0; }
+.ll-track-title { font-size: 0.88rem; font-weight: 600; color: var(--sh-text); min-width: 150px; }
+.ll-track-with  { font-size: 0.8rem; color: var(--sh-text-soft); flex: 1; }
+
+.ll-perf-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 6px 16px;
+    border-bottom: 1px dotted var(--sh-line);
+    flex-wrap: wrap;
+}
+.ll-perf-row:last-child { border-bottom: none; }
+.ll-perf-num   { font-size: 0.73rem; color: var(--sh-text-mute); flex-shrink: 0; }
+.ll-perf-event { font-size: 0.86rem; color: var(--sh-text); flex: 1; min-width: 180px; }
+.ll-perf-with  { font-size: 0.8rem; color: var(--sh-text-soft); flex-basis: 100%; padding-left: 100px; }
+
+@media (max-width: 600px) {
+    .ll-track, .ll-perf-row { padding: 5px 10px; }
+    .ll-perf-with { padding-left: 0; }
+    .ll-track-title { min-width: 90px; }
+    .ll-perf-event { min-width: 0; }
+}
+
+/* ============================================================
+   衣装一覧（CostumeList）
+============================================================ */
+.costume-ol {
+    margin: 20px 0 0;
+    padding-left: 1.8em;
+    line-height: 1.9;
+    columns: 2;
+    column-gap: 40px;
+}
+.costume-ol li {
+    break-inside: avoid;
+    padding: 2px 0;
+    font-size: 0.92rem;
+    color: var(--sh-text);
+}
+@media (max-width: 600px) {
+    .costume-ol { columns: 1; }
+}
+
+/* ============================================================
+   ルームアイテム（Other_Room）
+============================================================ */
+.room-card {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    border: 1px solid var(--sh-line);
+    border-radius: var(--r-sm);
+    background: var(--sh-bg-card);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.room-card-img {
+    width: 260px;
+    flex-shrink: 0;
+    object-fit: cover;
+    cursor: pointer;
+    display: block;
+    background: #111;
+}
+.room-card-body {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 16px 14px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.room-card-name {
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: var(--sh-text);
+    margin: 0 0 6px;
+    line-height: 1.4;
+}
+.room-card-desc {
+    font-size: 0.86rem;
+    color: var(--sh-text-soft);
+    line-height: 1.75;
+    margin: 0 0 10px;
+}
+.room-card-stats {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 3px 12px;
+    font-size: 0.82rem;
+}
+.room-card-stats dt {
+    color: var(--sh-text-mute);
+    white-space: nowrap;
+}
+.room-card-stats dd {
+    color: var(--sh-text);
+    margin: 0;
+}
+.room-card-stats .unsellable {
+    color: #e04040;
+    font-weight: 600;
+}
+@media (max-width: 640px) {
+    .room-card { flex-direction: column; }
+    .room-card-img { width: 100%; max-height: 200px; }
+    .room-card-body { padding: 12px; }
+}
