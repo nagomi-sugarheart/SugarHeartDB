@@ -23,17 +23,63 @@
 <body>
 <script src="components/header.js"></script>
 
-
 <section class="page-hero">
-    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Mobamas/index.html">MOBAMAS</a> · <strong>バレンタイン（モバマス）</strong></div>
-    <h1>バレンタイン（モバマス） <span class="sub">/ SEASONAL · MOBAMAS</span></h1>
-    <p class="summary">モバマスの季節イベントにおける心ちゃんの登場・セリフをまとめています。</p>
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Mobamas/index.html">MOBAMAS</a> · <a href="Mobamas/SeasonalEvents/SeasonalEvents.html">季節イベント</a> · <strong>バレンタイン</strong></div>
+    <h1>バレンタイン <span class="sub">/ VALENTINE · MOBAMAS</span></h1>
 </section>
 
-<div class="box-area">
-    <p class="box-text placeholder-text">準備中</p>
+<div class="page">
+
+<div class="tab-group">
+<div class="tab-list">
+    <button class="tab-item active" onclick="switchTab(this,'vt-2022')">2022</button>
 </div>
 
+<!-- ===== 2022 ===== -->
+<div class="tab-panel active" data-tab="vt-2022">
+    <div class="box-area">
+        <h2 class="box-title">2022年</h2>
 
+        <div class="ev-entry">
+            <div class="ev-condition"><span class="ev-label">シーン1</span></div>
+            <div class="ev-dialog-row">
+                <div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Mobamas/SeasonalEvents/Valentine/2022_1" alt="2022バレンタインギフト受け取り" loading="lazy"></div>
+                <div class="ev-text">心からギフトをもらった！</div>
+            </div>
+        </div>
+        <hr class="ev-divider">
+        <div class="ev-entry">
+            <div class="ev-condition"><span class="ev-label">シーン2</span></div>
+            <div class="ev-dialog-row">
+                <div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Mobamas/SeasonalEvents/Valentine/2022_2" alt="2022バレンタインショット" loading="lazy"></div>
+                <div class="ev-text">バレンタインにバーで待ち合わせ♪なんて…もしかして、はぁととプロデューサーって、スウィーティーな…って、逃んなし☆最後まで聞いとけ☆</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div><!-- /.tab-group -->
+
+    <div class="related-foot">
+        <div class="related">
+            <span class="lbl">RELATED //</span>
+            <a href="Mobamas/SeasonalEvents/SeasonalEvents_Birthday.html">誕生日</a>
+            <a href="Mobamas/SeasonalEvents/SeasonalEvents_WhiteDay.html">ホワイトデー</a>
+            <a href="Mobamas/SeasonalEvents/SeasonalEvents_Anniversary.html">Anniversary</a>
+        </div>
+        <div class="nav-events">
+            <a href="Mobamas/SeasonalEvents/SeasonalEvents.html">◀ 季節イベント一覧へ</a>
+        </div>
+    </div>
+
+</div><!-- /.page -->
+
+<script src="components/common.js"></script>
+
+<div class="sh-lightbox" id="sh-lightbox">
+    <span class="sh-lightbox-close" id="sh-lightbox-close">×</span>
+    <img class="sh-lightbox-img" id="sh-lightbox-img" src="" alt="">
+</div>
 </body>
 </html>

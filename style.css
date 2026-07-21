@@ -1735,6 +1735,43 @@ input[name="dialogue-tab"] {
     height: 100%;
 }
 
+/* MV タブプレイヤー */
+.mv-block {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.mv-tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.mv-tab {
+    padding: 5px 14px;
+    border: 1.5px solid var(--sh-line-soft);
+    border-radius: var(--r-lg);
+    background: var(--sh-bg-soft);
+    color: var(--sh-text-mute);
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.mv-tab.active {
+    background: var(--grad-sugar);
+    border-color: transparent;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.mv-tab:hover:not(.active) {
+    background: var(--sh-pink-hush);
+    border-color: var(--sh-pink-light);
+    color: var(--sh-pink-deep);
+}
+
 /* ----------------------------------------------------------
    19. Pill buttons
 ---------------------------------------------------------- */
@@ -2183,7 +2220,7 @@ input[name="dialogue-tab"] {
 
 .event-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     background: #ffffff;
     border-radius: var(--r-md);
     border: 1px solid var(--sh-line-soft);
@@ -7025,7 +7062,6 @@ input[name="dialogue-tab"] {
 .song-singers { gap: 6px; }
 .song-singers .idol { width: 38px; }
 .song-singers .idol .ic img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto; }
-.song-singers .idol.shin .ic img { border: 2px solid var(--sh-pink); }
 .song-singers .idol .nm { display: block; font-size: 8.5px; color: var(--sh-text-soft); margin-top: 2px; text-align: center; }
 .song-singers .idol.no-icon .nm {
     display: inline-block;

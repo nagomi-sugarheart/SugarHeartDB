@@ -19,6 +19,16 @@
     {
       "name": "アイマスDB様",
       "url": "https://imas-db.jp/"
+    },
+    {
+      "name": "デレステ攻略Wiki（Gamerch）様",
+      "url": "https://gamerch.com/cgstarlight/",
+      "note": "デレステ楽曲情報"
+    },
+    {
+      "name": "アイドルマスター楽曲メモ（music765plus）様",
+      "url": "https://music765plus.net/",
+      "note": "CD・作詞作曲・LIVE披露情報"
     }
   ],
   "providers": [
