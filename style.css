@@ -33,6 +33,19 @@
     --tag-seasonal: #ff9b6a;
     --tag-collab:   #d97fb8;
 
+    /* Event type tag colours (Deresute) */
+    --tag-atapon:        #f97316;
+    --tag-live-groove:   #8b5cf6;
+    --tag-live-parade:   #3b82f6;
+    --tag-live-carnival: #10b981;
+    --tag-idolproduce:   #ec4899;
+    /* Event type tag colours (Mobamas) */
+    --tag-mob-prot:   #f97316;
+    --tag-mob-chall:  #06b6d4;
+    --tag-mob-royale: #3b82f6;
+    --tag-mob-dream:  #8b5cf6;
+    --tag-mob-puchi:  #f472b6;
+
     /* Typography */
     --font-display: "Yusei Magic", "Hiragino Maru Gothic ProN", system-ui, sans-serif;
     --font-body:    "Zen Maru Gothic", "Hiragino Maru Gothic ProN", system-ui, sans-serif;
@@ -1788,6 +1801,19 @@ input[name="dialogue-tab"] {
 .sh-tag[data-tag="seasonal"] { background: var(--tag-seasonal); }
 .sh-tag[data-tag="collab"]   { background: var(--tag-collab); }
 
+/* Deresute event type tags */
+.sh-tag[data-tag="atapon"]        { background: var(--tag-atapon); }
+.sh-tag[data-tag="live-groove"]   { background: var(--tag-live-groove); }
+.sh-tag[data-tag="live-parade"]   { background: var(--tag-live-parade); }
+.sh-tag[data-tag="live-carnival"] { background: var(--tag-live-carnival); }
+.sh-tag[data-tag="idolproduce"]   { background: var(--tag-idolproduce); }
+/* Mobamas event type tags */
+.sh-tag[data-tag="mob-prot"]   { background: var(--tag-mob-prot); }
+.sh-tag[data-tag="mob-chall"]  { background: var(--tag-mob-chall); }
+.sh-tag[data-tag="mob-royale"] { background: var(--tag-mob-royale); }
+.sh-tag[data-tag="mob-dream"]  { background: var(--tag-mob-dream); }
+.sh-tag[data-tag="mob-puchi"]  { background: var(--tag-mob-puchi); }
+
 /* ----------------------------------------------------------
    21. Rarity system
 ---------------------------------------------------------- */
@@ -2156,10 +2182,8 @@ input[name="dialogue-tab"] {
 }
 
 .event-row {
-    display: grid;
-    grid-template-columns: 110px 1.6fr 130px 2fr 0.9fr;
-    align-items: start;
-    gap: 0;
+    display: flex;
+    flex-direction: column;
     background: #ffffff;
     border-radius: var(--r-md);
     border: 1px solid var(--sh-line-soft);
@@ -2167,29 +2191,30 @@ input[name="dialogue-tab"] {
     overflow: hidden;
     border-left: 4px solid var(--sh-pink);
     transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
 }
 
 /* Dynamic accent colour from data-accent attribute */
-.event-row[data-accent="limited"]  { border-left-color: var(--tag-limited); }
-.event-row[data-accent="ranking"]  { border-left-color: var(--tag-ranking); }
-.event-row[data-accent="solo"]     { border-left-color: var(--tag-solo); }
-.event-row[data-accent="medley"]   { border-left-color: var(--tag-medley); }
-.event-row[data-accent="revival"]  { border-left-color: var(--tag-revival); }
-.event-row[data-accent="seasonal"] { border-left-color: var(--tag-seasonal); }
-.event-row[data-accent="collab"]   { border-left-color: var(--tag-collab); }
+.event-row[data-accent="atapon"]        { border-left-color: var(--tag-atapon); }
+.event-row[data-accent="live-groove"]   { border-left-color: var(--tag-live-groove); }
+.event-row[data-accent="live-parade"]   { border-left-color: var(--tag-live-parade); }
+.event-row[data-accent="live-carnival"] { border-left-color: var(--tag-live-carnival); }
+.event-row[data-accent="idolproduce"]   { border-left-color: var(--tag-idolproduce); }
+.event-row[data-accent="mob-prot"]      { border-left-color: var(--tag-mob-prot); }
+.event-row[data-accent="mob-chall"]     { border-left-color: var(--tag-mob-chall); }
+.event-row[data-accent="mob-royale"]    { border-left-color: var(--tag-mob-royale); }
+.event-row[data-accent="mob-dream"]     { border-left-color: var(--tag-mob-dream); }
+.event-row[data-accent="mob-puchi"]     { border-left-color: var(--tag-mob-puchi); }
 
 .event-row:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-2px);
 }
 
-.event-row > * {
-    padding: 14px 16px;
-    border-right: 1px solid var(--sh-line-soft);
-}
-
-.event-row > *:last-child {
-    border-right: none;
+/* Top section: date + info */
+.event-top {
+    display: flex;
+    align-items: stretch;
 }
 
 /* Date column */
@@ -2199,9 +2224,10 @@ input[name="dialogue-tab"] {
     align-items: center;
     justify-content: center;
     background: var(--sh-pink-hush);
-    gap: 0;
+    padding: 10px 14px;
+    min-width: 68px;
+    flex-shrink: 0;
     text-align: center;
-    min-height: 70px;
 }
 
 .event-date .m {
@@ -2222,27 +2248,38 @@ input[name="dialogue-tab"] {
     color: var(--sh-text-mute);
 }
 
-.event-title {
+/* Info column */
+.event-info {
+    flex: 1;
+    padding: 12px 16px;
     display: flex;
-    align-items: center;
-    gap: 12px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    min-width: 0;
 }
 
-.event-title h3 {
+.event-info h3 {
     font-family: var(--font-display);
     font-size: 0.95rem;
     font-weight: 400;
     color: var(--sh-text);
-    margin: 0 0 8px 0;
+    margin: 0;
 }
 
+.event-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+/* Full-width header image */
 .event-thumb {
-    width: 80px;
-    aspect-ratio: 16 / 9;
-    flex-shrink: 0;
-    border-radius: var(--r-sm);
+    width: 100%;
+    aspect-ratio: 4 / 1;
     overflow: hidden;
     background: var(--sh-bg-soft);
+    flex-shrink: 0;
 }
 
 .event-thumb img {
@@ -2250,38 +2287,6 @@ input[name="dialogue-tab"] {
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-.event-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    margin-top: 6px;
-}
-
-.event-reward .item {
-    display: flex;
-    align-items: flex-start;
-    gap: 6px;
-    font-size: 0.85rem;
-    color: var(--sh-text-soft);
-    margin-bottom: 4px;
-}
-
-.event-reward .item::before {
-    content: "•";
-    color: var(--sh-pink);
-    flex-shrink: 0;
-    font-size: 1rem;
-    line-height: 1.4;
-}
-
-.event-note {
-    font-size: 0.82rem;
-    color: var(--sh-text-mute);
-    border-left: 2px solid var(--sh-line);
-    padding-left: 10px;
-    margin-top: 4px;
 }
 
 /* ----------------------------------------------------------
@@ -2946,24 +2951,6 @@ input[name="dialogue-tab"] {
 
     .card-name h3 { font-size: 0.82rem; }
 
-    /* Event rows */
-    .event-row {
-        grid-template-columns: 80px 1fr;
-        grid-template-areas:
-            "date title"
-            "date tags"
-            "reward reward"
-            "note note";
-    }
-
-    .event-row .event-date  { grid-area: date; }
-    .event-row .event-title { grid-area: title; }
-    .event-row .event-tags  { grid-area: tags; padding-top: 0; }
-    .event-row .event-reward{ grid-area: reward; }
-    .event-row .event-note  { grid-area: note; }
-
-    .event-thumb { width: 60px; }
-
     /* Toolbar — not sticky on mobile */
     .toolbar {
         position: static;
@@ -2987,12 +2974,6 @@ input[name="dialogue-tab"] {
     .script-row {
         grid-template-columns: 80px 1fr;
     }
-
-    .event-row {
-        grid-template-columns: 70px 1fr;
-    }
-
-    .event-thumb { width: 52px; }
 
     .event-date .m { font-size: 1.1rem; }
 }
