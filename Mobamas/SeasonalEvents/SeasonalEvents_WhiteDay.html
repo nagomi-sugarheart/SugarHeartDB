@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -23,16 +23,71 @@
 <body>
 <script src="components/header.js"></script>
 
-
 <section class="page-hero">
-    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Mobamas/index.html">MOBAMAS</a> · <strong>ホワイトデー（モバマス）</strong></div>
-    <h1>ホワイトデー（モバマス） <span class="sub">/ SEASONAL · MOBAMAS</span></h1>
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Mobamas/index.html">MOBAMAS</a> · <a href="Mobamas/SeasonalEvents/SeasonalEvents.html">季節イベント</a> · <strong>ホワイトデー</strong></div>
+    <h1>ホワイトデー <span class="sub">/ WHITE DAY · MOBAMAS</span></h1>
 </section>
 
-<div class="box-area">
-    <p class="box-text placeholder-text">準備中</p>
+<div class="page">
+
+<div class="tab-group">
+<div class="tab-list">
+    <button class="tab-item active" onclick="switchTab(this,'wd-2022')">2022</button>
 </div>
 
+<!-- ===== 2022 ===== -->
+<div class="tab-panel active" data-tab="wd-2022">
+    <div class="box-area">
+        <h2 class="box-title">2022年</h2>
 
+        <div class="ev-entry">
+            <div class="ev-condition"><span class="ev-label">シーン1</span></div>
+            <div class="ev-dialog-row">
+                <div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Mobamas/SeasonalEvents/WhiteDay/2022_1" alt="2022ホワイトデーショット" loading="lazy"></div>
+                <div class="ev-text">急に呼び出すなんて、はぁとが恋しくなっちゃった？</div>
+            </div>
+        </div>
+        <hr class="ev-divider">
+        <div class="ev-entry">
+            <div class="ev-condition"><span class="ev-label">シーン2</span></div>
+            <div class="ev-dialog-row">
+                <div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Mobamas/SeasonalEvents/WhiteDay/2022_2" alt="2022ホワイトデーショット" loading="lazy"></div>
+                <div class="ev-text">もう、お返しなんてよかったのにい〜。でもぉ、くれるってことは〜…あの時の気持ちが返ってきたってこと？え？違う？</div>
+            </div>
+        </div>
+        <hr class="ev-divider">
+        <div class="ev-entry">
+            <div class="ev-condition"><span class="ev-label">シーン3</span></div>
+            <div class="ev-dialog-row">
+                <div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Mobamas/SeasonalEvents/WhiteDay/2022_3" alt="2022ホワイトデーショット" loading="lazy"></div>
+                <div class="ev-text">熱烈〜なお手紙に、はぁとのハートは爆発寸前☆スウィーティーでセクシーなはぁとにメロメロでしょ？書いてない？照れんなって☆</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div><!-- /.tab-group -->
+
+    <div class="related-foot">
+        <div class="related">
+            <span class="lbl">RELATED //</span>
+            <a href="Mobamas/SeasonalEvents/SeasonalEvents_Birthday.html">誕生日</a>
+            <a href="Mobamas/SeasonalEvents/SeasonalEvents_Valentine.html">バレンタイン</a>
+            <a href="Mobamas/SeasonalEvents/SeasonalEvents_Anniversary.html">Anniversary</a>
+        </div>
+        <div class="nav-events">
+            <a href="Mobamas/SeasonalEvents/SeasonalEvents.html">◀ 季節イベント一覧へ</a>
+        </div>
+    </div>
+
+</div><!-- /.page -->
+
+<script src="components/common.js"></script>
+
+<div class="sh-lightbox" id="sh-lightbox">
+    <span class="sh-lightbox-close" id="sh-lightbox-close">×</span>
+    <img class="sh-lightbox-img" id="sh-lightbox-img" src="" alt="">
+</div>
 </body>
 </html>
