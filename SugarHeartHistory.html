@@ -44,10 +44,13 @@
         }
         .tl-filter-btn:hover { border-color: var(--sh-pink); color: var(--sh-pink-deep); }
         .tl-filter-btn.active { border-color: transparent; color: #fff; }
-        .tl-filter-btn[data-filter="all"].active   { background: var(--sh-pink-deep); }
+        .tl-filter-btn[data-filter="all"].active    { background: var(--sh-pink-deep); }
         .tl-filter-btn[data-filter="ds"].active    { background: #8b5cf6; }
         .tl-filter-btn[data-filter="mb"].active    { background: #f97316; }
         .tl-filter-btn[data-filter="unit"].active  { background: #10b981; }
+        .tl-filter-btn[data-filter="collab"].active { background: #ec4899; }
+        .tl-filter-btn[data-filter="live"].active  { background: #0ea5e9; }
+        .tl-filter-btn[data-filter="cd"].active    { background: #6366f1; }
 
         /* 年グループ */
         .tl-year-group { margin-bottom: 32px; }
@@ -96,6 +99,9 @@
         .tl-row[data-cat="mb-event"] { border-left-color: #f97316; }
         .tl-row[data-cat="mb-card"]  { border-left-color: #f59e0b; }
         .tl-row[data-cat="unit"]     { border-left-color: #10b981; }
+        .tl-row[data-cat="collab"]   { border-left-color: #ec4899; }
+        .tl-row[data-cat="live"]     { border-left-color: #0ea5e9; }
+        .tl-row[data-cat="cd"]       { border-left-color: #6366f1; }
 
         .tl-date {
             font-family: monospace;
@@ -124,6 +130,9 @@
         .tl-tag[data-cat="mb-event"] { background: #f97316; }
         .tl-tag[data-cat="mb-card"]  { background: #d97706; }
         .tl-tag[data-cat="unit"]     { background: #10b981; }
+        .tl-tag[data-cat="collab"]   { background: #ec4899; }
+        .tl-tag[data-cat="live"]     { background: #0ea5e9; }
+        .tl-tag[data-cat="cd"]       { background: #6366f1; }
 
         @media (max-width: 600px) {
             .tl-row { grid-template-columns: 52px 1fr; }
@@ -148,6 +157,9 @@
         <button class="tl-filter-btn" data-filter="ds">デレステ</button>
         <button class="tl-filter-btn" data-filter="mb">モバマス</button>
         <button class="tl-filter-btn" data-filter="unit">ユニット</button>
+        <button class="tl-filter-btn" data-filter="collab">コラボ・グッズ</button>
+        <button class="tl-filter-btn" data-filter="live">ライブ</button>
+        <button class="tl-filter-btn" data-filter="cd">CD</button>
     </div>
 
     <!-- 件数 -->
@@ -258,6 +270,103 @@ var TL = [
     /* 2025年 */
     {date:'2025-05-20', title:'[この世でただひとりのはぁと]佐藤心 実装（SSR）',        cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/KonoyoDeTadaHitoriNoHeart/KonoyoDeTadaHitoriNoHeart.html'},
     {date:'2025-06-27', title:'熱情エナモラル',                                         cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/NetsujouEnamorar.html'},
+    /* ライブ */
+    {date:'2017-05-27', title:'5thLIVE TOUR Serendipity Parade!!! 石川公演',            cat:'live', label:'ライブ', link:'General/LiveList.html'},
+    {date:'2017-08-12', title:'5thLIVE TOUR Serendipity Parade!!! さいたまSA公演',      cat:'live', label:'ライブ', link:'General/LiveList.html'},
+    {date:'2018-11-10', title:'6thLIVE MERRY-GO-ROUNDOME!!! メットライフドーム公演',    cat:'live', label:'ライブ', link:'General/LiveList.html'},
+    {date:'2024-12-14', title:'M@STER EXPO LIVE SHOWCASE CINDERELLA STAGE',              cat:'live', label:'ライブ', link:'General/LiveList.html'},
+    {date:'2025-11-29', title:'CINDERELLA GIRLS fes. Once Upon a St@rs',                 cat:'live', label:'ライブ', link:'General/LiveList.html'},
+    /* CD発売 */
+    {date:'2016-11-16', title:'Take me☆Take you（CD発売）',                             cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2017-06-28', title:'SUN♡FLOWER（CD発売）',                                   cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2017-08-09', title:'命燃やして恋せよ乙女（CD発売）',                          cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2019-01-23', title:'Happy New Yeah!（CD発売）',                               cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2019-05-01', title:'凸凹スピードスター（CD発売）',                            cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2019-05-15', title:'しゅがーはぁと☆レボリューション（CD発売）',              cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2019-11-20', title:'オウムアムアに幸運を（CD発売）',                          cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2020-02-19', title:'躍るFLAGSHIP（CD発売）',                                 cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2020-09-16', title:'Go Just Go!（CD発売）',                                  cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2022-09-28', title:'認めてくれなくたっていいよ（CD発売）',                    cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2023-07-12', title:'ダンシング・デッド（CD発売）',                            cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2023-10-25', title:'Next Chapter（CD発売）',                                  cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2024-04-10', title:'世界はそれを愛と呼ぶんだぜ（CD発売）',                   cat:'cd', label:'CD', link:'General/SongList.html'},
+    {date:'2025-01-22', title:'熱情エナモラル / Sweet memories（CD発売）',              cat:'cd', label:'CD', link:'General/SongList.html'},
+    /* コラボ・グッズ */
+    {date:'2018-10-06', title:'東急ハンズコラボ',                                        cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20181006_tokyuhands/'},
+    {date:'2018-10-25', title:'痛印堂 第3弾',                                            cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20181025_itaindo3rd/'},
+    {date:'2018-12-01', title:'常夏パラダイス 佐藤心 フィギュア',                       cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20181201_natsupara-figure/'},
+    {date:'2019-04-01', title:'アクリルキャラプレートぷち 13（はぁとトゥハート）',       cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20190401_acrylic-petit13/'},
+    {date:'2019-11-01', title:'はぁとトゥハート 佐藤心 フィギュア',                     cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20191101_heartoheart-figure/'},
+    {date:'2020-07-22', title:'パーソナルパブミラー [オーダーメイド・はぁと]',           cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20200722_pubmirror/'},
+    {date:'2020-09-01', title:'アトレ秋葉原コラボ',                                      cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20200901_atre-akihabara/'},
+    {date:'2020-09-26', title:'アイドルマスター 日本横断フェア in アニメイト',           cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20200926_animate-crossjapan/'},
+    {date:'2020-11-01', title:'アクリルキャラプレートぷち 20（ブリリアントはぁと）',    cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20201101_acrylic-petit20/'},
+    {date:'2020-11-17', title:'Go Just Go！ 描き下ろしグッズ',                           cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20201117_go-just-go/'},
+    {date:'2020-11-21', title:'グラフアート 新グッズ',                                   cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20201121_grafart/'},
+    {date:'2020-12-15', title:'カプセルラバーマスコット Name Collection!',               cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20201215_capsule-rubber-name/'},
+    {date:'2021-03-30', title:'ユニットモチーフリング しゅがしゅが☆み〜ん',            cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20210330_unit-ring-sugasuga/'},
+    {date:'2021-09-15', title:'TANITAコラボ（万歩計190種）',                             cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20210915_tanita/'},
+    {date:'2021-10-21', title:'プライズフィギュア ブリリアント・はぁと',                cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20211021_prize-figure-brilliant/'},
+    {date:'2021-11-13', title:'アイドルマスター×サンリオキャラクターズコラボフェア',   cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20211113_sanrio-animate/'},
+    {date:'2021-11-16', title:'LAWSONキャンペーン（描き下ろし等身イラスト）',           cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20211116_lawson/'},
+    {date:'2021-11-19', title:'10周年記念衣装展 Costume Memories!!!',                    cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20211119_costume-memories/'},
+    {date:'2021-11-20', title:'アトレ秋葉原コラボ（デレステ×アトレ秋葉原 2021）',     cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20211120_atre-akihabara/'},
+    {date:'2021-11-29', title:'10周年記念公式カスタマイズTシャツ',                      cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20211129_tshirt-10th/'},
+    {date:'2021-12-28', title:'M@GICAL WONDERLAND!!! 事前物販',                          cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20211228_magical-wonderland-preorder/'},
+    {date:'2022-01-11', title:'カプセルラバーマスコット 祝10周年！',                     cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20220111_capsule-rubber-10th/'},
+    {date:'2022-02-24', title:'10周年記念公式カスタマイズTシャツ（再販）',              cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20220224_tshirt-10th-resale/'},
+    {date:'2022-04-03', title:'M@GICAL WONDERLAND!!! 開催記念グッズ',                   cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20220403_magical-wonderland-goods/'},
+    {date:'2022-04-03', title:'SEIKOコラボ 10周年記念腕時計',                           cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20220403_seiko-watch-10th/'},
+    {date:'2022-06-01', title:'アクリルキャラプレートぷち28（ラグジュアリィはぁと）',   cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20220601_acrylic-petit28/'},
+    {date:'2022-06-23', title:'TOWER RECORDSコラボ（はぁとふるsweeteen）',              cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20220623_tower-records/'},
+    {date:'2022-07-20', title:'ポプマス最終グッズ',                                      cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20220720_popmas-final/'},
+    {date:'2022-11-26', title:'ドンジャラコラボ',                                        cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20221126_donjara/'},
+    {date:'2022-12-14', title:'ミニタペストリー（スタイリッシュはぁと）',               cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20221214_mini-tapestry/'},
+    {date:'2023-02-08', title:'全アイドル出演ガラポン 描き下ろしSD',                   cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20230208_garapon-sd/'},
+    {date:'2023-03-10', title:'ガラス彫刻工房ＯＮＯ 信楽焼カップ',                     cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20230310_glass-ono-shiga/'},
+    {date:'2023-04-21', title:'アイドルマスター シンデレラガールズ ありがとう展',       cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20230421_arigato-exhibition/'},
+    {date:'2023-04-21', title:'オーマイグラスコラボ 佐藤心セレクトのサングラス',        cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20230421_oh-my-glasses/'},
+    {date:'2023-04-23', title:'ボークスDollfie Dream 佐藤心',                            cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20230423_volks-dollfie/'},
+    {date:'2023-07-02', title:'アニメイトカフェコラボ バースデーストア 7月',            cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20230702_animate-cafe-birthday/'},
+    {date:'2023-07-22', title:'コトブキヤ BIGアクリル置時計',                           cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20230722_kotobukiya-clock/'},
+    {date:'2023-08-25', title:'Shadowverse EVOLVE 書き下ろしカード',                    cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20230825_shadowverse-evolve/'},
+    {date:'2023-09-11', title:'Passion jewelries! 004 カバー曲応募キャンペーン',        cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20230911_cinderella-master-campaign/'},
+    {date:'2023-11-10', title:'ひろめ堂 山梨ワイナリーコラボ 第1弾',                   cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20231110_hiromedo-winery1/'},
+    {date:'2023-11-23', title:'キュアメイドカフェコラボ（描き下ろし等身イラスト）',     cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20231123_cure-maid-cafe/'},
+    {date:'2023-12-08', title:'コトブキヤ POPUP SHOP',                                  cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20231208_kotobukiya-popup/'},
+    {date:'2023-12-25', title:'アニメイトカフェコラボ〜中華飯店〜（描き下ろし等身）',   cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20231225_animate-cafe-chinese/'},
+    {date:'2023-12-30', title:'Giftぬい発売',                                            cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20231230_gift-plush/'},
+    {date:'2024-06-28', title:'ヴィレッジヴァンガードコラボ（描き下ろし等身）',         cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20240628_village-vanguard/'},
+    {date:'2024-07-03', title:'ひろめ堂 山梨ワイナリーコラボ 第2弾',                   cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20240703_hiromedo-winery2/'},
+    {date:'2024-09-02', title:'HUBコラボ〜Rose Shot〜（描き下ろし等身）',              cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20240902_hub-rose-shot/'},
+    {date:'2024-09-13', title:'横浜ワールドポーターズコラボ',                            cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20240913_yokohama-worldporters/'},
+    {date:'2024-11-15', title:'JR東海コラボ TR@VEL MEDLEY!!!!!!',                      cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20241115_jr-tokai/'},
+    {date:'2024-11-26', title:'ガラス工房 ONO 名前入りガラスの靴（190種）',             cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20241126_glass-ono-shoe/'},
+    {date:'2025-01-11', title:'有楽町マルイコラボ（描き下ろし等身）',                   cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250111_yurakucho-marui/'},
+    {date:'2025-01-21', title:'デレステ10周年記念190人グッズ',                           cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250121_deresute-10th-goods/'},
+    {date:'2025-01-31', title:'デレステ10周年記念ガラポンピックアップ',                  cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250131_deresute-10th-garapon/'},
+    {date:'2025-02-07', title:'FR@GMENTS イラストレーター展（描き下ろし等身）',         cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250207_fragments-exhibition/'},
+    {date:'2025-02-07', title:'ブシロード カードサプライ（恋するスウィーティーサマー）',cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250207_bushiroad-card-supply/'},
+    {date:'2025-06-04', title:'レジャフェスコラボ（描き下ろし等身）',                   cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250604_leisurefes/'},
+    {date:'2025-06-06', title:'沖縄コラボ（オリオンビール＆PAIKAJI）',                  cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250606_okinawa-orion/'},
+    {date:'2025-06-06', title:'西武園ゆうえんちコラボ',                                  cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250606_seibu-en/'},
+    {date:'2025-06-20', title:'Birthday Collection ～The Zodiac Sign～',                 cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250620_birthday-collection-zodiac/'},
+    {date:'2025-08-01', title:'狩歌コラボ',                                              cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250801_karikoe/'},
+    {date:'2025-08-22', title:'Shadowverse EVOLVE（第2弾）',                            cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250822_shadowverse-evolve2/'},
+    {date:'2025-08-29', title:'あみあみ POPUP SHOP -KAWAII♡ぱれーど-',                 cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250829_amiami-popup/'},
+    {date:'2025-09-06', title:'カードフォリオ シンデレラガールズver. vol.1',            cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250906_card-folio/'},
+    {date:'2025-09-06', title:'SEIKO 腕時計（デレステ10周年記念）',                     cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250906_seiko-watch/'},
+    {date:'2025-09-08', title:'CINDERELLA GIRLS fes. Once Upon a St@rs 事前物販',       cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250908_cinderella-fes-preorder/'},
+    {date:'2025-09-20', title:'京まふ2025（リペイントイラスト）',                        cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20250920_kyomaf/'},
+    {date:'2025-11-28', title:'カスタマイズTシャツ（デレステ10thツアー千秋楽記念）',   cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20251128_customize-tshirt/'},
+    {date:'2025-11-28', title:'ONKYOコラボ ワイヤレスイヤホン（展示・視聴）',          cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20251128_onkyo-earphone/'},
+    {date:'2025-11-29', title:'TAKE UP ジュエリーコラボ',                               cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20251129_takeup-jewelry/'},
+    {date:'2025-11-29', title:'STARLIGHT ALLIANCE 物販',                                 cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20251129_starlight-alliance-merch/'},
+    {date:'2025-12-13', title:'STARLIGHT STAGE WITH キミと歩んだ輝きの軌跡',            cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20251213_starlight-stage-with/'},
+    {date:'2025-12-18', title:'パーソナルパブミラー [この世でただひとりのはぁと]',       cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20251218_pubmirror-konoyode/'},
+    {date:'2026-01-16', title:'スイパラコラボカフェ（描き下ろし等身）',                 cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20260116_sweets-paradise/'},
+    {date:'2026-03-28', title:'ラスカルコラボ（AnimeJapan2026）',                        cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20260328_rascal/'},
+    {date:'2026-04-17', title:'Once Upon a St@rs Memorial Cafe',                          cat:'collab', label:'コラボ・グッズ', link:'General/Collab/20260417_once-upon-memorial-cafe/'},
 ];
 
 (function () {
@@ -266,6 +375,9 @@ var TL = [
     function catGroup(cat) {
         if (cat === 'ds-event' || cat === 'ds-card') return 'ds';
         if (cat === 'mb-event' || cat === 'mb-card') return 'mb';
+        if (cat === 'collab') return 'collab';
+        if (cat === 'live')   return 'live';
+        if (cat === 'cd')     return 'cd';
         return 'unit';
     }
 
