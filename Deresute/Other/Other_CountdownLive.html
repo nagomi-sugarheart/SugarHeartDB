@@ -1,16 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-	<base href="/SugarHeartDB/">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/SugarHeartDB/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>カウントダウンライブ（デレステ）｜SugarHeartDB</title>
-    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のカウントダウンライブ（デレステ）をまとめたページです。">
+    <meta name="description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が出演したデレステのオールスターカウントダウンLIVEをまとめたページです。">
     <meta name="author" content="なごみ（@nagomi_IMCG）">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="article">
     <meta property="og:title" content="カウントダウンライブ（デレステ）｜SugarHeartDB">
-    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）のカウントダウンライブ（デレステ）をまとめたページです。">
+    <meta property="og:description" content="アイドルマスターシンデレラガールズの佐藤心（しゅがーはぁと）が出演したデレステのオールスターカウントダウンLIVEをまとめたページです。">
     <meta property="og:site_name" content="SugarHeartDB">
     <meta property="og:image" content="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+">
     <meta name="twitter:card" content="summary">
@@ -23,16 +23,169 @@
 <body>
 <script src="components/header.js"></script>
 
-
 <section class="page-hero">
-    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Deresute/index.html">DERESUTE</a> · <strong>カウントダウンライブ（デレステ）</strong></div>
-    <h1>カウントダウンライブ（デレステ） <span class="sub">/ OTHER · DERESUTE</span></h1>
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <a href="Deresute/index.html">DERESUTE</a> · <a href="Deresute/Other/Other.html">その他</a> · <strong>カウントダウンライブ</strong></div>
+    <h1>カウントダウンライブ <span class="sub">/ COUNTDOWN LIVE · DERESUTE</span></h1>
 </section>
 
-<div class="box-area">
-    <p class="box-text placeholder-text">準備中</p>
+<main class="page">
+
+    <div class="cast-block">
+        <div class="label">CAST</div>
+        <div class="idol-cast">
+            <div class="idol shin">
+                <img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/data/iconimg/satoshin_icon01" alt="佐藤心">
+                <span class="nm">佐藤心</span>
+            </div>
+            <div class="idol">
+                <img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/data/iconimg/matsunagakirari_icon01" alt="松永きらり" onerror="this.style.display='none'">
+                <span class="nm">松永きらり</span>
+            </div>
+            <div class="idol">
+                <img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/data/iconimg/oikawashizuku_icon01" alt="及川雫">
+                <span class="nm">及川雫</span>
+            </div>
+        </div>
+        <p class="box-text" style="margin-top:8px; font-size:0.82rem; color:var(--sh-text-mute);">2021年：プライズスカウトチケットでスカウトされたアイドルNo.1（佐藤心）<br>2022年：Fav+ricaオープニングコミュ（松永きらり・佐藤心・及川雫）</p>
+    </div>
+
+    <div class="box-area" id="cdl-movie">
+        <div class="box-title">動画（2021年・2022年）</div>
+        <div class="video-container-landscape">
+            <iframe id="cdl-player" src="https://www.youtube.com/embed/sJdYhXZHaeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="box-text">下のタブの「▶ この話からYouTubeで再生」ボタンで頭出しができます。</p>
+    </div>
+
+    <div class="sec-head">
+        <div class="ic glyph-dialogue"></div>
+        <h2>コミュログ <span class="sub">/ COMMU LOG</span></h2>
+        <a class="anchor">#commu</a>
+    </div>
+    <section class="tab-group dss-commu">
+        <div class="tab-list">
+            <button class="tab-item active" onclick="switchTab(this,'cdl-2021')">2021年</button>
+            <button class="tab-item" onclick="switchTab(this,'cdl-2022')">2022年</button>
+            <button class="tab-item" onclick="switchTab(this,'cdl-2024')">2024年</button>
+        </div>
+
+        <!-- ===== 2021年 ===== -->
+        <div class="tab-panel active" data-tab="cdl-2021">
+        <div class="dss-ep-head">
+            <div class="dss-ep-meta">
+                <div class="dss-ep-eyebrow">オールスターカウントダウンLIVE2021</div>
+                <h3 class="dss-ep-title">9時の回</h3>
+                <p class="dss-ep-summary">プライズスカウトチケットでスカウトされたアイドルNo.1の発表。</p>
+                <button class="dss-play" data-start="0">▶ この話からYouTubeで再生</button>
+            </div>
+        </div>
+        <div class="dss-lines">
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0001" alt="プライズスカウトチケットでセレクトされたアイドルNo.1" loading="lazy"></div><div class="ev-text"><div class="dss-stage-text">プライズスカウトチケットでセレクトされたアイドルNo.1</div><div class="ud-dialogue"><span class="speaker" data-who="柚">柚</span><div class="line">こっちも気になるー！ 誰が一番スカウトされたんだろー？</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0002" alt="穂乃香のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="穂乃香">穂乃香</span><div class="line">では発表しましょう。プライズスカウトチケットで最もスカウトされたのは、このアイドルです……！</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0003" alt="" loading="lazy"></div><div class="ev-text"></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0004" alt="[ラグジュアリィ・はぁと] 佐藤心" loading="lazy"></div><div class="ev-text"><div class="dss-stage-text">[ラグジュアリィ・はぁと] 佐藤心</div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0005" alt="" loading="lazy"></div><div class="ev-text"></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0006" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">やぁん、もう！みんなオトナセレブはぁとにメロメロじゃん☆ お礼にみんなにはぁとから、特別なキ・ス…… え、いらない？いるだろ☆受け取れ☆</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0007" alt="あずきのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="あずき">あずき</span><div class="line">みんな心さんが素敵すぎてドキドキしてるんだよ！ あずきも、いつもと違う雰囲気にソワソワしちゃうもん。</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0008" alt="忍のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="忍">忍</span><div class="line">まだ見慣れてないから、照れて素直になれないんだね。でも、みんなが照れてるからって待ってはあげないよ？だって次の発表が、みんなも気になるでしょ♪</div></div></div></div>
+        </div>
+        <details class="dss-log">
+            <summary>コミュログ画像を表示</summary>
+            <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/log/2021_Tr1" alt="2021年 コミュログ" loading="lazy">
+        </details>
+        </div>
+
+        <!-- ===== 2022年 ===== -->
+        <div class="tab-panel" data-tab="cdl-2022">
+        <div class="dss-ep-head">
+            <div class="dss-ep-meta">
+                <div class="dss-ep-eyebrow">オールスターカウントダウンLIVE2022 · オープニング</div>
+                <h3 class="dss-ep-title">Starting a Long Day！</h3>
+                <button class="dss-play" data-start="55">▶ この話からYouTubeで再生</button>
+            </div>
+        </div>
+        <div class="dss-lines">
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0009" alt="控え室" loading="lazy"></div><div class="ev-text"><div class="dss-stage-text">控え室</div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0010" alt="きらりのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="きらり">きらり</span><div class="line">わわわ、もう少しで始まっちゃうよぉ！ きらりたち、トップバッターなのにい…… えっと、この衣装はこっちで、次のお色直しは……。</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0011" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">おお落ち着いて、きらりちゃん！ その衣装使うのはもっと先だし、ほかの人の分も確認してるから！ それより……はいっ、これ。はぁとたちが最初に使う資料！</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0012" alt="" loading="lazy"></div><div class="ev-text"></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0013" alt="きらりのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="きらり">きらり</span><div class="line">落ち着いて、はぁとちゃん！</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0014" alt="きらりのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="きらり">きらり</span><div class="line">落ち着いて、はぁとちゃん！それは今年一年の、あーんなのやこーんなのが全部入ったマル秘データだにぃ！LIVEの途中のMCで、一日かけてみんなが発表するやつだよぉ！</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0015" alt="" loading="lazy"></div><div class="ev-text"></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0016" alt="" loading="lazy"></div><div class="ev-text"></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0017" alt="" loading="lazy"></div><div class="ev-text"></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0018" alt="雫のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="雫">雫</span><div class="line">あれー？ どうしたんですかー、ふたりともー？ ホットミルク、淹れてきましたー♪ いかがですかー？</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0019" alt="" loading="lazy"></div><div class="ev-text"></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0020" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">もち、ちょうだい☆ ふう～……まるで実家のような安心感♪ 今さらドタバタしちゃったわ。って、はぁとはいつまでもピチピチだろ☆</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0021" alt="きらりのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="きらり">きらり</span><div class="line">にゅふふ、いつものきらりとあとちゃんに戻れたにい☆ 雫ちゃんが来て、『Fav+rica』が揃ったおかげかなぁ？</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0022" alt="雫のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="雫">雫</span><div class="line">ドタバタしちゃう気持ちはわかりますー。 今までとは違う新しいユニットとして、 私たち、初々しい気分でスタートしましたからー。</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0023" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">そそ。だから、緊張とか、テンパったりとかじゃないんだよ。トップバッターを任されて、むしろ、やる気があふれまくって、落ち着かなかったってやつ！</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0024" alt="きらりのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="きらり">きらり</span><div class="line">うんうん！雫ちゃんの声とホットミルクに癒されて、てんしょんまっくす！のまま、今はめらめら燃えてるにぃ！なんてったって、これから始まるのはぁ……。</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0025" alt="きらり・心・雫のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="きらり・心・雫">きらり・心・雫</span><div class="line">#オールスターカウントダウンLIVE！！！</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0026" alt="きらりのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="きらり">きらり</span><div class="line">にゅふふ☆ 今年も一年、いろんなことがあったねぇ。新しいユニットも、今年注目されたひとりひとりも、みーんな、きゃわゆく大変身☆ だったもんね♪</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0027" alt="" loading="lazy"></div><div class="ev-text"></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0028" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">だからこそっ！『Fav+rica』だって負けてられないっしょ。ファッションの可能性を一番楽しんでるのは、はぁとたちだって自信、めちゃくちゃあるし！</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0029" alt="きらりのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="きらり">きらり</span><div class="line">いつもトレンドの先頭を走っていくのは、その時代のアイドルだもんねっ♪</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0030" alt="雫のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="雫">雫</span><div class="line">はい！ 『Fav+rica』も事務所のみんなの気持ちも、プロデューサーさんが支えてくれるから走っていけるんですよー！</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0031" alt="きらりのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="きらり">きらり</span><div class="line">みんなーー！ にょわーーーー！！！ にゅふふ、じゃあ……大晦日も楽しんじゃおー☆</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0032" alt="雫のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="雫">雫</span><div class="line">お待たせしましたー♪ まずは私たち『Fav+rica』の歌を聴いてください！ そしてそのあとは……ステージをランウェイにしちゃいますよー♪</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0033" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">たーっぷり、じーっくり見てくれよな☆ お楽しみ盛りだくさんでいっちゃうから♪ なんたって、今年の目玉衣装は……。</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0034" alt="きらり・心・雫のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="きらり・心・雫">きらり・心・雫</span><div class="line">『マイファーストスター』！！！</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0035" alt="" loading="lazy"></div><div class="ev-text"></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0036" alt="雫のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="雫">雫</span><div class="line">みなさんの前で着られるなんて、すごくドキドキしますー♪</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0037" alt="心のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="心">心</span><div class="line">全員がオンリーワンの星になるから、期待する気持ちだけもっておけよな☆</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0038" alt="きらりのセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="きらり">きらり</span><div class="line">最初から最後まで、笑顔できらきらなLIVEにしていくにぃ！</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0039" alt="雫のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="雫">雫</span><div class="line">それではみなさん、今年をしめくくる素敵な一日を過ごしましょう！ オールスターカウントダウンLIVE……。</div></div></div></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/0040" alt="きらり・心・雫のセリフ" loading="lazy"></div><div class="ev-text"><div class="ud-dialogue"><span class="speaker" data-who="きらり・心・雫">きらり・心・雫</span><div class="line">スタート！！！</div></div></div></div>
+        </div>
+        <details class="dss-log">
+            <summary>コミュログ画像を表示</summary>
+            <img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/log/2022_OP" alt="2022年 コミュログ" loading="lazy">
+        </details>
+        </div>
+
+        <!-- ===== 2024年 ===== -->
+        <div class="tab-panel" data-tab="cdl-2024">
+        <div class="dss-ep-head">
+            <div class="dss-ep-meta">
+                <div class="dss-ep-eyebrow">オールスターカウントダウンLIVE2024</div>
+                <h3 class="dss-ep-title">スカウトランキング</h3>
+            </div>
+        </div>
+        <div class="dss-lines">
+            <div class="ev-condition"><span class="ev-label">Sレアスカウトチケットランキング</span></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/2024_srare" alt="カムバックSレアスカウトチケット1位" loading="lazy"></div><div class="ev-text"><div class="dss-stage-text">カムバックSレアスカウトチケット 1位</div></div></div>
+            <div class="ev-condition"><span class="ev-label">プラチナSSレアスカウトチケットランキング</span></div>
+            <div class="ev-dialog-row"><div class="ev-shot"><img class="lightbox-trigger" src="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/Other/CountdownLive/2024_fes" alt="fes（Noir）1位" loading="lazy"></div><div class="ev-text"><div class="dss-stage-text">fes（Noir） 1位</div></div></div>
+        </div>
+        </div>
+
+    </section>
+
+</main>
+
+<div id="sh-lightbox" role="dialog" aria-modal="true">
+    <button id="sh-lightbox-close" aria-label="閉じる">✕</button>
+    <img id="sh-lightbox-img" src="" alt="">
 </div>
 
-
+<script src="components/common.js"></script>
+<script src="components/idol-badge.js"></script>
+<script>
+(function () {
+    'use strict';
+    var VIDEO_ID = 'sJdYhXZHaeg';
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.dss-play').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var t = parseInt(btn.dataset.start, 10) || 0;
+                var player = document.getElementById('cdl-player');
+                player.src = 'https://www.youtube.com/embed/' + VIDEO_ID + '?start=' + t + '&autoplay=1';
+                document.getElementById('cdl-movie').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        });
+    });
+})();
+</script>
 </body>
 </html>
