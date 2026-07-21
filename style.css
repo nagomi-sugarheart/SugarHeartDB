@@ -1737,6 +1737,7 @@ input[name="dialogue-tab"] {
 
 /* MV タブプレイヤー */
 .mv-block {
+    margin-top: 16px;
     margin-bottom: 16px;
 }
 
@@ -1759,8 +1760,8 @@ input[name="dialogue-tab"] {
 }
 
 .mv-tab.active {
-    background: var(--sh-pink);
-    border-color: var(--sh-pink);
+    background: var(--grad-sugar);
+    border-color: transparent;
     color: #ffffff;
     font-weight: 600;
 }
