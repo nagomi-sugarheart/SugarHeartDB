@@ -1735,6 +1735,42 @@ input[name="dialogue-tab"] {
     height: 100%;
 }
 
+/* MV タブプレイヤー */
+.mv-block {
+    margin-bottom: 16px;
+}
+
+.mv-tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.mv-tab {
+    padding: 5px 14px;
+    border: 1.5px solid var(--sh-line-soft);
+    border-radius: var(--r-sm);
+    background: var(--sh-bg-soft);
+    color: var(--sh-text-mute);
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.mv-tab.active {
+    background: var(--sh-pink);
+    border-color: var(--sh-pink);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.mv-tab:hover:not(.active) {
+    background: var(--sh-pink-hush);
+    border-color: var(--sh-pink-light);
+    color: var(--sh-pink-deep);
+}
+
 /* ----------------------------------------------------------
    19. Pill buttons
 ---------------------------------------------------------- */

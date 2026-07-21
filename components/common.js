@@ -22,6 +22,18 @@ function switchTab(btn, tab) {
 }
 
 /* ============================================================
+   MV タブ切り替え
+   - .mv-block 内でスコープして動作
+   - 呼び出し: onclick="switchMvTab(this)"、ボタンに data-vid="YouTube動画ID" を付与
+============================================================ */
+function switchMvTab(btn) {
+    var block = btn.closest('.mv-block');
+    block.querySelectorAll('.mv-tab').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    block.querySelector('iframe').src = 'https://www.youtube.com/embed/' + btn.dataset.vid;
+}
+
+/* ============================================================
    v2 ダイアログタブ切り替え
    - v2 カード詳細ページのセリフタブで使用
    - 呼び出し: onclick="v2SwitchTab(インデックス, this)"
