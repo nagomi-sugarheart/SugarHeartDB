@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -18,6 +18,118 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* タイムライン専用スタイル */
+        .tl-filter {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .tl-filter-label {
+            font-size: 0.8rem;
+            color: var(--sh-text-mute);
+            margin-right: 4px;
+        }
+        .tl-filter-btn {
+            padding: 5px 14px;
+            border: 1.5px solid var(--sh-line);
+            border-radius: 999px;
+            cursor: pointer;
+            font-size: 0.82rem;
+            background: #fff;
+            color: var(--sh-text);
+            transition: background .15s, color .15s, border-color .15s;
+        }
+        .tl-filter-btn:hover { border-color: var(--sh-pink); color: var(--sh-pink-deep); }
+        .tl-filter-btn.active { border-color: transparent; color: #fff; }
+        .tl-filter-btn[data-filter="all"].active   { background: var(--sh-pink-deep); }
+        .tl-filter-btn[data-filter="ds"].active    { background: #8b5cf6; }
+        .tl-filter-btn[data-filter="mb"].active    { background: #f97316; }
+        .tl-filter-btn[data-filter="unit"].active  { background: #10b981; }
+
+        /* 年グループ */
+        .tl-year-group { margin-bottom: 32px; }
+        .tl-year-band {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .tl-year-num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--sh-pink-deep);
+            min-width: 60px;
+        }
+        .tl-year-count {
+            font-size: 0.8rem;
+            color: var(--sh-text-mute);
+            font-family: monospace;
+        }
+        .tl-year-line {
+            flex: 1;
+            height: 1px;
+            background: var(--sh-line);
+        }
+
+        /* エントリー行 */
+        .tl-row {
+            display: grid;
+            grid-template-columns: 64px 1fr auto;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            margin-bottom: 6px;
+            border-radius: 8px;
+            border-left: 3px solid var(--sh-line);
+            background: #fff;
+            text-decoration: none;
+            color: inherit;
+            transition: background .12s;
+        }
+        .tl-row:hover { background: var(--sh-pink-hush); }
+
+        .tl-row[data-cat="ds-event"] { border-left-color: #8b5cf6; }
+        .tl-row[data-cat="ds-card"]  { border-left-color: var(--sh-pink); }
+        .tl-row[data-cat="mb-event"] { border-left-color: #f97316; }
+        .tl-row[data-cat="mb-card"]  { border-left-color: #f59e0b; }
+        .tl-row[data-cat="unit"]     { border-left-color: #10b981; }
+
+        .tl-date {
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: var(--sh-text-mute);
+            white-space: nowrap;
+        }
+        .tl-date .md { font-size: 1rem; color: var(--sh-text); font-weight: 600; }
+        .tl-title {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--sh-text);
+        }
+        .tl-row:hover .tl-title { color: var(--sh-pink-deep); }
+        .tl-tag {
+            display: inline-block;
+            padding: 2px 9px;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            white-space: nowrap;
+            color: #fff;
+        }
+        .tl-tag[data-cat="ds-event"] { background: #8b5cf6; }
+        .tl-tag[data-cat="ds-card"]  { background: var(--sh-pink-deep); }
+        .tl-tag[data-cat="mb-event"] { background: #f97316; }
+        .tl-tag[data-cat="mb-card"]  { background: #d97706; }
+        .tl-tag[data-cat="unit"]     { background: #10b981; }
+
+        @media (max-width: 600px) {
+            .tl-row { grid-template-columns: 52px 1fr; }
+            .tl-tag { display: none; }
+        }
+    </style>
 </head>
 <body>
 <script src="components/header.js"></script>
@@ -29,69 +141,213 @@
 
 <div class="page">
 
-    <div class="year-group">
-        <div class="year-band">
-            <div class="y">2023</div>
-            <div class="count">4 events</div>
-            <div class="line"></div>
-        </div>
-        <div class="event-table">
-
-            <article class="event-row" data-accent="limited">
-                <div class="event-date"><div class="m">01</div><div class="d">01</div><div class="y">2023</div></div>
-                <div class="event-title"><h3>Mobaのカードイベント開始</h3></div>
-                <div class="event-tags"><span class="sh-tag" data-tag="limited">Moba</span></div>
-                <div class="event-reward"><div class="item">Card</div></div>
-                <div class="event-note"></div>
-            </article>
-
-            <article class="event-row" data-accent="seasonal">
-                <div class="event-date"><div class="m">02</div><div class="d">14</div><div class="y">2023</div></div>
-                <div class="event-title"><h3>Staのバレンタインイベントステ</h3></div>
-                <div class="event-tags"><span class="sh-tag" data-tag="seasonal">Stage</span></div>
-                <div class="event-reward"><div class="item">Event</div></div>
-                <div class="event-note"></div>
-            </article>
-
-            <article class="event-row" data-accent="solo">
-                <div class="event-date"><div class="m">03</div><div class="d">20</div><div class="y">2023</div></div>
-                <div class="event-title"><h3>1stライブ開催＆会場限定グッズ販売</h3></div>
-                <div class="event-tags"><span class="sh-tag" data-tag="solo">Live</span></div>
-                <div class="event-reward"><div class="item">Goods</div></div>
-                <div class="event-note"></div>
-            </article>
-
-            <article class="event-row" data-accent="collab">
-                <div class="event-date"><div class="m">05</div><div class="d">05</div><div class="y">2023</div></div>
-                <div class="event-title"><h3>外部イベント出演</h3></div>
-                <div class="event-tags"><span class="sh-tag" data-tag="collab">Ex</span></div>
-                <div class="event-reward"><div class="item">出演</div></div>
-                <div class="event-note"></div>
-            </article>
-
-        </div>
+    <!-- フィルター -->
+    <div class="tl-filter">
+        <span class="tl-filter-label">絞り込み：</span>
+        <button class="tl-filter-btn active" data-filter="all">全て</button>
+        <button class="tl-filter-btn" data-filter="ds">デレステ</button>
+        <button class="tl-filter-btn" data-filter="mb">モバマス</button>
+        <button class="tl-filter-btn" data-filter="unit">ユニット</button>
     </div>
 
-    <div class="year-group">
-        <div class="year-band">
-            <div class="y">2024</div>
-            <div class="count">1 event</div>
-            <div class="line"></div>
-        </div>
-        <div class="event-table">
+    <!-- 件数 -->
+    <p style="font-size:.82rem; color:var(--sh-text-mute); margin-bottom:24px; font-family:monospace;"><span id="tl-count"></span>件 表示中</p>
 
-            <article class="event-row" data-accent="limited">
-                <div class="event-date"><div class="m">08</div><div class="d">10</div><div class="y">2024</div></div>
-                <div class="event-title"><h3>メディアミックス展開発表</h3></div>
-                <div class="event-tags"><span class="sh-tag" data-tag="limited">Anime</span></div>
-                <div class="event-reward"><div class="item">Comic</div></div>
-                <div class="event-note"></div>
-            </article>
-
-        </div>
-    </div>
+    <!-- タイムライン本体 -->
+    <div id="tl-body"></div>
 
 </div>
+
+<script>
+var TL = [
+    /* 2014年 */
+    {date:'2014-02-19', title:'佐藤心、モバマス実装',                               cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/SatoShin/SatoShin.html'},
+    {date:'2014-06-24', title:'第3回プロダクション対抗トークバトルショー',             cat:'mb-event', label:'モバマス・イベント', link:'Mobamas/Event/ProductionTalkBattle3rd.html'},
+    {date:'2014-09-30', title:'目指せ！きらきらモデル アイドルチャレンジ',             cat:'mb-event', label:'モバマス・イベント', link:'Mobamas/Event/KirakiraModelChallenge.html'},
+    {date:'2014-10-10', title:'ユニット「きらきらモデルfrom NSC」登場',               cat:'unit',     label:'ユニット',           link:'Unit/KiraKiraModelfromNSC/KiraKiraModelfromNSC.html'},
+    {date:'2014-12-10', title:'ユニット「ハートオブワールド」登場',                    cat:'unit',     label:'ユニット',           link:'Unit/HeartofWorld/HeartOfWorld.html'},
+    /* 2015年 */
+    {date:'2015-01-20', title:'[えんじぇるはぁと]佐藤心 実装',                       cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/AngelHeart/AngelHeart.html'},
+    {date:'2015-04-09', title:'ユニット「エリカPとしゅがーはぁと」登場',              cat:'unit',     label:'ユニット',           link:'Unit/ErikaPtoSugarheart/ErikaPtoSugarheart.html'},
+    {date:'2015-05-22', title:'ユニット「愛の使者～ラヴ・エンジェルズ～」登場',       cat:'unit',     label:'ユニット',           link:'Unit/LoveAngels/LoveAngels.html'},
+    {date:'2015-05-31', title:'[はぁとの嫁入り]佐藤心 実装',                         cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/HeartNoYomeiri/HeartNoYomeiri.html'},
+    {date:'2015-07-22', title:'ユニット「しゅがしゅが☆み～ん」登場',                 cat:'unit',     label:'ユニット',           link:'Unit/ShugaShugaMiin/ShugaShugaMiin.html'},
+    {date:'2015-09-30', title:'ユニット「エターナルレディエイト」登場',                cat:'unit',     label:'ユニット',           link:'Unit/EternalLadiate/EternalLadiate.html'},
+    {date:'2015-10-21', title:'ユニット「女王の同級生(花嫁)」登場',                   cat:'unit',     label:'ユニット',           link:'Unit/QueensClassmate_Bride/QueensClassmate_Bride.html'},
+    {date:'2015-11-09', title:'第14回アイドルLIVEロワイヤル',                         cat:'mb-event', label:'モバマス・イベント', link:'Mobamas/Event/IdolLIVERoyale14th.html'},
+    {date:'2015-11-09', title:'ユニット「スウィート☆オペレーション」登場',            cat:'unit',     label:'ユニット',           link:'Unit/SweetOperation/SweetOperation.html'},
+    {date:'2015-12-10', title:'ユニット「ムーランルージュ」登場',                      cat:'unit',     label:'ユニット',           link:'Unit/MoulinRouge/MoulinRouge.html'},
+    /* 2016年 */
+    {date:'2016-02-29', title:'[ﾜｰｷﾝｸﾞ･ｽｳｨｰﾃｨｰ]佐藤心 実装',                   cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/WorkingSweetie/WorkingSweetie.html'},
+    {date:'2016-07-31', title:'[常夏ﾊﾟﾗﾀﾞｲｽ]佐藤心 実装',                          cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/TokonatsuParadise/TokonatsuParadise.html'},
+    {date:'2016-07-31', title:'ユニット「ビーチエンジェル」登場',                      cat:'unit',     label:'ユニット',           link:'Unit/BeachAngel/BeachAngel.html'},
+    {date:'2016-08-10', title:'佐藤心、デレステ実装',                                  cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/SatoShin/SatoShin.html'},
+    {date:'2016-10-12', title:'[ハート・モデル]佐藤心 実装（SR）',                    cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/HeartModel/HeartModel.html'},
+    {date:'2016-10-31', title:'ユニット「カワスウィーティーなボクはぁと(仮)」登場',   cat:'unit',     label:'ユニット',           link:'Unit/KawaSweetieNaBokuHeart/KawaSweetieNaBokuHeart.html'},
+    {date:'2016-11-17', title:'[はぁとトゥハート]佐藤心 実装（SSR）',                 cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/HeartToHeart/HeartToHeart.html'},
+    {date:'2016-12-31', title:'命燃やして恋せよ乙女',                                  cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/InochiMoyashiteKoiseyoOtome.html'},
+    /* 2017年 */
+    {date:'2017-03-27', title:'[ﾁｸｯとｽｳｨｰﾃｨｰ]佐藤心 実装',                       cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/ChikuttoSweetie/ChikuttoSweetie.html'},
+    {date:'2017-03-31', title:'ユニット「エージェント・コール・SKS」登場',             cat:'unit',     label:'ユニット',           link:'Unit/AgentCoalSKS/AgentCoalSKS.html'},
+    {date:'2017-04-30', title:'ユニット「ふるさと応援アイドル部」登場',                cat:'unit',     label:'ユニット',           link:'Unit/FurusatoOuenIdolBu/FurusatoOuenIdolBu.html'},
+    {date:'2017-05-31', title:'[はぁとの嫁入り]佐藤心 実装（デレステ SR）',           cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/HeartNoYomeiri/HeartNoYomeiri.html'},
+    {date:'2017-06-26', title:'ユニット「スウィーティー☆ミルキーウェイ」登場',        cat:'unit',     label:'ユニット',           link:'Unit/SweetieMilkeyWay/SweetieMilkeyWay.html'},
+    {date:'2017-07-31', title:'Take me☆Take you',                                      cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/TakeMeTakeYou.html'},
+    {date:'2017-08-21', title:'ユニット「はぴ☆☆☆ふら」登場',                         cat:'unit',     label:'ユニット',           link:'Unit/HapiFura/HapiFura.html'},
+    {date:'2017-09-03', title:'[ブリリアント・はぁと]佐藤心 実装（SSR）',             cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/BrilliantHeart/BrilliantHeart.html'},
+    {date:'2017-09-30', title:'ユニット「どかぽか工務店」登場',                        cat:'unit',     label:'ユニット',           link:'Unit/DokaPokaKoumuten/DokaPokaKoumuten.html'},
+    {date:'2017-11-28', title:'アイドルプロデュース The 6th Anniversary',              cat:'mb-event', label:'モバマス・イベント', link:'Mobamas/Event/IdolProduce6thAnniversary.html'},
+    {date:'2017-12-31', title:'ユニット「カミング・オブ・エイジ！」登場',              cat:'unit',     label:'ユニット',           link:'Unit/ComingofAge/ComingofAge.html'},
+    /* 2018年 */
+    {date:'2018-01-01', title:'Happy New Yeah！',                                       cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/HappyNewYeah.html'},
+    {date:'2018-04-24', title:'[ふぉーりんはぁと]佐藤心 実装',                        cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/FallingHeart/FallingHeart.html'},
+    {date:'2018-07-19', title:'SUN♡FLOWER',                                             cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/SunFlower.html'},
+    {date:'2018-07-31', title:'凸凹スピードスター',                                     cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/DekobokoSpeedStar.html'},
+    {date:'2018-07-31', title:'ユニット「これでもくらえ☆」登場',                       cat:'unit',     label:'ユニット',           link:'Unit/KoredemoKurae/KoredemoKurae.html'},
+    {date:'2018-10-31', title:'[オーダーメイド・はぁと]佐藤心 実装（SSR）',           cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/OrderMadeHeart/OrderMadeHeart.html'},
+    {date:'2018-12-31', title:'[新春はぁとふる]佐藤心 実装',                           cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/ShinshunHeartful/ShinshunHeartful.html'},
+    {date:'2018-12-31', title:'ユニット「新春なでし娘」登場',                           cat:'unit',     label:'ユニット',           link:'Unit/ShinshunNadeshiko/ShinshunNadeshiko.html'},
+    /* 2019年 */
+    {date:'2019-04-22', title:'ユニット「着せ替え人形と仕立て屋さん」登場',            cat:'unit',     label:'ユニット',           link:'Unit/KisekaeNingyoandShitateyaSan/KisekaeNingyoandShitateyaSan.html'},
+    {date:'2019-05-14', title:'ユニット「ピンキーバウンス」登場',                       cat:'unit',     label:'ユニット',           link:'Unit/PinkyBounce/PinkyBounce.html'},
+    {date:'2019-06-30', title:'ユニット「ファシネ・プレサージュ」登場',                 cat:'unit',     label:'ユニット',           link:'Unit/FascinerPresage/FascinerPresage.html'},
+    {date:'2019-07-31', title:'ユニット「オトメなオトナのナツモヨウ☆」登場',           cat:'unit',     label:'ユニット',           link:'Unit/OtomenaOtonanoNatsumoyou/OtomenaOtonanoNatsumoyou.html'},
+    {date:'2019-08-08', title:'ユニット「はみだし者の研究魚」登場',                     cat:'unit',     label:'ユニット',           link:'Unit/HamidashimononoKenkyuugyo/HamidashimononoKenkyuugyo.html'},
+    {date:'2019-09-30', title:'[夏色はぁと]佐藤心 実装',                               cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/NatsuiroHeart/NatsuiroHeart.html'},
+    {date:'2019-12-31', title:'第5回 ドリームLIVEフェスティバル 新春SP',               cat:'mb-event', label:'モバマス・イベント', link:'Mobamas/Event/DreamLiveFestival5thNewYear.html'},
+    /* 2020年 */
+    {date:'2020-01-09', title:'[ｽｳｨｰﾃｨｰ･ﾆｭｰｲﾔｰ]佐藤心 実装',                    cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/SweetieNewYear/SweetieNewYear.html'},
+    {date:'2020-01-31', title:'ユニット「☆マリナル応援団☆」登場',                     cat:'unit',     label:'ユニット',           link:'Unit/MarinalOuendan/MarinalOuendan.html'},
+    {date:'2020-01-31', title:'[ラグジュアリィ・はぁと]佐藤心 実装（SSR）',           cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/LuxuryHeart/LuxuryHeart.html'},
+    {date:'2020-06-09', title:'ユニット「おうちのじかん」登場',                         cat:'unit',     label:'ユニット',           link:'Unit/OuchinoJikan/OuchinoJikan.html'},
+    {date:'2020-06-30', title:'オウムアムアに幸運を',                                   cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/OumuamuaKooun.html'},
+    {date:'2020-07-31', title:'ユニット「これでもくらえ☆ with アナスタシア」登場',     cat:'unit',     label:'ユニット',           link:'Unit/KoredemoKuraeWithAnastasia/KoredemoKuraeWithAnastasia.html'},
+    {date:'2020-08-31', title:'Go Just Go!',                                             cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/GoJustGo.html'},
+    {date:'2020-09-30', title:'ユニット「魔女の館/Dark Magic」登場',                    cat:'unit',     label:'ユニット',           link:'Unit/MajonoYakata-DarkMagic/MajonoYakata-DarkMagic.html'},
+    {date:'2020-11-30', title:'[ﾒﾘｸﾘ☆ﾊｰﾄ]佐藤心 実装',                             cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/MerryChristmasHeart/MerryChristmasHeart.html'},
+    /* 2021年 */
+    {date:'2021-02-16', title:'ユニット「バレンタイン振り返り会」登場',                 cat:'unit',     label:'ユニット',           link:'Unit/ValentineFurikaeriKai/ValentineFurikaeriKai.html'},
+    {date:'2021-03-19', title:'躍るFLAGSHIP',                                           cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/OdoruFlagship.html'},
+    {date:'2021-04-04', title:'[はぁとふるsweeteen☆]佐藤心 実装（SSR）',              cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/HeartfulSweeteen/HeartfulSweeteen.html'},
+    {date:'2021-05-31', title:'ユニット「キューティクル・ガールズ」登場',               cat:'unit',     label:'ユニット',           link:'Unit/CuticleGirls/CuticleGirls.html'},
+    {date:'2021-08-17', title:'ユニット「戦う乙女たち」登場',                           cat:'unit',     label:'ユニット',           link:'Unit/TatakauOtometachi/TatakauOtometachi.html'},
+    {date:'2021-08-26', title:'[ﾌﾞﾘﾘｱﾝﾄ･はぁと]佐藤心 実装',                        cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/BrilliantHeart/BrilliantHeart.html'},
+    {date:'2021-08-31', title:'ユニット「トレジャートライアングル」登場',               cat:'unit',     label:'ユニット',           link:'Unit/TreasureTriangle/TreasureTriangle.html'},
+    {date:'2021-09-30', title:'ユニット「カレンちゃん捜索隊」登場',                     cat:'unit',     label:'ユニット',           link:'Unit/KarenSousakutai/KarenSousakutai.html'},
+    {date:'2021-12-31', title:'ユニット「正月短し遊べよ乙女☆」登場',                   cat:'unit',     label:'ユニット',           link:'Unit/ShougatsuMijikashiAsobeyoOtome/ShougatsuMijikashiAsobeyoOtome.html'},
+    /* 2022年 */
+    {date:'2022-01-30', title:'CoCo夏夏夏 Holiday',                                     cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/CoCoNatsuHoliday.html'},
+    {date:'2022-01-31', title:'ユニット「エターナルハァトエイジ」登場',                 cat:'unit',     label:'ユニット',           link:'Unit/EternalHeartAge/EternalHeartAge.html'},
+    {date:'2022-04-25', title:'第39回ぷちでれらコレクション',                           cat:'mb-event', label:'モバマス・イベント', link:'Mobamas/Event/PuchiDerellaCollection39th.html'},
+    {date:'2022-04-30', title:'[ｽﾀｲﾘｯｼｭ･はぁと]佐藤心 実装',                        cat:'mb-card',  label:'モバマス・カード',   link:'Mobamas/StylishHeart/StylishHeart.html'},
+    {date:'2022-05-31', title:'ユニット「OTONA・ウェディング」登場',                    cat:'unit',     label:'ユニット',           link:'Unit/OTONAWedding/OTONAWedding.html'},
+    {date:'2022-06-30', title:'ユニット「衣装担当☆カリスマデザイナーズ」登場',         cat:'unit',     label:'ユニット',           link:'Unit/CharismaDesigners/CharismaDesigners.html'},
+    {date:'2022-07-04', title:'[恋するスウィーティーサマー]佐藤心 実装（SSR）',        cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/KoisuruSweetieSummer/KoisuruSweetieSummer.html'},
+    {date:'2022-09-30', title:'ユニット「キャッチYOU!」登場',                           cat:'unit',     label:'ユニット',           link:'Unit/CatchYOU/CatchYOU.html'},
+    {date:'2022-10-13', title:'ユニット「オンリーワン・コレクション」登場',             cat:'unit',     label:'ユニット',           link:'Unit/OnlyOneCollection/OnlyOneCollection.html'},
+    {date:'2022-10-19', title:'ダンシング・デッド',                                     cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/DancingDead.html'},
+    {date:'2022-10-31', title:'ユニット「志希を応援！ワンダーカラーズ」登場',           cat:'unit',     label:'ユニット',           link:'Unit/WonderColors/WonderColors.html'},
+    {date:'2022-11-15', title:'ユニット「Ready? After!」登場',                          cat:'unit',     label:'ユニット',           link:'Unit/ReadyAfter/ReadyAfter.html'},
+    /* 2023年 */
+    {date:'2023-06-29', title:'Next Chapter',                                            cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/NextChapter.html'},
+    {date:'2023-07-16', title:'[愛されクイーン・はぁと]佐藤心 実装（SSR）',            cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/AisareQueenHeart/AisareQueenHeart.html'},
+    /* 2024年 */
+    {date:'2024-04-22', title:'第1回 アイドルプロデュース',                             cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/IdolProduce1st.html'},
+    {date:'2024-04-29', title:'[ド根性☆レポーター]佐藤心 実装（SR）',                 cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/DokonjyoReporter/DokonjyoReporter.html'},
+    {date:'2024-08-05', title:'[真夏の☆はぁとミーツハート]佐藤心 実装（SSR）',        cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/ManatsuNoHeartMeetsHeart/ManatsuNoHeartMeetsHeart.html'},
+    /* 2025年 */
+    {date:'2025-05-20', title:'[この世でただひとりのはぁと]佐藤心 実装（SSR）',        cat:'ds-card',  label:'デレステ・カード',   link:'Deresute/KonoyoDeTadaHitoriNoHeart/KonoyoDeTadaHitoriNoHeart.html'},
+    {date:'2025-06-27', title:'熱情エナモラル',                                         cat:'ds-event', label:'デレステ・イベント', link:'Deresute/Event/NetsujouEnamorar.html'},
+];
+
+(function () {
+    var currentFilter = 'all';
+
+    function catGroup(cat) {
+        if (cat === 'ds-event' || cat === 'ds-card') return 'ds';
+        if (cat === 'mb-event' || cat === 'mb-card') return 'mb';
+        return 'unit';
+    }
+
+    function pad2(n) { return n < 10 ? '0' + n : '' + n; }
+
+    function render(filter) {
+        var body = document.getElementById('tl-body');
+        body.innerHTML = '';
+
+        var filtered = filter === 'all'
+            ? TL.slice()
+            : TL.filter(function (e) { return catGroup(e.cat) === filter; });
+
+        /* 新しい順（降順） */
+        filtered.sort(function (a, b) {
+            return b.date.localeCompare(a.date);
+        });
+
+        document.getElementById('tl-count').textContent = filtered.length;
+
+        if (filtered.length === 0) {
+            body.innerHTML = '<p style="color:var(--sh-text-mute);padding:20px 0;">該当するデータがありません。</p>';
+            return;
+        }
+
+        /* 年でグループ化 */
+        var byYear = {};
+        var years = [];
+        filtered.forEach(function (e) {
+            var y = e.date.slice(0, 4);
+            if (!byYear[y]) { byYear[y] = []; years.push(y); }
+            byYear[y].push(e);
+        });
+        years.sort(function (a, b) { return b - a; });
+
+        years.forEach(function (y) {
+            var items = byYear[y];
+
+            var grp = document.createElement('div');
+            grp.className = 'tl-year-group';
+
+            var band = document.createElement('div');
+            band.className = 'tl-year-band';
+            band.innerHTML =
+                '<div class="tl-year-num">' + y + '</div>' +
+                '<div class="tl-year-count">' + items.length + ' items</div>' +
+                '<div class="tl-year-line"></div>';
+            grp.appendChild(band);
+
+            items.forEach(function (e) {
+                var parts = e.date.split('-');
+                var mm = parts[1];
+                var dd = parts[2];
+
+                var a = document.createElement('a');
+                a.className = 'tl-row';
+                a.href = e.link;
+                a.setAttribute('data-cat', e.cat);
+                a.innerHTML =
+                    '<div class="tl-date"><div class="md">' + mm + '/' + dd + '</div></div>' +
+                    '<div class="tl-title">' + e.title + '</div>' +
+                    '<span class="tl-tag" data-cat="' + e.cat + '">' + e.label + '</span>';
+                grp.appendChild(a);
+            });
+
+            body.appendChild(grp);
+        });
+    }
+
+    /* フィルターボタン */
+    document.querySelectorAll('.tl-filter-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            currentFilter = this.dataset.filter;
+            document.querySelectorAll('.tl-filter-btn').forEach(function (b) { b.classList.remove('active'); });
+            this.classList.add('active');
+            render(currentFilter);
+        });
+    });
+
+    render('all');
+})();
+</script>
 
 </body>
 </html>
