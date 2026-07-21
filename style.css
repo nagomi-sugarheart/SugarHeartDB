@@ -1751,7 +1751,7 @@ input[name="dialogue-tab"] {
 .mv-tab {
     padding: 5px 14px;
     border: 1.5px solid var(--sh-line-soft);
-    border-radius: var(--r-sm);
+    border-radius: var(--r-lg);
     background: var(--sh-bg-soft);
     color: var(--sh-text-mute);
     font-size: 0.82rem;
