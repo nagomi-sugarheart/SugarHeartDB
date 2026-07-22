@@ -56,7 +56,7 @@
 新しいページ・カード・ユニットを追加した後は、以下のコマンドを実行して `data/search-index.json` を再生成してください。
 
 ```bash
-python _generate_search_index.py
+python scripts/_generate_search_index.py
 ```
 
 ### 実行後に更新されるファイル
@@ -111,7 +111,7 @@ python _generate_search_index.py
 
 | ファイル | 役割 |
 |----------|------|
-| `_generate_search_index.py` | `data/search-index.json` を生成するスクリプト |
+| `scripts/_generate_search_index.py` | `data/search-index.json` を生成するスクリプト |
 | `data/search-index.json` | 生成物（Git 管理対象） |
 | `components/header.js` | 検索ボタン（🔍）・オーバーレイ UI・検索ロジック |
 | `components/idol-badge.js` | コピーボタン inject・クリップボード処理 |

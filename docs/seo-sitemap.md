@@ -10,14 +10,14 @@ SugarHeartDB をGoogle検索に載せる（インデックスさせる）ため�
 | ファイル | 役割 |
 | --- | --- |
 | `sitemap.xml` | サイト内全ページのURL一覧。検索エンジンにページの存在を伝える。**自動生成物なので手書き編集しない。** |
-| `generate_sitemap.py` | HTMLを走査して `sitemap.xml` を生成するスクリプト。 |
+| `scripts/generate_sitemap.py` | HTMLを走査して `sitemap.xml` を生成するスクリプト。 |
 | `robots.txt` | クローラ向けの許可設定と sitemap の場所を記載。 |
 
 ## sitemap.xml の更新ルール（重要）
 ページを **追加・削除・URL変更** したら、必ず再生成してコミットする。
 
 ```bash
-python generate_sitemap.py
+python scripts/generate_sitemap.py
 ```
 
 - `<meta name="robots" content="noindex">` を含むページは自動的に除外される。

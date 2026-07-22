@@ -39,7 +39,8 @@ cloudinary.config(
     api_proxy=None,
 )
 
-BASE_DIR = Path(__file__).parent
+# このスクリプトは scripts/ 配下にあるため、リポジトリ直下を親ディレクトリとして参照する
+BASE_DIR = Path(__file__).resolve().parent.parent
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg"}
 
 def find_images():

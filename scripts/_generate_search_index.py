@@ -19,7 +19,8 @@ import re
 import glob
 from html.parser import HTMLParser
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# このスクリプトは scripts/ 配下にあるため、リポジトリ直下を親ディレクトリとして参照する
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_FILE = os.path.join(BASE_DIR, 'data', 'search-index.json')
 
 
@@ -102,9 +103,27 @@ def load_unit_url_map():
 DIALOGUE_PREFIXES = ('あいさつ_', 'お仕事_', '親愛度MAX_')
 
 
+def load_existing_entries(types):
+    """既存の search-index.json から指定タイプのエントリを取り出す。
+    元データCSV（mobamas.csv / udetail.csv / ulist.csv）は「今後カード追加なし」の
+    方針で削除済みのため、それらを入力とするカード・ユニットのエントリは
+    再生成時に既存インデックスから引き継いで保持する。"""
+    if not os.path.exists(OUTPUT_FILE):
+        return []
+    try:
+        with open(OUTPUT_FILE, encoding='utf-8') as f:
+            data = json.load(f)
+    except Exception:
+        return []
+    return [e for e in data if e.get('type') in types]
+
+
 def load_card_entries(idol_map):
-    entries = []
     path = os.path.join(BASE_DIR, 'data', 'mobamas.csv')
+    if not os.path.exists(path):
+        # 元データCSVが無い場合は既存インデックスのカードエントリを維持
+        return load_existing_entries({'card'})
+    entries = []
     with open(path, encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
         fieldnames = reader.fieldnames or []
@@ -137,9 +156,13 @@ SERIF_CONTEXTS = ['登場時セリフ', 'バトル時セリフ', '勝利時セ�
 
 
 def load_unit_entries(idol_map, unit_url_map):
-    entries = []
     ulist_path = os.path.join(BASE_DIR, 'data', 'ulist.csv')
     udetail_path = os.path.join(BASE_DIR, 'data', 'udetail.csv')
+    if not (os.path.exists(ulist_path) and os.path.exists(udetail_path)):
+        # 元データCSVが無い場合は既存インデックスのユニットエントリを維持
+        return load_existing_entries({'unit'})
+
+    entries = []
 
     # ulist.csv からユニット名 → フルネームメンバーリスト のマップを作成
     unit_members_full = {}  # unit_name -> [full_name1, ...]

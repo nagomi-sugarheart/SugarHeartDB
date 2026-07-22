@@ -24,7 +24,8 @@ import subprocess
 from datetime import datetime, timezone
 from xml.sax.saxutils import escape
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# このスクリプトは scripts/ 配下にあるため、リポジトリ直下を親ディレクトリとして参照する
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # GitHub Pages の公開URL（末尾スラッシュ必須）
 BASE_URL = "https://nagomi-sugarheart.github.io/SugarHeartDB/"

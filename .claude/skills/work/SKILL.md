@@ -26,7 +26,7 @@
    - 新しいページを作成した場合は、既存のページから関連しそうな場所を探し、今回作成したページへのリンクを自然な形で追記する。
 
 3.5 **sitemap.xml の再生成（※HTMLページの追加・削除・URL変更時のみ）:**
-   - `python generate_sitemap.py` を実行して `sitemap.xml` を再生成し、変更をコミットに含める。
+   - `python scripts/generate_sitemap.py` を実行して `sitemap.xml` を再生成し、変更をコミットに含める。
    - sitemap.xml は全ページを走査して自動生成されるため、手書きで編集しないこと。
 
 4. **コミット:**

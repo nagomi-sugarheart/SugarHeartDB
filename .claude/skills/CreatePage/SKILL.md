@@ -110,7 +110,7 @@
 
 ### 7. 検索インデックス再生成
 ```bash
-python _generate_search_index.py
+python scripts/_generate_search_index.py
 ```
 対象ページのエントリが追加されたことを確認する（/add-copy スキル参照）。
 

@@ -41,14 +41,14 @@ grep -A 10 "function initCopyButtons" components/idol-badge.js
   document.querySelectorAll('.新コンテナ .新テキスト要素').forEach(injectCopyBtn);
   ```
 
-  さらに `_generate_search_index.py` の `DialogueParser` と `docs/search-feature.md` にも同セレクターを追記する（詳細は `docs/search-feature.md` を参照）。
+  さらに `scripts/_generate_search_index.py` の `DialogueParser` と `docs/search-feature.md` にも同セレクターを追記する（詳細は `docs/search-feature.md` を参照）。
 
 ---
 
 ### 3. 検索インデックスを再生成する
 
 ```bash
-python _generate_search_index.py
+python scripts/_generate_search_index.py
 ```
 
 スクリプトは `Mobamas/**/*.html` と `Deresute/**/*.html` を自動スキャンするため、
@@ -79,6 +79,6 @@ for e in target[:5]:
 ```bash
 git add data/search-index.json
 # セレクターを新規追加した場合は以下も追加
-# git add components/idol-badge.js _generate_search_index.py docs/search-feature.md
+# git add components/idol-badge.js scripts/_generate_search_index.py docs/search-feature.md
 git commit -m "search-index: 〇〇ページのセリフをインデックスに追加"
 ```

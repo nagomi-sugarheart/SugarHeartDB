@@ -118,7 +118,7 @@ up.upload('C:/Users/sawas/Pictures/欠損部分/xxx.png', public_id='Deresute/Ev
    - ファイルは **UTF-8（BOMなし）・CRLF**。`newline=''` で読み書きして改行を保持する
 
 ### 5. 検索インデックス再生成
-`python _generate_search_index.py` を実行する（本文の誤記修正を反映）。
+`python scripts/_generate_search_index.py` を実行する（本文の誤記修正を反映）。
 `data/search-index.json` を手で編集しないこと（文字化けの原因）。差分は該当行のみになるのが正。
 
 ### 6. 検証
