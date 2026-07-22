@@ -164,6 +164,6 @@ PRが存在しない場合は作成する。
 ## 注意事項
 
 - アップロードに失敗した画像（結果が`null`）は削除しない
-- `_cloudinary_upload_map.json` と `cloudinary_migrate.py` はリポジトリに残す
+- `_cloudinary_upload_map.json` と `scripts/cloudinary_migrate.py` はリポジトリに残す
 - 画像ファイルはコミットしない（`.gitignore`への追加を検討）
 - 作業ブランチは `claude/kind-feynman-MxwRC`（または指示されたブランチ）で行う

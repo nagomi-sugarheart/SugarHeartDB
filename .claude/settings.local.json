@@ -34,7 +34,7 @@
       "WebSearch",
       "mcp__playwright__browser_navigate",
       "mcp__playwright__browser_run_code_unsafe",
-      "Bash(python _generate_search_index.py)",
+      "Bash(python scripts/_generate_search_index.py)",
       "Bash(Sort-Object)",
       "Bash(Select-String \"StoryCommu|BusinessCommu|MemorialCommu|CommonVoice\")",
       "PowerShell(Get-ChildItem -Force \"C:\\\\Users\\\\sawas\\\\Desktop\\\\sugarheartdb\\\\\" | Where-Object { $_.Name -like \".claude\" -or $_.Name -like \".Claude\" } | Select-Object Name, FullName)",
