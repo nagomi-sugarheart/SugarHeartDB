@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nagomi-sugarheart.github.io/SugarHeartDB/sitemap.xml
