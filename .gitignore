@@ -13,3 +13,8 @@ scripts/derepo_img/
 scripts/derepo_tmp/
 
 scripts/derepo_slices/
+
+# 一時作業スクリプト置き場（コミット禁止・作業終了時に削除）
+# 使い捨てのアップロード/生成/移行スクリプトは必ずここに置く。README以外は追跡しない。
+scripts/tmp/*
+!scripts/tmp/README.md
