@@ -6750,6 +6750,15 @@ input[name="dialogue-tab"] {
     color: var(--sh-text-mute);
 }
 
+.vc-check-item .vc-copy {
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    margin-top: 1px;
+    font-size: 0.9rem;
+    margin-left: 0;
+}
+
 @media screen and (max-width: 900px) {
     .vc-steps li { padding-left: 40px; }
     .vc-steps li::before { width: 24px; height: 24px; font-size: 0.78rem; }
