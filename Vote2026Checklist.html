@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <base href="/SugarHeartDB/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>投票チェックリスト（臨時）｜SugarHeartDB</title>
     <meta name="description" content="CG総選挙2026 投票のやることチェックリスト（個人用の臨時ページ）。">
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260726">
 </head>
 <body>
-<script src="components/header.js"></script>
+<script src="components/header.js?v=20260726"></script>
 
 <section class="page-hero">
     <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>投票チェックリスト（臨時）</strong></div>
     <h1>投票チェックリスト <span class="sub">/ VOTE 2026</span></h1>
 </section>
+
+<div class="vc-refresh" style="text-align:center; margin:14px auto 0; max-width:640px; padding:0 16px;">
+    <button type="button" id="vc-refresh-btn" style="display:inline-flex; align-items:center; gap:6px; padding:9px 18px; border:1px solid var(--sh-pink-deep,#e06898); border-radius:999px; background:var(--sh-pink-soft,#fff0f5); color:var(--sh-pink-deep,#e06898); font-size:14px; font-weight:700; cursor:pointer;">🔄 最新の情報に更新</button>
+    <p style="font-size:12px; color:#999; margin:6px 0 0; line-height:1.6;">表示が古いときに押すと最新版を再読み込みします。チェック状況は端末ごとに保存されるので、更新しても消えません。</p>
+</div>
 
 <div class="page">
     <div class="tab-group">
@@ -60,7 +68,7 @@
                     </li>
                     <li class="vc-check-item" data-id="password-mission">
                         <input type="checkbox" id="vc-item-3">
-                        <label for="vc-item-3">「CG総選挙ST@TION スペシャルミッション」の合言葉を入力、で合言葉入力画面に進み、「永遠の愛」を入力する</label>
+                        <label for="vc-item-3">あいことば「永遠の愛」を入力</label>
                         <button type="button" class="sh-copy-btn vc-copy" data-copy="永遠の愛" aria-label="あいことば「永遠の愛」をコピー">⎘</button>
                     </li>
                     <li class="vc-check-item" data-id="password-masei">
@@ -130,6 +138,16 @@
 <script>
 (function () {
     var STORAGE_KEY = 'sh-vote2026-checklist-done';
+
+    // 「最新の情報に更新」ボタン：一意なクエリを付けてキャッシュを回避して再読み込み。
+    // チェック状況は localStorage（端末ごと・URLクエリ非依存）に保持されるため消えない。
+    var refreshBtn = document.getElementById('vc-refresh-btn');
+    if (refreshBtn) {
+        refreshBtn.addEventListener('click', function () {
+            location.replace(location.pathname + '?_=' + Date.now());
+        });
+    }
+
     var list = document.getElementById('vc-checklist');
     if (!list) return;
 
@@ -181,6 +199,6 @@
 })();
 </script>
 
-<script src="components/common.js"></script>
+<script src="components/common.js?v=20260726"></script>
 </body>
 </html>
