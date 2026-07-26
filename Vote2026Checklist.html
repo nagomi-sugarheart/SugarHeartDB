@@ -48,6 +48,7 @@
             <div class="box-area">
                 <h2 class="box-title">1回きりのやること</h2>
                 <p class="vc-note">チェックすると一番下に移動してグレーアウトします。</p>
+                <p class="vc-note">あいことばは <a href="https://idolmaster-official.jp/serial-code" target="_blank" rel="noopener noreferrer">あいことば入力ページ</a> で入力します。各項目の <strong>⎘</strong> ボタンであいことばをコピーできるので、入力欄に貼り付けてください。</p>
                 <ul class="vc-checklist" id="vc-checklist">
                     <li class="vc-check-item" data-id="follow-x">
                         <input type="checkbox" id="vc-item-1">
@@ -60,14 +61,27 @@
                     <li class="vc-check-item" data-id="password-mission">
                         <input type="checkbox" id="vc-item-3">
                         <label for="vc-item-3">「CG総選挙ST@TION スペシャルミッション」の合言葉を入力、で合言葉入力画面に進み、「永遠の愛」を入力する</label>
+                        <button type="button" class="sh-copy-btn vc-copy" data-copy="永遠の愛" aria-label="あいことば「永遠の愛」をコピー">⎘</button>
                     </li>
                     <li class="vc-check-item" data-id="password-masei">
                         <input type="checkbox" id="vc-item-4">
                         <label for="vc-item-4">あいことば「魔性の魅力」を入力</label>
+                        <button type="button" class="sh-copy-btn vc-copy" data-copy="魔性の魅力" aria-label="あいことば「魔性の魅力」をコピー">⎘</button>
                     </li>
                     <li class="vc-check-item" data-id="password-watashi-saikou">
                         <input type="checkbox" id="vc-item-5">
                         <label for="vc-item-5">あいことば「私史上最高の私」を入力</label>
+                        <button type="button" class="sh-copy-btn vc-copy" data-copy="私史上最高の私" aria-label="あいことば「私史上最高の私」をコピー">⎘</button>
+                    </li>
+                    <li class="vc-check-item" data-id="password-cinderella-girl">
+                        <input type="checkbox" id="vc-item-6">
+                        <label for="vc-item-6">あいことば「シンデレラガール」を入力</label>
+                        <button type="button" class="sh-copy-btn vc-copy" data-copy="シンデレラガール" aria-label="あいことば「シンデレラガール」をコピー">⎘</button>
+                    </li>
+                    <li class="vc-check-item" data-id="password-sousenkyo">
+                        <input type="checkbox" id="vc-item-7">
+                        <label for="vc-item-7">あいことば「総選挙」を入力</label>
+                        <button type="button" class="sh-copy-btn vc-copy" data-copy="総選挙" aria-label="あいことば「総選挙」をコピー">⎘</button>
                     </li>
                 </ul>
             </div>
@@ -140,6 +154,23 @@
             setDone(item, isDone);
             if (isDone) list.appendChild(item);
             save();
+        });
+    });
+
+    list.querySelectorAll('.vc-copy').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var text = btn.dataset.copy || '';
+            if (!text || !navigator.clipboard || !navigator.clipboard.writeText) return;
+            navigator.clipboard.writeText(text).then(function () {
+                btn.textContent = '✓';
+                btn.classList.add('copied');
+                setTimeout(function () {
+                    btn.textContent = '⎘';
+                    btn.classList.remove('copied');
+                }, 1500);
+            }).catch(function () {});
         });
     });
 })();
