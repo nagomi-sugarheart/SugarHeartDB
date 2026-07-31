@@ -181,14 +181,16 @@ SERIF_CONTEXTS = ['登場時セリフ', 'バトル時セリフ', '勝利時セ�
 
 # ユニットページの話者スパンを拾う正規表現
 UNIT_LINE_RE = re.compile(
-    r'<p class="line">(?:<span class="speaker"[^>]*>([^<]*)</span>)?(.*?)</p>', re.S)
+    r'<p class="line">(?:<span class="speaker"([^>]*)>([^<]*)</span>)?(.*?)</p>', re.S)
+DATA_IDOL_RE = re.compile(r'data-idol="([^"]*)"')
 
 
 def load_unit_speaker_map():
     """Unit/**/*.html から「セリフ本文 → 話者」のマップを作る。
 
     ユニットページは実際にサイトへ表示されている台詞そのものなので、
-    話者の正となるデータとして扱う。"""
+    話者の正となるデータとして扱う。カタカナの役名で表示している話者は
+    data-idol に本人の名前を持つため、あればそちらを優先する。"""
     speaker_by_text = {}
     for path in sorted(glob.glob(os.path.join(BASE_DIR, 'Unit', '**', '*.html'), recursive=True)):
         if os.path.basename(path) == 'UnitList.html':
@@ -199,8 +201,10 @@ def load_unit_speaker_map():
         except Exception:
             continue
         for m in UNIT_LINE_RE.finditer(html):
-            speaker = (m.group(1) or '').strip()
-            text = re.sub(r'<[^>]+>', '', m.group(2)).strip()
+            attrs = m.group(1) or ''
+            idol_attr = DATA_IDOL_RE.search(attrs)
+            speaker = (idol_attr.group(1) if idol_attr else (m.group(2) or '')).strip()
+            text = re.sub(r'<[^>]+>', '', m.group(3)).strip()
             if text and speaker:
                 speaker_by_text[text] = speaker
     return speaker_by_text
