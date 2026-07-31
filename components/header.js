@@ -302,20 +302,39 @@
         catch (e) { return str.toLowerCase(); }
     }
 
+    // 当サイトの主役。アイドル選択リストの先頭に固定する（値は検索インデックスの話者名）
+    var PRIMARY_IDOL = '心';
+
     function populateIdolSelect(csvText) {
         var select = document.getElementById('sh-search-idol');
         if (!select) return;
         var lines = csvText.replace(/^﻿/, '').trim().split('\n');
+
+        // value は検索インデックスの話者名（短縮名）、表示はフルネーム
+        var idols = [];
         for (var i = 1; i < lines.length; i++) {
             var cols = lines[i].split(',');
+            var full  = cols[0] ? cols[0].trim() : '';
             var short = cols[1] ? cols[1].trim() : '';
             if (short) {
-                var opt = document.createElement('option');
-                opt.value = short;
-                opt.textContent = short;
-                select.appendChild(opt);
+                idols.push({ value: short, label: full || short });
             }
         }
+
+        // 佐藤心を先頭へ。残りはCSVの並び（五十音順）のまま
+        for (var j = 0; j < idols.length; j++) {
+            if (idols[j].value === PRIMARY_IDOL) {
+                idols.unshift(idols.splice(j, 1)[0]);
+                break;
+            }
+        }
+
+        idols.forEach(function(idol) {
+            var opt = document.createElement('option');
+            opt.value = idol.value;
+            opt.textContent = idol.label;
+            select.appendChild(opt);
+        });
     }
 
     function loadSearchData(callback) {

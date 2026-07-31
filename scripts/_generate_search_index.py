@@ -42,6 +42,31 @@ def load_idols():
     return idol_map
 
 
+# 劇中の役名などでカタカナ表記される話者と、対応するアイドルの短縮名。
+# 表記が違うだけで同一人物なので、検索・バッジ表示は漢字表記に揃える。
+# （ナターリア・キャシー・ライラ等、本来カタカナ名のアイドルはここには入れない）
+KANA_SPEAKER_ALIASES = {
+    'シン':   '心',     'エリカ': '瑛梨華', 'キヨラ': '清良',   'コハル': '小春',
+    'サチコ': '幸子',   'シキ':   '志希',   'シノ':   '志乃',   'セイラ': '聖來',
+    'トモエ': '巴',     'ハヤテ': '颯',     'ホナミ': '保奈美', 'マユ':   'まゆ',
+    'マリナ': '麻理菜', 'ミカ':   '美嘉',   'ミユ':   '美優',   'ムツミ': 'むつみ',
+    'ヨーコ': '洋子',   'リナ':   '里奈',   'カナデ': '奏',
+}
+
+
+def normalize_speaker(speaker, member_shorts=None):
+    """カタカナ表記の話者名を漢字表記（cgss_idols.csv の「名前」）に揃える。
+
+    member_shorts を渡した場合、変換先がそのユニットのメンバーであるときだけ
+    変換する（同じ読みの別アイドルへ誤変換するのを防ぐ）。"""
+    alias = KANA_SPEAKER_ALIASES.get(speaker)
+    if not alias:
+        return speaker
+    if member_shorts and alias not in member_shorts:
+        return speaker
+    return alias
+
+
 def extract_idol_short(card_name, idol_map):
     """カード名（例: [ﾊｰﾄ･ﾓﾃﾞﾙ]佐藤心+）からアイドル短縮名を返す。"""
     # [prefix] を除去して末尾の + を取り除く
@@ -154,13 +179,59 @@ def load_card_entries(idol_map):
 # 台詞の種別ラベル
 SERIF_CONTEXTS = ['登場時セリフ', 'バトル時セリフ', '勝利時セリフ', '敗北時セリフ', '引き分け時セリフ']
 
+# ユニットページの話者スパンを拾う正規表現
+UNIT_LINE_RE = re.compile(
+    r'<p class="line">(?:<span class="speaker"([^>]*)>([^<]*)</span>)?(.*?)</p>', re.S)
+DATA_IDOL_RE = re.compile(r'data-idol="([^"]*)"')
+
+
+def load_unit_speaker_map():
+    """Unit/**/*.html から「セリフ本文 → 話者」のマップを作る。
+
+    ユニットページは実際にサイトへ表示されている台詞そのものなので、
+    話者の正となるデータとして扱う。カタカナの役名で表示している話者は
+    data-idol に本人の名前を持つため、あればそちらを優先する。"""
+    speaker_by_text = {}
+    for path in sorted(glob.glob(os.path.join(BASE_DIR, 'Unit', '**', '*.html'), recursive=True)):
+        if os.path.basename(path) == 'UnitList.html':
+            continue
+        try:
+            with open(path, encoding='utf-8', errors='ignore') as f:
+                html = f.read()
+        except Exception:
+            continue
+        for m in UNIT_LINE_RE.finditer(html):
+            attrs = m.group(1) or ''
+            idol_attr = DATA_IDOL_RE.search(attrs)
+            speaker = (idol_attr.group(1) if idol_attr else (m.group(2) or '')).strip()
+            text = re.sub(r'<[^>]+>', '', m.group(3)).strip()
+            if text and speaker:
+                speaker_by_text[text] = speaker
+    return speaker_by_text
+
+
+def resync_unit_speakers(entries):
+    """既存インデックスのユニットエントリの話者(idol)をユニットページと同期する。
+
+    idol にはユニット全メンバーではなく「そのセリフを話したアイドル」を入れる。
+    ページ側に該当セリフが無い場合は既存の値を保持する。"""
+    speaker_by_text = load_unit_speaker_map()
+    if not speaker_by_text:
+        return entries
+    for e in entries:
+        speaker = speaker_by_text.get(e.get('text', '').strip())
+        if speaker:
+            e['idol'] = speaker
+    return entries
+
 
 def load_unit_entries(idol_map, unit_url_map):
     ulist_path = os.path.join(BASE_DIR, 'data', 'ulist.csv')
     udetail_path = os.path.join(BASE_DIR, 'data', 'udetail.csv')
     if not (os.path.exists(ulist_path) and os.path.exists(udetail_path)):
-        # 元データCSVが無い場合は既存インデックスのユニットエントリを維持
-        return load_existing_entries({'unit'})
+        # 元データCSVが無い場合は既存インデックスのユニットエントリを維持しつつ、
+        # 話者だけはユニットページの内容と同期する
+        return resync_unit_speakers(load_existing_entries({'unit'}))
 
     entries = []
 
@@ -189,13 +260,12 @@ def load_unit_entries(idol_map, unit_url_map):
             unit_ja_name = uname
             url = unit_url_map.get(unit_ja_name, 'Unit/UnitList.html')
 
-            # メンバーの短縮名リスト
+            # メンバーの短縮名リスト（話者名の妥当性チェックに使う）
             member_shorts = []
             for full in unit_members_full.get(uname, []):
                 short = full_to_short.get(full, '')
                 if short:
                     member_shorts.append(short)
-            idol_str = ' '.join(member_shorts)
 
             # 各種セリフ
             for ctx in SERIF_CONTEXTS:
@@ -205,11 +275,13 @@ def load_unit_entries(idol_map, unit_url_map):
                     speaker = row.get(speaker_col, '').strip()
                     text    = row.get(text_col, '').strip()
                     if text:
+                        # idol は「そのセリフを話したアイドル」。
+                        # ユニット全メンバーを入れると話者での絞り込みが効かない。
                         entries.append({
                             'type':    'unit',
                             'title':   uname,
                             'text':    text,
-                            'idol':    idol_str,
+                            'idol':    normalize_speaker(speaker, member_shorts),
                             'context': ctx,
                             'url':     url,
                         })
@@ -219,6 +291,15 @@ def load_unit_entries(idol_map, unit_url_map):
 # ─────────────────────────────────────────────
 # 5. HTML → ストーリー台詞エントリ生成
 # ─────────────────────────────────────────────
+
+def speaker_of(attrs_dict):
+    """話者名を取り出す。
+
+    劇中の役名や愛称で表示している話者（例: data-who="ダークシュガー"）は
+    data-idol に本人の名前を持たせているため、あればそちらを優先する。
+    こうするとページの表示は役名のまま、検索の話者絞り込みだけ本人に紐づく。"""
+    return (attrs_dict.get('data-idol') or attrs_dict.get('data-who') or '').strip()
+
 
 class DialogueParser(HTMLParser):
     """
@@ -305,7 +386,7 @@ class DialogueParser(HTMLParser):
             classes = attrs_dict.get('class', '').split()
             if 'stage-direction' not in classes and 'data-who' in attrs_dict:
                 self._in_script_row = True
-                self._script_row_who = attrs_dict.get('data-who', '')
+                self._script_row_who = speaker_of(attrs_dict)
         if self._in_script_row and tag == 'div' and self._has_class(attrs_dict, 'line'):
             self._in_line_a = True
             self._line_a_depth = len(self._stack)
@@ -316,7 +397,7 @@ class DialogueParser(HTMLParser):
             self._in_dialog_body = True
             self._dialog_who = ''
         if self._in_dialog_body and tag == 'span' and self._has_class(attrs_dict, 'speaker'):
-            who = attrs_dict.get('data-who', '')
+            who = speaker_of(attrs_dict)
             if who:
                 self._dialog_who = who
         if self._in_dialog_body and tag == 'div' and self._has_class(attrs_dict, 'text'):
@@ -361,7 +442,7 @@ class DialogueParser(HTMLParser):
         # ev-condition ラベル・dss-stage-text 注記はテキストに含めない
         if self._in_standalone_ev_text_f and self._f_skip_depth < 0:
             if tag == 'span' and self._has_class(attrs_dict, 'speaker'):
-                who = attrs_dict.get('data-who', '')
+                who = speaker_of(attrs_dict)
                 if who:
                     self._standalone_ev_who = who
                 self._f_skip_depth = len(self._stack)
@@ -377,7 +458,7 @@ class DialogueParser(HTMLParser):
         if (self._v2_accord_depth >= 0
                 and not self._v2_accord_who
                 and tag == 'span' and self._has_class(attrs_dict, 'speaker')):
-            who = attrs_dict.get('data-who', '')
+            who = speaker_of(attrs_dict)
             if who and who not in ('P', 'ナレーション'):
                 self._v2_accord_who = who
         # .ev-text: アコーディオン内のセリフテキスト
@@ -390,7 +471,7 @@ class DialogueParser(HTMLParser):
         # ev-text 内の speaker スパン: 行ごとの話者特定（テキストは除外）
         if (self._in_ev_text_d
                 and tag == 'span' and self._has_class(attrs_dict, 'speaker')):
-            who = attrs_dict.get('data-who', '')
+            who = speaker_of(attrs_dict)
             if who and who not in ('P', 'ナレーション'):
                 self._ev_text_line_who = who
                 self._in_ev_text_speaker = True
