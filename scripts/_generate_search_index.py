@@ -288,6 +288,15 @@ def load_unit_entries(idol_map, unit_url_map):
 # 5. HTML → ストーリー台詞エントリ生成
 # ─────────────────────────────────────────────
 
+def speaker_of(attrs_dict):
+    """話者名を取り出す。
+
+    劇中の役名や愛称で表示している話者（例: data-who="ダークシュガー"）は
+    data-idol に本人の名前を持たせているため、あればそちらを優先する。
+    こうするとページの表示は役名のまま、検索の話者絞り込みだけ本人に紐づく。"""
+    return (attrs_dict.get('data-idol') or attrs_dict.get('data-who') or '').strip()
+
+
 class DialogueParser(HTMLParser):
     """
     HTML から会話行を抽出する。
@@ -373,7 +382,7 @@ class DialogueParser(HTMLParser):
             classes = attrs_dict.get('class', '').split()
             if 'stage-direction' not in classes and 'data-who' in attrs_dict:
                 self._in_script_row = True
-                self._script_row_who = attrs_dict.get('data-who', '')
+                self._script_row_who = speaker_of(attrs_dict)
         if self._in_script_row and tag == 'div' and self._has_class(attrs_dict, 'line'):
             self._in_line_a = True
             self._line_a_depth = len(self._stack)
@@ -384,7 +393,7 @@ class DialogueParser(HTMLParser):
             self._in_dialog_body = True
             self._dialog_who = ''
         if self._in_dialog_body and tag == 'span' and self._has_class(attrs_dict, 'speaker'):
-            who = attrs_dict.get('data-who', '')
+            who = speaker_of(attrs_dict)
             if who:
                 self._dialog_who = who
         if self._in_dialog_body and tag == 'div' and self._has_class(attrs_dict, 'text'):
@@ -429,7 +438,7 @@ class DialogueParser(HTMLParser):
         # ev-condition ラベル・dss-stage-text 注記はテキストに含めない
         if self._in_standalone_ev_text_f and self._f_skip_depth < 0:
             if tag == 'span' and self._has_class(attrs_dict, 'speaker'):
-                who = attrs_dict.get('data-who', '')
+                who = speaker_of(attrs_dict)
                 if who:
                     self._standalone_ev_who = who
                 self._f_skip_depth = len(self._stack)
@@ -445,7 +454,7 @@ class DialogueParser(HTMLParser):
         if (self._v2_accord_depth >= 0
                 and not self._v2_accord_who
                 and tag == 'span' and self._has_class(attrs_dict, 'speaker')):
-            who = attrs_dict.get('data-who', '')
+            who = speaker_of(attrs_dict)
             if who and who not in ('P', 'ナレーション'):
                 self._v2_accord_who = who
         # .ev-text: アコーディオン内のセリフテキスト
@@ -458,7 +467,7 @@ class DialogueParser(HTMLParser):
         # ev-text 内の speaker スパン: 行ごとの話者特定（テキストは除外）
         if (self._in_ev_text_d
                 and tag == 'span' and self._has_class(attrs_dict, 'speaker')):
-            who = attrs_dict.get('data-who', '')
+            who = speaker_of(attrs_dict)
             if who and who not in ('P', 'ナレーション'):
                 self._ev_text_line_who = who
                 self._in_ev_text_speaker = True

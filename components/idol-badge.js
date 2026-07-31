@@ -30,6 +30,16 @@
   }
 
   /**
+   * バッジの色を決めるアイドル名を返す。
+   * 劇中の役名や愛称で表示している話者（例: data-who="ダークシュガー"）は
+   * data-idol に本人の名前を持たせる。表示テキストは変えずに色だけ本人の
+   * パーソナルカラーになる。data-idol が無ければ data-who をそのまま使う。
+   */
+  function colorNameOf(el) {
+    return (el.dataset.idol || el.dataset.who || '').trim();
+  }
+
+  /**
    * nameStr: 「心」「心・千鶴」「一同」などの文字列
    * idolMap: { shortName: { color, attribute } }
    */
@@ -111,30 +121,31 @@
     // 1. .script-row .who（Mobamasページ）
     //    data-who はrow要素に付く。stage-directionはスキップ
     document.querySelectorAll('.script-row:not(.stage-direction)[data-who]').forEach(row => {
-      const nameStr = row.dataset.who;
+      const nameStr = colorNameOf(row);
       if (!nameStr) return;
       const whoEl = row.querySelector('.who');
       if (whoEl) applyBadge(whoEl, nameStr, idolMap);
     });
 
     // 2. .ud-dialogue .speaker（Unitページ）
-    //    data-who 属性があればそれを優先、なければ要素のテキストで照合
+    //    data-idol → data-who → 要素のテキスト の順で照合
     document.querySelectorAll('.ud-dialogue .speaker').forEach(el => {
-      const nameStr = el.dataset.who || el.textContent.trim();
+      const nameStr = colorNameOf(el) || el.textContent.trim();
       applyBadge(el, nameStr, idolMap);
     });
 
     // 3. .dialog .body .speaker（KirakiraModelChallenge等）
     //    CSSでも定義済みだが、JSで一元管理するためここでも適用
     document.querySelectorAll('.dialog .body .speaker[data-who]').forEach(el => {
-      const nameStr = el.dataset.who;
-      if (!nameStr || nameStr === 'P' || nameStr === 'ナレーション') return;
+      if (el.dataset.who === 'P' || el.dataset.who === 'ナレーション') return;
+      const nameStr = colorNameOf(el);
+      if (!nameStr) return;
       applyBadge(el, nameStr, idolMap);
     });
 
     // 4. .ev-dialog-row .speaker（イベント中セリフ・他アイドル言及）
     document.querySelectorAll('.ev-dialog-row .speaker[data-who]').forEach(el => {
-      const nameStr = el.dataset.who;
+      const nameStr = colorNameOf(el);
       if (!nameStr) return;
       applyBadge(el, nameStr, idolMap);
     });
