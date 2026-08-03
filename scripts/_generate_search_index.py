@@ -6,7 +6,9 @@ data/search-index.json を生成するスクリプト。
 対象:
   - data/mobamas.csv  → type: "card"
   - data/udetail.csv  → type: "unit"
-  - Mobamas/**/*.html, Deresute/**/*.html → type: "story"
+  - Mobamas/**/*.html, Deresute/**/*.html
+      → コミュ台詞は type: "story"
+      → カード詳細セリフ（形式E）は type: "card"
 
 使い方:
   python _generate_search_index.py
@@ -143,11 +145,19 @@ def load_existing_entries(types):
     return [e for e in data if e.get('type') in types]
 
 
+# mobamas.csv 由来のカードエントリのリンク先。引き継ぎ対象の判別に使う
+CARD_CSV_URL = 'CardList.html'
+
+
 def load_card_entries(idol_map):
     path = os.path.join(BASE_DIR, 'data', 'mobamas.csv')
     if not os.path.exists(path):
-        # 元データCSVが無い場合は既存インデックスのカードエントリを維持
-        return load_existing_entries({'card'})
+        # 元データCSVが無い場合は既存インデックスのカードエントリを維持する。
+        # ただし type: "card" にはカード詳細ページから毎回生成されるものも
+        # 含まれるため、CSV由来（リンク先が CardList.html）だけを引き継ぐ。
+        # 全部引き継ぐと再生成のたびにページ由来分が二重に積まれてしまう。
+        return [e for e in load_existing_entries({'card'})
+                if e.get('url') == CARD_CSV_URL]
     entries = []
     with open(path, encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
@@ -167,7 +177,7 @@ def load_card_entries(idol_map):
                         'text':    text,
                         'idol':    idol,
                         'context': context,
-                        'url':     'CardList.html',
+                        'url':     CARD_CSV_URL,
                     })
     return entries
 
@@ -314,7 +324,8 @@ class DialogueParser(HTMLParser):
 
     def __init__(self, card_idol='心'):
         super().__init__()
-        self.entries = []     # [(idol, text)]
+        self.entries = []       # [(idol, text)] ストーリー台詞（形式A/B/C/D/F）
+        self.card_entries = []  # [(idol, text)] カード詳細セリフ（形式E）
         self.title = ''
         # 形式E（カード詳細セリフ）の話者。ページのカード名から判定して渡す
         self.card_idol = card_idol
@@ -520,7 +531,8 @@ class DialogueParser(HTMLParser):
         if self._in_v2_p_e and (tag == 'p' or depth < self._v2_p_e_depth):
             text = self._v2_p_e_text.strip()
             if text and self.card_idol:
-                self.entries.append((self.card_idol, text))
+                # カード詳細のセリフなので、検索では「カード」として扱う
+                self.card_entries.append((self.card_idol, text))
             self._in_v2_p_e = False
             self._v2_p_e_text = ''
         # 形式E終了: .v2-accord-body
@@ -654,6 +666,17 @@ def load_story_entries(idol_map):
                 'title':   page_title,
                 'text':    text,
                 'idol':    idol_str,
+                'context': page_title,
+                'url':     url,
+            })
+
+        # カード詳細ページのセリフは検索の「カード」タブに出す
+        for who, text in parser.card_entries:
+            entries.append({
+                'type':    'card',
+                'title':   page_title,
+                'text':    text,
+                'idol':    who,
                 'context': page_title,
                 'url':     url,
             })
