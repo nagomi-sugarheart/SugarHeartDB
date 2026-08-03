@@ -312,10 +312,12 @@ class DialogueParser(HTMLParser):
       F: .ev-dialog-row .ev-text（v2-accord外、Popmasなど）
     """
 
-    def __init__(self):
+    def __init__(self, card_idol='心'):
         super().__init__()
         self.entries = []     # [(idol, text)]
         self.title = ''
+        # 形式E（カード詳細セリフ）の話者。ページのカード名から判定して渡す
+        self.card_idol = card_idol
 
         self._in_title = False
 
@@ -512,11 +514,15 @@ class DialogueParser(HTMLParser):
             self._in_ud_line = False
 
         # 形式E終了: <p>
-        if self._in_v2_p_e and depth < self._v2_p_e_depth:
+        # </p> を受け取った時点で確定させる。深さ比較だけだと </p> の時点では
+        # まだスタックが同じ深さのため確定せず、同じアコーディオン内の最後の
+        # 1行しかインデックスに載らなかった。
+        if self._in_v2_p_e and (tag == 'p' or depth < self._v2_p_e_depth):
             text = self._v2_p_e_text.strip()
-            if text:
-                self.entries.append(('心', text))
+            if text and self.card_idol:
+                self.entries.append((self.card_idol, text))
             self._in_v2_p_e = False
+            self._v2_p_e_text = ''
         # 形式E終了: .v2-accord-body
         if self._in_v2_accord_body_e and depth < self._v2_accord_body_e_depth:
             self._in_v2_accord_body_e = False
@@ -620,7 +626,13 @@ def load_story_entries(idol_map):
         except Exception:
             continue
 
-        parser = DialogueParser()
+        # カード詳細ページのセリフ（形式E）はページ内に話者名を持たないため、
+        # カード名（例: "[ハート・モデル]佐藤心+"）からアイドルを判定して話者にする
+        title_m = re.search(r'<title>([^<]*)</title>', html)
+        raw_title = re.split(r'[｜|]', title_m.group(1))[0].strip() if title_m else ''
+        card_idol = extract_idol_short(raw_title, idol_map)
+
+        parser = DialogueParser(card_idol=card_idol)
         try:
             parser.feed(html)
         except Exception:
