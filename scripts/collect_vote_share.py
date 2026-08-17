@@ -37,7 +37,9 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126 Safari/537.36")
 NEXT_DATA = re.compile(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', re.S)
 SLUG_FROM_URL = re.compile(r"/idol/([a-z_]+)")
-NAME_FROM_TEXT = re.compile(r"^(.+?)\s*さんに投票しました")
+VOTE_PHRASE = "さんに投票しました"
+# 診断用。実際の判定は公式表記名がフレーズに隣接しているかで行う（name_in_text）
+NAME_BEFORE_PHRASE = re.compile(r"([^\s]{1,20})\s*" + VOTE_PHRASE)
 
 JST = datetime.timezone(datetime.timedelta(hours=9))
 RETURN_LIMIT = 40          # これに達したら取りこぼしの疑い
@@ -76,19 +78,28 @@ def parse_entry(entry: dict, idol: dict) -> dict:
             slug_from_url = found.group(1)
             break
 
-    name_match = NAME_FROM_TEXT.match(text.strip())
-    name_from_text = name_match.group(1).strip() if name_match else None
+    # 投稿者が「〇〇なので 佐藤心 さんに投票しました！」のように前置きを付けることが
+    # あるため、行頭で固定してはいけない。公式表記名がフレーズに隣接しているかを見る。
+    name_in_text = re.search(re.escape(idol["name"]) + r"\s*" + VOTE_PHRASE, text) is not None
 
-    return {
+    # フレーズ直前の語。名前が一致しなかった場合の診断に使う
+    before = NAME_BEFORE_PHRASE.search(text)
+
+    record = {
         "post_id": entry["id"],
         "author_id": entry["userId"],
         "created_at": entry["createdAt"],
         "slug": idol["slug"],
         "slug_from_url": slug_from_url,
-        "name_from_text": name_from_text,
-        "is_consistent": slug_from_url == idol["slug"] and name_from_text == idol["name"],
-        "text": text,
+        "name_in_text": name_in_text,
+        "is_consistent": slug_from_url == idol["slug"] and name_in_text,
     }
+    if not record["is_consistent"]:
+        # 不一致だった投稿だけ本文を残す。全件残すと1日3MB超になり、
+        # 期間を通すとリポジトリが肥大するため。
+        record["name_before_phrase"] = before.group(1) if before else None
+        record["text"] = text
+    return record
 
 
 def load_store(path: Path, date_label: str) -> dict:
@@ -171,7 +182,9 @@ def main() -> int:
         "saturated": saturated,
         "failed": failed,
     })
-    path.write_text(json.dumps(store, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    path.write_text(
+        json.dumps(store, ensure_ascii=False, separators=(",", ":")) + "\n",
+        encoding="utf-8")
 
     print(f"完了 {datetime.datetime.now(JST):%H:%M:%S} / 新規 {added}件 "
           f"/ 累計 {len(store['posts'])}件 → {path.relative_to(ROOT)}", file=sys.stderr)

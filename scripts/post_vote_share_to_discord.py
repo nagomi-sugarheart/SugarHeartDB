@@ -68,18 +68,33 @@ def build_payload(data: dict, top: int, focus: str) -> dict:
 
     target = next((row for row in ranking if row["slug"] == focus), None)
     if target:
-        same = [row["name"] for row in ranking
-                if row["band"] == target["band"] and row["slug"] != focus]
         parts.append(
             f'**{target["name"]}：{target["rank"]}位**（帯{target["band"]} / '
             f'{target["users"]}人 / シェア{target["share"]:.2f}%）')
-        parts.append(
-            f'同じ帯で区別できない相手：{"、".join(same) if same else "なし"}')
-        for border in sorted(REWARD_BORDERS):
-            if target["rank"] > border and len(ranking) >= border:
-                gap = ranking[border - 1]["users"] - target["users"]
-                parts.append(f'{border}位（{ranking[border-1]["name"]}）との差：{gap}人')
-                break
+
+        # 同じ帯は数十名になることがあるので、表に出ている範囲だけ名前を挙げる
+        same = [row["name"] for row in ranking
+                if row["band"] == target["band"] and row["slug"] != focus]
+        shown = [row["name"] for row in ranking[:top]
+                 if row["band"] == target["band"] and row["slug"] != focus]
+        rest = len(same) - len(shown)
+        if same:
+            label = "、".join(shown) if shown else ""
+            if rest > 0:
+                label = f'{label}{" ほか" if label else ""}{rest}名'
+            parts.append(f'同じ帯で区別できない相手：{label}')
+        else:
+            parts.append("同じ帯で区別できない相手：なし")
+
+        # 直上のボーダー（順位より小さい閾値のうち最大のもの）との差を出す
+        above = [border for border in REWARD_BORDERS
+                 if border < target["rank"] and len(ranking) >= border]
+        if above:
+            border = max(above)
+            gap = ranking[border - 1]["users"] - target["users"]
+            parts.append(
+                f'{border}位（{ranking[border-1]["name"]}）との差：{gap}人'
+                f' — {REWARD_BORDERS[border]}')
 
     description = "\n".join(parts)
     if len(description) > DISCORD_LIMIT:
