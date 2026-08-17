@@ -44,39 +44,57 @@ def load_stores(dates: list[str] | None = None, days: int | None = None) -> list
     return stores
 
 
+def all_sweeps(stores: list[dict]) -> list[dict]:
+    """全ストアのスイープを時刻順に並べて返す。
+
+    古い収集データはスイープごとの到達時刻（oldest）を持たないため、
+    ストア単位の coverage から擬似的なスイープを1つ組み立てて補う。
+    """
+    sweeps: list[dict] = []
+    for store in stores:
+        recorded = store.get("sweeps", [])
+        sweeps.extend(sweep for sweep in recorded if "oldest" in sweep)
+        # 同じストアに旧形式と新形式が混在しうるので、旧形式ぶんは
+        # まとめて擬似スイープ1つに畳む（捨ててはいけない）
+        legacy = [sweep for sweep in recorded if "oldest" not in sweep]
+        if legacy and store.get("coverage"):
+            sweeps.append({
+                "collected_at": max(sweep["collected_at"] for sweep in legacy),
+                "oldest": store["coverage"],
+                "scope": "legacy",
+            })
+    sweeps.sort(key=lambda sweep: sweep["collected_at"])
+    return sweeps
+
+
 def effective_coverage(stores: list[dict]) -> dict[str, int]:
     """アイドルごとに、欠測なく遡れている最古時刻を返す。
 
-    ストアをまたぐ場合、後のストアで遡れた時刻が前のストアの最終スイープ時刻
-    以前であれば連続しているとみなして前のストアまで遡る。そうでなければ
-    その間に欠測があるため、そこで打ち切る。日付ファイルの境界と収集の
-    タイミングは一致しないので、この判定なしに複数日をまたぐと窓を
-    誤る（保守的すぎるか、逆に欠測を見落とす）。
+    そのアイドルを対象にしたスイープだけを新しい順にたどり、後のスイープで
+    遡れた時刻が前のスイープの実行時刻以前であれば連続しているとみなして
+    さらに遡る。そうでなければその間に欠測があるため、そこで打ち切る。
+
+    対象を絞ったスイープ（上位N名だけの高頻度収集）が混ざるため、
+    「直前のスイープ」ではなく「そのアイドルを対象にした直前のスイープ」と
+    比べなければならない。ここを取り違えると、収集していないアイドルまで
+    カバーされたことになってしまう。
     """
-    ordered = sorted(stores, key=lambda store: store["date"])
-    last_sweep = [
-        max((sweep["collected_at"] for sweep in store.get("sweeps", [])), default=None)
-        for store in ordered
-    ]
-    slugs = {slug for store in ordered for slug in store.get("coverage", {})}
+    sweeps = all_sweeps(stores)
+    per_slug: dict[str, list[tuple[int, int]]] = {}
+    for sweep in sweeps:
+        for slug, oldest in (sweep.get("oldest") or {}).items():
+            per_slug.setdefault(slug, []).append((sweep["collected_at"], oldest))
 
     floors: dict[str, int] = {}
-    for slug in slugs:
-        floor = None
-        for index in range(len(ordered) - 1, -1, -1):
-            covered = ordered[index].get("coverage", {}).get(slug)
-            if covered is None:
-                continue
-            if floor is None:
-                floor = covered
-                continue
-            # ひとつ前のストアの最終スイープまで届いていれば連続している
-            if last_sweep[index] is not None and floor <= last_sweep[index]:
-                floor = min(floor, covered)
+    for slug, entries in per_slug.items():
+        entries.sort()
+        floor = entries[-1][1]
+        for collected_at, oldest in reversed(entries[:-1]):
+            if floor <= collected_at:
+                floor = min(floor, oldest)
             else:
                 break
-        if floor is not None:
-            floors[slug] = floor
+        floors[slug] = floor
     return floors
 
 
@@ -90,11 +108,26 @@ def saturated_slugs(stores: list[dict]) -> set[str]:
     }
 
 
+def coverage_end(stores: list[dict]) -> dict[str, int]:
+    """アイドルごとに、最後にそのアイドルを収集した時刻を返す。"""
+    ends: dict[str, int] = {}
+    for sweep in all_sweeps(stores):
+        for slug in sweep.get("oldest") or {}:
+            ends[slug] = max(ends.get(slug, 0), sweep["collected_at"])
+    return ends
+
+
 def last_sweep_at(stores: list[dict]) -> int:
-    ends = [sweep["collected_at"] for store in stores for sweep in store.get("sweeps", [])]
+    """全アイドルが収集済みである最新時刻。
+
+    対象を絞ったスイープ（上位N名だけの高頻度収集）が混ざるため、単純に
+    最後のスイープ時刻を使うと、そこに含まれなかったアイドルだけが
+    過少に数えられる。全員の中で最も古い「最終収集時刻」を採る。
+    """
+    ends = coverage_end(stores)
     if not ends:
         raise SystemExit("sweeps 情報がありません。")
-    return max(ends)
+    return min(ends.values())
 
 
 def merge_posts(stores: list[dict]) -> dict:

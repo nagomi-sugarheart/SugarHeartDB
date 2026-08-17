@@ -104,6 +104,27 @@ def parse_entry(entry: dict, idol: dict) -> dict:
     return record
 
 
+def select_busiest(idols: list[dict], top: int) -> list[dict]:
+    """直近24時間の投稿数が多い順に上位N名を返す。
+
+    39件の返却上限で遡れる時間は投稿量に反比例するため、取りこぼしが起きるのは
+    常に投稿の多いアイドルである。そこだけを高頻度で収集するために使う。
+    """
+    since = int(datetime.datetime.now(JST).timestamp()) - 24 * 3600
+    counts: dict[str, int] = {}
+    for path in sorted(OUTDIR.glob("????-??-??.json"))[-2:]:
+        store = json.loads(path.read_text(encoding="utf-8"))
+        for post in store["posts"].values():
+            if post["created_at"] >= since:
+                counts[post["slug"]] = counts.get(post["slug"], 0) + 1
+    if not counts:
+        print("警告: 直近24時間の収集データがないため、上位N名を選べません。全190名を収集します。",
+              file=sys.stderr)
+        return idols
+    ordered = sorted(idols, key=lambda idol: -counts.get(idol["slug"], 0))
+    return ordered[:top]
+
+
 def load_store(path: Path, date_label: str) -> dict:
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8"))
@@ -114,24 +135,39 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="総選挙2026の公式シェア投稿を収集する")
     parser.add_argument("--interval", type=float, default=REQUEST_INTERVAL,
                         help=f"リクエスト間隔（秒、既定 {REQUEST_INTERVAL}）")
+    parser.add_argument("--top", type=int, metavar="N",
+                        help="直近24時間の投稿が多い上位N名だけを収集する。"
+                             "投稿の多いアイドルほど39件で遡れる時間が短いため、"
+                             "そこだけ高頻度で回すための指定")
     args = parser.parse_args()
     if args.interval < REQUEST_INTERVAL:
         parser.error(f"リクエスト間隔は {REQUEST_INTERVAL} 秒以上にしてください")
 
     idols = json.loads(IDOLS.read_text(encoding="utf-8"))
     started = datetime.datetime.now(JST)
+    scope = "all"
+    if args.top:
+        idols = select_busiest(idols, args.top)
+        scope = f"top{args.top}"
     date_label = started.strftime("%Y-%m-%d")
     OUTDIR.mkdir(parents=True, exist_ok=True)
     path = OUTDIR / f"{date_label}.json"
     store = load_store(path, date_label)
 
-    previous_sweep_at = max((sweep["collected_at"] for sweep in store["sweeps"]), default=None)
+    # そのアイドルを前回収集した時刻。対象を絞ったスイープが混ざるため、
+    # 単純に「直前のスイープ」と比べると取りこぼし判定を誤る。
+    previous_by_slug: dict[str, int] = {}
+    for sweep in store["sweeps"]:
+        for slug in sweep.get("oldest", {}) or sweep.get("coverage_slugs", []):
+            previous_by_slug[slug] = max(previous_by_slug.get(slug, 0), sweep["collected_at"])
 
-    print(f"収集開始 {started:%Y-%m-%d %H:%M:%S} JST / 対象 {len(idols)}名", file=sys.stderr)
+    print(f"収集開始 {started:%Y-%m-%d %H:%M:%S} JST / 対象 {len(idols)}名"
+          f"{'（全員）' if scope == 'all' else f'（投稿の多い上位{args.top}名）'}", file=sys.stderr)
 
     added = 0
     saturated: list[str] = []
     failed: list[str] = []
+    oldest_by_slug: dict[str, int] = {}
 
     for index, idol in enumerate(idols, 1):
         query = f'"{idol["name"]} さんに投票しました"'
@@ -163,11 +199,13 @@ def main() -> int:
         # 返却が上限に達していても、前回スイープの時刻より前まで遡れていれば
         # 取りこぼしはない。当日の初回スイープは必ず上限に達するが、これは
         # 遡れる限界まで取っただけなので警告しない。
-        if len(entries) >= RETURN_LIMIT and previous_sweep_at is not None \
-                and oldest is not None and oldest > previous_sweep_at:
+        previous_at = previous_by_slug.get(idol["slug"])
+        if len(entries) >= RETURN_LIMIT and previous_at is not None \
+                and oldest is not None and oldest > previous_at:
             saturated.append(idol["slug"])
 
         if oldest is not None:
+            oldest_by_slug[idol["slug"]] = oldest
             previous = store["coverage"].get(idol["slug"])
             # そのアイドルについて確実に遡れている最古時刻
             store["coverage"][idol["slug"]] = min(previous, oldest) if previous else oldest
@@ -180,7 +218,12 @@ def main() -> int:
     store["sweeps"].append({
         "collected_at": int(started.timestamp()),
         "finished_at": int(datetime.datetime.now(JST).timestamp()),
+        "scope": scope,
         "added": added,
+        # アイドルごとの到達時刻。対象を絞ったスイープが混ざるため、
+        # 「このスイープが誰をどこまでカバーしたか」を残さないと
+        # 集計側でカバー範囲を誤る。
+        "oldest": oldest_by_slug,
         "saturated": saturated,
         "failed": failed,
     })
