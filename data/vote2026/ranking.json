@@ -1,13 +1,13 @@
 {
- "generated_at": 1787008628,
+ "generated_at": 1787010331,
  "window": {
   "start": 1786975492,
   "end": 1787000153,
   "hours": 6.85
  },
  "totals": {
-  "posts": 1954,
-  "unique_authors": 1946,
+  "posts": 1969,
+  "unique_authors": 1961,
   "inconsistent": 6
  },
  "saturated": [],
@@ -18,8 +18,8 @@
    "color": "#cdea80",
    "users": 44,
    "rank": 1,
-   "share": 2.2610483042137717,
-   "margin": 0.6680970800715913,
+   "share": 2.243753187149413,
+   "margin": 0.662986699550901,
    "rank_best": 1,
    "rank_worst": 13
   },
@@ -29,10 +29,10 @@
    "color": "#9678d3",
    "users": 38,
    "rank": 2,
-   "share": 1.9527235354573484,
-   "margin": 0.620876230514861,
+   "share": 1.9377868434472207,
+   "margin": 0.6161270497613051,
    "rank_best": 1,
-   "rank_worst": 24
+   "rank_worst": 25
   },
   {
    "slug": "sakuma_mayu",
@@ -40,10 +40,10 @@
    "color": "#da1884",
    "users": 38,
    "rank": 3,
-   "share": 1.9527235354573484,
-   "margin": 0.620876230514861,
+   "share": 1.9377868434472207,
+   "margin": 0.6161270497613051,
    "rank_best": 1,
-   "rank_worst": 24
+   "rank_worst": 25
   },
   {
    "slug": "hoshi_shoko",
@@ -51,10 +51,10 @@
    "color": "#a6093d",
    "users": 38,
    "rank": 4,
-   "share": 1.9527235354573484,
-   "margin": 0.620876230514861,
+   "share": 1.9377868434472207,
+   "margin": 0.6161270497613051,
    "rank_best": 1,
-   "rank_worst": 24
+   "rank_worst": 25
   },
   {
    "slug": "ichinose_shiki",
@@ -62,10 +62,10 @@
    "color": "#a50050",
    "users": 35,
    "rank": 5,
-   "share": 1.7985611510791366,
-   "margin": 0.5958641508157886,
+   "share": 1.7848036715961242,
+   "margin": 0.5913062914265806,
    "rank_best": 1,
-   "rank_worst": 28
+   "rank_worst": 29
   },
   {
    "slug": "kohinata_miho",
@@ -73,8 +73,8 @@
    "color": "#db3eb1",
    "users": 34,
    "rank": 6,
-   "share": 1.7471736896197325,
-   "margin": 0.587290118905282,
+   "share": 1.7338092809790924,
+   "margin": 0.5827978436459352,
    "rank_best": 1,
    "rank_worst": 29
   },
@@ -84,8 +84,8 @@
    "color": "#2943cb",
    "users": 34,
    "rank": 7,
-   "share": 1.7471736896197325,
-   "margin": 0.587290118905282,
+   "share": 1.7338092809790924,
+   "margin": 0.5827978436459352,
    "rank_best": 1,
    "rank_worst": 29
   },
@@ -95,21 +95,21 @@
    "color": "#9cdbd9",
    "users": 33,
    "rank": 8,
-   "share": 1.695786228160329,
-   "margin": 0.5785890435362042,
+   "share": 1.6828148903620603,
+   "margin": 0.5741633241822813,
    "rank_best": 1,
-   "rank_worst": 31
+   "rank_worst": 32
   },
   {
    "slug": "ogata_chieri",
    "name": "緒方智絵里",
    "color": "#6cc24a",
-   "users": 29,
+   "users": 30,
    "rank": 9,
-   "share": 1.4902363823227132,
-   "margin": 0.5423906999991587,
+   "share": 1.5298317185109638,
+   "margin": 0.5474432497246944,
    "rank_best": 1,
-   "rank_worst": 43
+   "rank_worst": 42
   },
   {
    "slug": "kurokawa_chiaki",
@@ -117,8 +117,8 @@
    "color": "#bc1212",
    "users": 29,
    "rank": 10,
-   "share": 1.4902363823227132,
-   "margin": 0.5423906999991587,
+   "share": 1.4788373278939317,
+   "margin": 0.5382418675157383,
    "rank_best": 1,
    "rank_worst": 43
   },
@@ -128,8 +128,8 @@
    "color": "#86dbff",
    "users": 29,
    "rank": 11,
-   "share": 1.4902363823227132,
-   "margin": 0.5423906999991587,
+   "share": 1.4788373278939317,
+   "margin": 0.5382418675157383,
    "rank_best": 1,
    "rank_worst": 43
   },
@@ -139,8 +139,8 @@
    "color": "#c1a0da",
    "users": 28,
    "rank": 12,
-   "share": 1.4388489208633095,
-   "margin": 0.5329570986317161,
+   "share": 1.4278429372768995,
+   "margin": 0.5288804252612542,
    "rank_best": 1,
    "rank_worst": 43
   },
@@ -150,65 +150,65 @@
    "color": "#606eb2",
    "users": 28,
    "rank": 13,
-   "share": 1.4388489208633095,
-   "margin": 0.5329570986317161,
+   "share": 1.4278429372768995,
+   "margin": 0.5288804252612542,
    "rank_best": 1,
    "rank_worst": 43
+  },
+  {
+   "slug": "tachibana_arisu",
+   "name": "橘ありす",
+   "color": "#5c88da",
+   "users": 27,
+   "rank": 14,
+   "share": 1.3768485466598674,
+   "margin": 0.519350267644314,
+   "rank_best": 2,
+   "rank_worst": 45
+  },
+  {
+   "slug": "fujiwara_hajime",
+   "name": "藤原肇",
+   "color": "#9595d2",
+   "users": 27,
+   "rank": 15,
+   "share": 1.3768485466598674,
+   "margin": 0.519350267644314,
+   "rank_best": 2,
+   "rank_worst": 45
+  },
+  {
+   "slug": "ikebukuro_akiha",
+   "name": "池袋晶葉",
+   "color": "#de2f4d",
+   "users": 26,
+   "rank": 16,
+   "share": 1.3258541560428354,
+   "margin": 0.5096419299664384,
+   "rank_best": 2,
+   "rank_worst": 51
   },
   {
    "slug": "kudo_shinobu",
    "name": "工藤忍",
    "color": "#eb3249",
    "users": 26,
-   "rank": 14,
-   "share": 1.3360739979445015,
-   "margin": 0.5135703107215753,
+   "rank": 17,
+   "share": 1.3258541560428354,
+   "margin": 0.5096419299664384,
    "rank_best": 2,
-   "rank_worst": 50
+   "rank_worst": 51
   },
   {
    "slug": "sajo_yukimi",
    "name": "佐城雪美",
    "color": "#171c8f",
    "users": 26,
-   "rank": 15,
-   "share": 1.3360739979445015,
-   "margin": 0.5135703107215753,
-   "rank_best": 2,
-   "rank_worst": 50
-  },
-  {
-   "slug": "tachibana_arisu",
-   "name": "橘ありす",
-   "color": "#5c88da",
-   "users": 26,
-   "rank": 16,
-   "share": 1.3360739979445015,
-   "margin": 0.5135703107215753,
-   "rank_best": 2,
-   "rank_worst": 50
-  },
-  {
-   "slug": "fujiwara_hajime",
-   "name": "藤原肇",
-   "color": "#9595d2",
-   "users": 26,
-   "rank": 17,
-   "share": 1.3360739979445015,
-   "margin": 0.5135703107215753,
-   "rank_best": 2,
-   "rank_worst": 50
-  },
-  {
-   "slug": "ikebukuro_akiha",
-   "name": "池袋晶葉",
-   "color": "#de2f4d",
-   "users": 25,
    "rank": 18,
-   "share": 1.2846865364850977,
-   "margin": 0.5035971223021584,
+   "share": 1.3258541560428354,
+   "margin": 0.5096419299664384,
    "rank_best": 2,
-   "rank_worst": 58
+   "rank_worst": 51
   },
   {
    "slug": "miyoshi_sana",
@@ -216,8 +216,19 @@
    "color": "#45f05b",
    "users": 25,
    "rank": 19,
-   "share": 1.2846865364850977,
-   "margin": 0.5035971223021584,
+   "share": 1.2748597654258031,
+   "margin": 0.49974502804691484,
+   "rank_best": 2,
+   "rank_worst": 58
+  },
+  {
+   "slug": "sato_shin",
+   "name": "佐藤心",
+   "color": "#f04e98",
+   "users": 24,
+   "rank": 20,
+   "share": 1.2238653748087711,
+   "margin": 0.4896481280831238,
    "rank_best": 2,
    "rank_worst": 58
   },
@@ -226,9 +237,9 @@
    "name": "関裕美",
    "color": "#ffb3ab",
    "users": 24,
-   "rank": 20,
-   "share": 1.2332990750256936,
-   "margin": 0.49342239422970485,
+   "rank": 21,
+   "share": 1.2238653748087711,
+   "margin": 0.4896481280831238,
    "rank_best": 2,
    "rank_worst": 58
   },
@@ -237,64 +248,53 @@
    "name": "高峯のあ",
    "color": "#9fe1fd",
    "users": 24,
-   "rank": 21,
-   "share": 1.2332990750256936,
-   "margin": 0.49342239422970485,
+   "rank": 22,
+   "share": 1.2238653748087711,
+   "margin": 0.4896481280831238,
    "rank_best": 2,
    "rank_worst": 58
-  },
-  {
-   "slug": "sato_shin",
-   "name": "佐藤心",
-   "color": "#f04e98",
-   "users": 23,
-   "rank": 22,
-   "share": 1.18191161356629,
-   "margin": 0.48303339083725233,
-   "rank_best": 2,
-   "rank_worst": 69
   },
   {
    "slug": "ninomiya_asuka",
    "name": "二宮飛鳥",
    "color": "#5f259f",
-   "users": 23,
+   "users": 24,
    "rank": 23,
-   "share": 1.18191161356629,
-   "margin": 0.48303339083725233,
+   "share": 1.2238653748087711,
+   "margin": 0.4896481280831238,
    "rank_best": 2,
-   "rank_worst": 69
+   "rank_worst": 58
+  },
+  {
+   "slug": "takagaki_kaede",
+   "name": "高垣楓",
+   "color": "#47d7ac",
+   "users": 23,
+   "rank": 24,
+   "share": 1.1728709841917389,
+   "margin": 0.47933859182523864,
+   "rank_best": 2,
+   "rank_worst": 70
   },
   {
    "slug": "matsuo_chizuru",
    "name": "松尾千鶴",
    "color": "#99e3fc",
    "users": 23,
-   "rank": 24,
-   "share": 1.18191161356629,
-   "margin": 0.48303339083725233,
+   "rank": 25,
+   "share": 1.1728709841917389,
+   "margin": 0.47933859182523864,
    "rank_best": 2,
-   "rank_worst": 69
+   "rank_worst": 70
   },
   {
    "slug": "zaizen_tokiko",
    "name": "財前時子",
    "color": "#7d0837",
    "users": 22,
-   "rank": 25,
-   "share": 1.1305241521068858,
-   "margin": 0.4724159758095541,
-   "rank_best": 5,
-   "rank_worst": 76
-  },
-  {
-   "slug": "takagaki_kaede",
-   "name": "高垣楓",
-   "color": "#47d7ac",
-   "users": 22,
    "rank": 26,
-   "share": 1.1305241521068858,
-   "margin": 0.4724159758095541,
+   "share": 1.1218765935747066,
+   "margin": 0.4688023910889302,
    "rank_best": 5,
    "rank_worst": 76
   },
@@ -304,8 +304,8 @@
    "color": "#009cde",
    "users": 21,
    "rank": 27,
-   "share": 1.079136690647482,
-   "margin": 0.4615543865423148,
+   "share": 1.0708822029576748,
+   "margin": 0.45802388384056325,
    "rank_best": 5,
    "rank_worst": 76
   },
@@ -315,8 +315,8 @@
    "color": "#fc87bf",
    "users": 21,
    "rank": 28,
-   "share": 1.079136690647482,
-   "margin": 0.4615543865423148,
+   "share": 1.0708822029576748,
+   "margin": 0.45802388384056325,
    "rank_best": 5,
    "rank_worst": 76
   },
@@ -324,21 +324,32 @@
    "slug": "yorita_yoshino",
    "name": "依田芳乃",
    "color": "#c4bcb7",
-   "users": 20,
+   "users": 21,
    "rank": 29,
-   "share": 1.027749229188078,
-   "margin": 0.45043095949636053,
-   "rank_best": 6,
-   "rank_worst": 80
+   "share": 1.0708822029576748,
+   "margin": 0.45802388384056325,
+   "rank_best": 5,
+   "rank_worst": 76
+  },
+  {
+   "slug": "sakurai_momoka",
+   "name": "櫻井桃華",
+   "color": "#ef95cf",
+   "users": 19,
+   "rank": 30,
+   "share": 0.9688934217236104,
+   "margin": 0.43566761495868034,
+   "rank_best": 8,
+   "rank_worst": 91
   },
   {
    "slug": "narumiya_yume",
    "name": "成宮由愛",
    "color": "#2b5cd5",
    "users": 19,
-   "rank": 30,
-   "share": 0.9763617677286742,
-   "margin": 0.43902579287460025,
+   "rank": 31,
+   "share": 0.9688934217236104,
+   "margin": 0.43566761495868034,
    "rank_best": 8,
    "rank_worst": 91
   },
@@ -347,9 +358,9 @@
    "name": "速水奏",
    "color": "#003087",
    "users": 19,
-   "rank": 31,
-   "share": 0.9763617677286742,
-   "margin": 0.43902579287460025,
+   "rank": 32,
+   "share": 0.9688934217236104,
+   "margin": 0.43566761495868034,
    "rank_best": 8,
    "rank_worst": 91
   },
@@ -358,9 +369,9 @@
    "name": "相葉夕美",
    "color": "#f0e991",
    "users": 18,
-   "rank": 32,
-   "share": 0.9249743062692704,
-   "margin": 0.4273163281990646,
+   "rank": 33,
+   "share": 0.9178990311065782,
+   "margin": 0.42404771783548173,
    "rank_best": 9,
    "rank_worst": 91
   },
@@ -369,20 +380,9 @@
    "name": "安部菜々",
    "color": "#ef4a81",
    "users": 18,
-   "rank": 33,
-   "share": 0.9249743062692704,
-   "margin": 0.4273163281990646,
-   "rank_best": 9,
-   "rank_worst": 91
-  },
-  {
-   "slug": "sakurai_momoka",
-   "name": "櫻井桃華",
-   "color": "#ef95cf",
-   "users": 18,
    "rank": 34,
-   "share": 0.9249743062692704,
-   "margin": 0.4273163281990646,
+   "share": 0.9178990311065782,
+   "margin": 0.42404771783548173,
    "rank_best": 9,
    "rank_worst": 91
   },
@@ -392,8 +392,8 @@
    "color": "#f67599",
    "users": 18,
    "rank": 35,
-   "share": 0.9249743062692704,
-   "margin": 0.4273163281990646,
+   "share": 0.9178990311065782,
+   "margin": 0.42404771783548173,
    "rank_best": 9,
    "rank_worst": 91
   },
@@ -403,8 +403,30 @@
    "color": "#abcae9",
    "users": 18,
    "rank": 36,
-   "share": 0.9249743062692704,
-   "margin": 0.4273163281990646,
+   "share": 0.9178990311065782,
+   "margin": 0.42404771783548173,
+   "rank_best": 9,
+   "rank_worst": 91
+  },
+  {
+   "slug": "takafuji_kako",
+   "name": "鷹富士茄子",
+   "color": "#5c068c",
+   "users": 18,
+   "rank": 37,
+   "share": 0.9178990311065782,
+   "margin": 0.42404771783548173,
+   "rank_best": 9,
+   "rank_worst": 91
+  },
+  {
+   "slug": "hojo_karen",
+   "name": "北条加蓮",
+   "color": "#2ad2c9",
+   "users": 18,
+   "rank": 38,
+   "share": 0.9178990311065782,
+   "margin": 0.42404771783548173,
    "rank_best": 9,
    "rank_worst": 91
   },
@@ -413,9 +435,9 @@
    "name": "西園寺琴歌",
    "color": "#e8cdd0",
    "users": 17,
-   "rank": 37,
-   "share": 0.8735868448098663,
-   "margin": 0.4152768256017787,
+   "rank": 39,
+   "share": 0.8669046404895462,
+   "margin": 0.412100307302938,
    "rank_best": 9,
    "rank_worst": 100
   },
@@ -424,20 +446,9 @@
    "name": "城ヶ崎美嘉",
    "color": "#fe9d1a",
    "users": 17,
-   "rank": 38,
-   "share": 0.8735868448098663,
-   "margin": 0.4152768256017787,
-   "rank_best": 9,
-   "rank_worst": 100
-  },
-  {
-   "slug": "takafuji_kako",
-   "name": "鷹富士茄子",
-   "color": "#5c068c",
-   "users": 17,
-   "rank": 39,
-   "share": 0.8735868448098663,
-   "margin": 0.4152768256017787,
+   "rank": 40,
+   "share": 0.8669046404895462,
+   "margin": 0.412100307302938,
    "rank_best": 9,
    "rank_worst": 100
   },
@@ -446,20 +457,9 @@
    "name": "新田美波",
    "color": "#71c5e8",
    "users": 17,
-   "rank": 40,
-   "share": 0.8735868448098663,
-   "margin": 0.4152768256017787,
-   "rank_best": 9,
-   "rank_worst": 100
-  },
-  {
-   "slug": "hojo_karen",
-   "name": "北条加蓮",
-   "color": "#2ad2c9",
-   "users": 17,
    "rank": 41,
-   "share": 0.8735868448098663,
-   "margin": 0.4152768256017787,
+   "share": 0.8669046404895462,
+   "margin": 0.412100307302938,
    "rank_best": 9,
    "rank_worst": 100
   },
@@ -469,8 +469,8 @@
    "color": "#12bfb2",
    "users": 17,
    "rank": 42,
-   "share": 0.8735868448098663,
-   "margin": 0.4152768256017787,
+   "share": 0.8669046404895462,
+   "margin": 0.412100307302938,
    "rank_best": 9,
    "rank_worst": 100
   },
@@ -480,9 +480,9 @@
    "color": "#74d1ea",
    "users": 16,
    "rank": 43,
-   "share": 0.8221993833504625,
-   "margin": 0.4028776978417266,
-   "rank_best": 9,
+   "share": 0.815910249872514,
+   "margin": 0.3997960224375319,
+   "rank_best": 10,
    "rank_worst": 105
   },
   {
@@ -491,8 +491,19 @@
    "color": "#fabbcb",
    "users": 15,
    "rank": 44,
-   "share": 0.7708119218910586,
-   "margin": 0.39008465357484773,
+   "share": 0.7649158592554819,
+   "margin": 0.3871008341951319,
+   "rank_best": 14,
+   "rank_worst": 105
+  },
+  {
+   "slug": "maekawa_miku",
+   "name": "前川みく",
+   "color": "#ce0037",
+   "users": 15,
+   "rank": 45,
+   "share": 0.7649158592554819,
+   "margin": 0.3871008341951319,
    "rank_best": 14,
    "rank_worst": 105
   },
@@ -501,10 +512,21 @@
    "name": "浅利七海",
    "color": "#009cbd",
    "users": 14,
-   "rank": 45,
-   "share": 0.7194244604316548,
-   "margin": 0.3768575785239941,
-   "rank_best": 14,
+   "rank": 46,
+   "share": 0.7139214686384497,
+   "margin": 0.3739749351390579,
+   "rank_best": 16,
+   "rank_worst": 115
+  },
+  {
+   "slug": "tsujino_akari",
+   "name": "辻野あかり",
+   "color": "#e10600",
+   "users": 14,
+   "rank": 47,
+   "share": 0.7139214686384497,
+   "margin": 0.3739749351390579,
+   "rank_best": 16,
    "rank_worst": 115
   },
   {
@@ -512,10 +534,10 @@
    "name": "東郷あい",
    "color": "#9b274a",
    "users": 14,
-   "rank": 46,
-   "share": 0.7194244604316548,
-   "margin": 0.3768575785239941,
-   "rank_best": 14,
+   "rank": 48,
+   "share": 0.7139214686384497,
+   "margin": 0.3739749351390579,
+   "rank_best": 16,
    "rank_worst": 115
   },
   {
@@ -523,10 +545,10 @@
    "name": "福山舞",
    "color": "#ff68b5",
    "users": 14,
-   "rank": 47,
-   "share": 0.7194244604316548,
-   "margin": 0.3768575785239941,
-   "rank_best": 14,
+   "rank": 49,
+   "share": 0.7139214686384497,
+   "margin": 0.3739749351390579,
+   "rank_best": 16,
    "rank_worst": 115
   },
   {
@@ -534,10 +556,10 @@
    "name": "藤居朋",
    "color": "#9b58c2",
    "users": 14,
-   "rank": 48,
-   "share": 0.7194244604316548,
-   "margin": 0.3768575785239941,
-   "rank_best": 14,
+   "rank": 50,
+   "share": 0.7139214686384497,
+   "margin": 0.3739749351390579,
+   "rank_best": 16,
    "rank_worst": 115
   },
   {
@@ -545,21 +567,10 @@
    "name": "双葉杏",
    "color": "#f8a3bc",
    "users": 14,
-   "rank": 49,
-   "share": 0.7194244604316548,
-   "margin": 0.3768575785239941,
-   "rank_best": 14,
-   "rank_worst": 115
-  },
-  {
-   "slug": "maekawa_miku",
-   "name": "前川みく",
-   "color": "#ce0037",
-   "users": 14,
-   "rank": 50,
-   "share": 0.7194244604316548,
-   "margin": 0.3768575785239941,
-   "rank_best": 14,
+   "rank": 51,
+   "share": 0.7139214686384497,
+   "margin": 0.3739749351390579,
+   "rank_best": 16,
    "rank_worst": 115
   },
   {
@@ -567,10 +578,10 @@
    "name": "アナスタシア",
    "color": "#b1c9e8",
    "users": 13,
-   "rank": 51,
-   "share": 0.6680369989722508,
-   "margin": 0.36314904932730824,
-   "rank_best": 18,
+   "rank": 52,
+   "share": 0.6629270780214177,
+   "margin": 0.3603712646562681,
+   "rank_best": 19,
    "rank_worst": 123
   },
   {
@@ -578,10 +589,10 @@
    "name": "上条春菜",
    "color": "#5bc2e7",
    "users": 13,
-   "rank": 52,
-   "share": 0.6680369989722508,
-   "margin": 0.36314904932730824,
-   "rank_best": 18,
+   "rank": 53,
+   "share": 0.6629270780214177,
+   "margin": 0.3603712646562681,
+   "rank_best": 19,
    "rank_worst": 123
   },
   {
@@ -589,10 +600,10 @@
    "name": "クラリス",
    "color": "#ffda7b",
    "users": 13,
-   "rank": 53,
-   "share": 0.6680369989722508,
-   "margin": 0.36314904932730824,
-   "rank_best": 18,
+   "rank": 54,
+   "share": 0.6629270780214177,
+   "margin": 0.3603712646562681,
+   "rank_best": 19,
    "rank_worst": 123
   },
   {
@@ -600,21 +611,10 @@
    "name": "白雪千夜",
    "color": "#efd7e5",
    "users": 13,
-   "rank": 54,
-   "share": 0.6680369989722508,
-   "margin": 0.36314904932730824,
-   "rank_best": 18,
-   "rank_worst": 123
-  },
-  {
-   "slug": "tsujino_akari",
-   "name": "辻野あかり",
-   "color": "#e10600",
-   "users": 13,
    "rank": 55,
-   "share": 0.6680369989722508,
-   "margin": 0.36314904932730824,
-   "rank_best": 18,
+   "share": 0.6629270780214177,
+   "margin": 0.3603712646562681,
+   "rank_best": 19,
    "rank_worst": 123
   },
   {
@@ -623,9 +623,9 @@
    "color": "#b7dde1",
    "users": 13,
    "rank": 56,
-   "share": 0.6680369989722508,
-   "margin": 0.36314904932730824,
-   "rank_best": 18,
+   "share": 0.6629270780214177,
+   "margin": 0.3603712646562681,
+   "rank_best": 19,
    "rank_worst": 123
   },
   {
@@ -634,9 +634,9 @@
    "color": "#f4a6d7",
    "users": 13,
    "rank": 57,
-   "share": 0.6680369989722508,
-   "margin": 0.36314904932730824,
-   "rank_best": 18,
+   "share": 0.6629270780214177,
+   "margin": 0.3603712646562681,
+   "rank_best": 19,
    "rank_worst": 123
   },
   {
@@ -645,9 +645,9 @@
    "color": "#7ce0d3",
    "users": 13,
    "rank": 58,
-   "share": 0.6680369989722508,
-   "margin": 0.36314904932730824,
-   "rank_best": 18,
+   "share": 0.6629270780214177,
+   "margin": 0.3603712646562681,
+   "rank_best": 19,
    "rank_worst": 123
   },
   {
@@ -656,9 +656,9 @@
    "color": "#ffcd00",
    "users": 12,
    "rank": 59,
-   "share": 0.6166495375128468,
-   "margin": 0.3489023209491264,
-   "rank_best": 22,
+   "share": 0.6119326874043856,
+   "margin": 0.34623351176287603,
+   "rank_best": 24,
    "rank_worst": 123
   },
   {
@@ -667,9 +667,9 @@
    "color": "#ade5f6",
    "users": 12,
    "rank": 60,
-   "share": 0.6166495375128468,
-   "margin": 0.3489023209491264,
-   "rank_best": 22,
+   "share": 0.6119326874043856,
+   "margin": 0.34623351176287603,
+   "rank_best": 24,
    "rank_worst": 123
   },
   {
@@ -678,9 +678,9 @@
    "color": "#e87487",
    "users": 12,
    "rank": 61,
-   "share": 0.6166495375128468,
-   "margin": 0.3489023209491264,
-   "rank_best": 22,
+   "share": 0.6119326874043856,
+   "margin": 0.34623351176287603,
+   "rank_best": 24,
    "rank_worst": 123
   },
   {
@@ -689,9 +689,9 @@
    "color": "#fbe983",
    "users": 12,
    "rank": 62,
-   "share": 0.6166495375128468,
-   "margin": 0.3489023209491264,
-   "rank_best": 22,
+   "share": 0.6119326874043856,
+   "margin": 0.34623351176287603,
+   "rank_best": 24,
    "rank_worst": 123
   },
   {
@@ -700,9 +700,20 @@
    "color": "#c964cf",
    "users": 12,
    "rank": 63,
-   "share": 0.6166495375128468,
-   "margin": 0.3489023209491264,
-   "rank_best": 22,
+   "share": 0.6119326874043856,
+   "margin": 0.34623351176287603,
+   "rank_best": 24,
+   "rank_worst": 123
+  },
+  {
+   "slug": "tada_riina",
+   "name": "多田李衣菜",
+   "color": "#0077c8",
+   "users": 12,
+   "rank": 64,
+   "share": 0.6119326874043856,
+   "margin": 0.34623351176287603,
+   "rank_best": 24,
    "rank_worst": 123
   },
   {
@@ -710,10 +721,10 @@
    "name": "長富蓮実",
    "color": "#ea8a91",
    "users": 12,
-   "rank": 64,
-   "share": 0.6166495375128468,
-   "margin": 0.3489023209491264,
-   "rank_best": 22,
+   "rank": 65,
+   "share": 0.6119326874043856,
+   "margin": 0.34623351176287603,
+   "rank_best": 24,
    "rank_worst": 123
   },
   {
@@ -721,10 +732,10 @@
    "name": "南条光",
    "color": "#e4002b",
    "users": 12,
-   "rank": 65,
-   "share": 0.6166495375128468,
-   "margin": 0.3489023209491264,
-   "rank_best": 22,
+   "rank": 66,
+   "share": 0.6119326874043856,
+   "margin": 0.34623351176287603,
+   "rank_best": 24,
    "rank_worst": 123
   },
   {
@@ -732,10 +743,10 @@
    "name": "堀裕子",
    "color": "#eca154",
    "users": 12,
-   "rank": 66,
-   "share": 0.6166495375128468,
-   "margin": 0.3489023209491264,
-   "rank_best": 22,
+   "rank": 67,
+   "share": 0.6119326874043856,
+   "margin": 0.34623351176287603,
+   "rank_best": 24,
    "rank_worst": 123
   },
   {
@@ -743,10 +754,10 @@
    "name": "本田未央",
    "color": "#ffb81c",
    "users": 12,
-   "rank": 67,
-   "share": 0.6166495375128468,
-   "margin": 0.3489023209491264,
-   "rank_best": 22,
+   "rank": 68,
+   "share": 0.6119326874043856,
+   "margin": 0.34623351176287603,
+   "rank_best": 24,
    "rank_worst": 123
   },
   {
@@ -754,10 +765,10 @@
    "name": "三村かな子",
    "color": "#ffb1bb",
    "users": 12,
-   "rank": 68,
-   "share": 0.6166495375128468,
-   "margin": 0.3489023209491264,
-   "rank_best": 22,
+   "rank": 69,
+   "share": 0.6119326874043856,
+   "margin": 0.34623351176287603,
+   "rank_best": 24,
    "rank_worst": 123
   },
   {
@@ -765,10 +776,10 @@
    "name": "村松さくら",
    "color": "#eb6174",
    "users": 12,
-   "rank": 69,
-   "share": 0.6166495375128468,
-   "margin": 0.3489023209491264,
-   "rank_best": 22,
+   "rank": 70,
+   "share": 0.6119326874043856,
+   "margin": 0.34623351176287603,
+   "rank_best": 24,
    "rank_worst": 123
   },
   {
@@ -776,10 +787,10 @@
    "name": "今井加奈",
    "color": "#ff3de5",
    "users": 11,
-   "rank": 70,
-   "share": 0.5652620760534429,
-   "margin": 0.33404854003579565,
-   "rank_best": 25,
+   "rank": 71,
+   "share": 0.5609382967873533,
+   "margin": 0.3314933497754505,
+   "rank_best": 26,
    "rank_worst": 134
   },
   {
@@ -787,10 +798,10 @@
    "name": "小早川紗枝",
    "color": "#e56db1",
    "users": 11,
-   "rank": 71,
-   "share": 0.5652620760534429,
-   "margin": 0.33404854003579565,
-   "rank_best": 25,
+   "rank": 72,
+   "share": 0.5609382967873533,
+   "margin": 0.3314933497754505,
+   "rank_best": 26,
    "rank_worst": 134
   },
   {
@@ -798,21 +809,10 @@
    "name": "篠原礼",
    "color": "#bb68fe",
    "users": 11,
-   "rank": 72,
-   "share": 0.5652620760534429,
-   "margin": 0.33404854003579565,
-   "rank_best": 25,
-   "rank_worst": 134
-  },
-  {
-   "slug": "tada_riina",
-   "name": "多田李衣菜",
-   "color": "#0077c8",
-   "users": 11,
    "rank": 73,
-   "share": 0.5652620760534429,
-   "margin": 0.33404854003579565,
-   "rank_best": 25,
+   "share": 0.5609382967873533,
+   "margin": 0.3314933497754505,
+   "rank_best": 26,
    "rank_worst": 134
   },
   {
@@ -821,9 +821,9 @@
    "color": "#f16029",
    "users": 11,
    "rank": 74,
-   "share": 0.5652620760534429,
-   "margin": 0.33404854003579565,
-   "rank_best": 25,
+   "share": 0.5609382967873533,
+   "margin": 0.3314933497754505,
+   "rank_best": 26,
    "rank_worst": 134
   },
   {
@@ -832,9 +832,9 @@
    "color": "#f8a4bd",
    "users": 11,
    "rank": 75,
-   "share": 0.5652620760534429,
-   "margin": 0.33404854003579565,
-   "rank_best": 25,
+   "share": 0.5609382967873533,
+   "margin": 0.3314933497754505,
+   "rank_best": 26,
    "rank_worst": 134
   },
   {
@@ -843,9 +843,9 @@
    "color": "#fae053",
    "users": 11,
    "rank": 76,
-   "share": 0.5652620760534429,
-   "margin": 0.33404854003579565,
-   "rank_best": 25,
+   "share": 0.5609382967873533,
+   "margin": 0.3314933497754505,
+   "rank_best": 26,
    "rank_worst": 134
   },
   {
@@ -854,9 +854,9 @@
    "color": "#f8e08e",
    "users": 10,
    "rank": 77,
-   "share": 0.513874614594039,
-   "margin": 0.31850278591623965,
-   "rank_best": 29,
+   "share": 0.5099439061703213,
+   "margin": 0.31606650759459576,
+   "rank_best": 30,
    "rank_worst": 147
   },
   {
@@ -865,9 +865,20 @@
    "color": "#d8843e",
    "users": 10,
    "rank": 78,
-   "share": 0.513874614594039,
-   "margin": 0.31850278591623965,
-   "rank_best": 29,
+   "share": 0.5099439061703213,
+   "margin": 0.31606650759459576,
+   "rank_best": 30,
+   "rank_worst": 147
+  },
+  {
+   "slug": "kanzaki_ranko",
+   "name": "神崎蘭子",
+   "color": "#84329b",
+   "users": 10,
+   "rank": 79,
+   "share": 0.5099439061703213,
+   "margin": 0.31606650759459576,
+   "rank_best": 30,
    "rank_worst": 147
   },
   {
@@ -875,10 +886,10 @@
    "name": "久川颯",
    "color": "#7eddd3",
    "users": 10,
-   "rank": 79,
-   "share": 0.513874614594039,
-   "margin": 0.31850278591623965,
-   "rank_best": 29,
+   "rank": 80,
+   "share": 0.5099439061703213,
+   "margin": 0.31606650759459576,
+   "rank_best": 30,
    "rank_worst": 147
   },
   {
@@ -886,10 +897,10 @@
    "name": "八神マキノ",
    "color": "#a6a4e0",
    "users": 10,
-   "rank": 80,
-   "share": 0.513874614594039,
-   "margin": 0.31850278591623965,
-   "rank_best": 29,
+   "rank": 81,
+   "share": 0.5099439061703213,
+   "margin": 0.31606650759459576,
+   "rank_best": 30,
    "rank_worst": 147
   },
   {
@@ -897,9 +908,9 @@
    "name": "綾瀬穂乃香",
    "color": "#f5d6ff",
    "users": 9,
-   "rank": 81,
-   "share": 0.4624871531346352,
-   "margin": 0.302158273381295,
+   "rank": 82,
+   "share": 0.4589495155532891,
+   "margin": 0.2998470168281489,
    "rank_best": 30,
    "rank_worst": 147
   },
@@ -908,9 +919,9 @@
    "name": "荒木比奈",
    "color": "#a0d884",
    "users": 9,
-   "rank": 82,
-   "share": 0.4624871531346352,
-   "margin": 0.302158273381295,
+   "rank": 83,
+   "share": 0.4589495155532891,
+   "margin": 0.2998470168281489,
    "rank_best": 30,
    "rank_worst": 147
   },
@@ -919,20 +930,9 @@
    "name": "乙倉悠貴",
    "color": "#e4bec3",
    "users": 9,
-   "rank": 83,
-   "share": 0.4624871531346352,
-   "margin": 0.302158273381295,
-   "rank_best": 30,
-   "rank_worst": 147
-  },
-  {
-   "slug": "kanzaki_ranko",
-   "name": "神崎蘭子",
-   "color": "#84329b",
-   "users": 9,
    "rank": 84,
-   "share": 0.4624871531346352,
-   "margin": 0.302158273381295,
+   "share": 0.4589495155532891,
+   "margin": 0.2998470168281489,
    "rank_best": 30,
    "rank_worst": 147
   },
@@ -942,8 +942,8 @@
    "color": "#0072ce",
    "users": 9,
    "rank": 85,
-   "share": 0.4624871531346352,
-   "margin": 0.302158273381295,
+   "share": 0.4589495155532891,
+   "margin": 0.2998470168281489,
    "rank_best": 30,
    "rank_worst": 147
   },
@@ -953,8 +953,8 @@
    "color": "#f8485e",
    "users": 9,
    "rank": 86,
-   "share": 0.4624871531346352,
-   "margin": 0.302158273381295,
+   "share": 0.4589495155532891,
+   "margin": 0.2998470168281489,
    "rank_best": 30,
    "rank_worst": 147
   },
@@ -964,8 +964,8 @@
    "color": "#e277cd",
    "users": 9,
    "rank": 87,
-   "share": 0.4624871531346352,
-   "margin": 0.302158273381295,
+   "share": 0.4589495155532891,
+   "margin": 0.2998470168281489,
    "rank_best": 30,
    "rank_worst": 147
   },
@@ -975,8 +975,8 @@
    "color": "#e94047",
    "users": 9,
    "rank": 88,
-   "share": 0.4624871531346352,
-   "margin": 0.302158273381295,
+   "share": 0.4589495155532891,
+   "margin": 0.2998470168281489,
    "rank_best": 30,
    "rank_worst": 147
   },
@@ -986,8 +986,8 @@
    "color": "#ffd100",
    "users": 9,
    "rank": 89,
-   "share": 0.4624871531346352,
-   "margin": 0.302158273381295,
+   "share": 0.4589495155532891,
+   "margin": 0.2998470168281489,
    "rank_best": 30,
    "rank_worst": 147
   },
@@ -997,8 +997,8 @@
    "color": "#71dad4",
    "users": 9,
    "rank": 90,
-   "share": 0.4624871531346352,
-   "margin": 0.302158273381295,
+   "share": 0.4589495155532891,
+   "margin": 0.2998470168281489,
    "rank_best": 30,
    "rank_worst": 147
   },
@@ -1008,8 +1008,8 @@
    "color": "#fdff4e",
    "users": 9,
    "rank": 91,
-   "share": 0.4624871531346352,
-   "margin": 0.302158273381295,
+   "share": 0.4589495155532891,
+   "margin": 0.2998470168281489,
    "rank_best": 30,
    "rank_worst": 147
   },
@@ -1019,9 +1019,9 @@
    "color": "#ffc1bd",
    "users": 8,
    "rank": 92,
-   "share": 0.41109969167523125,
-   "margin": 0.28487755213270977,
-   "rank_best": 37,
+   "share": 0.407955124936257,
+   "margin": 0.2826984785569879,
+   "rank_best": 39,
    "rank_worst": 162
   },
   {
@@ -1030,9 +1030,9 @@
    "color": "#fcd757",
    "users": 8,
    "rank": 93,
-   "share": 0.41109969167523125,
-   "margin": 0.28487755213270977,
-   "rank_best": 37,
+   "share": 0.407955124936257,
+   "margin": 0.2826984785569879,
+   "rank_best": 39,
    "rank_worst": 162
   },
   {
@@ -1041,9 +1041,9 @@
    "color": "#ab4ec6",
    "users": 8,
    "rank": 94,
-   "share": 0.41109969167523125,
-   "margin": 0.28487755213270977,
-   "rank_best": 37,
+   "share": 0.407955124936257,
+   "margin": 0.2826984785569879,
+   "rank_best": 39,
    "rank_worst": 162
   },
   {
@@ -1052,9 +1052,9 @@
    "color": "#0f7bf8",
    "users": 8,
    "rank": 95,
-   "share": 0.41109969167523125,
-   "margin": 0.28487755213270977,
-   "rank_best": 37,
+   "share": 0.407955124936257,
+   "margin": 0.2826984785569879,
+   "rank_best": 39,
    "rank_worst": 162
   },
   {
@@ -1063,9 +1063,9 @@
    "color": "#ffbe60",
    "users": 8,
    "rank": 96,
-   "share": 0.41109969167523125,
-   "margin": 0.28487755213270977,
-   "rank_best": 37,
+   "share": 0.407955124936257,
+   "margin": 0.2826984785569879,
+   "rank_best": 39,
    "rank_worst": 162
   },
   {
@@ -1074,9 +1074,9 @@
    "color": "#feea9c",
    "users": 8,
    "rank": 97,
-   "share": 0.41109969167523125,
-   "margin": 0.28487755213270977,
-   "rank_best": 37,
+   "share": 0.407955124936257,
+   "margin": 0.2826984785569879,
+   "rank_best": 39,
    "rank_worst": 162
   },
   {
@@ -1085,9 +1085,9 @@
    "color": "#ed8b00",
    "users": 8,
    "rank": 98,
-   "share": 0.41109969167523125,
-   "margin": 0.28487755213270977,
-   "rank_best": 37,
+   "share": 0.407955124936257,
+   "margin": 0.2826984785569879,
+   "rank_best": 39,
    "rank_worst": 162
   },
   {
@@ -1096,9 +1096,9 @@
    "color": "#a20067",
    "users": 8,
    "rank": 99,
-   "share": 0.41109969167523125,
-   "margin": 0.28487755213270977,
-   "rank_best": 37,
+   "share": 0.407955124936257,
+   "margin": 0.2826984785569879,
+   "rank_best": 39,
    "rank_worst": 162
   },
   {
@@ -1107,9 +1107,9 @@
    "color": "#28724f",
    "users": 8,
    "rank": 100,
-   "share": 0.41109969167523125,
-   "margin": 0.28487755213270977,
-   "rank_best": 37,
+   "share": 0.407955124936257,
+   "margin": 0.2826984785569879,
+   "rank_best": 39,
    "rank_worst": 162
   },
   {
@@ -1118,8 +1118,8 @@
    "color": "#d06447",
    "users": 7,
    "rank": 101,
-   "share": 0.3597122302158274,
-   "margin": 0.26647854931585807,
+   "share": 0.35696073431922487,
+   "margin": 0.2644402126306271,
    "rank_best": 43,
    "rank_worst": 162
   },
@@ -1129,8 +1129,8 @@
    "color": "#fa9063",
    "users": 7,
    "rank": 102,
-   "share": 0.3597122302158274,
-   "margin": 0.26647854931585807,
+   "share": 0.35696073431922487,
+   "margin": 0.2644402126306271,
    "rank_best": 43,
    "rank_worst": 162
   },
@@ -1140,8 +1140,8 @@
    "color": "#ef3340",
    "users": 7,
    "rank": 103,
-   "share": 0.3597122302158274,
-   "margin": 0.26647854931585807,
+   "share": 0.35696073431922487,
+   "margin": 0.2644402126306271,
    "rank_best": 43,
    "rank_worst": 162
   },
@@ -1151,8 +1151,8 @@
    "color": "#c800a1",
    "users": 7,
    "rank": 104,
-   "share": 0.3597122302158274,
-   "margin": 0.26647854931585807,
+   "share": 0.35696073431922487,
+   "margin": 0.2644402126306271,
    "rank_best": 43,
    "rank_worst": 162
   },
@@ -1162,8 +1162,8 @@
    "color": "#e89cdc",
    "users": 7,
    "rank": 105,
-   "share": 0.3597122302158274,
-   "margin": 0.26647854931585807,
+   "share": 0.35696073431922487,
+   "margin": 0.2644402126306271,
    "rank_best": 43,
    "rank_worst": 162
   },
@@ -1173,9 +1173,9 @@
    "color": "#375637",
    "users": 6,
    "rank": 106,
-   "share": 0.3083247687564234,
-   "margin": 0.24671119711485243,
-   "rank_best": 45,
+   "share": 0.3059663437021928,
+   "margin": 0.2448240640415619,
+   "rank_best": 46,
    "rank_worst": 177
   },
   {
@@ -1184,9 +1184,9 @@
    "color": "#75bbae",
    "users": 6,
    "rank": 107,
-   "share": 0.3083247687564234,
-   "margin": 0.24671119711485243,
-   "rank_best": 45,
+   "share": 0.3059663437021928,
+   "margin": 0.2448240640415619,
+   "rank_best": 46,
    "rank_worst": 177
   },
   {
@@ -1195,9 +1195,9 @@
    "color": "#f6be00",
    "users": 6,
    "rank": 108,
-   "share": 0.3083247687564234,
-   "margin": 0.24671119711485243,
-   "rank_best": 45,
+   "share": 0.3059663437021928,
+   "margin": 0.2448240640415619,
+   "rank_best": 46,
    "rank_worst": 177
   },
   {
@@ -1206,9 +1206,9 @@
    "color": "#f8f283",
    "users": 6,
    "rank": 109,
-   "share": 0.3083247687564234,
-   "margin": 0.24671119711485243,
-   "rank_best": 45,
+   "share": 0.3059663437021928,
+   "margin": 0.2448240640415619,
+   "rank_best": 46,
    "rank_worst": 177
   },
   {
@@ -1217,9 +1217,9 @@
    "color": "#cbfc9f",
    "users": 6,
    "rank": 110,
-   "share": 0.3083247687564234,
-   "margin": 0.24671119711485243,
-   "rank_best": 45,
+   "share": 0.3059663437021928,
+   "margin": 0.2448240640415619,
+   "rank_best": 46,
    "rank_worst": 177
   },
   {
@@ -1228,9 +1228,9 @@
    "color": "#dce6ed",
    "users": 6,
    "rank": 111,
-   "share": 0.3083247687564234,
-   "margin": 0.24671119711485243,
-   "rank_best": 45,
+   "share": 0.3059663437021928,
+   "margin": 0.2448240640415619,
+   "rank_best": 46,
    "rank_worst": 177
   },
   {
@@ -1239,9 +1239,9 @@
    "color": "#211551",
    "users": 6,
    "rank": 112,
-   "share": 0.3083247687564234,
-   "margin": 0.24671119711485243,
-   "rank_best": 45,
+   "share": 0.3059663437021928,
+   "margin": 0.2448240640415619,
+   "rank_best": 46,
    "rank_worst": 177
   },
   {
@@ -1250,9 +1250,9 @@
    "color": "#eabedb",
    "users": 6,
    "rank": 113,
-   "share": 0.3083247687564234,
-   "margin": 0.24671119711485243,
-   "rank_best": 45,
+   "share": 0.3059663437021928,
+   "margin": 0.2448240640415619,
+   "rank_best": 46,
    "rank_worst": 177
   },
   {
@@ -1261,9 +1261,9 @@
    "color": "#c7579a",
    "users": 6,
    "rank": 114,
-   "share": 0.3083247687564234,
-   "margin": 0.24671119711485243,
-   "rank_best": 45,
+   "share": 0.3059663437021928,
+   "margin": 0.2448240640415619,
+   "rank_best": 46,
    "rank_worst": 177
   },
   {
@@ -1272,9 +1272,9 @@
    "color": "#93256c",
    "users": 6,
    "rank": 115,
-   "share": 0.3083247687564234,
-   "margin": 0.24671119711485243,
-   "rank_best": 45,
+   "share": 0.3059663437021928,
+   "margin": 0.2448240640415619,
+   "rank_best": 46,
    "rank_worst": 177
   },
   {
@@ -1283,9 +1283,9 @@
    "color": "#7a508f",
    "users": 5,
    "rank": 116,
-   "share": 0.2569373072970195,
-   "margin": 0.22521547974818026,
-   "rank_best": 51,
+   "share": 0.25497195308516063,
+   "margin": 0.22349277082608807,
+   "rank_best": 52,
    "rank_worst": 177
   },
   {
@@ -1294,9 +1294,9 @@
    "color": "#FFFFFF",
    "users": 5,
    "rank": 117,
-   "share": 0.2569373072970195,
-   "margin": 0.22521547974818026,
-   "rank_best": 51,
+   "share": 0.25497195308516063,
+   "margin": 0.22349277082608807,
+   "rank_best": 52,
    "rank_worst": 177
   },
   {
@@ -1305,9 +1305,9 @@
    "color": "#485cc7",
    "users": 5,
    "rank": 118,
-   "share": 0.2569373072970195,
-   "margin": 0.22521547974818026,
-   "rank_best": 51,
+   "share": 0.25497195308516063,
+   "margin": 0.22349277082608807,
+   "rank_best": 52,
    "rank_worst": 177
   },
   {
@@ -1316,9 +1316,9 @@
    "color": "#c2e189",
    "users": 5,
    "rank": 119,
-   "share": 0.2569373072970195,
-   "margin": 0.22521547974818026,
-   "rank_best": 51,
+   "share": 0.25497195308516063,
+   "margin": 0.22349277082608807,
+   "rank_best": 52,
    "rank_worst": 177
   },
   {
@@ -1327,9 +1327,9 @@
    "color": "#fffb4e",
    "users": 5,
    "rank": 120,
-   "share": 0.2569373072970195,
-   "margin": 0.22521547974818026,
-   "rank_best": 51,
+   "share": 0.25497195308516063,
+   "margin": 0.22349277082608807,
+   "rank_best": 52,
    "rank_worst": 177
   },
   {
@@ -1338,9 +1338,9 @@
    "color": "#ab192c",
    "users": 5,
    "rank": 121,
-   "share": 0.2569373072970195,
-   "margin": 0.22521547974818026,
-   "rank_best": 51,
+   "share": 0.25497195308516063,
+   "margin": 0.22349277082608807,
+   "rank_best": 52,
    "rank_worst": 177
   },
   {
@@ -1349,9 +1349,9 @@
    "color": "#e56f66",
    "users": 5,
    "rank": 122,
-   "share": 0.2569373072970195,
-   "margin": 0.22521547974818026,
-   "rank_best": 51,
+   "share": 0.25497195308516063,
+   "margin": 0.22349277082608807,
+   "rank_best": 52,
    "rank_worst": 177
   },
   {
@@ -1360,9 +1360,9 @@
    "color": "#2e347e",
    "users": 5,
    "rank": 123,
-   "share": 0.2569373072970195,
-   "margin": 0.22521547974818026,
-   "rank_best": 51,
+   "share": 0.25497195308516063,
+   "margin": 0.22349277082608807,
+   "rank_best": 52,
    "rank_worst": 177
   },
   {
@@ -1371,9 +1371,9 @@
    "color": "#ec4b6e",
    "users": 4,
    "rank": 124,
-   "share": 0.20554984583761562,
-   "margin": 0.2014388489208633,
-   "rank_best": 70,
+   "share": 0.2039775624681285,
+   "margin": 0.19989801121876594,
+   "rank_best": 71,
    "rank_worst": 177
   },
   {
@@ -1382,9 +1382,9 @@
    "color": "#4fd962",
    "users": 4,
    "rank": 125,
-   "share": 0.20554984583761562,
-   "margin": 0.2014388489208633,
-   "rank_best": 70,
+   "share": 0.2039775624681285,
+   "margin": 0.19989801121876594,
+   "rank_best": 71,
    "rank_worst": 177
   },
   {
@@ -1393,9 +1393,9 @@
    "color": "#53565a",
    "users": 4,
    "rank": 126,
-   "share": 0.20554984583761562,
-   "margin": 0.2014388489208633,
-   "rank_best": 70,
+   "share": 0.2039775624681285,
+   "margin": 0.19989801121876594,
+   "rank_best": 71,
    "rank_worst": 177
   },
   {
@@ -1404,9 +1404,9 @@
    "color": "#c4d673",
    "users": 4,
    "rank": 127,
-   "share": 0.20554984583761562,
-   "margin": 0.2014388489208633,
-   "rank_best": 70,
+   "share": 0.2039775624681285,
+   "margin": 0.19989801121876594,
+   "rank_best": 71,
    "rank_worst": 177
   },
   {
@@ -1415,9 +1415,9 @@
    "color": "#d83c6a",
    "users": 4,
    "rank": 128,
-   "share": 0.20554984583761562,
-   "margin": 0.2014388489208633,
-   "rank_best": 70,
+   "share": 0.2039775624681285,
+   "margin": 0.19989801121876594,
+   "rank_best": 71,
    "rank_worst": 177
   },
   {
@@ -1426,9 +1426,9 @@
    "color": "#d30d85",
    "users": 4,
    "rank": 129,
-   "share": 0.20554984583761562,
-   "margin": 0.2014388489208633,
-   "rank_best": 70,
+   "share": 0.2039775624681285,
+   "margin": 0.19989801121876594,
+   "rank_best": 71,
    "rank_worst": 177
   },
   {
@@ -1437,9 +1437,9 @@
    "color": "#d22630",
    "users": 4,
    "rank": 130,
-   "share": 0.20554984583761562,
-   "margin": 0.2014388489208633,
-   "rank_best": 70,
+   "share": 0.2039775624681285,
+   "margin": 0.19989801121876594,
+   "rank_best": 71,
    "rank_worst": 177
   },
   {
@@ -1448,9 +1448,9 @@
    "color": "#df4661",
    "users": 4,
    "rank": 131,
-   "share": 0.20554984583761562,
-   "margin": 0.2014388489208633,
-   "rank_best": 70,
+   "share": 0.2039775624681285,
+   "margin": 0.19989801121876594,
+   "rank_best": 71,
    "rank_worst": 177
   },
   {
@@ -1459,9 +1459,9 @@
    "color": "#a80826",
    "users": 4,
    "rank": 132,
-   "share": 0.20554984583761562,
-   "margin": 0.2014388489208633,
-   "rank_best": 70,
+   "share": 0.2039775624681285,
+   "margin": 0.19989801121876594,
+   "rank_best": 71,
    "rank_worst": 177
   },
   {
@@ -1470,9 +1470,9 @@
    "color": "#ff00a0",
    "users": 4,
    "rank": 133,
-   "share": 0.20554984583761562,
-   "margin": 0.2014388489208633,
-   "rank_best": 70,
+   "share": 0.2039775624681285,
+   "margin": 0.19989801121876594,
+   "rank_best": 71,
    "rank_worst": 177
   },
   {
@@ -1481,9 +1481,9 @@
    "color": "#407ec9",
    "users": 4,
    "rank": 134,
-   "share": 0.20554984583761562,
-   "margin": 0.2014388489208633,
-   "rank_best": 70,
+   "share": 0.2039775624681285,
+   "margin": 0.19989801121876594,
+   "rank_best": 71,
    "rank_worst": 177
   },
   {
@@ -1492,8 +1492,8 @@
    "color": "#618d75",
    "users": 3,
    "rank": 135,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1503,8 +1503,8 @@
    "color": "#521078",
    "users": 3,
    "rank": 136,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1514,8 +1514,8 @@
    "color": "#8d8696",
    "users": 3,
    "rank": 137,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1525,8 +1525,8 @@
    "color": "#f994c4",
    "users": 3,
    "rank": 138,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1536,8 +1536,8 @@
    "color": "#781000",
    "users": 3,
    "rank": 139,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1547,8 +1547,8 @@
    "color": "#f4633a",
    "users": 3,
    "rank": 140,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1558,8 +1558,8 @@
    "color": "#5756d8",
    "users": 3,
    "rank": 141,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1569,8 +1569,8 @@
    "color": "#633aa1",
    "users": 3,
    "rank": 142,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1580,8 +1580,8 @@
    "color": "#ad1e66",
    "users": 3,
    "rank": 143,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1591,8 +1591,8 @@
    "color": "#f9423a",
    "users": 3,
    "rank": 144,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1602,8 +1602,8 @@
    "color": "#3f3c8b",
    "users": 3,
    "rank": 145,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1613,8 +1613,8 @@
    "color": "#f196ff",
    "users": 3,
    "rank": 146,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1624,8 +1624,8 @@
    "color": "#e7cbee",
    "users": 3,
    "rank": 147,
-   "share": 0.1541623843782117,
-   "margin": 0.1744511604745632,
+   "share": 0.1529831718510964,
+   "margin": 0.17311675588143802,
    "rank_best": 77,
    "rank_worst": 190
   },
@@ -1635,8 +1635,8 @@
    "color": "#E5E1E6",
    "users": 2,
    "rank": 148,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1646,8 +1646,8 @@
    "color": "#fe85c7",
    "users": 2,
    "rank": 149,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1657,8 +1657,8 @@
    "color": "#819832",
    "users": 2,
    "rank": 150,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1668,8 +1668,8 @@
    "color": "#fca538",
    "users": 2,
    "rank": 151,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1679,8 +1679,8 @@
    "color": "#fedd00",
    "users": 2,
    "rank": 152,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1690,8 +1690,8 @@
    "color": "#7e93a7",
    "users": 2,
    "rank": 153,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1701,8 +1701,8 @@
    "color": "#52c6c3",
    "users": 2,
    "rank": 154,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1712,8 +1712,8 @@
    "color": "#ffd9db",
    "users": 2,
    "rank": 155,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1723,8 +1723,8 @@
    "color": "#440099",
    "users": 2,
    "rank": 156,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1734,8 +1734,8 @@
    "color": "#d8076b",
    "users": 2,
    "rank": 157,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1745,8 +1745,8 @@
    "color": "無し・ゴールド",
    "users": 2,
    "rank": 158,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1756,8 +1756,8 @@
    "color": "#58eabd",
    "users": 2,
    "rank": 159,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1767,8 +1767,8 @@
    "color": "#43a0ab",
    "users": 2,
    "rank": 160,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1778,8 +1778,8 @@
    "color": "#ff5d14",
    "users": 2,
    "rank": 161,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1789,8 +1789,8 @@
    "color": "#1b24c2",
    "users": 2,
    "rank": 162,
-   "share": 0.10277492291880781,
-   "margin": 0.14243877606635488,
+   "share": 0.10198878123406425,
+   "margin": 0.14134923927849394,
    "rank_best": 92,
    "rank_worst": 190
   },
@@ -1800,8 +1800,8 @@
    "color": "#ffcb49",
    "users": 1,
    "rank": 163,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1811,8 +1811,8 @@
    "color": "#e95b64",
    "users": 1,
    "rank": 164,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1822,8 +1822,8 @@
    "color": "#fc4c02",
    "users": 1,
    "rank": 165,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1833,8 +1833,8 @@
    "color": "#f14fee",
    "users": 1,
    "rank": 166,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1844,8 +1844,8 @@
    "color": "#ffdc00",
    "users": 1,
    "rank": 167,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1855,8 +1855,8 @@
    "color": "#c3396c",
    "users": 1,
    "rank": 168,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1866,8 +1866,8 @@
    "color": "#cf142b",
    "users": 1,
    "rank": 169,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1877,8 +1877,8 @@
    "color": "#acc0e6",
    "users": 1,
    "rank": 170,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1888,8 +1888,8 @@
    "color": "#fcc138",
    "users": 1,
    "rank": 171,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1899,8 +1899,8 @@
    "color": "#623b2a",
    "users": 1,
    "rank": 172,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1910,8 +1910,8 @@
    "color": "#f97f4b",
    "users": 1,
    "rank": 173,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1921,8 +1921,8 @@
    "color": "#ff7b2c",
    "users": 1,
    "rank": 174,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1932,8 +1932,8 @@
    "color": "#b0008e",
    "users": 1,
    "rank": 175,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1943,8 +1943,8 @@
    "color": "#fd9286",
    "users": 1,
    "rank": 176,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
@@ -1954,8 +1954,8 @@
    "color": "#ec5800",
    "users": 1,
    "rank": 177,
-   "share": 0.051387461459403906,
-   "margin": 0.10071942446043165,
+   "share": 0.05099439061703213,
+   "margin": 0.09994900560938297,
    "rank_best": 106,
    "rank_worst": 190
   },
