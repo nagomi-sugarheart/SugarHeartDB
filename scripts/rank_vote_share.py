@@ -55,8 +55,12 @@ def load_stores(days: int, date: str | None) -> list[dict]:
     return stores
 
 
-def common_window(stores: list[dict]) -> tuple[int, int]:
-    """全アイドルが確実にカバーされている時間帯の交差を返す。"""
+def common_window(stores: list[dict], window_hours: float | None) -> tuple[int, int]:
+    """全アイドルが確実にカバーされている時間帯の交差を返す。
+
+    window_hours を指定すると、その時間ぶんだけを切り出す（ローリング窓）。
+    集計窓が短いほどポアソンノイズが増え、順位差が読めなくなる。
+    """
     # 下限：最も遡れていないアイドルの最古時刻（＝そこより前は欠測がありうる）
     floors = [ts for store in stores for ts in store.get("coverage", {}).values()]
     if not floors:
@@ -67,6 +71,9 @@ def common_window(stores: list[dict]) -> tuple[int, int]:
     if not ends:
         raise SystemExit("sweeps 情報がありません。")
     end = max(ends)
+    if window_hours:
+        # 収集がまだ窓の長さぶん貯まっていない場合は、貯まっている分だけを使う
+        start = max(start, end - int(window_hours * 3600))
     if start >= end:
         raise SystemExit(
             "共通窓が空です。収集が1回だけか、取りこぼしが大きい可能性があります。"
@@ -98,11 +105,14 @@ def main() -> int:
     parser.add_argument("--days", type=int, default=1, help="直近何日ぶんをプールするか（既定 1）")
     parser.add_argument("--top", type=int, default=TOP_N, help=f"表示件数（既定 {TOP_N}）")
     parser.add_argument("--focus", default="sato_shin", help="注目するアイドルの slug")
+    parser.add_argument("--window-hours", type=float, default=24.0,
+                        help="集計窓の長さ（時間、既定 24）。0で全期間。"
+                             "短くするほどポアソンノイズが増え順位が読めなくなる")
     args = parser.parse_args()
 
     idols = {idol["slug"]: idol for idol in json.loads(IDOLS.read_text(encoding="utf-8"))}
     stores = load_stores(args.days, args.date)
-    start, end = common_window(stores)
+    start, end = common_window(stores, args.window_hours or None)
 
     posts: dict[str, dict] = {}
     for store in stores:

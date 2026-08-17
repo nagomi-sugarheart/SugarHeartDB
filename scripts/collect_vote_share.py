@@ -63,10 +63,15 @@ def clean_text(raw: str | None) -> str:
 def parse_entry(entry: dict, idol: dict) -> dict:
     text = clean_text(entry.get("displayTextBody") or entry.get("displayText"))
 
+    # 本文中のリンクは t.co に短縮されているため、展開済みの expandedUrl を見る。
+    # url キーは短縮URLなので使わない。
     slug_from_url = None
-    for url in entry.get("urls") or []:
-        target = url.get("url") if isinstance(url, dict) else str(url)
-        found = SLUG_FROM_URL.search(target or "")
+    for link in entry.get("urls") or []:
+        if isinstance(link, dict):
+            target = link.get("expandedUrl") or link.get("url") or ""
+        else:
+            target = str(link)
+        found = SLUG_FROM_URL.search(target)
         if found:
             slug_from_url = found.group(1)
             break
@@ -107,6 +112,8 @@ def main() -> int:
     path = OUTDIR / f"{date_label}.json"
     store = load_store(path, date_label)
 
+    previous_sweep_at = max((sweep["collected_at"] for sweep in store["sweeps"]), default=None)
+
     print(f"収集開始 {started:%Y-%m-%d %H:%M:%S} JST / 対象 {len(idols)}名", file=sys.stderr)
 
     added = 0
@@ -131,8 +138,6 @@ def main() -> int:
             continue
 
         entries = page.get("timeline", {}).get("entry") or []
-        if len(entries) >= RETURN_LIMIT:
-            saturated.append(idol["slug"])
 
         oldest = None
         for entry in entries:
@@ -141,6 +146,13 @@ def main() -> int:
                 added += 1
             store["posts"][record["post_id"]] = record
             oldest = record["created_at"] if oldest is None else min(oldest, record["created_at"])
+
+        # 返却が上限に達していても、前回スイープの時刻より前まで遡れていれば
+        # 取りこぼしはない。当日の初回スイープは必ず上限に達するが、これは
+        # 遡れる限界まで取っただけなので警告しない。
+        if len(entries) >= RETURN_LIMIT and previous_sweep_at is not None \
+                and oldest is not None and oldest > previous_sweep_at:
+            saturated.append(idol["slug"])
 
         if oldest is not None:
             previous = store["coverage"].get(idol["slug"])
@@ -166,7 +178,7 @@ def main() -> int:
 
     if saturated:
         print(f"警告: {len(saturated)}名で返却が{RETURN_LIMIT}件に達しました。"
-              f"取りこぼしの可能性があります。収集間隔を詰めてください: "
+              f"前回スイープ以降に取りこぼしがあります。収集間隔を詰めてください: "
               f"{', '.join(saturated[:10])}{' ...' if len(saturated) > 10 else ''}",
               file=sys.stderr)
     if failed:
