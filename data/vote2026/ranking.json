@@ -1,5 +1,5 @@
 {
- "generated_at": 1786963997,
+ "generated_at": 1786964341,
  "window": {
   "start": 1786926340,
   "end": 1786961863,
@@ -19,7 +19,8 @@
    "rank": 1,
    "share": 2.8085735402808574,
    "margin": 0.8929971504670505,
-   "band": 1
+   "rank_best": 1,
+   "rank_worst": 7
   },
   {
    "slug": "ichinose_shiki",
@@ -29,7 +30,8 @@
    "rank": 2,
    "share": 2.7346637102734666,
    "margin": 0.8811688513957509,
-   "band": 1
+   "rank_best": 1,
+   "rank_worst": 8
   },
   {
    "slug": "ogata_chieri",
@@ -39,7 +41,8 @@
    "rank": 3,
    "share": 1.9955654101995564,
    "margin": 0.7527316148192903,
-   "band": 1
+   "rank_best": 1,
+   "rank_worst": 24
   },
   {
    "slug": "kamiya_nao",
@@ -49,7 +52,8 @@
    "rank": 4,
    "share": 1.9955654101995564,
    "margin": 0.7527316148192903,
-   "band": 1
+   "rank_best": 1,
+   "rank_worst": 24
   },
   {
    "slug": "zaizen_tokiko",
@@ -59,7 +63,8 @@
    "rank": 5,
    "share": 1.9216555801921658,
    "margin": 0.7386606242898638,
-   "band": 1
+   "rank_best": 1,
+   "rank_worst": 28
   },
   {
    "slug": "sakuma_mayu",
@@ -69,7 +74,8 @@
    "rank": 6,
    "share": 1.8477457501847747,
    "margin": 0.7243163340724317,
-   "band": 1
+   "rank_best": 1,
+   "rank_worst": 32
   },
   {
    "slug": "hoshi_shoko",
@@ -79,7 +85,8 @@
    "rank": 7,
    "share": 1.7738359201773837,
    "margin": 0.7096821723362939,
-   "band": 1
+   "rank_best": 1,
+   "rank_worst": 32
   },
   {
    "slug": "sato_shin",
@@ -89,7 +96,8 @@
    "rank": 8,
    "share": 1.6260162601626018,
    "margin": 0.679468949686173,
-   "band": 2
+   "rank_best": 2,
+   "rank_worst": 52
   },
   {
    "slug": "takamori_aiko",
@@ -99,7 +107,8 @@
    "rank": 9,
    "share": 1.5521064301552108,
    "margin": 0.6638468855959679,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 52
   },
   {
    "slug": "kurokawa_chiaki",
@@ -109,7 +118,8 @@
    "rank": 10,
    "share": 1.4781966001478197,
    "margin": 0.6478482240797617,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 57
   },
   {
    "slug": "tachibana_arisu",
@@ -119,7 +129,8 @@
    "rank": 11,
    "share": 1.4781966001478197,
    "margin": 0.6478482240797617,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 57
   },
   {
    "slug": "futaba_anzu",
@@ -129,7 +140,8 @@
    "rank": 12,
    "share": 1.4781966001478197,
    "margin": 0.6478482240797617,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 57
   },
   {
    "slug": "sajo_yukimi",
@@ -139,7 +151,8 @@
    "rank": 13,
    "share": 1.4042867701404287,
    "margin": 0.6314443406755152,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 60
   },
   {
    "slug": "seki_hiromi",
@@ -149,7 +162,8 @@
    "rank": 14,
    "share": 1.4042867701404287,
    "margin": 0.6314443406755152,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 60
   },
   {
    "slug": "takagaki_kaede",
@@ -159,7 +173,8 @@
    "rank": 15,
    "share": 1.4042867701404287,
    "margin": 0.6314443406755152,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 60
   },
   {
    "slug": "koshimizu_sachiko",
@@ -169,7 +184,8 @@
    "rank": 16,
    "share": 1.3303769401330376,
    "margin": 0.6146027898561565,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 60
   },
   {
    "slug": "takafuji_kako",
@@ -179,7 +195,8 @@
    "rank": 17,
    "share": 1.3303769401330376,
    "margin": 0.6146027898561565,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 60
   },
   {
    "slug": "mochizuki_hijiri",
@@ -189,7 +206,8 @@
    "rank": 18,
    "share": 1.3303769401330376,
    "margin": 0.6146027898561565,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 60
   },
   {
    "slug": "ninomiya_asuka",
@@ -199,7 +217,8 @@
    "rank": 19,
    "share": 1.1825572801182558,
    "margin": 0.5794530672579453,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 77
   },
   {
    "slug": "fukuyama_mai",
@@ -209,7 +228,8 @@
    "rank": 20,
    "share": 1.1825572801182558,
    "margin": 0.5794530672579453,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 77
   },
   {
    "slug": "fujiwara_hajime",
@@ -219,7 +239,8 @@
    "rank": 21,
    "share": 1.1825572801182558,
    "margin": 0.5794530672579453,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 77
   },
   {
    "slug": "matsumoto_sarina",
@@ -229,7 +250,8 @@
    "rank": 22,
    "share": 1.1086474501108647,
    "margin": 0.5610530198497071,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 77
   },
   {
    "slug": "mizuki_seira",
@@ -239,7 +261,8 @@
    "rank": 23,
    "share": 1.1086474501108647,
    "margin": 0.5610530198497071,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 77
   },
   {
    "slug": "morikubo_nono",
@@ -249,7 +272,8 @@
    "rank": 24,
    "share": 1.1086474501108647,
    "margin": 0.5610530198497071,
-   "band": 2
+   "rank_best": 3,
+   "rank_worst": 77
   },
   {
    "slug": "sakurai_momoka",
@@ -259,7 +283,8 @@
    "rank": 25,
    "share": 1.0347376201034737,
    "margin": 0.542028712348627,
-   "band": 2
+   "rank_best": 5,
+   "rank_worst": 86
   },
   {
    "slug": "jougasaki_mika",
@@ -269,7 +294,8 @@
    "rank": 26,
    "share": 1.0347376201034737,
    "margin": 0.542028712348627,
-   "band": 2
+   "rank_best": 5,
+   "rank_worst": 86
   },
   {
    "slug": "hisakawa_hayate",
@@ -279,7 +305,8 @@
    "rank": 27,
    "share": 1.0347376201034737,
    "margin": 0.542028712348627,
-   "band": 2
+   "rank_best": 5,
+   "rank_worst": 86
   },
   {
    "slug": "fujii_tomo",
@@ -289,7 +316,8 @@
    "rank": 28,
    "share": 1.0347376201034737,
    "margin": 0.542028712348627,
-   "band": 2
+   "rank_best": 5,
+   "rank_worst": 86
   },
   {
    "slug": "kudo_shinobu",
@@ -299,7 +327,8 @@
    "rank": 29,
    "share": 0.9608277900960829,
    "margin": 0.5223119364308513,
-   "band": 2
+   "rank_best": 6,
+   "rank_worst": 101
   },
   {
    "slug": "tada_riina",
@@ -309,7 +338,8 @@
    "rank": 30,
    "share": 0.9608277900960829,
    "margin": 0.5223119364308513,
-   "band": 2
+   "rank_best": 6,
+   "rank_worst": 101
   },
   {
    "slug": "nagatomi_hasumi",
@@ -319,7 +349,8 @@
    "rank": 31,
    "share": 0.9608277900960829,
    "margin": 0.5223119364308513,
-   "band": 2
+   "rank_best": 6,
+   "rank_worst": 101
   },
   {
    "slug": "narumiya_yume",
@@ -329,7 +360,8 @@
    "rank": 32,
    "share": 0.9608277900960829,
    "margin": 0.5223119364308513,
-   "band": 2
+   "rank_best": 6,
+   "rank_worst": 101
   },
   {
    "slug": "kanzaki_ranko",
@@ -339,7 +371,8 @@
    "rank": 33,
    "share": 0.8869179600886918,
    "margin": 0.5018210765461936,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 101
   },
   {
    "slug": "clarice",
@@ -349,7 +382,8 @@
    "rank": 34,
    "share": 0.8869179600886918,
    "margin": 0.5018210765461936,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 101
   },
   {
    "slug": "saionji_kotoka",
@@ -359,7 +393,8 @@
    "rank": 35,
    "share": 0.8869179600886918,
    "margin": 0.5018210765461936,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 101
   },
   {
    "slug": "shibuya_rin",
@@ -369,7 +404,8 @@
    "rank": 36,
    "share": 0.8869179600886918,
    "margin": 0.5018210765461936,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 101
   },
   {
    "slug": "shirasaka_koume",
@@ -379,7 +415,8 @@
    "rank": 37,
    "share": 0.8869179600886918,
    "margin": 0.5018210765461936,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 101
   },
   {
    "slug": "shirayuki_chiyo",
@@ -389,7 +426,8 @@
    "rank": 38,
    "share": 0.8869179600886918,
    "margin": 0.5018210765461936,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 101
   },
   {
    "slug": "takamine_noa",
@@ -399,7 +437,8 @@
    "rank": 39,
    "share": 0.8869179600886918,
    "margin": 0.5018210765461936,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 101
   },
   {
    "slug": "togo_ai",
@@ -409,7 +448,8 @@
    "rank": 40,
    "share": 0.8869179600886918,
    "margin": 0.5018210765461936,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 101
   },
   {
    "slug": "nitta_minami",
@@ -419,7 +459,8 @@
    "rank": 41,
    "share": 0.8869179600886918,
    "margin": 0.5018210765461936,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 101
   },
   {
    "slug": "hayami_kanade",
@@ -429,7 +470,8 @@
    "rank": 42,
    "share": 0.8869179600886918,
    "margin": 0.5018210765461936,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 101
   },
   {
    "slug": "maekawa_miku",
@@ -439,7 +481,8 @@
    "rank": 43,
    "share": 0.8869179600886918,
    "margin": 0.5018210765461936,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 101
   },
   {
    "slug": "mimura_kanako",
@@ -449,7 +492,8 @@
    "rank": 44,
    "share": 0.8869179600886918,
    "margin": 0.5018210765461936,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 101
   },
   {
    "slug": "anastasia",
@@ -459,7 +503,8 @@
    "rank": 45,
    "share": 0.8130081300813009,
    "margin": 0.4804571019287941,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 119
   },
   {
    "slug": "ayase_honoka",
@@ -469,7 +514,8 @@
    "rank": 46,
    "share": 0.8130081300813009,
    "margin": 0.4804571019287941,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 119
   },
   {
    "slug": "sagisawa_fumika",
@@ -479,7 +525,8 @@
    "rank": 47,
    "share": 0.8130081300813009,
    "margin": 0.4804571019287941,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 119
   },
   {
    "slug": "hojo_karen",
@@ -489,7 +536,8 @@
    "rank": 48,
    "share": 0.8130081300813009,
    "margin": 0.4804571019287941,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 119
   },
   {
    "slug": "matsuo_chizuru",
@@ -499,7 +547,8 @@
    "rank": 49,
    "share": 0.8130081300813009,
    "margin": 0.4804571019287941,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 119
   },
   {
    "slug": "mifune_miyu",
@@ -509,7 +558,8 @@
    "rank": 50,
    "share": 0.8130081300813009,
    "margin": 0.4804571019287941,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 119
   },
   {
    "slug": "miyamoto_frederica",
@@ -519,7 +569,8 @@
    "rank": 51,
    "share": 0.8130081300813009,
    "margin": 0.4804571019287941,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 119
   },
   {
    "slug": "moroboshi_kirari",
@@ -529,7 +580,8 @@
    "rank": 52,
    "share": 0.8130081300813009,
    "margin": 0.4804571019287941,
-   "band": 2
+   "rank_best": 8,
+   "rank_worst": 119
   },
   {
    "slug": "aiba_yumi",
@@ -539,7 +591,8 @@
    "rank": 53,
    "share": 0.7390983000739099,
    "margin": 0.4580978724264615,
-   "band": 3
+   "rank_best": 10,
+   "rank_worst": 136
   },
   {
    "slug": "asari_nanami",
@@ -549,7 +602,8 @@
    "rank": 54,
    "share": 0.7390983000739099,
    "margin": 0.4580978724264615,
-   "band": 3
+   "rank_best": 10,
+   "rank_worst": 136
   },
   {
    "slug": "kawashima_mizuki",
@@ -559,7 +613,8 @@
    "rank": 55,
    "share": 0.7390983000739099,
    "margin": 0.4580978724264615,
-   "band": 3
+   "rank_best": 10,
+   "rank_worst": 136
   },
   {
    "slug": "kita_hinako",
@@ -569,7 +624,8 @@
    "rank": 56,
    "share": 0.7390983000739099,
    "margin": 0.4580978724264615,
-   "band": 3
+   "rank_best": 10,
+   "rank_worst": 136
   },
   {
    "slug": "yorita_yoshino",
@@ -579,7 +635,8 @@
    "rank": 57,
    "share": 0.7390983000739099,
    "margin": 0.4580978724264615,
-   "band": 3
+   "rank_best": 10,
+   "rank_worst": 136
   },
   {
    "slug": "araki_hina",
@@ -589,7 +646,8 @@
    "rank": 58,
    "share": 0.6651884700665188,
    "margin": 0.43458980044345896,
-   "band": 3
+   "rank_best": 13,
+   "rank_worst": 136
   },
   {
    "slug": "igarashi_kyoko",
@@ -599,7 +657,8 @@
    "rank": 59,
    "share": 0.6651884700665188,
    "margin": 0.43458980044345896,
-   "band": 3
+   "rank_best": 13,
+   "rank_worst": 136
   },
   {
    "slug": "hisakawa_nagi",
@@ -609,7 +668,8 @@
    "rank": 60,
    "share": 0.6651884700665188,
    "margin": 0.43458980044345896,
-   "band": 3
+   "rank_best": 13,
+   "rank_worst": 136
   },
   {
    "slug": "abe_nana",
@@ -619,7 +679,8 @@
    "rank": 61,
    "share": 0.5912786400591279,
    "margin": 0.40973519323743773,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "kobayakawa_sae",
@@ -629,7 +690,8 @@
    "rank": 62,
    "share": 0.5912786400591279,
    "margin": 0.40973519323743773,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "kohinata_miho",
@@ -639,7 +701,8 @@
    "rank": 63,
    "share": 0.5912786400591279,
    "margin": 0.40973519323743773,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "sasaki_chie",
@@ -649,7 +712,8 @@
    "rank": 64,
    "share": 0.5912786400591279,
    "margin": 0.40973519323743773,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "takahashi_reiko",
@@ -659,7 +723,8 @@
    "rank": 65,
    "share": 0.5912786400591279,
    "margin": 0.40973519323743773,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "yusa_kozue",
@@ -669,7 +734,8 @@
    "rank": 66,
    "share": 0.5912786400591279,
    "margin": 0.40973519323743773,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "imai_kana",
@@ -679,7 +745,8 @@
    "rank": 67,
    "share": 0.5173688100517368,
    "margin": 0.3832721780995268,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "kamijo_haruna",
@@ -689,7 +756,8 @@
    "rank": 68,
    "share": 0.5173688100517368,
    "margin": 0.3832721780995268,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "kurosaki_chitose",
@@ -699,7 +767,8 @@
    "rank": 69,
    "share": 0.5173688100517368,
    "margin": 0.3832721780995268,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "shinohara_rei",
@@ -709,7 +778,8 @@
    "rank": 70,
    "share": 0.5173688100517368,
    "margin": 0.3832721780995268,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "harada_miyo",
@@ -719,7 +789,8 @@
    "rank": 71,
    "share": 0.5173688100517368,
    "margin": 0.3832721780995268,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "matoba_risa",
@@ -729,7 +800,8 @@
    "rank": 72,
    "share": 0.5173688100517368,
    "margin": 0.3832721780995268,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "mizumoto_yukari",
@@ -739,7 +811,8 @@
    "rank": 73,
    "share": 0.5173688100517368,
    "margin": 0.3832721780995268,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "miyoshi_sana",
@@ -749,7 +822,8 @@
    "rank": 74,
    "share": 0.5173688100517368,
    "margin": 0.3832721780995268,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "yumemi_riamu",
@@ -759,7 +833,8 @@
    "rank": 75,
    "share": 0.5173688100517368,
    "margin": 0.3832721780995268,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "yokoyama_chika",
@@ -769,7 +844,8 @@
    "rank": 76,
    "share": 0.5173688100517368,
    "margin": 0.3832721780995268,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "layla",
@@ -779,7 +855,8 @@
    "rank": 77,
    "share": 0.5173688100517368,
    "margin": 0.3832721780995268,
-   "band": 3
+   "rank_best": 19,
+   "rank_worst": 151
   },
   {
    "slug": "aikawa_chinatsu",
@@ -789,7 +866,8 @@
    "rank": 78,
    "share": 0.4434589800443459,
    "margin": 0.35484108616814697,
-   "band": 3
+   "rank_best": 25,
+   "rank_worst": 169
   },
   {
    "slug": "okazaki_yasuha",
@@ -799,7 +877,8 @@
    "rank": 79,
    "share": 0.4434589800443459,
    "margin": 0.35484108616814697,
-   "band": 3
+   "rank_best": 25,
+   "rank_worst": 169
   },
   {
    "slug": "shimamura_uzuki",
@@ -809,7 +888,8 @@
    "rank": 80,
    "share": 0.4434589800443459,
    "margin": 0.35484108616814697,
-   "band": 3
+   "rank_best": 25,
+   "rank_worst": 169
   },
   {
    "slug": "tsujino_akari",
@@ -819,7 +899,8 @@
    "rank": 81,
    "share": 0.4434589800443459,
    "margin": 0.35484108616814697,
-   "band": 3
+   "rank_best": 25,
+   "rank_worst": 169
   },
   {
    "slug": "nakano_yuka",
@@ -829,7 +910,8 @@
    "rank": 82,
    "share": 0.4434589800443459,
    "margin": 0.35484108616814697,
-   "band": 3
+   "rank_best": 25,
+   "rank_worst": 169
   },
   {
    "slug": "hattori_toko",
@@ -839,7 +921,8 @@
    "rank": 83,
    "share": 0.4434589800443459,
    "margin": 0.35484108616814697,
-   "band": 3
+   "rank_best": 25,
+   "rank_worst": 169
   },
   {
    "slug": "honda_mio",
@@ -849,7 +932,8 @@
    "rank": 84,
    "share": 0.4434589800443459,
    "margin": 0.35484108616814697,
-   "band": 3
+   "rank_best": 25,
+   "rank_worst": 169
   },
   {
    "slug": "yaguchi_miu",
@@ -859,7 +943,8 @@
    "rank": 85,
    "share": 0.4434589800443459,
    "margin": 0.35484108616814697,
-   "band": 3
+   "rank_best": 25,
+   "rank_worst": 169
   },
   {
    "slug": "ryuzaki_kaoru",
@@ -869,7 +954,8 @@
    "rank": 86,
    "share": 0.4434589800443459,
    "margin": 0.35484108616814697,
-   "band": 3
+   "rank_best": 25,
+   "rank_worst": 169
   },
   {
    "slug": "ichihara_nina",
@@ -879,7 +965,8 @@
    "rank": 87,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "ohishi_izumi",
@@ -889,7 +976,8 @@
    "rank": 88,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "ohtsuki_yui",
@@ -899,7 +987,8 @@
    "rank": 89,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "ohnuma_kurumi",
@@ -909,7 +998,8 @@
    "rank": 90,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "kimura_natsuki",
@@ -919,7 +1009,8 @@
    "rank": 91,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "kiryu_tsukasa",
@@ -929,7 +1020,8 @@
    "rank": 92,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "shiina_noriko",
@@ -939,7 +1031,8 @@
    "rank": 93,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "shiomi_shuko",
@@ -949,7 +1042,8 @@
    "rank": 94,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "shiragiku_hotaru",
@@ -959,7 +1053,8 @@
    "rank": 95,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "nishikawa_honami",
@@ -969,7 +1064,8 @@
    "rank": 96,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "hori_yuko",
@@ -979,7 +1075,8 @@
    "rank": 97,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "mukai_takumi",
@@ -989,7 +1086,8 @@
    "rank": 98,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "muramatsu_sakura",
@@ -999,7 +1097,8 @@
    "rank": 99,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "mochida_arisa",
@@ -1009,7 +1108,8 @@
    "rank": 100,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "momoi_azuki",
@@ -1019,7 +1119,8 @@
    "rank": 101,
    "share": 0.36954915003695493,
    "margin": 0.32392411203988086,
-   "band": 3
+   "rank_best": 29,
+   "rank_worst": 169
   },
   {
    "slug": "akagi_miria",
@@ -1029,7 +1130,8 @@
    "rank": 102,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "asano_fuka",
@@ -1039,7 +1141,8 @@
    "rank": 103,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "oikawa_shizuku",
@@ -1049,7 +1152,8 @@
    "rank": 104,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "ohara_michiru",
@@ -1059,7 +1163,8 @@
    "rank": 105,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "otokura_yuuki",
@@ -1069,7 +1174,8 @@
    "rank": 106,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "kitami_yuzu",
@@ -1079,7 +1185,8 @@
    "rank": 107,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "kurihara_nene",
@@ -1089,7 +1196,8 @@
    "rank": 108,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "saejima_kiyomi",
@@ -1099,7 +1207,8 @@
    "rank": 109,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "sakakibara_satomi",
@@ -1109,7 +1218,8 @@
    "rank": 110,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "suzumiya_seika",
@@ -1119,7 +1229,8 @@
    "rank": 111,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "tsuchiya_ako",
@@ -1129,7 +1240,8 @@
    "rank": 112,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "namiki_meiko",
@@ -1139,7 +1251,8 @@
    "rank": 113,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "hiiragi_shino",
@@ -1149,7 +1262,8 @@
    "rank": 114,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "himekawa_yuki",
@@ -1159,7 +1273,8 @@
    "rank": 115,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "makihara_shiho",
@@ -1169,7 +1284,8 @@
    "rank": 116,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "matsuyama_kumiko",
@@ -1179,7 +1295,8 @@
    "rank": 117,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "mary_cochran",
@@ -1189,7 +1306,8 @@
    "rank": 118,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "yagami_makino",
@@ -1199,7 +1317,8 @@
    "rank": 119,
    "share": 0.29563932002956395,
    "margin": 0.28972653362897266,
-   "band": 3
+   "rank_best": 45,
+   "rank_worst": 169
   },
   {
    "slug": "ujiie_mutsumi",
@@ -1209,7 +1328,8 @@
    "rank": 120,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "okuyama_saori",
@@ -1219,7 +1339,8 @@
    "rank": 121,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "kusakabe_wakaba",
@@ -1229,7 +1350,8 @@
    "rank": 122,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "komatsu_ibuki",
@@ -1239,7 +1361,8 @@
    "rank": 123,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "saito_yoko",
@@ -1249,7 +1372,8 @@
    "rank": 124,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "shuto_aoi",
@@ -1259,7 +1383,8 @@
    "rank": 125,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "jougasaki_rika",
@@ -1269,7 +1394,8 @@
    "rank": 126,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "soma_natsumi",
@@ -1279,7 +1405,8 @@
    "rank": 127,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "domyoji_karin",
@@ -1289,7 +1416,8 @@
    "rank": 128,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "natalia",
@@ -1299,7 +1427,8 @@
    "rank": 129,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "hayasaka_mirei",
@@ -1309,7 +1438,8 @@
    "rank": 130,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "fujimoto_rina",
@@ -1319,7 +1449,8 @@
    "rank": 131,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "furusawa_yoriko",
@@ -1329,7 +1460,8 @@
    "rank": 132,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "matsunaga_ryo",
@@ -1339,7 +1471,8 @@
    "rank": 133,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "mizuno_midori",
@@ -1349,7 +1482,8 @@
    "rank": 134,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "yoshioka_saki",
@@ -1359,7 +1493,8 @@
    "rank": 135,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "wakui_rumi",
@@ -1369,7 +1504,8 @@
    "rank": 136,
    "share": 0.22172949002217296,
    "margin": 0.2509105382730968,
-   "band": 3
+   "rank_best": 53,
+   "rank_worst": 190
   },
   {
    "slug": "aihara_yukino",
@@ -1379,7 +1515,8 @@
    "rank": 137,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "ebihara_naho",
@@ -1389,7 +1526,8 @@
    "rank": 138,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "ohnishi_yuriko",
@@ -1399,7 +1537,8 @@
    "rank": 139,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "kiba_manami",
@@ -1409,7 +1548,8 @@
    "rank": 140,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "kate",
@@ -1419,7 +1559,8 @@
    "rank": 141,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "koga_koharu",
@@ -1429,7 +1570,8 @@
    "rank": 142,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "koseki_reina",
@@ -1439,7 +1581,8 @@
    "rank": 143,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "sawada_marina",
@@ -1449,7 +1592,8 @@
    "rank": 144,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "totoki_airi",
@@ -1459,7 +1603,8 @@
    "rank": 145,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "nishijima_kai",
@@ -1469,7 +1614,8 @@
    "rank": 146,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "manaka_misato",
@@ -1479,7 +1625,8 @@
    "rank": 147,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "murakami_tomoe",
@@ -1489,7 +1636,8 @@
    "rank": 148,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "yao_fueifuei",
@@ -1499,7 +1647,8 @@
    "rank": 149,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "wakabayashi_tomoka",
@@ -1509,7 +1658,8 @@
    "rank": 150,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "wakiyama_tamami",
@@ -1519,7 +1669,8 @@
    "rank": 151,
    "share": 0.14781966001478197,
    "margin": 0.20486759661871887,
-   "band": 4
+   "rank_best": 61,
+   "rank_worst": 190
   },
   {
    "slug": "anzai_miyako",
@@ -1529,7 +1680,8 @@
    "rank": 152,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "ueda_suzuho",
@@ -1539,7 +1691,8 @@
    "rank": 153,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "umeki_otoha",
@@ -1549,7 +1702,8 @@
    "rank": 154,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "eto_misaki",
@@ -1559,7 +1713,8 @@
    "rank": 155,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "katagiri_sanae",
@@ -1569,7 +1724,8 @@
    "rank": 156,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "kishibe_ayaka",
@@ -1579,7 +1735,8 @@
    "rank": 157,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "kitagawa_mahiro",
@@ -1589,7 +1746,8 @@
    "rank": 158,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "komuro_chinami",
@@ -1599,7 +1757,8 @@
    "rank": 159,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "sunazuka_akira",
@@ -1609,7 +1768,8 @@
    "rank": 160,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "sena_shiori",
@@ -1619,7 +1779,8 @@
    "rank": 161,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "senzaki_ema",
@@ -1629,7 +1790,8 @@
    "rank": 162,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "tsukimiya_miyabi",
@@ -1639,7 +1801,8 @@
    "rank": 163,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "nanjo_hikaru",
@@ -1649,7 +1812,8 @@
    "rank": 164,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "niwa_hitomi",
@@ -1659,7 +1823,8 @@
    "rank": 165,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "nonomura_sora",
@@ -1669,7 +1834,8 @@
    "rank": 166,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "helen",
@@ -1679,7 +1845,8 @@
    "rank": 167,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "munakata_atsumi",
@@ -1689,7 +1856,8 @@
    "rank": 168,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "yamato_aki",
@@ -1699,7 +1867,8 @@
    "rank": 169,
    "share": 0.07390983000739099,
    "margin": 0.14486326681448633,
-   "band": 4
+   "rank_best": 78,
+   "rank_worst": 190
   },
   {
    "slug": "aino_nagisa",
@@ -1709,7 +1878,8 @@
    "rank": 170,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "akanishi_erika",
@@ -1719,7 +1889,8 @@
    "rank": 171,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "ariura_kanna",
@@ -1729,7 +1900,8 @@
    "rank": 172,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "eve_santaclaus",
@@ -1739,7 +1911,8 @@
    "rank": 173,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "ijuin_megumi",
@@ -1749,7 +1922,8 @@
    "rank": 174,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "imura_setsuna",
@@ -1759,7 +1933,8 @@
    "rank": 175,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "egami_tsubaki",
@@ -1769,7 +1944,8 @@
    "rank": 176,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "ohta_yuu",
@@ -1779,7 +1955,8 @@
    "rank": 177,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "cathy_graham",
@@ -1789,7 +1966,8 @@
    "rank": 178,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "kirino_aya",
@@ -1799,7 +1977,8 @@
    "rank": 179,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "sugisaka_umi",
@@ -1809,7 +1988,8 @@
    "rank": 180,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "namba_emi",
@@ -1819,7 +1999,8 @@
    "rank": 181,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "hamakawa_ayuna",
@@ -1829,7 +2010,8 @@
    "rank": 182,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "hamaguchi_ayame",
@@ -1839,7 +2021,8 @@
    "rank": 183,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "hino_akane",
@@ -1849,7 +2032,8 @@
    "rank": 184,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "hyodo_rena",
@@ -1859,7 +2043,8 @@
    "rank": 185,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "matsubara_saya",
@@ -1869,7 +2054,8 @@
    "rank": 186,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "manabe_itsuki",
@@ -1879,7 +2065,8 @@
    "rank": 187,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "yanagi_kiyora",
@@ -1889,7 +2076,8 @@
    "rank": 188,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "yanase_miyuki",
@@ -1899,7 +2087,8 @@
    "rank": 189,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   },
   {
    "slug": "yuuki_haru",
@@ -1909,7 +2098,8 @@
    "rank": 190,
    "share": 0.0,
    "margin": 0.0,
-   "band": 4
+   "rank_best": 120,
+   "rank_worst": 190
   }
  ]
 }

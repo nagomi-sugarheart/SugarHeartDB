@@ -7,9 +7,11 @@
 生の取得結果をそのまま比べると投稿の多いアイドルほど短い窓で評価されてしまう。
 共通窓を取ることでこのバイアスを除く。
 
-順位は同時に「帯」に分類する。投稿の到着はポアソン過程なので、件数差が
-小さいアイドル同士は観測期間内では区別できない。区別できない相手を同じ帯に
-まとめ、順位が確定的に読めるものだけを分けて示す。
+表示順の隣にある順位差の多くは意味がない。投稿の到着はポアソン過程なので、
+件数差が小さいアイドル同士は観測期間内では区別できないためである。そこで各
+アイドルについて「取りうる順位の範囲」を出す。自分より有意に多い人数を持つ
+アイドルの数から最良順位、有意に少ないアイドルの数から最悪順位を決める。
+範囲が広いほど、まだ順位を語れる段階にないことを意味する。
 
 使い方:
     python scripts/rank_vote_share.py            # 当日分
@@ -88,15 +90,21 @@ def distinguishable(count_a: int, count_b: int) -> bool:
     return abs(count_a - count_b) > Z * math.sqrt(count_a + count_b)
 
 
-def assign_bands(rows: list[dict]) -> None:
-    """区別できない相手をまとめて帯に分類する。"""
-    band = 0
-    anchor = None
+def assign_rank_ranges(rows: list[dict]) -> None:
+    """各アイドルが取りうる順位の範囲を求める。
+
+    自分より有意に多いアイドルの数 + 1 が最良順位、
+    全体から有意に少ないアイドルの数を引いた値が最悪順位。
+    """
+    counts = [row["users"] for row in rows]
     for row in rows:
-        if anchor is None or distinguishable(anchor["users"], row["users"]):
-            band += 1
-            anchor = row
-        row["band"] = band
+        mine = row["users"]
+        above = sum(1 for other in counts
+                    if other > mine and distinguishable(other, mine))
+        below = sum(1 for other in counts
+                    if other < mine and distinguishable(other, mine))
+        row["rank_best"] = above + 1
+        row["rank_worst"] = len(counts) - below
 
 
 def main() -> int:
@@ -144,7 +152,7 @@ def main() -> int:
         row["share"] = row["users"] / total * 100
         # ポアソン計数の95%区間をシェアに換算
         row["margin"] = (Z * math.sqrt(row["users"]) / total * 100) if row["users"] else 0.0
-    assign_bands(rows)
+    assign_rank_ranges(rows)
 
     hours = (end - start) / 3600
     win_from = datetime.datetime.fromtimestamp(start, JST)
@@ -155,21 +163,27 @@ def main() -> int:
     print(f"URL・本文の不一致（編集された投稿）: {inconsistent}件"
           f"（{inconsistent/max(used,1)*100:.2f}%）\n")
 
-    print(f'{"順位":<5}{"帯":<4}{"アイドル":<14}{"人数":>6}{"シェア":>9}{"±95%":>8}')
-    print("-" * 50)
+    print(f'{"順位":<5}{"アイドル":<14}{"人数":>5}{"シェア":>9}{"取りうる順位":>14}')
+    print("-" * 54)
     for row in rows[:args.top]:
         if row["rank"] - 1 in REWARD_BORDERS:
-            print(f'{"":-<20} {row["rank"]-1}位ボーダー {"":-<17}')
+            print(f'{"":-<20} {row["rank"]-1}位ボーダー {"":-<21}')
         mark = " ←" if row["slug"] == args.focus else ""
-        print(f'{row["rank"]:>2}.  {row["band"]:<4}{row["name"]:<14}'
-              f'{row["users"]:>6}{row["share"]:>8.2f}%{row["margin"]:>7.2f}{mark}')
+        span = f'{row["rank_best"]}〜{row["rank_worst"]}位'
+        print(f'{row["rank"]:>2}.  {row["name"]:<14}'
+              f'{row["users"]:>5}{row["share"]:>8.2f}%{span:>12}{mark}')
 
     focus = next((row for row in rows if row["slug"] == args.focus), None)
     if focus:
-        print(f'\n{focus["name"]}: {focus["rank"]}位 / 帯{focus["band"]} / '
-              f'{focus["users"]}人 / シェア{focus["share"]:.2f}%')
-        same = [r["name"] for r in rows if r["band"] == focus["band"] and r["slug"] != focus["slug"]]
-        print(f'  同じ帯（区別できない相手）: {", ".join(same) if same else "なし"}')
+        print(f'\n{focus["name"]}: 表示順{focus["rank"]}位 / {focus["users"]}人 / '
+              f'シェア{focus["share"]:.2f}%')
+        print(f'  取りうる順位: {focus["rank_best"]}位〜{focus["rank_worst"]}位')
+        tied = [r for r in rows if r["slug"] != focus["slug"]
+                and not distinguishable(r["users"], focus["users"])]
+        print(f'  順位が入れ替わりうる相手: {len(tied)}名'
+              f'（{"、".join(r["name"] for r in tied[:8])}...）' if len(tied) > 8
+              else f'  順位が入れ替わりうる相手: {len(tied)}名'
+                   f'（{"、".join(r["name"] for r in tied)}）')
         for border in REWARD_BORDERS:
             if focus["rank"] > border and len(rows) >= border:
                 gap = rows[border - 1]["users"] - focus["users"]
@@ -177,8 +191,8 @@ def main() -> int:
 
     print("\n※ この結果は公式シェア投稿から推定した投票人数の代理指標であり、"
           "公式の投票結果でも得票数でもありません。")
-    print("※ 同じ帯のアイドル同士は、観測されたばらつきの範囲内で区別できません。"
-          "帯をまたがない順位の上下に意味はありません。")
+    print("※ 表示順の隣にある順位差の多くは、観測のばらつきの範囲内で"
+          "意味がありません。「取りうる順位」の幅が実際の不確かさです。")
 
     RANKING.parent.mkdir(parents=True, exist_ok=True)
     RANKING.write_text(json.dumps({

@@ -41,8 +41,8 @@ DISCORD_LIMIT = 4096    # embed description の上限
 
 
 def build_table(ranking: list[dict], top: int, focus: str) -> str:
-    lines = [f'{"順":>2} {"帯":>2} {"アイドル":<11}{"人数":>5}{"シェア":>8}']
-    lines.append("─" * 34)
+    lines = [f'{"順":>2} {"アイドル":<11}{"人数":>4}{"シェア":>8}  取りうる順位']
+    lines.append("─" * 42)
     for row in ranking[:top]:
         border = REWARD_BORDERS.get(row["rank"] - 1)
         if border:
@@ -51,8 +51,9 @@ def build_table(ranking: list[dict], top: int, focus: str) -> str:
         name = row["name"]
         # 全角換算で桁を揃える
         pad = 11 - sum(2 if ord(ch) > 0x2E80 else 1 for ch in name)
-        lines.append(f'{row["rank"]:>2} {row["band"]:>2} {name}{" " * max(pad, 1)}'
-                     f'{row["users"]:>5}{row["share"]:>7.2f}%{mark}')
+        span = f'{row["rank_best"]}〜{row["rank_worst"]}位'
+        lines.append(f'{row["rank"]:>2} {name}{" " * max(pad, 1)}'
+                     f'{row["users"]:>4}{row["share"]:>7.2f}%{mark}{span:>9}')
     return "```\n" + "\n".join(lines) + "\n```"
 
 
@@ -69,22 +70,11 @@ def build_payload(data: dict, top: int, focus: str) -> dict:
     target = next((row for row in ranking if row["slug"] == focus), None)
     if target:
         parts.append(
-            f'**{target["name"]}：{target["rank"]}位**（帯{target["band"]} / '
-            f'{target["users"]}人 / シェア{target["share"]:.2f}%）')
-
-        # 同じ帯は数十名になることがあるので、表に出ている範囲だけ名前を挙げる
-        same = [row["name"] for row in ranking
-                if row["band"] == target["band"] and row["slug"] != focus]
-        shown = [row["name"] for row in ranking[:top]
-                 if row["band"] == target["band"] and row["slug"] != focus]
-        rest = len(same) - len(shown)
-        if same:
-            label = "、".join(shown) if shown else ""
-            if rest > 0:
-                label = f'{label}{" ほか" if label else ""}{rest}名'
-            parts.append(f'同じ帯で区別できない相手：{label}')
-        else:
-            parts.append("同じ帯で区別できない相手：なし")
+            f'**{target["name"]}：表示順{target["rank"]}位**'
+            f'（{target["users"]}人 / シェア{target["share"]:.2f}%）')
+        parts.append(
+            f'**取りうる順位：{target["rank_best"]}位〜{target["rank_worst"]}位**'
+            f'（この幅が現時点の不確かさです）')
 
         # 直上のボーダー（順位より小さい閾値のうち最大のもの）との差を出す
         above = [border for border in REWARD_BORDERS
@@ -114,7 +104,8 @@ def build_payload(data: dict, top: int, focus: str) -> dict:
             ],
             "footer": {"text": "公式シェア投稿から推定した投票人数の代理指標です。"
                                "公式の投票結果でも得票数でもありません。"
-                               "同じ帯のアイドル同士は区別できません。"},
+                               "表示順の隣にある順位差の多くは観測のばらつきの範囲内で、"
+                               "「取りうる順位」の幅が実際の不確かさです。"},
             "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         }],
     }
