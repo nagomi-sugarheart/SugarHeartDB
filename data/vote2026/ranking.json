@@ -1,5 +1,5 @@
 {
- "generated_at": 1787000819,
+ "generated_at": 1787008628,
  "window": {
   "start": 1786975492,
   "end": 1787000153,
@@ -10,6 +10,7 @@
   "unique_authors": 1946,
   "inconsistent": 6
  },
+ "saturated": [],
  "ranking": [
   {
    "slug": "takamori_aiko",
