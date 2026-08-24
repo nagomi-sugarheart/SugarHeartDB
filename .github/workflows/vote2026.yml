@@ -70,9 +70,7 @@ jobs:
           git fetch --depth=1 origin main
           git checkout FETCH_HEAD -- scripts/ data/idols.json
 
-      - name: 収集と集計と投稿
-        env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      - name: 収集と集計
         run: bash scripts/run_vote_cycle.sh "${{ steps.mode.outputs.mode }}"
 
       - name: 結果をコミットする
@@ -101,3 +99,10 @@ jobs:
           done
           echo "push に3回失敗しました。" >&2
           exit 1
+
+      # **投稿はコミットより後。** 投稿はやり直せるが、取りこぼした投稿は
+      # 39件の返却上限のため回収できない。投稿の失敗で収集結果を捨てないこと。
+      - name: Discordへ投稿
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: bash scripts/run_vote_cycle.sh "${{ steps.mode.outputs.mode }}" --post
