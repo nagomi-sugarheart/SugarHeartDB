@@ -102,6 +102,65 @@ def effective_coverage(stores: list[dict]) -> dict[str, int]:
     return floors
 
 
+def covered_intervals(stores: list[dict]) -> dict[str, list[tuple[int, int]]]:
+    """アイドルごとに、欠測なく収集できている時間帯を返す。
+
+    effective_coverage() は「いま時点から連続して遡れる最古時刻」を1つ返すため、
+    途中に欠測があるとそれ以前の期間がすべて切り捨てられる。暦日ごとの集計では
+    後日の欠測が過去の日を無効にしてはいけないので、区間の一覧として持つ。
+
+    収集が 8/22 19:26 から 8/24 10:44 まで止まった際、この切り捨てにより
+    のべ数ランキングが 8/23 の1日ぶん（実質1分）だけになり、きちんと収集
+    できていた 8/17〜8/22 が丸ごと落ちていた。
+    """
+    per_slug: dict[str, list[tuple[int, int]]] = {}
+    for sweep in all_sweeps(stores):
+        for slug, oldest in (sweep.get("oldest") or {}).items():
+            per_slug.setdefault(slug, []).append((sweep["collected_at"], oldest))
+
+    intervals: dict[str, list[tuple[int, int]]] = {}
+    for slug, entries in per_slug.items():
+        entries.sort()
+        spans: list[tuple[int, int]] = []
+        for collected_at, oldest in entries:
+            # 遡れた時刻が直前の区間の終端以前なら繋がっている。
+            # そうでなければその間が欠測なので、区間を分ける。
+            if spans and oldest <= spans[-1][1]:
+                spans[-1] = (min(spans[-1][0], oldest), max(spans[-1][1], collected_at))
+            else:
+                spans.append((oldest, collected_at))
+        intervals[slug] = spans
+    return intervals
+
+
+def day_fully_covered(intervals: dict[str, list[tuple[int, int]]],
+                      day_start: int, day_end: int) -> bool:
+    """その暦日が、全アイドルについて途切れなく覆われているか。"""
+    return bool(intervals) and all(
+        any(span[0] <= day_start and span[1] >= day_end for span in spans)
+        for spans in intervals.values()
+    )
+
+
+def covered_span_within(intervals: dict[str, list[tuple[int, int]]],
+                        day_start: int, day_end: int):
+    """その暦日のうち、全アイドルが共通して覆われている範囲を返す。"""
+    starts: list[int] = []
+    stops: list[int] = []
+    for spans in intervals.values():
+        best = None
+        for span in spans:
+            low, high = max(span[0], day_start), min(span[1], day_end)
+            if high > low and (best is None or high - low > best[1] - best[0]):
+                best = (low, high)
+        if best is None:
+            return None
+        starts.append(best[0])
+        stops.append(best[1])
+    low, high = max(starts), min(stops)
+    return (low, high) if high > low else None
+
+
 def saturated_slugs(stores: list[dict]) -> set[str]:
     """取りこぼしの疑いが記録されたアイドル。"""
     return {
