@@ -1,13 +1,13 @@
 {
- "generated_at": 1787564519,
+ "generated_at": 1787565080,
  "window": {
   "start": 1787497141,
-  "end": 1787563895,
-  "hours": 18.54
+  "end": 1787564531,
+  "hours": 18.72
  },
  "totals": {
-  "posts": 2665,
-  "unique_authors": 2655,
+  "posts": 2714,
+  "unique_authors": 2704,
   "inconsistent": 21
  },
  "saturated": [],
@@ -16,10 +16,10 @@
    "slug": "sakuma_mayu",
    "name": "佐久間まゆ",
    "color": "#da1884",
-   "users": 61,
+   "users": 62,
    "rank": 1,
-   "share": 2.297551789077213,
-   "margin": 0.5765758706130713,
+   "share": 2.2928994082840237,
+   "margin": 0.570749091459436,
    "rank_best": 1,
    "rank_worst": 10
   },
@@ -29,52 +29,63 @@
    "color": "#a6093d",
    "users": 57,
    "rank": 2,
-   "share": 2.1468926553672314,
-   "margin": 0.5573512426791213,
+   "share": 2.1079881656804735,
+   "margin": 0.5472513126157792,
    "rank_best": 1,
    "rank_worst": 13
+  },
+  {
+   "slug": "kamiya_nao",
+   "name": "神谷奈緒",
+   "color": "#9678d3",
+   "users": 55,
+   "rank": 3,
+   "share": 2.0340236686390534,
+   "margin": 0.5375646832362241,
+   "rank_best": 1,
+   "rank_worst": 14
   },
   {
    "slug": "ichinose_shiki",
    "name": "一ノ瀬志希",
    "color": "#a50050",
    "users": 54,
-   "rank": 3,
-   "share": 2.0338983050847457,
-   "margin": 0.5424858639384214,
-   "rank_best": 1,
-   "rank_worst": 14
-  },
-  {
-   "slug": "kamiya_nao",
-   "name": "神谷奈緒",
-   "color": "#9678d3",
-   "users": 54,
    "rank": 4,
-   "share": 2.0338983050847457,
-   "margin": 0.5424858639384214,
+   "share": 1.9970414201183433,
+   "margin": 0.5326553138892414,
    "rank_best": 1,
-   "rank_worst": 14
-  },
-  {
-   "slug": "takagaki_kaede",
-   "name": "高垣楓",
-   "color": "#47d7ac",
-   "users": 48,
-   "rank": 5,
-   "share": 1.807909604519774,
-   "margin": 0.5114605774516007,
-   "rank_best": 1,
-   "rank_worst": 19
+   "rank_worst": 15
   },
   {
    "slug": "takamori_aiko",
    "name": "高森藍子",
    "color": "#cdea80",
-   "users": 48,
+   "users": 50,
+   "rank": 5,
+   "share": 1.849112426035503,
+   "margin": 0.5125478147653969,
+   "rank_best": 1,
+   "rank_worst": 18
+  },
+  {
+   "slug": "takagaki_kaede",
+   "name": "高垣楓",
+   "color": "#47d7ac",
+   "users": 49,
    "rank": 6,
-   "share": 1.807909604519774,
-   "margin": 0.5114605774516007,
+   "share": 1.8121301775147929,
+   "margin": 0.507396449704142,
+   "rank_best": 1,
+   "rank_worst": 19
+  },
+  {
+   "slug": "morikubo_nono",
+   "name": "森久保乃々",
+   "color": "#9cdbd9",
+   "users": 48,
+   "rank": 7,
+   "share": 1.7751479289940828,
+   "margin": 0.5021922459815088,
    "rank_best": 1,
    "rank_worst": 19
   },
@@ -83,20 +94,9 @@
    "name": "藤原肇",
    "color": "#9595d2",
    "users": 46,
-   "rank": 7,
-   "share": 1.7325800376647833,
-   "margin": 0.5006917802985132,
-   "rank_best": 1,
-   "rank_worst": 20
-  },
-  {
-   "slug": "morikubo_nono",
-   "name": "森久保乃々",
-   "color": "#9cdbd9",
-   "users": 46,
    "rank": 8,
-   "share": 1.7325800376647833,
-   "margin": 0.5006917802985132,
+   "share": 1.7011834319526626,
+   "margin": 0.49161859345138775,
    "rank_best": 1,
    "rank_worst": 20
   },
@@ -106,8 +106,8 @@
    "color": "#6cc24a",
    "users": 45,
    "rank": 9,
-   "share": 1.694915254237288,
-   "margin": 0.49521957467791955,
+   "share": 1.6642011834319528,
+   "margin": 0.48624555132022057,
    "rank_best": 1,
    "rank_worst": 21
   },
@@ -115,12 +115,12 @@
    "slug": "sato_shin",
    "name": "佐藤心",
    "color": "#f04e98",
-   "users": 42,
+   "users": 43,
    "rank": 10,
-   "share": 1.5819209039548021,
-   "margin": 0.4784275619163618,
+   "share": 1.5902366863905326,
+   "margin": 0.475317289483429,
    "rank_best": 1,
-   "rank_worst": 30
+   "rank_worst": 28
   },
   {
    "slug": "tachibana_arisu",
@@ -128,32 +128,32 @@
    "color": "#5c88da",
    "users": 41,
    "rank": 11,
-   "share": 1.544256120527307,
-   "margin": 0.47269768381801813,
+   "share": 1.5162721893491125,
+   "margin": 0.46413178644113845,
    "rank_best": 2,
-   "rank_worst": 30
+   "rank_worst": 32
+  },
+  {
+   "slug": "matsumoto_sarina",
+   "name": "松本沙理奈",
+   "color": "#2943cb",
+   "users": 40,
+   "rank": 12,
+   "share": 1.4792899408284024,
+   "margin": 0.4584367022137591,
+   "rank_best": 2,
+   "rank_worst": 34
   },
   {
    "slug": "mochida_arisa",
    "name": "持田亜里沙",
    "color": "#fd9286",
    "users": 40,
-   "rank": 12,
-   "share": 1.5065913370998116,
-   "margin": 0.46689749257476637,
-   "rank_best": 2,
-   "rank_worst": 33
-  },
-  {
-   "slug": "matsumoto_sarina",
-   "name": "松本沙理奈",
-   "color": "#2943cb",
-   "users": 39,
    "rank": 13,
-   "share": 1.4689265536723164,
-   "margin": 0.4610243343450418,
+   "share": 1.4792899408284024,
+   "margin": 0.4584367022137591,
    "rank_best": 2,
-   "rank_worst": 37
+   "rank_worst": 34
   },
   {
    "slug": "takamine_noa",
@@ -161,9 +161,20 @@
    "color": "#9fe1fd",
    "users": 37,
    "rank": 14,
-   "share": 1.393596986817326,
-   "margin": 0.4490476293553487,
+   "share": 1.3683431952662723,
+   "margin": 0.44091030175238566,
    "rank_best": 3,
+   "rank_worst": 45
+  },
+  {
+   "slug": "mizuki_seira",
+   "name": "水木聖來",
+   "color": "#86dbff",
+   "users": 36,
+   "rank": 15,
+   "share": 1.3313609467455623,
+   "margin": 0.43491124260355024,
+   "rank_best": 4,
    "rank_worst": 45
   },
   {
@@ -171,9 +182,9 @@
    "name": "輿水幸子",
    "color": "#c1a0da",
    "users": 35,
-   "rank": 15,
-   "share": 1.3182674199623352,
-   "margin": 0.4367426129896515,
+   "rank": 16,
+   "share": 1.2943786982248522,
+   "margin": 0.42882826830159937,
    "rank_best": 5,
    "rank_worst": 48
   },
@@ -181,32 +192,21 @@
    "slug": "kohinata_miho",
    "name": "小日向美穂",
    "color": "#db3eb1",
-   "users": 34,
-   "rank": 16,
-   "share": 1.28060263653484,
-   "margin": 0.4304582189791634,
-   "rank_best": 5,
-   "rank_worst": 54
-  },
-  {
-   "slug": "mizuki_seira",
-   "name": "水木聖來",
-   "color": "#86dbff",
-   "users": 34,
+   "users": 35,
    "rank": 17,
-   "share": 1.28060263653484,
-   "margin": 0.4304582189791634,
+   "share": 1.2943786982248522,
+   "margin": 0.42882826830159937,
    "rank_best": 5,
-   "rank_worst": 54
+   "rank_worst": 48
   },
   {
    "slug": "sajo_yukimi",
    "name": "佐城雪美",
    "color": "#171c8f",
-   "users": 32,
+   "users": 34,
    "rank": 18,
-   "share": 1.2052730696798493,
-   "margin": 0.41760581276855235,
+   "share": 1.257396449704142,
+   "margin": 0.4226577556914493,
    "rank_best": 5,
    "rank_worst": 57
   },
@@ -216,10 +216,10 @@
    "color": "#003087",
    "users": 32,
    "rank": 19,
-   "share": 1.2052730696798493,
-   "margin": 0.41760581276855235,
-   "rank_best": 5,
-   "rank_worst": 57
+   "share": 1.183431952662722,
+   "margin": 0.4100382518123175,
+   "rank_best": 6,
+   "rank_worst": 60
   },
   {
    "slug": "sagisawa_fumika",
@@ -227,10 +227,10 @@
    "color": "#606eb2",
    "users": 30,
    "rank": 20,
-   "share": 1.1299435028248588,
-   "margin": 0.40434508953300397,
-   "rank_best": 7,
-   "rank_worst": 68
+   "share": 1.1094674556213018,
+   "margin": 0.3970178301442772,
+   "rank_best": 8,
+   "rank_worst": 71
   },
   {
    "slug": "kurokawa_chiaki",
@@ -238,30 +238,63 @@
    "color": "#bc1212",
    "users": 29,
    "rank": 21,
-   "share": 1.0922787193973633,
-   "margin": 0.39754888971689745,
+   "share": 1.0724852071005917,
+   "margin": 0.3903447863159626,
    "rank_best": 9,
-   "rank_worst": 77
+   "rank_worst": 78
+  },
+  {
+   "slug": "zaizen_tokiko",
+   "name": "財前時子",
+   "color": "#7d0837",
+   "users": 28,
+   "rank": 22,
+   "share": 1.0355029585798818,
+   "margin": 0.38355566343835784,
+   "rank_best": 10,
+   "rank_worst": 78
   },
   {
    "slug": "takafuji_kako",
    "name": "鷹富士茄子",
    "color": "#5c068c",
    "users": 28,
-   "rank": 22,
-   "share": 1.054613935969868,
-   "margin": 0.3906344685262974,
+   "rank": 23,
+   "share": 1.0355029585798818,
+   "margin": 0.38355566343835784,
    "rank_best": 10,
-   "rank_worst": 77
+   "rank_worst": 78
   },
   {
-   "slug": "zaizen_tokiko",
-   "name": "財前時子",
-   "color": "#7d0837",
+   "slug": "narumiya_yume",
+   "name": "成宮由愛",
+   "color": "#2b5cd5",
+   "users": 28,
+   "rank": 24,
+   "share": 1.0355029585798818,
+   "margin": 0.38355566343835784,
+   "rank_best": 10,
+   "rank_worst": 78
+  },
+  {
+   "slug": "ninomiya_asuka",
+   "name": "二宮飛鳥",
+   "color": "#5f259f",
+   "users": 28,
+   "rank": 25,
+   "share": 1.0355029585798818,
+   "margin": 0.38355566343835784,
+   "rank_best": 10,
+   "rank_worst": 78
+  },
+  {
+   "slug": "kudo_shinobu",
+   "name": "工藤忍",
+   "color": "#eb3249",
    "users": 27,
-   "rank": 23,
-   "share": 1.0169491525423728,
-   "margin": 0.3835954330887005,
+   "rank": 26,
+   "share": 0.9985207100591716,
+   "margin": 0.3766441844861316,
    "rank_best": 10,
    "rank_worst": 81
   },
@@ -270,20 +303,9 @@
    "name": "長富蓮実",
    "color": "#ea8a91",
    "users": 27,
-   "rank": 24,
-   "share": 1.0169491525423728,
-   "margin": 0.3835954330887005,
-   "rank_best": 10,
-   "rank_worst": 81
-  },
-  {
-   "slug": "narumiya_yume",
-   "name": "成宮由愛",
-   "color": "#2b5cd5",
-   "users": 27,
-   "rank": 25,
-   "share": 1.0169491525423728,
-   "margin": 0.3835954330887005,
+   "rank": 27,
+   "share": 0.9985207100591716,
+   "margin": 0.3766441844861316,
    "rank_best": 10,
    "rank_worst": 81
   },
@@ -292,20 +314,9 @@
    "name": "新田美波",
    "color": "#71c5e8",
    "users": 27,
-   "rank": 26,
-   "share": 1.0169491525423728,
-   "margin": 0.3835954330887005,
-   "rank_best": 10,
-   "rank_worst": 81
-  },
-  {
-   "slug": "ninomiya_asuka",
-   "name": "二宮飛鳥",
-   "color": "#5f259f",
-   "users": 27,
-   "rank": 27,
-   "share": 1.0169491525423728,
-   "margin": 0.3835954330887005,
+   "rank": 28,
+   "share": 0.9985207100591716,
+   "margin": 0.3766441844861316,
    "rank_best": 10,
    "rank_worst": 81
   },
@@ -314,55 +325,44 @@
    "name": "池袋晶葉",
    "color": "#de2f4d",
    "users": 26,
-   "rank": 28,
-   "share": 0.9792843691148776,
-   "margin": 0.37642479271720747,
-   "rank_best": 10,
-   "rank_worst": 83
+   "rank": 29,
+   "share": 0.9615384615384616,
+   "margin": 0.36960348545273136,
+   "rank_best": 11,
+   "rank_worst": 85
   },
   {
-   "slug": "kudo_shinobu",
-   "name": "工藤忍",
-   "color": "#eb3249",
+   "slug": "kamijo_haruna",
+   "name": "上条春菜",
+   "color": "#5bc2e7",
    "users": 26,
-   "rank": 29,
-   "share": 0.9792843691148776,
-   "margin": 0.37642479271720747,
-   "rank_best": 10,
-   "rank_worst": 83
+   "rank": 30,
+   "share": 0.9615384615384616,
+   "margin": 0.36960348545273136,
+   "rank_best": 11,
+   "rank_worst": 85
+  },
+  {
+   "slug": "kanzaki_ranko",
+   "name": "神崎蘭子",
+   "color": "#84329b",
+   "users": 26,
+   "rank": 31,
+   "share": 0.9615384615384616,
+   "margin": 0.36960348545273136,
+   "rank_best": 11,
+   "rank_worst": 85
   },
   {
    "slug": "yorita_yoshino",
    "name": "依田芳乃",
    "color": "#c4bcb7",
    "users": 26,
-   "rank": 30,
-   "share": 0.9792843691148776,
-   "margin": 0.37642479271720747,
-   "rank_best": 10,
-   "rank_worst": 83
-  },
-  {
-   "slug": "kamijo_haruna",
-   "name": "上条春菜",
-   "color": "#5bc2e7",
-   "users": 25,
-   "rank": 31,
-   "share": 0.9416195856873822,
-   "margin": 0.3691148775894539,
-   "rank_best": 12,
-   "rank_worst": 86
-  },
-  {
-   "slug": "kanzaki_ranko",
-   "name": "神崎蘭子",
-   "color": "#84329b",
-   "users": 25,
    "rank": 32,
-   "share": 0.9416195856873822,
-   "margin": 0.3691148775894539,
-   "rank_best": 12,
-   "rank_worst": 86
+   "share": 0.9615384615384616,
+   "margin": 0.36960348545273136,
+   "rank_best": 11,
+   "rank_worst": 85
   },
   {
    "slug": "tada_riina",
@@ -370,43 +370,43 @@
    "color": "#0077c8",
    "users": 25,
    "rank": 33,
-   "share": 0.9416195856873822,
-   "margin": 0.3691148775894539,
+   "share": 0.9245562130177515,
+   "margin": 0.3624260355029586,
    "rank_best": 12,
-   "rank_worst": 86
+   "rank_worst": 89
+  },
+  {
+   "slug": "futaba_anzu",
+   "name": "双葉杏",
+   "color": "#f8a3bc",
+   "users": 25,
+   "rank": 34,
+   "share": 0.9245562130177515,
+   "margin": 0.3624260355029586,
+   "rank_best": 12,
+   "rank_worst": 89
   },
   {
    "slug": "ayase_honoka",
    "name": "綾瀬穂乃香",
    "color": "#f5d6ff",
    "users": 24,
-   "rank": 34,
-   "share": 0.903954802259887,
-   "margin": 0.3616572426256142,
-   "rank_best": 13,
-   "rank_worst": 86
+   "rank": 35,
+   "share": 0.8875739644970414,
+   "margin": 0.35510354259282756,
+   "rank_best": 14,
+   "rank_worst": 89
   },
   {
    "slug": "hisakawa_hayate",
    "name": "久川颯",
    "color": "#7eddd3",
    "users": 24,
-   "rank": 35,
-   "share": 0.903954802259887,
-   "margin": 0.3616572426256142,
-   "rank_best": 13,
-   "rank_worst": 86
-  },
-  {
-   "slug": "futaba_anzu",
-   "name": "双葉杏",
-   "color": "#f8a3bc",
-   "users": 24,
    "rank": 36,
-   "share": 0.903954802259887,
-   "margin": 0.3616572426256142,
-   "rank_best": 13,
-   "rank_worst": 86
+   "share": 0.8875739644970414,
+   "margin": 0.35510354259282756,
+   "rank_best": 14,
+   "rank_worst": 89
   },
   {
    "slug": "hojo_karen",
@@ -414,19 +414,30 @@
    "color": "#2ad2c9",
    "users": 24,
    "rank": 37,
-   "share": 0.903954802259887,
-   "margin": 0.3616572426256142,
-   "rank_best": 13,
-   "rank_worst": 86
+   "share": 0.8875739644970414,
+   "margin": 0.35510354259282756,
+   "rank_best": 14,
+   "rank_worst": 89
+  },
+  {
+   "slug": "shimamura_uzuki",
+   "name": "島村卯月",
+   "color": "#f67599",
+   "users": 23,
+   "rank": 38,
+   "share": 0.8505917159763313,
+   "margin": 0.3476268411868687,
+   "rank_best": 14,
+   "rank_worst": 93
   },
   {
    "slug": "fukuyama_mai",
    "name": "福山舞",
    "color": "#ff68b5",
    "users": 23,
-   "rank": 38,
-   "share": 0.8662900188323917,
-   "margin": 0.3540425531334437,
+   "rank": 39,
+   "share": 0.8505917159763313,
+   "margin": 0.3476268411868687,
    "rank_best": 14,
    "rank_worst": 93
   },
@@ -435,9 +446,9 @@
    "name": "松尾千鶴",
    "color": "#99e3fc",
    "users": 23,
-   "rank": 39,
-   "share": 0.8662900188323917,
-   "margin": 0.3540425531334437,
+   "rank": 40,
+   "share": 0.8505917159763313,
+   "margin": 0.3476268411868687,
    "rank_best": 14,
    "rank_worst": 93
   },
@@ -446,9 +457,9 @@
    "name": "望月聖",
    "color": "#b7dde1",
    "users": 23,
-   "rank": 40,
-   "share": 0.8662900188323917,
-   "margin": 0.3540425531334437,
+   "rank": 41,
+   "share": 0.8505917159763313,
+   "margin": 0.3476268411868687,
    "rank_best": 14,
    "rank_worst": 93
   },
@@ -457,33 +468,22 @@
    "name": "クラリス",
    "color": "#ffda7b",
    "users": 22,
-   "rank": 41,
-   "share": 0.8286252354048964,
-   "margin": 0.34626044780617404,
+   "rank": 42,
+   "share": 0.8136094674556213,
+   "margin": 0.3399857577386805,
    "rank_best": 14,
-   "rank_worst": 96
+   "rank_worst": 97
   },
   {
    "slug": "shibuya_rin",
    "name": "渋谷凛",
    "color": "#009cde",
    "users": 22,
-   "rank": 42,
-   "share": 0.8286252354048964,
-   "margin": 0.34626044780617404,
-   "rank_best": 14,
-   "rank_worst": 96
-  },
-  {
-   "slug": "shimamura_uzuki",
-   "name": "島村卯月",
-   "color": "#f67599",
-   "users": 22,
    "rank": 43,
-   "share": 0.8286252354048964,
-   "margin": 0.34626044780617404,
+   "share": 0.8136094674556213,
+   "margin": 0.3399857577386805,
    "rank_best": 14,
-   "rank_worst": 96
+   "rank_worst": 97
   },
   {
    "slug": "mimura_kanako",
@@ -491,10 +491,10 @@
    "color": "#ffb1bb",
    "users": 22,
    "rank": 44,
-   "share": 0.8286252354048964,
-   "margin": 0.34626044780617404,
+   "share": 0.8136094674556213,
+   "margin": 0.3399857577386805,
    "rank_best": 14,
-   "rank_worst": 96
+   "rank_worst": 97
   },
   {
    "slug": "miyoshi_sana",
@@ -502,10 +502,10 @@
    "color": "#45f05b",
    "users": 22,
    "rank": 45,
-   "share": 0.8286252354048964,
-   "margin": 0.34626044780617404,
+   "share": 0.8136094674556213,
+   "margin": 0.3399857577386805,
    "rank_best": 14,
-   "rank_worst": 96
+   "rank_worst": 97
   },
   {
    "slug": "okazaki_yasuha",
@@ -513,10 +513,10 @@
    "color": "#ade5f6",
    "users": 21,
    "rank": 46,
-   "share": 0.7909604519774011,
-   "margin": 0.33829937333760624,
-   "rank_best": 15,
-   "rank_worst": 96
+   "share": 0.7766272189349113,
+   "margin": 0.3321689483030121,
+   "rank_best": 16,
+   "rank_worst": 97
   },
   {
    "slug": "seki_hiromi",
@@ -524,10 +524,10 @@
    "color": "#ffb3ab",
    "users": 21,
    "rank": 47,
-   "share": 0.7909604519774011,
-   "margin": 0.33829937333760624,
-   "rank_best": 15,
-   "rank_worst": 96
+   "share": 0.7766272189349113,
+   "margin": 0.3321689483030121,
+   "rank_best": 16,
+   "rank_worst": 97
   },
   {
    "slug": "tsujino_akari",
@@ -535,20 +535,31 @@
    "color": "#e10600",
    "users": 21,
    "rank": 48,
-   "share": 0.7909604519774011,
-   "margin": 0.33829937333760624,
-   "rank_best": 15,
-   "rank_worst": 96
+   "share": 0.7766272189349113,
+   "margin": 0.3321689483030121,
+   "rank_best": 16,
+   "rank_worst": 97
+  },
+  {
+   "slug": "aiba_yumi",
+   "name": "相葉夕美",
+   "color": "#f0e991",
+   "users": 20,
+   "rank": 49,
+   "share": 0.7396449704142012,
+   "margin": 0.324163700880147,
+   "rank_best": 18,
+   "rank_worst": 98
   },
   {
    "slug": "asari_nanami",
    "name": "浅利七海",
    "color": "#009cbd",
    "users": 20,
-   "rank": 49,
-   "share": 0.7532956685499058,
-   "margin": 0.330146383118613,
-   "rank_best": 16,
+   "rank": 50,
+   "share": 0.7396449704142012,
+   "margin": 0.324163700880147,
+   "rank_best": 18,
    "rank_worst": 98
   },
   {
@@ -556,10 +567,21 @@
    "name": "大石泉",
    "color": "#74d1ea",
    "users": 20,
-   "rank": 50,
-   "share": 0.7532956685499058,
-   "margin": 0.330146383118613,
-   "rank_best": 16,
+   "rank": 51,
+   "share": 0.7396449704142012,
+   "margin": 0.324163700880147,
+   "rank_best": 18,
+   "rank_worst": 98
+  },
+  {
+   "slug": "shiragiku_hotaru",
+   "name": "白菊ほたる",
+   "color": "#c964cf",
+   "users": 20,
+   "rank": 52,
+   "share": 0.7396449704142012,
+   "margin": 0.324163700880147,
+   "rank_best": 18,
    "rank_worst": 98
   },
   {
@@ -567,10 +589,10 @@
    "name": "白坂小梅",
    "color": "#abcae9",
    "users": 20,
-   "rank": 51,
-   "share": 0.7532956685499058,
-   "margin": 0.330146383118613,
-   "rank_best": 16,
+   "rank": 53,
+   "share": 0.7396449704142012,
+   "margin": 0.324163700880147,
+   "rank_best": 18,
    "rank_worst": 98
   },
   {
@@ -578,10 +600,10 @@
    "name": "藤居朋",
    "color": "#9b58c2",
    "users": 20,
-   "rank": 52,
-   "share": 0.7532956685499058,
-   "margin": 0.330146383118613,
-   "rank_best": 16,
+   "rank": 54,
+   "share": 0.7396449704142012,
+   "margin": 0.324163700880147,
+   "rank_best": 18,
    "rank_worst": 98
   },
   {
@@ -589,10 +611,10 @@
    "name": "三船美優",
    "color": "#12bfb2",
    "users": 20,
-   "rank": 53,
-   "share": 0.7532956685499058,
-   "margin": 0.330146383118613,
-   "rank_best": 16,
+   "rank": 55,
+   "share": 0.7396449704142012,
+   "margin": 0.324163700880147,
+   "rank_best": 18,
    "rank_worst": 98
   },
   {
@@ -600,297 +622,275 @@
    "name": "遊佐こずえ",
    "color": "#f4a6d7",
    "users": 20,
-   "rank": 54,
-   "share": 0.7532956685499058,
-   "margin": 0.330146383118613,
-   "rank_best": 16,
-   "rank_worst": 98
-  },
-  {
-   "slug": "shiragiku_hotaru",
-   "name": "白菊ほたる",
-   "color": "#c964cf",
-   "users": 19,
-   "rank": 55,
-   "share": 0.7156308851224105,
-   "margin": 0.32178688999396315,
+   "rank": 56,
+   "share": 0.7396449704142012,
+   "margin": 0.324163700880147,
    "rank_best": 18,
-   "rank_worst": 101
+   "rank_worst": 98
   },
   {
    "slug": "yokoyama_chika",
    "name": "横山千佳",
    "color": "#fc87bf",
-   "users": 19,
-   "rank": 56,
-   "share": 0.7156308851224105,
-   "margin": 0.32178688999396315,
+   "users": 20,
+   "rank": 57,
+   "share": 0.7396449704142012,
+   "margin": 0.324163700880147,
    "rank_best": 18,
-   "rank_worst": 101
+   "rank_worst": 98
+  },
+  {
+   "slug": "shirayuki_chiyo",
+   "name": "白雪千夜",
+   "color": "#efd7e5",
+   "users": 19,
+   "rank": 58,
+   "share": 0.7026627218934911,
+   "margin": 0.3159556926530962,
+   "rank_best": 19,
+   "rank_worst": 102
+  },
+  {
+   "slug": "maekawa_miku",
+   "name": "前川みく",
+   "color": "#ce0037",
+   "users": 19,
+   "rank": 59,
+   "share": 0.7026627218934911,
+   "margin": 0.3159556926530962,
+   "rank_best": 19,
+   "rank_worst": 102
   },
   {
    "slug": "ryuzaki_kaoru",
    "name": "龍崎薫",
    "color": "#fae053",
    "users": 19,
-   "rank": 57,
-   "share": 0.7156308851224105,
-   "margin": 0.32178688999396315,
-   "rank_best": 18,
-   "rank_worst": 101
-  },
-  {
-   "slug": "aiba_yumi",
-   "name": "相葉夕美",
-   "color": "#f0e991",
-   "users": 18,
-   "rank": 58,
-   "share": 0.6779661016949152,
-   "margin": 0.31320435957641424,
-   "rank_best": 20,
-   "rank_worst": 101
+   "rank": 60,
+   "share": 0.7026627218934911,
+   "margin": 0.3159556926530962,
+   "rank_best": 19,
+   "rank_worst": 102
   },
   {
    "slug": "abe_nana",
    "name": "安部菜々",
    "color": "#ef4a81",
    "users": 18,
-   "rank": 59,
-   "share": 0.6779661016949152,
-   "margin": 0.31320435957641424,
+   "rank": 61,
+   "share": 0.6656804733727811,
+   "margin": 0.30752868885923806,
    "rank_best": 20,
-   "rank_worst": 101
+   "rank_worst": 102
   },
   {
    "slug": "ohtsuki_yui",
    "name": "大槻唯",
    "color": "#f6be00",
    "users": 18,
-   "rank": 60,
-   "share": 0.6779661016949152,
-   "margin": 0.31320435957641424,
+   "rank": 62,
+   "share": 0.6656804733727811,
+   "margin": 0.30752868885923806,
    "rank_best": 20,
-   "rank_worst": 101
-  },
-  {
-   "slug": "shirayuki_chiyo",
-   "name": "白雪千夜",
-   "color": "#efd7e5",
-   "users": 18,
-   "rank": 61,
-   "share": 0.6779661016949152,
-   "margin": 0.31320435957641424,
-   "rank_best": 20,
-   "rank_worst": 101
+   "rank_worst": 102
   },
   {
    "slug": "hisakawa_nagi",
    "name": "久川凪",
    "color": "#f8a4bd",
    "users": 18,
-   "rank": 62,
-   "share": 0.6779661016949152,
-   "margin": 0.31320435957641424,
+   "rank": 63,
+   "share": 0.6656804733727811,
+   "margin": 0.30752868885923806,
    "rank_best": 20,
-   "rank_worst": 101
+   "rank_worst": 102
   },
   {
-   "slug": "maekawa_miku",
-   "name": "前川みく",
-   "color": "#ce0037",
-   "users": 18,
-   "rank": 63,
-   "share": 0.6779661016949152,
-   "margin": 0.31320435957641424,
+   "slug": "igarashi_kyoko",
+   "name": "五十嵐響子",
+   "color": "#fabbcb",
+   "users": 17,
+   "rank": 64,
+   "share": 0.628698224852071,
+   "margin": 0.29886416517051084,
    "rank_best": 20,
-   "rank_worst": 101
+   "rank_worst": 111
+  },
+  {
+   "slug": "kurosaki_chitose",
+   "name": "黒埼ちとせ",
+   "color": "#ef3340",
+   "users": 17,
+   "rank": 65,
+   "share": 0.628698224852071,
+   "margin": 0.29886416517051084,
+   "rank_best": 20,
+   "rank_worst": 111
   },
   {
    "slug": "saionji_kotoka",
    "name": "西園寺琴歌",
    "color": "#e8cdd0",
    "users": 17,
-   "rank": 64,
-   "share": 0.64030131826742,
-   "margin": 0.30437992565765026,
+   "rank": 66,
+   "share": 0.628698224852071,
+   "margin": 0.29886416517051084,
    "rank_best": 20,
-   "rank_worst": 110
+   "rank_worst": 111
   },
   {
    "slug": "jougasaki_mika",
    "name": "城ヶ崎美嘉",
    "color": "#fe9d1a",
    "users": 17,
-   "rank": 65,
-   "share": 0.64030131826742,
-   "margin": 0.30437992565765026,
+   "rank": 67,
+   "share": 0.628698224852071,
+   "margin": 0.29886416517051084,
    "rank_best": 20,
-   "rank_worst": 110
+   "rank_worst": 111
   },
   {
    "slug": "tsuchiya_ako",
    "name": "土屋亜子",
    "color": "#ffbe60",
    "users": 17,
-   "rank": 66,
-   "share": 0.64030131826742,
-   "margin": 0.30437992565765026,
+   "rank": 68,
+   "share": 0.628698224852071,
+   "margin": 0.29886416517051084,
    "rank_best": 20,
-   "rank_worst": 110
+   "rank_worst": 111
+  },
+  {
+   "slug": "honda_mio",
+   "name": "本田未央",
+   "color": "#ffb81c",
+   "users": 17,
+   "rank": 69,
+   "share": 0.628698224852071,
+   "margin": 0.29886416517051084,
+   "rank_best": 20,
+   "rank_worst": 111
   },
   {
    "slug": "moroboshi_kirari",
    "name": "諸星きらり",
    "color": "#ffd100",
    "users": 17,
-   "rank": 67,
-   "share": 0.64030131826742,
-   "margin": 0.30437992565765026,
+   "rank": 70,
+   "share": 0.628698224852071,
+   "margin": 0.29886416517051084,
    "rank_best": 20,
-   "rank_worst": 110
+   "rank_worst": 111
   },
   {
    "slug": "yumemi_riamu",
    "name": "夢見りあむ",
    "color": "#e89cdc",
    "users": 17,
-   "rank": 68,
-   "share": 0.64030131826742,
-   "margin": 0.30437992565765026,
+   "rank": 71,
+   "share": 0.628698224852071,
+   "margin": 0.29886416517051084,
    "rank_best": 20,
-   "rank_worst": 110
+   "rank_worst": 111
   },
   {
    "slug": "akagi_miria",
    "name": "赤城みりあ",
    "color": "#ffcd00",
    "users": 16,
-   "rank": 69,
-   "share": 0.6026365348399246,
-   "margin": 0.2952919020715631,
+   "rank": 72,
+   "share": 0.591715976331361,
+   "margin": 0.2899408284023669,
    "rank_best": 21,
-   "rank_worst": 114
+   "rank_worst": 117
   },
   {
    "slug": "anastasia",
    "name": "アナスタシア",
    "color": "#b1c9e8",
    "users": 16,
-   "rank": 70,
-   "share": 0.6026365348399246,
-   "margin": 0.2952919020715631,
+   "rank": 73,
+   "share": 0.591715976331361,
+   "margin": 0.2899408284023669,
    "rank_best": 21,
-   "rank_worst": 114
-  },
-  {
-   "slug": "igarashi_kyoko",
-   "name": "五十嵐響子",
-   "color": "#fabbcb",
-   "users": 16,
-   "rank": 71,
-   "share": 0.6026365348399246,
-   "margin": 0.2952919020715631,
-   "rank_best": 21,
-   "rank_worst": 114
+   "rank_worst": 117
   },
   {
    "slug": "ichihara_nina",
    "name": "市原仁奈",
    "color": "#f8e08e",
    "users": 16,
-   "rank": 72,
-   "share": 0.6026365348399246,
-   "margin": 0.2952919020715631,
+   "rank": 74,
+   "share": 0.591715976331361,
+   "margin": 0.2899408284023669,
    "rank_best": 21,
-   "rank_worst": 114
+   "rank_worst": 117
   },
   {
    "slug": "imai_kana",
    "name": "今井加奈",
    "color": "#ff3de5",
    "users": 16,
-   "rank": 73,
-   "share": 0.6026365348399246,
-   "margin": 0.2952919020715631,
+   "rank": 75,
+   "share": 0.591715976331361,
+   "margin": 0.2899408284023669,
    "rank_best": 21,
-   "rank_worst": 114
+   "rank_worst": 117
   },
   {
    "slug": "ohara_michiru",
    "name": "大原みちる",
    "color": "#d8843e",
    "users": 16,
-   "rank": 74,
-   "share": 0.6026365348399246,
-   "margin": 0.2952919020715631,
-   "rank_best": 21,
-   "rank_worst": 114
-  },
-  {
-   "slug": "kurosaki_chitose",
-   "name": "黒埼ちとせ",
-   "color": "#ef3340",
-   "users": 16,
-   "rank": 75,
-   "share": 0.6026365348399246,
-   "margin": 0.2952919020715631,
-   "rank_best": 21,
-   "rank_worst": 114
-  },
-  {
-   "slug": "honda_mio",
-   "name": "本田未央",
-   "color": "#ffb81c",
-   "users": 16,
    "rank": 76,
-   "share": 0.6026365348399246,
-   "margin": 0.2952919020715631,
+   "share": 0.591715976331361,
+   "margin": 0.2899408284023669,
    "rank_best": 21,
-   "rank_worst": 114
+   "rank_worst": 117
+  },
+  {
+   "slug": "muramatsu_sakura",
+   "name": "村松さくら",
+   "color": "#eb6174",
+   "users": 16,
+   "rank": 77,
+   "share": 0.591715976331361,
+   "margin": 0.2899408284023669,
+   "rank_best": 21,
+   "rank_worst": 117
   },
   {
    "slug": "layla",
    "name": "ライラ",
    "color": "#7ce0d3",
    "users": 16,
-   "rank": 77,
-   "share": 0.6026365348399246,
-   "margin": 0.2952919020715631,
+   "rank": 78,
+   "share": 0.591715976331361,
+   "margin": 0.2899408284023669,
    "rank_best": 21,
-   "rank_worst": 114
+   "rank_worst": 117
   },
   {
    "slug": "nakano_yuka",
    "name": "中野有香",
    "color": "#e277cd",
    "users": 15,
-   "rank": 78,
-   "share": 0.5649717514124294,
-   "margin": 0.2859151547482688,
-   "rank_best": 23,
-   "rank_worst": 114
+   "rank": 79,
+   "share": 0.5547337278106509,
+   "margin": 0.2807339999469873,
+   "rank_best": 26,
+   "rank_worst": 117
   },
   {
    "slug": "hori_yuko",
    "name": "堀裕子",
    "color": "#eca154",
    "users": 15,
-   "rank": 79,
-   "share": 0.5649717514124294,
-   "margin": 0.2859151547482688,
-   "rank_best": 23,
-   "rank_worst": 114
-  },
-  {
-   "slug": "muramatsu_sakura",
-   "name": "村松さくら",
-   "color": "#eb6174",
-   "users": 15,
    "rank": 80,
-   "share": 0.5649717514124294,
-   "margin": 0.2859151547482688,
-   "rank_best": 23,
-   "rank_worst": 114
+   "share": 0.5547337278106509,
+   "margin": 0.2807339999469873,
+   "rank_best": 26,
+   "rank_worst": 117
   },
   {
    "slug": "wakui_rumi",
@@ -898,20 +898,42 @@
    "color": "#2e347e",
    "users": 15,
    "rank": 81,
-   "share": 0.5649717514124294,
-   "margin": 0.2859151547482688,
-   "rank_best": 23,
-   "rank_worst": 114
+   "share": 0.5547337278106509,
+   "margin": 0.2807339999469873,
+   "rank_best": 26,
+   "rank_worst": 117
+  },
+  {
+   "slug": "araki_hina",
+   "name": "荒木比奈",
+   "color": "#a0d884",
+   "users": 14,
+   "rank": 82,
+   "share": 0.5177514792899409,
+   "margin": 0.27121481057976793,
+   "rank_best": 29,
+   "rank_worst": 124
+  },
+  {
+   "slug": "kobayakawa_sae",
+   "name": "小早川紗枝",
+   "color": "#e56db1",
+   "users": 14,
+   "rank": 83,
+   "share": 0.5177514792899409,
+   "margin": 0.27121481057976793,
+   "rank_best": 29,
+   "rank_worst": 124
   },
   {
    "slug": "togo_ai",
    "name": "東郷あい",
    "color": "#9b274a",
    "users": 14,
-   "rank": 82,
-   "share": 0.527306967984934,
-   "margin": 0.27622028166014784,
-   "rank_best": 28,
+   "rank": 84,
+   "share": 0.5177514792899409,
+   "margin": 0.27121481057976793,
+   "rank_best": 29,
    "rank_worst": 124
   },
   {
@@ -919,88 +941,66 @@
    "name": "道明寺歌鈴",
    "color": "#d22630",
    "users": 14,
-   "rank": 83,
-   "share": 0.527306967984934,
-   "margin": 0.27622028166014784,
-   "rank_best": 28,
+   "rank": 85,
+   "share": 0.5177514792899409,
+   "margin": 0.27121481057976793,
+   "rank_best": 29,
    "rank_worst": 124
   },
   {
-   "slug": "kobayakawa_sae",
-   "name": "小早川紗枝",
-   "color": "#e56db1",
+   "slug": "okuyama_saori",
+   "name": "奥山沙織",
+   "color": "#e87487",
    "users": 13,
-   "rank": 84,
-   "share": 0.4896421845574388,
-   "margin": 0.26617252353707793,
-   "rank_best": 31,
-   "rank_worst": 133
+   "rank": 86,
+   "share": 0.4807692307692308,
+   "margin": 0.26134913091380985,
+   "rank_best": 33,
+   "rank_worst": 135
+  },
+  {
+   "slug": "kiryu_tsukasa",
+   "name": "桐生つかさ",
+   "color": "#ab4ec6",
+   "users": 13,
+   "rank": 87,
+   "share": 0.4807692307692308,
+   "margin": 0.26134913091380985,
+   "rank_best": 33,
+   "rank_worst": 135
   },
   {
    "slug": "matoba_risa",
    "name": "的場梨沙",
    "color": "#ff00a0",
    "users": 13,
-   "rank": 85,
-   "share": 0.4896421845574388,
-   "margin": 0.26617252353707793,
-   "rank_best": 31,
-   "rank_worst": 133
+   "rank": 88,
+   "share": 0.4807692307692308,
+   "margin": 0.26134913091380985,
+   "rank_best": 33,
+   "rank_worst": 135
   },
   {
    "slug": "miyamoto_frederica",
    "name": "宮本フレデリカ",
    "color": "#a20067",
    "users": 13,
-   "rank": 86,
-   "share": 0.4896421845574388,
-   "margin": 0.26617252353707793,
-   "rank_best": 31,
-   "rank_worst": 133
-  },
-  {
-   "slug": "araki_hina",
-   "name": "荒木比奈",
-   "color": "#a0d884",
-   "users": 12,
-   "rank": 87,
-   "share": 0.4519774011299435,
-   "margin": 0.25573028872580034,
-   "rank_best": 38,
-   "rank_worst": 133
-  },
-  {
-   "slug": "okuyama_saori",
-   "name": "奥山沙織",
-   "color": "#e87487",
-   "users": 12,
-   "rank": 88,
-   "share": 0.4519774011299435,
-   "margin": 0.25573028872580034,
-   "rank_best": 38,
-   "rank_worst": 133
+   "rank": 89,
+   "share": 0.4807692307692308,
+   "margin": 0.26134913091380985,
+   "rank_best": 33,
+   "rank_worst": 135
   },
   {
    "slug": "kimura_natsuki",
    "name": "木村夏樹",
    "color": "#53565a",
    "users": 12,
-   "rank": 89,
-   "share": 0.4519774011299435,
-   "margin": 0.25573028872580034,
-   "rank_best": 38,
-   "rank_worst": 133
-  },
-  {
-   "slug": "kiryu_tsukasa",
-   "name": "桐生つかさ",
-   "color": "#ab4ec6",
-   "users": 12,
    "rank": 90,
-   "share": 0.4519774011299435,
-   "margin": 0.25573028872580034,
+   "share": 0.4437869822485207,
+   "margin": 0.2510961229907544,
    "rank_best": 38,
-   "rank_worst": 133
+   "rank_worst": 135
   },
   {
    "slug": "natalia",
@@ -1008,10 +1008,10 @@
    "color": "#f4633a",
    "users": 12,
    "rank": 91,
-   "share": 0.4519774011299435,
-   "margin": 0.25573028872580034,
+   "share": 0.4437869822485207,
+   "margin": 0.2510961229907544,
    "rank_best": 38,
-   "rank_worst": 133
+   "rank_worst": 135
   },
   {
    "slug": "nanjo_hikaru",
@@ -1019,10 +1019,10 @@
    "color": "#e4002b",
    "users": 12,
    "rank": 92,
-   "share": 0.4519774011299435,
-   "margin": 0.25573028872580034,
+   "share": 0.4437869822485207,
+   "margin": 0.2510961229907544,
    "rank_best": 38,
-   "rank_worst": 133
+   "rank_worst": 135
   },
   {
    "slug": "hayasaka_mirei",
@@ -1030,65 +1030,65 @@
    "color": "#c800a1",
    "users": 12,
    "rank": 93,
-   "share": 0.4519774011299435,
-   "margin": 0.25573028872580034,
+   "share": 0.4437869822485207,
+   "margin": 0.2510961229907544,
    "rank_best": 38,
-   "rank_worst": 133
+   "rank_worst": 135
+  },
+  {
+   "slug": "kawashima_mizuki",
+   "name": "川島瑞樹",
+   "color": "#485cc7",
+   "users": 11,
+   "rank": 94,
+   "share": 0.4068047337278107,
+   "margin": 0.24040623480386775,
+   "rank_best": 42,
+   "rank_worst": 140
   },
   {
    "slug": "hino_akane",
    "name": "日野茜",
    "color": "#f9423a",
    "users": 11,
-   "rank": 94,
-   "share": 0.4143126177024482,
-   "margin": 0.2448431107004363,
-   "rank_best": 41,
-   "rank_worst": 139
+   "rank": 95,
+   "share": 0.4068047337278107,
+   "margin": 0.24040623480386775,
+   "rank_best": 42,
+   "rank_worst": 140
   },
   {
    "slug": "mukai_takumi",
    "name": "向井拓海",
    "color": "#b0008e",
    "users": 11,
-   "rank": 95,
-   "share": 0.4143126177024482,
-   "margin": 0.2448431107004363,
-   "rank_best": 41,
-   "rank_worst": 139
+   "rank": 96,
+   "share": 0.4068047337278107,
+   "margin": 0.24040623480386775,
+   "rank_best": 42,
+   "rank_worst": 140
   },
   {
    "slug": "yagami_makino",
    "name": "八神マキノ",
    "color": "#a6a4e0",
    "users": 11,
-   "rank": 96,
-   "share": 0.4143126177024482,
-   "margin": 0.2448431107004363,
-   "rank_best": 41,
-   "rank_worst": 139
+   "rank": 97,
+   "share": 0.4068047337278107,
+   "margin": 0.24040623480386775,
+   "rank_best": 42,
+   "rank_worst": 140
   },
   {
    "slug": "otokura_yuuki",
    "name": "乙倉悠貴",
    "color": "#e4bec3",
    "users": 10,
-   "rank": 97,
-   "share": 0.3766478342749529,
-   "margin": 0.23344874628738319,
-   "rank_best": 49,
-   "rank_worst": 152
-  },
-  {
-   "slug": "kawashima_mizuki",
-   "name": "川島瑞樹",
-   "color": "#485cc7",
-   "users": 10,
    "rank": 98,
-   "share": 0.3766478342749529,
-   "margin": 0.23344874628738319,
+   "share": 0.3698224852071006,
+   "margin": 0.22921835110687955,
    "rank_best": 49,
-   "rank_worst": 152
+   "rank_worst": 154
   },
   {
    "slug": "sakurai_momoka",
@@ -1096,184 +1096,217 @@
    "color": "#ef95cf",
    "users": 9,
    "rank": 99,
-   "share": 0.3389830508474576,
-   "margin": 0.22146892655367229,
-   "rank_best": 55,
-   "rank_worst": 152
+   "share": 0.33284023668639057,
+   "margin": 0.21745562130177512,
+   "rank_best": 58,
+   "rank_worst": 154
+  },
+  {
+   "slug": "totoki_airi",
+   "name": "十時愛梨",
+   "color": "#df4661",
+   "users": 9,
+   "rank": 100,
+   "share": 0.33284023668639057,
+   "margin": 0.21745562130177512,
+   "rank_best": 58,
+   "rank_worst": 154
   },
   {
    "slug": "hattori_toko",
    "name": "服部瞳子",
    "color": "#633aa1",
    "users": 9,
-   "rank": 100,
-   "share": 0.3389830508474576,
-   "margin": 0.22146892655367229,
-   "rank_best": 55,
-   "rank_worst": 152
+   "rank": 101,
+   "share": 0.33284023668639057,
+   "margin": 0.21745562130177512,
+   "rank_best": 58,
+   "rank_worst": 154
   },
   {
    "slug": "harada_miyo",
    "name": "原田美世",
    "color": "#e94047",
    "users": 9,
-   "rank": 101,
-   "share": 0.3389830508474576,
-   "margin": 0.22146892655367229,
-   "rank_best": 55,
-   "rank_worst": 152
+   "rank": 102,
+   "share": 0.33284023668639057,
+   "margin": 0.21745562130177512,
+   "rank_best": 58,
+   "rank_worst": 154
   },
   {
    "slug": "aikawa_chinatsu",
    "name": "相川千夏",
    "color": "#7a508f",
    "users": 8,
-   "rank": 102,
-   "share": 0.3013182674199623,
-   "margin": 0.20880290638427618,
+   "rank": 103,
+   "share": 0.2958579881656805,
+   "margin": 0.20501912590615876,
    "rank_best": 64,
-   "rank_worst": 169
+   "rank_worst": 170
   },
   {
    "slug": "ariura_kanna",
    "name": "有浦柑奈",
    "color": "#ec4b6e",
    "users": 8,
-   "rank": 103,
-   "share": 0.3013182674199623,
-   "margin": 0.20880290638427618,
+   "rank": 104,
+   "share": 0.2958579881656805,
+   "margin": 0.20501912590615876,
    "rank_best": 64,
-   "rank_worst": 169
+   "rank_worst": 170
+  },
+  {
+   "slug": "sasaki_chie",
+   "name": "佐々木千枝",
+   "color": "#0072ce",
+   "users": 8,
+   "rank": 105,
+   "share": 0.2958579881656805,
+   "margin": 0.20501912590615876,
+   "rank_best": 64,
+   "rank_worst": 170
   },
   {
    "slug": "sunazuka_akira",
    "name": "砂塚あきら",
    "color": "#7e93a7",
    "users": 8,
-   "rank": 104,
-   "share": 0.3013182674199623,
-   "margin": 0.20880290638427618,
+   "rank": 106,
+   "share": 0.2958579881656805,
+   "margin": 0.20501912590615876,
    "rank_best": 64,
-   "rank_worst": 169
-  },
-  {
-   "slug": "totoki_airi",
-   "name": "十時愛梨",
-   "color": "#df4661",
-   "users": 8,
-   "rank": 105,
-   "share": 0.3013182674199623,
-   "margin": 0.20880290638427618,
-   "rank_best": 64,
-   "rank_worst": 169
+   "rank_worst": 170
   },
   {
    "slug": "namiki_meiko",
    "name": "並木芽衣子",
    "color": "#feea9c",
    "users": 8,
-   "rank": 106,
-   "share": 0.3013182674199623,
-   "margin": 0.20880290638427618,
+   "rank": 107,
+   "share": 0.2958579881656805,
+   "margin": 0.20501912590615876,
    "rank_best": 64,
-   "rank_worst": 169
+   "rank_worst": 170
   },
   {
    "slug": "hamaguchi_ayame",
    "name": "浜口あやめ",
    "color": "#440099",
    "users": 8,
-   "rank": 107,
-   "share": 0.3013182674199623,
-   "margin": 0.20880290638427618,
+   "rank": 108,
+   "share": 0.2958579881656805,
+   "margin": 0.20501912590615876,
    "rank_best": 64,
-   "rank_worst": 169
+   "rank_worst": 170
   },
   {
    "slug": "hiiragi_shino",
    "name": "柊志乃",
    "color": "#ad1e66",
    "users": 8,
-   "rank": 108,
-   "share": 0.3013182674199623,
-   "margin": 0.20880290638427618,
+   "rank": 109,
+   "share": 0.2958579881656805,
+   "margin": 0.20501912590615876,
    "rank_best": 64,
-   "rank_worst": 169
+   "rank_worst": 170
   },
   {
    "slug": "yuuki_haru",
    "name": "結城晴",
    "color": "#71dad4",
    "users": 8,
-   "rank": 109,
-   "share": 0.3013182674199623,
-   "margin": 0.20880290638427618,
+   "rank": 110,
+   "share": 0.2958579881656805,
+   "margin": 0.20501912590615876,
    "rank_best": 64,
-   "rank_worst": 169
+   "rank_worst": 170
   },
   {
    "slug": "wakabayashi_tomoka",
    "name": "若林智香",
    "color": "#fdff4e",
    "users": 8,
-   "rank": 110,
-   "share": 0.3013182674199623,
-   "margin": 0.20880290638427618,
+   "rank": 111,
+   "share": 0.2958579881656805,
+   "margin": 0.20501912590615876,
    "rank_best": 64,
-   "rank_worst": 169
+   "rank_worst": 170
   },
   {
    "slug": "kita_hinako",
    "name": "喜多日菜子",
    "color": "#fcd757",
    "users": 7,
-   "rank": 111,
-   "share": 0.263653483992467,
-   "margin": 0.1953172342631487,
-   "rank_best": 69,
-   "rank_worst": 169
+   "rank": 112,
+   "share": 0.25887573964497046,
+   "margin": 0.19177783171917892,
+   "rank_best": 72,
+   "rank_worst": 170
   },
   {
-   "slug": "sasaki_chie",
-   "name": "佐々木千枝",
-   "color": "#0072ce",
+   "slug": "kurihara_nene",
+   "name": "栗原ネネ",
+   "color": "#0f7bf8",
    "users": 7,
-   "rank": 112,
-   "share": 0.263653483992467,
-   "margin": 0.1953172342631487,
-   "rank_best": 69,
-   "rank_worst": 169
+   "rank": 113,
+   "share": 0.25887573964497046,
+   "margin": 0.19177783171917892,
+   "rank_best": 72,
+   "rank_worst": 170
+  },
+  {
+   "slug": "shiina_noriko",
+   "name": "椎名法子",
+   "color": "#f8485e",
+   "users": 7,
+   "rank": 114,
+   "share": 0.25887573964497046,
+   "margin": 0.19177783171917892,
+   "rank_best": 72,
+   "rank_worst": 170
+  },
+  {
+   "slug": "shiomi_shuko",
+   "name": "塩見周子",
+   "color": "#dce6ed",
+   "users": 7,
+   "rank": 115,
+   "share": 0.25887573964497046,
+   "margin": 0.19177783171917892,
+   "rank_best": 72,
+   "rank_worst": 170
   },
   {
    "slug": "mizuno_midori",
    "name": "水野翠",
    "color": "#43a0ab",
    "users": 7,
-   "rank": 113,
-   "share": 0.263653483992467,
-   "margin": 0.1953172342631487,
-   "rank_best": 69,
-   "rank_worst": 169
+   "rank": 116,
+   "share": 0.25887573964497046,
+   "margin": 0.19177783171917892,
+   "rank_best": 72,
+   "rank_worst": 170
   },
   {
    "slug": "murakami_tomoe",
    "name": "村上巴",
    "color": "#ab192c",
    "users": 7,
-   "rank": 114,
-   "share": 0.263653483992467,
-   "margin": 0.1953172342631487,
-   "rank_best": 69,
-   "rank_worst": 169
+   "rank": 117,
+   "share": 0.25887573964497046,
+   "margin": 0.19177783171917892,
+   "rank_best": 72,
+   "rank_worst": 170
   },
   {
    "slug": "umeki_otoha",
    "name": "梅木音葉",
    "color": "#75bbae",
    "users": 6,
-   "rank": 115,
-   "share": 0.22598870056497175,
-   "margin": 0.1808286213128071,
+   "rank": 118,
+   "share": 0.22189349112426035,
+   "margin": 0.17755177129641378,
    "rank_best": 82,
    "rank_worst": 179
   },
@@ -1282,9 +1315,9 @@
    "name": "及川雫",
    "color": "#FFFFFF",
    "users": 6,
-   "rank": 116,
-   "share": 0.22598870056497175,
-   "margin": 0.1808286213128071,
+   "rank": 119,
+   "share": 0.22189349112426035,
+   "margin": 0.17755177129641378,
    "rank_best": 82,
    "rank_worst": 179
   },
@@ -1293,9 +1326,9 @@
    "name": "大沼くるみ",
    "color": "#ffc1bd",
    "users": 6,
-   "rank": 117,
-   "share": 0.22598870056497175,
-   "margin": 0.1808286213128071,
+   "rank": 120,
+   "share": 0.22189349112426035,
+   "margin": 0.17755177129641378,
    "rank_best": 82,
    "rank_worst": 179
   },
@@ -1304,42 +1337,9 @@
    "name": "喜多見柚",
    "color": "#f8f283",
    "users": 6,
-   "rank": 118,
-   "share": 0.22598870056497175,
-   "margin": 0.1808286213128071,
-   "rank_best": 82,
-   "rank_worst": 179
-  },
-  {
-   "slug": "kurihara_nene",
-   "name": "栗原ネネ",
-   "color": "#0f7bf8",
-   "users": 6,
-   "rank": 119,
-   "share": 0.22598870056497175,
-   "margin": 0.1808286213128071,
-   "rank_best": 82,
-   "rank_worst": 179
-  },
-  {
-   "slug": "shiina_noriko",
-   "name": "椎名法子",
-   "color": "#f8485e",
-   "users": 6,
-   "rank": 120,
-   "share": 0.22598870056497175,
-   "margin": 0.1808286213128071,
-   "rank_best": 82,
-   "rank_worst": 179
-  },
-  {
-   "slug": "shiomi_shuko",
-   "name": "塩見周子",
-   "color": "#dce6ed",
-   "users": 6,
    "rank": 121,
-   "share": 0.22598870056497175,
-   "margin": 0.1808286213128071,
+   "share": 0.22189349112426035,
+   "margin": 0.17755177129641378,
    "rank_best": 82,
    "rank_worst": 179
   },
@@ -1349,8 +1349,8 @@
    "color": "#211551",
    "users": 6,
    "rank": 122,
-   "share": 0.22598870056497175,
-   "margin": 0.1808286213128071,
+   "share": 0.22189349112426035,
+   "margin": 0.17755177129641378,
    "rank_best": 82,
    "rank_worst": 179
   },
@@ -1360,8 +1360,8 @@
    "color": "#ff7b2c",
    "users": 6,
    "rank": 123,
-   "share": 0.22598870056497175,
-   "margin": 0.1808286213128071,
+   "share": 0.22189349112426035,
+   "margin": 0.17755177129641378,
    "rank_best": 82,
    "rank_worst": 179
   },
@@ -1371,9 +1371,20 @@
    "color": "#93256c",
    "users": 6,
    "rank": 124,
-   "share": 0.22598870056497175,
-   "margin": 0.1808286213128071,
+   "share": 0.22189349112426035,
+   "margin": 0.17755177129641378,
    "rank_best": 82,
+   "rank_worst": 179
+  },
+  {
+   "slug": "asano_fuka",
+   "name": "浅野風香",
+   "color": "#618d75",
+   "users": 5,
+   "rank": 125,
+   "share": 0.1849112426035503,
+   "margin": 0.1620818504400735,
+   "rank_best": 86,
    "rank_worst": 179
   },
   {
@@ -1381,10 +1392,10 @@
    "name": "安斎都",
    "color": "#fa9063",
    "users": 5,
-   "rank": 125,
-   "share": 0.18832391713747645,
-   "margin": 0.1650731915593065,
-   "rank_best": 84,
+   "rank": 126,
+   "share": 0.1849112426035503,
+   "margin": 0.1620818504400735,
+   "rank_best": 86,
    "rank_worst": 179
   },
   {
@@ -1392,10 +1403,21 @@
    "name": "日下部若葉",
    "color": "#c4d673",
    "users": 5,
-   "rank": 126,
-   "share": 0.18832391713747645,
-   "margin": 0.1650731915593065,
-   "rank_best": 84,
+   "rank": 127,
+   "share": 0.1849112426035503,
+   "margin": 0.1620818504400735,
+   "rank_best": 86,
+   "rank_worst": 179
+  },
+  {
+   "slug": "saito_yoko",
+   "name": "斉藤洋子",
+   "color": "#cbfc9f",
+   "users": 5,
+   "rank": 128,
+   "share": 0.1849112426035503,
+   "margin": 0.1620818504400735,
+   "rank_best": 86,
    "rank_worst": 179
   },
   {
@@ -1403,10 +1425,10 @@
    "name": "城ヶ崎莉嘉",
    "color": "#fedd00",
    "users": 5,
-   "rank": 127,
-   "share": 0.18832391713747645,
-   "margin": 0.1650731915593065,
-   "rank_best": 84,
+   "rank": 129,
+   "share": 0.1849112426035503,
+   "margin": 0.1620818504400735,
+   "rank_best": 86,
    "rank_worst": 179
   },
   {
@@ -1414,10 +1436,10 @@
    "name": "相馬夏美",
    "color": "#fcc138",
    "users": 5,
-   "rank": 128,
-   "share": 0.18832391713747645,
-   "margin": 0.1650731915593065,
-   "rank_best": 84,
+   "rank": 130,
+   "share": 0.1849112426035503,
+   "margin": 0.1620818504400735,
+   "rank_best": 86,
    "rank_worst": 179
   },
   {
@@ -1425,10 +1447,10 @@
    "name": "西川保奈美",
    "color": "#5756d8",
    "users": 5,
-   "rank": 129,
-   "share": 0.18832391713747645,
-   "margin": 0.1650731915593065,
-   "rank_best": 84,
+   "rank": 131,
+   "share": 0.1849112426035503,
+   "margin": 0.1620818504400735,
+   "rank_best": 86,
    "rank_worst": 179
   },
   {
@@ -1436,10 +1458,10 @@
    "name": "兵藤レナ",
    "color": "#d8076b",
    "users": 5,
-   "rank": 130,
-   "share": 0.18832391713747645,
-   "margin": 0.1650731915593065,
-   "rank_best": 84,
+   "rank": 132,
+   "share": 0.1849112426035503,
+   "margin": 0.1620818504400735,
+   "rank_best": 86,
    "rank_worst": 179
   },
   {
@@ -1447,10 +1469,10 @@
    "name": "水本ゆかり",
    "color": "#eabedb",
    "users": 5,
-   "rank": 131,
-   "share": 0.18832391713747645,
-   "margin": 0.1650731915593065,
-   "rank_best": 84,
+   "rank": 133,
+   "share": 0.1849112426035503,
+   "margin": 0.1620818504400735,
+   "rank_best": 86,
    "rank_worst": 179
   },
   {
@@ -1458,10 +1480,10 @@
    "name": "メアリー・コクラン",
    "color": "#f196ff",
    "users": 5,
-   "rank": 132,
-   "share": 0.18832391713747645,
-   "margin": 0.1650731915593065,
-   "rank_best": 84,
+   "rank": 134,
+   "share": 0.1849112426035503,
+   "margin": 0.1620818504400735,
+   "rank_best": 86,
    "rank_worst": 179
   },
   {
@@ -1469,21 +1491,10 @@
    "name": "吉岡沙紀",
    "color": "#1b24c2",
    "users": 5,
-   "rank": 133,
-   "share": 0.18832391713747645,
-   "margin": 0.1650731915593065,
-   "rank_best": 84,
-   "rank_worst": 179
-  },
-  {
-   "slug": "asano_fuka",
-   "name": "浅野風香",
-   "color": "#618d75",
-   "users": 4,
-   "rank": 134,
-   "share": 0.15065913370998116,
-   "margin": 0.14764595103578154,
-   "rank_best": 94,
+   "rank": 135,
+   "share": 0.1849112426035503,
+   "margin": 0.1620818504400735,
+   "rank_best": 86,
    "rank_worst": 179
   },
   {
@@ -1491,20 +1502,9 @@
    "name": "北川真尋",
    "color": "#4fd962",
    "users": 4,
-   "rank": 135,
-   "share": 0.15065913370998116,
-   "margin": 0.14764595103578154,
-   "rank_best": 94,
-   "rank_worst": 179
-  },
-  {
-   "slug": "saito_yoko",
-   "name": "斉藤洋子",
-   "color": "#cbfc9f",
-   "users": 4,
    "rank": 136,
-   "share": 0.15065913370998116,
-   "margin": 0.14764595103578154,
+   "share": 0.14792899408284024,
+   "margin": 0.14497041420118345,
    "rank_best": 94,
    "rank_worst": 179
   },
@@ -1514,8 +1514,8 @@
    "color": "#fec520",
    "users": 4,
    "rank": 137,
-   "share": 0.15065913370998116,
-   "margin": 0.14764595103578154,
+   "share": 0.14792899408284024,
+   "margin": 0.14497041420118345,
    "rank_best": 94,
    "rank_worst": 179
   },
@@ -1525,8 +1525,19 @@
    "color": "#52c6c3",
    "users": 4,
    "rank": 138,
-   "share": 0.15065913370998116,
-   "margin": 0.14764595103578154,
+   "share": 0.14792899408284024,
+   "margin": 0.14497041420118345,
+   "rank_best": 94,
+   "rank_worst": 179
+  },
+  {
+   "slug": "senzaki_ema",
+   "name": "仙崎恵磨",
+   "color": "#d30d85",
+   "users": 4,
+   "rank": 139,
+   "share": 0.14792899408284024,
+   "margin": 0.14497041420118345,
    "rank_best": 94,
    "rank_worst": 179
   },
@@ -1535,21 +1546,32 @@
    "name": "高橋礼子",
    "color": "#781000",
    "users": 4,
-   "rank": 139,
-   "share": 0.15065913370998116,
-   "margin": 0.14764595103578154,
+   "rank": 140,
+   "share": 0.14792899408284024,
+   "margin": 0.14497041420118345,
    "rank_best": 94,
    "rank_worst": 179
+  },
+  {
+   "slug": "aihara_yukino",
+   "name": "相原雪乃",
+   "color": "#d06447",
+   "users": 3,
+   "rank": 141,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
+   "rank_worst": 190
   },
   {
    "slug": "ebihara_naho",
    "name": "海老原菜帆",
    "color": "#819832",
    "users": 3,
-   "rank": 140,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
+   "rank": 142,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
    "rank_worst": 190
   },
   {
@@ -1557,10 +1579,10 @@
    "name": "片桐早苗",
    "color": "#fc4c02",
    "users": 3,
-   "rank": 141,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
+   "rank": 143,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
    "rank_worst": 190
   },
   {
@@ -1568,10 +1590,10 @@
    "name": "木場真奈美",
    "color": "#8d8696",
    "users": 3,
-   "rank": 142,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
+   "rank": 144,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
    "rank_worst": 190
   },
   {
@@ -1579,10 +1601,10 @@
    "name": "桐野アヤ",
    "color": "#c3396c",
    "users": 3,
-   "rank": 143,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
+   "rank": 145,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
    "rank_worst": 190
   },
   {
@@ -1590,10 +1612,10 @@
    "name": "ケイト",
    "color": "#cf142b",
    "users": 3,
-   "rank": 144,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
+   "rank": 146,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
    "rank_worst": 190
   },
   {
@@ -1601,10 +1623,10 @@
    "name": "小松伊吹",
    "color": "#fffb4e",
    "users": 3,
-   "rank": 145,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
+   "rank": 147,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
    "rank_worst": 190
   },
   {
@@ -1612,10 +1634,10 @@
    "name": "冴島清美",
    "color": "#f6bd30",
    "users": 3,
-   "rank": 146,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
+   "rank": 148,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
    "rank_worst": 190
   },
   {
@@ -1623,10 +1645,10 @@
    "name": "篠原礼",
    "color": "#bb68fe",
    "users": 3,
-   "rank": 147,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
+   "rank": 149,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
    "rank_worst": 190
   },
   {
@@ -1634,21 +1656,10 @@
    "name": "首藤葵",
    "color": "#fbe983",
    "users": 3,
-   "rank": 148,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
-   "rank_worst": 190
-  },
-  {
-   "slug": "senzaki_ema",
-   "name": "仙崎恵磨",
-   "color": "#d30d85",
-   "users": 3,
-   "rank": 149,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
+   "rank": 150,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
    "rank_worst": 190
   },
   {
@@ -1656,10 +1667,10 @@
    "name": "姫川友紀",
    "color": "#ed8b00",
    "users": 3,
-   "rank": 150,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
+   "rank": 151,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
    "rank_worst": 190
   },
   {
@@ -1667,10 +1678,10 @@
    "name": "古澤頼子",
    "color": "#3f3c8b",
    "users": 3,
-   "rank": 151,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
+   "rank": 152,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
    "rank_worst": 190
   },
   {
@@ -1678,10 +1689,21 @@
    "name": "楊菲菲",
    "color": "#e56f66",
    "users": 3,
-   "rank": 152,
-   "share": 0.11299435028248588,
-   "margin": 0.12786514436290017,
-   "rank_best": 97,
+   "rank": 153,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
+   "rank_worst": 190
+  },
+  {
+   "slug": "wakiyama_tamami",
+   "name": "脇山珠美",
+   "color": "#407ec9",
+   "users": 3,
+   "rank": 154,
+   "share": 0.11094674556213018,
+   "margin": 0.1255480614953772,
+   "rank_best": 98,
    "rank_worst": 190
   },
   {
@@ -1689,21 +1711,10 @@
    "name": "愛野渚",
    "color": "#ffcb49",
    "users": 2,
-   "rank": 153,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
-   "rank_worst": 190
-  },
-  {
-   "slug": "aihara_yukino",
-   "name": "相原雪乃",
-   "color": "#d06447",
-   "users": 2,
-   "rank": 154,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 155,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1711,10 +1722,21 @@
    "name": "赤西瑛梨華",
    "color": "#eb306d",
    "users": 2,
-   "rank": 155,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 156,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
+   "rank_worst": 190
+  },
+  {
+   "slug": "ujiie_mutsumi",
+   "name": "氏家むつみ",
+   "color": "#375637",
+   "users": 2,
+   "rank": 157,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1722,10 +1744,10 @@
    "name": "古賀小春",
    "color": "#c2e189",
    "users": 2,
-   "rank": 156,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 158,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1733,10 +1755,10 @@
    "name": "小関麗奈",
    "color": "#9b26b6",
    "users": 2,
-   "rank": 157,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 159,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1744,10 +1766,10 @@
    "name": "沢田麻理菜",
    "color": "#fca538",
    "users": 2,
-   "rank": 158,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 160,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1755,10 +1777,10 @@
    "name": "杉坂海",
    "color": "#d83c6a",
    "users": 2,
-   "rank": 159,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 161,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1766,10 +1788,10 @@
    "name": "涼宮星花",
    "color": "#f994c4",
    "users": 2,
-   "rank": 160,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 162,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1777,10 +1799,10 @@
    "name": "月宮雅",
    "color": "#ffd9db",
    "users": 2,
-   "rank": 161,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 163,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1788,10 +1810,10 @@
    "name": "西島櫂",
    "color": "#f16029",
    "users": 2,
-   "rank": 162,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 164,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1799,10 +1821,10 @@
    "name": "丹羽仁美",
    "color": "#a80826",
    "users": 2,
-   "rank": 163,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 165,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1810,10 +1832,10 @@
    "name": "浜川愛結奈",
    "color": "#a42678",
    "users": 2,
-   "rank": 164,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 166,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1821,10 +1843,10 @@
    "name": "藤本里奈",
    "color": "#623b2a",
    "users": 2,
-   "rank": 165,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 167,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1832,10 +1854,10 @@
    "name": "棟方愛海",
    "color": "#c7579a",
    "users": 2,
-   "rank": 166,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 168,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1843,10 +1865,10 @@
    "name": "矢口美羽",
    "color": "#ec5800",
    "users": 2,
-   "rank": 167,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 169,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1854,21 +1876,10 @@
    "name": "大和亜季",
    "color": "#28724f",
    "users": 2,
-   "rank": 168,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
-   "rank_worst": 190
-  },
-  {
-   "slug": "wakiyama_tamami",
-   "name": "脇山珠美",
-   "color": "#407ec9",
-   "users": 2,
-   "rank": 169,
-   "share": 0.07532956685499058,
-   "margin": 0.10440145319213809,
-   "rank_best": 102,
+   "rank": 170,
+   "share": 0.07396449704142012,
+   "margin": 0.10250956295307938,
+   "rank_best": 103,
    "rank_worst": 190
   },
   {
@@ -1876,10 +1887,10 @@
    "name": "イヴ・サンタクロース",
    "color": "#E5E1E6",
    "users": 1,
-   "rank": 170,
-   "share": 0.03766478342749529,
-   "margin": 0.07382297551789077,
-   "rank_best": 115,
+   "rank": 171,
+   "share": 0.03698224852071006,
+   "margin": 0.07248520710059173,
+   "rank_best": 118,
    "rank_worst": 190
   },
   {
@@ -1887,10 +1898,10 @@
    "name": "井村雪菜",
    "color": "#ed3767",
    "users": 1,
-   "rank": 171,
-   "share": 0.03766478342749529,
-   "margin": 0.07382297551789077,
-   "rank_best": 115,
+   "rank": 172,
+   "share": 0.03698224852071006,
+   "margin": 0.07248520710059173,
+   "rank_best": 118,
    "rank_worst": 190
   },
   {
@@ -1898,21 +1909,10 @@
    "name": "上田鈴帆",
    "color": "#cc8a00",
    "users": 1,
-   "rank": 172,
-   "share": 0.03766478342749529,
-   "margin": 0.07382297551789077,
-   "rank_best": 115,
-   "rank_worst": 190
-  },
-  {
-   "slug": "ujiie_mutsumi",
-   "name": "氏家むつみ",
-   "color": "#375637",
-   "users": 1,
    "rank": 173,
-   "share": 0.03766478342749529,
-   "margin": 0.07382297551789077,
-   "rank_best": 115,
+   "share": 0.03698224852071006,
+   "margin": 0.07248520710059173,
+   "rank_best": 118,
    "rank_worst": 190
   },
   {
@@ -1921,9 +1921,9 @@
    "color": "#c90f74",
    "users": 1,
    "rank": 174,
-   "share": 0.03766478342749529,
-   "margin": 0.07382297551789077,
-   "rank_best": 115,
+   "share": 0.03698224852071006,
+   "margin": 0.07248520710059173,
+   "rank_best": 118,
    "rank_worst": 190
   },
   {
@@ -1932,9 +1932,9 @@
    "color": "#acc0e6",
    "users": 1,
    "rank": 175,
-   "share": 0.03766478342749529,
-   "margin": 0.07382297551789077,
-   "rank_best": 115,
+   "share": 0.03698224852071006,
+   "margin": 0.07248520710059173,
+   "rank_best": 118,
    "rank_worst": 190
   },
   {
@@ -1943,9 +1943,9 @@
    "color": "#e03c31",
    "users": 1,
    "rank": 176,
-   "share": 0.03766478342749529,
-   "margin": 0.07382297551789077,
-   "rank_best": 115,
+   "share": 0.03698224852071006,
+   "margin": 0.07248520710059173,
+   "rank_best": 118,
    "rank_worst": 190
   },
   {
@@ -1954,9 +1954,9 @@
    "color": "#fc6e2e",
    "users": 1,
    "rank": 177,
-   "share": 0.03766478342749529,
-   "margin": 0.07382297551789077,
-   "rank_best": 115,
+   "share": 0.03698224852071006,
+   "margin": 0.07248520710059173,
+   "rank_best": 118,
    "rank_worst": 190
   },
   {
@@ -1965,9 +1965,9 @@
    "color": "#f97f4b",
    "users": 1,
    "rank": 178,
-   "share": 0.03766478342749529,
-   "margin": 0.07382297551789077,
-   "rank_best": 115,
+   "share": 0.03698224852071006,
+   "margin": 0.07248520710059173,
+   "rank_best": 118,
    "rank_worst": 190
   },
   {
@@ -1976,9 +1976,9 @@
    "color": "#f743a6",
    "users": 1,
    "rank": 179,
-   "share": 0.03766478342749529,
-   "margin": 0.07382297551789077,
-   "rank_best": 115,
+   "share": 0.03698224852071006,
+   "margin": 0.07248520710059173,
+   "rank_best": 118,
    "rank_worst": 190
   },
   {
@@ -1989,7 +1989,7 @@
    "rank": 180,
    "share": 0.0,
    "margin": 0.0,
-   "rank_best": 140,
+   "rank_best": 141,
    "rank_worst": 190
   },
   {
@@ -2000,7 +2000,7 @@
    "rank": 181,
    "share": 0.0,
    "margin": 0.0,
-   "rank_best": 140,
+   "rank_best": 141,
    "rank_worst": 190
   },
   {
@@ -2011,7 +2011,7 @@
    "rank": 182,
    "share": 0.0,
    "margin": 0.0,
-   "rank_best": 140,
+   "rank_best": 141,
    "rank_worst": 190
   },
   {
@@ -2022,7 +2022,7 @@
    "rank": 183,
    "share": 0.0,
    "margin": 0.0,
-   "rank_best": 140,
+   "rank_best": 141,
    "rank_worst": 190
   },
   {
@@ -2033,7 +2033,7 @@
    "rank": 184,
    "share": 0.0,
    "margin": 0.0,
-   "rank_best": 140,
+   "rank_best": 141,
    "rank_worst": 190
   },
   {
@@ -2044,7 +2044,7 @@
    "rank": 185,
    "share": 0.0,
    "margin": 0.0,
-   "rank_best": 140,
+   "rank_best": 141,
    "rank_worst": 190
   },
   {
@@ -2055,7 +2055,7 @@
    "rank": 186,
    "share": 0.0,
    "margin": 0.0,
-   "rank_best": 140,
+   "rank_best": 141,
    "rank_worst": 190
   },
   {
@@ -2066,7 +2066,7 @@
    "rank": 187,
    "share": 0.0,
    "margin": 0.0,
-   "rank_best": 140,
+   "rank_best": 141,
    "rank_worst": 190
   },
   {
@@ -2077,7 +2077,7 @@
    "rank": 188,
    "share": 0.0,
    "margin": 0.0,
-   "rank_best": 140,
+   "rank_best": 141,
    "rank_worst": 190
   },
   {
@@ -2088,7 +2088,7 @@
    "rank": 189,
    "share": 0.0,
    "margin": 0.0,
-   "rank_best": 140,
+   "rank_best": 141,
    "rank_worst": 190
   },
   {
@@ -2099,7 +2099,7 @@
    "rank": 190,
    "share": 0.0,
    "margin": 0.0,
-   "rank_best": 140,
+   "rank_best": 141,
    "rank_worst": 190
   }
  ]
