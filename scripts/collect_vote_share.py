@@ -50,6 +50,8 @@ RETURN_LIMIT = 39
 REQUEST_INTERVAL = 1.5     # 秒。これ以上詰めないこと
 # 取得失敗がこの割合を超えたら、個別の不調ではなく系統的な問題とみなす
 FATAL_FAILURE_RATIO = 0.1
+# 取りこぼし判定のために遡って読む収集ファイルの日数
+LOOKBACK_DAYS = 3
 
 
 def fetch(query: str) -> dict:
@@ -129,6 +131,25 @@ def select_busiest(idols: list[dict], top: int) -> list[dict]:
     return ordered[:top]
 
 
+def last_collected_by_slug(path: Path, store: dict) -> dict[str, int]:
+    """アイドルごとに「前回そのアイドルを収集した時刻」を返す。
+
+    当日ファイルの中だけを見ると、日付が変わった直後や収集が止まっていた
+    あとの初回スイープで前回時刻が空になり、取りこぼしを検出できない。
+    実際 8/22 19:26 から 8/24 10:44 まで収集が止まっていた際、全員が39件の
+    上限に張り付いていたのに警告が1件も出なかった。前日以前のファイルも
+    遡って参照する。
+    """
+    previous: dict[str, int] = {}
+    recent = sorted(OUTDIR.glob("????-??-??.json"))[-LOOKBACK_DAYS:]
+    for other in recent:
+        data = store if other == path else json.loads(other.read_text(encoding="utf-8"))
+        for sweep in data["sweeps"]:
+            for slug in sweep.get("oldest", {}) or sweep.get("coverage_slugs", []):
+                previous[slug] = max(previous.get(slug, 0), sweep["collected_at"])
+    return previous
+
+
 def load_store(path: Path, date_label: str) -> dict:
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8"))
@@ -158,12 +179,7 @@ def main() -> int:
     path = OUTDIR / f"{date_label}.json"
     store = load_store(path, date_label)
 
-    # そのアイドルを前回収集した時刻。対象を絞ったスイープが混ざるため、
-    # 単純に「直前のスイープ」と比べると取りこぼし判定を誤る。
-    previous_by_slug: dict[str, int] = {}
-    for sweep in store["sweeps"]:
-        for slug in sweep.get("oldest", {}) or sweep.get("coverage_slugs", []):
-            previous_by_slug[slug] = max(previous_by_slug.get(slug, 0), sweep["collected_at"])
+    previous_by_slug = last_collected_by_slug(path, store)
 
     print(f"収集開始 {started:%Y-%m-%d %H:%M:%S} JST / 対象 {len(idols)}名"
           f"{'（全員）' if scope == 'all' else f'（投稿の多い上位{args.top}名）'}", file=sys.stderr)
@@ -239,8 +255,13 @@ def main() -> int:
           f"/ 累計 {len(store['posts'])}件 → {path.relative_to(ROOT)}", file=sys.stderr)
 
     if saturated:
-        print(f"警告: {len(saturated)}名で返却が{RETURN_LIMIT}件に達しました。"
-              f"前回スイープ以降に取りこぼしがあります。収集間隔を詰めてください: "
+        # 最も長く空いたアイドルの空白を出す。最小値だと被害の小さい1名に
+        # 引きずられて「0.2時間」のように軽く見えてしまう。
+        gap = max(oldest_by_slug[s] - previous_by_slug[s]
+                  for s in saturated if s in oldest_by_slug and s in previous_by_slug)
+        print(f"警告: {len(saturated)}名で返却が{RETURN_LIMIT}件に達し、"
+              f"前回スイープまで遡れませんでした。最大で{gap/3600:.1f}時間ぶんの"
+              f"取りこぼしがあります。収集間隔を詰めてください: "
               f"{', '.join(saturated[:10])}{' ...' if len(saturated) > 10 else ''}",
               file=sys.stderr)
     if failed:
