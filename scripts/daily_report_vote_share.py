@@ -32,13 +32,20 @@ REPORT = lib.OUTDIR / "daily-report.json"
 TOP_N = 15
 
 
-def day_window(day: datetime.date, floor: int, end: int):
-    """その日の、実際に集計できる窓と完全性を返す。"""
+def day_window(day: datetime.date, intervals: dict, end: int):
+    """その日の、実際に集計できる窓と完全性を返す。
+
+    暦日ごとに独立してカバー状況を見る。後日に欠測があっても、その日が
+    きちんと覆われていれば完全な1日として扱う。
+    """
     day_start, day_end = lib.jst_day_bounds(day)
-    start = max(day_start, floor)
-    stop = min(day_end, end)
-    complete = floor <= day_start and end >= day_end
-    return start, stop, complete
+    stop_limit = min(day_end, end)
+    if lib.day_fully_covered(intervals, day_start, stop_limit):
+        return day_start, stop_limit, stop_limit >= day_end
+    span = lib.covered_span_within(intervals, day_start, stop_limit)
+    if span is None:
+        return day_start, day_start, False
+    return span[0], span[1], False
 
 
 def main() -> int:
@@ -52,10 +59,9 @@ def main() -> int:
     stores = lib.load_stores()
     posts = lib.merge_posts(stores)
 
-    floors = lib.effective_coverage(stores)
-    if not floors:
+    intervals = lib.covered_intervals(stores)
+    if not intervals:
         raise SystemExit("coverage 情報がありません。collect_vote_share.py で再収集してください。")
-    floor = max(floors.values())
     end = lib.last_sweep_at(stores)
 
     if args.date:
@@ -64,8 +70,6 @@ def main() -> int:
         target = datetime.datetime.now(lib.JST).date() - datetime.timedelta(days=1)
 
     first = min(datetime.date.fromisoformat(store["date"]) for store in stores)
-    # 収集データの最初の日より前は存在しない
-    first = max(first, datetime.datetime.fromtimestamp(floor, lib.JST).date())
     if target < first:
         raise SystemExit(f"{target} のデータがありません（収集開始は {first}）。")
 
@@ -77,11 +81,14 @@ def main() -> int:
 
     day = first
     while day <= target:
-        start, stop, complete = day_window(day, floor, end)
+        start, stop, complete = day_window(day, intervals, end)
         if stop > start:
             counts, used, inconsistent = lib.count_authors(posts, idols, start, stop)
-            for slug, value in counts.items():
-                cumulative[slug] += value
+            # のべ数には完全な日だけを足す。1分しか覆えていない日を混ぜると、
+            # 「のべ何人日ぶんの投票報告があったか」という意味が壊れる。
+            if complete:
+                for slug, value in counts.items():
+                    cumulative[slug] += value
             days.append({
                 "date": day.isoformat(),
                 "complete": complete,
@@ -127,12 +134,13 @@ def main() -> int:
         print(f'{row["rank"]:>2}.  {row["name"]:<14}{row["users"]:>5}'
               f'{row["share"]:>8.2f}%{span:>12}{mark}')
 
-    total_days = len(days)
+    full = [d["date"] for d in days if d["complete"]]
     partial = [d["date"] for d in days if not d["complete"]]
-    print(f"\n■ のべ数ランキング（{days[0]['date']} 〜 {target} / {total_days}日）")
+    print(f"\n■ のべ数ランキング（{full[0]} 〜 {full[-1]} / {len(full)}日）"
+          if full else "\n■ のべ数ランキング（集計できる完全な日がありません）")
     print(f"  のべ {sum(cumulative.values()):,}人")
     if partial:
-        print(f"  ※ {', '.join(partial)} は1日ぶんに満たない部分集計を含む")
+        print(f"  ※ {', '.join(partial)} は1日ぶんに満たないため、のべ数から除外した")
     print()
     print(f'{"順位":<5}{"アイドル":<14}{"のべ":>6}{"シェア":>9}{"取りうる順位":>14}')
     print("-" * 55)
@@ -163,9 +171,15 @@ def main() -> int:
         "target_date": target.isoformat(),
         "daily": {**target_meta, "ranking": daily_rows},
         "cumulative": {
-            "from": days[0]["date"], "to": target.isoformat(),
-            "days": days, "total": sum(cumulative.values()),
-            "partial_days": partial, "ranking": cumulative_rows,
+            # のべ数に実際に足した日だけを範囲として書く。全期間を書くと、
+            # 除外した日も数えたように読めてしまう。
+            "from": full[0] if full else target.isoformat(),
+            "to": full[-1] if full else target.isoformat(),
+            "days": [d for d in days if d["complete"]],
+            "all_days": days,
+            "total": sum(cumulative.values()),
+            "excluded_days": partial, "partial_days": partial,
+            "ranking": cumulative_rows,
         },
         "saturated": saturated,
     }, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
