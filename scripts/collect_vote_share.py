@@ -12,6 +12,8 @@ Yahoo!リアルタイム検索で `"{公式表記名} さんに投票しまし�
 使い方:
     python scripts/collect_vote_share.py
 
+終了コード: 0=全件成功 / 2=一部失敗（続行してよい） / 1=広範囲に失敗（中断すべき）
+
 詳細は docs/vote2026-tracking.md を参照。
 """
 
@@ -46,6 +48,8 @@ JST = datetime.timezone(datetime.timedelta(hours=9))
 # 検出漏れするため39を上限とみなす。
 RETURN_LIMIT = 39
 REQUEST_INTERVAL = 1.5     # 秒。これ以上詰めないこと
+# 取得失敗がこの割合を超えたら、個別の不調ではなく系統的な問題とみなす
+FATAL_FAILURE_RATIO = 0.1
 
 
 def fetch(query: str) -> dict:
@@ -241,7 +245,15 @@ def main() -> int:
               file=sys.stderr)
     if failed:
         print(f"警告: {len(failed)}名の取得に失敗しました: {', '.join(failed)}", file=sys.stderr)
-    return 1 if failed else 0
+        # 数名の失敗は一時的な不調なので、集計と投稿まで止める必要はない（2）。
+        # 一方で広範囲に失敗しているならYahoo側の仕様変更や遮断を疑うべきで、
+        # その結果で集計を進めると偏った順位を出してしまうため異常終了させる（1）。
+        if len(failed) > max(1, len(idols) * FATAL_FAILURE_RATIO):
+            print(f"{len(idols)}名中{len(failed)}名で失敗しています。"
+                  "Yahoo側の仕様変更か遮断の可能性があるため中断します。", file=sys.stderr)
+            return 1
+        return 2
+    return 0
 
 
 if __name__ == "__main__":
