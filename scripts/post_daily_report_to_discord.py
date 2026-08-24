@@ -23,11 +23,15 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import vote_share_lib as lib  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 REPORT = ROOT / "data" / "vote2026" / "daily-report.json"
 
 JST = datetime.timezone(datetime.timedelta(hours=9))
 TOP_N = 15
+USER_AGENT = "SugarHeartDB-vote2026/1.0"
 REWARD_BORDERS = {5: "xRライブ", 7: "ソロ楽曲", 15: "ちびぐるみ"}
 EMBED_COLOR = 0xF04E98  # 佐藤心のイメージカラー
 DISCORD_LIMIT = 4096
@@ -117,29 +121,7 @@ def main() -> int:
         print(f'({embed["footer"]["text"]})')
         return 0
 
-    url = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
-    if not url:
-        raise SystemExit(
-            "環境変数 DISCORD_WEBHOOK_URL が設定されていません。\n"
-            "URLは秘密情報です。リポジトリには絶対に書き込まないでください。")
-    if not url.startswith(("https://discord.com/api/webhooks/",
-                           "https://discordapp.com/api/webhooks/")):
-        raise SystemExit("DISCORD_WEBHOOK_URL がDiscordのウェブフックURLの形式ではありません。")
-
-    body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
-    request = urllib.request.Request(
-        url, data=body, method="POST",
-        headers={"Content-Type": "application/json",
-                 "User-Agent": "SugarHeartDB-vote2026/1.0"})
-    try:
-        with urllib.request.urlopen(request, timeout=30) as res:
-            if res.status not in (200, 204):
-                raise RuntimeError(f"Discordが status={res.status} を返しました")
-    except urllib.error.HTTPError as exc:
-        # 本文にURLが含まれる可能性があるので、そのままは出さない
-        raise SystemExit(f"投稿に失敗しました: HTTP {exc.code} {exc.reason}") from None
-    except urllib.error.URLError as exc:
-        raise SystemExit(f"投稿に失敗しました: {exc.reason}") from None
+    lib.post_json(lib.webhook_url_from_env(), payload, USER_AGENT)
 
     print("Discordに投稿しました。", file=sys.stderr)
     return 0

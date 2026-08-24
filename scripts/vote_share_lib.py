@@ -11,6 +11,10 @@ from __future__ import annotations
 
 import datetime
 import json
+import urllib.request
+import urllib.error
+import re
+import os
 import math
 from pathlib import Path
 
@@ -197,3 +201,55 @@ def jst_day_bounds(day: datetime.date) -> tuple[int, int]:
 
 def fmt(ts: int, pattern: str = "%m/%d %H:%M") -> str:
     return datetime.datetime.fromtimestamp(ts, JST).strftime(pattern)
+
+
+# --- Discordへの送信 ---------------------------------------------------------
+# ウェブフックURLは秘密情報で、リポジトリは公開されている。値が例外メッセージや
+# トレースバック経由でログに出ると、そのチャンネルに誰でも投稿できるようになる。
+# 実際に InvalidURL の例外メッセージからActionsの公開ログへ漏れたことがあるため、
+# 読み込みと送信をここに集約し、値が外へ出る経路を1か所に閉じ込めている。
+
+WEBHOOK_RE = re.compile(
+    r"^https://(?:discord|discordapp)\.com/api/webhooks/\d+/[A-Za-z0-9_-]+$")
+
+
+def webhook_url_from_env(var: str = "DISCORD_WEBHOOK_URL") -> str:
+    """環境変数からウェブフックURLを読む。値はエラー文にも出さない。"""
+    raw = os.environ.get(var, "")
+    # 貼り付けやシークレット登録の際に改行や余分な行が混ざることがある。
+    # 最初の非空行だけを使い、それが形式に合わなければ落とす。
+    lines = [line.strip() for line in raw.splitlines() if line.strip()]
+    if not lines:
+        raise SystemExit(
+            f"環境変数 {var} が設定されていません。\n"
+            f"  export {var}='https://discord.com/api/webhooks/...'\n"
+            "URLは秘密情報です。リポジトリには絶対に書き込まないでください。")
+    url = lines[0]
+    if not WEBHOOK_RE.match(url):
+        raise SystemExit(
+            f"{var} がDiscordのウェブフックURLの形式ではありません。"
+            "改行や余分な文字が混ざっていないか確認してください。"
+            "（値そのものは表示しません）")
+    return url
+
+
+def post_json(url: str, payload: dict, user_agent: str) -> None:
+    """Discordへ送る。どの失敗経路でもURLを出力しない。"""
+    body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    req = urllib.request.Request(
+        url, data=body, method="POST",
+        headers={"Content-Type": "application/json", "User-Agent": user_agent})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as res:
+            if res.status not in (200, 204):
+                raise SystemExit(f"Discordが status={res.status} を返しました")
+    except urllib.error.HTTPError as exc:
+        raise SystemExit(f"投稿に失敗しました: HTTP {exc.code} {exc.reason}") from None
+    except urllib.error.URLError as exc:
+        raise SystemExit(f"投稿に失敗しました: {exc.reason}") from None
+    except Exception as exc:
+        # InvalidURL のように例外メッセージ自体にURLが載る種類がある。
+        # 種別だけを出し、内容は出さない。
+        raise SystemExit(
+            f"投稿に失敗しました: {type(exc).__name__}"
+            "（メッセージにURLが含まれうるため表示しません）") from None
