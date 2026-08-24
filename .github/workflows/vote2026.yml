@@ -59,8 +59,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ env.DATA_BRANCH }}
-          # コミットして押し戻すため、浅いクローンにはしない
-          fetch-depth: 0
+          # 1日31回クローンするため、履歴は最新コミットだけに絞る
+          # （このリポジトリは .git が500MB超あり、全履歴だと毎回の取得が重い）
+          fetch-depth: 1
 
       - name: スクリプトを main の内容に揃える
         # 作業ブランチにはデータだけを溜めたい。スクリプトの更新は main 側で
@@ -76,20 +77,25 @@ jobs:
 
       - name: 結果をコミットする
         run: |
-          if git diff --quiet -- data scripts; then
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          # 日付が変わった初回は当日ファイルが未追跡の新規ファイルになる。
+          # git diff では未追跡が見えず、その日の最初のスイープを丸ごと
+          # 捨ててしまうため、必ずステージしてから差分を見る。
+          git add data scripts
+          if git diff --cached --quiet; then
             echo "変更がないためコミットしません。"
             exit 0
           fi
-          git config user.name  'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data scripts
           git commit -m "総選挙2026 投票傾向を収集 ($(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M') JST, ${{ steps.mode.outputs.mode }})"
-          # 手動のpushと競合したときのために数回だけ retry する
+          # 手動のpushと競合したときのために数回だけ retry する。
+          # 浅いクローンのままでは rebase できないので、その時だけ履歴を引く。
           for attempt in 1 2 3; do
             if git push origin "HEAD:$DATA_BRANCH"; then
               exit 0
             fi
             echo "push に失敗しました。作業ブランチを取り込んで再試行します ($attempt/3)"
+            git fetch --unshallow origin "$DATA_BRANCH" || git fetch origin "$DATA_BRANCH"
             git pull --rebase origin "$DATA_BRANCH"
             sleep $((attempt * 5))
           done
