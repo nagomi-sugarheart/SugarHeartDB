@@ -1,0 +1,97 @@
+name: 総選挙2026 投票傾向の収集
+
+# 収集・集計・投稿はいずれも判断の要らない機械的な手順なので、
+# 対話エージェントを介さずGitHub Actionsだけで完結させる。
+#
+# スケジュール実行はデフォルトブランチ(main)のワークフロー定義が使われる。
+# 収集データは作業ブランチ(DATA_BRANCH)に置き、そこへ直接コミットする。
+#
+# 事前に必要な設定:
+#   Settings → Secrets and variables → Actions → New repository secret
+#     名前: DISCORD_WEBHOOK_URL
+#   未設定でも収集とコミットは動く（投稿だけを飛ばす）。
+#   取りこぼした投稿は39件上限のため二度と回収できないが、投稿はやり直せるため。
+
+on:
+  schedule:
+    # cronはUTC。JSTは+9時間。
+    - cron: '23 * * * *'    # 毎時 JST xx:23 — 投稿の多い上位40名だけ
+    - cron: '53 */4 * * *'  # JST 1:53/5:53/9:53/13:53/17:53/21:53 — 全190名＋速報投稿
+    - cron: '0 15 * * *'    # JST 0:00 — 全190名＋前日サマリ投稿
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: '実行モード'
+        required: true
+        default: top
+        type: choice
+        options: [top, full, daily]
+
+permissions:
+  contents: write
+
+# 収集ジョブ同士が重なると同じファイルを取り合うため、必ず直列に流す。
+concurrency:
+  group: vote2026
+  cancel-in-progress: false
+
+env:
+  DATA_BRANCH: claude/cinderella-girl-vote-tracking-qikynt
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: 実行モードを決める
+        id: mode
+        run: |
+          case "${{ github.event.schedule }}" in
+            '0 15 * * *')   mode=daily ;;
+            '53 */4 * * *') mode=full ;;
+            '23 * * * *')   mode=top ;;
+            *)              mode="${{ inputs.mode }}" ;;
+          esac
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          echo "モード: $mode"
+
+      - name: 収集データのあるブランチを取得する
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.DATA_BRANCH }}
+          # コミットして押し戻すため、浅いクローンにはしない
+          fetch-depth: 0
+
+      - name: スクリプトを main の内容に揃える
+        # 作業ブランチにはデータだけを溜めたい。スクリプトの更新は main 側で
+        # レビューを通すため、実行前に main の版で上書きして食い違いを防ぐ。
+        run: |
+          git fetch --depth=1 origin main
+          git checkout FETCH_HEAD -- scripts/ data/idols.json
+
+      - name: 収集と集計と投稿
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: bash scripts/run_vote_cycle.sh "${{ steps.mode.outputs.mode }}"
+
+      - name: 結果をコミットする
+        run: |
+          if git diff --quiet -- data scripts; then
+            echo "変更がないためコミットしません。"
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data scripts
+          git commit -m "総選挙2026 投票傾向を収集 ($(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M') JST, ${{ steps.mode.outputs.mode }})"
+          # 手動のpushと競合したときのために数回だけ retry する
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:$DATA_BRANCH"; then
+              exit 0
+            fi
+            echo "push に失敗しました。作業ブランチを取り込んで再試行します ($attempt/3)"
+            git pull --rebase origin "$DATA_BRANCH"
+            sleep $((attempt * 5))
+          done
+          echo "push に3回失敗しました。" >&2
+          exit 1

@@ -86,6 +86,12 @@ def build_payload(data: dict, top: int, focus: str) -> dict:
                 f'{border}位（{ranking[border-1]["name"]}）との差：{gap}人'
                 f' — {REWARD_BORDERS[border]}')
 
+    # 取りこぼしは投稿の多いアイドルほど起きるため、順位を直接歪める。
+    # ログを読む人がいなくても気づけるよう、投稿本文に出す。
+    if data.get("saturated"):
+        parts.append(f'-# ⚠ 取りこぼしの疑いが {len(data["saturated"])}名 に記録されています。'
+                     "該当するアイドルは実数より少なく出ています。")
+
     description = "\n".join(parts)
     if len(description) > DISCORD_LIMIT:
         description = description[:DISCORD_LIMIT - 3] + "..."
