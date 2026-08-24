@@ -67,8 +67,10 @@ def build_payload(data: dict, top: int, focus: str) -> dict:
     parts.append(f'## のべ数ランキング（{total["from"]} 〜 {total["to"]}・{len(total["days"])}日）')
     parts.append(table(total["ranking"], top, focus, "のべ"))
     parts.append(f'のべ **{total["total"]:,}人**（同じ人でも別の日に投票報告すれば別に数えます）')
-    if total["partial_days"]:
-        parts.append(f'-# ⚠ {"、".join(total["partial_days"])} は部分集計を含みます。')
+    excluded = total.get("excluded_days") or total.get("partial_days")
+    if excluded:
+        parts.append(f'-# ⚠ {"、".join(excluded)} は1日分に満たないため、'
+                     "のべ数から除外しています。")
     if data.get("saturated"):
         parts.append(f'-# ⚠ 取りこぼしの疑いが {len(data["saturated"])}名 に記録されています。'
                      f'投稿が多いアイドルほど実数より少なく出ます。')
