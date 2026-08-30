@@ -137,6 +137,10 @@
 
     var FONT_FAMILY = '"MarshMallowPopHeart", "Zen Maru Gothic", "Yusei Magic", sans-serif';
 
+    /* 画像下部の決まり文句と、名前・決まり文句に共通の文字サイズ上限 */
+    var KAWAII = 'カワイイ!!';
+    var NAME_MAX_SIZE = 150;
+
     var PAGE_URL = 'https://nagomi-sugarheart.github.io/SugarHeartDB/General/NozomiRoulette.html';
 
     var canvas  = document.getElementById('nr-canvas');
@@ -490,15 +494,15 @@
         // 上部：2人の名前（2枚目の見本にならって右上がりに傾ける）
         var nameA = displayName(pick.a);
         var nameB = displayName(pick.b);
-        var sizeA = fitFontSize(ctx, nameA, 150, 540);
-        var sizeB = fitFontSize(ctx, nameB, 150, 540);
+        var sizeA = fitFontSize(ctx, nameA, NAME_MAX_SIZE, 540);
+        var sizeB = fitFontSize(ctx, nameB, NAME_MAX_SIZE, 540);
         var nameSize = Math.min(sizeA, sizeB);
         popText(ctx, nameA, 306, 132, nameSize, -5, pal);
         popText(ctx, nameB, 894, 132, nameSize, 5, pal);
 
-        // 下部：カワイイ！！
-        var kawaiiSize = fitFontSize(ctx, 'カワイイ！！', 140, 640);
-        popText(ctx, 'カワイイ！！', W / 2, H - 86, kawaiiSize, -4, pal);
+        // 下部：カワイイ!!（名前が2〜3文字のときと同じ大きさになるよう上限をそろえる）
+        var kawaiiSize = fitFontSize(ctx, KAWAII, NAME_MAX_SIZE, W - 80);
+        popText(ctx, KAWAII, W / 2, H - 96, kawaiiSize, -4, pal);
 
         // 最前面：デフォルト表示の輿水幸子としゅがーはぁと
         // （本人が選ばれているときは非表示、2人そろったときも非表示）
@@ -607,7 +611,7 @@
             showOverlay(false);
             canvas.setAttribute('aria-label',
                 displayName(a) + ' と ' + displayName(b) + ' が選ばれた画像');
-            resultEl.textContent = '「' + displayName(a) + '」 × 「' + displayName(b) + '」 …… カワイイ！！'
+            resultEl.textContent = '「' + displayName(a) + '」 × 「' + displayName(b) + '」 …… ' + KAWAII
                 + (both ? '（とくべつバージョン！）' : '');
             setBusy(false);
         })['catch'](function (err) {
@@ -627,7 +631,7 @@
     function shareText() {
         return '特急のぞみルーレットの結果は\n'
             + '「' + displayName(current.a) + '」×「' + displayName(current.b) + '」！\n'
-            + 'カワイイ！！\n'
+            + KAWAII + '\n'
             + '#特急のぞみルーレット #SugarHeartDB';
     }
 
@@ -708,7 +712,7 @@
 
     function ready() {
         // フォントを読み込んでからCanvasに描く（未読み込みだと代替フォントで描画されるため）
-        var probe = 'はぁとさちこカワイイ！！';
+        var probe = 'はぁとさちこ' + KAWAII;
         var waitFont = (document.fonts && document.fonts.load)
             ? document.fonts.load('92px "MarshMallowPopHeart"', probe)
                 .then(function () { return document.fonts.ready; })
