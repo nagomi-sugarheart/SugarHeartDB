@@ -130,8 +130,9 @@
     var givenNames = {};
 
     /* 立ち絵の切り出し設定。data/idol-tachie.json から読み込む。
-       全員を同じ画素サイズの枠で頭頂基準に切り出すので、同じ大きさで並べれば
-       ポーズにかかわらず頭の大きさがそろう。 */
+       顔の位置を基準に、全員を同じ画素サイズの枠で切り出すので、同じ大きさで
+       並べればポーズにかかわらず頭の大きさと顔の高さがそろう。
+       髪飾りなどは枠の上へはみ出して、名前の文字と重なる。 */
     var tachieCfg = null;
 
     var FONT_FAMILY = '"MarshMallowPopHeart", "Zen Maru Gothic", "Yusei Magic", sans-serif';
@@ -463,8 +464,8 @@
             // 描き下ろしイラストがある場合は、それ1枚を画面いっぱいに敷く
             drawCover(ctx, pick.imgSpecial);
         } else {
-            var destH = special ? 628 : 600;
-            var topY = special ? 246 : 258;
+            var destH = special ? 882 : 842;
+            var topY = special ? -20 : 4;
             var pos = pairPositions(pick.a.slug, pick.b.slug, destH);
             drawTachie(ctx, pick.imgA, pick.a.slug, pos[0], topY, destH);
             drawTachie(ctx, pick.imgB, pick.b.slug, pos[1], topY, destH);
@@ -502,10 +503,10 @@
         // 最前面：デフォルト表示の輿水幸子としゅがーはぁと
         // （本人が選ばれているときは非表示、2人そろったときも非表示）
         if (pick.cornerSachiko) {
-            drawTachie(ctx, pick.cornerSachiko, SACHIKO, 122, H - 288, 296);
+            drawTachie(ctx, pick.cornerSachiko, SACHIKO, 122, H - 414, 415);
         }
         if (pick.cornerShin) {
-            drawTachie(ctx, pick.cornerShin, SHIN, W - 122, H - 288, 296);
+            drawTachie(ctx, pick.cornerShin, SHIN, W - 122, H - 414, 415);
         }
     }
 

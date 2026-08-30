@@ -1,13 +1,13 @@
 {
- "_readme": "立ち絵の切り出し設定。head=頭頂（毛先を含む）のy座標、axis=体の中心のx座標、l/r=体の中心から絵の左端・右端までの距離。いずれも frame を基準にした元画像の座標。アイドルごとに \"scale\" を足すと、そのアイドルだけ表示倍率を変えられる（既定は1）。",
+ "_readme": "立ち絵の切り出し設定。head=顔の位置（頭の幅が出る行）のy座標、axis=体の中心のx座標、l/r=体の中心から絵の左端・右端までの距離。いずれも frame を基準にした元画像の座標。切り出しは head から crop.pad だけ上を上端とするため、顔の高さが全員そろい、髪飾りなどは上にはみ出す。アイドルごとに \"scale\" を足すと、そのアイドルだけ表示倍率を変えられる（既定は1）。",
  "frame": {
   "w": 1070,
   "h": 1511
  },
  "crop": {
-  "pad": 12,
+  "pad": 270,
   "w": 1070,
-  "h": 520
+  "h": 730
  },
  "layout": {
   "gap": 448,
@@ -15,1141 +15,1141 @@
  },
  "idols": {
   "aikawa_chinatsu": {
-   "head": 224,
+   "head": 243,
    "axis": 545,
    "l": 216,
    "r": 141
   },
   "aino_nagisa": {
-   "head": 212,
+   "head": 244,
    "axis": 532,
    "l": 204,
    "r": 262
   },
   "aiba_yumi": {
-   "head": 270,
+   "head": 305,
    "axis": 594,
-   "l": 357,
+   "l": 346,
    "r": 179
   },
   "aihara_yukino": {
-   "head": 331,
+   "head": 368,
    "axis": 550,
    "l": 247,
    "r": 198
   },
   "akagi_miria": {
-   "head": 399,
+   "head": 437,
    "axis": 574,
-   "l": 197,
+   "l": 193,
    "r": 213
   },
   "akanishi_erika": {
-   "head": 282,
+   "head": 335,
    "axis": 520,
-   "l": 192,
+   "l": 202,
    "r": 190
   },
   "asano_fuka": {
-   "head": 213,
+   "head": 255,
    "axis": 527,
    "l": 262,
    "r": 245
   },
   "asari_nanami": {
-   "head": 359,
+   "head": 396,
    "axis": 589,
    "l": 356,
    "r": 218
   },
   "anastasia": {
-   "head": 227,
+   "head": 259,
    "axis": 540,
    "l": 277,
-   "r": 215
+   "r": 208
   },
   "abe_nana": {
-   "head": 185,
+   "head": 383,
    "axis": 557,
-   "l": 238,
-   "r": 174
+   "l": 273,
+   "r": 179
   },
   "ayase_honoka": {
-   "head": 242,
+   "head": 276,
    "axis": 545,
    "l": 385,
    "r": 166
   },
   "araki_hina": {
-   "head": 264,
+   "head": 303,
    "axis": 559,
    "l": 276,
    "r": 268
   },
   "ariura_kanna": {
-   "head": 282,
+   "head": 321,
    "axis": 502,
    "l": 174,
    "r": 259
   },
   "anzai_miyako": {
-   "head": 229,
+   "head": 267,
    "axis": 542,
    "l": 248,
    "r": 209
   },
   "eve_santaclaus": {
-   "head": 167,
+   "head": 216,
    "axis": 544,
    "l": 229,
    "r": 213
   },
   "igarashi_kyoko": {
-   "head": 276,
+   "head": 314,
    "axis": 541,
    "l": 222,
    "r": 353
   },
   "ikebukuro_akiha": {
-   "head": 379,
+   "head": 406,
    "axis": 540,
    "l": 282,
    "r": 317
   },
   "ijuin_megumi": {
-   "head": 261,
+   "head": 285,
    "axis": 549,
    "l": 261,
    "r": 317
   },
   "ichinose_shiki": {
-   "head": 211,
+   "head": 251,
    "axis": 530,
    "l": 260,
    "r": 347
   },
   "ichihara_nina": {
-   "head": 421,
+   "head": 480,
    "axis": 558,
    "l": 308,
    "r": 278
   },
   "imai_kana": {
-   "head": 334,
+   "head": 363,
    "axis": 543,
    "l": 222,
    "r": 304
   },
   "imura_setsuna": {
-   "head": 258,
+   "head": 295,
    "axis": 544,
    "l": 189,
    "r": 291
   },
   "ueda_suzuho": {
-   "head": 260,
+   "head": 300,
    "axis": 538,
    "l": 462,
    "r": 445
   },
   "ujiie_mutsumi": {
-   "head": 281,
+   "head": 341,
    "axis": 525,
    "l": 180,
    "r": 226
   },
   "umeki_otoha": {
-   "head": 76,
+   "head": 131,
    "axis": 536,
-   "l": 259,
-   "r": 205
+   "l": 263,
+   "r": 248
   },
   "egami_tsubaki": {
-   "head": 219,
+   "head": 276,
    "axis": 594,
-   "l": 246,
+   "l": 263,
    "r": 104
   },
   "eto_misaki": {
-   "head": 254,
+   "head": 289,
    "axis": 536,
    "l": 274,
    "r": 321
   },
   "ebihara_naho": {
-   "head": 262,
+   "head": 313,
    "axis": 501,
    "l": 166,
-   "r": 362
+   "r": 365
   },
   "oikawa_shizuku": {
-   "head": 166,
+   "head": 204,
    "axis": 533,
    "l": 280,
    "r": 220
   },
   "ohishi_izumi": {
-   "head": 274,
+   "head": 305,
    "axis": 540,
    "l": 196,
    "r": 329
   },
   "ohta_yuu": {
-   "head": 285,
+   "head": 307,
    "axis": 589,
-   "l": 278,
+   "l": 253,
    "r": 122
   },
   "ohtsuki_yui": {
-   "head": 251,
+   "head": 303,
    "axis": 515,
    "l": 270,
    "r": 214
   },
   "ohnishi_yuriko": {
-   "head": 248,
+   "head": 273,
    "axis": 552,
-   "l": 201,
+   "l": 178,
    "r": 157
   },
   "ohnuma_kurumi": {
-   "head": 344,
+   "head": 383,
    "axis": 567,
    "l": 213,
    "r": 181
   },
   "ohara_michiru": {
-   "head": 305,
+   "head": 341,
    "axis": 601,
-   "l": 260,
+   "l": 246,
    "r": 195
   },
   "okazaki_yasuha": {
-   "head": 310,
+   "head": 331,
    "axis": 554,
    "l": 235,
-   "r": 256
+   "r": 223
   },
   "ogata_chieri": {
-   "head": 322,
+   "head": 336,
    "axis": 541,
    "l": 166,
    "r": 180
   },
   "okuyama_saori": {
-   "head": 261,
+   "head": 308,
    "axis": 560,
    "l": 263,
    "r": 238
   },
   "otokura_yuuki": {
-   "head": 251,
+   "head": 270,
    "axis": 598,
    "l": 364,
    "r": 200
   },
   "katagiri_sanae": {
-   "head": 269,
+   "head": 325,
    "axis": 545,
    "l": 204,
    "r": 194
   },
   "kamijo_haruna": {
-   "head": 268,
+   "head": 326,
    "axis": 568,
    "l": 271,
    "r": 186
   },
   "kamiya_nao": {
-   "head": 279,
+   "head": 307,
    "axis": 558,
    "l": 214,
    "r": 224
   },
   "kawashima_mizuki": {
-   "head": 247,
+   "head": 277,
    "axis": 533,
    "l": 214,
-   "r": 226
+   "r": 213
   },
   "kanzaki_ranko": {
-   "head": 274,
+   "head": 296,
    "axis": 579,
    "l": 543,
    "r": 444
   },
   "kishibe_ayaka": {
-   "head": 302,
+   "head": 323,
    "axis": 527,
    "l": 252,
-   "r": 258
+   "r": 230
   },
   "kitagawa_mahiro": {
-   "head": 292,
+   "head": 334,
    "axis": 533,
    "l": 261,
    "r": 216
   },
   "kita_hinako": {
-   "head": 312,
+   "head": 354,
    "axis": 556,
-   "l": 185,
-   "r": 233
+   "l": 181,
+   "r": 228
   },
   "kitami_yuzu": {
-   "head": 377,
+   "head": 413,
    "axis": 541,
    "l": 179,
    "r": 127
   },
   "kiba_manami": {
-   "head": 230,
+   "head": 290,
    "axis": 516,
    "l": 250,
    "r": 274
   },
   "kimura_natsuki": {
-   "head": 250,
+   "head": 309,
    "axis": 561,
    "l": 161,
-   "r": 122
+   "r": 135
   },
   "cathy_graham": {
-   "head": 159,
+   "head": 239,
    "axis": 476,
    "l": 155,
-   "r": 370
+   "r": 419
   },
   "kirino_aya": {
-   "head": 224,
+   "head": 262,
    "axis": 523,
    "l": 215,
    "r": 271
   },
   "kiryu_tsukasa": {
-   "head": 193,
+   "head": 235,
    "axis": 522,
-   "l": 123,
-   "r": 205
+   "l": 133,
+   "r": 253
   },
   "kusakabe_wakaba": {
-   "head": 334,
+   "head": 364,
    "axis": 546,
    "l": 231,
    "r": 229
   },
   "kudo_shinobu": {
-   "head": 347,
+   "head": 387,
    "axis": 584,
    "l": 260,
    "r": 173
   },
   "clarice": {
-   "head": 203,
+   "head": 247,
    "axis": 525,
    "l": 213,
    "r": 314
   },
   "kurihara_nene": {
-   "head": 248,
+   "head": 284,
    "axis": 550,
    "l": 271,
    "r": 193
   },
   "kurokawa_chiaki": {
-   "head": 211,
+   "head": 245,
    "axis": 547,
    "l": 298,
    "r": 235
   },
   "kurosaki_chitose": {
-   "head": 111,
+   "head": 250,
    "axis": 581,
-   "l": 201,
-   "r": 236
+   "l": 494,
+   "r": 266
   },
   "kate": {
-   "head": 249,
+   "head": 283,
    "axis": 542,
    "l": 239,
    "r": 218
   },
   "koga_koharu": {
-   "head": 411,
+   "head": 456,
    "axis": 568,
    "l": 287,
    "r": 235
   },
   "koshimizu_sachiko": {
-   "head": 359,
+   "head": 409,
    "axis": 536,
    "l": 186,
    "r": 228
   },
   "koseki_reina": {
-   "head": 340,
+   "head": 373,
    "axis": 546,
    "l": 278,
    "r": 214
   },
   "kobayakawa_sae": {
-   "head": 330,
+   "head": 353,
    "axis": 539,
    "l": 282,
    "r": 330
   },
   "kohinata_miho": {
-   "head": 278,
+   "head": 308,
    "axis": 531,
-   "l": 196,
+   "l": 125,
    "r": 200
   },
   "komatsu_ibuki": {
-   "head": 255,
+   "head": 284,
    "axis": 595,
    "l": 338,
    "r": 163
   },
   "komuro_chinami": {
-   "head": 165,
+   "head": 219,
    "axis": 555,
    "l": 311,
    "r": 245
   },
   "saionji_kotoka": {
-   "head": 282,
+   "head": 320,
    "axis": 555,
-   "l": 287,
+   "l": 284,
    "r": 299
   },
   "zaizen_tokiko": {
-   "head": 182,
+   "head": 229,
    "axis": 590,
    "l": 364,
    "r": 181
   },
   "saito_yoko": {
-   "head": 291,
+   "head": 360,
    "axis": 472,
    "l": 133,
-   "r": 314
+   "r": 329
   },
   "saejima_kiyomi": {
-   "head": 328,
+   "head": 364,
    "axis": 574,
-   "l": 220,
+   "l": 202,
    "r": 108
   },
   "sakakibara_satomi": {
-   "head": 267,
+   "head": 296,
    "axis": 528,
    "l": 184,
    "r": 239
   },
   "sagisawa_fumika": {
-   "head": 228,
+   "head": 252,
    "axis": 557,
-   "l": 166,
+   "l": 161,
    "r": 173
   },
   "sakuma_mayu": {
-   "head": 348,
+   "head": 393,
    "axis": 520,
    "l": 270,
-   "r": 201
+   "r": 200
   },
   "sakurai_momoka": {
-   "head": 392,
+   "head": 421,
    "axis": 558,
-   "l": 189,
+   "l": 185,
    "r": 267
   },
   "sasaki_chie": {
-   "head": 416,
+   "head": 435,
    "axis": 546,
    "l": 159,
-   "r": 216
+   "r": 192
   },
   "sajo_yukimi": {
-   "head": 437,
+   "head": 467,
    "axis": 535,
    "l": 291,
    "r": 235
   },
   "sato_shin": {
-   "head": 112,
+   "head": 193,
    "axis": 504,
    "l": 218,
    "r": 350
   },
   "sawada_marina": {
-   "head": 196,
+   "head": 247,
    "axis": 549,
    "l": 211,
    "r": 251
   },
   "shiina_noriko": {
-   "head": 371,
+   "head": 404,
    "axis": 492,
    "l": 199,
    "r": 254
   },
   "shiomi_shuko": {
-   "head": 245,
+   "head": 268,
    "axis": 586,
    "l": 288,
    "r": 106
   },
   "shinohara_rei": {
-   "head": 138,
+   "head": 174,
    "axis": 511,
    "l": 184,
-   "r": 340
+   "r": 356
   },
   "shibuya_rin": {
-   "head": 235,
+   "head": 286,
    "axis": 534,
    "l": 208,
-   "r": 240
+   "r": 242
   },
   "shimamura_uzuki": {
-   "head": 230,
+   "head": 281,
    "axis": 556,
    "l": 244,
    "r": 269
   },
   "shuto_aoi": {
-   "head": 392,
+   "head": 420,
    "axis": 522,
    "l": 284,
-   "r": 288
+   "r": 285
   },
   "jougasaki_mika": {
-   "head": 231,
+   "head": 297,
    "axis": 526,
    "l": 160,
    "r": 192
   },
   "jougasaki_rika": {
-   "head": 228,
+   "head": 343,
    "axis": 560,
    "l": 235,
    "r": 221
   },
   "shiragiku_hotaru": {
-   "head": 300,
+   "head": 335,
    "axis": 528,
    "l": 123,
-   "r": 168
+   "r": 162
   },
   "shirasaka_koume": {
-   "head": 366,
+   "head": 398,
    "axis": 537,
-   "l": 171,
+   "l": 162,
    "r": 352
   },
   "shirayuki_chiyo": {
-   "head": 280,
+   "head": 321,
    "axis": 542,
    "l": 159,
    "r": 147
   },
   "sugisaka_umi": {
-   "head": 222,
+   "head": 261,
    "axis": 599,
    "l": 431,
    "r": 163
   },
   "suzumiya_seika": {
-   "head": 242,
+   "head": 274,
    "axis": 561,
    "l": 234,
-   "r": 192
+   "r": 184
   },
   "sunazuka_akira": {
-   "head": 313,
+   "head": 343,
    "axis": 528,
    "l": 244,
    "r": 234
   },
   "seki_hiromi": {
-   "head": 279,
+   "head": 320,
    "axis": 552,
    "l": 233,
    "r": 180
   },
   "sena_shiori": {
-   "head": 199,
+   "head": 240,
    "axis": 535,
-   "l": 333,
+   "l": 336,
    "r": 276
   },
   "senzaki_ema": {
-   "head": 278,
+   "head": 297,
    "axis": 560,
    "l": 250,
    "r": 172
   },
   "soma_natsumi": {
-   "head": 215,
+   "head": 256,
    "axis": 539,
-   "l": 260,
+   "l": 266,
    "r": 232
   },
   "takagaki_kaede": {
-   "head": 155,
+   "head": 192,
    "axis": 541,
    "l": 354,
    "r": 170
   },
   "takahashi_reiko": {
-   "head": 253,
+   "head": 295,
    "axis": 561,
    "l": 235,
    "r": 291
   },
   "takafuji_kako": {
-   "head": 241,
+   "head": 268,
    "axis": 547,
-   "l": 254,
-   "r": 292
+   "l": 240,
+   "r": 288
   },
   "takamine_noa": {
-   "head": 241,
+   "head": 278,
    "axis": 566,
    "l": 212,
    "r": 332
   },
   "takamori_aiko": {
-   "head": 250,
+   "head": 301,
    "axis": 539,
    "l": 244,
-   "r": 216
+   "r": 218
   },
   "tada_riina": {
-   "head": 288,
+   "head": 318,
    "axis": 525,
    "l": 160,
    "r": 227
   },
   "tachibana_arisu": {
-   "head": 415,
+   "head": 446,
    "axis": 526,
    "l": 186,
    "r": 268
   },
   "tsukimiya_miyabi": {
-   "head": 296,
+   "head": 329,
    "axis": 528,
-   "l": 133,
+   "l": 124,
    "r": 207
   },
   "tsujino_akari": {
-   "head": 214,
+   "head": 264,
    "axis": 575,
    "l": 332,
    "r": 241
   },
   "tsuchiya_ako": {
-   "head": 285,
+   "head": 325,
    "axis": 556,
    "l": 373,
    "r": 196
   },
   "togo_ai": {
-   "head": 144,
+   "head": 222,
    "axis": 534,
-   "l": 113,
+   "l": 157,
    "r": 174
   },
   "domyoji_karin": {
-   "head": 246,
+   "head": 280,
    "axis": 541,
    "l": 197,
    "r": 278
   },
   "totoki_airi": {
-   "head": 236,
+   "head": 286,
    "axis": 527,
    "l": 169,
    "r": 246
   },
   "nagatomi_hasumi": {
-   "head": 246,
+   "head": 272,
    "axis": 537,
    "l": 229,
    "r": 229
   },
   "nakano_yuka": {
-   "head": 361,
+   "head": 385,
    "axis": 519,
    "l": 190,
    "r": 279
   },
   "natalia": {
-   "head": 282,
+   "head": 322,
    "axis": 524,
    "l": 327,
    "r": 402
   },
   "namiki_meiko": {
-   "head": 256,
+   "head": 287,
    "axis": 580,
    "l": 330,
    "r": 292
   },
   "narumiya_yume": {
-   "head": 333,
+   "head": 375,
    "axis": 556,
    "l": 207,
-   "r": 242
+   "r": 238
   },
   "nanjo_hikaru": {
-   "head": 414,
+   "head": 476,
    "axis": 529,
    "l": 211,
-   "r": 210
+   "r": 226
   },
   "namba_emi": {
-   "head": 237,
+   "head": 285,
    "axis": 549,
    "l": 237,
    "r": 221
   },
   "nishikawa_honami": {
-   "head": 270,
+   "head": 319,
    "axis": 561,
    "l": 231,
    "r": 364
   },
   "nishijima_kai": {
-   "head": 124,
+   "head": 199,
    "axis": 559,
    "l": 308,
-   "r": 320
+   "r": 354
   },
   "nitta_minami": {
-   "head": 216,
+   "head": 251,
    "axis": 548,
    "l": 328,
    "r": 224
   },
   "ninomiya_asuka": {
-   "head": 289,
+   "head": 316,
    "axis": 533,
    "l": 262,
    "r": 233
   },
   "niwa_hitomi": {
-   "head": 262,
+   "head": 298,
    "axis": 538,
    "l": 237,
-   "r": 186
+   "r": 178
   },
   "nonomura_sora": {
-   "head": 213,
+   "head": 254,
    "axis": 574,
    "l": 311,
    "r": 235
   },
   "hattori_toko": {
-   "head": 151,
+   "head": 193,
    "axis": 534,
    "l": 246,
    "r": 227
   },
   "hamakawa_ayuna": {
-   "head": 168,
+   "head": 210,
    "axis": 514,
    "l": 213,
    "r": 242
   },
   "hamaguchi_ayame": {
-   "head": 261,
+   "head": 283,
    "axis": 510,
    "l": 115,
-   "r": 272
+   "r": 170
   },
   "hayasaka_mirei": {
-   "head": 360,
+   "head": 388,
    "axis": 559,
-   "l": 229,
+   "l": 212,
    "r": 214
   },
   "hayami_kanade": {
-   "head": 242,
+   "head": 273,
    "axis": 554,
    "l": 198,
    "r": 191
   },
   "harada_miyo": {
-   "head": 234,
+   "head": 262,
    "axis": 528,
    "l": 229,
    "r": 210
   },
   "hiiragi_shino": {
-   "head": 153,
+   "head": 202,
    "axis": 523,
    "l": 244,
    "r": 193
   },
   "hisakawa_nagi": {
-   "head": 306,
+   "head": 344,
    "axis": 535,
    "l": 203,
    "r": 232
   },
   "hisakawa_hayate": {
-   "head": 301,
+   "head": 337,
    "axis": 544,
    "l": 204,
    "r": 361
   },
   "hino_akane": {
-   "head": 282,
+   "head": 328,
    "axis": 550,
    "l": 248,
    "r": 228
   },
   "himekawa_yuki": {
-   "head": 240,
+   "head": 278,
    "axis": 555,
    "l": 256,
    "r": 222
   },
   "hyodo_rena": {
-   "head": 147,
+   "head": 190,
    "axis": 548,
-   "l": 179,
+   "l": 190,
    "r": 219
   },
   "fukuyama_mai": {
-   "head": 432,
+   "head": 466,
    "axis": 533,
    "l": 273,
    "r": 292
   },
   "fujii_tomo": {
-   "head": 182,
+   "head": 217,
    "axis": 560,
    "l": 256,
-   "r": 253
+   "r": 259
   },
   "fujimoto_rina": {
-   "head": 286,
+   "head": 329,
    "axis": 543,
    "l": 341,
    "r": 348
   },
   "fujiwara_hajime": {
-   "head": 264,
+   "head": 291,
    "axis": 531,
-   "l": 161,
-   "r": 272
+   "l": 148,
+   "r": 263
   },
   "futaba_anzu": {
-   "head": 370,
+   "head": 398,
    "axis": 577,
-   "l": 291,
-   "r": 300
+   "l": 285,
+   "r": 295
   },
   "furusawa_yoriko": {
-   "head": 221,
+   "head": 256,
    "axis": 542,
    "l": 133,
    "r": 186
   },
   "helen": {
-   "head": 263,
+   "head": 297,
    "axis": 558,
-   "l": 424,
+   "l": 419,
    "r": 384
   },
   "hojo_karen": {
-   "head": 281,
+   "head": 311,
    "axis": 541,
    "l": 197,
    "r": 274
   },
   "hoshi_shoko": {
-   "head": 321,
+   "head": 423,
    "axis": 564,
-   "l": 329,
+   "l": 332,
    "r": 311
   },
   "hori_yuko": {
-   "head": 227,
+   "head": 275,
    "axis": 547,
    "l": 283,
    "r": 217
   },
   "honda_mio": {
-   "head": 288,
+   "head": 337,
    "axis": 530,
-   "l": 319,
+   "l": 324,
    "r": 216
   },
   "maekawa_miku": {
-   "head": 359,
+   "head": 388,
    "axis": 520,
    "l": 268,
-   "r": 255
+   "r": 234
   },
   "makihara_shiho": {
-   "head": 219,
+   "head": 270,
    "axis": 547,
    "l": 262,
    "r": 224
   },
   "matsuo_chizuru": {
-   "head": 254,
+   "head": 291,
    "axis": 532,
-   "l": 235,
+   "l": 230,
    "r": 209
   },
   "matsunaga_ryo": {
-   "head": 272,
+   "head": 309,
    "axis": 548,
    "l": 170,
    "r": 274
   },
   "matsubara_saya": {
-   "head": 345,
+   "head": 396,
    "axis": 488,
    "l": 168,
    "r": 292
   },
   "matsumoto_sarina": {
-   "head": 328,
+   "head": 388,
    "axis": 521,
    "l": 170,
    "r": 292
   },
   "matsuyama_kumiko": {
-   "head": 202,
+   "head": 275,
    "axis": 543,
    "l": 263,
    "r": 235
   },
   "matoba_risa": {
-   "head": 344,
+   "head": 387,
    "axis": 578,
    "l": 335,
    "r": 236
   },
   "manaka_misato": {
-   "head": 237,
+   "head": 261,
    "axis": 530,
    "l": 200,
    "r": 212
   },
   "manabe_itsuki": {
-   "head": 200,
+   "head": 218,
    "axis": 506,
    "l": 223,
    "r": 343
   },
   "mizuki_seira": {
-   "head": 261,
+   "head": 313,
    "axis": 559,
    "l": 375,
    "r": 228
   },
   "mizuno_midori": {
-   "head": 213,
+   "head": 236,
    "axis": 564,
    "l": 278,
    "r": 248
   },
   "mizumoto_yukari": {
-   "head": 297,
+   "head": 335,
    "axis": 542,
    "l": 289,
    "r": 235
   },
   "mifune_miyu": {
-   "head": 198,
+   "head": 219,
    "axis": 563,
-   "l": 305,
+   "l": 346,
    "r": 342
   },
   "mimura_kanako": {
-   "head": 253,
+   "head": 333,
    "axis": 543,
    "l": 158,
    "r": 229
   },
   "miyamoto_frederica": {
-   "head": 250,
+   "head": 288,
    "axis": 559,
    "l": 351,
    "r": 205
   },
   "miyoshi_sana": {
-   "head": 345,
+   "head": 370,
    "axis": 539,
    "l": 301,
    "r": 262
   },
   "mukai_takumi": {
-   "head": 235,
+   "head": 278,
    "axis": 540,
    "l": 235,
    "r": 262
   },
   "munakata_atsumi": {
-   "head": 363,
+   "head": 378,
    "axis": 564,
    "l": 315,
    "r": 201
   },
   "murakami_tomoe": {
-   "head": 370,
+   "head": 399,
    "axis": 534,
    "l": 191,
    "r": 194
   },
   "muramatsu_sakura": {
-   "head": 418,
+   "head": 456,
    "axis": 551,
    "l": 350,
    "r": 304
   },
   "mary_cochran": {
-   "head": 270,
+   "head": 329,
    "axis": 574,
    "l": 315,
    "r": 279
   },
   "mochida_arisa": {
-   "head": 246,
+   "head": 313,
    "axis": 547,
-   "l": 230,
+   "l": 245,
    "r": 161
   },
   "mochizuki_hijiri": {
-   "head": 336,
+   "head": 377,
    "axis": 531,
-   "l": 169,
+   "l": 166,
    "r": 191
   },
   "momoi_azuki": {
-   "head": 385,
+   "head": 426,
    "axis": 524,
-   "l": 200,
-   "r": 309
+   "l": 196,
+   "r": 305
   },
   "morikubo_nono": {
-   "head": 325,
+   "head": 363,
    "axis": 525,
    "l": 122,
    "r": 154
   },
   "moroboshi_kirari": {
-   "head": 59,
+   "head": 101,
    "axis": 527,
-   "l": 222,
+   "l": 236,
    "r": 297
   },
   "yao_fueifuei": {
-   "head": 320,
+   "head": 337,
    "axis": 569,
-   "l": 227,
+   "l": 210,
    "r": 305
   },
   "yagami_makino": {
-   "head": 255,
+   "head": 298,
    "axis": 555,
    "l": 176,
    "r": 114
   },
   "yaguchi_miu": {
-   "head": 326,
+   "head": 357,
    "axis": 542,
    "l": 160,
    "r": 259
   },
   "yanagi_kiyora": {
-   "head": 227,
+   "head": 301,
    "axis": 537,
    "l": 182,
-   "r": 173
+   "r": 174
   },
   "yanase_miyuki": {
-   "head": 369,
+   "head": 418,
    "axis": 537,
    "l": 267,
    "r": 266
   },
   "yamato_aki": {
-   "head": 210,
+   "head": 260,
    "axis": 554,
    "l": 231,
    "r": 177
   },
   "yuuki_haru": {
-   "head": 435,
+   "head": 478,
    "axis": 533,
    "l": 223,
    "r": 141
   },
   "yusa_kozue": {
-   "head": 464,
+   "head": 517,
    "axis": 554,
    "l": 227,
    "r": 275
   },
   "yumemi_riamu": {
-   "head": 325,
+   "head": 353,
    "axis": 536,
    "l": 282,
-   "r": 233
+   "r": 154
   },
   "yokoyama_chika": {
-   "head": 477,
+   "head": 524,
    "axis": 556,
    "l": 245,
    "r": 252
   },
   "yoshioka_saki": {
-   "head": 173,
+   "head": 212,
    "axis": 549,
    "l": 213,
    "r": 300
   },
   "yorita_yoshino": {
-   "head": 332,
+   "head": 357,
    "axis": 557,
-   "l": 307,
+   "l": 296,
    "r": 321
   },
   "layla": {
-   "head": 328,
+   "head": 367,
    "axis": 536,
    "l": 220,
    "r": 239
   },
   "ryuzaki_kaoru": {
-   "head": 470,
+   "head": 503,
    "axis": 578,
    "l": 263,
    "r": 123
   },
   "wakabayashi_tomoka": {
-   "head": 227,
+   "head": 283,
    "axis": 599,
    "l": 297,
    "r": 240
   },
   "wakiyama_tamami": {
-   "head": 350,
+   "head": 417,
    "axis": 585,
-   "l": 311,
+   "l": 318,
    "r": 174
   },
   "wakui_rumi": {
-   "head": 184,
+   "head": 219,
    "axis": 527,
    "l": 393,
    "r": 207
