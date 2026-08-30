@@ -426,6 +426,27 @@
         c.drawImage(img, (W - w) / 2, (H - h) / 2, w, h);
     }
 
+    /**
+     * 2人を並べる横位置を決める。
+     * ふだんは決まった間隔で近くに置くが、羽根や大きな衣装で横に広がるアイドルが
+     * 相手の顔にかぶってしまう場合だけ、かぶらない分だけ左右に離す。
+     */
+    function pairPositions(slugA, slugB, destH) {
+        var cfg = tachieCfg;
+        var k = destH / cfg.crop.h;                 // 元画像 → キャンバスの倍率
+        var pa = cfg.idols[slugA] || {}, pb = cfg.idols[slugB] || {};
+        var face = cfg.layout.face;
+
+        var need = Math.max(
+            cfg.layout.gap,                          // ふだんの間隔
+            (pa.r || 0) + face,                      // 左の人の右端が、右の人の顔にかからない
+            (pb.l || 0) + face                       // 右の人の左端が、左の人の顔にかからない
+        ) * k;
+
+        var half = Math.min(need, W - 2 * 232) / 2;  // 顔が画面外に出ないところで打ち止め
+        return [W / 2 - half, W / 2 + half];
+    }
+
     /* ---------- 1枚を組み立てる ---------- */
 
     function drawScene(pick) {
@@ -442,10 +463,11 @@
             // 描き下ろしイラストがある場合は、それ1枚を画面いっぱいに敷く
             drawCover(ctx, pick.imgSpecial);
         } else {
-            var destH = special ? 575 : 545;
-            var topY = special ? 300 : 312;
-            drawTachie(ctx, pick.imgA, pick.a.slug, 300, topY, destH);
-            drawTachie(ctx, pick.imgB, pick.b.slug, 900, topY, destH);
+            var destH = special ? 628 : 600;
+            var topY = special ? 246 : 258;
+            var pos = pairPositions(pick.a.slug, pick.b.slug, destH);
+            drawTachie(ctx, pick.imgA, pick.a.slug, pos[0], topY, destH);
+            drawTachie(ctx, pick.imgB, pick.b.slug, pos[1], topY, destH);
         }
 
         if (special && !pick.imgSpecial) {
@@ -480,10 +502,10 @@
         // 最前面：デフォルト表示の輿水幸子としゅがーはぁと
         // （本人が選ばれているときは非表示、2人そろったときも非表示）
         if (pick.cornerSachiko) {
-            drawTachie(ctx, pick.cornerSachiko, SACHIKO, 122, H - 258, 268);
+            drawTachie(ctx, pick.cornerSachiko, SACHIKO, 122, H - 288, 296);
         }
         if (pick.cornerShin) {
-            drawTachie(ctx, pick.cornerShin, SHIN, W - 122, H - 258, 268);
+            drawTachie(ctx, pick.cornerShin, SHIN, W - 122, H - 288, 296);
         }
     }
 
