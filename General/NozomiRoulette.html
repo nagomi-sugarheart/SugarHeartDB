@@ -129,6 +129,11 @@
     /* slug → 下の名前（ひらがな）。data/idol-given-names.json から読み込む */
     var givenNames = {};
 
+    /* 立ち絵の切り出し設定。data/idol-tachie.json から読み込む。
+       全員を同じ画素サイズの枠で頭頂基準に切り出すので、同じ大きさで並べれば
+       ポーズにかかわらず頭の大きさがそろう。 */
+    var tachieCfg = null;
+
     var FONT_FAMILY = '"MarshMallowPopHeart", "Zen Maru Gothic", "Yusei Magic", sans-serif';
 
     var PAGE_URL = 'https://nagomi-sugarheart.github.io/SugarHeartDB/General/NozomiRoulette.html';
@@ -186,8 +191,8 @@
 
     /* ---------- 画像読み込み ---------- */
 
-    function tachieUrl(slug, width) {
-        return CLOUD + 'f_auto,q_auto,w_' + width + '/data/tachie/' + slug;
+    function tachieUrl(slug) {
+        return CLOUD + 'f_auto,q_auto/data/tachie/' + slug;
     }
 
     function loadImage(url) {
@@ -375,15 +380,42 @@
 
     /* ---------- 立ち絵 ---------- */
 
-    /** 縦横比を保ったまま指定の枠に収め、中央下ぞろえで描く */
-    function drawTachie(c, img, centerX, bottomY, maxW, maxH) {
-        var scale = Math.min(maxW / img.width, maxH / img.height);
-        var w = img.width * scale, h = img.height * scale;
+    /**
+     * 立ち絵を頭頂基準で切り出して描く。
+     * 切り出し枠は全員共通の画素サイズなので、destH をそろえるだけで
+     * 腕を上げているアイドルも下ろしているアイドルも同じ大きさに見える。
+     * centerX は体の中心、topY は切り出し枠の上端（＝頭の少し上）の位置。
+     */
+    function drawTachie(c, img, slug, centerX, topY, destH) {
+        var cfg = tachieCfg;
+        var p = (cfg.idols && cfg.idols[slug]) || { head: 0, axis: cfg.frame.w / 2 };
+        var f = img.naturalWidth / cfg.frame.w;   // 配信された画像の縮尺
+
+        var sx = (p.axis - cfg.crop.w / 2) * f;
+        var sy = (p.head - cfg.crop.pad) * f;
+        var sw = cfg.crop.w * f;
+        var sh = cfg.crop.h * f;
+
+        var dh = destH * (p.scale || 1);
+        var dw = dh * (cfg.crop.w / cfg.crop.h);
+        var dx = centerX - dw / 2;
+        var dy = topY;
+
+        // 切り出し枠が元画像からはみ出す場合は、重なっている部分だけを
+        // 対応する位置・大きさで描く（見切れても位置がずれないようにする）
+        var cx0 = Math.max(0, sx), cy0 = Math.max(0, sy);
+        var cx1 = Math.min(img.naturalWidth, sx + sw);
+        var cy1 = Math.min(img.naturalHeight, sy + sh);
+        if (cx1 <= cx0 || cy1 <= cy0) return;
+
+        var kx = dw / sw, ky = dh / sh;
         c.save();
-        c.shadowColor = 'rgba(190, 60, 130, 0.30)';
-        c.shadowBlur = 26;
+        c.shadowColor = 'rgba(190, 60, 130, 0.28)';
+        c.shadowBlur = 24;
         c.shadowOffsetY = 8;
-        c.drawImage(img, centerX - w / 2, bottomY - h, w, h);
+        c.drawImage(img, cx0, cy0, cx1 - cx0, cy1 - cy0,
+                    dx + (cx0 - sx) * kx, dy + (cy0 - sy) * ky,
+                    (cx1 - cx0) * kx, (cy1 - cy0) * ky);
         c.restore();
     }
 
@@ -410,11 +442,10 @@
             // 描き下ろしイラストがある場合は、それ1枚を画面いっぱいに敷く
             drawCover(ctx, pick.imgSpecial);
         } else {
-            var maxW = special ? 590 : 560;
-            var maxH = special ? 690 : 660;
-            var bottomY = H - 16;
-            drawTachie(ctx, pick.imgA, 330, bottomY, maxW, maxH);
-            drawTachie(ctx, pick.imgB, 870, bottomY, maxW, maxH);
+            var destH = special ? 575 : 545;
+            var topY = special ? 300 : 312;
+            drawTachie(ctx, pick.imgA, pick.a.slug, 300, topY, destH);
+            drawTachie(ctx, pick.imgB, pick.b.slug, 900, topY, destH);
         }
 
         if (special && !pick.imgSpecial) {
@@ -449,10 +480,10 @@
         // 最前面：デフォルト表示の輿水幸子としゅがーはぁと
         // （本人が選ばれているときは非表示、2人そろったときも非表示）
         if (pick.cornerSachiko) {
-            drawTachie(ctx, pick.cornerSachiko, 118, H + 6, 250, 310);
+            drawTachie(ctx, pick.cornerSachiko, SACHIKO, 122, H - 258, 268);
         }
         if (pick.cornerShin) {
-            drawTachie(ctx, pick.cornerShin, W - 118, H + 6, 250, 310);
+            drawTachie(ctx, pick.cornerShin, SHIN, W - 122, H - 258, 268);
         }
     }
 
@@ -530,10 +561,10 @@
         var both = hasSachiko && hasShin;
 
         var jobs = [
-            loadImage(tachieUrl(a.slug, 700)),
-            loadImage(tachieUrl(b.slug, 700)),
-            hasSachiko || both ? null : loadImage(tachieUrl(SACHIKO, 360)),
-            hasShin || both ? null : loadImage(tachieUrl(SHIN, 360)),
+            loadImage(tachieUrl(a.slug)),
+            loadImage(tachieUrl(b.slug)),
+            hasSachiko || both ? null : loadImage(tachieUrl(SACHIKO)),
+            hasShin || both ? null : loadImage(tachieUrl(SHIN)),
             both && SPECIAL_ART
                 ? loadImage(CLOUD + 'f_auto,q_auto,w_1200/' + SPECIAL_ART)['catch'](function () { return null; })
                 : null
@@ -672,11 +703,16 @@
         fetch('data/idol-given-names.json').then(function (r) {
             if (!r.ok) throw new Error('idol-given-names.json の取得に失敗しました');
             return r.json();
+        }),
+        fetch('data/idol-tachie.json').then(function (r) {
+            if (!r.ok) throw new Error('idol-tachie.json の取得に失敗しました');
+            return r.json();
         })
     ])
         .then(function (res) {
             idols = res[0].filter(function (d) { return d && d.slug && d.kana; });
             givenNames = res[1];
+            tachieCfg = res[2];
             if (idols.length < 2) throw new Error('アイドルデータが足りません');
             return ready();
         })
