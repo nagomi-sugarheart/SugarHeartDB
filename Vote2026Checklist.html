@@ -13,10 +13,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
-    <link rel="stylesheet" href="style.css?v=20260726">
+    <link rel="stylesheet" href="style.css?v=20260727">
 </head>
 <body>
-<script src="components/header.js?v=20260726"></script>
+<script src="components/header.js?v=20260727"></script>
 
 <section class="page-hero">
     <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>投票チェックリスト（臨時）</strong></div>
@@ -182,12 +182,36 @@
 (function () {
     var STORAGE_KEY = 'sh-vote2026-checklist-done';
 
+    // URLハッシュで開くタブを指定できるようにする。
+    //   #once     → 1回きりのやること（#vc-tab-2 も可）
+    //   #daily    → 毎日やること（#vc-tab-1）
+    //   #shortcut → ショートカットの使い方（#vc-tab-3）
+    var TAB_ALIAS = {
+        'daily': 'vc-tab-1', 'once': 'vc-tab-2', 'shortcut': 'vc-tab-3',
+        'vc-tab-1': 'vc-tab-1', 'vc-tab-2': 'vc-tab-2', 'vc-tab-3': 'vc-tab-3'
+    };
+    var hashKey = (location.hash || '').replace('#', '');
+    var targetTab = TAB_ALIAS[hashKey];
+    if (targetTab) {
+        var group = document.querySelector('.tab-group');
+        if (group) {
+            group.querySelectorAll('.tab-item').forEach(function (b) { b.classList.remove('active'); });
+            group.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('active'); });
+            group.querySelectorAll('.tab-item').forEach(function (b) {
+                if ((b.getAttribute('onclick') || '').indexOf("'" + targetTab + "'") !== -1) b.classList.add('active');
+            });
+            var panel = group.querySelector('.tab-panel[data-tab="' + targetTab + '"]');
+            if (panel) panel.classList.add('active');
+        }
+    }
+
     // 「最新の情報に更新」ボタン：一意なクエリを付けてキャッシュを回避して再読み込み。
+    // 開いているタブ（ハッシュ）は維持する。
     // チェック状況は localStorage（端末ごと・URLクエリ非依存）に保持されるため消えない。
     var refreshBtn = document.getElementById('vc-refresh-btn');
     if (refreshBtn) {
         refreshBtn.addEventListener('click', function () {
-            location.replace(location.pathname + '?_=' + Date.now());
+            location.replace(location.pathname + '?_=' + Date.now() + location.hash);
         });
     }
 
@@ -242,6 +266,6 @@
 })();
 </script>
 
-<script src="components/common.js?v=20260726"></script>
+<script src="components/common.js?v=20260727"></script>
 </body>
 </html>
