@@ -123,6 +123,12 @@
     var SACHIKO = 'koshimizu_sachiko';
     var SHIN    = 'sato_shin';
 
+    /* 画像のすみに常に置く輿水幸子としゅがーはぁとのイラスト（描き下ろしのSD） */
+    var CORNER_ART = {
+        koshimizu_sachiko: 'data/roulette/corner_koshimizu_sachiko',
+        sato_shin:         'data/roulette/corner_sato_shin'
+    };
+
     /* 佐藤心だけは「はぁと」表記にする */
     var NAME_OVERRIDE = { sato_shin: 'はぁと' };
 
@@ -136,6 +142,9 @@
     var tachieCfg = null;
 
     var FONT_FAMILY = '"MarshMallowPopHeart", "Zen Maru Gothic", "Yusei Magic", sans-serif';
+
+    /* すみのSDイラストを収める枠の大きさ */
+    var CORNER_BOX = { w: 300, h: 320 };
 
     /* 画像下部の決まり文句と、名前・決まり文句に共通の文字サイズ上限 */
     var KAWAII = 'カワイイ!!';
@@ -198,6 +207,10 @@
 
     function tachieUrl(slug) {
         return CLOUD + 'f_auto,q_auto/data/tachie/' + slug;
+    }
+
+    function cornerUrl(slug) {
+        return CLOUD + 'f_auto,q_auto,w_600/' + CORNER_ART[slug];
     }
 
     function loadImage(url) {
@@ -424,6 +437,18 @@
         c.restore();
     }
 
+    /** すみのSDイラストを、縦横比を保ったまま枠に収めて中央下ぞろえで描く */
+    function drawCorner(c, img, centerX, bottomY) {
+        var scale = Math.min(CORNER_BOX.w / img.naturalWidth, CORNER_BOX.h / img.naturalHeight);
+        var w = img.naturalWidth * scale, h = img.naturalHeight * scale;
+        c.save();
+        c.shadowColor = 'rgba(190, 60, 130, 0.28)';
+        c.shadowBlur = 22;
+        c.shadowOffsetY = 6;
+        c.drawImage(img, centerX - w / 2, bottomY - h, w, h);
+        c.restore();
+    }
+
     /** アスペクト比を保ったまま画面いっぱいに敷く（描き下ろしイラスト用） */
     function drawCover(c, img) {
         var scale = Math.max(W / img.width, H / img.height);
@@ -500,18 +525,19 @@
         popText(ctx, nameA, 306, 132, nameSize, -5, pal);
         popText(ctx, nameB, 894, 132, nameSize, 5, pal);
 
-        // 下部：カワイイ!!（名前が2〜3文字のときと同じ大きさになるよう上限をそろえる）
-        var kawaiiSize = fitFontSize(ctx, KAWAII, NAME_MAX_SIZE, W - 80);
-        popText(ctx, KAWAII, W / 2, H - 96, kawaiiSize, -4, pal);
-
-        // 最前面：デフォルト表示の輿水幸子としゅがーはぁと
+        // 下すみ：デフォルト表示の輿水幸子としゅがーはぁと
         // （本人が選ばれているときは非表示、2人そろったときも非表示）
         if (pick.cornerSachiko) {
-            drawTachie(ctx, pick.cornerSachiko, SACHIKO, 122, H - 414, 415);
+            drawCorner(ctx, pick.cornerSachiko, 165, H - 8);
         }
         if (pick.cornerShin) {
-            drawTachie(ctx, pick.cornerShin, SHIN, W - 122, H - 414, 415);
+            drawCorner(ctx, pick.cornerShin, W - 165, H - 8);
         }
+
+        // 最前面：カワイイ!!（名前が2〜3文字のときと同じ大きさになるよう上限をそろえる）
+        // すみのイラストと少し重なるので、文字が隠れないよう最後に描く
+        var kawaiiSize = fitFontSize(ctx, KAWAII, NAME_MAX_SIZE, W - 80);
+        popText(ctx, KAWAII, W / 2, H - 96, kawaiiSize, -4, pal);
     }
 
     /** 「幸子＋心」のときだけ描く金色の飾り枠 */
@@ -590,8 +616,8 @@
         var jobs = [
             loadImage(tachieUrl(a.slug)),
             loadImage(tachieUrl(b.slug)),
-            hasSachiko || both ? null : loadImage(tachieUrl(SACHIKO)),
-            hasShin || both ? null : loadImage(tachieUrl(SHIN)),
+            hasSachiko || both ? null : loadImage(cornerUrl(SACHIKO)),
+            hasShin || both ? null : loadImage(cornerUrl(SHIN)),
             both && SPECIAL_ART
                 ? loadImage(CLOUD + 'f_auto,q_auto,w_1200/' + SPECIAL_ART)['catch'](function () { return null; })
                 : null
