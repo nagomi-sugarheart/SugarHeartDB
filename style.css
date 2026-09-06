@@ -7640,6 +7640,36 @@ input[name="dialogue-tab"] {
     color: var(--sh-text-mute);
 }
 
+/* スペシャルサンクス */
+.nr-thanks {
+    max-width: 860px;
+    margin: 30px auto 0;
+    padding: 18px 20px;
+    border-radius: 16px;
+    background: var(--sh-pink-hush);
+    border: 1px solid var(--sh-pink-mist);
+    text-align: center;
+}
+
+.nr-thanks h2 {
+    margin: 0 0 6px;
+    font-family: var(--font-display);
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    color: var(--sh-pink-deep);
+}
+
+.nr-thanks p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--sh-text);
+}
+
+.nr-thanks a {
+    color: var(--sh-pink-deep);
+}
+
 @media screen and (max-width: 900px) {
     .nr-canvas-frame {
         border-radius: 16px;
