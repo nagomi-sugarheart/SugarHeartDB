@@ -7677,9 +7677,14 @@ input[name="dialogue-tab"] {
 }
 
 @media screen and (max-width: 900px) {
+    /* スマホでは横いっぱいにせず、文字も少し小さくする */
     .nr-vote-btn {
-        display: block;
-        padding: 15px 20px;
+        padding: 11px 26px;
+        font-size: 1.02rem;
+    }
+
+    .nr-vote-lead {
+        font-size: 0.9rem;
     }
 }
 
