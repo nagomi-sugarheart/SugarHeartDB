@@ -688,7 +688,7 @@
             imageEl.alt = displayName(a) + ' と ' + displayName(b) + ' が選ばれた画像';
             cacheBlob(current);
             showOverlay(false);
-            resultEl.textContent = resultText(a, b);
+            setResultText(resultText(a, b));
             setBusy(false);
         })['catch'](function (err) {
             showOverlay(true);
@@ -706,6 +706,25 @@
 
     function resultText(a, b) {
         return displayName(a) + 'と' + displayName(b) + 'は？カワイイ！！';
+    }
+
+    /* 表示用フォント（Yusei Magic）の「ゔ」は濁点が文字送りの外に描かれていて、
+       次の文字に重なってしまう（イヴの「いゔ」が「いうど…」に見える）。
+       この1文字だけ本文用フォントで描くために <span> で包む。 */
+    var VU = 'ゔ';
+
+    function setResultText(text) {
+        resultEl.textContent = '';
+        var parts = text.split(VU);
+        for (var i = 0; i < parts.length; i++) {
+            if (i > 0) {
+                var span = document.createElement('span');
+                span.className = 'nr-vu';
+                span.textContent = VU;
+                resultEl.appendChild(span);
+            }
+            if (parts[i]) resultEl.appendChild(document.createTextNode(parts[i]));
+        }
     }
 
     /* ---------- Xへの投稿 ---------- */
