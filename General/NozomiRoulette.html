@@ -41,7 +41,7 @@
 
     <section class="nr-stage">
         <div class="nr-canvas-frame" id="nr-frame">
-            <canvas id="nr-canvas" width="1200" height="900"
+            <canvas id="nr-canvas" width="1200" height="800"
                     role="img"
                     aria-label="ルーレットで選ばれた2人のアイドルの画像"></canvas>
             <div class="nr-overlay" id="nr-overlay" aria-hidden="true">
@@ -112,7 +112,7 @@
        ============================================================ */
 
     var CLOUD = 'https://res.cloudinary.com/dnmzdghoi/image/upload/';
-    var W = 1200, H = 900;
+    var W = 1200, H = 800;
 
     /* 画像素材（Cloudinary public_id）
        立ち絵は data/tachie/{slug} に190人分アップロード済み。
@@ -144,7 +144,7 @@
     var FONT_FAMILY = '"MarshMallowPopHeart", "Zen Maru Gothic", "Yusei Magic", sans-serif';
 
     /* すみのSDイラストを収める枠の大きさ */
-    var CORNER_BOX = { w: 300, h: 320 };
+    var CORNER_BOX = { w: 285, h: 305 };
 
     /* 画像下部の決まり文句と、文字サイズの上限 */
     var KAWAII = 'カワイイ!!';
@@ -495,7 +495,7 @@
             drawCover(ctx, pick.imgSpecial);
         } else {
             var destH = special ? 882 : 842;
-            var topY = special ? -20 : 4;
+            var topY = special ? -46 : -31;
             var pos = pairPositions(pick.a.slug, pick.b.slug, destH);
             drawTachie(ctx, pick.imgA, pick.a.slug, pos[0], topY, destH);
             drawTachie(ctx, pick.imgB, pick.b.slug, pos[1], topY, destH);
@@ -523,22 +523,22 @@
         var sizeA = fitFontSize(ctx, nameA, NAME_MAX_SIZE, 540);
         var sizeB = fitFontSize(ctx, nameB, NAME_MAX_SIZE, 540);
         var nameSize = Math.min(sizeA, sizeB);
-        popText(ctx, nameA, 306, 132, nameSize, -5, pal);
-        popText(ctx, nameB, 894, 132, nameSize, 5, pal);
+        popText(ctx, nameA, 306, 118, nameSize, -5, pal);
+        popText(ctx, nameB, 894, 118, nameSize, 5, pal);
 
         // 下すみ：デフォルト表示の輿水幸子としゅがーはぁと
         // （本人が選ばれているときは非表示、2人そろったときも非表示）
         if (pick.cornerSachiko) {
-            drawCorner(ctx, pick.cornerSachiko, 165, H - 8);
+            drawCorner(ctx, pick.cornerSachiko, 158, H - 6);
         }
         if (pick.cornerShin) {
-            drawCorner(ctx, pick.cornerShin, W - 165, H - 8);
+            drawCorner(ctx, pick.cornerShin, W - 158, H - 6);
         }
 
         // 最前面：カワイイ!!
         // すみのイラストと少し重なるので、文字が隠れないよう最後に描く
         var kawaiiSize = fitFontSize(ctx, KAWAII, KAWAII_MAX_SIZE, W - 80);
-        popText(ctx, KAWAII, W / 2, H - 132, kawaiiSize, -4, pal);
+        popText(ctx, KAWAII, W / 2, H - 120, kawaiiSize, -4, pal);
     }
 
     /** 「幸子＋心」のときだけ描く金色の飾り枠 */

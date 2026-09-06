@@ -7535,7 +7535,7 @@ input[name="dialogue-tab"] {
     overflow: hidden;
     background: var(--grad-sugar-soft);
     box-shadow: 0 10px 30px rgba(253, 137, 185, 0.28);
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 2;
 }
 
 .nr-canvas-frame canvas {
