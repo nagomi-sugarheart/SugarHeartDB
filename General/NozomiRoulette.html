@@ -191,6 +191,12 @@
 
     /* ---------- 立ち絵の左右 ---------- */
 
+    /** なびく髪など、相手と重なってよい広がりを持つか（data/idol-tachie.json の behind） */
+    function isBehind(slug) {
+        var p = tachieCfg && tachieCfg.idols && tachieCfg.idols[slug];
+        return !!(p && p.behind);
+    }
+
     /** 左右のどちら側に置きたいかの希望（data/idol-tachie.json の side） */
     function preferredSide(idol) {
         var p = tachieCfg && tachieCfg.idols && tachieCfg.idols[idol.slug];
@@ -473,10 +479,12 @@
         var pa = cfg.idols[slugA] || {}, pb = cfg.idols[slugB] || {};
         var face = cfg.layout.face;
 
+        // behind のアイドルは「重なってよい広がり」（なびく髪など）として、
+        // 離す量の計算から外す。そのぶん相手より奥に描いて重なりを自然に見せる。
         var need = Math.max(
-            cfg.layout.gap,                          // ふだんの間隔
-            (pa.r || 0) + face,                      // 左の人の右端が、右の人の顔にかからない
-            (pb.l || 0) + face                       // 右の人の左端が、左の人の顔にかからない
+            cfg.layout.gap,                                      // ふだんの間隔
+            pa.behind ? 0 : (pa.r || 0) + face,                  // 左の人の右端が、右の人の顔にかからない
+            pb.behind ? 0 : (pb.l || 0) + face                   // 右の人の左端が、左の人の顔にかからない
         ) * k;
 
         var half = Math.min(need, W - 2 * 232) / 2;  // 顔が画面外に出ないところで打ち止め
@@ -503,8 +511,13 @@
             var destH = special ? 882 : 842;
             var topY = special ? -46 : -31;
             var pos = pairPositions(pick.a.slug, pick.b.slug, destH);
-            drawTachie(ctx, pick.imgA, pick.a.slug, pos[0], topY, destH);
-            drawTachie(ctx, pick.imgB, pick.b.slug, pos[1], topY, destH);
+            // behind のアイドルが先＝奥になるよう、描く順番を決める
+            var order = isBehind(pick.b.slug) && !isBehind(pick.a.slug)
+                ? [[pick.imgB, pick.b.slug, pos[1]], [pick.imgA, pick.a.slug, pos[0]]]
+                : [[pick.imgA, pick.a.slug, pos[0]], [pick.imgB, pick.b.slug, pos[1]]];
+            for (var i = 0; i < order.length; i++) {
+                drawTachie(ctx, order[i][0], order[i][1], order[i][2], topY, destH);
+            }
         }
 
         if (special && !pick.imgSpecial) {
