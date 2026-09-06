@@ -146,9 +146,10 @@
     /* すみのSDイラストを収める枠の大きさ */
     var CORNER_BOX = { w: 300, h: 320 };
 
-    /* 画像下部の決まり文句と、名前・決まり文句に共通の文字サイズ上限 */
+    /* 画像下部の決まり文句と、文字サイズの上限 */
     var KAWAII = 'カワイイ!!';
     var NAME_MAX_SIZE = 150;
+    var KAWAII_MAX_SIZE = 132;
 
     var PAGE_URL = 'https://nagomi-sugarheart.github.io/SugarHeartDB/General/NozomiRoulette.html';
 
@@ -534,10 +535,10 @@
             drawCorner(ctx, pick.cornerShin, W - 165, H - 8);
         }
 
-        // 最前面：カワイイ!!（名前が2〜3文字のときと同じ大きさになるよう上限をそろえる）
+        // 最前面：カワイイ!!
         // すみのイラストと少し重なるので、文字が隠れないよう最後に描く
-        var kawaiiSize = fitFontSize(ctx, KAWAII, NAME_MAX_SIZE, W - 80);
-        popText(ctx, KAWAII, W / 2, H - 96, kawaiiSize, -4, pal);
+        var kawaiiSize = fitFontSize(ctx, KAWAII, KAWAII_MAX_SIZE, W - 80);
+        popText(ctx, KAWAII, W / 2, H - 132, kawaiiSize, -4, pal);
     }
 
     /** 「幸子＋心」のときだけ描く金色の飾り枠 */
