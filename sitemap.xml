@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/CardList.html</loc>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -67,7 +67,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/Common/BusinessCommu.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -132,7 +132,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/Event/DekobokoSpeedStar.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -177,7 +177,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Deresute/Event/OumuamuaKooun.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -791,6 +791,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/General/NozomiRoulette.html</loc>
+    <lastmod>2026-08-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/General/References.html</loc>
     <lastmod>2026-07-21</lastmod>
     <priority>0.6</priority>
@@ -857,7 +862,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Mobamas/CinderellaHistory.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1142,7 +1147,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Unit/CharismaDesigners/CharismaDesigners.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1157,12 +1162,12 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Unit/DokaPokaKoumuten/DokaPokaKoumuten.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Unit/ErikaPtoSugarheart/ErikaPtoSugarheart.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1187,7 +1192,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Unit/HamidashimononoKenkyuugyo/HamidashimononoKenkyuugyo.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1202,7 +1207,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Unit/KarenSousakutai/KarenSousakutai.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1217,7 +1222,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Unit/KisekaeNingyoandShitateyaSan/KisekaeNingyoandShitateyaSan.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1237,7 +1242,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Unit/MajonoYakata-DarkMagic/MajonoYakata-DarkMagic.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1247,7 +1252,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Unit/MoulinRouge/MoulinRouge.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1277,7 +1282,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Unit/QueensClassmate_Bride/QueensClassmate_Bride.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1312,7 +1317,7 @@
   </url>
   <url>
     <loc>https://nagomi-sugarheart.github.io/SugarHeartDB/Unit/TatakauOtometachi/TatakauOtometachi.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <priority>0.5</priority>
   </url>
   <url>

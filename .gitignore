@@ -18,3 +18,7 @@ scripts/derepo_slices/
 # 使い捨てのアップロード/生成/移行スクリプトは必ずここに置く。README以外は追跡しない。
 scripts/tmp/*
 !scripts/tmp/README.md
+
+# フォント原本（Webフォントとして配信するのはサブセットのみ）
+*.otf
+*.ttf

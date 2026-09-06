@@ -7500,3 +7500,165 @@ input[name="dialogue-tab"] {
     .room-card-img { width: 100%; max-height: 200px; }
     .room-card-body { padding: 12px; }
 }
+
+/* ----------------------------------------------------------
+   特急のぞみルーレット（General/NozomiRoulette.html）
+---------------------------------------------------------- */
+
+/* 生成画像の名前表記に使うフォント。
+   必要な文字だけに絞ったサブセット（data/fonts/ 配下）を配信する。 */
+@font-face {
+    font-family: "MarshMallowPopHeart";
+    src: url("data/fonts/marshmallowpopheart-subset.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.page-hero-lead {
+    margin: 12px 0 0;
+    font-size: 0.92rem;
+    line-height: 1.9;
+    color: var(--sh-text-mute);
+}
+
+.nr-stage {
+    margin: 8px 0 34px;
+    text-align: center;
+}
+
+.nr-canvas-frame {
+    position: relative;
+    max-width: 860px;
+    margin: 0 auto;
+    border-radius: 22px;
+    overflow: hidden;
+    background: var(--grad-sugar-soft);
+    box-shadow: 0 10px 30px rgba(253, 137, 185, 0.28);
+    aspect-ratio: 3 / 2;
+}
+
+.nr-canvas-frame canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 抽選中のオーバーレイ */
+.nr-overlay {
+    position: absolute;
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 20px;
+    background: linear-gradient(160deg, rgba(255, 244, 250, 0.97), rgba(255, 214, 235, 0.97));
+}
+
+.nr-overlay.is-on {
+    display: flex;
+}
+
+.nr-reel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    font-family: "MarshMallowPopHeart", var(--font-display);
+    font-size: clamp(1.3rem, 4.4vw, 2.6rem);
+    color: var(--sh-pink-deep);
+}
+
+.nr-reel-name {
+    min-width: 4.5em;
+    padding: 4px 16px;
+    border-radius: var(--r-pill);
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(253, 137, 185, 0.3);
+}
+
+.nr-reel-x {
+    color: var(--sh-pink);
+}
+
+.nr-overlay-text {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(0.85rem, 2.6vw, 1rem);
+    color: var(--sh-text-mute);
+    line-height: 1.8;
+}
+
+.nr-result {
+    margin: 18px 0 0;
+    min-height: 1.9em;
+    font-family: var(--font-display);
+    font-size: clamp(0.95rem, 3vw, 1.15rem);
+    color: var(--sh-text);
+}
+
+.nr-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.nr-btn {
+    font-size: 0.95rem;
+    padding: 11px 26px;
+}
+
+.nr-btn[disabled] {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.nr-btn[disabled]:hover {
+    transform: none;
+}
+
+.nr-note {
+    margin: 14px 0 0;
+    min-height: 1.5em;
+    font-size: 0.82rem;
+    color: var(--sh-text-mute);
+}
+
+.nr-about {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.nr-about p {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.9;
+}
+
+.nr-credit p {
+    font-size: 0.78rem;
+    color: var(--sh-text-mute);
+}
+
+.nr-credit a {
+    color: var(--sh-pink-deep);
+}
+
+@media screen and (max-width: 900px) {
+    .nr-canvas-frame {
+        border-radius: 16px;
+    }
+    .nr-actions .nr-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

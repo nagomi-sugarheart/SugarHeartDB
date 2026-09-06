@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <base href="/SugarHeartDB/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特急のぞみルーレット｜SugarHeartDB</title>
+    <meta name="description" content="シンデレラガールズのアイドル190人からランダムに2人を選び、しゅがーはぁとと輿水幸子がお祝いする画像を生成するページです。">
+    <meta name="keywords" content="アイドルマスターシンデレラガールズ,デレマス,佐藤心,しゅがーはぁと,輿水幸子,特急のぞみ,ルーレット,画像生成">
+    <meta name="author" content="なごみ（@nagomi_IMCG）">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="特急のぞみルーレット｜SugarHeartDB">
+    <meta property="og:description" content="シンデレラガールズのアイドル190人からランダムに2人を選び、しゅがーはぁとと輿水幸子がお祝いする画像を生成するページです。">
+    <meta property="og:url" content="https://nagomi-sugarheart.github.io/SugarHeartDB/General/NozomiRoulette.html">
+    <meta property="og:site_name" content="SugarHeartDB">
+    <meta property="og:image" content="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Deresute/KonoyoDeTadaHitoriNoHeart+/KonoyoDeTadaHitoriNoHeart+">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="特急のぞみルーレット｜SugarHeartDB">
+    <meta name="twitter:description" content="シンデレラガールズのアイドル190人からランダムに2人を選ぶルーレット。">
+    <link rel="canonical" href="https://nagomi-sugarheart.github.io/SugarHeartDB/General/NozomiRoulette.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-32x32">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/favicon-16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dnmzdghoi/image/upload/f_auto,q_auto/Favicon/apple-touch-icon">
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="components/header.js"></script>
+
+<section class="page-hero">
+    <div class="breadcrumb"><a href="/SugarHeartDB/">HOME</a> · <strong>特急のぞみルーレット</strong></div>
+    <h1>特急のぞみルーレット <span class="sub">/ NOZOMI ROULETTE</span></h1>
+    <p class="page-hero-lead">
+        シンデレラガールズのアイドル190人から、ランダムで2人を選び出すルーレットだよぉ☆<br>
+        選ばれた2人の画像を作って、そのままXに投稿できちゃう♪
+    </p>
+</section>
+
+<div class="page">
+
+    <section class="nr-stage">
+        <div class="nr-canvas-frame" id="nr-frame">
+            <canvas id="nr-canvas" width="1200" height="800"
+                    role="img"
+                    aria-label="ルーレットで選ばれた2人のアイドルの画像"></canvas>
+            <div class="nr-overlay" id="nr-overlay" aria-hidden="true">
+                <div class="nr-reel">
+                    <span class="nr-reel-name" id="nr-reel-1">？？？</span>
+                    <span class="nr-reel-x">×</span>
+                    <span class="nr-reel-name" id="nr-reel-2">？？？</span>
+                </div>
+                <p class="nr-overlay-text" id="nr-overlay-text">とっきゅーのぞみ ちゅう…</p>
+            </div>
+        </div>
+
+        <p class="nr-result" id="nr-result" role="status" aria-live="polite"></p>
+
+        <div class="nr-actions">
+            <button type="button" class="sh-pill primary nr-btn" id="nr-share" disabled>
+                Xに投稿する
+            </button>
+            <button type="button" class="sh-pill ghost nr-btn" id="nr-again" disabled>
+                もう一度とっきゅーのぞみする
+            </button>
+        </div>
+
+        <p class="nr-note" id="nr-note" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="box-area nr-about">
+        <h2 class="box-title">このページについて</h2>
+        <div class="box-item">
+            <p>
+                「とっきゅーのぞみする」を押すたびに、シンデレラガールズのアイドル190人から
+                <strong>ランダムで2人</strong>が選ばれ、その場で画像を組み立てます。
+                名前は下の名前をひらがなで表記します（佐藤心だけは「はぁと」表記）。
+            </p>
+        </div>
+        <div class="box-item">
+            <p>
+                <strong>特別演出：</strong>
+                輿水幸子か佐藤心が選ばれたときは、画面すみの本人イラストがおやすみします。
+                2人そろって選ばれたときは……ちょっとだけ特別な画像になるよぉ☆
+            </p>
+        </div>
+        <div class="box-item">
+            <p>
+                「Xに投稿する」を押すと、画像・定型文・このページへのリンクをまとめて投稿できます。
+                画像の添付に対応していない環境では、画像を保存したうえで投稿画面を開きます。
+            </p>
+        </div>
+        <div class="box-item nr-credit">
+            <p>
+                立ち絵：<a href="https://cinderellagirls.idolmaster-official.jp/" target="_blank" rel="noopener">アイドルマスター シンデレラガールズ 公式サイト</a>より／
+                フォント：<a href="http://nonty.net/" target="_blank" rel="noopener">ましゅまろポップ♡ハート（Norio Kanisawa）</a>
+            </p>
+        </div>
+    </section>
+
+</div>
+
+<script>
+(function () {
+    'use strict';
+
+    /* ============================================================
+       特急のぞみルーレット
+       - 190人からランダムに2人を選び、Canvasで画像を組み立てる
+       - 組み合わせをURL等から指定できないよう、抽選は毎回クライアント内で
+         暗号論的乱数から行い、選出結果を一切URLに載せない
+       ============================================================ */
+
+    var CLOUD = 'https://res.cloudinary.com/dnmzdghoi/image/upload/';
+    var W = 1200, H = 800;
+
+    /* 画像素材（Cloudinary public_id）
+       立ち絵は data/tachie/{slug} に190人分アップロード済み。
+       描き下ろしイラストが用意できたら SPECIAL_ART に public_id を入れるだけで
+       「幸子＋心」のときにその1枚が使われるようになる。 */
+    var SPECIAL_ART = null;
+
+    var SACHIKO = 'koshimizu_sachiko';
+    var SHIN    = 'sato_shin';
+
+    /* 画像のすみに常に置く輿水幸子としゅがーはぁとのイラスト（描き下ろしのSD） */
+    var CORNER_ART = {
+        koshimizu_sachiko: 'data/roulette/corner_koshimizu_sachiko',
+        sato_shin:         'data/roulette/corner_sato_shin'
+    };
+
+    /* 佐藤心だけは「はぁと」表記にする */
+    var NAME_OVERRIDE = { sato_shin: 'はぁと' };
+
+    /* slug → 下の名前（ひらがな）。data/idol-given-names.json から読み込む */
+    var givenNames = {};
+
+    /* 立ち絵の切り出し設定。data/idol-tachie.json から読み込む。
+       顔の位置を基準に、全員を同じ画素サイズの枠で切り出すので、同じ大きさで
+       並べればポーズにかかわらず頭の大きさと顔の高さがそろう。
+       髪飾りなどは枠の上へはみ出して、名前の文字と重なる。 */
+    var tachieCfg = null;
+
+    var FONT_FAMILY = '"MarshMallowPopHeart", "Zen Maru Gothic", "Yusei Magic", sans-serif';
+
+    /* すみのSDイラストを収める枠の大きさ */
+    var CORNER_BOX = { w: 285, h: 305 };
+
+    /* 画像下部の決まり文句と、文字サイズの上限 */
+    var KAWAII = 'カワイイ!!';
+    var NAME_MAX_SIZE = 150;
+    var KAWAII_MAX_SIZE = 132;
+
+    var PAGE_URL = 'https://nagomi-sugarheart.github.io/SugarHeartDB/General/NozomiRoulette.html';
+
+    var canvas  = document.getElementById('nr-canvas');
+    var ctx     = canvas.getContext('2d');
+    var overlay = document.getElementById('nr-overlay');
+    var overlayText = document.getElementById('nr-overlay-text');
+    var reel1   = document.getElementById('nr-reel-1');
+    var reel2   = document.getElementById('nr-reel-2');
+    var resultEl = document.getElementById('nr-result');
+    var noteEl  = document.getElementById('nr-note');
+    var shareBtn = document.getElementById('nr-share');
+    var againBtn = document.getElementById('nr-again');
+
+    var idols = [];
+    var current = null;      // { a: idol, b: idol, both: bool }
+    var imageCache = {};
+    var busy = false;
+
+    var reduceMotion = window.matchMedia &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* ---------- 乱数：剰余バイアスのない一様乱数 ---------- */
+
+    function randomBelow(n) {
+        if (n <= 0) return 0;
+        var crypto = window.crypto || window.msCrypto;
+        if (!crypto || !crypto.getRandomValues) {
+            return Math.floor(Math.random() * n);
+        }
+        var limit = Math.floor(0x100000000 / n) * n;
+        var buf = new Uint32Array(1);
+        var v;
+        do {
+            crypto.getRandomValues(buf);
+            v = buf[0];
+        } while (v >= limit);
+        return v % n;
+    }
+
+    /** 重複しない2人を選ぶ */
+    function pickTwo(list) {
+        var i = randomBelow(list.length);
+        var j = randomBelow(list.length - 1);
+        if (j >= i) j += 1;
+        return [list[i], list[j]];
+    }
+
+    /* ---------- 表示名 ---------- */
+
+    function displayName(idol) {
+        return NAME_OVERRIDE[idol.slug] || givenNames[idol.slug] || idol.kana;
+    }
+
+    /* ---------- 画像読み込み ---------- */
+
+    function tachieUrl(slug) {
+        return CLOUD + 'f_auto,q_auto/data/tachie/' + slug;
+    }
+
+    function cornerUrl(slug) {
+        return CLOUD + 'f_auto,q_auto,w_600/' + CORNER_ART[slug];
+    }
+
+    function loadImage(url) {
+        if (imageCache[url]) return imageCache[url];
+        var p = new Promise(function (resolve, reject) {
+            var img = new Image();
+            img.crossOrigin = 'anonymous';
+            img.decoding = 'async';
+            img.onload = function () { resolve(img); };
+            img.onerror = function () { reject(new Error('画像を読み込めませんでした: ' + url)); };
+            img.src = url;
+        });
+        imageCache[url] = p;
+        return p;
+    }
+
+    /* ---------- 描画ヘルパー ---------- */
+
+    function heartPath(c, x, y, size, rotation) {
+        var s = size / 100;
+        c.save();
+        c.translate(x, y);
+        c.rotate(rotation || 0);
+        c.scale(s, s);
+        c.beginPath();
+        c.moveTo(0, 30);
+        c.bezierCurveTo(-45, -5, -50, -45, -22, -45);
+        c.bezierCurveTo(-8, -45, 0, -32, 0, -25);
+        c.bezierCurveTo(0, -32, 8, -45, 22, -45);
+        c.bezierCurveTo(50, -45, 45, -5, 0, 30);
+        c.closePath();
+        c.restore();
+    }
+
+    function starPath(c, x, y, size, rotation) {
+        var outer = size / 2, inner = outer * 0.45;
+        c.save();
+        c.translate(x, y);
+        c.rotate(rotation || 0);
+        c.beginPath();
+        for (var i = 0; i < 10; i++) {
+            var r = (i % 2 === 0) ? outer : inner;
+            var a = (Math.PI / 5) * i - Math.PI / 2;
+            var px = Math.cos(a) * r, py = Math.sin(a) * r;
+            if (i === 0) c.moveTo(px, py); else c.lineTo(px, py);
+        }
+        c.closePath();
+        c.restore();
+    }
+
+    /** 中央揃えのポップ文字（白フチ → マゼンタフチ → 白塗り） */
+    function popText(c, text, cx, cy, size, angleDeg, palette) {
+        c.save();
+        c.translate(cx, cy);
+        c.rotate(angleDeg * Math.PI / 180);
+        c.textAlign = 'center';
+        c.textBaseline = 'middle';
+        c.font = size + 'px ' + FONT_FAMILY;
+        c.lineJoin = 'round';
+        c.lineCap = 'round';
+        c.miterLimit = 2;
+
+        c.shadowColor = 'rgba(150, 0, 70, 0.32)';
+        c.shadowBlur = size * 0.14;
+        c.shadowOffsetY = size * 0.07;
+        c.lineWidth = size * 0.30;
+        c.strokeStyle = palette.outer;
+        c.strokeText(text, 0, 0);
+
+        c.shadowColor = 'transparent';
+        c.shadowBlur = 0;
+        c.shadowOffsetY = 0;
+        c.lineWidth = size * 0.17;
+        c.strokeStyle = palette.ring;
+        c.strokeText(text, 0, 0);
+
+        c.fillStyle = palette.fill;
+        c.fillText(text, 0, 0);
+        c.restore();
+    }
+
+    /** maxWidth に収まる文字サイズを求める（popText のフチ幅も見込む） */
+    function fitFontSize(c, text, maxSize, maxWidth) {
+        var size = maxSize;
+        while (size > 16) {
+            c.font = size + 'px ' + FONT_FAMILY;
+            if (c.measureText(text).width + size * 0.30 <= maxWidth) break;
+            size -= 2;
+        }
+        return size;
+    }
+
+    /* ---------- 背景 ---------- */
+
+    /* 背景の飾りは毎回同じ配置にしたいので、固定の擬似乱数列から生成する */
+    function decorations() {
+        var seed = 20260722;
+        function rnd() {
+            seed = (seed * 1103515245 + 12345) & 0x7fffffff;
+            return seed / 0x7fffffff;
+        }
+        var items = [];
+        for (var i = 0; i < 46; i++) {
+            items.push({
+                x: rnd() * W,
+                y: rnd() * H,
+                size: 22 + rnd() * 60,
+                rot: (rnd() - 0.5) * 1.2,
+                heart: rnd() < 0.62,
+                alpha: 0.12 + rnd() * 0.24
+            });
+        }
+        return items;
+    }
+    var DECOR = decorations();
+
+    function drawBackground(c, special) {
+        var g = c.createLinearGradient(0, 0, 0, H);
+        if (special) {
+            g.addColorStop(0, '#fff6dd');
+            g.addColorStop(0.45, '#ffe1ef');
+            g.addColorStop(1, '#ffc6e0');
+        } else {
+            g.addColorStop(0, '#fff4fa');
+            g.addColorStop(0.55, '#ffe3f0');
+            g.addColorStop(1, '#ffd0e5');
+        }
+        c.fillStyle = g;
+        c.fillRect(0, 0, W, H);
+
+        // 中央のステージライト
+        var glow = c.createRadialGradient(W / 2, H * 0.66, 40, W / 2, H * 0.66, W * 0.46);
+        glow.addColorStop(0, 'rgba(255,255,255,0.66)');
+        glow.addColorStop(1, 'rgba(255,255,255,0)');
+        c.fillStyle = glow;
+        c.fillRect(0, 0, W, H);
+
+        // ネオン風のうずまき（画面の左右を縁取る流れ）
+        var swirls = [
+            { col: special ? '#ffcf5a' : '#ff9dc7', w: 14, ox: 0,  sc: 1.00 },
+            { col: special ? '#ff8fc0' : '#ffd685', w: 9,  ox: 42, sc: 0.86 }
+        ];
+        c.save();
+        c.lineCap = 'round';
+        for (var s = 0; s < swirls.length; s++) {
+            var sw = swirls[s];
+            c.strokeStyle = sw.col;
+            c.lineWidth = sw.w;
+            c.globalAlpha = 0.5;
+            [-1, 1].forEach(function (dir) {
+                var baseX = dir < 0 ? 92 + sw.ox : W - 92 - sw.ox;
+                c.beginPath();
+                c.moveTo(baseX + dir * 60, H - 40);
+                c.bezierCurveTo(
+                    baseX - dir * 90 * sw.sc, H - 300,
+                    baseX + dir * 130 * sw.sc, 360,
+                    baseX - dir * 30 * sw.sc, 120
+                );
+                c.stroke();
+            });
+        }
+        c.restore();
+
+        // ハート・星の散らし
+        c.save();
+        for (var i = 0; i < DECOR.length; i++) {
+            var d = DECOR[i];
+            c.globalAlpha = d.alpha;
+            c.fillStyle = d.heart
+                ? (special ? '#ff9f2f' : '#ff5fa2')
+                : (special ? '#ff6fae' : '#ffc44d');
+            if (d.heart) heartPath(c, d.x, d.y, d.size, d.rot);
+            else starPath(c, d.x, d.y, d.size, d.rot);
+            c.fill();
+        }
+        c.restore();
+
+        // 下部の帯
+        var band = c.createLinearGradient(0, H - 190, 0, H);
+        band.addColorStop(0, 'rgba(255,255,255,0)');
+        band.addColorStop(1, special ? 'rgba(255, 214, 133, 0.55)' : 'rgba(255, 160, 205, 0.5)');
+        c.fillStyle = band;
+        c.fillRect(0, H - 190, W, 190);
+    }
+
+    /* ---------- 立ち絵 ---------- */
+
+    /**
+     * 立ち絵を頭頂基準で切り出して描く。
+     * 切り出し枠は全員共通の画素サイズなので、destH をそろえるだけで
+     * 腕を上げているアイドルも下ろしているアイドルも同じ大きさに見える。
+     * centerX は体の中心、topY は切り出し枠の上端（＝頭の少し上）の位置。
+     */
+    function drawTachie(c, img, slug, centerX, topY, destH) {
+        var cfg = tachieCfg;
+        var p = (cfg.idols && cfg.idols[slug]) || { head: 0, axis: cfg.frame.w / 2 };
+        var f = img.naturalWidth / cfg.frame.w;   // 配信された画像の縮尺
+
+        var sx = (p.axis - cfg.crop.w / 2) * f;
+        // offset を足すと切り出し位置が下にずれ、そのぶんアイドルが上に寄る
+        var sy = (p.head - cfg.crop.pad + (p.offset || 0)) * f;
+        var sw = cfg.crop.w * f;
+        var sh = cfg.crop.h * f;
+
+        var dh = destH * (p.scale || 1);
+        var dw = dh * (cfg.crop.w / cfg.crop.h);
+        var dx = centerX - dw / 2;
+        var dy = topY;
+
+        // 切り出し枠が元画像からはみ出す場合は、重なっている部分だけを
+        // 対応する位置・大きさで描く（見切れても位置がずれないようにする）
+        var cx0 = Math.max(0, sx), cy0 = Math.max(0, sy);
+        var cx1 = Math.min(img.naturalWidth, sx + sw);
+        var cy1 = Math.min(img.naturalHeight, sy + sh);
+        if (cx1 <= cx0 || cy1 <= cy0) return;
+
+        var kx = dw / sw, ky = dh / sh;
+        c.save();
+        c.shadowColor = 'rgba(190, 60, 130, 0.28)';
+        c.shadowBlur = 24;
+        c.shadowOffsetY = 8;
+        c.drawImage(img, cx0, cy0, cx1 - cx0, cy1 - cy0,
+                    dx + (cx0 - sx) * kx, dy + (cy0 - sy) * ky,
+                    (cx1 - cx0) * kx, (cy1 - cy0) * ky);
+        c.restore();
+    }
+
+    /** すみのSDイラストを、縦横比を保ったまま枠に収めて中央下ぞろえで描く */
+    function drawCorner(c, img, centerX, bottomY) {
+        var scale = Math.min(CORNER_BOX.w / img.naturalWidth, CORNER_BOX.h / img.naturalHeight);
+        var w = img.naturalWidth * scale, h = img.naturalHeight * scale;
+        c.save();
+        c.shadowColor = 'rgba(190, 60, 130, 0.28)';
+        c.shadowBlur = 22;
+        c.shadowOffsetY = 6;
+        c.drawImage(img, centerX - w / 2, bottomY - h, w, h);
+        c.restore();
+    }
+
+    /** アスペクト比を保ったまま画面いっぱいに敷く（描き下ろしイラスト用） */
+    function drawCover(c, img) {
+        var scale = Math.max(W / img.width, H / img.height);
+        var w = img.width * scale, h = img.height * scale;
+        c.drawImage(img, (W - w) / 2, (H - h) / 2, w, h);
+    }
+
+    /**
+     * 2人を並べる横位置を決める。
+     * ふだんは決まった間隔で近くに置くが、羽根や大きな衣装で横に広がるアイドルが
+     * 相手の顔にかぶってしまう場合だけ、かぶらない分だけ左右に離す。
+     */
+    function pairPositions(slugA, slugB, destH) {
+        var cfg = tachieCfg;
+        var k = destH / cfg.crop.h;                 // 元画像 → キャンバスの倍率
+        var pa = cfg.idols[slugA] || {}, pb = cfg.idols[slugB] || {};
+        var face = cfg.layout.face;
+
+        var need = Math.max(
+            cfg.layout.gap,                          // ふだんの間隔
+            (pa.r || 0) + face,                      // 左の人の右端が、右の人の顔にかからない
+            (pb.l || 0) + face                       // 右の人の左端が、左の人の顔にかからない
+        ) * k;
+
+        var half = Math.min(need, W - 2 * 232) / 2;  // 顔が画面外に出ないところで打ち止め
+        return [W / 2 - half, W / 2 + half];
+    }
+
+    /* ---------- 1枚を組み立てる ---------- */
+
+    function drawScene(pick) {
+        var special = pick.both;
+        var pal = {
+            outer: '#ffffff',
+            ring:  special ? '#ff7a00' : '#e6006e',
+            fill:  special ? '#fff8e6' : '#fff2f8'
+        };
+
+        drawBackground(ctx, special);
+
+        if (pick.imgSpecial) {
+            // 描き下ろしイラストがある場合は、それ1枚を画面いっぱいに敷く
+            drawCover(ctx, pick.imgSpecial);
+        } else {
+            var destH = special ? 882 : 842;
+            var topY = special ? -46 : -31;
+            var pos = pairPositions(pick.a.slug, pick.b.slug, destH);
+            drawTachie(ctx, pick.imgA, pick.a.slug, pos[0], topY, destH);
+            drawTachie(ctx, pick.imgB, pick.b.slug, pos[1], topY, destH);
+        }
+
+        if (special && !pick.imgSpecial) {
+            // 2人のあいだに大きなハート
+            ctx.save();
+            ctx.globalAlpha = 0.92;
+            ctx.fillStyle = '#ff4f9c';
+            heartPath(ctx, W / 2, 600, 132, 0);
+            ctx.fill();
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = '#ffffff';
+            heartPath(ctx, W / 2, 600, 132, 0);
+            ctx.stroke();
+            ctx.restore();
+
+            drawSpecialFrame(ctx);
+        }
+
+        // 上部：2人の名前（2枚目の見本にならって右上がりに傾ける）
+        var nameA = displayName(pick.a);
+        var nameB = displayName(pick.b);
+        var sizeA = fitFontSize(ctx, nameA, NAME_MAX_SIZE, 540);
+        var sizeB = fitFontSize(ctx, nameB, NAME_MAX_SIZE, 540);
+        var nameSize = Math.min(sizeA, sizeB);
+        popText(ctx, nameA, 306, 118, nameSize, -5, pal);
+        popText(ctx, nameB, 894, 118, nameSize, 5, pal);
+
+        // 下すみ：デフォルト表示の輿水幸子としゅがーはぁと
+        // （本人が選ばれているときは非表示、2人そろったときも非表示）
+        if (pick.cornerSachiko) {
+            drawCorner(ctx, pick.cornerSachiko, 158, H - 6);
+        }
+        if (pick.cornerShin) {
+            drawCorner(ctx, pick.cornerShin, W - 158, H - 6);
+        }
+
+        // 最前面：カワイイ!!
+        // すみのイラストと少し重なるので、文字が隠れないよう最後に描く
+        var kawaiiSize = fitFontSize(ctx, KAWAII, KAWAII_MAX_SIZE, W - 80);
+        popText(ctx, KAWAII, W / 2, H - 120, kawaiiSize, -4, pal);
+    }
+
+    /** 「幸子＋心」のときだけ描く金色の飾り枠 */
+    function drawSpecialFrame(c) {
+        c.save();
+        var inset = 16;
+        var fg = c.createLinearGradient(0, 0, W, H);
+        fg.addColorStop(0, '#ffd76a');
+        fg.addColorStop(0.5, '#ff9ecb');
+        fg.addColorStop(1, '#ffd76a');
+
+        c.lineJoin = 'round';
+        c.strokeStyle = 'rgba(255,255,255,0.9)';
+        c.lineWidth = 20;
+        c.strokeRect(inset, inset, W - inset * 2, H - inset * 2);
+        c.strokeStyle = fg;
+        c.lineWidth = 11;
+        c.strokeRect(inset, inset, W - inset * 2, H - inset * 2);
+
+        // 四隅のきらめき
+        var corners = [[62, 62], [W - 62, 62], [62, H - 62], [W - 62, H - 62]];
+        for (var i = 0; i < corners.length; i++) {
+            c.fillStyle = '#fff3c9';
+            c.strokeStyle = '#ffb43c';
+            c.lineWidth = 5;
+            starPath(c, corners[i][0], corners[i][1], 58, 0);
+            c.fill();
+            c.stroke();
+        }
+        c.restore();
+    }
+
+    /* ---------- 抽選の実行 ---------- */
+
+    function setBusy(state) {
+        busy = state;
+        shareBtn.disabled = state || !current;
+        againBtn.disabled = state;
+        againBtn.textContent = state ? 'とっきゅーのぞみ ちゅう…' : 'もう一度とっきゅーのぞみする';
+    }
+
+    function showOverlay(show) {
+        overlay.classList.toggle('is-on', show);
+        overlay.setAttribute('aria-hidden', show ? 'false' : 'true');
+    }
+
+    function spinReel(duration) {
+        return new Promise(function (resolve) {
+            if (reduceMotion || duration <= 0) { resolve(); return; }
+            var end = Date.now() + duration;
+            var timer = setInterval(function () {
+                reel1.textContent = displayName(idols[randomBelow(idols.length)]);
+                reel2.textContent = displayName(idols[randomBelow(idols.length)]);
+                if (Date.now() >= end) {
+                    clearInterval(timer);
+                    resolve();
+                }
+            }, 70);
+        });
+    }
+
+    function roll() {
+        if (busy) return;
+        setBusy(true);
+        noteEl.textContent = '';
+        overlayText.textContent = 'とっきゅーのぞみ ちゅう…';
+        showOverlay(true);
+
+        var pair = pickTwo(idols);
+        var a = pair[0], b = pair[1];
+        var slugs = [a.slug, b.slug];
+        var hasSachiko = slugs.indexOf(SACHIKO) !== -1;
+        var hasShin = slugs.indexOf(SHIN) !== -1;
+        var both = hasSachiko && hasShin;
+
+        var jobs = [
+            loadImage(tachieUrl(a.slug)),
+            loadImage(tachieUrl(b.slug)),
+            hasSachiko || both ? null : loadImage(cornerUrl(SACHIKO)),
+            hasShin || both ? null : loadImage(cornerUrl(SHIN)),
+            both && SPECIAL_ART
+                ? loadImage(CLOUD + 'f_auto,q_auto,w_1200/' + SPECIAL_ART)['catch'](function () { return null; })
+                : null
+        ];
+
+        Promise.all([
+            jobs[0], jobs[1], jobs[2], jobs[3], jobs[4],
+            spinReel(1100)
+        ]).then(function (res) {
+            current = {
+                a: a, b: b, both: both,
+                imgA: res[0], imgB: res[1],
+                cornerSachiko: res[2], cornerShin: res[3],
+                imgSpecial: res[4]
+            };
+            drawScene(current);
+            showOverlay(false);
+            canvas.setAttribute('aria-label',
+                displayName(a) + ' と ' + displayName(b) + ' が選ばれた画像');
+            resultEl.textContent = '「' + displayName(a) + '」 × 「' + displayName(b) + '」 …… ' + KAWAII
+                + (both ? '（とくべつバージョン！）' : '');
+            setBusy(false);
+        })['catch'](function (err) {
+            showOverlay(true);
+            overlayText.textContent = '画像を読み込めませんでした。通信環境をご確認のうえ、もう一度お試しください。';
+            reel1.textContent = '？？？';
+            reel2.textContent = '？？？';
+            resultEl.textContent = '';
+            current = null;
+            setBusy(false);
+            if (window.console) console.error(err);
+        });
+    }
+
+    /* ---------- Xへの投稿 ---------- */
+
+    function shareText() {
+        return '特急のぞみルーレットの結果は\n'
+            + '「' + displayName(current.a) + '」×「' + displayName(current.b) + '」！\n'
+            + KAWAII + '\n'
+            + '#特急のぞみルーレット #SugarHeartDB';
+    }
+
+    function canvasBlob() {
+        return new Promise(function (resolve, reject) {
+            try {
+                canvas.toBlob(function (blob) {
+                    if (blob) resolve(blob);
+                    else reject(new Error('画像を書き出せませんでした'));
+                }, 'image/png');
+            } catch (e) {
+                reject(e);
+            }
+        });
+    }
+
+    function fileName() {
+        return 'nozomi-roulette-' + current.a.slug + '-' + current.b.slug + '.png';
+    }
+
+    function downloadBlob(blob, name) {
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = name;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(function () { URL.revokeObjectURL(url); }, 10000);
+    }
+
+    function openIntent(text) {
+        var url = 'https://x.com/intent/post?text=' + encodeURIComponent(text)
+            + '&url=' + encodeURIComponent(PAGE_URL);
+        window.open(url, '_blank', 'noopener');
+    }
+
+    function share() {
+        if (!current || busy) return;
+        var text = shareText();
+
+        canvasBlob().then(function (blob) {
+            var file = null;
+            if (window.File) {
+                try {
+                    file = new File([blob], fileName(), { type: 'image/png' });
+                } catch (e) { file = null; }
+            }
+
+            if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
+                return navigator.share({
+                    files: [file],
+                    text: text + '\n',
+                    url: PAGE_URL
+                }).then(function () {
+                    noteEl.textContent = '';
+                })['catch'](function (err) {
+                    // ユーザーが共有をキャンセルした場合は何もしない
+                    if (err && err.name === 'AbortError') return;
+                    fallbackShare(blob, text);
+                });
+            }
+            fallbackShare(blob, text);
+        })['catch'](function (err) {
+            noteEl.textContent = '画像を書き出せませんでした。定型文のみで投稿画面を開きます。';
+            openIntent(text);
+            if (window.console) console.error(err);
+        });
+    }
+
+    function fallbackShare(blob, text) {
+        downloadBlob(blob, fileName());
+        openIntent(text);
+        noteEl.textContent = '画像を保存しました。Xの投稿画面で保存した画像を添付してね☆';
+    }
+
+    /* ---------- 初期化 ---------- */
+
+    function ready() {
+        // フォントを読み込んでからCanvasに描く（未読み込みだと代替フォントで描画されるため）
+        var probe = 'はぁとさちこ' + KAWAII;
+        var waitFont = (document.fonts && document.fonts.load)
+            ? document.fonts.load('92px "MarshMallowPopHeart"', probe)
+                .then(function () { return document.fonts.ready; })
+                ['catch'](function () { return null; })
+            : Promise.resolve(null);
+
+        return waitFont;
+    }
+
+    Promise.all([
+        fetch('data/idols.json').then(function (r) {
+            if (!r.ok) throw new Error('idols.json の取得に失敗しました');
+            return r.json();
+        }),
+        fetch('data/idol-given-names.json').then(function (r) {
+            if (!r.ok) throw new Error('idol-given-names.json の取得に失敗しました');
+            return r.json();
+        }),
+        fetch('data/idol-tachie.json').then(function (r) {
+            if (!r.ok) throw new Error('idol-tachie.json の取得に失敗しました');
+            return r.json();
+        })
+    ])
+        .then(function (res) {
+            idols = res[0].filter(function (d) { return d && d.slug && d.kana; });
+            givenNames = res[1];
+            tachieCfg = res[2];
+            if (idols.length < 2) throw new Error('アイドルデータが足りません');
+            return ready();
+        })
+        .then(function () {
+            againBtn.addEventListener('click', roll);
+            shareBtn.addEventListener('click', share);
+            roll();
+        })
+        ['catch'](function (err) {
+            showOverlay(true);
+            overlayText.textContent = 'データを読み込めませんでした。時間をおいて再度お試しください。';
+            if (window.console) console.error(err);
+        });
+})();
+</script>
+
+<script src="components/common.js"></script>
+</body>
+</html>
