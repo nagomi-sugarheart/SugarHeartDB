@@ -7640,6 +7640,49 @@ input[name="dialogue-tab"] {
     color: var(--sh-text-mute);
 }
 
+/* 総選挙への投票の呼びかけ */
+.nr-vote {
+    max-width: 860px;
+    margin: 34px auto 0;
+    text-align: center;
+}
+
+.nr-vote-lead {
+    margin: 0 0 14px;
+    font-family: var(--font-display);
+    font-size: 0.98rem;
+    color: var(--sh-text);
+}
+
+/* 佐藤心のパーソナルカラーの単色塗りつぶし＋白文字 */
+.nr-vote-btn {
+    display: inline-block;
+    padding: 14px 34px;
+    border-radius: var(--r-pill);
+    background: #f04e98;
+    color: #ffffff;
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(240, 78, 152, 0.38);
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.nr-vote-btn:hover,
+.nr-vote-btn:focus-visible {
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(240, 78, 152, 0.48);
+}
+
+@media screen and (max-width: 900px) {
+    .nr-vote-btn {
+        display: block;
+        padding: 15px 20px;
+    }
+}
+
 /* スペシャルサンクス */
 .nr-thanks {
     max-width: 860px;
