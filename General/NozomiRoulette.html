@@ -136,8 +136,8 @@
     var givenNames = {};
 
     /* 立ち絵の切り出し設定。data/idol-tachie.json から読み込む。
-       肌の色から求めた顔の位置を基準に、全員を同じ画素サイズの枠で切り出すので、
-       同じ大きさで並べればポーズや髪の量にかかわらず頭の大きさと顔の高さがそろう。
+       顔の位置を基準に、全員を同じ画素サイズの枠で切り出すので、同じ大きさで
+       並べればポーズにかかわらず頭の大きさと顔の高さがそろう。
        髪飾りなどは枠の上へはみ出して、名前の文字と重なる。 */
     var tachieCfg = null;
 
@@ -407,11 +407,12 @@
      */
     function drawTachie(c, img, slug, centerX, topY, destH) {
         var cfg = tachieCfg;
-        var p = (cfg.idols && cfg.idols[slug]) || { face: 0, axis: cfg.frame.w / 2 };
+        var p = (cfg.idols && cfg.idols[slug]) || { head: 0, axis: cfg.frame.w / 2 };
         var f = img.naturalWidth / cfg.frame.w;   // 配信された画像の縮尺
 
         var sx = (p.axis - cfg.crop.w / 2) * f;
-        var sy = (p.face - cfg.crop.pad) * f;
+        // offset を足すと切り出し位置が下にずれ、そのぶんアイドルが上に寄る
+        var sy = (p.head - cfg.crop.pad + (p.offset || 0)) * f;
         var sw = cfg.crop.w * f;
         var sh = cfg.crop.h * f;
 
@@ -495,7 +496,7 @@
             drawCover(ctx, pick.imgSpecial);
         } else {
             var destH = special ? 882 : 842;
-            var topY = special ? -28 : -6;
+            var topY = special ? -46 : -31;
             var pos = pairPositions(pick.a.slug, pick.b.slug, destH);
             drawTachie(ctx, pick.imgA, pick.a.slug, pos[0], topY, destH);
             drawTachie(ctx, pick.imgB, pick.b.slug, pos[1], topY, destH);
