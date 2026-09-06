@@ -189,6 +189,14 @@
         return [list[i], list[j]];
     }
 
+    /* ---------- 立ち絵の左右 ---------- */
+
+    /** 左右のどちら側に置きたいかの希望（data/idol-tachie.json の side） */
+    function preferredSide(idol) {
+        var p = tachieCfg && tachieCfg.idols && tachieCfg.idols[idol.slug];
+        return (p && p.side) || null;
+    }
+
     /* ---------- 表示名 ---------- */
 
     function displayName(idol) {
@@ -607,6 +615,14 @@
 
         var pair = pickTwo(idols);
         var a = pair[0], b = pair[1];
+
+        // 置きたい側が決まっているアイドルは、その側に来るよう左右を入れ替える。
+        // 神崎蘭子のように横へ大きく広がる衣装だと、すみのイラストに隠れてしまうため。
+        // 入れ替えるのは並び順だけなので、誰が選ばれるかの確率は変わらない。
+        if ((preferredSide(b) === 'left'  && preferredSide(a) !== 'left') ||
+            (preferredSide(a) === 'right' && preferredSide(b) !== 'right')) {
+            var swap = a; a = b; b = swap;
+        }
         var slugs = [a.slug, b.slug];
         var hasSachiko = slugs.indexOf(SACHIKO) !== -1;
         var hasShin = slugs.indexOf(SHIN) !== -1;
