@@ -85,7 +85,7 @@
                                 <li><a href="General/LiveList.html">ライブ</a></li>\n\
                                 <li><a href="General/AnimeManga.html">アニメ・漫画</a></li>\n\
                                 <li><a href="General/CollabList.html">コラボ</a></li>\n\
-                                <li><a href="General/NozomiRoulette.html">特急のぞみルーレット</a></li>\n\
+                                <li><a href="General/NozomiRoulette.html">とっきゅーのぞみルーレット</a></li>\n\
                                 <li><a href="General/GeneralElection.html">総選挙</a></li>\n\
                                 <li><a class="disabled">他アイドル呼称</a></li>\n\
                                 <li><a href="General/References.html">参考・情報提供</a></li>\n\
@@ -156,7 +156,7 @@
                     <li><a href="General/LiveList.html">ライブ</a></li>\n\
                     <li><a href="General/AnimeManga.html">アニメ・漫画</a></li>\n\
                     <li><a href="General/CollabList.html">コラボ</a></li>\n\
-                    <li><a href="General/NozomiRoulette.html">特急のぞみルーレット</a></li>\n\
+                    <li><a href="General/NozomiRoulette.html">とっきゅーのぞみルーレット</a></li>\n\
                     <li><a href="General/GeneralElection.html">総選挙</a></li>\n\
                     <li><a class="disabled">他アイドル呼称</a></li>\n\
                     <li><a href="General/References.html">参考・情報提供</a></li>\n\
