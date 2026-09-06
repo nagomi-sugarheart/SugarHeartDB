@@ -7608,10 +7608,12 @@ input[name="dialogue-tab"] {
     color: var(--sh-text);
 }
 
-/* Yusei Magic の「ゔ」は濁点が文字送りの外に描かれ、次の文字に重なってしまうため、
-   この1文字だけ本文用フォントで描く */
-.nr-vu {
+/* Yusei Magic の「ゔ」は合成グリフの組み立て方が原因で濁点が次の文字に重なるため、
+   「ゔ」が入る回だけ行ごと本文用フォントに切り替える。
+   太さは Yusei Magic の見た目に合わせて 700 にする */
+.nr-result.is-alt-font {
     font-family: var(--font-body);
+    font-weight: 700;
 }
 
 .nr-actions {
