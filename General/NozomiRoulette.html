@@ -41,10 +41,10 @@
 
     <section class="nr-stage">
         <div class="nr-canvas-frame" id="nr-frame">
-            <canvas id="nr-canvas" width="1200" height="800"
-                    role="img"
-                    aria-label="ルーレットで選ばれた2人のアイドルの画像"></canvas>
-            <div class="nr-overlay" id="nr-overlay" aria-hidden="true">
+            <!-- Canvasは組み立て用。長押しで保存できるよう、表示は <img> で行う -->
+            <canvas id="nr-canvas" class="nr-canvas-src" width="1200" height="800" aria-hidden="true"></canvas>
+            <img id="nr-image" class="nr-image" alt="ルーレットで選ばれた2人のアイドルの画像">
+            <div class="nr-overlay is-on" id="nr-overlay" aria-hidden="true">
                 <div class="nr-reel">
                     <span class="nr-reel-name" id="nr-reel-1">？？？</span>
                     <span class="nr-reel-x">×</span>
@@ -66,36 +66,6 @@
         </div>
 
         <p class="nr-note" id="nr-note" role="status" aria-live="polite"></p>
-    </section>
-
-    <section class="box-area nr-about">
-        <h2 class="box-title">このページについて</h2>
-        <div class="box-item">
-            <p>
-                「とっきゅーのぞみする」を押すたびに、シンデレラガールズのアイドル190人から
-                <strong>ランダムで2人</strong>が選ばれ、その場で画像を組み立てます。
-                名前は下の名前をひらがなで表記します（佐藤心だけは「はぁと」表記）。
-            </p>
-        </div>
-        <div class="box-item">
-            <p>
-                <strong>特別演出：</strong>
-                輿水幸子か佐藤心が選ばれたときは、画面すみの本人イラストがおやすみします。
-                2人そろって選ばれたときは……ちょっとだけ特別な画像になるよぉ☆
-            </p>
-        </div>
-        <div class="box-item">
-            <p>
-                「Xに投稿する」を押すと、画像・定型文・このページへのリンクをまとめて投稿できます。
-                画像の添付に対応していない環境では、画像を保存したうえで投稿画面を開きます。
-            </p>
-        </div>
-        <div class="box-item nr-credit">
-            <p>
-                立ち絵：<a href="https://cinderellagirls.idolmaster-official.jp/" target="_blank" rel="noopener">アイドルマスター シンデレラガールズ 公式サイト</a>より／
-                フォント：<a href="http://nonty.net/" target="_blank" rel="noopener">ましゅまろポップ♡ハート（Norio Kanisawa）</a>
-            </p>
-        </div>
     </section>
 
 </div>
@@ -155,6 +125,7 @@
 
     var canvas  = document.getElementById('nr-canvas');
     var ctx     = canvas.getContext('2d');
+    var imageEl = document.getElementById('nr-image');
     var overlay = document.getElementById('nr-overlay');
     var overlayText = document.getElementById('nr-overlay-text');
     var reel1   = document.getElementById('nr-reel-1');
@@ -636,11 +607,11 @@
                 imgSpecial: res[4]
             };
             drawScene(current);
+            // 長押しで保存できるよう、組み上がった絵を <img> に流し込む
+            imageEl.src = canvas.toDataURL('image/png');
+            imageEl.alt = displayName(a) + ' と ' + displayName(b) + ' が選ばれた画像';
             showOverlay(false);
-            canvas.setAttribute('aria-label',
-                displayName(a) + ' と ' + displayName(b) + ' が選ばれた画像');
-            resultEl.textContent = '「' + displayName(a) + '」 × 「' + displayName(b) + '」 …… ' + KAWAII
-                + (both ? '（とくべつバージョン！）' : '');
+            resultEl.textContent = resultText(a, b);
             setBusy(false);
         })['catch'](function (err) {
             showOverlay(true);
@@ -654,13 +625,27 @@
         });
     }
 
+    /* ---------- 結果の文言 ---------- */
+
+    function resultText(a, b) {
+        return displayName(a) + 'と' + displayName(b) + 'は？カワイイ！！';
+    }
+
     /* ---------- Xへの投稿 ---------- */
 
+    /* 投稿の定型文。末尾にページのURLまで含める */
     function shareText() {
-        return '特急のぞみルーレットの結果は\n'
-            + '「' + displayName(current.a) + '」×「' + displayName(current.b) + '」！\n'
-            + KAWAII + '\n'
-            + '#特急のぞみルーレット #SugarHeartDB';
+        return 'きゅん♪きゅん♪きゅん♪ずっきゅん♪\n'
+            + 'きゅん♪きゅん♪とっきゅーのぞみ♪\n'
+            + 'きゅん♪きゅん♪きゅん♪ずきゅん♪\n'
+            + '\n'
+            + '　　　' + displayName(current.a) + ' と ' + displayName(current.b) + 'は？\n'
+            + '　　　　　　＼＼カワイイ！！／／\n'
+            + '\n'
+            + '#とっきゅーのぞみルーレット\n'
+            + '#シンデレラガール総選挙2026\n'
+            + '\n'
+            + PAGE_URL;
     }
 
     function canvasBlob() {
@@ -692,9 +677,8 @@
     }
 
     function openIntent(text) {
-        var url = 'https://x.com/intent/post?text=' + encodeURIComponent(text)
-            + '&url=' + encodeURIComponent(PAGE_URL);
-        window.open(url, '_blank', 'noopener');
+        window.open('https://x.com/intent/post?text=' + encodeURIComponent(text),
+                    '_blank', 'noopener');
     }
 
     function share() {
@@ -712,8 +696,7 @@
             if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
                 return navigator.share({
                     files: [file],
-                    text: text + '\n',
-                    url: PAGE_URL
+                    text: text
                 }).then(function () {
                     noteEl.textContent = '';
                 })['catch'](function (err) {

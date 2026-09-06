@@ -7538,10 +7538,18 @@ input[name="dialogue-tab"] {
     aspect-ratio: 3 / 2;
 }
 
-.nr-canvas-frame canvas {
+/* 画像の組み立てに使うCanvas。表示は下の <img> が受け持つので隠しておく */
+.nr-canvas-src {
+    display: none;
+}
+
+/* 生成した画像。長押し（iOS/Android）で保存できるよう <img> で表示する */
+.nr-image {
     display: block;
     width: 100%;
     height: auto;
+    -webkit-touch-callout: default;
+    touch-action: manipulation;
 }
 
 /* 抽選中のオーバーレイ */
@@ -7630,27 +7638,6 @@ input[name="dialogue-tab"] {
     min-height: 1.5em;
     font-size: 0.82rem;
     color: var(--sh-text-mute);
-}
-
-.nr-about {
-    max-width: 860px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.nr-about p {
-    margin: 0;
-    font-size: 0.88rem;
-    line-height: 1.9;
-}
-
-.nr-credit p {
-    font-size: 0.78rem;
-    color: var(--sh-text-mute);
-}
-
-.nr-credit a {
-    color: var(--sh-pink-deep);
 }
 
 @media screen and (max-width: 900px) {
