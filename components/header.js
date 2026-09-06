@@ -493,8 +493,12 @@
         var xBtn = document.getElementById('sh-footer-x-btn');
         if (xBtn) {
             var shareUrl  = encodeURIComponent(window.location.href);
-            var shareText = encodeURIComponent(document.title + ' | SugarHeartDB');
-            xBtn.href = 'https://twitter.com/intent/tweet?url=' + shareUrl + '&text=' + shareText;
+            // 各ページの title にはすでにサイト名が入っているので、
+            // 含まれていないときだけ補う（二重に付かないようにする）
+            var title = document.title;
+            if (title.indexOf('SugarHeartDB') === -1) title += ' | SugarHeartDB';
+            xBtn.href = 'https://twitter.com/intent/tweet?url=' + shareUrl
+                + '&text=' + encodeURIComponent(title);
         }
 
         var openBtn  = document.getElementById('sh-search-open-btn');
