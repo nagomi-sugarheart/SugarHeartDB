@@ -249,16 +249,15 @@
         c.lineCap = 'round';
         c.miterLimit = 2;
 
-        c.shadowColor = 'rgba(150, 0, 70, 0.32)';
-        c.shadowBlur = size * 0.14;
-        c.shadowOffsetY = size * 0.07;
+        // 影はCanvasの shadowBlur を使わず、白フチを下にずらして重ねて作る。
+        // shadowBlur はブラウザによって広がり方と濃さがかなり違うため。
         c.lineWidth = size * 0.30;
+        c.strokeStyle = palette.shade;
+        c.strokeText(text, 0, size * 0.045);
+
         c.strokeStyle = palette.outer;
         c.strokeText(text, 0, 0);
 
-        c.shadowColor = 'transparent';
-        c.shadowBlur = 0;
-        c.shadowOffsetY = 0;
         c.lineWidth = size * 0.17;
         c.strokeStyle = palette.ring;
         c.strokeText(text, 0, 0);
@@ -461,6 +460,7 @@
         var special = pick.both;
         var pal = {
             outer: '#ffffff',
+            shade: special ? 'rgba(214, 130, 0, 0.28)' : 'rgba(190, 70, 130, 0.26)',
             ring:  special ? '#ff7a00' : '#e6006e',
             fill:  special ? '#fff8e6' : '#fff2f8'
         };
