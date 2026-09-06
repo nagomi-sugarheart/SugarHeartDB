@@ -70,6 +70,15 @@
             </button>
         </div>
 
+        <div class="nr-subactions">
+            <button type="button" class="nr-mini-btn" id="nr-copy" disabled hidden>
+                画像をコピー
+            </button>
+            <button type="button" class="nr-mini-btn" id="nr-save" disabled>
+                画像を保存
+            </button>
+        </div>
+
         <p class="nr-note" id="nr-note" role="status" aria-live="polite"></p>
     </section>
 
@@ -161,6 +170,8 @@
     var noteEl  = document.getElementById('nr-note');
     var shareBtn = document.getElementById('nr-share');
     var againBtn = document.getElementById('nr-again');
+    var copyBtn  = document.getElementById('nr-copy');
+    var saveBtn  = document.getElementById('nr-save');
 
     var idols = [];
     var current = null;      // { a: idol, b: idol, both: bool }
@@ -601,7 +612,10 @@
 
     function setBusy(state) {
         busy = state;
-        shareBtn.disabled = state || !current;
+        var off = state || !current;
+        shareBtn.disabled = off;
+        copyBtn.disabled = off;
+        saveBtn.disabled = off;
         againBtn.disabled = state;
         againBtn.textContent = state ? 'とっきゅーのぞみ ちゅう…' : 'もう一度とっきゅーのぞみする';
     }
@@ -672,6 +686,7 @@
             // 長押しで保存できるよう、組み上がった絵を <img> に流し込む
             imageEl.src = canvas.toDataURL('image/png');
             imageEl.alt = displayName(a) + ' と ' + displayName(b) + ' が選ばれた画像';
+            cacheBlob(current);
             showOverlay(false);
             resultEl.textContent = resultText(a, b);
             setBusy(false);
@@ -723,6 +738,23 @@
         });
     }
 
+    /* 画像の書き出しには時間がかかるので、抽選が終わった時点で先に済ませておく。
+       クリック時に同期で使えるようにしておくと、投稿画面のポップアップや
+       クリップボードへの書き込みがブラウザにブロックされない。 */
+    function cacheBlob(target) {
+        canvasBlob().then(function (blob) {
+            target.blob = blob;
+        })['catch'](function (err) {
+            if (window.console) console.error(err);
+        });
+    }
+
+    /* 抽選時に用意した画像。まだ書き出せていないときだけその場で作る */
+    function currentBlob() {
+        if (current && current.blob) return Promise.resolve(current.blob);
+        return canvasBlob();
+    }
+
     function fileName() {
         return 'nozomi-roulette-' + current.a.slug + '-' + current.b.slug + '.png';
     }
@@ -743,42 +775,83 @@
                     '_blank', 'noopener');
     }
 
+    /* OSの共有シートにXが並ぶのは実質モバイルだけ。PCでシートに入ってしまうと
+       Xへ進めずに手詰まりになる（＝定型文すら受け取れない）ので、
+       PCでは最初からブラウザの投稿画面を開く経路にする。 */
+    function isMobileLike() {
+        var uaData = navigator.userAgentData;
+        if (uaData && typeof uaData.mobile === 'boolean') return uaData.mobile;
+        var ua = navigator.userAgent || '';
+        if (/Android|iPhone|iPod|iPad/i.test(ua)) return true;
+        // iPadOSはMacintoshを名乗るため、タッチの有無で見分ける
+        return /Macintosh/.test(ua) && navigator.maxTouchPoints > 1;
+    }
+
+    function canCopyImage() {
+        return !!(window.ClipboardItem && navigator.clipboard && navigator.clipboard.write);
+    }
+
     function share() {
         if (!current || busy) return;
         var text = shareText();
+        var blob = current.blob;
 
-        canvasBlob().then(function (blob) {
+        if (isMobileLike() && blob && window.File && navigator.canShare) {
             var file = null;
-            if (window.File) {
-                try {
-                    file = new File([blob], fileName(), { type: 'image/png' });
-                } catch (e) { file = null; }
-            }
+            try {
+                file = new File([blob], fileName(), { type: 'image/png' });
+            } catch (e) { file = null; }
 
-            if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
-                return navigator.share({
-                    files: [file],
-                    text: text
-                }).then(function () {
-                    noteEl.textContent = '';
-                })['catch'](function (err) {
-                    // ユーザーが共有をキャンセルした場合は何もしない
-                    if (err && err.name === 'AbortError') return;
-                    fallbackShare(blob, text);
-                });
+            if (file && navigator.canShare({ files: [file] })) {
+                navigator.share({ files: [file], text: text })
+                    .then(function () {
+                        noteEl.textContent = '';
+                    })['catch'](function (err) {
+                        // ユーザーが共有をキャンセルした場合は何もしない
+                        if (err && err.name === 'AbortError') return;
+                        postViaBrowser(text);
+                    });
+                return;
             }
-            fallbackShare(blob, text);
+        }
+        postViaBrowser(text);
+    }
+
+    /* Xの投稿インテントは仕様上テキストとリンクしか渡せないため、
+       定型文を入れた投稿画面を開いたうえで、画像は保存して手で添付してもらう。 */
+    function postViaBrowser(text) {
+        openIntent(text);   // クリックのジェスチャが切れないよう同期で開く
+        saveImageWith('Xの投稿画面を開いたよ！画像も保存したから「画像を追加」から選んでね☆');
+    }
+
+    function saveImageWith(note) {
+        return currentBlob().then(function (blob) {
+            downloadBlob(blob, fileName());
+            noteEl.textContent = note;
         })['catch'](function (err) {
-            noteEl.textContent = '画像を書き出せませんでした。定型文のみで投稿画面を開きます。';
-            openIntent(text);
+            noteEl.textContent = '画像を書き出せませんでした。';
             if (window.console) console.error(err);
         });
     }
 
-    function fallbackShare(blob, text) {
-        downloadBlob(blob, fileName());
-        openIntent(text);
-        noteEl.textContent = '画像を保存しました。Xの投稿画面で保存した画像を添付してね☆';
+    function saveImage() {
+        if (!current || busy) return;
+        saveImageWith('画像を保存したよ☆');
+    }
+
+    /* 押されたときだけクリップボードへ入れる（自動ではコピーしない） */
+    function copyImage() {
+        if (!current || busy) return;
+        currentBlob().then(function (blob) {
+            return navigator.clipboard.write([
+                new ClipboardItem({ 'image/png': blob })
+            ]);
+        }).then(function () {
+            noteEl.textContent = '画像をコピーしたよ！Xの投稿欄で貼り付け（Ctrl+V）してね☆';
+        })['catch'](function (err) {
+            if (window.console) console.error(err);
+            saveImageWith('コピーできなかったから画像を保存したよ。Xの画面で添付してね☆');
+        });
     }
 
     /* ---------- 初期化 ---------- */
@@ -819,6 +892,12 @@
         .then(function () {
             againBtn.addEventListener('click', roll);
             shareBtn.addEventListener('click', share);
+            saveBtn.addEventListener('click', saveImage);
+            // コピーに対応していないブラウザではボタン自体を出さない
+            if (canCopyImage()) {
+                copyBtn.hidden = false;
+                copyBtn.addEventListener('click', copyImage);
+            }
             roll();
         })
         ['catch'](function (err) {
