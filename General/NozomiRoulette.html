@@ -120,6 +120,12 @@
         sato_shin:         { w: 335, h: 355 }
     };
 
+    /* 文字の影。外側ほど薄くなるよう、太さと濃さを変えたフチを重ねる */
+    var SHADE_STEPS = [
+        { w: 0.46, a: 0.10 },
+        { w: 0.38, a: 0.16 }
+    ];
+
     /* 画像下部の決まり文句と、文字サイズの上限 */
     var KAWAII = 'カワイイ!!';
     var NAME_MAX_SIZE = 150;
@@ -249,12 +255,17 @@
         c.lineCap = 'round';
         c.miterLimit = 2;
 
-        // 影はCanvasの shadowBlur を使わず、白フチを下にずらして重ねて作る。
-        // shadowBlur はブラウザによって広がり方と濃さがかなり違うため。
-        c.lineWidth = size * 0.30;
-        c.strokeStyle = palette.shade;
-        c.strokeText(text, 0, size * 0.045);
+        // 影はCanvasの shadowBlur を使わず、白フチより太いフチを薄い色で
+        // 少し下にずらして重ねて作る。太さと濃さを変えて2枚重ねることで、
+        // ぼかしを使わずに外へ向かって薄れる影にしている。
+        // （shadowBlur はブラウザによって広がり方と濃さがかなり違うため使わない）
+        for (var i = 0; i < SHADE_STEPS.length; i++) {
+            c.lineWidth = size * SHADE_STEPS[i].w;
+            c.strokeStyle = 'rgba(' + palette.shade + ', ' + SHADE_STEPS[i].a + ')';
+            c.strokeText(text, 0, size * 0.05);
+        }
 
+        c.lineWidth = size * 0.30;
         c.strokeStyle = palette.outer;
         c.strokeText(text, 0, 0);
 
@@ -272,7 +283,7 @@
         var size = maxSize;
         while (size > 16) {
             c.font = size + 'px ' + FONT_FAMILY;
-            if (c.measureText(text).width + size * 0.30 <= maxWidth) break;
+            if (c.measureText(text).width + size * SHADE_STEPS[0].w <= maxWidth) break;
             size -= 2;
         }
         return size;
@@ -460,7 +471,7 @@
         var special = pick.both;
         var pal = {
             outer: '#ffffff',
-            shade: special ? 'rgba(214, 130, 0, 0.28)' : 'rgba(190, 70, 130, 0.26)',
+            shade: special ? '214, 130, 0' : '190, 70, 130',
             ring:  special ? '#ff7a00' : '#e6006e',
             fill:  special ? '#fff8e6' : '#fff2f8'
         };
